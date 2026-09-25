@@ -1,16 +1,18 @@
 # Possible note to Samuel A. Alexander
 
-This is a draft for the repository owner to edit and send. No message has been sent. It describes the current state accurately; revise it if a later theorem, formalization, or independent review changes that state.
+This is a draft for the repository owner to edit and send. No message has been sent. Its links point to the intended public repository; check the [current status](STATUS.md) and [formalization receipt](verification/FORMALIZATION-RECEIPT.md) before sending if more work lands.
 
-> Subject: Follow-on questions from biologically unavoidable sequences
+> Subject: A checked Thue–Morse follow-on and a specieslike question
 >
 > Dear Dr. Alexander,
 >
-> I enjoyed your video about the classification of biologically unavoidable sequences and wanted to see whether its construction could lead to more small, checkable problems. I worked with Codex to put a public follow-on research notebook here: [Working on Samuel Alexander's research](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-).
+> I enjoyed your video about the classification of biologically unavoidable sequences. It made me curious about what else the explicit avoiding graph can tell us, so I worked with Codex to put a [public, AI-assisted research notebook](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-) together. I would value your correction if we have missed a known result or misunderstood the model.
 >
-> One direction studies how long the Thue-Morse sequence can be matched in the classification paper's explicit avoiding population. The notebook gives a written quadratic upper bound using the classical overlap-free property, along with exact code that suggests a much sharper linear bound. The linear bound is still a conjecture; I would not want the computation to be mistaken for a proof. We also noticed a direct connection to your recent [specieslike-clusters paper](https://arxiv.org/html/2602.05274v1): the whole binary avoiding graph satisfies its basic cluster axioms after parent labels are ignored. The short [written argument](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/notes/SPECIESLIKE-BRIDGE.md) states exactly which stronger cluster conditions it does not address.
+> The most concrete result is a [Lean-checked sharp bound](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/lean/SamuelAlexanderResearch/SharpThueMorse.lean) for the classification manuscript's Thue–Morse graph. If `L(v)` is the longest matching path from `v≥1`, then `3L(v)≤8v−1`. Equality occurs exactly at `v=3·2^n−1`, with `L(v)=8·2^n−3`. We checked the original graph's edges and the actual Thue–Morse bits in the formal development; the [scope and reproduction page](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/FORMALIZATION.md) explains what remains outside it.
 >
-> If either direction connects to a question you find interesting, I would be glad to hear which is worth pursuing. Corrections or pointers to prior work would be especially welcome. There is no need to review the whole repository; the [brief handoff](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/HANDOFF-FOR-ALEXANDER.md) and [research map](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/RESEARCH-MAP.md) give short entry points.
+> We also compared the avoiding graph with your inspecies and [specieslike-cluster](https://arxiv.org/html/2602.05274v1) work. Your 2013 Proposition 6 and 2026 Example 14 already cover the broad ancestry and root-cone patterns, and the [prior-work audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/PRIOR-WORK-AUDIT.md) credits them. The narrower observation is that the *same word-avoiding graph* has these specieslike properties; your earlier strictly layered cone example, if validly binary-labelled, realizes every binary word. A related [fixed-gender repair](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/notes/FIXED-GENDER-SPECIESLIKE.md) is written out but is not yet Lean checked.
+>
+> Is the sharp path formula familiar from another formulation? Or is the fixed-gender repair or the label-coverage boundary inside maximal common-ancestor clusters a more useful direction? There is no need to review the whole repository; the [brief handoff](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/HANDOFF-FOR-ALEXANDER.md) gives the exact statements and limits.
 >
 > Thank you for making the mathematics approachable in your videos.
 
@@ -18,10 +20,10 @@ This is a draft for the repository owner to edit and send. No message has been s
 
 1. **The setup:** distinguish an infinite graph with labelled parent edges from a prediction about real families. Credit Alexander's 2013 model and the later classification manuscript.
 2. **The hook:** draw the Thue–Morse target and the two incoming edges at each numbered vertex. Show why the offset `d_k=v_k-2k` never increases along a matching path.
-3. **The proved extension:** explain in words why overlap-freeness limits how long the path can remain at one offset, giving a quadratic upper bound.
-4. **The puzzle:** show the finite path-length data and the proposed linear formula. Label it "conjecture, checked for starts below 131072" on screen.
-5. **The invitation:** ask for a proof, counterexample, or prior-art pointer; link the repository's exact model, code, and status page.
+3. **The checked result:** state `3L(v)≤8v−1` for positive starts and show the exact equality family `v=3·2^n−1`; identify the Lean module and explain that the proof uses shrinking intervals of reachable endpoints and Thue–Morse bit identities.
+4. **The source comparison:** credit the 2013 inspecies proposition and 2026 multiple-root example, then show why the earlier example's strict generations make every binary word realizable while the avoiding graph's skip edges change the path behavior.
+5. **The invitation:** ask for an independent mathematical review or prior-art pointer; link the [handoff](HANDOFF-FOR-ALEXANDER.md), [audit](PRIOR-WORK-AUDIT.md), and exact [formalization scope](FORMALIZATION.md).
 
 An optional second video can explain the [specieslike bridge](notes/SPECIESLIKE-BRIDGE.md): show why every vertex in `P_s` reaches all sufficiently later vertices, then distinguish the whole-graph cluster result from biological speciation and from the stronger common-ancestor condition.
 
-Do not present the linear formula, the two-child fixed-gender question, or a new cellular-automaton speed limit as solved. An independently checked proof would justify a stronger follow-up video.
+The sharp path formula has a local Lean and agent review, while external mathematical review and literature priority remain open. The two-child fixed-gender question and any new cellular-automaton speed limit remain unsolved here. The [proof status table](STATUS.md) is the safest screen reference if the video is recorded after more results land.
