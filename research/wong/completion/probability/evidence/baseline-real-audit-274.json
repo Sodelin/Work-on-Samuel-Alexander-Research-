@@ -1,0 +1,1979 @@
+{
+  "checked_at_utc": "2026-09-25T15:49:51.977409+00:00",
+  "started_at_utc": "2026-09-25T15:40:56.696413+00:00",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain_pin": "leanprover/lean4:v4.33.1",
+  "endpoint_count": 274,
+  "endpoint_axioms": {
+    "RealBridges.finiteCover_iff_setFinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.BinaryRealPopulation.root_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.BinaryRealPopulation.reindexed_population": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.eventuallyPeriodic_realized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.finite_real_sublevels_of_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.real_sharp_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.real_coefficient_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.real_intersection_subset_weighted_mix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.convex_hull_intersection_subset_weighted_mix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.coefficient_from_late_witnesses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.finite_edit_real_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.finite_edit_real_coefficient_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.phase_real_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.phase_maximum_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.phase_real_coefficient_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.binary_real_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.real_subcritical_impossible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.real_at_least_k_distinct_roots": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealBridges.real_alphabet_le_root_cover_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.eventual_encoding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.encoding_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.encoding_fair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.encoding_legal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.tail_label_lt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.cut_width_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PortEncoding.encoded_periodic_realizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StatefulCAReal.static_east_optimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StatefulCAReal.static_east_support_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StatefulCAReal.real_horizontal_spaceship_speed_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StatefulCAReal.real_static_gap_and_global_obstruction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.locus_path_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.locus_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.topology_iff_erased": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.extracted_eq_local_iff_sampleSupported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.local_parent_representation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.local_ancestors_comparable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.locus_path_projects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.exists_finite_topological_numbering": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.ancestry_constant_without_breakpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.natTopology_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.sample_ancestral_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.extracted_sample_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.finite_catalog_not_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.natural_biosphere_has_real_dates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.ordered_encoded_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.old_encoded_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.actual_garg_opposite_infinite_completions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.extracted_contracted_sample_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.splitGARG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.tailGARG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.all_extracted_relations_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.raw_locus_relations_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.finite_garg_sample_reconstruction_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.local_children_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.local_arity_le_graph_arity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.graph_unary_local_zero_or_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.graph_unary_present_locally_unary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.backward_local_walk_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.no_infinite_backward_local_walk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.backward_parent_array_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.ParentSpec.parent_iff_exists_at": [
+      "propext"
+    ],
+    "WongEventEncoding.EventGraph.encoded_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_atLocus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_nonempty_annotations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_route": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.erased_encoded_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_parent_pointer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.ParentSpec.crossover_cut_identified": [
+      "propext"
+    ],
+    "WongBreakpointCells.cells_pairwise_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongBreakpointCells.exists_cell_of_bracket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongBreakpointCells.locus_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongBreakpointCells.locus_constant_on_cell": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.CellPresentation.finite_cell_representation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.restriction_union_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.contraction_union_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.sample_restriction_representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.extracted_contraction_representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.reencoded_contraction_sample_paths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.automaticPresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.automatic_sample_restriction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.contraction_unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.automatic_reencoded_simplification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.reencoding_breakpoints_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.garg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.nonempty_annotations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.canonical_records": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.sample_supported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.contracted_relation_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.retained_ancestry_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.sample_ancestry_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.contracted_relations_agree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.raw_relations_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.diamond_cutoff_information_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.collapsed_represents_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.same_finite_output_hides_cutoff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteGenomeIdentifiability.opposite_compatible_completions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteGenomeIdentifiability.no_exact_specieslike_verdict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteGenomeIdentifiability.no_exact_specieslike_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.commonAncestor_window": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.bad_founder_productive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.productive_descendants_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.capture_productive_descendant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.iap_directed_union_of_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.convex_intersection": [],
+    "SeedIntersections.finite_persistent_member": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.persistent_productive_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.reflection_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.nonempty_has_earliest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.earliest_is_founder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.commonAncestor_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.directed_union_connected": [],
+    "FounderMaximal.union_reflection": [],
+    "FounderMaximal.windowSpecies_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.maximal_extension_of_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.maximal_window_extension_ordered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.descendant_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.finiteSupport_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.infiniteSupport_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.iap_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.convex_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.reflection_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.weakReach_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.weaklyConnected_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.commonAncestor_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.founder_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.finite_founders_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.window_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.specieslike_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.actual_presentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.anchored_minimal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.productivePart_convex": [],
+    "SpeciesSeed.productivePart_internal_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.minimal_anchored_iap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.exists_anchored_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.exists_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.windowSpecies_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.push_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.maximal_window_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.every_vertex_has_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.every_vertex_in_maximal_real_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.trace_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.trace_length_le": [
+      "propext"
+    ],
+    "WongSampleTracing.tracedNodes_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.extract_some_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.actual_garg_extraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.actual_garg_reconstruction_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.lookup_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.lookup_complete": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.lookup_represents": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.records_to_sample_array": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.records_round_trip_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.equal_parent_crossover_same_local": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.crossover_left_identified": [
+      "propext"
+    ],
+    "WongEventDecoding.crossover_right_identified": [
+      "propext"
+    ],
+    "WongEventDecoding.normalized_same_local_iff": [
+      "propext"
+    ],
+    "WongEventDecoding.same_local_of_records_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.normalized_records_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.encode_decode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.decode_encode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.Graph.parents_identified": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.Graph.graph_identified": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.Graph.encoded_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.kind_signature_injective": [
+      "propext"
+    ],
+    "WongEventDecoding.decode_kind_signature": [],
+    "WongEventDecoding.encoded_degrees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.encoded_kind_recovered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.classical_kind_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.classical_encoded_sample_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.contraction_congr_both": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.coordinatePresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.coordinate_contraction_union_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.automatic_reencoded_local_simplification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.samples_and_branching_cellwise": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.suppressed_at_most_one_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.unretained_locally_isolated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.samples_and_branching_representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.visit_complete": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.visit_closed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoExtract_some_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoExtract_eq_reference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.run_write_accounting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.run_cost_bounds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoized_cost_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.actual_memoized_extraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.records_to_memoized_sample_array": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoized_records_round_trip_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.raw_chronology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.raw_event_arities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observed_represents_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observed_dates_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observed_chronology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observation_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.counted_edge_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.hidden_times_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.lineage_counts_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.sample_date_is_not_event_date": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.no_exact_time_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.no_exact_lineage_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.exists_unique_mrca": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.mrca_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.common_iff_ancestor_mrca": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncation_iff_cut_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncation_iff_below_mrca": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.sample_paths_preserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.mrca_sample_paths_preserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.mrca_reaches_every_sample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.no_incoming_mrca": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncated_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.no_common_no_extra_truncation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.ancestral_sample_is_mrca": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.singleton_sample_is_mrca": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.singleton_has_no_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.empty_samples_no_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.distinct_sample_roots_no_common": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncate_at_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncate_unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncate_sample_supported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncate_breakpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncate_sample_paths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.truncate_mrca_paths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.finite_mrca_truncation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMRCATruncation.supported_but_removed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.join_contains": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_covers": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_lo": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_hi": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_separated": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_of_separated": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_idempotent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.separated_semantic_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_semantic_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.separated_gap": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_breakpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.serialized_semantic_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.serialized_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_semantic_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_idempotent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.executable_touching_gap_example": [
+      "propext"
+    ],
+    "WongSimplificationNormalForm.first_kept_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.siblings_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.retained_nonsample_branches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.represented_contraction_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.finite_local_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.finite_resolved_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.mrca_kept": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.truncated_mrca_kept": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.canonicalize_paths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplificationNormalForm.canonical_resolved_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256": {
+    "lean/SamuelAlexanderResearch/AncestralRestriction.lean": "9a8c8f611ccac15ddd737188bf8f5a65057d01befa52c597f2c3c7508fdd8ac1",
+    "lean/SamuelAlexanderResearch/AncestryContraction.lean": "06a094722d166aabaa1d4cfd3a4bf38480a1e05b590b14b3bd2bcd7f72a06068",
+    "lean/SamuelAlexanderResearch/AncestryViews.lean": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce",
+    "lean/SamuelAlexanderResearch/BinaryAvoidance.lean": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a",
+    "lean/SamuelAlexanderResearch/BinaryPopulation.lean": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667",
+    "lean/SamuelAlexanderResearch/BirthOrder.lean": "9774f28a08f43cceab51cc2225b6c572036209c5fe7553f8de08e834c74b34db",
+    "lean/SamuelAlexanderResearch/BoundaryRepair.lean": "9f6a704b5c4c7dd2e5b4fc8ad9f38485ae48986aa73773bde8430312a08a1f31",
+    "lean/SamuelAlexanderResearch/CapTwo.lean": "6814ad3fc4ed84182dca5f663d5180d967af056bd636ebaeb918037b3d61c5e8",
+    "lean/SamuelAlexanderResearch/CapTwoSpecies.lean": "96c98375797623b2877e8ac96dbe8ee3ab1872474f152ce53944bc1cf1904267",
+    "lean/SamuelAlexanderResearch/DegreeBounds.lean": "fe099a1b8ead2142434bb8b45c9f91faa823b320560d92c70ee7ba206ddad748",
+    "lean/SamuelAlexanderResearch/DigitRecurrence.lean": "73ca15003264178d04284508c61d6eba358b397e57830acb798c9f1186114637",
+    "lean/SamuelAlexanderResearch/FiniteAvoidance.lean": "e2ac08fef95b8ceb6779cb2a656ba9e02c6fcfadaf0e5b81ea57a1a4cc211541",
+    "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean": "8910f8924f4612cfbb71fb1bb10e73e9f1e6a6da952c9400c5ef8d208632ca37",
+    "lean/SamuelAlexanderResearch/FiniteEditBranch.lean": "36518f13a8f7880e5dfe2a3dacd2a453c7cdc2bcd97ba0513a5747e93c5932f6",
+    "lean/SamuelAlexanderResearch/FiniteEditExact.lean": "3d6fe12589b1a4e13b2337bb34cf7fc7ee2a08b960ebf9063ffb73fe6b84afdf",
+    "lean/SamuelAlexanderResearch/FiniteEditGap.lean": "c1ad9e647e539002893921f27d1fc62d4d0105958519aac6e7f7844e4dc2b9b2",
+    "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean": "d278498a4bd7c6c48930c359f9e4936cb0ef286b3476409eecb0a5a1bce15a1e",
+    "lean/SamuelAlexanderResearch/FiniteEditStability.lean": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
+    "lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
+    "lean/SamuelAlexanderResearch/FinitePhasePaths.lean": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf",
+    "lean/SamuelAlexanderResearch/FiniteStatePeriodicity.lean": "783886827f5a819bee91b87392f697ddf96901f320cf5b3b9ee5d29f77a0642d",
+    "lean/SamuelAlexanderResearch/FixedGenderLift.lean": "2805ab8ef85a018b2276aa137118f0e64990a6358349e7a1b59006d24a50ba7a",
+    "lean/SamuelAlexanderResearch/FixedGenderReindex.lean": "93953e4e77f092692bc254b52e4d3082459b700eec5a4259c1560ac0daddd3e9",
+    "lean/SamuelAlexanderResearch/FullHeight.lean": "b120919c7861603401be5d88c29c184068c971cf7e98f8f2fc339312f224a464",
+    "lean/SamuelAlexanderResearch/GeneralRigidity.lean": "9ffe47416b38fdab945ab93054e8dbc3c67ff4ca25abd30a5d1cc694cfba918f",
+    "lean/SamuelAlexanderResearch/GeneralRootObstruction.lean": "e759c8494d27cfc55656f6e902ff094fbd6dd1e33246c8e84d5689eb8a1a3170",
+    "lean/SamuelAlexanderResearch/HistoryProjection.lean": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7",
+    "lean/SamuelAlexanderResearch/InfiniteConservation.lean": "55b11eaa840f25500428fb41652ca91994019e8d1300c8df15c978ac46698ee5",
+    "lean/SamuelAlexanderResearch/LayeredUnavoidability.lean": "3201e19d00bdca2577acd488cb5a925d888b18514b6ef6a8ed72a1a17badb83c",
+    "lean/SamuelAlexanderResearch/MinimalCrossing.lean": "ac9ec8a7775262efaa52d191aec2b793a3a01d45c1167c3ca7ec435131f63f37",
+    "lean/SamuelAlexanderResearch/ObservationPrediction.lean": "2b62f0d1da7c22b43dcc741e24916b5218d3ae5fd7bf09c62e97928321e0fd0f",
+    "lean/SamuelAlexanderResearch/PhaseExtremal.lean": "f5afa259bc027747fd13d286499585898cedc5fa8f0797d2d6828013fb1e0b41",
+    "lean/SamuelAlexanderResearch/PhaseHeight.lean": "c76bd894e39f771c94c71bbbc12fbeff375e0d76b66eb6baa8684203dff4ca6d",
+    "lean/SamuelAlexanderResearch/PhaseShift.lean": "504c71e130463ef9f2dcac11c77917aa204f42995ee23b722a7db439c7ea8be7",
+    "lean/SamuelAlexanderResearch/PopulationCounting.lean": "5545bc9fb9ae97f48cd1075a7df2e12087fe53aafd35f5b141cdea55540ad627",
+    "lean/SamuelAlexanderResearch/PopulationReindex.lean": "815951d97e90f9da0aa83cb0acd8683ffb1aa3460930b7eca7fb522e986ae666",
+    "lean/SamuelAlexanderResearch/PortDynamics.lean": "445c6ac224b99c66199a157b8895161892954d1584053d2d3440b6f7e4fecd7d",
+    "lean/SamuelAlexanderResearch/PositiveUnavoidability.lean": "dd4d241c2752639015fd98b4fb07b044e533b0c21dadb49b6c90ee9edb925c71",
+    "lean/SamuelAlexanderResearch/ProductiveCore.lean": "0e83a9bc0c2d870553a1243558a580f49dfc6def79af03afcc8c3b6d4b9568a1",
+    "lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean": "d7483dafa920f71e78eabf6199bd5a50862b8d6b6f8abb3a30f900f43bf71bae",
+    "lean/SamuelAlexanderResearch/QuantitativeModulus.lean": "832030816daca613fee7ee74189fb208d78bf4d304ba528dc3676bb72efe09af",
+    "lean/SamuelAlexanderResearch/RootObstruction.lean": "5a119136ab69b4df58019cf850d17c2c0d837b2644afe900837a894fa4e4f62d",
+    "lean/SamuelAlexanderResearch/SharpCorollaries.lean": "22bc1409177624df85d5fac7303790bb544b99519a967e4be7c7e6a7d7e6b2c6",
+    "lean/SamuelAlexanderResearch/SharpThueMorse.lean": "a2f29f779a19191630d118c5d851fa475e3d0151d55793a0867feab50d4ba0ee",
+    "lean/SamuelAlexanderResearch/SlowAvoidance.lean": "d6e8e593e81be4a642c0c2d4bf8266e2ad1a1ceb9abfd2559c0559b650f5a520",
+    "lean/SamuelAlexanderResearch/SpeciesAdapter.lean": "f04521f21ef2724a48a7cd9712632617dd729e12f6650c55efedf79b686c15b0",
+    "lean/SamuelAlexanderResearch/SpeciesBridge.lean": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+    "lean/SamuelAlexanderResearch/SpeciesCones.lean": "0bf0fb9bc742b1b1260e08fd58adc17d3dab65d778bc1578736f1548a7c37df4",
+    "lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+    "lean/SamuelAlexanderResearch/SpeciesRootCriterion.lean": "c6a151b5909bbf0238dc4ac7879fc518d91dd14b4fb3847952dec0fb65b3f26f",
+    "lean/SamuelAlexanderResearch/StatefulCA.lean": "f02f2b808a0c15d85b26c55559b54621599e89a04c44957679612f24bd4c9bba",
+    "lean/SamuelAlexanderResearch/StaticMixing.lean": "5dc98213607d991388021a76a21dd7c24196e7effc66ef260c77771be48848c1",
+    "lean/SamuelAlexanderResearch/ThueMorseBits.lean": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
+    "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
+    "lean/SamuelAlexanderResearch/ThueMorseWindow.lean": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f",
+    "lean/SamuelAlexanderResearch.lean": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1",
+    "real/lake-manifest.json": "24c900a45c3f706d5e3a0336f3808fcc9b03bb3407e7b5ae23eeb8c283726d33",
+    "real/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "real/lakefile.lean": "44a7aab659d87eda1903ad2923d8cb66d25c42d455ef217c14486b155d0aaf6d",
+    "real/RealAudit.lean": "bc86902d0bb0cee5f3094067d06bd63162e31886565e425ff392c1c03a268c65",
+    "real/WongGARG.lean": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
+    "real/WongBreakpointCells.lean": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d",
+    "real/RealBridges.lean": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
+    "real/WongAlexander.lean": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
+    "real/WongIntervalNormalization.lean": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f",
+    "real/WongSimplification.lean": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab",
+    "real/WongMRCATruncation.lean": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+    "real/WongIntervalCanonicalization.lean": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+    "real/WongLocalSimplification.lean": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+    "real/WongSimplificationNormalForm.lean": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
+    "real/WongEventEncoding.lean": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87",
+    "real/WongTimedHistory.lean": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+    "real/WongSampleTracing.lean": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+    "real/WongRecordTracing.lean": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+    "real/WongMemoizedTracing.lean": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+    "real/WongEventDecoding.lean": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+    "real/FounderWindow.lean": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+    "real/DirectedIAP.lean": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0",
+    "real/SeedIntersections.lean": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e",
+    "real/RealFounderWindow.lean": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9",
+    "real/FounderMaximal.lean": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4",
+    "real/SpeciesReindex.lean": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd",
+    "real/SpeciesSeed.lean": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb",
+    "real/RealSpeciesTheorem.lean": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540",
+    "real/FiniteGenomeIdentifiability.lean": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
+    "real/WongDiamond.lean": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd",
+    "real/WongLocalArity.lean": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
+    "real/WongExamples.lean": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59",
+    "real/PortEncoding.lean": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4",
+    "real/StatefulCAReal.lean": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7"
+  },
+  "dependencies": {
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "project": "real",
+  "scope": "Fresh isolated rebuild of every imported local module followed by exact selected-endpoint axiom audit. Source correspondence and hosted CI are separate checks.",
+  "source_inventory_scope": "All pinned historical core sources plus the complete local real import closure and staged project configuration. Only the imported local closure is freshly rebuilt by this audit.",
+  "local_rebuild_count": 61,
+  "local_rebuilds": [
+    {
+      "module": "SamuelAlexanderResearch.AncestryViews",
+      "exit_code": 0,
+      "elapsed_seconds": 12.407,
+      "source_sha256": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce",
+      "log_sha256": "122cd242417a4429ce515faf0d66c1a858cea89805ad2c143e608d8460e6100f",
+      "warnings": 0,
+      "olean_sha256": "3263d3e919bf516e0ebf3803341ac0637fd5e9706d5ea6136f85b50eacce903a"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BinaryAvoidance",
+      "exit_code": 0,
+      "elapsed_seconds": 3.453,
+      "source_sha256": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "748a65aadb2f30a61a0f5caf9ad110def199edde4457f5f835399b0a391a050b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesBridge",
+      "exit_code": 0,
+      "elapsed_seconds": 3.032,
+      "source_sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+      "log_sha256": "9d7ac66690854b22ca0a34240c79f4aded769a2d40eb6ac4aa653090c50e5278",
+      "warnings": 0,
+      "olean_sha256": "3d038dd7de3af5fe61ebb021f123820a348d59cb1f502351bd1374ca9961e93a"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BinaryPopulation",
+      "exit_code": 0,
+      "elapsed_seconds": 3.078,
+      "source_sha256": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667",
+      "log_sha256": "a07f8ef3e255f7e0f6ae33bff5558943f5b8acb498df8ab0747b96263796011f",
+      "warnings": 0,
+      "olean_sha256": "7f028e6f1a44223d75512a4a8b4e7eb2637ea7a414513fd3b308f2098ec66ff3"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesAdapter",
+      "exit_code": 0,
+      "elapsed_seconds": 2.672,
+      "source_sha256": "f04521f21ef2724a48a7cd9712632617dd729e12f6650c55efedf79b686c15b0",
+      "log_sha256": "caadc149c8b611be0b62539927873103f87a513bf175533fb3f6a9e0f4a4d146",
+      "warnings": 0,
+      "olean_sha256": "98b1a82a8472245a1e23b80ea4462b91beddfa20177bffe795352e1eee853517"
+    },
+    {
+      "module": "SamuelAlexanderResearch.HistoryProjection",
+      "exit_code": 0,
+      "elapsed_seconds": 3.047,
+      "source_sha256": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7",
+      "log_sha256": "bedfc7b0a42c075bc9f1b43c020c62de586ea1f04cb917ff10d6fba1951aa71d",
+      "warnings": 0,
+      "olean_sha256": "efca5f2d96e67e394c2ae3a5d82d5f3c847f489e07e4738de2bab4724c15b6db"
+    },
+    {
+      "module": "WongGARG",
+      "exit_code": 0,
+      "elapsed_seconds": 26.969,
+      "source_sha256": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
+      "log_sha256": "262167cf4f148f3b00a2dec5392a24baf1e49544de64924246e879f874b75b0d",
+      "warnings": 0,
+      "olean_sha256": "279113272707e94a727fc1c0dd54a390a976c6347651ae9401366ef396125127"
+    },
+    {
+      "module": "WongBreakpointCells",
+      "exit_code": 0,
+      "elapsed_seconds": 12.203,
+      "source_sha256": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d",
+      "log_sha256": "05a32785ea56957d66410be091fd49f49bd620c9cbb25c12e61303370df94584",
+      "warnings": 0,
+      "olean_sha256": "1b4a4345ecca05c3b90a935a4d0d9b84b4fa7cec016e1ce5fdaca1c3ef5ca707"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BirthOrder",
+      "exit_code": 0,
+      "elapsed_seconds": 3.453,
+      "source_sha256": "9774f28a08f43cceab51cc2225b6c572036209c5fe7553f8de08e834c74b34db",
+      "log_sha256": "916c968b345b46090e8ecfc58ccd6ffd99cc8bd084376746358ff83a944b482c",
+      "warnings": 0,
+      "olean_sha256": "7fea65c7830f1f159113f7262b8ddb520424c70d34205db36220ddf96ece40fd"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PositiveUnavoidability",
+      "exit_code": 0,
+      "elapsed_seconds": 3.453,
+      "source_sha256": "dd4d241c2752639015fd98b4fb07b044e533b0c21dadb49b6c90ee9edb925c71",
+      "log_sha256": "cf2ee7cb962414260fa592e5526d735d3487810163599fd48222a599fa2ae37f",
+      "warnings": 0,
+      "olean_sha256": "4718af316571e5b50eb49080515c9726b53b4f7027b1f577f73d62cca02b2542"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ThueMorseBound",
+      "exit_code": 0,
+      "elapsed_seconds": 3.703,
+      "source_sha256": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
+      "log_sha256": "390314ee9dea1f33d629127d2c2613a2bf63563272ef58f137b351a579976144",
+      "warnings": 0,
+      "olean_sha256": "af2c57938b65991a144221481c39b568960aa925ede4b0ef4c29bcc2e337bb36"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ThueMorseBits",
+      "exit_code": 0,
+      "elapsed_seconds": 4.687,
+      "source_sha256": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
+      "log_sha256": "9a9eb685d8ba7254c74ffb0e0899623fd817b441f417e71a55288c30ca77e3e9",
+      "warnings": 0,
+      "olean_sha256": "28c097d8e75909dbfafaae45b34e50d573b68dafe26db00fdacc9af1dd40bc4d"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SharpThueMorse",
+      "exit_code": 0,
+      "elapsed_seconds": 9.75,
+      "source_sha256": "a2f29f779a19191630d118c5d851fa475e3d0151d55793a0867feab50d4ba0ee",
+      "log_sha256": "6c52fa36e53380073c11650a68b39e2346410175cf392123a7f53ff6e324216d",
+      "warnings": 0,
+      "olean_sha256": "bc93690377b223a58ad87e88ac61f791cb46e583f07b52af13496fe835627b0f"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SharpCorollaries",
+      "exit_code": 0,
+      "elapsed_seconds": 3.765,
+      "source_sha256": "22bc1409177624df85d5fac7303790bb544b99519a967e4be7c7e6a7d7e6b2c6",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "74ad82b37a0868490ec4a78eaabd3cbaf0dbd8bd60f6d26fa0f5cc1ee41146e2"
+    },
+    {
+      "module": "SamuelAlexanderResearch.QuantitativeAvoidance",
+      "exit_code": 0,
+      "elapsed_seconds": 3.937,
+      "source_sha256": "d7483dafa920f71e78eabf6199bd5a50862b8d6b6f8abb3a30f900f43bf71bae",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "894e29f68ccb7941ff31b2374bc1aa4cf4bd006a3a90cb73b8191eb888680d5b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FiniteEditStability",
+      "exit_code": 0,
+      "elapsed_seconds": 5.859,
+      "source_sha256": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
+      "log_sha256": "3ea72085983e4fab005546d7b36567d74037abaafef44553b196fd8f6aa38d26",
+      "warnings": 0,
+      "olean_sha256": "8b077b2a3d7c9d587e92004a02e2bd4610b8f0943f143acfcede6be94b08b36b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PhaseShift",
+      "exit_code": 0,
+      "elapsed_seconds": 4.844,
+      "source_sha256": "504c71e130463ef9f2dcac11c77917aa204f42995ee23b722a7db439c7ea8be7",
+      "log_sha256": "663fdeeec77fcf05e78e59b44d907a3f9de097779d541190f140ba40970aed91",
+      "warnings": 0,
+      "olean_sha256": "545640c855cfe899e5d3c4bc551c086d0ea35bec1198dbd0eda31c910b855cdb"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PopulationCounting",
+      "exit_code": 0,
+      "elapsed_seconds": 5.172,
+      "source_sha256": "5545bc9fb9ae97f48cd1075a7df2e12087fe53aafd35f5b141cdea55540ad627",
+      "log_sha256": "8845180194381846ee6818a7213158ec03a71b9bf35aa54d4d8d559bd35227f9",
+      "warnings": 0,
+      "olean_sha256": "784c553668e7099215229f848da2c9a2aa602f9cd9f84ff1ceb7f4769bef7185"
+    },
+    {
+      "module": "SamuelAlexanderResearch.InfiniteConservation",
+      "exit_code": 0,
+      "elapsed_seconds": 5.625,
+      "source_sha256": "55b11eaa840f25500428fb41652ca91994019e8d1300c8df15c978ac46698ee5",
+      "log_sha256": "b57f3d219e3f928c611bf85fcc72fc1a1396122c16ff728fe299c0f5d0e0160e",
+      "warnings": 0,
+      "olean_sha256": "b4f80285886b517ff9f4d788ed05ff980f3541d421c23a89c6199b806e7eb3d7"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesCones",
+      "exit_code": 0,
+      "elapsed_seconds": 3.453,
+      "source_sha256": "0bf0fb9bc742b1b1260e08fd58adc17d3dab65d778bc1578736f1548a7c37df4",
+      "log_sha256": "1e2022cebb5dbef85ffbc521a8c6077bf984db13b5fea2380b9ebed430ba96fd",
+      "warnings": 0,
+      "olean_sha256": "fd08ba16efed9638f39c8f7e263e5aa43b70cbddaee63179ddbc2f066f378918"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesRootCriterion",
+      "exit_code": 0,
+      "elapsed_seconds": 3.234,
+      "source_sha256": "c6a151b5909bbf0238dc4ac7879fc518d91dd14b4fb3847952dec0fb65b3f26f",
+      "log_sha256": "4c7fe11381f0cc77e446b9e1bc4d4d5419a37f08421aa82cf123c0e666c29026",
+      "warnings": 0,
+      "olean_sha256": "8697991449612900444d7c499138eb2797edfaacd34b0a2c0a86bb3b9cf82262"
+    },
+    {
+      "module": "SamuelAlexanderResearch.GeneralRootObstruction",
+      "exit_code": 0,
+      "elapsed_seconds": 3.265,
+      "source_sha256": "e759c8494d27cfc55656f6e902ff094fbd6dd1e33246c8e84d5689eb8a1a3170",
+      "log_sha256": "88b9b101c8e0622155ac073393d5dcec1c741fea402d973406b86ba4f1253c13",
+      "warnings": 0,
+      "olean_sha256": "2aa8f96613da9327c01e746ba60d658cee979b0e7e73c139f0dc2d7c45e0ca19"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PopulationReindex",
+      "exit_code": 0,
+      "elapsed_seconds": 3.531,
+      "source_sha256": "815951d97e90f9da0aa83cb0acd8683ffb1aa3460930b7eca7fb522e986ae666",
+      "log_sha256": "efcd9ca0b5430ae370a5649f0371db6538a446e1548797e4c6772196e8d7f127",
+      "warnings": 0,
+      "olean_sha256": "a99526be11d823ab949bc34d9d6fb24611a2e6855c7365ad2cd7ece5526da740"
+    },
+    {
+      "module": "RealBridges",
+      "exit_code": 0,
+      "elapsed_seconds": 38.75,
+      "source_sha256": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "6800d65789afb5901c74ae824c68d402eb055284c3bab6d90c49cb33c4b62996"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestralRestriction",
+      "exit_code": 0,
+      "elapsed_seconds": 3.14,
+      "source_sha256": "9a8c8f611ccac15ddd737188bf8f5a65057d01befa52c597f2c3c7508fdd8ac1",
+      "log_sha256": "94481b329393da3fbe67dae8b2aa84672f7fb30176e95db275a860e1ca2badfd",
+      "warnings": 0,
+      "olean_sha256": "b2a713e6677989893c0e491255fea006cd8b2b89c42fe1f4a0325005bdc9f904"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestryContraction",
+      "exit_code": 0,
+      "elapsed_seconds": 2.859,
+      "source_sha256": "06a094722d166aabaa1d4cfd3a4bf38480a1e05b590b14b3bd2bcd7f72a06068",
+      "log_sha256": "b470f0b865bdda2b435fc77161b43d10184104735f8cc9b9614c5ac3e2baf1d9",
+      "warnings": 0,
+      "olean_sha256": "96807019c62be3875bb1e60255c7e103cb29f22a5efd39b946c510d0191d7fe8"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesGlobalIAP",
+      "exit_code": 0,
+      "elapsed_seconds": 3.422,
+      "source_sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+      "log_sha256": "56e51a59081dc89ed2c65356a7785fe1b63e583620c8e7a74b9ca209560e6e99",
+      "warnings": 0,
+      "olean_sha256": "70ec9f31b111d3be31d3b9def89ce11e4cccec411635b68c5899b8e86c70c136"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FiniteHistoryCompletion",
+      "exit_code": 0,
+      "elapsed_seconds": 4.328,
+      "source_sha256": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
+      "log_sha256": "dd26a09dca18c1e1a385c3a138fbfa32ef908894129a17e5414ff0c77b80f187",
+      "warnings": 0,
+      "olean_sha256": "ccf355a6b102188796670e1b95fce344158b06fb8fd916391fb71984fd7e6aa6"
+    },
+    {
+      "module": "WongAlexander",
+      "exit_code": 0,
+      "elapsed_seconds": 13.203,
+      "source_sha256": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
+      "log_sha256": "66798d707d273006ca7f84f10702deabc0d7bce3adbb7f6ffbf3c492d777016b",
+      "warnings": 0,
+      "olean_sha256": "2d3e6f33bd8ae45ed21c447ec63fe0d049e54195197b810b2eb2a8a973cd46b1"
+    },
+    {
+      "module": "WongIntervalNormalization",
+      "exit_code": 0,
+      "elapsed_seconds": 13.125,
+      "source_sha256": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f",
+      "log_sha256": "8fc6589981cec30da10a734294cde15960044c2a949ad6a9dc400c112e2d66d3",
+      "warnings": 7,
+      "olean_sha256": "938aa043c8f6723166b4b7d7c800eef0cb09613a0c363e3d3b56d2736c75cc72"
+    },
+    {
+      "module": "WongSimplification",
+      "exit_code": 0,
+      "elapsed_seconds": 13.047,
+      "source_sha256": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab",
+      "log_sha256": "229f76c9d557bd16156d088c6dd651f81053324b8bff1f5b0d3f2b7d83664526",
+      "warnings": 1,
+      "olean_sha256": "07f8f14f25f974a0568cfcb4b418643ceb8fb41eceb35bc5f0e6a68333005f85"
+    },
+    {
+      "module": "WongMRCATruncation",
+      "exit_code": 0,
+      "elapsed_seconds": 13.704,
+      "source_sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+      "log_sha256": "25f50aecb920633efc6ff794b188b2c8db8919f4379a9df4fac4ba939a8ae6bc",
+      "warnings": 0,
+      "olean_sha256": "918170797c8e7f9f6e1046f3d45404770caece6d2842fe67ef06ffa094f8c725"
+    },
+    {
+      "module": "WongIntervalCanonicalization",
+      "exit_code": 0,
+      "elapsed_seconds": 14.781,
+      "source_sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+      "log_sha256": "c7e902f7ce3bba1136fcb18444a90b9dea6bfd542ff970e7b35b640511cd0f32",
+      "warnings": 1,
+      "olean_sha256": "83ab0d02498862db40dc0f181178ee00e4616c67f1edded8de427545be0db4cf"
+    },
+    {
+      "module": "WongLocalSimplification",
+      "exit_code": 0,
+      "elapsed_seconds": 13.516,
+      "source_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "682313607526de61e9c16297c29bb178cee36130eb9681347c5566a7d4deb290"
+    },
+    {
+      "module": "WongSimplificationNormalForm",
+      "exit_code": 0,
+      "elapsed_seconds": 13.281,
+      "source_sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
+      "log_sha256": "daad4316918268d590615e3276278c112e63304088ce07d6d16f1e24b6e06981",
+      "warnings": 0,
+      "olean_sha256": "9e4a61f4ed54ff0d9b468f3b14503859345f37c2b8b6ebbe99356d57757dc559"
+    },
+    {
+      "module": "WongEventEncoding",
+      "exit_code": 0,
+      "elapsed_seconds": 12.25,
+      "source_sha256": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87",
+      "log_sha256": "8df4fbd734b1220b944aa6f8b8b98778f25d599aaeef34b2e27fa6a8764d31f8",
+      "warnings": 0,
+      "olean_sha256": "6fd4a5f6b1edadc96688689b3ac40caaaf96b442b3efe9b2e974d968ea528f2a"
+    },
+    {
+      "module": "WongTimedHistory",
+      "exit_code": 0,
+      "elapsed_seconds": 15.11,
+      "source_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "a1a0321ee9ffd229e941ce66002bd5cf07afad939653fe89d4798cffb0cf3bb1"
+    },
+    {
+      "module": "WongSampleTracing",
+      "exit_code": 0,
+      "elapsed_seconds": 11.046,
+      "source_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "588154b02f64572695b4f75beb7a5e10dfa4a705ebe9db48ee6d79ffe6401898"
+    },
+    {
+      "module": "WongRecordTracing",
+      "exit_code": 0,
+      "elapsed_seconds": 10.407,
+      "source_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "1d36ea35416a431ce07a3e6007d474ba1a6d35755c5b39e34067a033a90984d2"
+    },
+    {
+      "module": "WongMemoizedTracing",
+      "exit_code": 0,
+      "elapsed_seconds": 12.063,
+      "source_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "0812f3dab138e7f3d993feab4496aa08e27ec086d21fb2bf8f27de02d818e678"
+    },
+    {
+      "module": "WongEventDecoding",
+      "exit_code": 0,
+      "elapsed_seconds": 11.172,
+      "source_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "69d770a9cbf9d909ee19ba45fa38e3e0cb24a1507706fea39fd9324a2865a879"
+    },
+    {
+      "module": "FounderWindow",
+      "exit_code": 0,
+      "elapsed_seconds": 2.859,
+      "source_sha256": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+      "log_sha256": "a67f1384fccfd772c35815138224b1ef293a065dcb04719baf58804a8718cc1f",
+      "warnings": 0,
+      "olean_sha256": "ad70d2a43279eddc115722f73f1d4a9011cb3165e5b6cfd2bc99765642ce5e14"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FixedGenderLift",
+      "exit_code": 0,
+      "elapsed_seconds": 4.594,
+      "source_sha256": "2805ab8ef85a018b2276aa137118f0e64990a6358349e7a1b59006d24a50ba7a",
+      "log_sha256": "3f2d8cd27b5514bc444d9fc7253400c025c0a74e11799d2c2aa437c4a5a5a9b7",
+      "warnings": 0,
+      "olean_sha256": "b2791c1a1ad588dc0534d547e7a5cc94b86b33b3060f653e3aff3c0baa70a85b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FixedGenderReindex",
+      "exit_code": 0,
+      "elapsed_seconds": 3.25,
+      "source_sha256": "93953e4e77f092692bc254b52e4d3082459b700eec5a4259c1560ac0daddd3e9",
+      "log_sha256": "748876ab5304ccc63c22a8e17af6b9766c799f8cbfc8c947dab6c8eb51d7da88",
+      "warnings": 0,
+      "olean_sha256": "69992ced325f482de6401f493fbeb6b6188eb669b7632eb6d12f91e1574fe11f"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ProductiveCore",
+      "exit_code": 0,
+      "elapsed_seconds": 4.468,
+      "source_sha256": "0e83a9bc0c2d870553a1243558a580f49dfc6def79af03afcc8c3b6d4b9568a1",
+      "log_sha256": "60b73b11d62d932f73a07f21723b4bb5ebfdc1b930ec2d72e9bf56c90f03925c",
+      "warnings": 0,
+      "olean_sha256": "4a81b11e26cf79282b833f4dd69c232e8d4799482ce6a702c2c0499da31a1e34"
+    },
+    {
+      "module": "DirectedIAP",
+      "exit_code": 0,
+      "elapsed_seconds": 3.141,
+      "source_sha256": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0",
+      "log_sha256": "1ec1356324f09390d3d3dbc541448fc45cba5555f60eb5108ddb0487ac706c04",
+      "warnings": 0,
+      "olean_sha256": "d05f50561467ee4b77a662927254b1d0e438e0e247c781b94d5acc50c8e86bee"
+    },
+    {
+      "module": "SeedIntersections",
+      "exit_code": 0,
+      "elapsed_seconds": 2.812,
+      "source_sha256": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e",
+      "log_sha256": "351549836b68f9e9733b6d8169352cda9aff1d327835229f37e6ef618303fc23",
+      "warnings": 0,
+      "olean_sha256": "fa52ae2b95cd24b0b846f3185e780b07af719183ff358ed457a7451369a74df5"
+    },
+    {
+      "module": "RealFounderWindow",
+      "exit_code": 0,
+      "elapsed_seconds": 12.0,
+      "source_sha256": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9",
+      "log_sha256": "7d4d112178a041dcecaf11b3a02b8c2edacc73e811e60a60561740f5c28d336a",
+      "warnings": 0,
+      "olean_sha256": "16112a83068abb6c77762b7cc49bab552b1f8516e6f7069d17a3f8268a06e439"
+    },
+    {
+      "module": "FounderMaximal",
+      "exit_code": 0,
+      "elapsed_seconds": 11.859,
+      "source_sha256": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4",
+      "log_sha256": "903b5ce3360c53f92d51d650b6d6baf48922a7f8d5fff01c39178db8a2d2ded7",
+      "warnings": 1,
+      "olean_sha256": "6c8581c57758b27d41db941e08c421e14ddb751f6c689fcb5b9674891a4d5fe8"
+    },
+    {
+      "module": "SpeciesReindex",
+      "exit_code": 0,
+      "elapsed_seconds": 11.562,
+      "source_sha256": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd",
+      "log_sha256": "2e8d9245be30135e8c47497aa016399242c400449709661642e962571888acaf",
+      "warnings": 4,
+      "olean_sha256": "6c64b9f556ec8573ac32020623b48efe1571f8ab02779353436b8d5688f2c2ab"
+    },
+    {
+      "module": "SpeciesSeed",
+      "exit_code": 0,
+      "elapsed_seconds": 9.25,
+      "source_sha256": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb",
+      "log_sha256": "c7c9a5bc4d5ebec9bed52e54ecd61d0bf83e8f2ee001f2493ba27eb6d2accee0",
+      "warnings": 1,
+      "olean_sha256": "4601b13567f3d56f3585f04a14d91e9d6b7a52f2ea51d034ba0319380faf3376"
+    },
+    {
+      "module": "RealSpeciesTheorem",
+      "exit_code": 0,
+      "elapsed_seconds": 11.437,
+      "source_sha256": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540",
+      "log_sha256": "d467497270b64f3e9531c4e38ee82803052793a3eaabcfddfbfc5e67b8714acb",
+      "warnings": 0,
+      "olean_sha256": "def54bdcd8231a3437358ee2f884e1948c66995d7feec1d6a171574aaaf8243d"
+    },
+    {
+      "module": "FiniteGenomeIdentifiability",
+      "exit_code": 0,
+      "elapsed_seconds": 13.297,
+      "source_sha256": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
+      "log_sha256": "48d691e17a727010a562404f8c7f32f97f1ab742ee800c52ec111406488bf5ae",
+      "warnings": 0,
+      "olean_sha256": "5045ae56e80c59e6d81d5981623ee40fb6e0297628b4d9613827c456a39b2c4e"
+    },
+    {
+      "module": "WongDiamond",
+      "exit_code": 0,
+      "elapsed_seconds": 12.063,
+      "source_sha256": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd",
+      "log_sha256": "2ab8385036e7a97e1d2f96c3117961a2c4453a7fca663878feb029af4874a7ad",
+      "warnings": 1,
+      "olean_sha256": "0d278f377be6c0d90843f61482e4695c89b492ef5cf4e98db11e9a973a999757"
+    },
+    {
+      "module": "WongLocalArity",
+      "exit_code": 0,
+      "elapsed_seconds": 10.969,
+      "source_sha256": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
+      "log_sha256": "5a54ccc5c2a692111b8ca8e869b5c26c4534410241e5dd4eb763fb8b72ebb9c8",
+      "warnings": 0,
+      "olean_sha256": "109e303445f43ac0946c7991e9588b262c9acababf4d997318884179993067e2"
+    },
+    {
+      "module": "WongExamples",
+      "exit_code": 0,
+      "elapsed_seconds": 11.625,
+      "source_sha256": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59",
+      "log_sha256": "23882210187a2304bf4c5d135345f4b2f85eb96b0f08ae8c3bcca43f6bde4d80",
+      "warnings": 0,
+      "olean_sha256": "ae65e666ca8d8c0ac9221aa904f7bddfe6a9e6762b4ead8223152cf740e51163"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FinitePhasePaths",
+      "exit_code": 0,
+      "elapsed_seconds": 3.047,
+      "source_sha256": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf",
+      "log_sha256": "560b464ba380ae424ef1ed20ab8afb2842b99f38e7588e83904e06ad89a83f70",
+      "warnings": 0,
+      "olean_sha256": "3e1bbbad59cd0fc30009d2cf693ce70a5bc38034bc4b1bedf7dd01583efdd44e"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PortDynamics",
+      "exit_code": 0,
+      "elapsed_seconds": 5.485,
+      "source_sha256": "445c6ac224b99c66199a157b8895161892954d1584053d2d3440b6f7e4fecd7d",
+      "log_sha256": "2e5b526fe7049fa57f77550c0d4212ea09c561823ebc0f07cbfc8471d9abce73",
+      "warnings": 0,
+      "olean_sha256": "4f7a02f743ebf5a5b89ef5d9b5a2d4c0fdff34da22ca477ad99ccacdcd3f12d8"
+    },
+    {
+      "module": "PortEncoding",
+      "exit_code": 0,
+      "elapsed_seconds": 13.938,
+      "source_sha256": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4",
+      "log_sha256": "f2e7c40a89ad48ccb81431ef75fea863419c87746d518a518fb485b287bbc492",
+      "warnings": 0,
+      "olean_sha256": "3f0a81e3143ce78d0da6af782d66b17a2c5b92b859d50a862dd5d78ad4e7496d"
+    },
+    {
+      "module": "SamuelAlexanderResearch.StatefulCA",
+      "exit_code": 0,
+      "elapsed_seconds": 4.359,
+      "source_sha256": "f02f2b808a0c15d85b26c55559b54621599e89a04c44957679612f24bd4c9bba",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0,
+      "olean_sha256": "128f29215e0e1e3c4ecbaec88d6c9f8eca3d0c0fcb26a09e36cd0a04e93ecd37"
+    },
+    {
+      "module": "StatefulCAReal",
+      "exit_code": 0,
+      "elapsed_seconds": 14.531,
+      "source_sha256": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7",
+      "log_sha256": "96e398f62e949b41ee24cc87703c83ef905266ff7417964a56f858bfdb1dc0b2",
+      "warnings": 0,
+      "olean_sha256": "deaebc3c2ebed5c6e285b91da2d8342a8397b884c86a99b0cfb77e76c9301806"
+    }
+  ],
+  "aggregate_log_sha256": "1187e26d2f67f032e7e838d8d2e227267ccc801df2bb2956a21732ca445139fd",
+  "compiler_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "script_sha256": "a9435315bb0ba370b88099c6a1ed2a69d416b7daa03b4974f6e17bfcba63b464",
+  "aggregate_exit_code": 0,
+  "aggregate_warnings": 0,
+  "hosted_ci_status": "NOT_RUN_FOR_THIS_STAGED_RELEASE"
+}

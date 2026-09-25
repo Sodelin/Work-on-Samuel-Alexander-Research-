@@ -97,3 +97,12 @@ lean_lib WongIntervalCanonicalization
 
 @[default_target]
 lean_lib WongSimplificationNormalForm
+
+@[default_target]
+lean_lib WongBigARGDrift
+
+@[default_target]
+lean_lib WongCountChain
+
+@[default_target]
+lean_lib WongBigARGAbsorption

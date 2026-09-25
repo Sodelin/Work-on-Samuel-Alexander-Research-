@@ -1,0 +1,57 @@
+{
+  "status": "DEPENDENCY_SETUP_FAILURE_NO_COMBINED_AUDIT",
+  "started_utc": "2026-09-25T16:29:09.618284+00:00",
+  "script_sha256": "f83759a57f3c053bfa76b6830b0e23b1bdc4ea853306e71b72cf6936561863d8",
+  "baseline_receipt_sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821",
+  "baseline_scope": 274,
+  "reused_local_modules_checked": 61,
+  "new_modules_completed": [
+    {
+      "module": "WongBigARGDrift",
+      "source_sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+      "olean_sha256": "3c6bef021dd4f7b9e1f0abbb8f7f9ec49b0202c82210eec34b470469c17d211f",
+      "log_sha256": "a4223cd388fbb79adaafe5f49523be91be03839e8fdabb30584d7297e274757a",
+      "exit_code": 0,
+      "warnings": 2,
+      "elapsed_seconds": 81.891,
+      "endpoints": [
+        "WongBigARGDrift.weighted_gap",
+        "WongBigARGDrift.potential_drift"
+      ],
+      "endpoint_axioms": {
+        "WongBigARGDrift.weighted_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGDrift.potential_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\wong-completion\\integration\\resumption\\staging\\probability-cycle\\publish\\real",
+        "-j1",
+        "-M4096",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\wong-completion\\integration\\resumption\\staging\\probability-cycle\\.lake\\build\\lib\\lean\\WongBigARGDrift.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\wong-completion\\integration\\resumption\\staging\\probability-cycle\\publish\\real\\WongBigARGDrift.lean"
+      ]
+    }
+  ],
+  "failed_module": "WongCountChain",
+  "failure_stage": "import load before proof checking",
+  "failure_log": "logs/WongCountChain.txt",
+  "failure_log_sha256": "2abd0f8c79647af14fb127a2c7fa9887856630a4e189ff270bbb24c9fbbfc731",
+  "remaining_modules_not_run": [
+    "WongBigARGAbsorption"
+  ],
+  "aggregate_not_run": true,
+  "aggregate_endpoint_count": null,
+  "donor_cache_used_in_this_attempt": false,
+  "donor_provenance": "Historical worker used J:/CodexTools/extinction-dependency-cache. Availability of2714 source-closure objects was checked; no independent acquisition-to-source pin receipt was found. This is not dependency authentication.",
+  "compiler_released": true,
+  "next_gate": "Fresh pinned hosted CI must build the registered real library and pass the unchanged strict293 endpoint audit."
+}

@@ -1,0 +1,219 @@
+{
+  "manifest": {
+    "schema_version": 1,
+    "status": "CANDIDATE_PENDING_PINNED_HOSTED_293",
+    "created_utc": "2026-09-25T16:48:36.049971+00:00",
+    "baseline_commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
+    "baseline_hosted_run": 36158710859,
+    "baseline_verified_real_endpoints": 274,
+    "proposed_real_endpoint_count": 293,
+    "new_selected_endpoints": 19,
+    "source_manifest_sha256": "c99b8403e198a51e29b20ef3af671cfef49fcedd94fec929d20f55c4e741cdf4",
+    "review_manifest_sha256": "7a200082f5cebd89b49eaaa49b754e9c02ed47931a3fa8ec1fa14e6e59f2fc80",
+    "no_combined_293_receipt": true,
+    "excluded_files": [
+      "README.md",
+      "research/wong/completion/README.md",
+      "RESEARCH-PROGRESS.md",
+      ".github/workflows/verify.yml",
+      "checks/audit_lean.py",
+      "checks/audit_research_artifacts.py",
+      "verification/real-audit.json"
+    ],
+    "workflow_patch": {
+      "path": "CACHE-COMMAND-DELTA.patch",
+      "sha256": "5c0812641d62e49ddcfd350034e934bd0aec710fe368488682a2c67b1c98b058",
+      "observed_compatible_commit": "024ef6f25ed168e36a26d2a8c855d8bd7825b336",
+      "baseline_workflow_sha256": "653f90a8fd84fb09df120256c97c7aacb3a819f3e0a71ebb4263660c4eea9285",
+      "additions": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+        "Mathlib.Probability.Kernel.IonescuTulcea.Traj",
+        "Mathlib.Topology.Algebra.InfiniteSum.ENNReal"
+      ]
+    },
+    "publish_files": [
+      {
+        "path": "real/lakefile.lean",
+        "sha256": "0b0e7ab078478f6a6e991dfe4fdee45463484d06549bd56345641fc4f1e7dcd3",
+        "bytes": 1736
+      },
+      {
+        "path": "real/RealAudit.lean",
+        "sha256": "0531f9cce91a47c99415dac12b16ec7548295920b43047cc1fa3e9d950736012",
+        "bytes": 17644
+      },
+      {
+        "path": "real/WongBigARGAbsorption.lean",
+        "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+        "bytes": 6090
+      },
+      {
+        "path": "real/WongBigARGDrift.lean",
+        "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+        "bytes": 4767
+      },
+      {
+        "path": "real/WongCountChain.lean",
+        "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+        "bytes": 12247
+      },
+      {
+        "path": "research/wong/completion/coverage.json",
+        "sha256": "18c3567e9b4d5c46b14d98a5410248665ab4007e1651ded73bfd70b800dd52a6",
+        "bytes": 176195
+      },
+      {
+        "path": "research/wong/completion/COVERAGE.md",
+        "sha256": "661e7dfcec2e9911c9f0210b0347adc6d9bd50e4ae8e40464778115fd711a3f9",
+        "bytes": 13166
+      },
+      {
+        "path": "research/wong/completion/CURRENT.md",
+        "sha256": "98cfaff5dc4b483462cd9a0387a995a593fa0810879c3cbed5110ffd1ede3c52",
+        "bytes": 7957
+      },
+      {
+        "path": "research/wong/completion/probability/ADVERSARIAL-REVIEW.md",
+        "sha256": "e391e364d5ad4b7747bb381e5d1a951cdd3b0f5d8af306a74017f5d5f2771742",
+        "bytes": 5974
+      },
+      {
+        "path": "research/wong/completion/probability/CANDIDATE-STATUS.json",
+        "sha256": "dc1d1ef80e442c2b715e82e9858489a5e953d72ea940237f4b84f22dc6b22792",
+        "bytes": 3610
+      },
+      {
+        "path": "research/wong/completion/probability/CANDIDATE-STATUS.md",
+        "sha256": "60de18088b4d8164d3a6fe3519921d51b465cb77ae27cff0ac6d21584025887e",
+        "bytes": 3879
+      },
+      {
+        "path": "research/wong/completion/probability/evidence/baseline-real-audit-274.json",
+        "sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821",
+        "bytes": 68555
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/COMPILER-HANDOFF.md",
+        "sha256": "40c21f5861049f3c3d77d79aeb6fc485d98415c860a9fc9f330164280d758ade",
+        "bytes": 3140
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/drift-validation.txt",
+        "sha256": "c1ef4802d8e79f54e0c26687ee4aa9414375c16aeeb9f86d3c66506e5299155e",
+        "bytes": 664
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/WongBigARGAbsorption.compile.log",
+        "sha256": "76381e63971cf68d2d473c9de9974703f4b47be0d0397a0984a2fb440b7fc3f1",
+        "bytes": 1287
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/WongBigARGAbsorption.lean",
+        "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+        "bytes": 6090
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/WongBigARGDrift.lean",
+        "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+        "bytes": 4767
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/WongCountChain.compile.log",
+        "sha256": "7666a3e5d45d58a5f4ad09ab66b972addf1bda9316ce012401a6085aa91aeddd",
+        "bytes": 2316
+      },
+      {
+        "path": "research/wong/completion/probability/inputs/WongCountChain.lean",
+        "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+        "bytes": 12247
+      },
+      {
+        "path": "research/wong/completion/probability/local-attempt/ATTEMPT-STATUS.json",
+        "sha256": "b16cfb31b7f7f797cc6ccd9c0c8084129a065512fb86c4defbb5bb5ce4126768",
+        "bytes": 2654
+      },
+      {
+        "path": "research/wong/completion/probability/local-attempt/audit_293.py",
+        "sha256": "f83759a57f3c053bfa76b6830b0e23b1bdc4ea853306e71b72cf6936561863d8",
+        "bytes": 6730
+      },
+      {
+        "path": "research/wong/completion/probability/local-attempt/build-progress.json",
+        "sha256": "b5a8f12f01b37945c739f8dfab3dcecb68dcd70f644a92fa522b2cd920f72075",
+        "bytes": 1527
+      },
+      {
+        "path": "research/wong/completion/probability/local-attempt/logs/WongBigARGDrift.txt",
+        "sha256": "a4223cd388fbb79adaafe5f49523be91be03839e8fdabb30584d7297e274757a",
+        "bytes": 734
+      },
+      {
+        "path": "research/wong/completion/probability/local-attempt/logs/WongCountChain.txt",
+        "sha256": "2abd0f8c79647af14fb127a2c7fa9887856630a4e189ff270bbb24c9fbbfc731",
+        "bytes": 404
+      },
+      {
+        "path": "research/wong/completion/probability/local-attempt/shared-cache-availability.json",
+        "sha256": "b17e1ab4ca4689ef726f70630798f51f65c2a371a5375879de8dd0c096c0dd31",
+        "bytes": 1216
+      },
+      {
+        "path": "research/wong/completion/probability/PROBABILITY-STATEMENT-BRIEF.md",
+        "sha256": "756d9b60b68ab049d51c112e1c00e711977b89a028846dc73e181eef72f78749",
+        "bytes": 5041
+      },
+      {
+        "path": "research/wong/completion/probability/REPRODUCE.md",
+        "sha256": "5c9cfca9f07c650bd86f078f7567fc9aebf5f083d3a2fd1d7909918501aa3f99",
+        "bytes": 4337
+      },
+      {
+        "path": "research/wong/completion/probability/REQUIRED-CACHE-IMPORTS.json",
+        "sha256": "ba2466b6d9e4ae9767ff7db5a8cf581ad36b1039635492c2f797f037242cb0e8",
+        "bytes": 879
+      },
+      {
+        "path": "research/wong/completion/probability/RESULT.md",
+        "sha256": "bed24797aa68a893f2407944187d19179a75fc362de1fda25692739ac9ca3b9f",
+        "bytes": 3383
+      },
+      {
+        "path": "research/wong/completion/probability/REVIEW-MANIFEST.json",
+        "sha256": "7a200082f5cebd89b49eaaa49b754e9c02ed47931a3fa8ec1fa14e6e59f2fc80",
+        "bytes": 1721
+      },
+      {
+        "path": "research/wong/completion/probability/selected-statements.txt",
+        "sha256": "8d55846d84a31ef8b57b6aef1118fa90a0b394be9a176004a99ed0636acf9e4c",
+        "bytes": 4542
+      },
+      {
+        "path": "research/wong/completion/probability/SOURCE-CORRESPONDENCE.md",
+        "sha256": "4730c3aa5de07af517ffe8c81ad2d6e3647d25b67a6f81bc549d486f0442fc37",
+        "bytes": 8388
+      },
+      {
+        "path": "research/wong/completion/probability/SOURCE-MANIFEST.json",
+        "sha256": "c99b8403e198a51e29b20ef3af671cfef49fcedd94fec929d20f55c4e741cdf4",
+        "bytes": 5443
+      }
+    ],
+    "local_guides": [
+      {
+        "path": "HANDOFF-CANDIDATE.md",
+        "sha256": "f3b914f5f8164c1654b02f12054e84e573b1f7b0ed2edbb9e79512ce22adc74e"
+      },
+      {
+        "path": "PROPOSED-INTEGRATION.json",
+        "sha256": "4f2b76920ca5ec0047fa3e9c928925949fc114059c46d7395624a02c006a836f"
+      },
+      {
+        "path": "REQUIRED-CACHE-IMPORTS.json",
+        "sha256": "ba2466b6d9e4ae9767ff7db5a8cf581ad36b1039635492c2f797f037242cb0e8"
+      }
+    ],
+    "admission_condition": "Hosted run for the exact published candidate commit passes all existing checks, including exact293 unique real endpoints using the pinned Mathlib source-keyed cache. Record commit, run, conclusion and any resulting audit receipt separately."
+  },
+  "sha256": "a2703bc56eec8c5beb0f898aedcb7574a417123b7bc53a837e45265116582bc4"
+}

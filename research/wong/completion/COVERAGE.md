@@ -1,11 +1,12 @@
-# Wong source coverage: current staged edition
+# Wong source coverage: probability integration stage
 
-**Whole-paper completion is not claimed.** All 52 original claim families and their source locators are preserved.
-The public baseline has 209 real-development endpoints. This stage adds 65: the 274-endpoint local combined audit and independent statement review passed. Hosted CI remains pending for this staged release.
+Read the [candidate status and provenance qualification](probability/CANDIDATE-STATUS.md) before using the historical local logs as verification evidence.
 
-The theorem count includes other research already in the real development and is not a fraction of this paper.
+All 52 claim families are preserved. The deterministic 274-endpoint release passed hosted verification at `46aac52e214311fb2c2230b1b4fe37c42ef9e1a9`. This separate stage proposes 19 additional endpoints, for 293; its combined audit and hosted CI are pending.
 
-| ID | Source claim family | Current status | Remaining obligation |
+Endpoint totals include other research in the real library and are not a fraction of the paper. B04 and B05 remain partial after the count-process result.
+
+| ID | Source claim family | Status | Remaining obligation |
 |---|---|---|---|
 | M01 | Finite interval gARG | checked scoped result | No further gap for the permissive foundation. Keep source child-first tuples distinct from Lean parent-to-child edges. |
 | M02 | Genome bounds, dates, owners and metadata | partial | Add bounded-genome presentation for formulas using L and a concrete cell/pedigree owner map satisfying compatibility; preserve node/sample identities. |
@@ -26,8 +27,8 @@ The theorem count includes other research already in the real development and is
 | B01 | Little-ARG lineage state | open | Define ordered segment/sample-set state and retired coordinates; prove initialization, sample-partition and mass invariants. |
 | B02 | Effective links and splitting | open | Enumerate effective links and prove count formula; uniform split preserves exact ancestral segments and counts. |
 | B03 | Merge and retire fully-coalesced material | open | Prove canonical overlay, additive overlap, preserved nonoverlap and correct retirement/empty-lineage deletion. |
-| B04 | Big-ARG generator and event recording | open | Construct continuous-time jump process or exponential-holding sampler and prove finite event-graph prefix validity. |
-| B05 | Big nonexplosion and almost-sure absorption | open | Prove nonexplosion and almost-sure finite hitting time of 1; establish integrability needed for expectations. |
+| B04 | Big-ARG generator and event recording | partial | Construct rate-dependent exponential holding times and the marked spatial event process; prove lineage/pair/breakpoint selection, graph-prefix validity and the count projection. A discrete count kernel is not the full source generator or event recorder. |
+| B05 | Big nonexplosion and almost-sure absorption | partial | Construct the joint holding-time/count law and continuous-time process, prove finite physical stopping time/nonexplosion, and connect the count law to a marked spatial ARG. Derive any claimed exact expectation or asymptotic separately; sum_transient_le supplies a coarse drift-based probability-sum bound. |
 | B06 | Little-ARG absorption | open | Prove nonexplosion and almost-sure retirement of all coordinates, directly or via a justified coupling. |
 | B07 | Big exponential event growth | source clarification required | Resolve expectation, event type, asymptotic regime and rate convention. Literal rates suggest a factor-of-two exponential mismatch; prove the correctly matched result. |
 | B08 | Little quadratic event growth | source clarification required | Find precise bound, expectation and discrete/continuous regime; state dependence on n,m,rho and event types; prove it. |
@@ -60,6 +61,4 @@ The theorem count includes other research already in the real development and is
 | I02 | Seven-recombination parsimony optimum | source clarification required | Recover exact data/model; certify a compatible 7-event history and rule out all histories with fewer events using a sound certificate or imported theorem. |
 | I03 | Figure 4 metrics and persistent clade claims | empirical reproduction open | Compute all named metrics from pinned outputs: shared breakpoints, parent counts, coalescent spans, branch order, persistent nodes/edges and named clade across full span. |
 
-The machine-readable [coverage.json](coverage.json) preserves source pages, citations, assumptions, current evidence and historical contracts.
-The [public 209-endpoint table](history/COVERAGE-public-209.md) is historical and retained for comparison.
-Current evidence and release boundaries are summarized in [CURRENT.md](CURRENT.md).
+The [machine-readable ledger](coverage.json) preserves assumptions, locators and historical contracts. Read the [deterministic result](CURRENT.md) and [count-process result](probability/RESULT.md).

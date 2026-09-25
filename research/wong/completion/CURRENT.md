@@ -95,16 +95,17 @@ existing local Lean 4.33.1 pass. The Mathlib dependency is pinned at
 The interval run has one unused-section-variable linter warning, explicitly
 retained in its evidence.
 
-The existing public real-development audit has 209 selected endpoints; this
-stage proposes a **274-endpoint aggregate**. That aggregate also includes
+The deterministic release added 65 selected endpoints to the prior 209,
+yielding the hosted **274-endpoint aggregate**. That aggregate also includes
 other research already in the real library. Endpoint totals are an audit
 inventory, not a measure of the fraction of the paper proved.
 
 **Local release evidence: PASS.** A fresh isolated rebuild of all 61 imported
 local modules passed, followed by exactly 274 selected axiom reports. The
 independent statement/source review returned **PASS WITH SCOPED LIMITS**, and
-15 finite sanity and false controls passed. Hosted CI has not yet run for
-this staged release. See the [verification guide](verification/deterministic65/README.md),
+15 finite sanity and false controls passed. This deterministic release passed hosted CI at commit
+`46aac52e214311fb2c2230b1b4fe37c42ef9e1a9` after a separate documentation
+format transform; the proof bytes are unchanged. See the [verification guide](verification/deterministic65/README.md),
 [exact aggregate receipt](verification/deterministic65/combined-real-audit.json),
 and [independent review](verification/deterministic65/SOL2-REVIEW.md). Exact
 module hashes and historical contracts are recorded in [coverage.json](coverage.json).
@@ -128,3 +129,11 @@ This result supplies a precise target for those later implementations:
 which local edges they must produce, which paths they must preserve, which
 information they intentionally remove, and what canonical interval output
 means.
+
+
+A separate [count-process candidate](probability/CANDIDATE-STATUS.md) proposes
+19 additional endpoints. Its source and statement reviews passed with scoped
+limits; pinned combined verification remains pending because the historical
+donor cache lacks an independent acquisition record and the lead retry
+encountered a missing dependency. It is a discrete jump-index result and does
+not construct continuous clocks. The deterministic theorem is unchanged.

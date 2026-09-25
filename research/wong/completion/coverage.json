@@ -14,8 +14,8 @@
   "scope": {
     "inventory": "Complete main text and Appendices A-I at claim-family level: mathematical/algorithmic assertions, examples, imported results, empirical claims and open questions.",
     "completion": "Inventory complete, whole-paper mathematical and empirical completion NOT claimed.",
-    "lane": "Staged exact-source integration; public baseline is preserved; combined and hosted verification are separate.",
-    "concurrent_work": "65 deterministic endpoints staged (24 MRCA, 31 interval, 10 normal form). Count-chain work remains a separate lane and is not counted here."
+    "lane": "Separate 19-endpoint probability publication stage, based on the hosted deterministic 274 release.",
+    "concurrent_work": "Three locally checked and independently reviewed count-process modules proposed for integration; no physical-time or spatial-process construction."
   },
   "source_review": {
     "primary_xml": "source/PMC11373519-fullText.xml",
@@ -32,6 +32,17 @@
       "path": "verification/deterministic65/SOL2-REVIEW.md",
       "sha256": "e8ef0eb926b79782fa170b630a5b1f20f944b99c423e99db7214a1457e40e898",
       "finding": "Appendix E reconstruction from sample traces needs SampleSupported to recover all original edges; full AtLocus canonicalization is a different input."
+    },
+    "probability19": {
+      "source_xml_path": "/article/body[1]/sec[11]/p[5]",
+      "mathml_ids": [
+        "IM38",
+        "IM39",
+        "IM40"
+      ],
+      "source_correspondence": "probability/SOURCE-CORRESPONDENCE.md",
+      "adversarial_review": "probability/ADVERSARIAL-REVIEW.md",
+      "scope": "Partial Appendix B count-law and jump-index result; no physical-time or expected-asymptotic completion."
     }
   },
   "baseline_receipts": [
@@ -182,8 +193,8 @@
   ],
   "status_counts": {
     "checked scoped result": 9,
-    "partial": 11,
-    "open": 15,
+    "partial": 13,
+    "open": 13,
     "source clarification required": 8,
     "empirical reproduction open": 6,
     "research agenda": 2,
@@ -841,12 +852,12 @@
       ],
       "title": "Big-ARG generator and event recording",
       "kind": "stochastic definition",
-      "status": "open",
+      "status": "partial",
       "source_claim": "At k lineages rates are choose(k,2) mergers and k*rho recombinations; stop at 1.",
-      "existing_evidence": "MathML IM38/IM39 verified; event encoding is not a probability kernel.",
-      "remaining_target": "Construct continuous-time jump process or exponential-holding sampler and prove finite event-graph prefix validity.",
-      "assumptions": "Finite rho and n; absorbing 1; explicit discrete/continuous breakpoint distribution and time units.",
-      "completion_criterion": "Well-defined kernel and valid event records.",
+      "existing_evidence": "WongCountChain constructs the actual two-outcome stopped count kernel and Ionescu-Tulcea path law. WongBigARGAbsorption identifies both singleton masses with literal split/merger rate ratios, theta=2*b/a, specializing to 2*rho for the source rates.",
+      "remaining_target": "Construct rate-dependent exponential holding times and the marked spatial event process; prove lineage/pair/breakpoint selection, graph-prefix validity and the count projection. A discrete count kernel is not the full source generator or event recorder.",
+      "assumptions": "Merger scale a>0, split scale b>=0, finite normalized theta; rate calibration applies at k>=2. Count one is stopped; zero is a totalization and positive starts almost surely avoid it.",
+      "completion_criterion": "Embedded count-kernel/rate calibration is supplied by the reviewed candidate, pending pinned combined verification; continuous-time and spatial/event-record semantics remain required.",
       "cited_reference_ids": [],
       "section_title": "The big and little ARG",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
@@ -855,7 +866,41 @@
       "pdf_pages_1based": [
         13,
         14
-      ]
+      ],
+      "public_274_contract": {
+        "status": "open",
+        "existing_evidence": "MathML IM38/IM39 verified; event encoding is not a probability kernel.",
+        "remaining_target": "Construct continuous-time jump process or exponential-holding sampler and prove finite event-graph prefix validity.",
+        "assumptions": "Finite rho and n; absorbing 1; explicit discrete/continuous breakpoint distribution and time units.",
+        "completion_criterion": "Well-defined kernel and valid event records."
+      },
+      "probability_modules": [
+        "WongBigARGDrift",
+        "WongCountChain",
+        "WongBigARGAbsorption"
+      ],
+      "probability_endpoint_evidence": [
+        "WongBigARGDrift.weighted_gap",
+        "WongBigARGDrift.potential_drift",
+        "WongCountChain.one_absorbing",
+        "WongCountChain.jump_up_mass",
+        "WongCountChain.jump_down_mass",
+        "WongCountChain.initial_lintegral",
+        "WongCountChain.step_lintegral",
+        "WongCountChain.ae_positive_counts",
+        "WongCountChain.sum_transient_le",
+        "WongCountChain.ae_finite_absorption_of_drift",
+        "WongCountChain.literal_rate_ratio",
+        "WongCountChain.literal_merger_ratio",
+        "WongBigARGAbsorption.countPotential_drift",
+        "WongBigARGAbsorption.ae_eventually_one",
+        "WongBigARGAbsorption.ae_finite_jump_absorption",
+        "WongBigARGAbsorption.normalizedRatio_value",
+        "WongBigARGAbsorption.literal_up_kernel_mass",
+        "WongBigARGAbsorption.literal_down_kernel_mass",
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+      ],
+      "verification_status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
     },
     {
       "id": "B05",
@@ -866,12 +911,12 @@
       ],
       "title": "Big nonexplosion and almost-sure absorption",
       "kind": "probability theorem",
-      "status": "open",
+      "status": "partial",
       "source_claim": "The source asserts finite-time arrival at the grand MRCA, citing quadratic merger versus linear branching.",
-      "existing_evidence": "No stochastic termination theorem; finite traversal bounds are unrelated.",
-      "remaining_target": "Prove nonexplosion and almost-sure finite hitting time of 1; establish integrability needed for expectations.",
-      "assumptions": "lambda_k=k*rho, mu_k=k(k-1)/2; finite initial k/rho; absorbing 1.",
-      "completion_criterion": "Probability theorem, not deterministic termination of every random execution.",
+      "existing_evidence": "WongBigARGAbsorption internally supplies an explicit finite all-state potential and proves almost-sure eventual one and finite jump-index absorption under the actual constructed pathLaw. The final endpoint has no assumed drift, recurrence or absorption premise.",
+      "remaining_target": "Construct the joint holding-time/count law and continuous-time process, prove finite physical stopping time/nonexplosion, and connect the count law to a marked spatial ARG. Derive any claimed exact expectation or asymptotic separately; sum_transient_le supplies a coarse drift-based probability-sum bound.",
+      "assumptions": "Finite nonnegative normalized theta and finite natural starting count. Biological interpretation uses positive starts; literal-rate endpoint starts at n+2 with a>0,b>=0. Conclusion is almost sure, not every ambient trajectory or a deterministic jump bound.",
+      "completion_criterion": "Finite jump-index absorption of the stopped embedded count chain is supplied by the reviewed candidate, pending pinned combined verification. The source finite-time ARG statement remains broader until clocks and spatial projection are constructed.",
       "cited_reference_ids": [],
       "section_title": "The big and little ARG",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
@@ -880,7 +925,41 @@
       "pdf_pages_1based": [
         13,
         14
-      ]
+      ],
+      "public_274_contract": {
+        "status": "open",
+        "existing_evidence": "No stochastic termination theorem; finite traversal bounds are unrelated.",
+        "remaining_target": "Prove nonexplosion and almost-sure finite hitting time of 1; establish integrability needed for expectations.",
+        "assumptions": "lambda_k=k*rho, mu_k=k(k-1)/2; finite initial k/rho; absorbing 1.",
+        "completion_criterion": "Probability theorem, not deterministic termination of every random execution."
+      },
+      "probability_modules": [
+        "WongBigARGDrift",
+        "WongCountChain",
+        "WongBigARGAbsorption"
+      ],
+      "probability_endpoint_evidence": [
+        "WongBigARGDrift.weighted_gap",
+        "WongBigARGDrift.potential_drift",
+        "WongCountChain.one_absorbing",
+        "WongCountChain.jump_up_mass",
+        "WongCountChain.jump_down_mass",
+        "WongCountChain.initial_lintegral",
+        "WongCountChain.step_lintegral",
+        "WongCountChain.ae_positive_counts",
+        "WongCountChain.sum_transient_le",
+        "WongCountChain.ae_finite_absorption_of_drift",
+        "WongCountChain.literal_rate_ratio",
+        "WongCountChain.literal_merger_ratio",
+        "WongBigARGAbsorption.countPotential_drift",
+        "WongBigARGAbsorption.ae_eventually_one",
+        "WongBigARGAbsorption.ae_finite_jump_absorption",
+        "WongBigARGAbsorption.normalizedRatio_value",
+        "WongBigARGAbsorption.literal_up_kernel_mass",
+        "WongBigARGAbsorption.literal_down_kernel_mass",
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+      ],
+      "verification_status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
     },
     {
       "id": "B06",
@@ -2118,447 +2197,167 @@
       ]
     }
   ],
-  "edition": "deterministic-65-staged-from-public-209",
+  "edition": "probability-19-staged-from-hosted-274",
   "integration": {
-    "baseline_commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
-    "baseline_aggregate_endpoints": 209,
-    "total_aggregate_endpoints": 274,
-    "new_endpoints": 65,
-    "status": "PASS_LOCAL_COMBINED_REVIEWED",
+    "baseline_commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
+    "baseline_aggregate_endpoints": 274,
+    "total_aggregate_endpoints": 293,
+    "new_endpoints": 19,
+    "status": "CANDIDATE_PENDING_PINNED_HOSTED_293",
     "modules": [
       {
-        "module": "WongMRCATruncation",
-        "lane": "mrca-truncation",
-        "path": "../../../real/WongMRCATruncation.lean",
-        "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+        "module": "WongBigARGDrift",
+        "path": "../../../real/WongBigARGDrift.lean",
+        "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
         "endpoints": [
-          "WongMRCATruncation.exists_unique_mrca",
-          "WongMRCATruncation.mrca_unique",
-          "WongMRCATruncation.common_iff_ancestor_mrca",
-          "WongMRCATruncation.truncation_iff_cut_above",
-          "WongMRCATruncation.truncation_iff_below_mrca",
-          "WongMRCATruncation.sample_paths_preserved",
-          "WongMRCATruncation.mrca_sample_paths_preserved",
-          "WongMRCATruncation.mrca_reaches_every_sample",
-          "WongMRCATruncation.no_incoming_mrca",
-          "WongMRCATruncation.truncated_support",
-          "WongMRCATruncation.no_common_no_extra_truncation",
-          "WongMRCATruncation.ancestral_sample_is_mrca",
-          "WongMRCATruncation.singleton_sample_is_mrca",
-          "WongMRCATruncation.singleton_has_no_edges",
-          "WongMRCATruncation.empty_samples_no_edges",
-          "WongMRCATruncation.distinct_sample_roots_no_common",
-          "WongMRCATruncation.truncate_at_iff",
-          "WongMRCATruncation.truncate_unique_parent",
-          "WongMRCATruncation.truncate_sample_supported",
-          "WongMRCATruncation.truncate_breakpoints",
-          "WongMRCATruncation.truncate_sample_paths",
-          "WongMRCATruncation.truncate_mrca_paths",
-          "WongMRCATruncation.finite_mrca_truncation",
-          "WongMRCATruncation.supported_but_removed"
+          "WongBigARGDrift.weighted_gap",
+          "WongBigARGDrift.potential_drift"
         ],
-        "endpoint_count": 24,
-        "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
-        "all_registered": true,
+        "endpoint_count": 2,
         "axioms": {
-          "WongMRCATruncation.exists_unique_mrca": [
+          "WongBigARGDrift.weighted_gap": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongMRCATruncation.mrca_unique": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.common_iff_ancestor_mrca": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncation_iff_cut_above": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncation_iff_below_mrca": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.sample_paths_preserved": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.mrca_sample_paths_preserved": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.mrca_reaches_every_sample": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.no_incoming_mrca": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncated_support": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.no_common_no_extra_truncation": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.ancestral_sample_is_mrca": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.singleton_sample_is_mrca": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.singleton_has_no_edges": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.empty_samples_no_edges": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.distinct_sample_roots_no_common": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncate_at_iff": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncate_unique_parent": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncate_sample_supported": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncate_breakpoints": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncate_sample_paths": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.truncate_mrca_paths": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.finite_mrca_truncation": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMRCATruncation.supported_but_removed": [
+          "WongBigARGDrift.potential_drift": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ]
-        }
+        },
+        "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
       },
       {
-        "module": "WongIntervalCanonicalization",
-        "lane": "interval-canonicalization",
-        "path": "../../../real/WongIntervalCanonicalization.lean",
-        "sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+        "module": "WongCountChain",
+        "path": "../../../real/WongCountChain.lean",
+        "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
         "endpoints": [
-          "WongIntervalCanonicalization.join_contains",
-          "WongIntervalCanonicalization.mergeAdjacent_covers",
-          "WongIntervalCanonicalization.mergeAdjacent_lo",
-          "WongIntervalCanonicalization.mergeAdjacent_hi",
-          "WongIntervalCanonicalization.mergeAdjacent_separated",
-          "WongIntervalCanonicalization.mergeAdjacent_of_separated",
-          "WongIntervalCanonicalization.mergeAdjacent_idempotent",
-          "WongIntervalCanonicalization.separated_semantic_unique",
-          "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
-          "WongIntervalCanonicalization.separated_gap",
-          "WongIntervalCanonicalization.canonicalRegions_covers",
-          "WongIntervalCanonicalization.canonicalRegions_separated",
-          "WongIntervalCanonicalization.canonicalRegions_endpoints",
-          "WongIntervalCanonicalization.canonicalRegions_unique",
-          "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
-          "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
-          "WongIntervalCanonicalization.canonicalize_at",
-          "WongIntervalCanonicalization.canonicalize_breakpoints",
-          "WongIntervalCanonicalization.canonicalize_nonempty",
-          "WongIntervalCanonicalization.canonicalize_canonical",
-          "WongIntervalCanonicalization.canonicalize_maximal",
-          "WongIntervalCanonicalization.serialized_semantic_unique",
-          "WongIntervalCanonicalization.serialized_empty",
-          "WongIntervalCanonicalization.canonicalize_semantic_unique",
-          "WongIntervalCanonicalization.canonicalize_idempotent",
-          "WongIntervalCanonicalization.canonicalize_topology",
-          "WongIntervalCanonicalization.executable_touching_gap_example"
-        ],
-        "endpoint_count": 31,
-        "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
-        "all_registered": true,
-        "axioms": {
-          "WongIntervalCanonicalization.join_contains": [
-            "propext"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_covers": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_lo": [
-            "propext"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_hi": [
-            "propext"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_separated": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_of_separated": [
-            "propext"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_idempotent": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.separated_semantic_unique": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.mergeAdjacent_semantic_unique": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.separated_gap": [
-            "propext"
-          ],
-          "WongIntervalCanonicalization.canonicalRegions_covers": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalRegions_separated": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalRegions_endpoints": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalRegions_unique": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_at": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_breakpoints": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_nonempty": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_canonical": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_maximal": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.serialized_semantic_unique": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.serialized_empty": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_semantic_unique": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_idempotent": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.canonicalize_topology": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongIntervalCanonicalization.executable_touching_gap_example": [
-            "propext"
-          ]
-        }
-      },
-      {
-        "module": "WongSimplificationNormalForm",
-        "lane": "normal-form",
-        "path": "../../../real/WongSimplificationNormalForm.lean",
-        "sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
-        "endpoints": [
-          "WongSimplificationNormalForm.first_kept_child",
-          "WongSimplificationNormalForm.siblings_disjoint",
-          "WongSimplificationNormalForm.retained_nonsample_branches",
-          "WongSimplificationNormalForm.represented_contraction_normal",
-          "WongSimplificationNormalForm.finite_local_normal_form",
-          "WongSimplificationNormalForm.finite_resolved_normal_form",
-          "WongSimplificationNormalForm.mrca_kept",
-          "WongSimplificationNormalForm.truncated_mrca_kept",
-          "WongSimplificationNormalForm.canonicalize_paths",
-          "WongSimplificationNormalForm.canonical_resolved_normal_form"
+          "WongCountChain.one_absorbing",
+          "WongCountChain.jump_up_mass",
+          "WongCountChain.jump_down_mass",
+          "WongCountChain.initial_lintegral",
+          "WongCountChain.step_lintegral",
+          "WongCountChain.ae_positive_counts",
+          "WongCountChain.sum_transient_le",
+          "WongCountChain.ae_finite_absorption_of_drift",
+          "WongCountChain.literal_rate_ratio",
+          "WongCountChain.literal_merger_ratio"
         ],
         "endpoint_count": 10,
-        "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
-        "all_registered": true,
         "axioms": {
-          "WongSimplificationNormalForm.first_kept_child": [
+          "WongCountChain.one_absorbing": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.siblings_disjoint": [
+          "WongCountChain.jump_up_mass": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.retained_nonsample_branches": [
+          "WongCountChain.jump_down_mass": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.represented_contraction_normal": [
+          "WongCountChain.initial_lintegral": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.finite_local_normal_form": [
+          "WongCountChain.step_lintegral": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.finite_resolved_normal_form": [
+          "WongCountChain.ae_positive_counts": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.mrca_kept": [
+          "WongCountChain.sum_transient_le": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.truncated_mrca_kept": [
+          "WongCountChain.ae_finite_absorption_of_drift": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.canonicalize_paths": [
+          "WongCountChain.literal_rate_ratio": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSimplificationNormalForm.canonical_resolved_normal_form": [
+          "WongCountChain.literal_merger_ratio": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ]
-        }
+        },
+        "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+      },
+      {
+        "module": "WongBigARGAbsorption",
+        "path": "../../../real/WongBigARGAbsorption.lean",
+        "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+        "endpoints": [
+          "WongBigARGAbsorption.countPotential_drift",
+          "WongBigARGAbsorption.ae_eventually_one",
+          "WongBigARGAbsorption.ae_finite_jump_absorption",
+          "WongBigARGAbsorption.normalizedRatio_value",
+          "WongBigARGAbsorption.literal_up_kernel_mass",
+          "WongBigARGAbsorption.literal_down_kernel_mass",
+          "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+        ],
+        "endpoint_count": 7,
+        "axioms": {
+          "WongBigARGAbsorption.countPotential_drift": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongBigARGAbsorption.ae_eventually_one": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongBigARGAbsorption.ae_finite_jump_absorption": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongBigARGAbsorption.normalizedRatio_value": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongBigARGAbsorption.literal_up_kernel_mass": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongBigARGAbsorption.literal_down_kernel_mass": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongBigARGAbsorption.literal_rates_ae_finite_absorption": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
       }
     ],
     "receipt_path": "../../../verification/real-audit.json",
-    "verification": "61 imported local modules freshly rebuilt into an isolated cache; all 274 exact selected endpoint reports passed with permitted standard axioms only. Independent statement/source review passed with scoped limits. Hosted CI remains separate.",
-    "hosted_ci_status": "NOT_RUN_FOR_THIS_STAGED_RELEASE",
-    "receipt_sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821",
-    "checked_at_utc": "2026-09-25T15:49:51.977409+00:00",
-    "review": {
-      "path": "verification/deterministic65/SOL2-REVIEW.md",
-      "sha256": "e8ef0eb926b79782fa170b630a5b1f20f944b99c423e99db7214a1457e40e898",
-      "verdict": "PASS WITH SCOPED LIMITS",
-      "scope": "Statement/source review; not an independent kernel execution."
-    },
-    "finite_controls": {
-      "path": "verification/deterministic65/evidence/finite-controls.json",
-      "sha256": "78d37f6b732830a6dc2bdc5c057d26244cf9e31a3f4b32709d42a55aacc95722",
-      "count": 15
-    },
-    "input_manifest": {
-      "path": "verification/deterministic65/INPUT-MANIFEST.json",
-      "sha256": "bdd3a31bcb2488c104bd4a00b85f724bb8a2e51e2aaad4e8faaef9318c3be6df"
-    }
+    "verification": "Historical19 source-matched local passes and source/statement reviews are retained. Donor dependency pin provenance remains unverified. Lead retry passed scalar only, then stopped at missing Traj.olean; combined293 was not run. Exact pinned hosted293 audit required.",
+    "hosted_ci_status": "NOT_RUN_FOR_THIS_PROBABILITY_RELEASE",
+    "receipt_scope_endpoints": 274,
+    "candidate_status": "probability/CANDIDATE-STATUS.json"
   },
   "provisional": [],
   "historical_integration": [
@@ -3245,6 +3044,452 @@
       "verification": "Fresh combined209-endpoint aggregate passed; all six source hashes equal manifest and receipt; all 58 qualified new endpoints registered with standard axioms.",
       "exact_public_receipt_sha256": "daeccb93b0c97d46d862b16af2e04a6fd57dc3a7efaa4182d4b8940d45fc9c24",
       "embedded_receipt_hash_note": "The inherited ledger named 608251791079f5bd50698081e8aabb19a36c3c256629df2524efcacb7e03f4bd; the receipt bytes pinned at this baseline hash to daeccb93b0c97d46d862b16af2e04a6fd57dc3a7efaa4182d4b8940d45fc9c24. Preserve both; do not treat the embedded historical hash as the current receipt hash."
+    },
+    {
+      "baseline_commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+      "baseline_aggregate_endpoints": 209,
+      "total_aggregate_endpoints": 274,
+      "new_endpoints": 65,
+      "status": "PASS_LOCAL_COMBINED_REVIEWED",
+      "modules": [
+        {
+          "module": "WongMRCATruncation",
+          "lane": "mrca-truncation",
+          "path": "../../../real/WongMRCATruncation.lean",
+          "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+          "endpoints": [
+            "WongMRCATruncation.exists_unique_mrca",
+            "WongMRCATruncation.mrca_unique",
+            "WongMRCATruncation.common_iff_ancestor_mrca",
+            "WongMRCATruncation.truncation_iff_cut_above",
+            "WongMRCATruncation.truncation_iff_below_mrca",
+            "WongMRCATruncation.sample_paths_preserved",
+            "WongMRCATruncation.mrca_sample_paths_preserved",
+            "WongMRCATruncation.mrca_reaches_every_sample",
+            "WongMRCATruncation.no_incoming_mrca",
+            "WongMRCATruncation.truncated_support",
+            "WongMRCATruncation.no_common_no_extra_truncation",
+            "WongMRCATruncation.ancestral_sample_is_mrca",
+            "WongMRCATruncation.singleton_sample_is_mrca",
+            "WongMRCATruncation.singleton_has_no_edges",
+            "WongMRCATruncation.empty_samples_no_edges",
+            "WongMRCATruncation.distinct_sample_roots_no_common",
+            "WongMRCATruncation.truncate_at_iff",
+            "WongMRCATruncation.truncate_unique_parent",
+            "WongMRCATruncation.truncate_sample_supported",
+            "WongMRCATruncation.truncate_breakpoints",
+            "WongMRCATruncation.truncate_sample_paths",
+            "WongMRCATruncation.truncate_mrca_paths",
+            "WongMRCATruncation.finite_mrca_truncation",
+            "WongMRCATruncation.supported_but_removed"
+          ],
+          "endpoint_count": 24,
+          "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
+          "all_registered": true,
+          "axioms": {
+            "WongMRCATruncation.exists_unique_mrca": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.mrca_unique": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.common_iff_ancestor_mrca": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncation_iff_cut_above": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncation_iff_below_mrca": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.sample_paths_preserved": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.mrca_sample_paths_preserved": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.mrca_reaches_every_sample": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.no_incoming_mrca": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncated_support": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.no_common_no_extra_truncation": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.ancestral_sample_is_mrca": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.singleton_sample_is_mrca": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.singleton_has_no_edges": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.empty_samples_no_edges": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.distinct_sample_roots_no_common": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncate_at_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncate_unique_parent": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncate_sample_supported": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncate_breakpoints": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncate_sample_paths": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.truncate_mrca_paths": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.finite_mrca_truncation": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMRCATruncation.supported_but_removed": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        },
+        {
+          "module": "WongIntervalCanonicalization",
+          "lane": "interval-canonicalization",
+          "path": "../../../real/WongIntervalCanonicalization.lean",
+          "sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+          "endpoints": [
+            "WongIntervalCanonicalization.join_contains",
+            "WongIntervalCanonicalization.mergeAdjacent_covers",
+            "WongIntervalCanonicalization.mergeAdjacent_lo",
+            "WongIntervalCanonicalization.mergeAdjacent_hi",
+            "WongIntervalCanonicalization.mergeAdjacent_separated",
+            "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+            "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+            "WongIntervalCanonicalization.separated_semantic_unique",
+            "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+            "WongIntervalCanonicalization.separated_gap",
+            "WongIntervalCanonicalization.canonicalRegions_covers",
+            "WongIntervalCanonicalization.canonicalRegions_separated",
+            "WongIntervalCanonicalization.canonicalRegions_endpoints",
+            "WongIntervalCanonicalization.canonicalRegions_unique",
+            "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+            "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+            "WongIntervalCanonicalization.canonicalize_at",
+            "WongIntervalCanonicalization.canonicalize_breakpoints",
+            "WongIntervalCanonicalization.canonicalize_nonempty",
+            "WongIntervalCanonicalization.canonicalize_canonical",
+            "WongIntervalCanonicalization.canonicalize_maximal",
+            "WongIntervalCanonicalization.serialized_semantic_unique",
+            "WongIntervalCanonicalization.serialized_empty",
+            "WongIntervalCanonicalization.canonicalize_semantic_unique",
+            "WongIntervalCanonicalization.canonicalize_idempotent",
+            "WongIntervalCanonicalization.canonicalize_topology",
+            "WongIntervalCanonicalization.executable_touching_gap_example"
+          ],
+          "endpoint_count": 31,
+          "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
+          "all_registered": true,
+          "axioms": {
+            "WongIntervalCanonicalization.join_contains": [
+              "propext"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_covers": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_lo": [
+              "propext"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_hi": [
+              "propext"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_separated": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_of_separated": [
+              "propext"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_idempotent": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.separated_semantic_unique": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.mergeAdjacent_semantic_unique": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.separated_gap": [
+              "propext"
+            ],
+            "WongIntervalCanonicalization.canonicalRegions_covers": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalRegions_separated": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalRegions_endpoints": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalRegions_unique": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_at": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_breakpoints": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_nonempty": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_canonical": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_maximal": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.serialized_semantic_unique": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.serialized_empty": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_semantic_unique": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_idempotent": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.canonicalize_topology": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongIntervalCanonicalization.executable_touching_gap_example": [
+              "propext"
+            ]
+          }
+        },
+        {
+          "module": "WongSimplificationNormalForm",
+          "lane": "normal-form",
+          "path": "../../../real/WongSimplificationNormalForm.lean",
+          "sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
+          "endpoints": [
+            "WongSimplificationNormalForm.first_kept_child",
+            "WongSimplificationNormalForm.siblings_disjoint",
+            "WongSimplificationNormalForm.retained_nonsample_branches",
+            "WongSimplificationNormalForm.represented_contraction_normal",
+            "WongSimplificationNormalForm.finite_local_normal_form",
+            "WongSimplificationNormalForm.finite_resolved_normal_form",
+            "WongSimplificationNormalForm.mrca_kept",
+            "WongSimplificationNormalForm.truncated_mrca_kept",
+            "WongSimplificationNormalForm.canonicalize_paths",
+            "WongSimplificationNormalForm.canonical_resolved_normal_form"
+          ],
+          "endpoint_count": 10,
+          "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
+          "all_registered": true,
+          "axioms": {
+            "WongSimplificationNormalForm.first_kept_child": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.siblings_disjoint": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.retained_nonsample_branches": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.represented_contraction_normal": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.finite_local_normal_form": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.finite_resolved_normal_form": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.mrca_kept": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.truncated_mrca_kept": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.canonicalize_paths": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSimplificationNormalForm.canonical_resolved_normal_form": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        }
+      ],
+      "receipt_path": "../../../verification/real-audit.json",
+      "verification": "61 imported local modules freshly rebuilt into an isolated cache; all 274 exact selected endpoint reports passed with permitted standard axioms only. Independent statement/source review passed with scoped limits. Hosted CI remains separate.",
+      "hosted_ci_status": "NOT_RUN_FOR_THIS_STAGED_RELEASE",
+      "receipt_sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821",
+      "checked_at_utc": "2026-09-25T15:49:51.977409+00:00",
+      "review": {
+        "path": "verification/deterministic65/SOL2-REVIEW.md",
+        "sha256": "e8ef0eb926b79782fa170b630a5b1f20f944b99c423e99db7214a1457e40e898",
+        "verdict": "PASS WITH SCOPED LIMITS",
+        "scope": "Statement/source review; not an independent kernel execution."
+      },
+      "finite_controls": {
+        "path": "verification/deterministic65/evidence/finite-controls.json",
+        "sha256": "78d37f6b732830a6dc2bdc5c057d26244cf9e31a3f4b32709d42a55aacc95722",
+        "count": 15
+      },
+      "input_manifest": {
+        "path": "verification/deterministic65/INPUT-MANIFEST.json",
+        "sha256": "bdd3a31bcb2488c104bd4a00b85f724bb8a2e51e2aaad4e8faaef9318c3be6df"
+      },
+      "hosted_verification": {
+        "commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
+        "run_id": 36158710859,
+        "conclusion": "success"
+      }
     }
   ]
 }
