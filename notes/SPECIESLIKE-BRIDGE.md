@@ -1,6 +1,6 @@
 # A direct bridge to Alexander's specieslike clusters
 
-**Status:** a short written deduction from two cited graph models. It is not Lean formalized, independently refereed, or a claim of literature priority. It concerns a mathematical cluster axiom, not an empirical classification of organisms.
+**Status:** this written explanation has a matching [Lean formalization](../lean/SamuelAlexanderResearch/SpeciesBridge.lean) for the exact natural-date `P_s` graph, plus a [Lean classification of its two maximal four-property cones](../lean/SamuelAlexanderResearch/SpeciesCones.lean). The [formalization scope](../FORMALIZATION.md) states what those modules encode. This is neither an external mathematical review nor a claim of literature priority or empirical species classification.
 
 ## Why these papers meet
 
@@ -20,11 +20,15 @@ For every binary target `s`, ignore the labels on the classification manuscript'
 
 The ancestry argument uses only the *unlabelled* edge structure, which is the same for every `s`; the labels are what change with the target.
 
+**Prior-work placement.** The cofinite-descendant conclusion is already implied by Alexander's [2013 Proposition 6](https://arxiv.org/html/1201.2869#S5): the whole `P_s` is an *inspecies* in his earlier sense, because every infinite ancestrally closed subset of this graph must contain every vertex. His [2026 Example 14(1)](https://arxiv.org/html/2602.05274v1#S6) also anticipates the overlapping-root-cone pattern analyzed in the [generalization note](SPECIESLIKE-GENERALIZATION.md). Our claim is an explicit connection to the separate target-dependent avoiding construction, not a new general cluster theorem. The [prior-work audit](../PRIOR-WORK-AUDIT.md) compares the exact statements.
+
 **Binary corollary.** Restrict Alexander's edge-labelled binary populations to those whose entire underlying unlabelled graph is a specieslike cluster in this sense. The unavoidable sequences in that restricted class are still exactly the eventually periodic sequences. Alexander's positive theorem applies to every graph in the restricted class. For each non-eventually-periodic `s`, the classification manuscript supplies `P_s`, and the proposition shows that this avoiding witness belongs to the restricted class. This is a direct consequence of the earlier results and the displayed graph observation. It is not a new biological species theorem.
 
 ## A boundary that changes the question
 
-Alexander's 2026 Theorem 13 studies **subsets** satisfying two *additional* properties: a common ancestor and reflection of infinite descendant sets. The entire `P_s` has reflection trivially, but it lacks a common ancestor: `0` and `1` are both roots, and neither descends from the other. So the proposition does not claim that the entire graph satisfies the stronger four-property criterion. An induced subgraph of a candidate specieslike subset may also lose one required parent label at its boundary. We cannot apply the unavoidable-sequence theorem inside such a subset until its population axioms are checked again.
+Alexander's 2026 Theorem 13 studies **subsets** satisfying two *additional* properties: a common ancestor and reflection of infinite descendant sets. The entire `P_s` has reflection trivially, but it lacks a common ancestor: `0` and `1` are both roots, and neither descends from the other. In fact, the [simple-edge binary population axioms](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i1p31/pdf/) force **at least two roots in every eligible population**: an earliest nonroot must receive two differently labelled edges from distinct earlier roots. Thus whole-population common ancestry is impossible in this binary model. Theorem 13's common-ancestor property is meaningful for proper subsets. An induced subgraph of such a subset may lose one required parent label at its boundary, so we cannot apply the unavoidable-sequence theorem inside it until its population axioms are checked again.
+
+For this specific graph, the [generalization note](SPECIESLIKE-GENERALIZATION.md) sharpens the subset question: every subset satisfies IAP, while adding common ancestry and reflection yields exactly two inclusion-maximal clusters, one for each root. Their induced labelled graphs both lose one required incoming label at vertex `2`.
 
 This leaves a sharper follow-on question: **what conditions on a maximal specieslike subset preserve enough labelled parenthood to force periodic lineage words, perhaps after an explicitly justified finite boundary repair?** This is a proposed problem, not a solved result or a claim that the answer is absent from the literature. Alexander himself asks for qualitatively different conditions guaranteeing maximal specieslike clusters, especially without the common-ancestor property, after [Theorem 13](https://arxiv.org/html/2602.05274v1#S6).
 
