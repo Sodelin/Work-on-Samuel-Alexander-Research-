@@ -14,26 +14,26 @@ This is a deterministic finite-graph formalization of that source operation. It 
 
 ## Exact stopping rule
 
-Write $R_x(p,c)$ for the gARG's inheritance edge at position $x$, directed ancestor to descendant. Define reflexive local ancestry by
+Write $`R_x(p,c)`$ for the gARG's inheritance edge at position $`x`$, directed ancestor to descendant. Define reflexive local ancestry by
 
-$$
+```math
 A_x(a,b)\iff a=b\ \lor\ \operatorname{Reach}(R_x,a,b).
-$$
+```
 
-Reflexivity matters when a designated sample is itself ancestral or the sample set has one member. Let $S$ be the designated sample set and define
+Reflexivity matters when a designated sample is itself ancestral or the sample set has one member. Let $`S`$ be the designated sample set and define
 
-$$
+```math
 C_x(c)\iff \forall s\in S,\ A_x(c,s).
-$$
+```
 
 The new edge relation is
 
-$$
+```math
 T_x(p,c)\iff
 R_x(p,c)\ \land\
 (\exists s\in S,\ A_x(c,s))\ \land\
 \neg C_x(c).
-$$
+```
 
 Thus an edge is retained only while its child's material is ancestral to at least one sample and has not yet coalesced across **all** samples. An edge into a common ancestor is removed. Under local single parenthood, sample-supported edges whose parent is at or below the MRCA remain.
 
@@ -48,28 +48,28 @@ The existence theorem explicitly assumes:
 - At the selected locus, every child has at most one parent (`UniqueParentAt`).
 - At least one node is a reflexive common ancestor of all designated samples.
 
-Under these conditions, the theorem constructs a unique node $m$ satisfying
+Under these conditions, the theorem constructs a unique node $`m`$ satisfying
 
-$$
+```math
 C_x(m)\quad\text{and}\quad
 \forall a,\ C_x(a)\Longrightarrow A_x(a,m).
-$$
+```
 
 The proof maximizes the input gARG's derived topological code over its finite common-ancestor set. Local single parenthood makes two ancestors of a shared sample comparable. A strictly later common ancestor would violate maximality. The result concerns an order-defined MRCA; no arbitrary dates or tie-breaking among incomparable candidates are supplied.
 
-For this $m$,
+For this $`m`$,
 
-$$
+```math
 C_x(c)\iff A_x(c,m).
-$$
+```
 
-Hence the stopping rule deletes the incoming edge into $m$ and all supported edges with child at or above $m$. Under local single parenthood it equivalently retains exactly the supported edges whose **parent** lies at or below $m$:
+Hence the stopping rule deletes the incoming edge into $`m`$ and all supported edges with child at or above $`m`$. Under local single parenthood it equivalently retains exactly the supported edges whose **parent** lies at or below $`m`$:
 
-$$
+```math
 T_x(p,c)\iff G.\mathrm{ExtractedAt}(x,p,c)\land A_x(m,p).
-$$
+```
 
-The phrase “at or below” includes $m$ itself. This retains paths starting at the MRCA and ending at its samples.
+The phrase “at or below” includes $`m`$ itself. This retains paths starting at the MRCA and ending at its samples.
 
 ## Preserved information
 
@@ -95,7 +95,7 @@ It deliberately does **not** preserve paths from ancestors strictly above the MR
 - Exactly the original finite node catalogue and sample IDs.
 - Nonempty edge annotations.
 - At most one interval record for each parent-child pair (`CanonicalRecords`).
-- Precisely the local stopping relation $T_x$ at every coordinate.
+- Precisely the local stopping relation $`T_x`$ at every coordinate.
 - No coordinate endpoints absent from the input.
 - Sample support in its own local relations.
 
@@ -107,7 +107,7 @@ The cell presentation and record construction are noncomputable mathematical fun
 
 | Case | Exact behavior |
 |---|---|
-| One designated sample $s$ | $s$ itself is the reflexive local MRCA, even without a parent edge. All local edges are removed, and the sample ID remains. |
+| One designated sample $`s`$ | $`s`$ itself is the reflexive local MRCA, even without a parent edge. All local edges are removed, and the sample ID remains. |
 | A designated sample is a common ancestor of all samples | That sampled node is the MRCA. Its paths to later samples remain. |
 | No local common ancestor of all samples | The stopping rule agrees exactly with ordinary sample support extraction; it does not falsely declare complete coalescence. |
 | Two distinct designated samples are local roots | No common ancestor can exist, providing an explicit multiple-root case. |

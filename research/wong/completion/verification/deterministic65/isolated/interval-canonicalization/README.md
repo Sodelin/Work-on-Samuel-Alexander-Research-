@@ -14,17 +14,17 @@ For reconstruction from sample-traced local trees, equality with the entire orig
 
 Let the coordinate domain be any linearly ordered type. Each supplied interval is proper and half-open:
 
-$$
+```math
 I=[\ell_I,r_I), \qquad \ell_I<r_I.
-$$
+```
 
-The executable list operation merges a pair exactly when $r_I=\ell_J$. Its membership identity is
+The executable list operation merges a pair exactly when $`r_I=\ell_J`$. Its membership identity is
 
-$$
+```math
 [\ell_I,r_I)\cup[r_I,r_J)=[\ell_I,r_J).
-$$
+```
 
-For an input list ordered with $r_I\leq\ell_J$ for every earlier/later pair, the output satisfies the strict condition $r_I<\ell_J$. This says that remaining intervals are both nonoverlapping and nonadjacent.
+For an input list ordered with $`r_I\leq\ell_J`$ for every earlier/later pair, the output satisfies the strict condition $`r_I<\ell_J`$. This says that remaining intervals are both nonoverlapping and nonadjacent.
 
 The selected proof endpoints establish:
 
