@@ -1,0 +1,107 @@
+{
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "reusedDependencies": [
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\package\\vendor\\SamuelAlexanderResearch\\SpeciesBridge.lean",
+      "sourceSha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\package\\FeedbackDynamics.lean",
+      "sourceSha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\ExtinctionPedigree.lean",
+      "sourceSha256": "ddb618e00f758546176eaedfbfc86d7457767133bc784b2990972c07a8fe63fb"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\ParentSchedules.lean",
+      "sourceSha256": "a35bc0c6e774cba93c2eebabe0f29530cceb12079d115e4ae28f2a6540aafdc7"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\UniformParentCounting.lean",
+      "sourceSha256": "3fbb09bbdfa0ffb78cf9e88488bceb3e831fd4f014dfdf3db6fe70370d75bea2"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\UniformParentProcess.lean",
+      "sourceSha256": "1cce9f8d1738255cd59e2553ea75dbe3b2078ed4b50d261c28e6b833c8a55325"
+    }
+  ],
+  "logSha256": "519354f6ea83c0c08ebc79825a602c9fffc9561b40874977d9445105a6f59ebe",
+  "module": "PureInductionNoise",
+  "oleanSha256": "5930f1c3c49be632c90e0c923f32e2eb2fd942f1dabf008d0c1a42695a97f1ac",
+  "dependencyMode": "Existing checked local objects; no clean-machine rebuild in this run",
+  "elapsedSeconds": 20.8837985,
+  "sourceSha256": "53e77f062c0dfd23b274e9ddc801f8b8136f7783786600a407f6b657584018a0",
+  "maximumWorkers": 1,
+  "memoryLimitMb": 4096,
+  "selectedEndpoints": [
+    {
+      "declaration": "PureInductionNoise.parent_schedule_law",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.actual_parent_ae_iap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.avoidance_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.history_avoid_inter",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.history_avoid_conditional",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.unresolved_probability_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.unresolved_history_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionNoise.unresolved_conditional_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "compilerExitCode": 0,
+  "status": "PASS",
+  "lean": "4.33.1",
+  "timestampUtc": "2026-09-25T17:35:41.6668055Z"
+}

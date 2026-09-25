@@ -45,7 +45,43 @@ ARTIFACTS = {
     "research/feedback-speciation/finite-epigenetic/DeterministicEpigenetic.lean": 10,
     "research/feedback-speciation/finite-epigenetic/RankingReversal.lean": 3,
     "research/feedback-speciation/pure-induction-finite/PureInductionJoint.lean": 4,
+    "research/feedback-speciation/pure-induction-ancestry-v2/ExtinctionPedigree.lean": 10,
+    "research/feedback-speciation/pure-induction-ancestry-v2/ParentSchedules.lean": 5,
+    "research/feedback-speciation/pure-induction-ancestry-v2/UniformParentCounting.lean": 8,
+    "research/feedback-speciation/pure-induction-ancestry-v2/UniformParentProcess.lean": 8,
+    "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionR1R2.lean": 10,
+    "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionNoise.lean": 8,
+    "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionPaths.lean": 7,
+    "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionAncestry.lean": 11,
 }
+REUSED_SOURCES = [
+    [
+        "research/feedback-speciation/pure-induction-ancestry-v2/FiniteFixation.lean",
+        "research/feedback-speciation/finite-epigenetic/FiniteFixation.lean",
+        False
+    ],
+    [
+        "research/feedback-speciation/pure-induction-ancestry-v2/FiniteEpigenetic.lean",
+        "research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean",
+        False
+    ],
+    [
+        "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionJoint.lean",
+        "research/feedback-speciation/pure-induction-finite/PureInductionJoint.lean",
+        False
+    ],
+    [
+        "research/feedback-speciation/pure-induction-ancestry-v2/FeedbackDynamics.lean",
+        "research/feedback-speciation/package/FeedbackDynamics.lean",
+        True
+    ],
+    [
+        "research/feedback-speciation/pure-induction-ancestry-v2/SamuelAlexanderResearch/SpeciesBridge.lean",
+        "lean/SamuelAlexanderResearch/SpeciesBridge.lean",
+        False
+    ]
+]
+
 PRINT_NAMESPACES = {'research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean': 'ExactAbstraction.', 'research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean': 'MergeHistoryProjection.'}
 PRINT_NAMESPACES.update({
     "research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean": "FiniteEpigenetic.",
@@ -85,6 +121,28 @@ def read_pin(root: Path) -> tuple[str, dict[str, str]]:
         raise RuntimeError(f"Expected a release-pinned Lean toolchain, got {pins[0]!r}")
     return pins[0], {str(p): sha256(p) for p in paths}
 
+
+
+def check_reused_sources(source_root: Path, dependency_root: Path) -> list[dict]:
+    records = []
+    for packet_relative, built_relative, allow_crlf in REUSED_SOURCES:
+        packet_path = source_root / packet_relative
+        built_path = source_root / built_relative
+        if not built_path.is_file():
+            built_path = dependency_root / built_relative
+        packet_bytes = packet_path.read_bytes()
+        built_bytes = built_path.read_bytes()
+        same = packet_bytes == built_bytes
+        if allow_crlf:
+            same = packet_bytes.replace(b"\r\n", b"\n") == built_bytes.replace(b"\r\n", b"\n")
+        if not same:
+            raise RuntimeError(f"Packet prerequisite differs from audited source: {packet_relative}")
+        records.append({
+            "packet_path": str(packet_path), "audited_source_path": str(built_path),
+            "packet_sha256": sha256(packet_path), "audited_source_sha256": sha256(built_path),
+            "comparison": "CRLF-to-LF only" if allow_crlf else "byte-exact",
+        })
+    return records
 
 def audit(source_root: Path, dependency_root: Path, compiler: Path | None) -> dict:
     source_root = source_root.resolve()
@@ -137,6 +195,7 @@ def audit(source_root: Path, dependency_root: Path, compiler: Path | None) -> di
     if not re.search(rf"\bversion {re.escape(expected_version)}(?:,|\s|$)", version):
         raise RuntimeError(f"Lean version differs from pin: {pin!r}, {version!r}")
 
+    reused_sources = check_reused_sources(source_root, dependency_root)
     records = []
     all_names: set[str] = set()
     endpoint_axioms: dict[str, list[str]] = {}
@@ -190,6 +249,8 @@ def audit(source_root: Path, dependency_root: Path, compiler: Path | None) -> di
     for relative, digest in source_hashes.items():
         if sha256(source_root / relative) != digest:
             raise RuntimeError(f"Source changed during the audit: {relative}")
+    if check_reused_sources(source_root, dependency_root) != reused_sources:
+        raise RuntimeError("A reused prerequisite changed during the audit.")
     for name, digest in pin_hashes.items():
         if sha256(Path(name)) != digest:
             raise RuntimeError(f"Toolchain pin changed during the audit: {name}")
@@ -200,6 +261,7 @@ def audit(source_root: Path, dependency_root: Path, compiler: Path | None) -> di
         "artifact_count": len(records), "endpoint_count": len(endpoint_axioms),
         "allowed_axioms": sorted(ALLOWED_AXIOMS), "endpoint_axioms": endpoint_axioms,
         "source_sha256": source_hashes, "artifacts": records,
+        "reused_prerequisite_sources": reused_sources,
         "execution": {
             "mode": mode, "source_root": str(source_root),
             "dependency_root": str(dependency_root), "working_directory": str(project),

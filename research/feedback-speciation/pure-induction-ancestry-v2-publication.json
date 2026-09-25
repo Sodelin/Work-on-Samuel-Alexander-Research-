@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "prepared_utc": "2026-09-25T18:05:13.811113+00:00",
+  "packet_public_path": "research/feedback-speciation/pure-induction-ancestry-v2",
+  "packet_manifest_sha256": "7a319b9c72b40a14260faf3698501dcaf8254ab2f47d279ab2b65817d541fbda",
+  "original_packet_bytes_preserved": true,
+  "publication_sidecars_outside_packet": true,
+  "status": "LOCAL_CHECKS_AND_SCOPED_REVIEW_PASS_HOSTED_ADMISSION_PENDING",
+  "local_new_selected_endpoints": 36,
+  "newly_registered_prerequisite_endpoints": 31,
+  "standalone_audit_expected": {
+    "before": 167,
+    "after": 234,
+    "artifacts": 32
+  },
+  "existing_core_expected": 405,
+  "existing_real_expected": 293,
+  "root_statement_review": [
+    "Read RESULT-AND-SCOPE, combined receipts and independent review",
+    "Inspected actual uniform raw-stream law and measurable nonuniform parent projection",
+    "Checked pulse-at-zero count recursion, common-parent avoidance factor and earlier-history conditions",
+    "Inspected final R6 conjunction; no raw infinite-stream eventual-fixation event transfer claimed"
+  ],
+  "reused_source_comparison": [
+    {
+      "path": "FiniteFixation.lean",
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "exact": true
+    },
+    {
+      "path": "FiniteEpigenetic.lean",
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "exact": true
+    },
+    {
+      "path": "PureInductionJoint.lean",
+      "sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a",
+      "exact": true
+    },
+    {
+      "path": "FeedbackDynamics.lean",
+      "sha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a",
+      "exact": false,
+      "comparison": "Identical source text after CRLF-to-LF normalization; original packet bytes preserved"
+    },
+    {
+      "path": "SamuelAlexanderResearch/SpeciesBridge.lean",
+      "sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+      "exact": true
+    }
+  ],
+  "integration_changes": [
+    "Append8 artifact registry entries; existing audit checks unchanged",
+    "Add4 exact Mathlib import roots to pinned cache acquisition",
+    "Check five reused prerequisite source copies against audited originals; four byte-exact, FeedbackDynamics allows CRLF-to-LF only; recheck after compilation"
+  ],
+  "format_and_hash_checks": "Recorded by publication lane before commit",
+  "not_established": [
+    "Biological species identification",
+    "Worldwide priority",
+    "Raw eventual-fixation-event probability equals fixationValue",
+    "Whole Wong or Alexander research programme completion"
+  ]
+}
