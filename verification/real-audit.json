@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T09:37:13.579433+00:00",
+  "checked_at_utc": "2026-09-25T10:12:36.043144+00:00",
   "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "toolchain_pin": "leanprover/lean4:v4.33.1",
-  "endpoint_count": 70,
+  "endpoint_count": 101,
   "endpoint_axioms": {
     "RealBridges.finiteCover_iff_setFinite": [
       "propext",
@@ -349,6 +349,161 @@
     ],
     "WongEventEncoding.ParentSpec.crossover_cut_identified": [
       "propext"
+    ],
+    "WongBreakpointCells.cells_pairwise_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongBreakpointCells.exists_cell_of_bracket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongBreakpointCells.locus_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongBreakpointCells.locus_constant_on_cell": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.CellPresentation.finite_cell_representation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.restriction_union_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.contraction_union_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.sample_restriction_representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.extracted_contraction_representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalNormalization.reencoded_contraction_sample_paths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.automaticPresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.automatic_sample_restriction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.contraction_unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.automatic_reencoded_simplification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSimplification.reencoding_breakpoints_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.garg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.nonempty_annotations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.canonical_records": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.sample_supported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.contracted_relation_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.retained_ancestry_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.sample_ancestry_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.contracted_relations_agree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.raw_relations_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.diamond_cutoff_information_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.collapsed_represents_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDiamond.same_finite_output_hides_cutoff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteGenomeIdentifiability.opposite_compatible_completions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteGenomeIdentifiability.no_exact_specieslike_verdict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteGenomeIdentifiability.no_exact_specieslike_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "source_sha256": {
@@ -364,7 +519,11 @@
     "lean/SamuelAlexanderResearch/DegreeBounds.lean": "fe099a1b8ead2142434bb8b45c9f91faa823b320560d92c70ee7ba206ddad748",
     "lean/SamuelAlexanderResearch/DigitRecurrence.lean": "73ca15003264178d04284508c61d6eba358b397e57830acb798c9f1186114637",
     "lean/SamuelAlexanderResearch/FiniteAvoidance.lean": "e2ac08fef95b8ceb6779cb2a656ba9e02c6fcfadaf0e5b81ea57a1a4cc211541",
+    "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean": "8910f8924f4612cfbb71fb1bb10e73e9f1e6a6da952c9400c5ef8d208632ca37",
+    "lean/SamuelAlexanderResearch/FiniteEditBranch.lean": "36518f13a8f7880e5dfe2a3dacd2a453c7cdc2bcd97ba0513a5747e93c5932f6",
     "lean/SamuelAlexanderResearch/FiniteEditExact.lean": "3d6fe12589b1a4e13b2337bb34cf7fc7ee2a08b960ebf9063ffb73fe6b84afdf",
+    "lean/SamuelAlexanderResearch/FiniteEditGap.lean": "c1ad9e647e539002893921f27d1fc62d4d0105958519aac6e7f7844e4dc2b9b2",
+    "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean": "d278498a4bd7c6c48930c359f9e4936cb0ef286b3476409eecb0a5a1bce15a1e",
     "lean/SamuelAlexanderResearch/FiniteEditStability.lean": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
     "lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
     "lean/SamuelAlexanderResearch/FinitePhasePaths.lean": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf",
@@ -402,17 +561,23 @@
     "lean/SamuelAlexanderResearch/StaticMixing.lean": "5dc98213607d991388021a76a21dd7c24196e7effc66ef260c77771be48848c1",
     "lean/SamuelAlexanderResearch/ThueMorseBits.lean": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
     "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
-    "lean/SamuelAlexanderResearch.lean": "f668160800a66298526c92562898e3f1b6c696cdce940e3d64d5e501124c581e",
-    "real/RealAudit.lean": "6fb917f5c14a5c8ef3f7e4280755817d70291c46025325b81fc3f8e5311de8d5",
+    "lean/SamuelAlexanderResearch/ThueMorseWindow.lean": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f",
+    "lean/SamuelAlexanderResearch.lean": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1",
+    "real/RealAudit.lean": "5565e4786a23776bbf67beca2de9ee4c07d6284541f0d65f85f3c71114f05b48",
+    "real/FiniteGenomeIdentifiability.lean": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
     "real/PortEncoding.lean": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4",
     "real/RealBridges.lean": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
     "real/StatefulCAReal.lean": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7",
     "real/WongAlexander.lean": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
+    "real/WongBreakpointCells.lean": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d",
+    "real/WongDiamond.lean": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd",
     "real/WongEventEncoding.lean": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87",
     "real/WongExamples.lean": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59",
     "real/WongGARG.lean": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
+    "real/WongIntervalNormalization.lean": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f",
     "real/WongLocalArity.lean": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
-    "real/lakefile.lean": "04654a3ec8aea70cc470d194ccfdefef4382ee9ba1fc43ff87a78a46ae91be7c",
+    "real/WongSimplification.lean": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab",
+    "real/lakefile.lean": "ccfa23517f59d6a1616bd1e3f9cb05a0cbeab07f37e2353c7df1c9415bc643dc",
     "real/lake-manifest.json": "24c900a45c3f706d5e3a0336f3808fcc9b03bb3407e7b5ae23eeb8c283726d33",
     "real/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
   },

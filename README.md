@@ -34,7 +34,7 @@ self-similarity claim is made.
 | Direction | Result | What remains |
 |---|---|---|
 | Exact Thue-Morse avoidance | Closed form for every actual maximum $`L(v)`$, proved ten-coordinate binary recurrence, executable digit evaluator, sharp bound and exact equality family. | Broader substitution targets and arbitrary-phase digit recurrences. |
-| Stability and phase | Optimal leading coefficient $`8/3`$, exact phase and finite-edit maxima, finite-edit equality test, and sharp universal additive constant $`8m-1`$. | The possibly smaller best additive constant for each individual edited target. |
+| Stability and phase | Optimal leading coefficient $`8/3`$, exact phase and finite-edit maxima, finite-edit equality test, and sharp universal additive constant $`8m-1`$. | The individual best integer constant is now computed exactly by FiniteEditOptimum; efficient complexity and a smaller cutoff remain open. |
 | Quantitative aperiodicity | A local period/antiperiod break modulus gives an explicit matching-length bound; aperiodicity alone permits arbitrarily slow finite avoidance. | Optimal modulus-dependent rates for specific word families. |
 | Fixed vertex genders | Cap two suffices for every prescribed aperiodic binary target, even in a whole-graph inspecies. Lower caps are impossible. | Optimal root count and larger-width classification. |
 | Critical degree | Conservation, general-$`k`$ rigidity, and an exact finite-port encoding of every critical population tail. Legal periodic schedules realize all words. | Finite width alone does not imply a periodic schedule. |
@@ -64,3 +64,9 @@ prior work. The separate [classification manuscript](https://github.com/avg-neti
 supplies the target-dependent avoiding graph. The quantitative and structural
 extensions here require external mathematical and priority review; formal
 verification is evidence for the encoded statements, not a novelty certificate.
+
+## New closed refinements
+
+The [individual finite-edit optimum](notes/REFINEMENT-INDIVIDUAL-FINITE-EDIT.md) is now an exact finite algorithm for every fixed target agreeing with Thue–Morse from a supplied cutoff. The graph and target both use that same edited word. The finite search is proved sufficient and the best integer constant is attained; no efficient-runtime claim is made.
+
+For Wong's graph mathematics, [automatic finite interval output](notes/WONG-SIMPLIFICATION.md) now follows sample restriction and fixed-node contraction. A [fully sample-supported diamond](notes/WONG-DIAMOND.md) proves the precise loss of a crossover cutoff. The [finite-input specieslike verdict obstruction](notes/WONG-FINITE-IDENTIFIABILITY.md) makes the infinite-completion limitation explicit. These checked statements do not establish that DNA observations determine biological species.

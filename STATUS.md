@@ -10,11 +10,14 @@ receipts for the checked inventory.
 |---|---|---|
 | WongGARG | Finite interval DAG, local-parent forest under unique parenthood, derived ordering, exact natural-number path encoding, breakpoint-wise ancestry constancy. | Nonempty annotations and canonical records are explicit additional conditions; interval segmentation is not normalized. |
 | AncestralRestriction | Sample-path preservation, idempotence, nested/union laws, exact support criterion and erasure counterexamples. | Removes nonancestral material; does not remove unary nodes or implement tskit. |
-| AncestryContraction | Removing unretained intermediate nodes preserves exactly retained-node ancestry, also after sample restriction. | Relation-level semantics; event identities, path lengths and normalized interval output are not preserved or generated. |
+| AncestryContraction | Removing unretained intermediate nodes preserves exactly retained-node ancestry, also after sample restriction. | This core theorem is relational; the WongSimplification wrapper now generates actual finite interval output. Event identities and path lengths need not survive. |
 | FiniteHistoryCompletion and WongAlexander | Exact embedding of an actual finite gARG into contrasting infinite connected populations, with real dates and opposite whole-species status. | Abstract topology completion, not organism-owner inference, fixed-gender coverage or a prediction of an actual biological future. |
 | WongExamples | Two valid finite three-node interval DAGs have identical sample-extracted local relations and different original graphs. | A reconstruction-boundary example, not a claim that every raw ARG loses information. |
 | WongLocalArity | Local arity bounds, unary presence distinction and finite backward-walk bounds. | Counts original distinct children; traversal bound is not software runtime measurement. |
 | WongEventEncoding | Ordered full-span/single-crossover inheritance becomes an actual interval gARG with matching topology, local routes and paths. Distinct ordered parents identify an interior cutoff. | Does not validate all classical event child arities, normalize storage or establish stochastic inference. |
+| WongBreakpointCells, WongIntervalNormalization and WongSimplification | Derive disjoint cells from actual endpoints and re-encode sample restriction plus fixed-node contraction as a finite gARG. Preserve retained-to-sample ancestry, inherit unique parents, and add no breakpoints. | Samples must be retained for output sample support. Classical construction; adjacent intervals are not coalesced and node retention is fixed across coordinates. |
+| WongDiamond | Fully sample-supported four-node graphs with different crossover cuts have identical contracted relations. | Lost parent identities prevent using full-parent cutoff identifiability after contraction; no tskit implementation claim. |
+| FiniteGenomeIdentifiability | No verdict or decoder from a finite gARG determines whole-specieslike status for every topology-compatible infinite completion. | This is not a DNA-data, biological ownership or statistical species-tree theorem. |
 
 These are source formalizations and project deductions. Priority and empirical
 validity require separate evidence; a passing checker is not a novelty claim.
@@ -38,7 +41,7 @@ states the actual models and hypotheses.
 | General IAP/inspecies and root-cone criteria | Lean endpoints; exact specializations and consecutive-layer universality. | Does not solve unrestricted maximal-species existence or identify empirical species. |
 | Sharp phase-zero Thue-Morse theorem | Full Lean bound, attained maximum, equality family and exact equality indices. | Global novelty not established. |
 | Auxiliary first-hit formula and real coefficient | Exact first-hit endpoint and no-smaller-real-coefficient theorem checked. | No separate Filter.limsup endpoint is claimed. |
-| Finite-edit stability | Real coefficient $`8/3`$ optimal; exact frontier decomposition and equality test; $`8m-1`$ is the best universal integer additive constant. | The best smaller constant for a particular edited target remains separate. |
+| Finite-edit stability | Real coefficient $`8/3`$ optimal; exact frontier decomposition and equality test; $`8m-1`$ is the best universal integer additive constant. | FiniteEditOptimum now computes each individual best integer constant exactly; the cutoff is exponential and is not claimed minimal. |
 | Shifted target and graph | Checked $`5a`$ sharp bound, real coefficient optimality, attained maxima and full equality iff at $`v=3\cdot2^n-a-1`$, $`a\le2^n`$. | General two-variable digit recurrences are open. |
 | Arbitrarily slow finite maxima | For every function $`f`$, an aperiodic target has attained maxima exceeding $`f`$ at increasing starts; every other start also has a finite maximum. | Executability is relative to $`f`$; no formal computability-theory interface. |
 | Complete height formula | Universal closed form and ten-coordinate binary recurrence proved for actual attained maxima at every start. | The earlier capped finite experiments are retained only as discovery history. |
@@ -57,3 +60,7 @@ The [current workflow](.github/workflows/verify.yml) runs the core build/audit,
 six finite-path tests, local certificate check, interval/trajectory diagnostics,
 and pinned real-project audit. Older local and CI receipts remain historical
 records. Their success does not certify a later patch.
+
+## Current integrated receipt
+
+The follow-up aggregate checks passed: **405 core endpoints and 101 mathlib endpoints**, including 43 newly registered endpoints in ten new modules. Only `propext`, `Classical.choice` and `Quot.sound` occur. See the source hashes in [the core receipt](verification/formal-audit.json) and [the mathlib receipt](verification/real-audit.json). Hosted verification must match the publication commit.

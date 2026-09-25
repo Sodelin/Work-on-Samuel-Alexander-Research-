@@ -31,3 +31,18 @@ lean_lib WongLocalArity
 
 @[default_target]
 lean_lib WongEventEncoding
+
+@[default_target]
+lean_lib WongBreakpointCells
+
+@[default_target]
+lean_lib WongIntervalNormalization
+
+@[default_target]
+lean_lib WongSimplification
+
+@[default_target]
+lean_lib WongDiamond
+
+@[default_target]
+lean_lib FiniteGenomeIdentifiability

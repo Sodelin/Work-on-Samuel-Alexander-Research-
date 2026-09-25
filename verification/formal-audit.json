@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T09:34:01.020469+00:00",
+  "checked_at_utc": "2026-09-25T10:05:03.742118+00:00",
   "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "toolchain_pin": "leanprover/lean4:v4.33.1",
-  "endpoint_count": 393,
+  "endpoint_count": 405,
   "endpoint_axioms": {
     "PopulationDegree.offspring_threshold": [
       "propext",
@@ -1683,6 +1683,64 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "FiniteEditBranch.bad_boundary_join": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditBranch.branch_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditGap.off_extremal_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditAlgorithm.best_attained": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FiniteEditAlgorithm.sharp_tail_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditAlgorithm.best_at_cutoff_ge_neg_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThueMorseWindow.reflected_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThueMorseWindow.same_parity_left_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThueMorseWindow.same_right_window": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FiniteEditOptimum.residual_le_finite_best": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditOptimum.individual_optimum_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditOptimum.individual_additive_constant_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "source_sha256": {
@@ -1698,7 +1756,11 @@
     "lean/SamuelAlexanderResearch/DegreeBounds.lean": "fe099a1b8ead2142434bb8b45c9f91faa823b320560d92c70ee7ba206ddad748",
     "lean/SamuelAlexanderResearch/DigitRecurrence.lean": "73ca15003264178d04284508c61d6eba358b397e57830acb798c9f1186114637",
     "lean/SamuelAlexanderResearch/FiniteAvoidance.lean": "e2ac08fef95b8ceb6779cb2a656ba9e02c6fcfadaf0e5b81ea57a1a4cc211541",
+    "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean": "8910f8924f4612cfbb71fb1bb10e73e9f1e6a6da952c9400c5ef8d208632ca37",
+    "lean/SamuelAlexanderResearch/FiniteEditBranch.lean": "36518f13a8f7880e5dfe2a3dacd2a453c7cdc2bcd97ba0513a5747e93c5932f6",
     "lean/SamuelAlexanderResearch/FiniteEditExact.lean": "3d6fe12589b1a4e13b2337bb34cf7fc7ee2a08b960ebf9063ffb73fe6b84afdf",
+    "lean/SamuelAlexanderResearch/FiniteEditGap.lean": "c1ad9e647e539002893921f27d1fc62d4d0105958519aac6e7f7844e4dc2b9b2",
+    "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean": "d278498a4bd7c6c48930c359f9e4936cb0ef286b3476409eecb0a5a1bce15a1e",
     "lean/SamuelAlexanderResearch/FiniteEditStability.lean": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
     "lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
     "lean/SamuelAlexanderResearch/FinitePhasePaths.lean": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf",
@@ -1736,8 +1798,9 @@
     "lean/SamuelAlexanderResearch/StaticMixing.lean": "5dc98213607d991388021a76a21dd7c24196e7effc66ef260c77771be48848c1",
     "lean/SamuelAlexanderResearch/ThueMorseBits.lean": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
     "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
-    "lean/SamuelAlexanderResearch.lean": "f668160800a66298526c92562898e3f1b6c696cdce940e3d64d5e501124c581e",
-    "verification/FormalAudit.lean": "ad4850b4a8ebf3b44dd0b6faed67f10df5dd6259d59df7f155b27fcc9bc76854"
+    "lean/SamuelAlexanderResearch/ThueMorseWindow.lean": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f",
+    "lean/SamuelAlexanderResearch.lean": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1",
+    "verification/FormalAudit.lean": "4ffa187f91d47048b3b4e4b455b69a3ad34d4b5b49479ecf9bcb94728ab83852"
   },
   "dependencies": {},
   "project": "core",

@@ -405,3 +405,27 @@ Statement and model review is recorded separately in FORMALIZATION.md.
 #print axioms AncestryContraction.nested_contraction_paths
 #print axioms AncestryContraction.locus_retained_path_iff
 #print axioms AncestryContraction.resolved_contracted_sample_path_iff
+
+#print axioms FiniteEditBranch.bad_boundary_join
+
+#print axioms FiniteEditBranch.branch_separation
+
+#print axioms FiniteEditGap.off_extremal_gap
+
+#print axioms FiniteEditAlgorithm.best_attained
+
+#print axioms FiniteEditAlgorithm.sharp_tail_witness
+
+#print axioms FiniteEditAlgorithm.best_at_cutoff_ge_neg_one
+
+#print axioms ThueMorseWindow.reflected_window
+
+#print axioms ThueMorseWindow.same_parity_left_window
+
+#print axioms ThueMorseWindow.same_right_window
+
+#print axioms FiniteEditOptimum.residual_le_finite_best
+
+#print axioms FiniteEditOptimum.individual_optimum_attained
+
+#print axioms FiniteEditOptimum.individual_additive_constant_iff

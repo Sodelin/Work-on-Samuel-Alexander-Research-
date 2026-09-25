@@ -1,140 +1,113 @@
-# Individual finite-edit additive constants: exact remaining target
+# Individual finite-edit additive constants: exact finite algorithm
 
-## Status
+## Result and verification status
 
-The general individual-optimum refinement remains open in this repository. The existing Lean theorems prove the sharp constant uniform over all edits below a cutoff, exact maxima for each chosen start, and the equality test for the universal bound. They do not yet give a certified finite algorithm for the smallest additive constant of each fixed edited target.
+The original all-edit-length refinement is solved: every fixed target that agrees with Thue–Morse from some index m onward has an exact, attained optimal integer additive constant, computable by a finite search with an explicit cutoff. This is stronger than the previously checked sharp allowance uniform over all edits and the separate exact height at each chosen start.
 
-This note preserves that stronger target and develops a concrete finite-reduction route. The reduction below depends on one explicitly stated branch-separation lemma which is not proved here. No new Lean module or verification receipt is claimed for this investigation.
+All five proof modules passed their individual Lean checks in the refinement staging area, including the complete global reduction and least-constant equivalence. Their twelve selected endpoints reported only permitted standard axioms, with no `sorryAx` or new axioms. They have been promoted to stable core module names; the refreshed 405-endpoint core aggregate check of the promoted imports has passed. The aggregate receipt, rather than the earlier published packet, determines the final integrated verification status.
 
-## The target, and what already follows
+The stable modules are [FiniteEditBranch](../lean/SamuelAlexanderResearch/FiniteEditBranch.lean), [FiniteEditGap](../lean/SamuelAlexanderResearch/FiniteEditGap.lean), [ThueMorseWindow](../lean/SamuelAlexanderResearch/ThueMorseWindow.lean), [FiniteEditAlgorithm](../lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean), and [FiniteEditOptimum](../lean/SamuelAlexanderResearch/FiniteEditOptimum.lean).
 
-Fix a target s agreeing with Thue-Morse t at every index at least m. Write L_s(v) for its actual attained maximum matching length, using FiniteEditExact.height.
+## Exact statement and executable procedure
 
-The individual optimum is the largest integer residual
+Fix any m in the natural numbers, including zero, and any target s with s(k)=t(k) for every k at least m. No assumptions are imposed on the first m bits. Let L_s(v) be the actual attained maximum matching length from v in the existing BinaryAvoidance graph for s. The previously certified function `FiniteEditExact.height s m v` computes this length under the agreement hypothesis.
 
-```math
-B_s = \max_{v\ge 1}\bigl(3L_s(v)-8v\bigr).
-```
-
-Equivalently, B_s is the smallest integer B such that every positive start satisfies the additive bound with B. The checked universal theorem supplies B_s at most 8m minus one. It does not assert that every individual target attains that universal value.
-
-A maximum does exist and is attained: the residuals form a nonempty set of integers bounded above. This is an existence argument, not an effective bound on which starting vertices must be examined.
-
-In fact, a direct mathematical deduction from the existing shifted extremal family improves the elementary transport lower bound to
+Define
 
 ```math
--1 \le B_s \le 8m-1.
+\delta_s(v)=3L_s(v)-8v,\qquad
+N(m)=3\cdot 2^{m+3}+m,
 ```
 
-Here is that deduction. Take a dyadic q large enough that q exceeds m, and put a equal to 3q minus one. The checked phase-extremal family gives a matching suffix, beginning at time m and vertex a+m, that lasts to total length 8q minus three. Run the first m edited target labels backwards from that vertex. At each vertex there is exactly one incoming edge with the required label, and each backwards step subtracts one or two. The resulting start is a-p for an integer p between zero and m. Choosing q large keeps the entire backwards segment in the graph. The whole edited path therefore has residual 8p minus one.
-
-The universal upper bound then makes the set of residual values at least minus one a finite, nonempty set; its largest value is attained. Determining which values occur over all starts still requires a global argument.
-
-## A concrete two-value dyadic tail
-
-For each dyadic q sufficiently large, define the backwards calculation explicitly:
+and compute the integer
 
 ```math
-w_m=3q+m-1,
-\qquad
-w_k=
-\begin{cases}
-w_{k+1}-1,&t(w_{k+1})=s(k),\\
-w_{k+1}-2,&t(w_{k+1})\ne s(k),
-\end{cases}
-\quad k=m-1,\ldots,0.
+B_s=\max_{1\le v\le N(m)}\delta_s(v).
 ```
 
-All vertices queried are beyond the edited graph-row region when q exceeds 2m+2, so the original row is exactly t. Put
+Then:
+
+1. Every positive start satisfies 3L_s(v) at most 8v+B_s.
+2. A positive start no greater than N(m) attains equality.
+3. For every integer B, the bound with B holds at all positive starts if and only if B_s is at most B.
+
+Thus B_s is the exact smallest integer additive constant for this individual target. The procedure is: compute N(m), evaluate the certified height at each start from one through N(m), and take the maximum of the resulting integer residuals. In Lean, this is the executable expression
+
+```lean
+FiniteEditAlgorithm.best s m (FiniteEditAlgorithm.cutoff m - 1)
+```
+
+Here `best s m n` scans exactly the positive starts from one through n+1. The final equivalence quantifies over actual `IsMaximumPrefix` statements; it does not define the desired conclusion into a new height predicate.
+
+The cutoff is deliberately generous and exponential in m. This result asserts termination and exactness, not a useful runtime bound or a minimal search cutoff. It also does not assert that every target attains the universal allowance 8m-1. Together with the previous uniform theorem, the new result gives the bounds -1 at most B_s at most 8m-1.
+
+## Proof of the finite reduction
+
+The proof combines actual matching paths, exact dyadic height bounds, and a finite-window identity. It does not infer a universal statement from numerical searches.
+
+First, every sufficiently large dyadic extremal suffix admits an edited prefix. For q=2^n with q at least m+1, take the existing shifted matching suffix beginning at time m and vertex 3q+m-1. Its total extended length is 8q-3. The established backward-prefix construction supplies the first m edges with the edited target labels. Its start lies between 3q-m-1 and 3q-1, and is positive. The resulting residual is at least -1. Choosing n=m+2 gives a witness inside the finite search. Therefore its finite maximum is at least -1.
+
+Second, the complete unedited height table gives a quantitative gap: every natural start a either equals 3 times a power of two minus one, or its unedited maximum is at most a+1. The even exceptional start a=2 belongs to the dyadic family and is retained explicitly.
+
+Third, the new branch-separation theorem states:
+
+> For q=2^n, if 2m is at most q, every original Thue–Morse matching path beginning at 3q-1 and lasting at least 4q has vertex 3q+m-1 at time m.
+
+This applies to every such path, not merely an extremal witness selected by a construction. For q=2r, the proof examines the path at time r. Its minimum possible vertex is 7r-1. If it were at least 7r, the explicit competing boundary trajectory would put its vertex at time 8r at least 20r-1. The already checked dyadic upper boundary requires every reachable vertex at that time to be strictly below 20r-1. This contradiction forces the midpoint to be 7r-1, hence every preceding step to have length one. The smallest dyadic case is handled directly.
+
+Fourth, the local Thue–Morse window around 3 times a power of two is determined by the parity of the exponent. The checked identities are
 
 ```math
-p_n=3\cdot2^n-1-w_0,
-\qquad 0\le p_n\le m.
+t(3\cdot2^n+j)=t(j) \quad(0\le j<2^n),
 ```
 
-This gives an actual edited matching path of length 8 times 2 to the n minus three, starting at w_0, with residual 8p_n minus one. Its proof can be assembled from backward_prefix, the phase-extremal suffix, and FiniteEditExact.prefix_decomposition.
-
-For all sufficiently large n, the local Thue-Morse window used by this finite backwards calculation depends only on the parity of n. The relevant identities, for q equal to 2 to the n, are
+and
 
 ```math
-t(3q+j)=t(j) \quad (0\le j<q),
-\qquad
-t(3q-r)=1\mathbin{\mathrm{xor}}(n\bmod2)
-                 \mathbin{\mathrm{xor}}t(r-1)
-\quad (1\le r<q).
+t(3\cdot2^n-r)=\bigl(1\mathbin{\mathrm{xor}}(n\bmod2)\bigr)
+                    \mathbin{\mathrm{xor}}t(r-1)
+\quad(1\le r\le2^n).
 ```
 
-Consequently p_n has at most two eventual values. They can be obtained by choosing any sufficiently large q and its double and performing two finite backwards traces. Call their maximum P. The dyadic witnesses give the explicit attained lower bound B_s at least 8P minus one.
+Consequently, if q=2^n and Q=2^M both exceed 2m+2 and the exponents have the same parity, the first m edges of a path ending at 3q+m-1 can be translated to edges ending at 3Q+m-1. All queried graph rows are beyond the edited region; the proof first applies the existing row-agreement theorem and then the window identities. The translated edges retain their actual edited target labels. Appending the established shifted extremal suffix gives an actual matching path of length 8Q-3. This is the checked `relocate_canonical_prefix` theorem.
 
-This finite pair is not yet proved to account for all large starting vertices.
+To finish, suppose a start v greater than N(m) improved the finite maximum. Since that maximum is at least -1, the improving integer residual is nonnegative. Transport a longest edited path to an original Thue–Morse path of the same length. The transported start a lies within m of v, and the paths agree from time m onward.
 
-## The exact missing branch-separation lemma
+If a is not dyadic extremal, the gap bounds its length by a+1. The original edited residual is then at most 3m+3-5v, contradicting its nonnegativity. Hence a=3q-1. The large-start inequalities imply q>2m+2 and length at least 4q. Branch separation forces the common time-m vertex to be 3q+m-1. The original sharp bound also limits the length to 8q-3.
 
-A useful lemma would state:
-
-> If q is a power of two, twice m is at most q, and a matching path for the original target t begins at 3q minus one and has length at least 4q, then its vertex at time m is exactly 3q+m minus one.
-
-This says that a sufficiently long match from the extremal start must use the all-one-step initial segment through that time. It is stronger than the existing theorem locating starts and lengths of exact equality. The latter does not, by itself, identify the initial segment of every nearly maximal path.
-
-The lemma is a concrete statement about the already defined MatchesPrefix and path evaluation, with no new biological assumptions. A formal proof could analyze the competing branches using the explicit dyadic boundary trajectories in FullHeight. It must rule out all noncanonical branches, rather than checking only the path chosen for an equality witness.
-
-A second, simpler lemma follows by cases from the existing complete FullHeight table:
-
-> For every positive u, either u is of the form 3 times a power of two minus one, or the unedited maximum L_t(u) is at most u+1.
-
-The exceptional even case u=2 is itself an extremal dyadic start. Other large heights in the table have a sufficient gap from the coefficient 8/3. This deduction has been checked algebraically in this investigation but has not been added as a new Lean theorem.
-
-## Why those lemmas give a finite algorithm
-
-Assume the branch-separation lemma and the displayed off-extremal gap have been proved. Set R equal to 7m+8. Compute:
-
-1. The two eventual backwards displacements, using sufficiently large consecutive dyadic scales.
-2. Every exact residual from start 1 through R, using the existing finite-frontier maximum algorithm.
-
-The candidate answer is
+Choose M to be one of m+2 and m+3, with the same parity as the original exponent. Both representative scales satisfy the needed window bounds. Translate the actual edited prefix to Q=2^M and append its sharp suffix. If v' is the new start, the proof obtains
 
 ```math
-\max\left(
- 8p_{\mathrm{even}}-1,\;
- 8p_{\mathrm{odd}}-1,\;
- \max_{1\le v\le7m+8}(3L_s(v)-8v)
-\right).
+v'+3q=v+3Q,\qquad 1\le v'\le3Q-1\le N(m).
 ```
 
-Every candidate value is attained or comes from an attained path, so it is a lower bound for B_s. To prove it is an upper bound, suppose a start v greater than R improved it. The candidate is at least minus one, so the improving integer residual is nonnegative.
+The new path's residual is at least the old path's residual, because its length is 8Q-3 while the old length is at most 8q-3. Its actual maximum length can only increase that residual. This contradicts improvement over the finite maximum and proves the global bound. Finite attainment then proves the exact least-constant equivalence.
 
-Apply the checked finite-edit transport to a longest matching path from v. It produces an original Thue-Morse path of the same length, starting at some a within distance m of v, and agrees with the edited path at time m.
+## Checked endpoint map
 
-If a is not an extremal start, the off-extremal gap bounds the length by a+1, which makes the edited residual at most 3m+3 minus 5v, a negative number. This contradicts improvement. Thus a is 3q minus one.
+| Module | Selected endpoints and role |
+| --- | --- |
+| `FiniteEditBranch` | `bad_boundary_join`, `branch_separation`: the competing trajectory and forced initial segment. |
+| `FiniteEditGap` | `off_extremal_gap`: the height gap outside the dyadic extremal family. |
+| `ThueMorseWindow` | `reflected_window`, `same_parity_left_window`, `same_right_window`: exact local-window identities. |
+| `FiniteEditAlgorithm` | `best_attained`, `sharp_tail_witness`, `best_at_cutoff_ge_neg_one`: executable finite maximum, actual edited witnesses, and its lower bound. |
+| `FiniteEditOptimum` | `residual_le_finite_best`, `individual_optimum_attained`, `individual_additive_constant_iff`: all-start reduction, global attainment, and the exact smallest integer constant. |
 
-The large-start threshold forces q to exceed 2m+2. The nonnegative residual also makes the path length at least 4q. Branch separation now forces its time-m vertex to be 3q+m minus one. Incoming edges with a specified label have unique parents, so the edited path's start must be exactly the finite backwards start used above. Its residual is at most the corresponding value 8p_n minus one, contradicting improvement again.
+## Refinements and limits that remain distinct
 
-This gives an explicit finite global reduction once the stated branch-separation lemma and its algebraic supporting lemmas are checked. It does not require a full joint phase/start digit recurrence.
+The earlier proposed smaller search, combining starts through 7m+8 with two explicit backward traces, remains a potential optimization. The present checked algorithm does not need that stronger formula. Removing the finite exceptional-start search altogether is also not asserted. Earlier bounded experiments were used only to discover candidate lemmas; the Lean proofs above replace them as evidence for the all-m finite algorithm.
 
-## Bounded discovery checks, not proofs
+For m=1, the earlier checked universal theorem and equality witness already yield the mathematical subcase B_s=-1 when s(0) is false and B_s=7 when s(0) is true. The all-m theorem now covers both cases as part of the full result; no separate one-bit theorem substitutes for it.
 
-A small boundary-trajectory calculation examined every cutoff m from one through q/2, for dyadic q from 2 through 256. For every cutoff, it tested all reachable cutoff vertices other than 3q+m minus one. None continued to total length 4q.
-
-For q equal to 4, 8, 16, 32, 64, 128 and 256, the longest observed noncanonical continuation had total length 5q/2 minus one. For q=2, it had total length three. These observations motivate the branch-separation lemma; they do not prove it.
-
-A separate bounded scan over all edited prefixes of lengths zero through seven, and starts one through 180, found no residual exceeding the two eventual backwards-trace values. That suggests the finite exceptional-start term might eventually be removable, but no such simplification should be stated as a theorem.
-
-## Exact one-bit subcase
-
-The case m=1 is an immediate mathematical corollary of existing checked endpoints:
-
-- If s(0) is false, agreement from one implies s=t. The unedited sharp theorem gives B_s equal to minus one.
-- If s(0) is true, s equals sharpEdit 1 1. The existing sharpEdit_equality witness has start four and maximum length thirteen, giving residual seven. The universal bound gives B_s at most seven, hence equality.
-
-No new dedicated Lean endpoint was compiled for this corollary. It is an exact subcase, not a replacement for the general individual-optimum question.
-
-## Other refinements that must remain visible
+The other original refinements remain visible and separate:
 
 | Original refinement | Current completed result | Exact remaining target |
 | --- | --- | --- |
-| Joint phase/index digit description | Exact maxima are computable for every phase and start; phase-zero has a certified finite digit recurrence. | A finite digit recurrence or closed form treating phase and starting index jointly, with its exact domain and any claimed complexity bound. |
+| Joint phase/index digit description | Exact maxima are computable for every phase and start; phase zero has a certified finite digit recurrence. | A finite digit recurrence or closed form treating phase and starting index jointly, with its exact domain and any claimed complexity bound. |
 | Optimal fixed-gender root count | The directed-line construction attains the optimal child cap two and has exactly three roots. | Whether three roots are necessary under the same avoidance and population requirements, or whether two roots can attain those requirements. The exact child-cap threshold does not settle this. |
 | Crossing widths above the minimum | The minimal-width tail is exactly the kth power of a ray; finite-port encoding is available. | Structural classification at larger widths, including the binary width-four regime and its label-language behavior. The encoding alone is not a classification. |
 | Natural or published cellular automata | The crafted three-state rule has a strict comparison between the specified static and stateful certificate classes. | A verified improvement for a natural binary or published rule, with its actual transition rule, evolution, certificate classes, and comparison against existing bounds. The synthetic example does not answer that target. |
 
-The ledger should retain these as unfinished refinements. The general finite-edit algorithm should move to proved status only after the global reduction, its source-to-height bridge, and the resulting executable finite procedure have actually passed formal checking.
+This result concerns the established symbolic matching graph. It makes no biological inference about the Wong model and no literature-priority claim.
+
+The current integrated source inventory is in [the core receipt](../verification/formal-audit.json) and [the mathlib receipt](../verification/real-audit.json). All selected endpoints use only the permitted standard axioms.

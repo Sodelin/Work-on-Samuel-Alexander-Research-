@@ -1,3 +1,8 @@
+import FiniteGenomeIdentifiability
+import WongDiamond
+import WongSimplification
+import WongIntervalNormalization
+import WongBreakpointCells
 import WongEventEncoding
 import WongLocalArity
 import WongExamples
@@ -80,3 +85,65 @@ import StatefulCAReal
 #print axioms WongEventEncoding.EventGraph.erased_encoded_topology
 #print axioms WongEventEncoding.EventGraph.encoded_parent_pointer
 #print axioms WongEventEncoding.ParentSpec.crossover_cut_identified
+
+#print axioms WongBreakpointCells.cells_pairwise_disjoint
+
+#print axioms WongBreakpointCells.exists_cell_of_bracket
+
+#print axioms WongBreakpointCells.locus_covered
+
+#print axioms WongBreakpointCells.locus_constant_on_cell
+
+#print axioms WongIntervalNormalization.CellPresentation.finite_cell_representation
+
+#print axioms WongIntervalNormalization.restriction_union_acyclic
+
+#print axioms WongIntervalNormalization.contraction_union_acyclic
+
+#print axioms WongIntervalNormalization.sample_restriction_representable
+
+#print axioms WongIntervalNormalization.extracted_contraction_representable
+
+#print axioms WongIntervalNormalization.reencoded_contraction_sample_paths
+
+#print axioms WongSimplification.automaticPresentation
+
+#print axioms WongSimplification.automatic_sample_restriction
+
+#print axioms WongSimplification.contraction_unique_parent
+
+#print axioms WongSimplification.automatic_reencoded_simplification
+
+#print axioms WongSimplification.reencoding_breakpoints_subset
+
+#print axioms WongDiamond.garg
+
+#print axioms WongDiamond.nonempty_annotations
+
+#print axioms WongDiamond.canonical_records
+
+#print axioms WongDiamond.unique_parent
+
+#print axioms WongDiamond.sample_supported
+
+#print axioms WongDiamond.contracted_relation_iff
+
+#print axioms WongDiamond.retained_ancestry_iff
+
+#print axioms WongDiamond.sample_ancestry_iff
+
+#print axioms WongDiamond.contracted_relations_agree
+
+#print axioms WongDiamond.raw_relations_differ
+
+#print axioms WongDiamond.diamond_cutoff_information_loss
+
+#print axioms WongDiamond.collapsed_represents_contraction
+
+#print axioms WongDiamond.same_finite_output_hides_cutoff
+
+#print axioms FiniteGenomeIdentifiability.opposite_compatible_completions
+
+#print axioms FiniteGenomeIdentifiability.no_exact_specieslike_verdict
+
+#print axioms FiniteGenomeIdentifiability.no_exact_specieslike_decoder

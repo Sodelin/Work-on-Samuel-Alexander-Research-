@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "Wong-Alexander formal connection map",
   "date": "2026-09-25",
-  "status": "Individually checked theorem modules; fresh aggregate release receipt and endpoint-manifest validation are pending in the root compiler lane.",
+  "status": "Integrated source checks passed: 405 core endpoints and 101 mathlib endpoints. Hosted verification is tied to the exact publication commit.",
   "orientation": "All binary edge/path relations run ancestor or parent to descendant or child. Following an Option parent pointer goes backward.",
   "verification": {
     "lean": "4.33.1",
@@ -11,7 +11,7 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "evidence": "Fresh aggregate checks passed: 393 core endpoints and 70 Mathlib endpoints, including all five new real modules and three core modules. Only propext, Classical.choice and Quot.sound occur. Source files use the hashes in these receipts; hosted verification is tied to the publication commit.",
+    "evidence": "Fresh aggregate checks passed for 405 core and 101 mathlib endpoints, including this follow-up's 12 new core and 31 new mathlib endpoints. Only propext, Classical.choice and Quot.sound occur. Mathematical statement review was performed separately; no novelty or full-paper claim follows.",
     "not_claimed": [
       "complete formalization of Wong et al.",
       "verified tskit/software implementation",
@@ -23,15 +23,15 @@
     "aggregate_receipts": [
       {
         "path": "verification/formal-audit.json",
-        "sha256": "6c7cb569c03658f719056595ea5ff40b96fabbfde286ad9552e550c6d0dc4972",
-        "checked_at_utc": "2026-09-25T09:34:01.020469+00:00",
-        "endpoint_count": 393
+        "sha256": "ffea6b749ca15ef571c3a348f007ba13248ab3910ba21e0884cb8f89dd0e5249",
+        "checked_at_utc": "2026-09-25T10:05:03.742118+00:00",
+        "endpoint_count": 405
       },
       {
         "path": "verification/real-audit.json",
-        "sha256": "9f3e093f50f631d93b5ddcc9e8766f99e2c8b41c4b4d70e928d8dd1b1a2fa4bc",
-        "checked_at_utc": "2026-09-25T09:37:13.579433+00:00",
-        "endpoint_count": 70
+        "sha256": "b1e2bbba981413405be292d6ec89faa7ae0c6e26c0f3e008e22a022173be6846",
+        "checked_at_utc": "2026-09-25T10:12:36.043144+00:00",
+        "endpoint_count": 101
       }
     ]
   },
@@ -127,6 +127,21 @@
       "id": "word_population",
       "label": "Separate gender-labelled infinite population theory",
       "lean_type": "LabelledGraph and infinite-population assumptions"
+    },
+    {
+      "id": "breakpoint_cells",
+      "label": "Automatic finite disjoint genomic cells",
+      "lean_type": "Finset (WongGARG.Interval Coord)"
+    },
+    {
+      "id": "simplified_garg",
+      "label": "Actual finite interval output after specified contraction",
+      "lean_type": "WongGARG.GARG Node Coord"
+    },
+    {
+      "id": "species_verdict",
+      "label": "Impossible universal specieslike verdict from finite topology",
+      "lean_type": "FiniteGenomeIdentifiability.no_exact_specieslike_verdict"
     }
   ],
   "transforms": [
@@ -556,6 +571,125 @@
       "source_files": [
         "real/WongLocalArity.lean"
       ]
+    },
+    {
+      "id": "automatic_breakpoint_cells",
+      "from": "garg",
+      "to": "breakpoint_cells",
+      "input_type": "Actual finite interval GARG G",
+      "output_type": "Finite proper pairwise-disjoint adjacent breakpoint cells",
+      "hypotheses": [
+        "Fintype Node",
+        "LinearOrder Coord; no density assumption"
+      ],
+      "functions": [
+        "WongBreakpointCells.cells",
+        "WongSimplification.automaticPresentation"
+      ],
+      "theorem_endpoints": [
+        "WongBreakpointCells.cells_pairwise_disjoint",
+        "WongBreakpointCells.locus_covered",
+        "WongBreakpointCells.locus_constant_on_cell"
+      ],
+      "preserved_properties": [
+        "Every active input coordinate is covered",
+        "Exact local inheritance is constant on each cell",
+        "Empty input is allowed"
+      ],
+      "information_not_preserved_or_not_inferred": [
+        "Not every cell need be active",
+        "No executable sorting/performance claim"
+      ],
+      "practical_consequence": "The valid coordinate partition is derived, not supplied as an unproved precondition.",
+      "source_locations": [
+        "WONG24: journal p.2; Appendices E-G; project construction"
+      ],
+      "source_files": [
+        "real/WongBreakpointCells.lean",
+        "real/WongSimplification.lean"
+      ],
+      "proof_status": "aggregate_checked"
+    },
+    {
+      "id": "automatic_finite_simplification",
+      "from": "garg",
+      "to": "simplified_garg",
+      "input_type": "Actual finite GARG G and fixed retention predicate K",
+      "output_type": "Actual finite GARG H with exact contracted sample-extracted local edges",
+      "hypotheses": [
+        "K is fixed across coordinates",
+        "Retained starting and sample nodes for exact sample paths",
+        "Original UniqueParentAt x for inherited local uniqueness",
+        "Every designated sample retained for output SampleSupported"
+      ],
+      "functions": [
+        "WongIntervalNormalization.CellPresentation.toGARG",
+        "WongSimplification.automaticPresentation"
+      ],
+      "theorem_endpoints": [
+        "WongIntervalNormalization.CellPresentation.finite_cell_representation",
+        "WongSimplification.automatic_reencoded_simplification",
+        "WongSimplification.reencoding_breakpoints_subset"
+      ],
+      "preserved_properties": [
+        "Original finite node catalog and sample set",
+        "Retained-to-sample ancestry at every fixed coordinate",
+        "Nonempty proper disjoint interval annotations",
+        "One record per active ordered endpoint pair",
+        "Global DAG and conditional local unique parenthood",
+        "No new stored breakpoint endpoints"
+      ],
+      "information_not_preserved_or_not_inferred": [
+        "Unretained identities stay isolated in the catalog",
+        "Lost event identities and path lengths need not be recoverable",
+        "Adjacent cells are not merged; output syntax need not be minimal",
+        "No coordinate-varying retention rule or tskit implementation theorem"
+      ],
+      "practical_consequence": "The ancestry-preserving relation is representable again by finite interval data with proved construction invariants.",
+      "source_locations": [
+        "WONG24: Appendix G pp.16-17; project formal construction"
+      ],
+      "source_files": [
+        "real/WongBreakpointCells.lean",
+        "real/WongIntervalNormalization.lean",
+        "real/WongSimplification.lean"
+      ],
+      "proof_status": "aggregate_checked"
+    },
+    {
+      "id": "finite_species_verdict_obstruction",
+      "from": "garg",
+      "to": "species_verdict",
+      "input_type": "Finite GARG and all topology-compatible infinite completions",
+      "output_type": "No proposition or decoder of the finite graph is correct for every completion",
+      "hypotheses": [
+        "Compatible completion preserves and reflects old raw topology and ancestry",
+        "Real/natural biosphere conditions, finite roots, whole weak connectivity"
+      ],
+      "functions": [
+        "FiniteGenomeIdentifiability.Compatible"
+      ],
+      "theorem_endpoints": [
+        "FiniteGenomeIdentifiability.opposite_compatible_completions",
+        "FiniteGenomeIdentifiability.no_exact_specieslike_verdict",
+        "FiniteGenomeIdentifiability.no_exact_specieslike_decoder"
+      ],
+      "preserved_properties": [
+        "Same observed finite topology supports both whole-specieslike outcomes"
+      ],
+      "information_not_preserved_or_not_inferred": [
+        "No DNA observation model",
+        "No biological owner map",
+        "No statistical species-tree or finite-sample classification theorem"
+      ],
+      "practical_consequence": "A positive biological identifiability theorem requires a narrower justified model and a stated observation and species target.",
+      "source_locations": [
+        "SPEC26: specieslike definition; project corollary of finite-history completions"
+      ],
+      "source_files": [
+        "real/FiniteGenomeIdentifiability.lean"
+      ],
+      "proof_status": "aggregate_checked"
     }
   ],
   "counterexamples": [
@@ -577,6 +711,26 @@
       "different_fact": "Raw topology and locus0 edge0->1.",
       "exact_recovery_condition": "WongGARG.GARG.extracted_eq_local_iff_sampleSupported",
       "practical_consequence": "Add the sample-support qualification when reconstructing raw graphs from sample-extracted local relations.",
+      "proof_status": "aggregate_checked"
+    },
+    {
+      "id": "supported_diamond_cutoff_loss",
+      "source_file": "real/WongDiamond.lean",
+      "theorem_endpoints": [
+        "WongDiamond.diamond_cutoff_information_loss",
+        "WongDiamond.same_finite_output_hides_cutoff"
+      ],
+      "input": "Same Fin4 catalog and sample3. Paths0->1->3 and0->2->3 carry complementary intervals in[0,3), with cut1 versuscut2.",
+      "guards": [
+        "valid finite DAGs",
+        "nonempty canonical records",
+        "unique local parents",
+        "all original incidences sample-supported"
+      ],
+      "equal_observation": "Keep exactly0and3: identical contracted relations, both represented by one explicit full-interval output0->3@[0,3).",
+      "different_fact": "Original inheritance route atcoordinate1 and crossover cutoff.",
+      "exact_recovery_condition": "Full distinct-parent cutoff identification requires retaining the original ordered parent identities; these are discarded here.",
+      "practical_consequence": "Ancestry preservation alone does not recover a crossover cutoff even without sample-filtering loss. This is not equality of automatically generated record segmentation.",
       "proof_status": "aggregate_checked"
     }
   ],
@@ -656,6 +810,85 @@
         "SamuelAlexanderResearch.SpeciesAdapter"
       ],
       "source_sha256_at_outline_freeze": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7"
+    },
+    {
+      "source_file": "real/WongBreakpointCells.lean",
+      "imports": [
+        "Mathlib.Data.Finset.Max",
+        "Mathlib.Data.Finset.Prod",
+        "WongGARG"
+      ],
+      "source_sha256_at_outline_freeze": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d"
+    },
+    {
+      "source_file": "real/WongIntervalNormalization.lean",
+      "imports": [
+        "WongAlexander",
+        "Mathlib.Data.Fintype.Prod"
+      ],
+      "source_sha256_at_outline_freeze": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f"
+    },
+    {
+      "source_file": "real/WongSimplification.lean",
+      "imports": [
+        "WongBreakpointCells",
+        "WongIntervalNormalization"
+      ],
+      "source_sha256_at_outline_freeze": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab"
+    },
+    {
+      "source_file": "real/WongDiamond.lean",
+      "imports": [
+        "WongEventEncoding",
+        "SamuelAlexanderResearch.AncestryContraction"
+      ],
+      "source_sha256_at_outline_freeze": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd"
+    },
+    {
+      "source_file": "real/FiniteGenomeIdentifiability.lean",
+      "imports": [
+        "WongAlexander"
+      ],
+      "source_sha256_at_outline_freeze": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5"
+    },
+    {
+      "source_file": "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+      "imports": [
+        "SamuelAlexanderResearch.ThueMorseBits"
+      ],
+      "source_sha256_at_outline_freeze": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f"
+    },
+    {
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditBranch.lean",
+      "imports": [
+        "SamuelAlexanderResearch.FullHeight",
+        "SamuelAlexanderResearch.FiniteEditExact"
+      ],
+      "source_sha256_at_outline_freeze": "36518f13a8f7880e5dfe2a3dacd2a453c7cdc2bcd97ba0513a5747e93c5932f6"
+    },
+    {
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditGap.lean",
+      "imports": [
+        "SamuelAlexanderResearch.FullHeight"
+      ],
+      "source_sha256_at_outline_freeze": "c1ad9e647e539002893921f27d1fc62d4d0105958519aac6e7f7844e4dc2b9b2"
+    },
+    {
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+      "imports": [
+        "SamuelAlexanderResearch.FiniteEditExact"
+      ],
+      "source_sha256_at_outline_freeze": "8910f8924f4612cfbb71fb1bb10e73e9f1e6a6da952c9400c5ef8d208632ca37"
+    },
+    {
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean",
+      "imports": [
+        "SamuelAlexanderResearch.FiniteEditBranch",
+        "SamuelAlexanderResearch.FiniteEditGap",
+        "SamuelAlexanderResearch.FiniteEditAlgorithm",
+        "SamuelAlexanderResearch.ThueMorseWindow"
+      ],
+      "source_sha256_at_outline_freeze": "d278498a4bd7c6c48930c359f9e4936cb0ef286b3476409eecb0a5a1bce15a1e"
     }
   ],
   "conditional_results": [
@@ -688,6 +921,47 @@
       "practical_consequence": "State precisely which full local information determines a crossover coordinate, rather than claiming recovery of all event history.",
       "source_locations": [
         "WONG24: journal pp.2-4 event conversion; Appendix H p.17; checked conditional consequence"
+      ],
+      "proof_status": "aggregate_checked"
+    },
+    {
+      "id": "individual_finite_edit_optimum",
+      "input_type": "Fixed s:Nat->Bool and cutoffm with AgreeFrom s ThueMorseBits.t m",
+      "output_type": "Exact attained least integer intercept from a finite search1..3*2^(m+3)+m",
+      "hypotheses": [
+        "Graph and target are both built from the same fixed s",
+        "Only positive starting vertices",
+        "Cutoffm need not be minimal"
+      ],
+      "functions": [
+        "FiniteEditAlgorithm.best",
+        "FiniteEditAlgorithm.cutoff",
+        "FiniteEditExact.height"
+      ],
+      "theorem_endpoints": [
+        "FiniteEditOptimum.residual_le_finite_best",
+        "FiniteEditOptimum.individual_optimum_attained",
+        "FiniteEditOptimum.individual_additive_constant_iff"
+      ],
+      "source_files": [
+        "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+        "lean/SamuelAlexanderResearch/FiniteEditBranch.lean",
+        "lean/SamuelAlexanderResearch/FiniteEditGap.lean",
+        "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+        "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean"
+      ],
+      "preserved_properties": [
+        "Exact per-word rather than uniform worst-case optimum",
+        "Actual maximum matching lengths",
+        "A finite maximizing witness"
+      ],
+      "information_not_preserved_or_not_inferred": [
+        "No minimal-cutoff or efficient runtime claim",
+        "No general phase/index recurrence or graph self-similarity claim"
+      ],
+      "practical_consequence": "One stronger refinement beyond the ten principal proposal answers is now completely settled in its stated all-m form.",
+      "source_locations": [
+        "Separate Alexander unavoidability branch; project finite-edit refinement"
       ],
       "proof_status": "aggregate_checked"
     }
@@ -926,6 +1200,264 @@
       "source_file": "real/WongLocalArity.lean",
       "declaration_line": 74,
       "exact_lean_signature": "theorem no_infinite_backward_local_walk (G : GARG Node Coord) (x : Coord) :\n    ¬ ∃ path : Nat → Node, ∀ i, G.AtLocus x (path (i + 1)) (path i)"
+    },
+    {
+      "name": "WongBreakpointCells.cells_pairwise_disjoint",
+      "source_file": "real/WongBreakpointCells.lean",
+      "declaration_line": 48,
+      "exact_lean_signature": "theorem cells_pairwise_disjoint (B : Finset Coord) :\n    ∀ I ∈ cells B, ∀ J ∈ cells B, I ≠ J → I.Disjoint J"
+    },
+    {
+      "name": "WongBreakpointCells.exists_cell_of_bracket",
+      "source_file": "real/WongBreakpointCells.lean",
+      "declaration_line": 65,
+      "exact_lean_signature": "theorem exists_cell_of_bracket (B : Finset Coord) (x lo hi : Coord)\n    (hl : lo ∈ B) (hh : hi ∈ B) (hlo : lo ≤ x) (hhi : x < hi) :\n    ∃ I ∈ cells B, I.Contains x"
+    },
+    {
+      "name": "WongBreakpointCells.locus_covered",
+      "source_file": "real/WongBreakpointCells.lean",
+      "declaration_line": 89,
+      "exact_lean_signature": "theorem locus_covered {x : Coord} {a b : Node} (h : G.AtLocus x a b) :\n    ∃ I ∈ cells G.breakpoints, I.Contains x"
+    },
+    {
+      "name": "WongBreakpointCells.locus_constant_on_cell",
+      "source_file": "real/WongBreakpointCells.lean",
+      "declaration_line": 95,
+      "exact_lean_signature": "theorem locus_constant_on_cell {I : Interval Coord} (hI : I ∈ cells G.breakpoints)\n    {x : Coord} (hx : I.Contains x) (a b : Node) :\n    G.AtLocus x a b ↔ G.AtLocus I.lo a b"
+    },
+    {
+      "name": "WongIntervalNormalization.CellPresentation.finite_cell_representation",
+      "source_file": "real/WongIntervalNormalization.lean",
+      "declaration_line": 128,
+      "exact_lean_signature": "theorem finite_cell_representation (C : CellPresentation R) (samples : Finset Node) (acyclic : UnionAcyclic R) :\n    ∃ H : GARG Node Coord, H.samples = samples ∧ H.NonemptyAnnotations ∧\n      H.CanonicalRecords ∧ (∀ x a b, H.AtLocus x a b ↔ R x a b) ∧\n      (∀ a b, H.Topology a b ↔ EraseIndex R a b)"
+    },
+    {
+      "name": "WongIntervalNormalization.restriction_union_acyclic",
+      "source_file": "real/WongIntervalNormalization.lean",
+      "declaration_line": 218,
+      "exact_lean_signature": "theorem restriction_union_acyclic {R : Coord → Node → Node → Prop}\n    (acyclic : UnionAcyclic R) (S : Node → Prop) :\n    UnionAcyclic (fun x => Restrict (R x) S)"
+    },
+    {
+      "name": "WongIntervalNormalization.contraction_union_acyclic",
+      "source_file": "real/WongIntervalNormalization.lean",
+      "declaration_line": 228,
+      "exact_lean_signature": "theorem contraction_union_acyclic {R : Coord → Node → Node → Prop}\n    (acyclic : UnionAcyclic R) (K : Node → Prop) :\n    UnionAcyclic (fun x => Contract (R x) K)"
+    },
+    {
+      "name": "WongIntervalNormalization.sample_restriction_representable",
+      "source_file": "real/WongIntervalNormalization.lean",
+      "declaration_line": 263,
+      "exact_lean_signature": "theorem sample_restriction_representable (G : GARG Node Coord)\n    (C : CellPresentation G.AtLocus) :\n    ∃ H : GARG Node Coord, H.samples = G.samples ∧ H.NonemptyAnnotations ∧\n      H.CanonicalRecords ∧ (∀ x a b, H.AtLocus x a b ↔ G.ExtractedAt x a b)"
+    },
+    {
+      "name": "WongIntervalNormalization.extracted_contraction_representable",
+      "source_file": "real/WongIntervalNormalization.lean",
+      "declaration_line": 274,
+      "exact_lean_signature": "theorem extracted_contraction_representable (G : GARG Node Coord)\n    (C : CellPresentation G.AtLocus) (K : Node → Prop) :\n    ∃ H : GARG Node Coord, H.samples = G.samples ∧ H.NonemptyAnnotations ∧\n      H.CanonicalRecords ∧\n      (∀ x a b, H.AtLocus x a b ↔ Contract (G.ExtractedAt x) K a b)"
+    },
+    {
+      "name": "WongIntervalNormalization.reencoded_contraction_sample_paths",
+      "source_file": "real/WongIntervalNormalization.lean",
+      "declaration_line": 286,
+      "exact_lean_signature": "theorem reencoded_contraction_sample_paths (G : GARG Node Coord)\n    (C : CellPresentation G.AtLocus) (K : Node → Prop) :\n    ∃ H : GARG Node Coord, H.samples = G.samples ∧ H.NonemptyAnnotations ∧\n      H.CanonicalRecords ∧\n      (∀ x a b, H.AtLocus x a b ↔ Contract (G.ExtractedAt x) K a b) ∧\n      (∀ x a s, K a → K s → s ∈ G.samples →\n        (Reach (H.AtLocus x) a s ↔ Reach (G.AtLocus x) a s))"
+    },
+    {
+      "name": "WongSimplification.automaticPresentation",
+      "source_file": "real/WongSimplification.lean",
+      "declaration_line": 23,
+      "exact_lean_signature": "def automaticPresentation (G : GARG Node Coord) : CellPresentation G.AtLocus"
+    },
+    {
+      "name": "WongSimplification.automatic_sample_restriction",
+      "source_file": "real/WongSimplification.lean",
+      "declaration_line": 34,
+      "exact_lean_signature": "theorem automatic_sample_restriction (G : GARG Node Coord) :\n    ∃ H : GARG Node Coord, H.samples = G.samples ∧ H.NonemptyAnnotations ∧\n      H.CanonicalRecords ∧ (∀ x a b, H.AtLocus x a b ↔ G.ExtractedAt x a b)"
+    },
+    {
+      "name": "WongSimplification.contraction_unique_parent",
+      "source_file": "real/WongSimplification.lean",
+      "declaration_line": 63,
+      "exact_lean_signature": "theorem contraction_unique_parent {R : Node → Node → Prop}\n    (unique : ∀ c a b, R a c → R b c → a = b) (K : Node → Prop) :\n    ∀ c a b, Contract R K a c → Contract R K b c → a = b"
+    },
+    {
+      "name": "WongSimplification.automatic_reencoded_simplification",
+      "source_file": "real/WongSimplification.lean",
+      "declaration_line": 100,
+      "exact_lean_signature": "theorem automatic_reencoded_simplification (G : GARG Node Coord) (K : Node → Prop) :\n    ∃ H : GARG Node Coord,\n      H.samples = G.samples ∧ H.NonemptyAnnotations ∧ H.CanonicalRecords ∧\n      (∀ x a b, H.AtLocus x a b ↔ Contract (G.ExtractedAt x) K a b) ∧\n      (∀ x a s, K a → K s → s ∈ G.samples →\n        (Reach (H.AtLocus x) a s ↔ Reach (G.AtLocus x) a s)) ∧\n      (∀ x, G.UniqueParentAt x → H.UniqueParentAt x) ∧\n      ((∀ s ∈ G.samples, K s) → H.SampleSupported) ∧\n      H.breakpoints ⊆ G.breakpoints"
+    },
+    {
+      "name": "WongSimplification.reencoding_breakpoints_subset",
+      "source_file": "real/WongSimplification.lean",
+      "declaration_line": 78,
+      "exact_lean_signature": "theorem reencoding_breakpoints_subset {R : Coord → Node → Node → Prop}\n    (C : CellPresentation R) (samples : Finset Node) (acyclic : UnionAcyclic R)\n    (B : Finset Coord)\n    (endpoints : ∀ I ∈ C.cells, I.lo ∈ B ∧ I.hi ∈ B) :\n    (C.toGARG samples acyclic).breakpoints ⊆ B"
+    },
+    {
+      "name": "WongDiamond.garg",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 68,
+      "exact_lean_signature": "def garg (cut : Nat) (hl : 0 < cut) (hh : cut < 3) : GARG Genome Nat"
+    },
+    {
+      "name": "WongDiamond.nonempty_annotations",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 106,
+      "exact_lean_signature": "theorem nonempty_annotations (cut : Nat) (hl : 0 < cut) (hh : cut < 3) :\n    (garg cut hl hh).NonemptyAnnotations"
+    },
+    {
+      "name": "WongDiamond.canonical_records",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 112,
+      "exact_lean_signature": "theorem canonical_records (cut : Nat) (hl : 0 < cut) (hh : cut < 3) :\n    (garg cut hl hh).CanonicalRecords"
+    },
+    {
+      "name": "WongDiamond.unique_parent",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 119,
+      "exact_lean_signature": "theorem unique_parent (cut : Nat) (hl : 0 < cut) (hh : cut < 3) (x : Nat) :\n    (garg cut hl hh).UniqueParentAt x"
+    },
+    {
+      "name": "WongDiamond.sample_supported",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 133,
+      "exact_lean_signature": "theorem sample_supported (cut : Nat) (hl : 0 < cut) (hh : cut < 3) :\n    (garg cut hl hh).SampleSupported"
+    },
+    {
+      "name": "WongDiamond.contracted_relation_iff",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 167,
+      "exact_lean_signature": "theorem contracted_relation_iff (cut : Nat) (hl : 0 < cut) (hh : cut < 3)\n    (x : Nat) (a b : Genome) :\n    Contract ((garg cut hl hh).AtLocus x) Keep a b ↔ x < 3 ∧ a = 0 ∧ b = 3"
+    },
+    {
+      "name": "WongDiamond.retained_ancestry_iff",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 194,
+      "exact_lean_signature": "theorem retained_ancestry_iff (cut : Nat) (hl : 0 < cut) (hh : cut < 3)\n    (x : Nat) {a b : Genome} (ha : Keep a) (hb : Keep b) :\n    Reach (Contract ((garg cut hl hh).AtLocus x) Keep) a b ↔\n      Reach ((garg cut hl hh).AtLocus x) a b"
+    },
+    {
+      "name": "WongDiamond.sample_ancestry_iff",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 200,
+      "exact_lean_signature": "theorem sample_ancestry_iff (cut : Nat) (hl : 0 < cut) (hh : cut < 3)\n    (x : Nat) {a : Genome} (ha : Keep a) :\n    Reach (Contract ((garg cut hl hh).AtLocus x) Keep) a 3 ↔\n      Reach ((garg cut hl hh).AtLocus x) a 3"
+    },
+    {
+      "name": "WongDiamond.contracted_relations_agree",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 209,
+      "exact_lean_signature": "theorem contracted_relations_agree (x : Nat) (a b : Genome) :\n    Contract (cutOne.AtLocus x) Keep a b ↔ Contract (cutTwo.AtLocus x) Keep a b"
+    },
+    {
+      "name": "WongDiamond.raw_relations_differ",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 215,
+      "exact_lean_signature": "theorem raw_relations_differ :\n    cutTwo.AtLocus 1 1 3 ∧ ¬ cutOne.AtLocus 1 1 3"
+    },
+    {
+      "name": "WongDiamond.diamond_cutoff_information_loss",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 226,
+      "exact_lean_signature": "theorem diamond_cutoff_information_loss :\n    cutOne.samples = cutTwo.samples ∧\n    cutOne.NonemptyAnnotations ∧ cutTwo.NonemptyAnnotations ∧\n    cutOne.CanonicalRecords ∧ cutTwo.CanonicalRecords ∧\n    (∀ x, cutOne.UniqueParentAt x ∧ cutTwo.UniqueParentAt x) ∧\n    cutOne.SampleSupported ∧ cutTwo.SampleSupported ∧\n    (∀ x a b, Contract (cutOne.AtLocus x) Keep a b ↔\n      Contract (cutTwo.AtLocus x) Keep a b) ∧\n    cutTwo.AtLocus 1 1 3 ∧ ¬ cutOne.AtLocus 1 1 3"
+    },
+    {
+      "name": "WongDiamond.collapsed_represents_contraction",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 284,
+      "exact_lean_signature": "theorem collapsed_represents_contraction (cut : Nat) (hl : 0 < cut) (hh : cut < 3)\n    (x : Nat) (a b : Genome) :\n    collapsedGARG.AtLocus x a b ↔ Contract ((garg cut hl hh).AtLocus x) Keep a b"
+    },
+    {
+      "name": "WongDiamond.same_finite_output_hides_cutoff",
+      "source_file": "real/WongDiamond.lean",
+      "declaration_line": 291,
+      "exact_lean_signature": "theorem same_finite_output_hides_cutoff :\n    collapsedGARG.samples = cutOne.samples ∧\n    collapsedGARG.samples = cutTwo.samples ∧\n    collapsedGARG.records = {collapsedRecord} ∧\n    collapsedGARG.NonemptyAnnotations ∧ collapsedGARG.CanonicalRecords ∧\n    (∀ x, collapsedGARG.UniqueParentAt x) ∧ collapsedGARG.SampleSupported ∧\n    (∀ x a b, (collapsedGARG.AtLocus x a b ↔ Contract (cutOne.AtLocus x) Keep a b) ∧\n      (collapsedGARG.AtLocus x a b ↔ Contract (cutTwo.AtLocus x) Keep a b)) ∧\n    cutTwo.AtLocus 1 1 3 ∧ ¬ cutOne.AtLocus 1 1 3"
+    },
+    {
+      "name": "FiniteGenomeIdentifiability.opposite_compatible_completions",
+      "source_file": "real/FiniteGenomeIdentifiability.lean",
+      "declaration_line": 25,
+      "exact_lean_signature": "theorem opposite_compatible_completions (G : WongGARG.GARG Node Coord) :\n    ∃ A B : Graph, Compatible G A ∧ Compatible G B ∧\n      Specieslike A Whole ∧ ¬ Specieslike B Whole"
+    },
+    {
+      "name": "FiniteGenomeIdentifiability.no_exact_specieslike_verdict",
+      "source_file": "real/FiniteGenomeIdentifiability.lean",
+      "declaration_line": 41,
+      "exact_lean_signature": "theorem no_exact_specieslike_verdict (G : WongGARG.GARG Node Coord) :\n    ¬ ∃ verdict : Prop, ∀ E : Graph, Compatible G E →\n      (verdict ↔ Specieslike E Whole)"
+    },
+    {
+      "name": "FiniteGenomeIdentifiability.no_exact_specieslike_decoder",
+      "source_file": "real/FiniteGenomeIdentifiability.lean",
+      "declaration_line": 50,
+      "exact_lean_signature": "theorem no_exact_specieslike_decoder (G : WongGARG.GARG Node Coord)\n    (decode : WongGARG.GARG Node Coord → Prop) :\n    ¬ ∀ E : Graph, Compatible G E →\n      (decode G ↔ Specieslike E Whole)"
+    },
+    {
+      "name": "ThueMorseWindow.reflected_window",
+      "source_file": "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+      "declaration_line": 16,
+      "exact_lean_signature": "theorem reflected_window (n r : Nat) (hr : 1 ≤ r) (hbound : r ≤ 2^n) :\n    t (2^n-r) = Bool.xor (odd n) (t (r-1))"
+    },
+    {
+      "name": "ThueMorseWindow.same_parity_left_window",
+      "source_file": "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+      "declaration_line": 51,
+      "exact_lean_signature": "theorem same_parity_left_window (n m r : Nat) (hr : 1 ≤ r)\n    (hn : r ≤ 2^n) (hm : r ≤ 2^m) (hp : n%2=m%2) :\n    t (3*2^n-r) = t (3*2^m-r)"
+    },
+    {
+      "name": "ThueMorseWindow.same_right_window",
+      "source_file": "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+      "declaration_line": 57,
+      "exact_lean_signature": "theorem same_right_window (n m r : Nat) (hn : r < 2^n) (hm : r < 2^m) :\n    t (3*2^n+r) = t (3*2^m+r)"
+    },
+    {
+      "name": "FiniteEditBranch.bad_boundary_join",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditBranch.lean",
+      "declaration_line": 232,
+      "exact_lean_signature": "theorem bad_boundary_join (n : Nat) :\n    Y (2^n) (7*2^n) (7*2^n)=20*2^n-1"
+    },
+    {
+      "name": "FiniteEditBranch.branch_separation",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditBranch.lean",
+      "declaration_line": 322,
+      "exact_lean_signature": "theorem branch_separation (n m : Nat) (path : Nat → Nat) (ell : Nat)\n    (hmq : 2*m ≤ 2^n) (hs : path 0=3*2^n-1)\n    (hm : MatchesPrefix t path ell) (hlen : 4*2^n ≤ ell) :\n    path m=3*2^n+m-1"
+    },
+    {
+      "name": "FiniteEditGap.off_extremal_gap",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditGap.lean",
+      "declaration_line": 8,
+      "exact_lean_signature": "theorem off_extremal_gap (v : Nat) :\n    (∃ n, v=3*2^n-1) ∨ FullHeight.height v ≤ v+1"
+    },
+    {
+      "name": "FiniteEditAlgorithm.best_attained",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+      "declaration_line": 33,
+      "exact_lean_signature": "theorem best_attained (s : Nat → Bool) (m n : Nat) :\n    ∃ v, 1≤v ∧ v≤n+1 ∧ residual s m v=best s m n"
+    },
+    {
+      "name": "FiniteEditAlgorithm.sharp_tail_witness",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+      "declaration_line": 46,
+      "exact_lean_signature": "theorem sharp_tail_witness (s : Nat → Bool) (m n : Nat)\n    (hag : AgreeFrom s ThueMorseBits.t m) (hlarge : m+1≤2^n) :\n    ∃ v, 1≤v ∧ v≤3*2^n-1 ∧ 3*2^n-1≤v+m ∧\n      HasPrefix s v (8*2^n-3)"
+    },
+    {
+      "name": "FiniteEditAlgorithm.best_at_cutoff_ge_neg_one",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+      "declaration_line": 85,
+      "exact_lean_signature": "theorem best_at_cutoff_ge_neg_one (s : Nat → Bool) (m : Nat)\n    (hag : AgreeFrom s ThueMorseBits.t m) :\n    -1 ≤ best s m (cutoff m-1)"
+    },
+    {
+      "name": "FiniteEditOptimum.residual_le_finite_best",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean",
+      "declaration_line": 108,
+      "exact_lean_signature": "theorem residual_le_finite_best (s : Nat → Bool) (m : Nat)\n    (hag : AgreeFrom s ThueMorseBits.t m) (v : Nat) (hv : 1≤v) :\n    residual s m v≤best s m (cutoff m-1)"
+    },
+    {
+      "name": "FiniteEditOptimum.individual_optimum_attained",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean",
+      "declaration_line": 166,
+      "exact_lean_signature": "theorem individual_optimum_attained (s : Nat → Bool) (m : Nat)\n    (hag : AgreeFrom s ThueMorseBits.t m) :\n    (∀ v, 1≤v → residual s m v≤best s m (cutoff m-1)) ∧\n    ∃ v, 1≤v ∧ v≤cutoff m ∧ residual s m v=best s m (cutoff m-1)"
+    },
+    {
+      "name": "FiniteEditOptimum.individual_additive_constant_iff",
+      "source_file": "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean",
+      "declaration_line": 176,
+      "exact_lean_signature": "theorem individual_additive_constant_iff (s : Nat → Bool) (m : Nat)\n    (hag : AgreeFrom s ThueMorseBits.t m) (B : Int) :\n    (∀ v len, 1≤v → IsMaximumPrefix s v len →\n      3*(len : Int)≤8*(v : Int)+B) ↔ best s m (cutoff m-1)≤B"
     }
   ]
 }

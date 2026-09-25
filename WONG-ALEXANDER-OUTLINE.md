@@ -11,6 +11,9 @@ flowchart TD
   L -->|unique local parent| P[Optional parent array]
   L -->|retain sample-ancestral edges| S[ExtractedAt x]
   S -->|keep K and collapse hidden interiors| C[Contracted local relation]
+  G -->|derive adjacent breakpoint cells| B[Finite disjoint cells]
+  C -->|proved interval representation using B| H[Finite simplified interval gARG]
+  B --> H
   G -->|forget coordinate annotations| T[Genome topology]
   T -->|proved finite DAG numbering| N[Ordered natural-number prefix]
   N --> J[Infinite join completion: whole inspecies]
@@ -34,13 +37,15 @@ The finite genome-ARG input follows [Wong et al. (2024), journal page 2](https:/
 
 Within a single-crossover model, the full local parent relation also determines the cut when the ordered parents are fixed and distinct. `WongEventEncoding.ParentSpec.crossover_cut_identified` proves this by evaluating the relation at the smaller proposed cut. This is conditional identifiability from complete local relations, not inference from sparse observed loci or a sample-extracted graph.
 
-The relevant source discussion is event conversion on journal pages 2–4; parent arrays and local trees in Appendix E, pages 14–15; unary nodes in Appendix F, pages 15–16; and simplification/information loss in Appendices G–H, pages 16–17. Our contraction theorem is a relation-level component. It does not verify the external simplification algorithm, reconstruct event histories, or regenerate finite interval records after contraction.
+The relevant source discussion is event conversion on journal pages 2–4; parent arrays and local trees in Appendix E, pages 14–15; unary nodes in Appendix F, pages 15–16; and simplification/information loss in Appendices G–H, pages 16–17. WongSimplification now regenerates an actual finite interval gARG after the specified sample restriction and fixed-node contraction. The partition is derived automatically from input endpoints; output has no new endpoints, preserves retained-to-sample ancestry and inherits local unique parenthood. Keeping all samples guarantees output sample support. The construction is classical, does not merge adjacent cell fragments, and does not verify the external software algorithm or reconstruct removed event identities.
 
 ## What reconstruction preserves, and what it cannot recover
 
 `WongGARG.GARG.extracted_eq_local_iff_sampleSupported` gives the exact condition: sample-extracted edges equal all local edges if and only if every annotated local edge already leads to a sample at that same coordinate.
 
 The [finite gARG example](notes/WONG-EXAMPLES.md) makes this boundary concrete. Both graphs have the same three nodes and sample `{2}`. One contains `0 → 1` on `[0,1)` and `1 → 2` on `[1,2)`; the other contains only the latter edge. Their extracted local relations agree at every coordinate and every node pair, despite different raw graphs. Both are DAGs with nonempty canonical records and unique local parents. The lost edge is nonancestral at its own coordinate. This supports a precise reconstruction qualification; it does not challenge recovery of already sample-supported graphs or establish the authors' intended scope was different.
+
+The [supported diamond](notes/WONG-DIAMOND.md) closes a different information-loss case. Paths 0→1→3 and 0→2→3 carry complementary pieces of `[0,3)`. Cutoffs 1 and 2 produce different raw local inheritance, even though every original incidence is sample-supported. After retaining only 0 and 3, both inputs have exactly the relation represented by one full-interval edge 0→3. This explicitly chosen common output does not assert that the automatic cell-grouping function removes every redundant interval boundary.
 
 Coordinate erasure has a separate failure: a topology path can combine edges supported at different loci. Therefore erasing labels and then tracing ancestry can introduce an apparent ancestral connection that no single locus supports. The checked noncommutation examples are `AncestryViews.erasure_converse_fails` and `AncestralRestriction.erasure_restriction_do_not_commute`.
 
@@ -52,6 +57,8 @@ An arbitrary finite gARG does not have temporally ordered node identifiers. `Won
 
 The species definitions come from Alexander's [2013 inspecies work](https://arxiv.org/html/1201.2869), Definition 4 and Proposition 6, and [2026 specieslike-cluster work](https://arxiv.org/html/2602.05274v1), Definitions 1–4. The completion theorem is our checked abstract connection. It demonstrates that finite genome topology alone does not determine the relevant infinite species outcome. It does not predict which future occurs, assign organisms to genome nodes, or extend genomic interval labels into the future.
 
+`FiniteGenomeIdentifiability.no_exact_specieslike_verdict` and `no_exact_specieslike_decoder` make the consequence explicit: no finite-input answer can be correct for every topology-compatible infinite completion. This is a precise abstract-model obstruction, not a claim about every DNA observation model or statistical species inference.
+
 The biological projection is separate. `WongGARG.GARG.locus_path_projects` accepts `owner : Node → Nat` and a supplied pedigree. Every record must map to equality of owners or pedigree ancestry. Under that premise, whole genome paths project soundly. Equality permits steps within one organism; ancestry permits skipped generations. The premise must be justified for an actual biological interpretation. It is not inferred by the formalizer.
 
 ## Repeated structure and the ten solved project questions
@@ -62,7 +69,7 @@ The [ten solved project extensions](TEN-SOLUTIONS.md) remain a separate body of 
 
 ## Verification and remaining scope
 
-The foundation, actual finite counterexample, restriction, contraction, local-arity/traversal, event conversion and Alexander wrapper modules have passed their serialized per-module checks as reported by the owning compiler lane. The JSON marks each result `individually_checked_awaiting_aggregate_receipt`. The proof files were normalized to LF before the fresh aggregate audit; the map records their current source hashes. The root lane must bind the exact endpoint inventory to the final release manifest and CI receipt.
+The original packet passed hosted verification at commit `bcef6da64672310b314f2bc17c96f9535fcaaf5b`. The extended modules passed serialized individual checks and independent statement review. The exact current source inventory, aggregate receipt hashes and publication gate are recorded in the machine-readable map and verification directory.
 
 These results do not constitute a formalization of the entire Wong paper. Stochastic coalescent models, inference algorithms, numerical experiments, software storage/performance claims, empirical genomic validity, and the biological owner correspondence remain outside the proved scope. No scientific novelty or independent human endorsement is inferred from Lean verification.
 
@@ -70,14 +77,16 @@ These results do not constitute a formalization of the entire Wong paper. Stocha
 
 ## Integrated verification
 
-The final local aggregate checks passed with **393 core endpoints and 70 Mathlib
-endpoints**, including this packet's 63 new selected endpoints. Only the permitted
-standard axioms occur. The machine-readable map records the exact receipt hashes;
-public CI must be read against its actual commit. This verifies the encoded
-mathematical statements, not the still-excluded biological, empirical or software claims.
+Current counts and source identities are recorded in [the core receipt](verification/formal-audit.json) and [the mathlib receipt](verification/real-audit.json). Hosted verification must be read against its exact publication commit. These checks validate the encoded statements, with the biological, empirical and software boundaries stated above.
 
 ## Further refinements
 
 The [refinement ledger](REFINEMENT-LEDGER.md) preserves the stronger outstanding
 questions from the original ten directions. A solved main theorem, a computable
 per-start answer, or a synthetic-rule example does not silently answer those refinements.
+
+The individual finite-edit refinement is now closed: for each fixed target agreeing with Thue–Morse from cutoff m, the exact least integer intercept is the attained maximum of `3*L_s(v)-8*v` over positive starts through `3*2^(m+3)+m`. The same fixed word defines both graph and target. This finite algorithm has an exponential cutoff; the other four principal stronger refinements remain open.
+
+## Current integrated receipt
+
+The follow-up aggregate checks passed: **405 core endpoints and 101 mathlib endpoints**, including 43 newly registered endpoints in ten new modules. Only `propext`, `Classical.choice` and `Quot.sound` occur. See the source hashes in [the core receipt](verification/formal-audit.json) and [the mathlib receipt](verification/real-audit.json). Hosted verification must match the publication commit.

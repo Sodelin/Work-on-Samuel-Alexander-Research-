@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "base_code_commit": "bcef6da64672310b314f2bc17c96f9535fcaaf5b",
+  "scope": "Exact individual finite-edit optimum; automatic finite interval simplification; supported diamond common-output collision; abstract finite-input specieslike verdict obstruction.",
+  "core_endpoints": 405,
+  "mathlib_endpoints": 101,
+  "new_selected_endpoints": 43,
+  "aggregate_receipts": [
+    {
+      "path": "verification/formal-audit.json",
+      "sha256": "ffea6b749ca15ef571c3a348f007ba13248ab3910ba21e0884cb8f89dd0e5249",
+      "checked_at_utc": "2026-09-25T10:05:03.742118+00:00",
+      "endpoint_count": 405
+    },
+    {
+      "path": "verification/real-audit.json",
+      "sha256": "b1e2bbba981413405be292d6ec89faa7ae0c6e26c0f3e008e22a022173be6846",
+      "checked_at_utc": "2026-09-25T10:12:36.043144+00:00",
+      "endpoint_count": 101
+    }
+  ],
+  "files": [
+    {
+      "path": "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+      "sha256": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditBranch.lean",
+      "sha256": "36518f13a8f7880e5dfe2a3dacd2a453c7cdc2bcd97ba0513a5747e93c5932f6"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditGap.lean",
+      "sha256": "c1ad9e647e539002893921f27d1fc62d4d0105958519aac6e7f7844e4dc2b9b2"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+      "sha256": "8910f8924f4612cfbb71fb1bb10e73e9f1e6a6da952c9400c5ef8d208632ca37"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean",
+      "sha256": "d278498a4bd7c6c48930c359f9e4936cb0ef286b3476409eecb0a5a1bce15a1e"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch.lean",
+      "sha256": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1"
+    },
+    {
+      "path": "verification/FormalAudit.lean",
+      "sha256": "4ffa187f91d47048b3b4e4b455b69a3ad34d4b5b49479ecf9bcb94728ab83852"
+    },
+    {
+      "path": "verification/formal-audit.json",
+      "sha256": "ffea6b749ca15ef571c3a348f007ba13248ab3910ba21e0884cb8f89dd0e5249"
+    },
+    {
+      "path": "real/WongBreakpointCells.lean",
+      "sha256": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d"
+    },
+    {
+      "path": "real/WongIntervalNormalization.lean",
+      "sha256": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f"
+    },
+    {
+      "path": "real/WongSimplification.lean",
+      "sha256": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab"
+    },
+    {
+      "path": "real/WongDiamond.lean",
+      "sha256": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd"
+    },
+    {
+      "path": "real/FiniteGenomeIdentifiability.lean",
+      "sha256": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5"
+    },
+    {
+      "path": "real/lakefile.lean",
+      "sha256": "ccfa23517f59d6a1616bd1e3f9cb05a0cbeab07f37e2353c7df1c9415bc643dc"
+    },
+    {
+      "path": "real/RealAudit.lean",
+      "sha256": "5565e4786a23776bbf67beca2de9ee4c07d6284541f0d65f85f3c71114f05b48"
+    },
+    {
+      "path": "verification/real-audit.json",
+      "sha256": "b1e2bbba981413405be292d6ec89faa7ae0c6e26c0f3e008e22a022173be6846"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "6852449b6b233545b5683044c08e23fc9236bcad7a859f507494b85c758c8de4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "784d39f388d081f3f9bd04166775da416faa7079bd49b7a1dda0f10debbdf047"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "411ebff6eb4a29039bc33c0bcfbe83fb72dbb6932b1f4678f58f4c497c8c8a4e"
+    },
+    {
+      "path": "FORMALIZATION.md",
+      "sha256": "0e361d9fa68c8b9d912be0c9ab1a024bf4978010a7b0b1271199bc9652676a2a"
+    },
+    {
+      "path": "DELIVERY-MAP.md",
+      "sha256": "0e36889ed63f0ac708d10b0c3e1baf076fc743f9683ca4aabd2ad22065dd5b6a"
+    },
+    {
+      "path": "RESEARCH-MAP.md",
+      "sha256": "eeeccd4fa44e50b657bc2d3cb94e898d23126b2a604d9af55042549b2bfc1d98"
+    },
+    {
+      "path": "TEN-SOLUTIONS.md",
+      "sha256": "79b8726622165083a90797dcbe874b57387d02c7eed9426297ef473af5b161c0"
+    },
+    {
+      "path": "REFINEMENT-LEDGER.md",
+      "sha256": "4a8774ac8460db639c50595d47d4d965f1816fd79a7e458e568ccf73341509c6"
+    },
+    {
+      "path": "WONG-ALEXANDER-OUTLINE.md",
+      "sha256": "25445707156514a6517c9bd440c1e97dc06be18d59d33a32d5666bce1b6b09bd"
+    },
+    {
+      "path": "notes/WONG-INTERVAL-NORMALIZATION.md",
+      "sha256": "dd033f602b77fc46b6d4b69c629bdae0f173991ec47729bdbb86fdeb4df68c9c"
+    },
+    {
+      "path": "notes/WONG-SIMPLIFICATION.md",
+      "sha256": "6ba89dc5052d6206d87ed51b92da3707bd63b7cb3b9a0f72ca6ad59f57c08c8e"
+    },
+    {
+      "path": "notes/WONG-DIAMOND.md",
+      "sha256": "f0e01637dc3b4e1774b40a9a755561b3ce071c7687afd02d114d52e387ce007c"
+    },
+    {
+      "path": "notes/WONG-FINITE-IDENTIFIABILITY.md",
+      "sha256": "4408de75e10010f61b8f3ba255ac056cff259fe2da87b38c9db9cb4f9e4de165"
+    },
+    {
+      "path": "notes/REFINEMENT-INDIVIDUAL-FINITE-EDIT.md",
+      "sha256": "d0657218828e6ab43b72bba97124da8731818712fd00145f13c12c924f7a912b"
+    },
+    {
+      "path": "notes/WONG-ALEXANDER-BRIDGE-STATUS.md",
+      "sha256": "fb367dfa1eb6eb5533534be7a9ac39dc5aa6d831cbbab6f39c1365a2f9334b50"
+    },
+    {
+      "path": "research/wong/connection-map.json",
+      "sha256": "bc1f7edbfa07eb56a5ccb2171f1fb8d79523b62468ffb359d855fd06d90cd4a0"
+    }
+  ],
+  "exclusions": [
+    "real/DigitRegularity.lean",
+    "checks/lean_feedback.py",
+    ".lake/",
+    "unintegrated species/ordinal/embedding research fragments"
+  ],
+  "publication": "Overlay only these exact files and this manifest on the latest existing PR6 tree; preserve separately published research artifacts. No second email or duplicate site submission."
+}

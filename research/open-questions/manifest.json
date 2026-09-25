@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-25",
+  "scope": "Written open-question reports, locally checked proof artifacts and explicit gaps. See per-file receipts. FiniteGenomeIdentifiability is also included in the integrated real audit.",
+  "files_sha256": {
+    "embedding/INDEPENDENT-CHECK.md": "1f98f712ae493df4f112b17354a6279ce06a389f8ca395070d8950a40d485561",
+    "embedding/UNIVERSAL-AVOIDER-NONEXISTENCE.md": "f2dbf0e79908467ece854bbd657d88b027eeda1ed26d3a301c233ee5d18cfdb4",
+    "genomic-identifiability/FiniteGenomeIdentifiability.lean": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
+    "genomic-identifiability/positive/README.md": "feb7aabdf2ca38ad40c52fd3778dfed6f14a1a09062c1d3d4ba300e505eab744",
+    "genomic-identifiability/positive/ThreeTaxonIdentifiability.lean": "97eddf62044c37e6973873f987c49ea69e0f9f2081ccd955fd05dc27099c2cf6",
+    "genomic-identifiability/positive/validation.txt": "69021a0aec76b930e8143a7b7bc2eee4038e8ce35b81c487ed23560889baad00",
+    "genomic-identifiability/positive/verification.json": "dd04918c82a76a681a73b01d605de49f54401189cc6dc4588b0f58bcdbc519cd",
+    "genomic-identifiability/README.md": "e8bab6d45eaa8b600f6e836af35012058a688a05ecfa7737094604703b93b271",
+    "genomic-identifiability/verification.json": "b6d67e3415058a7bd027090fe52ffff141551aaab1700eb33f0ca684313e2cb4",
+    "ordinal/NECESSITY-FORMALIZATION.md": "9d865f5f37d6bbb623ee6d5f44b1a65df642de5cda9f2c89536652108d2f7af0",
+    "ordinal/NECESSITY-SHA256SUMS.txt": "5905d753cdb5e867d4711131911c4d0d0fbf3e08b6bbc40b7897c4ace96ddd41",
+    "ordinal/ORDINAL-CHARACTERIZATION.md": "d8ece2715ed52e8b52aadb901411e1e54e4edad9d8038b4c1316a776481eb790",
+    "ordinal/OrdinalCertificates.lean": "712cc36d5e75c18f6060439591c392a97af80f9b3a23a92c70198c4deac4d2af",
+    "ordinal/ReachableRankNecessity.lean": "da2be4d009966196e4b160789e968677b913385e2f7d4f037ed50281fed7fa50",
+    "ordinal/VERIFICATION.md": "651df082aedc4077fde79a743be1f907f0e30af6cdf0b8d6aed11c85fe84790c",
+    "README.md": "86e7b68e76c010668c1f7b17ae9cc0f575b5befad0daae0902c3b56c4213b8d8",
+    "species/FOUNDER-WINDOW-THEOREM.md": "61c4251bd336ef3776cc7856b31229a5af06bc17d502f42b78896816542856b8",
+    "species/FounderWindow.lean": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+    "species/VERIFICATION.md": "44e3dbc718dc454a9cb0767472bf8b989ea089c51b9cbee3a4151c8229e0e2d7"
+  }
+}

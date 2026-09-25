@@ -1,3 +1,8 @@
+import SamuelAlexanderResearch.FiniteEditOptimum
+import SamuelAlexanderResearch.ThueMorseWindow
+import SamuelAlexanderResearch.FiniteEditAlgorithm
+import SamuelAlexanderResearch.FiniteEditGap
+import SamuelAlexanderResearch.FiniteEditBranch
 import SamuelAlexanderResearch.AncestryContraction
 import SamuelAlexanderResearch.FiniteHistoryCompletion
 import SamuelAlexanderResearch.AncestralRestriction
