@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_WITH_RECOVERED_EXIT_EVIDENCE",
+  "createdUtc": "2026-09-25T15:19:57.749021+00:00",
+  "leanVersion": "4.33.1",
+  "leanCommit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlibCommit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "command": "lean.exe -j1 -M4096 -o build/<module>.olean <module>.lean",
+  "allowedAxioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "selectedEndpointCount": 34,
+  "modules": [
+    {
+      "module": "FiniteFixation",
+      "source": "FiniteFixation.lean",
+      "sourceSha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "log": "verification/FiniteFixation.log",
+      "logSha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1",
+      "oleanSha256": "a20890b49de33b6b38195fe69a74fca2932c013e8828eeedeed0cafef5c878d3",
+      "selectedEndpoints": [
+        "FiniteFixation.marginal_nonneg",
+        "FiniteFixation.marginal_total",
+        "FiniteFixation.harmonic_expectation",
+        "FiniteFixation.transient_mass_geometric",
+        "FiniteFixation.certificate_error_bound",
+        "FiniteFixation.win_probability_error",
+        "FiniteFixation.certificate_identifies_limit",
+        "FiniteFixation.transient_mass_vanishes",
+        "FiniteFixation.certificate_mixture_error",
+        "FiniteFixation.win_probability_from_error",
+        "FiniteFixation.certificate_identifies_mixture_limit"
+      ],
+      "exitCode": 0,
+      "exitEvidence": "Terminal exit 0 observed in prior bounded check; frozen finite receipt agrees."
+    },
+    {
+      "module": "FiniteEpigenetic",
+      "source": "FiniteEpigenetic.lean",
+      "sourceSha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "log": "verification/FiniteEpigenetic.log",
+      "logSha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621",
+      "oleanSha256": "6050872c4dcd45955df46c924beb194f3fdec0f99c3b3369815c335065fa00ba",
+      "selectedEndpoints": [
+        "FiniteEpigenetic.fixation_probability_error",
+        "FiniteEpigenetic.fixation_probability_limit",
+        "FiniteEpigenetic.integer_facts",
+        "FiniteEpigenetic.certificate_valid",
+        "FiniteEpigenetic.boundary_absorbing",
+        "FiniteEpigenetic.uniform_terminal",
+        "FiniteEpigenetic.pulse_total",
+        "FiniteEpigenetic.pulse_certificate_value",
+        "FiniteEpigenetic.epigenetic_advantage",
+        "FiniteEpigenetic.epigenetic_strictly_greater"
+      ],
+      "exitCode": 0,
+      "exitEvidence": "Terminal exit 0 observed in prior bounded check; frozen finite receipt agrees."
+    },
+    {
+      "module": "DeterministicEpigenetic",
+      "source": "DeterministicEpigenetic.lean",
+      "sourceSha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f",
+      "log": "verification/DeterministicEpigenetic.log",
+      "logSha256": "3f6fe7dc138c1af22dcfd65cb12a9bf763ce61ffcb5356baf621267453d6a9b0",
+      "oleanSha256": "a8691db14106ab1fc535a66c5ae6e626ea05cfb00f491278961d59f05e9bbe42",
+      "selectedEndpoints": [
+        "DeterministicEpigenetic.background_from_rows",
+        "DeterministicEpigenetic.background_invariant",
+        "DeterministicEpigenetic.row_positive",
+        "DeterministicEpigenetic.marker_box_invariant",
+        "DeterministicEpigenetic.generation_four_exact",
+        "DeterministicEpigenetic.all_later_mean_bound",
+        "DeterministicEpigenetic.deterministic_genetic_tail_bound",
+        "DeterministicEpigenetic.limiting_genetic_RI_bound",
+        "DeterministicEpigenetic.pure_induction_RI_exact",
+        "DeterministicEpigenetic.deterministic_ranking_strict"
+      ],
+      "exitCode": null,
+      "exitEvidence": "Original session 73786 was interrupted at the task layer and later returned Unknown process id. All 10 axiom reports and a fresh olean were emitted. RankingReversal subsequently imported this object and exited 0. The original process exit code was not retrieved."
+    },
+    {
+      "module": "RankingReversal",
+      "source": "RankingReversal.lean",
+      "sourceSha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894",
+      "log": "verification/RankingReversal.log",
+      "logSha256": "2cf2a1acdcbb57fef8e805ce0f3dfbf75576da9e0a7ff93171b9647cdcbad750",
+      "oleanSha256": "626ac698fff1f748c34ebfc6a24e628129b0da857486870f14a6589d889333d0",
+      "selectedEndpoints": [
+        "RankingReversal.matched_reversal",
+        "RankingReversal.genetic_barrier_changes_sides",
+        "RankingReversal.certified_gap_between_models"
+      ],
+      "exitCode": 0,
+      "exitEvidence": "Root observed terminal session 85365, chunk 5df71d, exit 0; imports all concrete models."
+    }
+  ],
+  "finiteReceiptSha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0",
+  "boundaries": [
+    "Selected endpoint count is not a paper completion percentage.",
+    "Finite limiting fixation probabilities and deterministic finite-tail ordering are checked.",
+    "Deterministic common-limit existence is not established by these four modules.",
+    "Full phased-life-cycle reductions are independently audited, not Lean transport theorems.",
+    "The finite model samples one diploid offspring per deme and permits selfing.",
+    "No empirical species, culture, whole-paper completion, or established novelty claim."
+  ]
+}

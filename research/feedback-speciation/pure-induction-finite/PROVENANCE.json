@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-09-25T16:27:50.578750+00:00",
+  "release": "pure-induction-finite-v1",
+  "copiedArtifacts": [
+    {
+      "path": "PureInductionJoint.lean",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\pure-induction-ancestry\\lean\\PureInductionJoint.lean",
+      "sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "FiniteFixation.lean",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\FiniteFixation.lean",
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "FiniteEpigenetic.lean",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\FiniteEpigenetic.lean",
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/PureInductionJoint.log",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\pure-induction-ancestry\\lean\\build\\PureInductionJoint.log",
+      "sha256": "81646e705e6f1bb0386b584c997a11c9127e6d1ed0cbc9691a681917718aaa8b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/worker-receipt.json",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\pure-induction-ancestry\\lean\\CHECK-RECEIPT.json",
+      "sha256": "07325b3d81b928d74fc1981f71bf902a01501f6aa6d8f77483a2afffe5f002c1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/independent-scope-audit.json",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\pure-induction-ancestry\\independent-scope-audit.json",
+      "sha256": "1cbe1feae4d27121977a3d300b29b93609a88e258ba13f1ab683a48a7ed5b81b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/finite-dependency-receipt.json",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\verification\\finite-receipt.json",
+      "sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/FiniteFixation.log",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\verification\\FiniteFixation.log",
+      "sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/FiniteEpigenetic.log",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\verification\\FiniteEpigenetic.log",
+      "sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "provenance/Original-Check.ps1",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\pure-induction-ancestry\\lean\\Check.ps1",
+      "sha256": "4bd1a28278f4b7e41fed678fff42d0c87d12443a214989c93ab88ed9ac4801ca",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "provenance/frozen-combined-receipt.json",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\verification\\combined-receipt.json",
+      "sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "lean-toolchain",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\finite-epigenetic\\release\\finite-epigenetic-v1\\lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "CHECKPOINT-AND-REMAINING-OBLIGATIONS.md",
+      "originalPath": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\pure-induction-ancestry\\CHECKPOINT-AND-REMAINING-OBLIGATIONS.md",
+      "originalSha256": "88c78fe82819a3174a1a888287b0ef5a9c44d70b2e23e56c3c5cbc24202180d7",
+      "transformation": "Relocated three links; removed deferred side-calculation section; preserved four-statement audit and R1-R6."
+    }
+  ],
+  "selectedNewEndpointCount": 4,
+  "originalCompilerRun": "Sol2, Lean 4.33.1, exit 0; worker receipt preserved",
+  "independentReview": "Alexander lead final source/scope/log/hash audit; not an independent compiler run",
+  "originalCompiledObjectSha256": "3516f055abea15f786e8f41918c0943e82f4f57bebc58df3b9b9841387c8f391",
+  "compiledObjectsIncluded": false,
+  "newCompilerRunDuringPackaging": false,
+  "historicalSourceComment": "The uncompiled header is stale; checked source bytes are preserved."
+}

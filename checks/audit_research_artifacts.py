@@ -44,6 +44,7 @@ ARTIFACTS = {
     "research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean": 10,
     "research/feedback-speciation/finite-epigenetic/DeterministicEpigenetic.lean": 10,
     "research/feedback-speciation/finite-epigenetic/RankingReversal.lean": 3,
+    "research/feedback-speciation/pure-induction-finite/PureInductionJoint.lean": 4,
 }
 PRINT_NAMESPACES = {'research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean': 'ExactAbstraction.', 'research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean': 'MergeHistoryProjection.'}
 PRINT_NAMESPACES.update({
