@@ -14,7 +14,7 @@ One `web.run` batch used these four strings without date or domain filters:
 - `"Thue-Morse" "8/3" path`
 
 The results were mostly Alexander's original papers and irrelevant uses of
-the words. An extremal overlap-free-word paper also used $\frac{8}{3}$, but a shared
+the words. An extremal overlap-free-word paper also used $`\frac{8}{3}`$, but a shared
 constant does not identify a matching path-length theorem. This batch supplies
 no reliable negative finding about the proposed cap or finite-edit result.
 

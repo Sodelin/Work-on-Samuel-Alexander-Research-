@@ -6,16 +6,15 @@
 
 ## Mathematical target
 
-Model a finite birthdate prefix of a population with $N$ vertices and $R_N$ roots. For each nonroot, require an incoming edge of each of $k$ labels, with distinct parent edges because each ordered pair has at most one label. Assume each vertex has at most $d$ children. Edges strictly increase birthdate, so all parents of a prefix vertex lie in the prefix. Prove from these graph assumptions that
+Model a finite birthdate prefix of a population with $`N`$ vertices and $`R_N`$ roots. For each nonroot, require an incoming edge of each of $`k`$ labels, with distinct parent edges because each ordered pair has at most one label. Assume each vertex has at most $`d`$ children. Edges strictly increase birthdate, so all parents of a prefix vertex lie in the prefix. Prove from these graph assumptions that
 
-$$
+```math
 \begin{aligned}
 k(N-R_N)&\le dN,\\
 (k-d)N&\le kR_N.
 \end{aligned}
-$$
-
-For binary fixed vertex genders and $d=2$, prove from the corresponding graph assumptions that, among the first $N$ births, $\lvert M_N-F_N\rvert\le R_N$. If practical, formalize the infinite consequence: finite roots and $d<k$ preclude an infinite population with the stated birthdate finiteness axiom.
+```
+For binary fixed vertex genders and $`d=2`$, prove from the corresponding graph assumptions that, among the first $`N`$ births, $`\lvert M_N-F_N\rvert\le R_N`$. If practical, formalize the infinite consequence: finite roots and $`d<k`$ preclude an infinite population with the stated birthdate finiteness axiom.
 
 ## Deliverable and acceptance checks
 

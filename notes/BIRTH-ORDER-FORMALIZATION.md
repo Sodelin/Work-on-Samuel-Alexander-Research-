@@ -7,7 +7,7 @@ family of finite population prefixes is assumed. The module uses only `Std`.
 
 ## Exact hypotheses and endpoint
 
-The vertex type $V$ and time type `Time` are arbitrary types. The time type has
+The vertex type $`V`$ and time type `Time` are arbitrary types. The time type has
 `LE Time` and `Std.IsLinearPreorder Time`: its non-strict comparison is
 reflexive, transitive, and total. Antisymmetry is not needed for the enumeration
 argument. The other data are:
@@ -41,7 +41,7 @@ weakens the finite-cover condition.
 | `toFun : Nat -> V` | The constructed enumeration. |
 | `injective` | Distinct indices name distinct vertices. |
 | `surjective` | Every vertex appears at an index. |
-| `nondecreasing` | $i \le j$ implies $\operatorname{birth}(\operatorname{toFun}(i))\le\operatorname{birth}(\operatorname{toFun}(j))$. |
+| `nondecreasing` | $`i \le j`$ implies $`\operatorname{birth}(\operatorname{toFun}(i))\le\operatorname{birth}(\operatorname{toFun}(j))`$. |
 
 `BirthOrder.orderedEnumeration_exists` exports existence of that complete
 record from the stated hypotheses. The later transport lemmas accept the
@@ -51,23 +51,23 @@ unverified interface assumption.
 ## Why the enumeration exists
 
 `exists_least` first proves that every nonempty subset of vertices has a member
-of least birthdate. Pick any member $a$. A finite sublevel through `birth a`
-contains $a$ and every potentially earlier member. An induction over that
+of least birthdate. Pick any member $`a`$. A finite sublevel through `birth a`
+contains $`a`$ and every potentially earlier member. An induction over that
 finite list selects a minimum among members of the subset. Totality of the
 time comparison makes that minimum global. This step derives the needed
 minimum property from local finiteness rather than assuming a well-order on
 time.
 
-At stage $n$, the construction chooses a vertex of least birthdate outside
+At stage $`n`$, the construction chooses a vertex of least birthdate outside
 the finite list of previously chosen vertices. Infinitude supplies a remaining
 vertex. Classical choice resolves the selection, including ties. The first
-$n$ choices form a list of length $n$ with no duplicates. These facts prove
+$`n`$ choices form a list of length $`n`$ with no duplicates. These facts prove
 injectivity and monotonicity of birthdates.
 
-For surjectivity, suppose a vertex $x$ were never selected. Every selected
-vertex would then have birthdate at most `birth x`, because $x$ would remain
-available at every stage. If $L$ is a finite list covering that sublevel, the
-first `L.length + 1` choices would be distinct members of $L$. The proved
+For surjectivity, suppose a vertex $`x`$ were never selected. Every selected
+vertex would then have birthdate at most `birth x`, because $`x`$ would remain
+available at every stage. If $`L`$ is a finite list covering that sublevel, the
+first `L.length + 1` choices would be distinct members of $`L`$. The proved
 finite-list cardinal inequality makes this impossible. Thus no vertex is
 missed.
 
@@ -81,15 +81,14 @@ Different vertices may have equal birthdates. Finite sublevels already force
 each tied-date group to be finite, and choosing one member at a time resolves
 these groups without identifying vertices.
 
-For an enumeration $e$, `e.index x` is its proved inverse. The identities
+For an enumeration $`e`$, `e.index x` is its proved inverse. The identities
 `e.toFun_index x` and `e.index_toFun n` establish both inverse directions.
 When the time type additionally has `LT Time` and `Std.LawfulOrderLT Time`,
 `e.index_strict` proves:
 
-$$
+```math
 \operatorname{birth}(x)<\operatorname{birth}(y)\implies e.\operatorname{index}(x)<e.\operatorname{index}(y).
-$$
-
+```
 `e.edges_increase` consequently transfers any edge relation whose parents have
 strictly earlier dates to one with strictly increasing natural indices. For a
 labelled relation, use the proposition that some labelled edge is present.
@@ -117,9 +116,9 @@ a separate hypothesis of the subcritical degree theorem.
 
 ## Strict sublevels and actual real numbers
 
-The core endpoint uses finite sublevels $\operatorname{birth}(x)\le r$. The theorem
+The core endpoint uses finite sublevels $`\operatorname{birth}(x)\le r`$. The theorem
 `finiteSublevels_of_strict` proves that finite strict sublevels suffice whenever
-every time has a strictly larger time. For real times, $r + 1$ is such a larger
+every time has a strictly larger time. For real times, $`r + 1`$ is such a larger
 bound. This handles the strict-sublevel convention without assuming that tied
 birthdates are absent.
 
@@ -148,7 +147,7 @@ $env:ELAN_HOME = 'C:\Users\Owner\.elan'
 & 'C:\Users\Owner\.elan\bin\lake.exe' build SamuelAlexanderResearch.BirthOrder
 ```
 
-This command was verified with exit code $0$ under Lean `4.33.1`. The eleven
+This command was verified with exit code $`0`$ under Lean `4.33.1`. The eleven
 `#print axioms` checks cover the minimum construction, injectivity,
 surjectivity, monotonicity, ordered enumeration, inverse, finite-set transport,
 strict index and edge transfer, and strict-sublevel conversion. Dependencies

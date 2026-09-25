@@ -17,9 +17,9 @@ that the surrounding fields have received little mathematical effort.
 
 ## 1. Is two or three the true fixed-gender threshold?
 
-**Question.** For an aperiodic binary word $s$, define $d_{\mathrm{vertex}}(s)$ to be the
-least uniform child cap among eligible populations avoiding $s$ in which gender
-belongs permanently to each vertex. Is $d_{\mathrm{vertex}}(s)=2$ for every such $s$, or
+**Question.** For an aperiodic binary word $`s`$, define $`d_{\mathrm{vertex}}(s)`$ to be the
+least uniform child cap among eligible populations avoiding $`s`$ in which gender
+belongs permanently to each vertex. Is $`d_{\mathrm{vertex}}(s)=2`$ for every such $`s`$, or
 does some word require three children? A particularly clean test case is the
 Thue–Morse word.
 
@@ -33,7 +33,7 @@ which makes its whole graph an inspecies. The [productive-core
 formalization](lean/SamuelAlexanderResearch/FixedGenderLift.lean) and its scope
 note record the checked version. The [retained-vertex adapter](lean/SamuelAlexanderResearch/FixedGenderReindex.lean)
 also proves the unconditional fixed-gender cap-three classification. This
-does not establish the cap-two case. Alexander's earlier $T_h$ and $H_h$
+does not establish the cap-two case. Alexander's earlier $`T_h`$ and $`H_h`$
 constructions already have whole-graph inspecies structure; the distinction
 here is a **prescribed arbitrary aperiodic target with a uniform cap three**.
 Their varying outdegrees do not already give this uniform bound; see the
@@ -54,32 +54,32 @@ variants of the source lift, not just its displayed cap-four statement.
 
 ## 2. Classify the populations with the smallest possible crossing count
 
-**Proposed theorem.** Suppose every nonroot requires $k$ distinct incoming
-labels, every vertex has at most $k$ children, and the eventual crossing count
-is exactly $\frac{k(k+1)}{2}$. Is the graph, outside a finite prefix in birth order,
-necessarily the directed $k$th power of a ray: precisely the edges
-$v\to v+1,\ldots,v+k$?
+**Proposed theorem.** Suppose every nonroot requires $`k`$ distinct incoming
+labels, every vertex has at most $`k`$ children, and the eventual crossing count
+is exactly $`\frac{k(k+1)}{2}`$. Is the graph, outside a finite prefix in birth order,
+necessarily the directed $`k`$th power of a ray: precisely the edges
+$`v\to v+1,\ldots,v+k`$?
 
 **Checked seed.** The [infinite conservation
 module](lean/SamuelAlexanderResearch/InfiniteConservation.lean) proves
-$C_N\ge\frac{k(k+1)}{2}$ after all roots, and proves eventual full indegree and
-outdegree $k$ and constant $C_N$ at the critical child cap. The triangular
-bound counts incoming edges to the first $k$ vertices after a cut. The
+$`C_N\ge\frac{k(k+1)}{2}`$ after all roots, and proves eventual full indegree and
+outdegree $`k`$ and constant $`C_N`$ at the critical child cap. The triangular
+bound counts incoming edges to the first $`k`$ vertices after a cut. The
 [binary equality analysis](lean/SamuelAlexanderResearch/MinimalCrossing.lean)
-is now checked: width three on every cut of a tail forces exactly the $+1,+2$
+is now checked: width three on every cut of a tail forces exactly the $`+1,+2`$
 edges there. Permanent source genders force alternating genders and universal
 word realization. Consequently an avoiding critical fixed-gender population
 has eventual **crossing width** at least four. This is not a four-child bound.
-The general-$k$ rigidity statement remains open in this project.
+The general-$`k`$ rigidity statement remains open in this project.
 
 **Why pursue it.** An extremal numerical inequality could determine the
 entire eventual genealogy. In the binary case it would explain why the
-source's $+1,+2$ geometry is canonical at width three. For permanent binary
+source's $`+1,+2`$ geometry is canonical at width three. For permanent binary
 genders that geometry forces alternating vertex genders and realizes every
 word, so a cap-two fixed-gender avoider would need crossing width at least four.
 
 **Next decisive test.** Generalize the checked binary block-equality argument
-to arbitrary $k$. A counterexample must
+to arbitrary $`k`$. A counterexample must
 retain simplicity, full degrees, the same birth ordering, and constant
 minimal width. Omitting any of those changes the question.
 
@@ -87,7 +87,7 @@ minimal width. Omitting any of those changes the question.
 
 **Target.** Give an exact representation of every critical population tail as
 a sequence of updates to a fixed finite collection of crossing-edge ports.
-Each birth consumes its $k$ incoming ports and creates its $k$ outgoing ports.
+Each birth consumes its $`k`$ incoming ports and creates its $`k`$ outgoing ports.
 The data must retain labels, source identities needed for simplicity, and the
 order in which pending edges terminate.
 
@@ -113,14 +113,14 @@ ingredients; the research target is this precise population representation.
 
 ## 4. Find a finite binary-digit description of the entire sharp-length function
 
-**Question.** Is the sequence of exact maxima $L(v)$ in the Thue–Morse avoiding
+**Question.** Is the sequence of exact maxima $`L(v)`$ in the Thue–Morse avoiding
 graph 2-regular, or does it admit another finite system of recurrences on
 binary digits? Here 2-regular means that the integer module generated by
-the subsequences $L(2^e n+r)$, for $e\ge0$ and $0\le r<2^e$, is finitely generated.
+the subsequences $`L(2^e n+r)`$, for $`e\ge0`$ and $`0\le r<2^e`$, is finitely generated.
 This is a specific conjecture, not an inference from the input word being
 automatic.
 
-**Checked seed.** The interval theorem reduces $L(v)+1$ to the first
+**Checked seed.** The interval theorem reduces $`L(v)+1`$ to the first
 coalescence of two neighboring boundary trajectories. The sharp bound and its
 exact equality family are checked. The [first-hit
 corollaries](lean/SamuelAlexanderResearch/SharpCorollaries.lean) additionally
@@ -128,7 +128,7 @@ describe the simpler baseline hitting-time function exactly. They do not
 describe all neighboring-pair coalescence times, which is the missing object.
 There is now a precise [closed-form and ten-coordinate recurrence
 candidate](research/thue-morse/FULL-HEIGHT-CONJECTURE.md), using binary parity
-and the 2-adic valuation of $\lfloor v/2\rfloor+1$. Its [independent finite
+and the 2-adic valuation of $`\lfloor v/2\rfloor+1`$. Its [independent finite
 check](research/thue-morse/kernel-conjecture-results.json) passes every stored
 positive start below 131,072, 16,384 full coordinate transitions and 2,200 fresh
 frontier computations. Fourteen deliberately long cases hit the finite cap
@@ -148,34 +148,34 @@ ordinary longest common subsequences.
 
 ## 5. Understand how the sharp theorem changes with the word's phase
 
-**Question.** For $s_a(k)=t(k+a)$, form its own avoiding graph $P_{s_a}$ and let
-$L_a(v)$ be the longest match to $s_a$ from $v$. Find useful joint bounds,
-equality families, or a digit recursion in $(a,v)$. In particular, determine
-whether the optimal leading coefficient in $v$ is independent of each fixed
-phase $a$, and how the additive allowance depends on $a$.
+**Question.** For $`s_a(k)=t(k+a)`$, form its own avoiding graph $`P_{s_a}`$ and let
+$`L_a(v)`$ be the longest match to $`s_a`$ from $`v`$. Find useful joint bounds,
+equality families, or a digit recursion in $`(a,v)`$. In particular, determine
+whether the optimal leading coefficient in $`v`$ is independent of each fixed
+phase $`a`$, and how the additive allowance depends on $`a`$.
 
 **Model detail.** Both the target and its graph change. The graph's row color
-is $t(w+2a)$, by the even/odd identities. Keeping $P_t$ fixed and merely shifting
+is $`t(w+2a)`$, by the even/odd identities. Keeping $`P_t`$ fixed and merely shifting
 the target is a different and often trivial problem: its consecutive edges
-already spell tails $t(a),t(a+1),\ldots$ for $a\ge2$.
+already spell tails $`t(a),t(a+1),\ldots`$ for $`a\ge2`$.
 
 **Why pursue it.** The original sharp theorem has a privileged phase-zero
-baseline. A phase theorem would tell us which part of its $\frac{8}{3}$ constant comes
+baseline. A phase theorem would tell us which part of its $`\frac{8}{3}`$ constant comes
 from substitution structure and which part comes from that origin choice.
 
 **Checked progress.** [PhaseShift](lean/SamuelAlexanderResearch/PhaseShift.lean)
-proves $3L_a(v)\le8v+5a-1$ for positive starts and actual long dyadic witnesses
+proves $`3L_a(v)\le8v+5a-1`$ for positive starts and actual long dyadic witnesses
 with their starts in a bounded interval. [RealBridges](real/RealBridges.lean)
-proves that the leading coefficient is exactly $\frac{8}{3}$ for every fixed phase,
+proves that the leading coefficient is exactly $`\frac{8}{3}`$ for every fixed phase,
 against all smaller real coefficients and all real additive constants. A
 recursive actual extremal path now proves the complete equality set:
-$3L_a(v)=8v+5a-1$ holds exactly when $v=3\cdot2^n-a-1$ and $a\le2^n$, with
-$L_a(v)=8\cdot2^n-a-3$. The [formalization note](notes/PHASE-EXTREMAL-FORMALIZATION.md)
+$`3L_a(v)=8v+5a-1`$ holds exactly when $`v=3\cdot2^n-a-1`$ and $`a\le2^n`$, with
+$`L_a(v)=8\cdot2^n-a-3`$. The [formalization note](notes/PHASE-EXTREMAL-FORMALIZATION.md)
 records the construction and uniqueness argument. Joint digit recurrences
 remain open.
 
-**First decisive test.** Adapt the exact interval checker to $\operatorname{row}(s_a)$ and
-$s_a$, and inspect dyadic phase classes. A successful proof should transport
+**First decisive test.** Adapt the exact interval checker to $`\operatorname{row}(s_a)`$ and
+$`s_a`$, and inspect dyadic phase classes. A successful proof should transport
 the existing descent argument or identify precisely why a new descent is
 needed. The phase-zero result is an input, not a proof of phase invariance.
 
@@ -183,23 +183,23 @@ needed. The phase-zero result is an input, not a proof of phase invariance.
 
 **Target.** Replace qualitative aperiodicity with a function measuring how
 long a word can imitate a period or an antiperiod, and derive matching upper
-and lower bounds for $L_s(v)$ in $P_s$. The offset proof suggests that the
+and lower bounds for $`L_s(v)`$ in $`P_s`$. The offset proof suggests that the
 relevant comparisons have small shifts determined by the starting offset.
 
 **Checked seed.** The [quantitative
 module](lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean) proves that
-if $s(k+p)=s(k)$ for $k<\ell$, then the explicit two-step path starting at
-$2p-1$ matches $\ell$ edges. Thus very long periodic prefixes create very long
+if $`s(k+p)=s(k)`$ for $`k<\ell`$, then the explicit two-step path starting at
+$`2p-1`$ matches $`\ell`$ edges. Thus very long periodic prefixes create very long
 matches even when the full word is aperiodic. Aperiodicity alone supplies
 finiteness, not a useful numerical rate.
 
-**New checked theorem.** For every $f:\mathbb{N}\to\mathbb{N}$, there is an aperiodic
-target whose actual finite maxima exceed $f(v)$ at strictly increasing starts.
+**New checked theorem.** For every $`f:\mathbb{N}\to\mathbb{N}`$, there is an aperiodic
+target whose actual finite maxima exceed $`f(v)`$ at strictly increasing starts.
 [SlowAvoidance](lean/SamuelAlexanderResearch/SlowAvoidance.lean) constructs
 coherent repeated prefixes separated by long zero blocks ending in one;
 [FiniteAvoidance](lean/SamuelAlexanderResearch/FiniteAvoidance.lean) proves
 maximum existence at every start and the full quantitative conclusion. The
-word construction is executable relative to $f$; no separate Turing-machine
+word construction is executable relative to $`f`$; no separate Turing-machine
 computability predicate is formalized. The next question is a useful upper
 bound from an explicit modulus of failure of periodicity.
 
@@ -211,23 +211,23 @@ unpredictable.
 
 ## 7. Test whether the sharp coefficient survives finite edits
 
-**Question.** If $s$ differs from Thue–Morse at only finitely many positions,
-does the optimal leading coefficient of $L_s(v)$ remain $\frac{8}{3}$? More explicitly,
-does an edit-dependent constant $B$ give $3L_s(v)\le8v+B$ for all positive
+**Question.** If $`s`$ differs from Thue–Morse at only finitely many positions,
+does the optimal leading coefficient of $`L_s(v)`$ remain $`\frac{8}{3}`$? More explicitly,
+does an edit-dependent constant $`B`$ give $`3L_s(v)\le8v+B`$ for all positive
 starts, and is every smaller leading coefficient impossible? Upper stability
 and lower sharpness are separate assertions.
 
-**New checked theorem.** If $s(k)=t(k)$ for every $k\ge m$, then
-$3L_s(v)\le8v+8m-1$ at every positive start. Generic finite-path transport
-preserves length and moves the start by at most $m$; transporting the actual
+**New checked theorem.** If $`s(k)=t(k)`$ for every $`k\ge m`$, then
+$`3L_s(v)\le8v+8m-1`$ at every positive start. Generic finite-path transport
+preserves length and moves the start by at most $`m`$; transporting the actual
 old dyadic equality witnesses proves lower sharpness as well. The
 [finite-edit module](lean/SamuelAlexanderResearch/FiniteEditStability.lean)
 includes attained maxima and arbitrarily late lower witnesses.
-[RealBridges](real/RealBridges.lean) excludes every coefficient below $\frac{8}{3}$,
-even with any real additive constant. Here $m$ bounds the edited initial
+[RealBridges](real/RealBridges.lean) excludes every coefficient below $`\frac{8}{3}`$,
+even with any real additive constant. Here $`m`$ bounds the edited initial
 segment, rather than counting arbitrarily positioned changed bits.
 
-**Why pursue it.** A positive answer would make $\frac{8}{3}$ an invariant of an
+**Why pursue it.** A positive answer would make $`\frac{8}{3}`$ an invariant of an
 eventual substitution pattern; a negative answer would exhibit sensitivity
 to finitely much initial information. Either outcome clarifies what the
 constant measures.
@@ -287,7 +287,7 @@ checked two-root obstruction, so a repair must state which cluster property
 it changes.
 
 **First decisive test.** Work out exact minimum repairs for the two cones of
-$P_s$, then for a general finite boundary. An optimization formulation must
+$`P_s`$, then for a general finite boundary. An optimization formulation must
 include the newly created roots and the loss of connectivity; counting missing
 labels alone does not capture the problem.
 
@@ -295,9 +295,9 @@ labels alone does not capture the problem.
 
 **Target.** Replace fixed displacement sets for parent labels with a finite
 state or phase graph. A transition records the selected parent label, its
-displacement, and the next admissible state. For a direction $u$, seek a
-potential $h$ and bound $c$ such that every permitted transition $q\to q^{\prime}$
-with displacement $d$ satisfies $u\cdot d\le c+h(q)-h(q^{\prime})$. Summing along a lifeline
+displacement, and the next admissible state. For a direction $`u`$, seek a
+potential $`h`$ and bound $`c`$ such that every permitted transition $`q\to q^{\prime}`$
+with displacement $`d`$ satisfies $`u\cdot d\le c+h(q)-h(q^{\prime})`$. Summing along a lifeline
 telescopes the potential and yields a directional speed bound.
 
 **Why the state matters.** The existing static certificate gives an
@@ -324,7 +324,7 @@ scope, not the general potential method.
 ## Suggested order of attack
 
 The strongest next proof targets are the exact full-height formula in proposal
-4, general-$k$ rigidity in proposal 2, and the cap-two obstruction/construction
+4, general-$`k`$ rigidity in proposal 2, and the cap-two obstruction/construction
 in proposal 1. Proposals 5, 6 and 7 now contain proved quantitative results;
 their remaining questions are explicitly narrower. Proposals 3, 8 and 9 seek
 structural generalizations. Proposal 10 needs an actual improvement for a

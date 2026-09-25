@@ -1,14 +1,14 @@
 # Retained-subset fixed-gender reindexing
 
-[`FixedGenderReindex.lean`](../lean/SamuelAlexanderResearch/FixedGenderReindex.lean) closes the retained-subset model interface. From an actual `FixedGenderLift.FixedGenderPopulation E S g cap`, it constructs a birth-ordered bijection between natural numbers and the retained subtype `{x : Nat // S x}`, proves that source-gender labels give a `BinaryNatPopulation`, and transports the checked positive realization theorem back into $S$.
+[`FixedGenderReindex.lean`](../lean/SamuelAlexanderResearch/FixedGenderReindex.lean) closes the retained-subset model interface. From an actual `FixedGenderLift.FixedGenderPopulation E S g cap`, it constructs a birth-ordered bijection between natural numbers and the retained subtype `{x : Nat // S x}`, proves that source-gender labels give a `BinaryNatPopulation`, and transports the checked positive realization theorem back into $`S`$.
 
 The final theorem `fixedGender_cap_three_classification` is unconditional: a binary word is realized in every retained-subset fixed-gender population with child cap at most 3 if and only if it is eventually periodic. The proof imports the checked positive theorem and the checked productive-core avoiding witness. Neither an enumeration nor a positive theorem is supplied as an endpoint premise.
 
 ## Exact models
 
-The input is the existing `FixedGenderPopulation E S g cap` definition, unchanged. It requires an infinite retained subset $S$, strict natural birth order along edges between retained vertices, finite retained birthdate prefixes, finitely many retained roots of `Induced E S`, a finite-list child cover of length at most `cap` at each retained vertex, and a retained incoming parent of each Boolean gender at every retained nonroot.
+The input is the existing `FixedGenderPopulation E S g cap` definition, unchanged. It requires an infinite retained subset $`S`$, strict natural birth order along edges between retained vertices, finite retained birthdate prefixes, finitely many retained roots of `Induced E S`, a finite-list child cover of length at most `cap` at each retained vertex, and a retained incoming parent of each Boolean gender at every retained nonroot.
 
-The reindexed vertex at index $i$ is the natural value of the constructed subtype element `enumeration population |>.toFun i`. Its labelled edges are exactly
+The reindexed vertex at index $`i`$ is the natural value of the constructed subtype element `enumeration population |>.toFun i`. Its labelled edges are exactly
 
 ```text
 LabelledEdge population i j label
@@ -18,7 +18,7 @@ LabelledEdge population i j label
 
 Thus the label is the fixed gender of the source. Every reindexed vertex is retained, and every retained vertex occurs exactly once. A deleted ambient index is never a vertex in this model.
 
-`RealizesOn E S g target` means that there is an infinite natural-index path such that, for every time $k$, the current vertex belongs to $S$, the next edge belongs to $E$, and the source gender equals `target k`. Membership of every next vertex follows from the same assertion at time $k+1$. The theorem `realizes_reindex_iff` proves exact equivalence with `BinaryPopulation.Realizes` in the reindexed graph.
+`RealizesOn E S g target` means that there is an infinite natural-index path such that, for every time $`k`$, the current vertex belongs to $`S`$, the next edge belongs to $`E`$, and the source gender equals `target k`. Membership of every next vertex follows from the same assertion at time $`k+1`$. The theorem `realizes_reindex_iff` proves exact equivalence with `BinaryPopulation.Realizes` in the reindexed graph.
 
 ## Checked construction and endpoints
 
@@ -31,7 +31,7 @@ All names below are in namespace `FixedGenderReindex`.
 | `retained_finiteSublevels` | Derives finite closed birthdate sublevels on the subtype from the supplied finite strict prefixes. |
 | `enumeration` | Constructs the birth-ordered enumeration using `BirthOrder.orderedEnumeration`. |
 | `vertex_retained`, `vertex_injective`, `vertex_surjective`, `vertex_nondecreasing` | Certify the image, bijection, and birth order. |
-| `forgetLabels_iff` | The unlabelled adjacency is exactly $E$ on the enumerated retained vertices. |
+| `forgetLabels_iff` | The unlabelled adjacency is exactly $`E`$ on the enumerated retained vertices. |
 | `root_iff` | A reindexed vertex is a root iff its retained original vertex is a root of `Induced E S`. |
 | `finiteSupport_reindex` | Transports a finite retained ambient predicate to a finite predicate on enumeration indices. |
 | `reindexed_child_cap` | Preserves the same numerical child cap after reindexing. |
