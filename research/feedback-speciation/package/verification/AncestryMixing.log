@@ -1,0 +1,22 @@
+'AncestryMixing.Pedigree.local_saturation_persists' depends on axioms: [propext, Quot.sound]
+'AncestryMixing.Pedigree.saturation_crosses_recurrent_edge' depends on axioms: [propext, Quot.sound]
+'AncestryMixing.Pedigree.exists_nonrecurrent_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AncestryMixing.Pedigree.late_descendant_projects' depends on axioms: [propext, Quot.sound]
+'AncestryMixing.Pedigree.eventual_descendant_iff_recurrent_reach' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AncestryMixing.Pedigree.iap_iff_one_recurrent_component_mod_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AncestryMixing.Pedigree.cofinite_descendants_of_recurrent_strongly_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AncestryMixing.Pedigree.whole_iap_iff_recurrent_strongly_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AncestryMixing.Pedigree.whole_inspecies_of_recurrent_strongly_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AncestryMixing.Pedigree.recurrent_component_tails_specieslike_reflection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

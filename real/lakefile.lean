@@ -70,3 +70,21 @@ lean_lib SpeciesSeed
 
 @[default_target]
 lean_lib RealSpeciesTheorem
+
+@[default_target]
+lean_lib WongSampleTracing
+
+@[default_target]
+lean_lib WongRecordTracing
+
+@[default_target]
+lean_lib WongEventDecoding
+
+@[default_target]
+lean_lib WongLocalSimplification
+
+@[default_target]
+lean_lib WongMemoizedTracing
+
+@[default_target]
+lean_lib WongTimedHistory

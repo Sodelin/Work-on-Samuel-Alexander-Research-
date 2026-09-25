@@ -1,3 +1,9 @@
+import WongTimedHistory
+import WongMemoizedTracing
+import WongLocalSimplification
+import WongEventDecoding
+import WongRecordTracing
+import WongSampleTracing
 import FounderWindow
 import DirectedIAP
 import SeedIntersections
@@ -206,3 +212,63 @@ import StatefulCAReal
 #print axioms RealSpeciesTheorem.maximal_window_extension
 #print axioms RealSpeciesTheorem.every_vertex_has_seed
 #print axioms RealSpeciesTheorem.every_vertex_in_maximal_real_window
+#print axioms WongSampleTracing.trace_exact
+#print axioms WongSampleTracing.trace_length_le
+#print axioms WongSampleTracing.tracedNodes_exact
+#print axioms WongSampleTracing.extract_some_iff
+#print axioms WongSampleTracing.actual_garg_extraction
+#print axioms WongSampleTracing.actual_garg_reconstruction_iff
+#print axioms WongRecordTracing.lookup_sound
+#print axioms WongRecordTracing.lookup_complete
+#print axioms WongRecordTracing.lookup_represents
+#print axioms WongRecordTracing.records_to_sample_array
+#print axioms WongRecordTracing.records_round_trip_iff
+#print axioms WongEventDecoding.equal_parent_crossover_same_local
+#print axioms WongEventDecoding.crossover_left_identified
+#print axioms WongEventDecoding.crossover_right_identified
+#print axioms WongEventDecoding.normalized_same_local_iff
+#print axioms WongEventDecoding.same_local_of_records_eq
+#print axioms WongEventDecoding.normalized_records_injective
+#print axioms WongEventDecoding.encode_decode
+#print axioms WongEventDecoding.decode_encode
+#print axioms WongEventDecoding.Graph.parents_identified
+#print axioms WongEventDecoding.Graph.graph_identified
+#print axioms WongEventDecoding.Graph.encoded_canonical
+#print axioms WongEventDecoding.kind_signature_injective
+#print axioms WongEventDecoding.decode_kind_signature
+#print axioms WongEventDecoding.encoded_degrees
+#print axioms WongEventDecoding.encoded_kind_recovered
+#print axioms WongEventDecoding.classical_kind_unique
+#print axioms WongEventDecoding.classical_encoded_sample_iff
+#print axioms WongLocalSimplification.contraction_congr_both
+#print axioms WongLocalSimplification.coordinatePresentation
+#print axioms WongLocalSimplification.coordinate_contraction_union_acyclic
+#print axioms WongLocalSimplification.automatic_reencoded_local_simplification
+#print axioms WongLocalSimplification.samples_and_branching_cellwise
+#print axioms WongLocalSimplification.suppressed_at_most_one_child
+#print axioms WongLocalSimplification.unretained_locally_isolated
+#print axioms WongLocalSimplification.samples_and_branching_representable
+
+#print axioms WongMemoizedTracing.visit_complete
+#print axioms WongMemoizedTracing.visit_closed
+#print axioms WongMemoizedTracing.memoExtract_some_iff
+#print axioms WongMemoizedTracing.memoExtract_eq_reference
+#print axioms WongMemoizedTracing.run_write_accounting
+#print axioms WongMemoizedTracing.run_cost_bounds
+#print axioms WongMemoizedTracing.memoized_cost_bounds
+#print axioms WongMemoizedTracing.actual_memoized_extraction
+#print axioms WongMemoizedTracing.records_to_memoized_sample_array
+#print axioms WongMemoizedTracing.memoized_records_round_trip_iff
+
+#print axioms WongTimedHistory.raw_chronology
+#print axioms WongTimedHistory.raw_event_arities
+#print axioms WongTimedHistory.observed_represents_contraction
+#print axioms WongTimedHistory.observed_dates_independent
+#print axioms WongTimedHistory.observed_chronology
+#print axioms WongTimedHistory.observation_independent
+#print axioms WongTimedHistory.counted_edge_iff
+#print axioms WongTimedHistory.hidden_times_differ
+#print axioms WongTimedHistory.lineage_counts_differ
+#print axioms WongTimedHistory.sample_date_is_not_event_date
+#print axioms WongTimedHistory.no_exact_time_decoder
+#print axioms WongTimedHistory.no_exact_lineage_decoder

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Uniform fixation under changing affinity bias</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Uniform fixation under changing affinity bias</h1>
+</header>
+<h1 id="a-uniform-fixation-bound-for-the-affinity-bias-model">A uniform
+fixation bound for the affinity-bias model</h1>
+<p>Date: 2026-09-25. Written proof independently checked internally.
+Lean verification passed for the source recursions and the
+global-fixation module; the aggregate receipt records the final packaged
+sources. A separate internal statement review also passed. This is a
+source-model refinement; its priority is unestablished. It is not a
+claimed solution of an author-designated open conjecture.</p>
+<h2 id="exact-model-and-question">Exact model and question</h2>
+<p>Fogarty, Zhang and Feldman, <a
+href="https://doi.org/10.1016/j.tpb.2025.08.003">Gene-culture
+association and coevolution</a>, Table 2 and equations (17)–(23), define
+a haploid genetic locus A/a and a cultural trait B/b. Write the four
+frequencies as x1,x2,x3,x4 for AB,Ab,aB,ab. They are nonnegative and sum
+to one. Set p=x1+x2, q=x1+x3 and D=x1<em>x4−x2</em>x3.</p>
+<p>Cultural transmission with affinity parameters b1,b2 in [0,1]
+produces</p>
+<pre><code>y1=x1−b1*D,  y2=x2+b1*D,
+y3=x3+b2*D,  y4=x4−b2*D.</code></pre>
+<p>Positive selection s&gt;0 for B then gives</p>
+<pre><code>x1&#39;=(1+s)*y1/Gamma,  x2&#39;=y2/Gamma,
+x3&#39;=(1+s)*y3/Gamma,  x4&#39;=y4/Gamma,</code></pre>
+<p>where Gamma=1+s*(y1+y3)&gt;0.</p>
+<p>The published model uses fixed affinity parameters. The bound below
+also permits them to vary between generations, including as functions of
+the current state, provided each remains a probability. That extension
+is explicitly ours; it is not attributed to the source.</p>
+<p>The question is quantitative: can arbitrary affinity biases prevent
+fixation, or make it arbitrarily slow for a fixed interior initial state
+and fixed positive selection, in this particular model?</p>
+<h2 id="theorem">Theorem</h2>
+<p>Let x(n) follow the four recursions with constant s&gt;0 and
+arbitrary b1(n),b2(n) in [0,1]. Suppose r&gt;=0 satisfies</p>
+<pre><code>x2(0) &lt;= r*x1(0),    x4(0) &lt;= r*x3(0).</code></pre>
+<p>Put c=1/(1+s), so 0&lt;c&lt;1. Then for every n,</p>
+<pre><code>x2(n) &lt;= r*c^n*x1(n),
+x4(n) &lt;= r*c^n*x3(n),</code></pre>
+<p>and consequently</p>
+<pre><code>0 &lt;= 1−q(n) &lt;= (r*c^n)/(1+r*c^n) &lt;= r*c^n.</code></pre>
+<p>In particular q(n) tends to one. If x1(0)&gt;0 and x3(0)&gt;0, one
+can take</p>
+<pre><code>r=max(x2(0)/x1(0), x4(0)/x3(0)).</code></pre>
+<p>Thus every strictly positive initial frequency vector has an explicit
+global fixation bound, independent of the sequence of admissible
+affinity biases.</p>
+<p>The initial-ratio condition is sufficient, not claimed necessary. It
+can also cover a missing genetic background when both coordinates for
+that background are zero.</p>
+<h2 id="proof">Proof</h2>
+<p><strong>The transmission stage is a valid frequency update.</strong>
+It preserves the sum and the genetic marginals y1+y2=p and
+y3+y4=1−p. Nonnegativity follows either from the direct simplex bounds
+on D or from its interpretation as within-background convex mixing.
+Hence Gamma is at least one.</p>
+<p><strong>Two coefficient identities.</strong> Since
+D=(1−p)<em>x1−p</em>x3, direct expansion gives</p>
+<pre><code>r*y1−y2
+  = (1−b1*(1−p))*(r*x1−x2) + b1*p*(r*x3−x4),
+
+r*y3−y4
+  = (1−b2*p)*(r*x3−x4) + b2*(1−p)*(r*x1−x2).</code></pre>
+<p>Every coefficient on the right is nonnegative, since
+0&lt;=p,b1,b2&lt;=1. Therefore the inequalities x2&lt;=r<em>x1 and
+x4&lt;=r</em>x3 remain valid with x replaced by y.</p>
+<p><strong>Selection contracts the bound.</strong> Dividing by Gamma and
+using the factor 1+s on the B coordinates gives</p>
+<pre><code>x2&#39; &lt;= (r/(1+s))*x1&#39;,
+x4&#39; &lt;= (r/(1+s))*x3&#39;.</code></pre>
+<p>This uses no constancy of the affinity parameters, only their range
+in this generation.</p>
+<p>Induction proves the two coordinate inequalities with
+r_n=r*c^n. Adding them yields</p>
+<pre><code>1−q(n) &lt;= r_n*q(n).</code></pre>
+<p>Rearrange to q(n)&gt;=1/(1+r_n), which proves the sharper deficit
+bound. The weaker bound follows from r_n&gt;=0 and 1+r_n&gt;=1. Finally
+c^n tends to zero because 0&lt;c&lt;1. This proves fixation.</p>
+<p>The ratio choice in the theorem is valid because initial x1 and x3
+are positive, the other coordinates are nonnegative, and the maximum
+dominates both initial ratios.</p>
+<h2 id="interpretation">Interpretation</h2>
+<p>The affinity operation redistributes cultural frequencies between
+genetic backgrounds. It cannot push the worse background below their
+current shared lower bound on the frequency of B. Selection improves
+that lower bound each generation. This yields a certificate valid across
+arbitrary admissible changes of affinity.</p>
+<p>This theorem is about a beneficial cultural trait under homogeneous
+positive selection. It does not concern the different
+cultural-trait-bias model in the same paper, where transmission can
+directly favour b. It does not prove speciation, epigenetic causation,
+genetic fixation of A, or a finite-population result. The result would
+need reanalysis under varying-sign selection, mutation, nonvertical
+kernels outside the given recursion, or demographic randomness.</p>
+<h2 id="prior-work-and-proof-status">Prior-work and proof status</h2>
+<p>The source’s affinity section studies boundary invasion/stability and
+rules out an interior equilibrium under a displayed parameter
+restriction. The present rate proof is a direct quantitative argument on
+its recursions and an explicitly declared adaptive-parameter extension.
+A bounded exact-title/affinity-bias search did not identify this rate
+formula; that is not a novelty certificate. Convex averaging plus
+selection is a familiar mechanism, and specialists may know this bound
+or a stronger one.</p>
+<p>The fixed-point exclusion proof in the companion audit also covers
+marginally polymorphic simplex boundary points, so it is retained
+separately. Absence of an interior fixed point alone does not establish
+this convergence theorem.</p>
+<p>An eventual publication description must distinguish this direct
+model refinement from the genuinely unresolved nonvertical-transmission
+direction in the source. All claimed Lean endpoints must start from the
+four update equations or the equivalent explicit step, not assume the
+odds invariant as a desired conclusion. The initial ratio bound is a
+hypothesis with a separately proved positive-coordinate witness.</p>
+<p>The final bounded prior-art check gives a simpler structural
+description: transmission applies the same nonnegative two-by-two matrix
+to u=(x1,x3) and v=(x2,x4). Coordinatewise v&lt;=r<em>u implies
+M</em>v&lt;=r<em>M</em>u; selection then contracts r by 1/(1+s). This is
+standard order preservation, not new general contraction machinery. The
+potentially useful result is its precise source-model application,
+explicit parameter scope and Lean verification. See
+RATE-PRIOR-ART-CHECK.md for the six queries, three nearest primary leads
+and access limits.</p>
+</body>
+</html>

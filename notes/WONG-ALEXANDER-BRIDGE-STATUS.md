@@ -11,7 +11,7 @@ every projected population is specieslike.**
 This source-to-proof audit was made on 25 September 2026 from the
 [published version of record](https://www.pure.ed.ac.uk/ws/portalfiles/portal/458588307/iyae100.pdf)
 ([DOI](https://doi.org/10.1093/genetics/iyae100)). Page references below are
-**printed journal pages**. The downloaded PDF has an extra repository cover,
+**printed journal pages**. The published PDF has an extra repository cover,
 so journal page 2 is the third PDF page. The relevant main text and Appendices
 A–I were inspected, with particular attention to E, G and H. The source is
 open access under CC BY 4.0. New mathematical deductions and proposed proof
@@ -27,13 +27,13 @@ different parts of the project.
 | Source location | Content | Formalization obligation and status |
 |---|---|---|
 | Genome ARGs, p. 2; Fig. 1, p. 3 | A finite directed acyclic graph of haploid-genome nodes, a sample subset, and child/parent edges annotated with inherited genomic intervals. One graph edge may span several generations. Genome nodes and organism-pedigree nodes are different objects. | Define finite node and sample types, a coordinate domain, normalized or extensional interval annotations, and acyclicity. WongGARG now checks this foundation over an arbitrary shared linearly ordered coordinate type. Storage normalization and unique local parents are separately visible conditions. |
-| Event ARGs, pp. 2–3; conversion, pp. 3–4 | Common-ancestor and crossover events can be encoded by full-genome or left/right inheritance intervals. An ordered choice of the two recombination parents is necessary. | WongEventEncoding gives exact ordered event-parent to interval-gARG conversion, topology/local routing/path correspondence, and cutoff recovery for distinct fixed ordered parents. Full event-metadata storage decoding and classical child-arity validation are separate. |
-| Ancestral material and sample resolution, pp. 3–4 | Sample resolution removes material irrelevant to the chosen samples; a raw prospective gARG may contain such material. | Specify which edge-position incidences are visible by tracing from samples. Prove exact reconstruction on the supported relation, and state the condition for equality with the original. AncestralRestriction.indexed_recovery_iff and WongGARG.GARG.extracted_eq_local_iff_sampleSupported now check the exact relation-level criterion. |
+| Event ARGs, pp. 2–3; conversion, pp. 3–4 | Common-ancestor and crossover events can be encoded by full-genome or left/right inheritance intervals. An ordered choice of the two recombination parents is necessary. | WongEventEncoding gives exact ordered event-parent to interval-gARG conversion, topology/local routing/path correspondence, and cutoff recovery for distinct fixed ordered parents. WongEventDecoding now proves normalized specification injectivity, a classical inverse on its range, and kind recovery under explicit strict classical degree assumptions. Arbitrary metadata and simplified encodings remain separate. |
+| Ancestral material and sample resolution, pp. 3–4 | Sample resolution removes material irrelevant to the chosen samples; Fig. 3 also omits fully coalesced material above local MRCAs. A raw prospective gARG may contain such material. | Specify which edge-position incidences are visible by tracing from samples. Prove exact reconstruction on the supported relation, and state the condition for equality with the original. AncestralRestriction.indexed_recovery_iff and WongGARG.GARG.extracted_eq_local_iff_sampleSupported now check the exact relation-level criterion. |
 | Appendix D, p. 14 | Genome nodes may mark different cellular stages inside one individual; different choices encode events differently. | A biologically justified owner map can identify several genome nodes. Within-organism equality and multi-generation pedigree ancestry must both be allowed. The generic path projection is checked; the biological instance is not. |
-| Appendix E, pp. 14–15 | A local tree is represented by a persistent node-indexed parent array. It is extracted by tracing inheritance from samples at a fixed position. Shared internal identities and unary nodes matter to recovery of the ARG. | Under explicit parent uniqueness, WongGARG checks an acyclic all-node parent representation and comparability of ancestors. It also proves exact sample-restricted relation recovery. WongLocalArity proves finite backward-local-walk and parent-array walk bounds. An executable sample-tracing/serialization implementation and runtime cost are not verified. Multiple roots give a forest; one connected tree needs an additional hypothesis. |
+| Appendix E, pp. 14–15 | A local tree is represented by a persistent node-indexed parent array. It is extracted by tracing inheritance from samples at a fixed position. Shared internal identities and unary nodes matter to recovery of the ARG. | Under explicit parent uniqueness, WongGARG checks an acyclic all-node parent representation and comparability of ancestors. It also proves exact sample-restricted relation recovery. WongLocalArity proves finite backward-local-walk and parent-array walk bounds. WongSampleTracing and WongRecordTracing now verify executable extraction from actual interval records. WongMemoizedTracing also verifies shared-cache early stopping, equality with the reference, and abstract write/check/lookup bounds. External serialization and machine-runtime costs remain unverified. Multiple roots give a forest; one connected tree needs an additional hypothesis. |
 | Appendix F, pp. 15–16 | Local arity does not exceed graph arity; an ancestor can be unary in one or every local tree. | WongLocalArity proves the distinct-child subset/cardinality bound and exactly distinguishes a globally unary node being locally absent versus locally unary. |
-| Appendix G, pp. 16–17; Fig. 5, p. 6 | Several different simplifications remove nodes or rewrite intervals. Unary suppression and diamond removal preserve chosen coarser information while losing some event/path details. | AncestryContraction and the actual-gARG wrapper prove retained-node sample ancestry preservation under relation-level node elimination. WongSimplification now derives an actual finite disjoint-interval output from input breakpoints, with inherited local uniqueness and no new endpoints. Adjacent-cell coalescing, coordinate-dependent retention, and correctness of the complete tskit algorithm remain separate. |
-| Appendix H, p. 17 | Equal tree counts do not imply equal recombination detail. Simplification can remove breakpoint, lineage and event-timing information. | Supply explicit pairs of admissible histories with equal chosen observations but different targets, then apply the existing recovery obstruction. WongExamples supplies a concrete three-node interval-gARG pair with equal sample-extracted relations and unequal raw topology. WongDiamond adds a fully sample-supported four-node collision with different cutoffs and identical contracted relations. Event-timing observations remain separate. |
+| Appendix G, pp. 16–17; Fig. 5, p. 6 | Several different simplifications remove nodes or rewrite intervals. Unary suppression and diamond removal preserve chosen coarser information while losing some event/path details. | AncestryContraction and the actual-gARG wrapper prove retained-node sample ancestry preservation under relation-level node elimination. WongSimplification now derives an actual finite disjoint-interval output from input breakpoints, with inherited local uniqueness and no new endpoints. WongLocalSimplification additionally proves coordinate-dependent retention, including samples plus local branching nodes. Adjacent-cell coalescing and correctness of the complete tskit algorithm remain separate. |
+| Appendix H, p. 17 | Equal tree counts do not imply equal recombination detail. Simplification can remove breakpoint, lineage and event-timing information. | Supply explicit pairs of admissible histories with equal chosen observations but different targets, then apply the existing recovery obstruction. WongExamples supplies a concrete three-node interval-gARG pair with equal sample-extracted relations and unequal raw topology. WongDiamond adds a fully sample-supported four-node collision with different cutoffs and identical contracted relations. WongTimedHistory now supplies actual timed event graphs with equal contracted gARGs and retained dates but different recombination times and intermediate lineage counts; no exact decoder exists on that family. Likelihoods, general time-bound characterizations and literal figure reproduction remain separate. |
 | Appendices A–B, pp. 11–13 | The graph data structure is distinguished from stochastic coalescent processes. Event rates, termination and growth estimates concern specified processes, often citing earlier work. | Define probability laws, holding times and cost variables before formalizing these claims. Graph reachability proofs do not establish almost-sure termination, asymptotic expectations or likelihoods. |
 | Main discussion, pp. 5–7; Appendices C and I, pp. 13–14, 17–18 | Comparisons among inference tools, observed precision, scalability, uncertainty and proposed software standards. | These are software, empirical or research-agenda claims. Reproduce the cited code/data and specify measured quantities; no theorem about the abstract graph alone proves them. |
 
@@ -51,8 +51,10 @@ The current continuation also received individual Lean/axiom PASS reports for
 (11), and
 [FiniteHistoryCompletion](../lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean)
 (7). Only the permitted standard axioms were reported. The source statements
-were independently inspected in this audit. Aggregate registration and hosted
-CI for these new modules remain separate integration checks.
+were independently inspected in this audit. These modules are now registered; the current fresh real aggregate checks 209
+endpoints, including 58 additions in the six-module completion batch
+(25 September 2026, 13:26:46 UTC). Hosted CI remains a
+commit-specific check; use the linked PR checks and current receipt.
 
 WongGARG adds topology/erasure equivalence under NonemptyAnnotations,
 local_parent_representation under UniqueParentAt, local_ancestors_comparable,
@@ -98,8 +100,11 @@ one role label per ordered parent-child pair.
 
 The relation-level support criterion is now checked. The parent-pointer
 representation is also checked for the **all-node** local relation. Their
-composition into an executable sample-tracing/serialization algorithm remains
-a separate proof contract.
+composition into executable sample tracing from actual interval records is now
+checked by WongSampleTracing and WongRecordTracing. WongMemoizedTracing adds
+visited-entry early stopping, cache correctness and abstract operation counts.
+External serialization
+remains a separate contract.
 
 The implemented foundation uses finite nodes and a shared, arbitrary linearly
 ordered coordinate type with finitely represented half-open intervals. This
@@ -147,11 +152,11 @@ different observation does recover unsupported edges.
 
 Useful immediate companion claims are:
 
-1. Sample resolution preserves every fixed-locus ancestry path ending at a
-   chosen sample.
-2. Resolving twice is idempotent.
-3. For nested sample sets, resolving first to the larger set and then to the
-   smaller set agrees with resolving directly to the smaller set.
+1. Sample-support restriction preserves every fixed-locus ancestry path ending at a
+   chosen sample. This excludes the further removal of ancestry above local MRCAs.
+2. Applying that support restriction twice is idempotent.
+3. For nested sample sets, restricting first to the larger set and then to the
+   smaller set agrees with restricting directly to the smaller set.
 4. Equal persistent, unsuppressed local parent arrays determine the same
    sample-visible indexed relation; equal unlabelled or unary-suppressed trees
    need not do so.
@@ -159,8 +164,9 @@ Useful immediate companion claims are:
 
 Items 1–3 are now checked by AncestralRestriction.locus_sample_path_iff,
 restriction_idempotent and restriction_nested. Its indexed_recovery_iff
-checks the relation part of item 4; full sample-array reconstruction and the
-specific unary-suppression collision still need their own instance. The fifth
+checks the relation part of item 4; full sample-array reconstruction is now
+instantiated by WongRecordTracing and WongMemoizedTracing, and WongDiamond provides a specific
+unary/diamond-contraction collision. The fifth
 is already available abstractly as
 ObservationPrediction.recoverable_from_fine_of_coarse. These closure and
 composition statements are **proposed project deductions**; the article
@@ -202,7 +208,7 @@ For a proposed map or completion, the actual proof obligations are:
 | Genome ancestry implies organism ancestry | Owner compatibility for every represented inheritance step. HGT may violate compatibility with a purely reproductive pedigree; equality of owners and multi-generation steps must be treated explicitly. |
 | Alexander 2026 background model | An infinite organism domain, finite children, strictly increasing birth times along the chosen parent edges, and finite earlier-time sets. A finite gARG does not supply these future conditions. |
 | Alexander 2013 labelled population | In addition: finite roots, simple/functional edge labels and an incoming edge of every required role at every nonroot. Locus sets are not those labels, and unary suppression may change degree and immediate-parent structure. |
-| Specieslike cluster | Weak connectedness inside the cluster, the infinite-ancestry property IAP, and convexity using ancestry in the ambient graph. Path soundness alone proves none of the three together. |
+| Specieslike cluster | Weak connectedness inside the cluster, the identical ancestor point axiom IAP, and convexity using ancestry in the ambient graph. Path soundness alone proves none of the three together. |
 | Inspecies | Infinite ancestral closure and inclusion minimality among infinite ancestrally closed sets. This differs from maximal specieslike status. |
 | Preservation through a quotient or simplification | Specify which paths lift, whether image fibres are finite, which vertices/intermediate ancestors remain, and which finite/cofinite sets and closure properties are preserved. Check each requested predicate separately. |
 
@@ -237,11 +243,11 @@ substituted for another without a proof.
 
 | Order | Concrete deliverable | Completion test |
 |---|---|---|
-| 1 | Finite gARG foundation and sample-visible ancestry resolution | Individual checks passed for the interval DAG, local-parent representation, sample ancestry preservation, idempotence, nested/union laws and exact relation reconstruction criterion with counterexample. Executable sample-array extraction remains distinct. |
-| 2 | Information retained by local-tree representations | Parent-relation representation, sample-support reconstruction criterion, concrete interval-gARG collision, local-arity bounds and backward traversal bound are checked; full serialization remains distinct. |
+| 1 | Finite gARG foundation and sample-visible ancestry resolution | Individual checks passed for the interval DAG, local-parent representation, sample ancestry preservation, idempotence, nested/union laws and exact relation reconstruction criterion with counterexample. Executable reference and memoized sample-array extraction from actual records are now checked; abstract operation counts are included. |
+| 2 | Information retained by local-tree representations | Parent-relation representation, sample-support reconstruction criterion, concrete interval-gARG collision, local-arity bounds and backward traversal bound, memoized algorithm and a timed-history collision are checked; full serialization and stochastic likelihoods remain distinct. |
 | 3 | Finite-record / infinite-population boundary | Ordered-prefix contrasting completions are checked. WongAlexander.actual_garg_opposite_infinite_completions is individually checked, deriving the numbering and including literal real birthdates. Neither result asserts a diploid bound or biological inference. |
 | 4 | Concrete pedigree adapter | One specified cellular or organismal construction that supplies owner compatibility; keep genomic intervals separate from reproductive-role labels. |
-| 5 | Selected simplification rewrites | Retained-node contraction and its composition with sample resolution are checked. Automatic finite-interval output for fixed node retention is now proved; individual software rewrite algorithms remain separate. |
+| 5 | Selected simplification rewrites | Retained-node contraction and its composition with sample-support restriction are checked. Automatic finite-interval output for fixed and coordinate-dependent node retention is now proved; individual software rewrite algorithms remain separate. |
 | 6 | Larger paper coverage | Event/gARG round trips, arbitrary interval coordinates, executable traversal/serialization, probability and complexity theorems each receive separate models and receipts. Empirical claims receive reproduction evidence, not a Lean label. |
 
 Milestones are reviewable stopping points, not permission gates. Work can
@@ -272,3 +278,22 @@ Mathlib receipts, not a claim that every empirical statement in this paper is a 
 WongBreakpointCells, WongIntervalNormalization and WongSimplification close the supplied-partition and finite-output gaps for the specified sample restriction and fixed-node contraction. Each returned record has nonempty disjoint proper intervals; there is one record per ordered endpoint pair. Retained-to-sample ancestry is exact. Local uniqueness is inherited, and retaining every sample guarantees output sample support. Output breakpoints are a subset of input breakpoints. This does not impose a minimal segmentation or identify a complete software algorithm.
 
 WongDiamond proves cutoff information loss even when all original edge-position incidences are sample-supported. FiniteGenomeIdentifiability explicitly rules out a universally correct whole-specieslike verdict over the topology-compatible completion class. Read the current aggregate source inventories and publication commit for the verification boundary.
+
+## Current completion ledger
+
+The [52-family paper ledger](../research/wong/completion/COVERAGE.md) supersedes
+older progress counts in this note. The six newly integrated modules and their 58 selected endpoints, exact
+source transformations and verification boundary are linked from the
+[completion entry point](../research/wong/completion/README.md). Sample-support
+restriction and omission above local MRCAs have distinct semantics throughout
+that ledger. Probability, expected stochastic event counts, full software certification and novelty
+do not follow from these deterministic representation proofs.
+
+## Current tracing and temporal-information scope
+
+[WongMemoizedTracing](../real/WongMemoizedTracing.lean) proves cache-closed early stopping and equality with the reference extractor, including actual interval-record lookup. Its abstract counts satisfy writes at most the number of nodes and checks/lookups each at most writes plus the listed sample count. Repeated roots are counted; functional-cache and record-scan costs are not assumed constant time.
+
+[WongTimedHistory](../real/WongTimedHistory.lean) supplies valid timed event graphs with the same contracted interval graph and retained dates but different hidden recombination times and actual intermediate lineage counts. The resulting no-decoder theorem applies to that specific observation family. It does not establish likelihood equality, stochastic ARG termination, mutation-data identifiability or a species verdict.
+
+The [current aggregate receipt](../verification/real-audit.json) binds all six promoted sources and 209 selected Mathlib endpoints; the [PR checks](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks) separately record hosted status for each exact publication commit.
+

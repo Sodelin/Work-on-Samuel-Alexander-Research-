@@ -1,5 +1,25 @@
 # Working on Samuel Alexander's research
 
+## Wong completion and feedback follow-up — 25 September 2026
+
+The [Wong completion ledger](research/wong/completion/README.md) now maps 52
+claim families and records six new integrated modules (58 selected endpoints;
+209 in the real aggregate). The [feedback/speciation package](research/feedback-speciation/README.md)
+adds a conditional IAP classification, cultural/genetic boundary examples and
+a quantitative fixation bound for the published Fogarty affinity model.
+Its five new modules contribute 53 selected standalone endpoints; the repository
+CI now checks 113 standalone endpoints in 17 files.
+
+The Wong paper remains partly formalized. The feedback theorem has strong
+pedigree assumptions, its probability adapter is still written-only, and none
+of these additions proves that DNA determines biological species or establishes
+novelty. See the exact scopes and [publication verification boundary](research/feedback-speciation/PUBLIC-INTEGRATION.md).
+Hosted status is recorded per commit in [PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks).
+
+The previous consolidated author email and VibeMathed curator update were both
+delivered on 25 September. The original VibeMathed submission remains under
+review. This new research batch has not yet been sent as another outreach update.
+
 **Start here:** [Completion map](COMPLETION-MAP.md) — finished statements, active proof gates, and what the evidence supports.
 
 **Latest focused follow-up:** [What DNA can identify, known results, and a checked finite-evidence step](research/open-questions/genomic-identifiability/next/README.md).

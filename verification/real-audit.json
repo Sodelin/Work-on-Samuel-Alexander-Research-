@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T10:46:04.818931+00:00",
+  "checked_at_utc": "2026-09-25T13:26:46.221359+00:00",
   "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "toolchain_pin": "leanprover/lean4:v4.33.1",
-  "endpoint_count": 151,
+  "endpoint_count": 209,
   "endpoint_axioms": {
     "RealBridges.finiteCover_iff_setFinite": [
       "propext",
@@ -737,6 +737,278 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "WongSampleTracing.trace_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.trace_length_le": [
+      "propext"
+    ],
+    "WongSampleTracing.tracedNodes_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.extract_some_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.actual_garg_extraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongSampleTracing.actual_garg_reconstruction_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.lookup_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.lookup_complete": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.lookup_represents": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.records_to_sample_array": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongRecordTracing.records_round_trip_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.equal_parent_crossover_same_local": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.crossover_left_identified": [
+      "propext"
+    ],
+    "WongEventDecoding.crossover_right_identified": [
+      "propext"
+    ],
+    "WongEventDecoding.normalized_same_local_iff": [
+      "propext"
+    ],
+    "WongEventDecoding.same_local_of_records_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.normalized_records_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.encode_decode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.decode_encode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.Graph.parents_identified": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.Graph.graph_identified": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.Graph.encoded_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.kind_signature_injective": [
+      "propext"
+    ],
+    "WongEventDecoding.decode_kind_signature": [],
+    "WongEventDecoding.encoded_degrees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.encoded_kind_recovered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.classical_kind_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventDecoding.classical_encoded_sample_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.contraction_congr_both": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.coordinatePresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.coordinate_contraction_union_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.automatic_reencoded_local_simplification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.samples_and_branching_cellwise": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.suppressed_at_most_one_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.unretained_locally_isolated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalSimplification.samples_and_branching_representable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.visit_complete": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.visit_closed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoExtract_some_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoExtract_eq_reference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.run_write_accounting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.run_cost_bounds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoized_cost_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.actual_memoized_extraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.records_to_memoized_sample_array": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMemoizedTracing.memoized_records_round_trip_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.raw_chronology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.raw_event_arities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observed_represents_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observed_dates_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observed_chronology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.observation_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.counted_edge_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.hidden_times_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.lineage_counts_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.sample_date_is_not_event_date": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.no_exact_time_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongTimedHistory.no_exact_lineage_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "source_sha256": {
@@ -796,7 +1068,7 @@
     "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
     "lean/SamuelAlexanderResearch/ThueMorseWindow.lean": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f",
     "lean/SamuelAlexanderResearch.lean": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1",
-    "real/RealAudit.lean": "e195ca982226136dd630a0175585a25904b97b4272e94139e3e22972317cbaaf",
+    "real/RealAudit.lean": "0c44192d4cda4752ac8032214217746814d2b65badba7e7da287f9c743c71716",
     "real/DirectedIAP.lean": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0",
     "real/FiniteGenomeIdentifiability.lean": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
     "real/FounderMaximal.lean": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4",
@@ -812,13 +1084,19 @@
     "real/WongAlexander.lean": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
     "real/WongBreakpointCells.lean": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d",
     "real/WongDiamond.lean": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd",
+    "real/WongEventDecoding.lean": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
     "real/WongEventEncoding.lean": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87",
     "real/WongExamples.lean": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59",
     "real/WongGARG.lean": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
     "real/WongIntervalNormalization.lean": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f",
     "real/WongLocalArity.lean": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
+    "real/WongLocalSimplification.lean": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+    "real/WongMemoizedTracing.lean": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+    "real/WongRecordTracing.lean": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+    "real/WongSampleTracing.lean": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
     "real/WongSimplification.lean": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab",
-    "real/lakefile.lean": "035886258d76b8d11671b86822086fd192eda2e6a048adebcb70d361f082e838",
+    "real/WongTimedHistory.lean": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+    "real/lakefile.lean": "d7f0f9ff2853e292b012c799b15f5e6291d438373881e9bbb8f7b50546e99d31",
     "real/lake-manifest.json": "24c900a45c3f706d5e3a0336f3808fcc9b03bb3407e7b5ae23eeb8c283726d33",
     "real/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
   },

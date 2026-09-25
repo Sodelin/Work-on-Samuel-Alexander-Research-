@@ -33,6 +33,11 @@ ARTIFACTS = {
     "research/open-questions/species/FounderWindow.lean": 4,
     "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean": 6,
     "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean": 8,
+    "research/feedback-speciation/package/AncestryMixing.lean": 10,
+    "research/feedback-speciation/package/AncestryExamples.lean": 6,
+    "research/feedback-speciation/package/FeedbackDynamics.lean": 19,
+    "research/feedback-speciation/package/FogartyAffinity.lean": 9,
+    "research/feedback-speciation/package/FogartyAffinityFixation.lean": 9,
 }
 PRINT_AXIOMS = re.compile(r"^\s*#print\s+axioms\s+([A-Za-z0-9_.]+)\s*$", re.M)
 PLACEHOLDER_WARNING = re.compile(

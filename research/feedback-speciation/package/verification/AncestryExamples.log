@@ -1,0 +1,6 @@
+'AncestryMixing.Pedigree.component_unique_mod_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AncestryMixing.Examples.twoDeme' depends on axioms: [propext, Quot.sound]
+'AncestryMixing.Examples.recurrent_twoDeme_iff' depends on axioms: [propext, Quot.sound]
+'AncestryMixing.Examples.oneWay_not_iap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AncestryMixing.Examples.bidirectional_iap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AncestryMixing.Examples.explicit_pedigree_exists' depends on axioms: [propext, Quot.sound]

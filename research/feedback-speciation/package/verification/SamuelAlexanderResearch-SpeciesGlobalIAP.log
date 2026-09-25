@@ -1,0 +1,13 @@
+'SpeciesGlobalIAP.all_subsets_iap_iff' does not depend on any axioms
+'SpeciesGlobalIAP.all_infinite_subsets_reflection_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpeciesGlobalIAP.all_subsets_iap_iff_all_infinite_subsets_reflection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SpeciesGlobalIAP.whole_specieslike_iff' does not depend on any axioms
+'SpeciesGlobalIAP.whole_inspecies_iff_cofinite_descendants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpeciesGlobalIAP.whole_iap_iff_inspecies_of_infinite_descendants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SpeciesGlobalIAP.reflection_iff_empty_or_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpeciesGlobalIAP.psWhole_inspecies' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpeciesGlobalIAP.psReflection_iff_empty_or_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
