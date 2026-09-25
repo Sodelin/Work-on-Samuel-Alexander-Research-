@@ -1,21 +1,23 @@
 # Research follow-up publication status
 
-This branch preserves the reviewable work of the 25 September 2026 follow-up. It is a draft integration, not a claim that the previous release's CI certifies these new files.
+## Current Wong follow-up
 
-- The local core receipt checks 370 selected endpoints across 47 core modules. All 49 inventoried source hashes match the snapshot.
-- The local Mathlib receipt checks 30 selected endpoints, including the actual population encoder and real convex-hull CA result. All 55 hashes in its imported local source closure and configuration match this snapshot. Both receipts allow only `propext`, `Classical.choice`, and `Quot.sound`.
-- The optional literal binary-kernel finite-generation wrapper and a proof-feedback tool robustness edit are still being finalized and are excluded from this checked snapshot. The full height formula and executable recurrence are already proved without that wrapper.
-- Hosted CI for this branch is a separate pending gate. Main remains the previously verified release until review and CI complete.
+This checked follow-up extends the initial public snapshot at `19544a4d7608c8cc0d5a1205605c0f38631ca05f`. The exact 33-file inventory is in [verification/wong-packet.json](verification/wong-packet.json), published alongside those files. All packet hashes matched at publication intake; original receipt bytes are preserved.
 
-## Readable starting points
+The integrated local audits pass **393 core and 70 Mathlib selected endpoints**, permitting only `propext`, `Classical.choice`, and `Quot.sound`. This adds 63 selected endpoints across three core modules and five Mathlib modules.
 
-- [Mathematical handoff](HANDOFF-FOR-ALEXANDER.md)
-- [Delivery and scope map](DELIVERY-MAP.md), including the conditional Wong (2024) genome-ARG connection
-- [Ten extension proposals and their answers](TEN-SOLUTIONS.md)
-- [Which source-stated questions were answered](research/research-packet/OPEN-PROBLEM-STATUS.md)
-- [VibeMathed eligibility](research/research-packet/VIBE-MATH-ELIGIBILITY.md) and [prepared submission](research/research-packet/VIBEMATH-SUBMISSION-DRAFT.md)
-- [Saved line-ending fix](notes/LINE-ENDINGS.md)
+The central theorem embeds a finite interval ARG into two connected infinite populations preserving its raw edges and ancestry. One completion is a whole inspecies and maximal specieslike set; the other fails the stated infinite-ancestry property. This is ambiguity of abstract infinite completions, not biological owner-map inference. Other results cover sample restriction, contraction, explicit ARG examples, breakpoint locality, local arity and ordered event encodings.
 
-The research packet preserves dated audit stages, including older conjectural or pending descriptions. Current proof status is in STATUS.md and TEN-SOLUTIONS.md. Copies in the packet use portable links and GitHub-compatible math delimiters; historical receipts identify the original files and release they checked.
+Read the [Wong-Alexander outline](WONG-ALEXANDER-OUTLINE.md), [connection map](research/wong/connection-map.json), [delivery map](DELIVERY-MAP.md) and [refinement ledger](REFINEMENT-LEDGER.md). Stronger unanswered targets remain explicit. A literal binary-kernel wrapper, proof-feedback-tool edits, caches and uncompiled refinement drafts are excluded.
 
-The email to Dr. Alexander is a private draft. VibeMathed has not yet received the prepared submission. The quantitative result answers a question in the separate September AI-assisted manuscript; it is not represented as a new solution to all of Alexander's open problems.
+The ordinary hosted build for this follow-up is recorded with its exact commit in [PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6). The earlier run below certifies the earlier snapshot; it is not a substitute for the new commit's run.
+
+## Initial snapshot checked and shared
+
+The initial snapshot at `19544a4d7608c8cc0d5a1205605c0f38631ca05f` passed [Verify run 36116271138](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36116271138), including the Lean build, 370 core and 30 Mathlib endpoint audits and computational checks. Its final formatting audit covered 109 Markdown files and 3,068 mathematical expressions with zero delimiter or MathJax rendering errors.
+
+The reviewed email to Dr. Alexander was sent on 25 September 2026 with immutable links to that initial snapshot. No second email accompanies this update. The [prepared VibeMathed proposal](research/research-packet/VIBEMATH-SUBMISSION-DRAFT.md) has not yet been submitted.
+
+The sharp quantitative Thue-Morse result answers a question in the separate September AI-assisted manuscript. The [ten extensions](TEN-SOLUTIONS.md) are not ten historic Alexander open problems. [Exact open-problem attribution](research/research-packet/OPEN-PROBLEM-STATUS.md) remains available. Worldwide priority and independent expert review remain unconfirmed. Historical audit notes preserve their original stage; use this page, STATUS.md and the exact-commit PR receipt for current delivery status.
+
+The [original handoff](HANDOFF-FOR-ALEXANDER.md) and [saved line-ending fix](notes/LINE-ENDINGS.md) remain available.

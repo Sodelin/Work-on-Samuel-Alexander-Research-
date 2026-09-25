@@ -1,3 +1,6 @@
+import SamuelAlexanderResearch.AncestryContraction
+import SamuelAlexanderResearch.FiniteHistoryCompletion
+import SamuelAlexanderResearch.AncestralRestriction
 import SamuelAlexanderResearch.AncestryViews
 import SamuelAlexanderResearch.BinaryAvoidance
 import SamuelAlexanderResearch.BinaryPopulation

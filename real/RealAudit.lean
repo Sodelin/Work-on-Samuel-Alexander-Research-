@@ -1,3 +1,8 @@
+import WongEventEncoding
+import WongLocalArity
+import WongExamples
+import WongAlexander
+import WongGARG
 import RealBridges
 import PortEncoding
 import StatefulCAReal
@@ -33,3 +38,45 @@ import StatefulCAReal
 #print axioms StatefulCAReal.static_east_support_one
 #print axioms StatefulCAReal.real_horizontal_spaceship_speed_zero
 #print axioms StatefulCAReal.real_static_gap_and_global_obstruction
+
+#print axioms WongGARG.GARG.locus_path_topology
+#print axioms WongGARG.GARG.locus_acyclic
+#print axioms WongGARG.GARG.topology_iff_erased
+#print axioms WongGARG.GARG.extracted_eq_local_iff_sampleSupported
+#print axioms WongGARG.GARG.local_parent_representation
+#print axioms WongGARG.GARG.local_ancestors_comparable
+#print axioms WongGARG.GARG.locus_path_projects
+#print axioms WongGARG.GARG.exists_finite_topological_numbering
+#print axioms WongGARG.GARG.ancestry_constant_without_breakpoint
+#print axioms WongGARG.GARG.natTopology_path_iff
+
+#print axioms WongAlexander.sample_ancestral_iff
+#print axioms WongAlexander.extracted_sample_path_iff
+#print axioms WongAlexander.finite_catalog_not_infinite
+#print axioms WongAlexander.natural_biosphere_has_real_dates
+#print axioms WongAlexander.ordered_encoded_prefix
+#print axioms WongAlexander.old_encoded_path_iff
+#print axioms WongAlexander.actual_garg_opposite_infinite_completions
+#print axioms WongAlexander.extracted_contracted_sample_path_iff
+#print axioms WongExamples.splitGARG
+#print axioms WongExamples.tailGARG
+#print axioms WongExamples.all_extracted_relations_equal
+#print axioms WongExamples.raw_locus_relations_differ
+#print axioms WongExamples.finite_garg_sample_reconstruction_boundary
+#print axioms WongLocalArity.local_children_subset
+#print axioms WongLocalArity.local_arity_le_graph_arity
+#print axioms WongLocalArity.graph_unary_local_zero_or_one
+#print axioms WongLocalArity.graph_unary_present_locally_unary
+#print axioms WongLocalArity.backward_local_walk_bound
+#print axioms WongLocalArity.no_infinite_backward_local_walk
+#print axioms WongLocalArity.backward_parent_array_bound
+#print axioms WongEventEncoding.ParentSpec.parent_iff_exists_at
+#print axioms WongEventEncoding.EventGraph.encoded_topology
+#print axioms WongEventEncoding.EventGraph.encoded_atLocus
+#print axioms WongEventEncoding.EventGraph.encoded_nonempty_annotations
+#print axioms WongEventEncoding.EventGraph.encoded_unique_parent
+#print axioms WongEventEncoding.EventGraph.encoded_route
+#print axioms WongEventEncoding.EventGraph.encoded_path_iff
+#print axioms WongEventEncoding.EventGraph.erased_encoded_topology
+#print axioms WongEventEncoding.EventGraph.encoded_parent_pointer
+#print axioms WongEventEncoding.ParentSpec.crossover_cut_identified

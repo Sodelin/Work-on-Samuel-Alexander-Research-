@@ -380,3 +380,28 @@ Statement and model review is recorded separately in FORMALIZATION.md.
 #print axioms StatefulCA.rDomino_finite
 #print axioms StatefulCA.rDomino_nonempty
 #print axioms StatefulCA.stateful_rule_static_gap_and_global_obstruction
+
+#print axioms AncestralRestriction.locus_sample_path_iff
+#print axioms AncestralRestriction.ancestral_restrict_iff
+#print axioms AncestralRestriction.restriction_resolved
+#print axioms AncestralRestriction.restriction_idempotent
+#print axioms AncestralRestriction.restriction_mono_samples
+#print axioms AncestralRestriction.restriction_nested
+#print axioms AncestralRestriction.restriction_union_iff
+#print axioms AncestralRestriction.erase_restriction_sound
+#print axioms AncestralRestriction.erasure_restriction_do_not_commute
+#print axioms AncestralRestriction.indexed_recovery_iff
+#print axioms AncestralRestriction.raw_graph_not_identified_by_sample_relations
+#print axioms FiniteHistoryCompletion.old_reachability_exact
+#print axioms FiniteHistoryCompletion.join_biosphere
+#print axioms FiniteHistoryCompletion.fork_biosphere
+#print axioms FiniteHistoryCompletion.join_inspecies
+#print axioms FiniteHistoryCompletion.join_maximal_specieslike
+#print axioms FiniteHistoryCompletion.fork_not_iap
+#print axioms FiniteHistoryCompletion.finite_history_does_not_determine_species
+
+#print axioms AncestryContraction.retained_path_iff
+#print axioms AncestryContraction.contract_acyclic
+#print axioms AncestryContraction.nested_contraction_paths
+#print axioms AncestryContraction.locus_retained_path_iff
+#print axioms AncestryContraction.resolved_contracted_sample_path_iff

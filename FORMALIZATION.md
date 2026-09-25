@@ -1,5 +1,25 @@
 # Checked mathematics and exact remaining scope
 
+## Wong graph mathematics and scope
+
+The new [Wong–Alexander outline](WONG-ALEXANDER-OUTLINE.md) records the composed
+interfaces and exact limits. See the endpoint manifests and final source-hash
+receipts for the checked inventory.
+
+| Module | Exact contribution | Boundary |
+|---|---|---|
+| WongGARG | Finite interval DAG, local-parent forest under unique parenthood, derived ordering, exact natural-number path encoding, breakpoint-wise ancestry constancy. | Nonempty annotations and canonical records are explicit additional conditions; interval segmentation is not normalized. |
+| AncestralRestriction | Sample-path preservation, idempotence, nested/union laws, exact support criterion and erasure counterexamples. | Removes nonancestral material; does not remove unary nodes or implement tskit. |
+| AncestryContraction | Removing unretained intermediate nodes preserves exactly retained-node ancestry, also after sample restriction. | Relation-level semantics; event identities, path lengths and normalized interval output are not preserved or generated. |
+| FiniteHistoryCompletion and WongAlexander | Exact embedding of an actual finite gARG into contrasting infinite connected populations, with real dates and opposite whole-species status. | Abstract topology completion, not organism-owner inference, fixed-gender coverage or a prediction of an actual biological future. |
+| WongExamples | Two valid finite three-node interval DAGs have identical sample-extracted local relations and different original graphs. | A reconstruction-boundary example, not a claim that every raw ARG loses information. |
+| WongLocalArity | Local arity bounds, unary presence distinction and finite backward-walk bounds. | Counts original distinct children; traversal bound is not software runtime measurement. |
+| WongEventEncoding | Ordered full-span/single-crossover inheritance becomes an actual interval gARG with matching topology, local routes and paths. Distinct ordered parents identify an interior cutoff. | Does not validate all classical event child arities, normalize storage or establish stochastic inference. |
+
+These are source formalizations and project deductions. Priority and empirical
+validity require separate evidence; a passing checker is not a novelty claim.
+
+
 The Lean 4.33.1 library now includes the positive binary theorem, constructed
 birth-order enumeration, full infinite degree counts, productive fixed-gender
 cores, general species criteria, and quantitative extensions of the sharp

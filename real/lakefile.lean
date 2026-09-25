@@ -16,3 +16,18 @@ lean_lib PortEncoding
 
 @[default_target]
 lean_lib StatefulCAReal
+
+@[default_target]
+lean_lib WongGARG
+
+@[default_target]
+lean_lib WongAlexander
+
+@[default_target]
+lean_lib WongExamples
+
+@[default_target]
+lean_lib WongLocalArity
+
+@[default_target]
+lean_lib WongEventEncoding

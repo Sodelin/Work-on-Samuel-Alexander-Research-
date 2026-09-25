@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T08:42:27.250866+00:00",
+  "checked_at_utc": "2026-09-25T09:37:13.579433+00:00",
   "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "toolchain_pin": "leanprover/lean4:v4.33.1",
-  "endpoint_count": 30,
+  "endpoint_count": 70,
   "endpoint_axioms": {
     "RealBridges.finiteCover_iff_setFinite": [
       "propext",
@@ -153,9 +153,207 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "WongGARG.GARG.locus_path_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.locus_acyclic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.topology_iff_erased": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.extracted_eq_local_iff_sampleSupported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.local_parent_representation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.local_ancestors_comparable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.locus_path_projects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.exists_finite_topological_numbering": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.ancestry_constant_without_breakpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongGARG.GARG.natTopology_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.sample_ancestral_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.extracted_sample_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.finite_catalog_not_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.natural_biosphere_has_real_dates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.ordered_encoded_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.old_encoded_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.actual_garg_opposite_infinite_completions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongAlexander.extracted_contracted_sample_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.splitGARG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.tailGARG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.all_extracted_relations_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.raw_locus_relations_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongExamples.finite_garg_sample_reconstruction_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.local_children_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.local_arity_le_graph_arity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.graph_unary_local_zero_or_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.graph_unary_present_locally_unary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.backward_local_walk_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.no_infinite_backward_local_walk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongLocalArity.backward_parent_array_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.ParentSpec.parent_iff_exists_at": [
+      "propext"
+    ],
+    "WongEventEncoding.EventGraph.encoded_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_atLocus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_nonempty_annotations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_unique_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_route": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_path_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.erased_encoded_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.EventGraph.encoded_parent_pointer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongEventEncoding.ParentSpec.crossover_cut_identified": [
+      "propext"
     ]
   },
   "source_sha256": {
+    "lean/SamuelAlexanderResearch/AncestralRestriction.lean": "9a8c8f611ccac15ddd737188bf8f5a65057d01befa52c597f2c3c7508fdd8ac1",
+    "lean/SamuelAlexanderResearch/AncestryContraction.lean": "06a094722d166aabaa1d4cfd3a4bf38480a1e05b590b14b3bd2bcd7f72a06068",
     "lean/SamuelAlexanderResearch/AncestryViews.lean": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce",
     "lean/SamuelAlexanderResearch/BinaryAvoidance.lean": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a",
     "lean/SamuelAlexanderResearch/BinaryPopulation.lean": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667",
@@ -168,6 +366,7 @@
     "lean/SamuelAlexanderResearch/FiniteAvoidance.lean": "e2ac08fef95b8ceb6779cb2a656ba9e02c6fcfadaf0e5b81ea57a1a4cc211541",
     "lean/SamuelAlexanderResearch/FiniteEditExact.lean": "3d6fe12589b1a4e13b2337bb34cf7fc7ee2a08b960ebf9063ffb73fe6b84afdf",
     "lean/SamuelAlexanderResearch/FiniteEditStability.lean": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
+    "lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
     "lean/SamuelAlexanderResearch/FinitePhasePaths.lean": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf",
     "lean/SamuelAlexanderResearch/FiniteStatePeriodicity.lean": "783886827f5a819bee91b87392f697ddf96901f320cf5b3b9ee5d29f77a0642d",
     "lean/SamuelAlexanderResearch/FixedGenderLift.lean": "2805ab8ef85a018b2276aa137118f0e64990a6358349e7a1b59006d24a50ba7a",
@@ -203,12 +402,17 @@
     "lean/SamuelAlexanderResearch/StaticMixing.lean": "5dc98213607d991388021a76a21dd7c24196e7effc66ef260c77771be48848c1",
     "lean/SamuelAlexanderResearch/ThueMorseBits.lean": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
     "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
-    "lean/SamuelAlexanderResearch.lean": "0fef7aa74cb02f1a383276475ce78154a2015a55e08faf38683765e0b74e1868",
-    "real/RealAudit.lean": "6a8c930d29dd7f37473b636a5f7ab3a88f19624e1fbd74b50c35fb55e7488917",
+    "lean/SamuelAlexanderResearch.lean": "f668160800a66298526c92562898e3f1b6c696cdce940e3d64d5e501124c581e",
+    "real/RealAudit.lean": "6fb917f5c14a5c8ef3f7e4280755817d70291c46025325b81fc3f8e5311de8d5",
     "real/PortEncoding.lean": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4",
     "real/RealBridges.lean": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
     "real/StatefulCAReal.lean": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7",
-    "real/lakefile.lean": "d5bc61fa34e7bf9822bada08260aa016c38ba2e67128b7cdac535b1c1ea68b98",
+    "real/WongAlexander.lean": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
+    "real/WongEventEncoding.lean": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87",
+    "real/WongExamples.lean": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59",
+    "real/WongGARG.lean": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
+    "real/WongLocalArity.lean": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
+    "real/lakefile.lean": "04654a3ec8aea70cc470d194ccfdefef4382ee9ba1fc43ff87a78a46ae91be7c",
     "real/lake-manifest.json": "24c900a45c3f706d5e3a0336f3808fcc9b03bb3407e7b5ae23eeb8c283726d33",
     "real/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
   },

@@ -3,13 +3,31 @@
 A public, AI-assisted mathematics notebook connecting infinite genealogical
 graphs, word avoidance, specieslike clusters and cellular automata. Source
 results, new deductions, conjectures and finite experiments are identified
-separately. This repository has not contacted Dr. Alexander on the owner's behalf.
+separately. The first reviewed outreach was sent on 25 September 2026; later mathematical additions have their own verification receipts.
 
 **Start with the [ten-proposal solution ledger](TEN-SOLUTIONS.md),
 [brief mathematical handoff](HANDOFF-FOR-ALEXANDER.md), and
 [formalization coverage](FORMALIZATION.md).** The [original proposals](TEN-RESEARCH-IDEAS.md)
 preserve the questions as first posed; the ledger records the subsequent proofs
 and precise remaining refinements.
+
+
+## Wong 2024: the checked mathematical bridge
+
+The current focus is the [source-linked Wong–Alexander outline](WONG-ALEXANDER-OUTLINE.md)
+and its [machine-readable connection map](research/wong/connection-map.json).
+The finite gARG model, sample restriction and retained-node contraction are
+connected by exact preservation theorems. The actual gARG completion theorem
+embeds the same finite topology into two infinite populations with real dates,
+finite roots and finite children: one whole population is an inspecies and
+maximal specieslike cluster, while the other fails IAP. This is an abstract
+non-identifiability result, not an inference of an organismal pedigree.
+
+The [claim-by-claim coverage map](notes/WONG-ALEXANDER-BRIDGE-STATUS.md) separates
+checked graph mathematics from unformalized stochastic models, biological
+owner assignments, executable serialization and software-performance claims.
+The paper is not advertised as entirely proved, and no global graph
+self-similarity claim is made.
 
 ## Current results
 

@@ -35,6 +35,6 @@ jobs:
           MATHLIB_NO_CACHE_ON_UPDATE: '1'
         run: |
           lake update
-          lake exe cache get Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Analysis.Convex.Hull Mathlib.Tactic.Linarith Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Data.Fintype.EquivFin Mathlib.Data.Fintype.Prod Mathlib.Algebra.BigOperators.Fin
+          lake exe cache get Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Analysis.Convex.Hull Mathlib.Tactic.Linarith Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Data.Fintype.EquivFin Mathlib.Data.Finset.Union Mathlib.Data.Fintype.Prod Mathlib.Algebra.BigOperators.Fin
       - name: Audit real-number theorem axioms
         run: python3 checks/audit_lean.py --real
