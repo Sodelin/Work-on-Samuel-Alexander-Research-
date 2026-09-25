@@ -21,7 +21,8 @@ literature-priority verdict.
 | PhaseExtremal | Counting reviewer passed the actual shifted maximum iff at frozen source F5AFA259BC027747FD13D286499585898CEDC5FA8F0797D2D6828013FB1E0B41. Review covered q=1/2, a=0/q, positive starts, universal staircase, bounded translated half-tail, singleton frontier, unique incoming parents and the necessity direction. No trajectory or maximum conclusion is a premise. |
 | Indexed ancestry and observations | Source/plan task supplied the four separate modules and the [source comparison](../notes/ANCESTRY-OBSERVATION-INTERFACE.md); coordinator integrated their actual printed endpoints. Indexed paths, erased ancestry and recovery/prediction conditions remain distinct. |
 
-Key reviewed hashes, also matched in the final machine-readable receipts:
+Key hashes recorded during independent review. The line-ending normalization
+exception below distinguishes review bytes from final receipt bytes:
 
 ```text
 InfiniteConservation ED609F3A0495893BE4EB7C633B30364EC46D57DCD29F758D53FCB690CAD74D0B
@@ -45,4 +46,4 @@ The complete height formula is deliberately retained as a conjecture, with
 [finite evidence](../research/thue-morse/kernel-conjecture-results.json) and no
 universal Lean theorem.
 
-Only line-ending normalization was subsequently applied to InfiniteConservation and QuantitativeAvoidance to match the repository's `*.lean eol=lf` rule. Their Lean tokens are unchanged; the final receipts record the normalized bytes. The independent review hashes above identify the pre-normalization files.
+Only line-ending normalization was subsequently applied to InfiniteConservation and QuantitativeAvoidance to match the repository's `*.lean eol=lf` rule. Their Lean tokens are unchanged; the final receipts record the normalized bytes. The InfiniteConservation hash above identifies its pre-normalization file; its final committed SHA-256 is `55B11EAA840F25500428FB41652CA91994019E8D1300C8DF15C978AC46698EE5`. The other hashes listed above match the final receipts.

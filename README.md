@@ -14,8 +14,8 @@ proved quantitative and structural results, alongside precise open questions.
 
 | Direction | Result | What remains |
 |---|---|---|
-| Sharp Thue-Morse avoidance | `3L(v)<=8v-1`; equality exactly at `v=3*2^n-1`, with `L=8*2^n-3`; full first-hit corollaries and real-coefficient optimality. | The candidate closed form for every `L(v)` is unproved. |
-| Stability and phase | Finite edits preserve the optimal coefficient `8/3`; rebuilding the graph from phase `a` gives `3L_a(v)<=8v+5a-1` and the same optimal coefficient, with a complete shifted equality classification. | Finer finite-edit equality sets and joint digit recurrences. |
+| Sharp Thue-Morse avoidance | For `v>=1`, `3L(v)<=8v-1`; equality exactly at `v=3*2^n-1`, with `L=8*2^n-3`; full first-hit corollaries and real-coefficient optimality. | The candidate closed form for every `L(v)` is unproved. |
+| Stability and phase | Finite edits preserve the optimal coefficient `8/3`; rebuilding the graph from phase `a` gives `3L_a(v)<=8v+5a-1` for `v>=1` and the same optimal coefficient, with a complete shifted equality classification. | Finer finite-edit equality sets and joint digit recurrences. |
 | Slow avoidance | For every growth function, an aperiodic target has attained finite matching maxima exceeding that function along increasing starts. | Useful upper bounds from quantitative aperiodicity data. |
 | Fixed vertex genders | Every prescribed aperiodic binary target has a cap-three avoiding productive core that is an inspecies. The retained-subtype classification is checked. | Whether cap two suffices. |
 | Critical degree | Full conservation, triangular minimum crossing count, finite total defects and eventual regularity. Binary minimum width forces `+1,+2` geometry and, with fixed genders, universality. | General-`k` rigidity and larger-width structure. |
