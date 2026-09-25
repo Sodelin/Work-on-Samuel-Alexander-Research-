@@ -1,5 +1,7 @@
 # Formal comparison of static speed regions
 
+**Current integration update.** RealBridges now proves the normalized weighted inclusion for actual real modules and real convex hulls. The rational-only descriptions below refer to StaticMixing itself. Infinite dynamics and a new rule-specific speed limit remain outside both modules.
+
 `StaticMixing.lean` checks the algebraic obstruction identified in the prose audit: a point common to all fixed permitted regions belongs to every normalized weighted Minkowski combination of those regions. It does so for actual two-dimensional rational vectors, finite lists of indices, explicit rational weights, and arbitrary region predicates.
 
 The general endpoint is `StaticMixing.intersection_subset_weightedMix`. Its assumptions say that the weights are nonnegative and sum to one, and that the point belongs to every input region. The conclusion constructs the weighted-mix witness. The proof establishes that repeating the same vector in every summand returns that vector. It does not assume the desired set inclusion as an algebraic premise.

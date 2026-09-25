@@ -1,0 +1,30 @@
+{
+  "status": "finite checks passed; full-height formula remains unproved",
+  "stored_file_sha256": "0f800213a27565938c80b85e46d5f9085332985a642461746690801c80ca240a",
+  "stored_exact_comparisons": 131071,
+  "start_zero_direct_check": true,
+  "coordinate_transition_comparisons": 16384,
+  "coordinate_equalities_checked": 163840,
+  "fresh_seed": 20260925,
+  "fresh_cases_checked": 2200,
+  "fresh_boundary_advances": 326124,
+  "fresh_max_start_considered": 999650185,
+  "per_case_advance_cap": 20000,
+  "skipped_at_cap": [
+    98303,
+    196607,
+    393215,
+    786431,
+    1572863,
+    3145727,
+    6291455,
+    12582911,
+    25165823,
+    50331647,
+    100663295,
+    201326591,
+    402653183,
+    805306367
+  ],
+  "universal_lean_theorem": null
+}

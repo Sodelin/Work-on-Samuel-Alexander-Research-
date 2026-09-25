@@ -2,7 +2,7 @@
 
 **Status:** The finite graph target, fixed-gender bound, predecessor-closed restriction, and infinite natural-order subcritical contradiction are now checked in [PopulationCounting.lean](../lean/SamuelAlexanderResearch/PopulationCounting.lean). The [scope note](../notes/FORMALIZATION-SCOPE.md) and [endpoint audit](../verification/FormalAudit.lean) identify the evidence. The original target below is retained to make acceptance review possible.
 
-**Remaining formalization target:** derive an exhaustive natural birth order from arbitrary real birthdates with finite sublevels; extend full-degree critical conservation to an infinite ambient graph. These are separate from the completed finite counts and the completed infinite contradiction in its stated natural-order model.
+**Subsequent closure:** BirthOrder, PopulationReindex and RealBridges now handle the presentation/real-date bridge; InfiniteConservation proves the full infinite identity and regularity. Cap-two fixed-gender avoidance and general minimum-width rigidity remain mathematical research questions.
 
 ## Mathematical target
 

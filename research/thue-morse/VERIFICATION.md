@@ -7,8 +7,7 @@ edge bridge, finite maxima, and the exact equality set. Current integrated
 verification is in
 [`FORMALIZATION-RECEIPT.md`](../../verification/FORMALIZATION-RECEIPT.md)
 and the [final source-hashed audit](../../verification/formal-audit.json):
-eleven modules build and all 80 selected endpoints pass. The exact `H(v)`
-first-hit formula and real-coefficient optimality remain prose corollaries.
+the expanded core build and optional real project now have their own audited endpoints. The exact first-hit formula and real-coefficient optimality are checked in their separate modules.
 The commands and output below are retained as a historical receipt for
 the earlier, smaller proof stage.
 

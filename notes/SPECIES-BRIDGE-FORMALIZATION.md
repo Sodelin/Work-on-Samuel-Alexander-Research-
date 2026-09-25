@@ -1,5 +1,7 @@
 # A specieslike-cluster bridge for the binary avoiding graph
 
+**Current integration update.** The module-specific scope below records the original bridge. Its former project gaps are now closed by BirthOrder, PositiveUnavoidability and RealBridges; the old conditional helper remains a conditional helper. See [current coverage](../FORMALIZATION.md).
+
 The graph geometry is kernel-checked in
 [`SpeciesBridge.lean`](../lean/SamuelAlexanderResearch/SpeciesBridge.lean).
 [`BinaryPopulation.lean`](../lean/SamuelAlexanderResearch/BinaryPopulation.lean)

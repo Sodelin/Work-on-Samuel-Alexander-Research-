@@ -108,7 +108,7 @@ for every `v>=1`. The equality formula requires separation at
 The subsequent [dyadic trajectory proof](NEXT-INVARIANT.md) and
 [`SharpThueMorse.lean`](../../lean/SamuelAlexanderResearch/SharpThueMorse.lean)
 prove these infinite claims and the exact equality set. The full `H(v)`
-first-hit formula and real-coefficient optimality remain prose corollaries.
+first-hit formula and real-coefficient optimality now have separate checked endpoints in SharpCorollaries and RealBridges.
 
 ## Lean scope and verification
 
@@ -150,8 +150,8 @@ The toolchain is pinned by the existing `lean-toolchain` to
 `leanprover/lean4:v4.33.1`. The recorded `#print axioms` results contain only
 `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, custom axiom,
 or `native_decide` is used. The direct compiler invocation checks this
-module. It is also integrated into the successful eleven-module default
-build, whose final audit passes all 80 selected endpoints and records
+module. It is also integrated into the expanded default
+build, whose current audit checks all selected endpoints and records
 the exact source hashes in `verification/formal-audit.json`.
 
 The Python file is a third, interval-based engine and diagnostic checker.

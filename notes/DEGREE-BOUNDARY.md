@@ -1,5 +1,7 @@
 # The offspring-degree boundary in gendered populations
 
+**Current integration update.** The original arithmetic discussion below is now backed by actual graph counting, arbitrary-presentation transport, infinite conservation and minimum-width rigidity; see [current coverage](../FORMALIZATION.md). Statements about the old arithmetic file describe that file only.
+
 Status: self-contained counting observations and two checked arithmetic lemmas. This is a research note, not a priority claim. The Lean file does not formalize the population graph or its birthdate ordering.
 
 ## Model and sources

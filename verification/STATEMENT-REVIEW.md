@@ -1,4 +1,6 @@
-# Independent statement review
+# Independent statement review: first integration stage
+
+Historical record. The subsequent [gap-closure review](GAP-CLOSURE-REVIEW.md) supersedes the remaining-gap status below while preserving these original reviews.
 
 Review date: 24 September 2026 (host local date). These reviews concern the formal statements and mathematical interpretation; the separate axiom audit concerns their proof dependencies.
 

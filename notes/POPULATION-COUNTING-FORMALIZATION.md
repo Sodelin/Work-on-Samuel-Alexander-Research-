@@ -1,4 +1,4 @@
-# Population counting: formal meaning and remaining bridge
+# Population counting: formal meaning and presentation bridge
 
 The module [PopulationCounting.lean](../lean/SamuelAlexanderResearch/PopulationCounting.lean) closes the finite graph-count gap recorded in `DEGREE-BOUNDARY.md` and `FORMALIZATION-SCOPE.md`. It also proves subcritical impossibility for an infinite population on `Nat` already numbered in birth order. It imports only `Std` and was checked directly with Lean 4.33.1. This is an elementary counting formalization, with no novelty or literature-priority claim.
 
@@ -52,7 +52,7 @@ The theorem does not assume a family of prefixes or an aggregate edge inequality
 
 Alexander's [Definition 1](https://arxiv.org/html/1212.0186v2) uses an infinite directed graph, finitely many parentless roots, finitely many children at each vertex, real birthdates with finite sublevels and strict increase along edges, and one incoming edge of each required gender at every nonroot. His text also explains the fixed-vertex-gender specialization by assigning an edge its source's gender.
 
-The finite module verifies the local edge counts and closed-prefix restriction directly. The infinite module assumes a chosen enumeration by `Nat`, with edges strictly increasing in that enumeration, and explicit finite support bounds for children and roots. A uniform child cap is an extra hypothesis of the degree-boundary result. Real numbers, finite real birthdate sublevels, tie-breaking, and the construction of an exhaustive order-preserving enumeration from Alexander's birthdate axioms remain outside this formalization. This is the remaining bridge to a theorem stated literally in his original model, rather than a missing infinity contradiction after an enumeration has been supplied.
+The finite module verifies the local edge counts and closed-prefix restriction directly. The infinite module assumes a chosen enumeration by `Nat`, with edges strictly increasing in that enumeration, and explicit finite support bounds for children and roots. A uniform child cap is an extra hypothesis of the degree-boundary result. The module itself uses that enumeration. BirthOrder and PopulationReindex now construct it from the arbitrary presentation, including finite sublevels and tied dates; RealBridges supplies the literal real-date degree/root statements. InfiniteConservation supplies the full infinite critical identity. See the current central coverage report for these composed endpoints.
 
 The module does not address the existence of two-child fixed-vertex-gender populations avoiding a prescribed noneventually-periodic sequence, nor any periodicity or finite-state conclusion about population graphs.
 

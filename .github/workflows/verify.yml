@@ -25,3 +25,12 @@ jobs:
         run: python3 research/thue-morse/interval_check.py
       - name: Check sharp-proof trajectory indexing
         run: python3 research/thue-morse/sharp_check.py
+      - name: Prepare pinned real-number project
+        working-directory: real
+        env:
+          MATHLIB_NO_CACHE_ON_UPDATE: '1'
+        run: |
+          lake update
+          lake exe cache get Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Analysis.Convex.Hull Mathlib.Tactic.Linarith Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring
+      - name: Audit real-number theorem axioms
+        run: python3 checks/audit_lean.py --real

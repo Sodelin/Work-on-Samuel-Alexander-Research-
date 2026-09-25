@@ -6,10 +6,7 @@ the sharp bound, finite maxima, equality family, and exact equality set.
 defines the actual bit sequence and proves its identities;
 [`SharpThueMorse.lean`](../../lean/SamuelAlexanderResearch/SharpThueMorse.lean)
 checks all dyadic runs and connects the result to the original edges.
-The [final audit](../../verification/formal-audit.json) passes all 80
-selected endpoints across eleven modules. The exact baseline `H(v)`
-first-hit formula and real-coefficient optimality below remain prose
-corollaries, not separately exported Lean theorems. Earlier receipts
+The expanded [current audit](../../verification/formal-audit.json) includes the sharp endpoints. The exact baseline `H(v)` first-hit formula is now checked in SharpCorollaries, and real-coefficient optimality in the optional RealBridges project. Earlier receipts
 preserve the historical stages before this complete formalization.
 
 ## Exact statement
@@ -243,7 +240,7 @@ at `v=3q-1`, and the preceding section proves that it does occur at every
 such vertex. At `v=1` the inequality is also strict. This establishes the
 complete equality classification.
 
-The following real-coefficient optimality statement is a prose corollary
+The following real-coefficient optimality statement, now checked in RealBridges, is a corollary
 of the checked equality family. Along that family,
 
     L(3q-1)/(3q-1) = (8q-3)/(3q-1) -> 8/3
@@ -254,7 +251,7 @@ finite `C` can hold for all starts. For coefficient `8/3`, the additive
 term `-1/3` in the displayed global bound is also attained by every member
 of the equality family.
 
-## Stronger first-hit invariant: prose corollary
+## Stronger first-hit invariant: now checked in SharpCorollaries
 
 The trajectory meeting time of the baseline has an exact step-function
 formula. Define `H(v)` as the first `k>=0` with `X_k(v)=2k`. Then
@@ -283,11 +280,10 @@ formulas and sharp conclusions are checked in `SharpThueMorse.lean`.
 The exported endpoints include `sharp_path_bound`, `sharp_maximum_exists`,
 `sharp_equality_family`, and `sharp_equality_indices`. The original graph
 is connected by `binary_edge_iff`, `binary_prefix_reachable`, and
-`binary_path_prefix_bound`. The complete library builds, and all 80
-selected endpoints depend only on subsets of `propext`, `Classical.choice`,
+`binary_path_prefix_bound`. The complete library builds, and all selected endpoints in the current manifest depend only on subsets of `propext`, `Classical.choice`,
 and `Quot.sound`, as recorded with final source hashes in the linked audit.
-The exact `H(v)` first-hit formula and real-coefficient optimality remain
-prose corollaries despite their checked component lemmas.
+The exact `H(v)` first-hit formula and real-coefficient optimality are now
+separate checked theorems in SharpCorollaries and RealBridges.
 
 A second agent independently rederived the descent comparisons and the
 five-run calculation, checked the `r=1` and `q=1` cases and the `K-1`

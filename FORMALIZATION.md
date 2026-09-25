@@ -1,50 +1,69 @@
 # Checked mathematics and exact remaining scope
 
-The default Lean library contains eleven modules. Lean 4.33.1 builds them together, and all 80 selected endpoints pass the axiom audit. The developments use the bundled standard library, with rational arithmetic lemmas from `Init`; there is no Mathlib dependency. The [final audit receipt](verification/formal-audit.json) records the exact source hashes.
+The Lean 4.33.1 library now includes the positive binary theorem, constructed
+birth-order enumeration, full infinite degree counts, productive fixed-gender
+cores, general species criteria, and quantitative extensions of the sharp
+Thue-Morse result. The [core audit](verification/formal-audit.json) and
+[real-number audit](verification/real-audit.json) give the selected endpoint
+counts, dependency checks and exact source hashes. The default library uses
+Std; the optional [real project](real/lakefile.lean) pins Mathlib separately.
 
-This is a collection of explicit graph proofs, a formalized avoidance construction, and algebraic and reachability reductions. It is not a complete formalization of either source paper. In particular, the one displayed classification equivalence still has its positive unavoidability theorem as a premise.
+This package formalizes the statements listed below. The positive classification
+is binary; it is not a formalization of every finite-alphabet theorem or every
+cellular-automaton argument in the sources. The earlier conditional helper
+remains available, while the new positive module proves its missing premise.
 
-## Results
+## Coverage
 
-| Development | What Lean proves | Important boundary |
+| Development | Checked conclusion | Exact scope |
 |---|---|---|
-| [Population counting](lean/SamuelAlexanderResearch/PopulationCounting.lean) | Actual finite incoming/outgoing edge counts agree; one parent per label implies the count bound; `k*(N-R) <= d*N`, `(k-d)*N <= k*R`, and the subcritical floor bound follow. Closed-prefix restriction preserves the hypotheses. | The old arithmetic-only [DegreeBounds](lean/SamuelAlexanderResearch/DegreeBounds.lean) module is retained, but is no longer the only counting evidence. |
-| Infinite offspring threshold, in the same module | No single infinite naturally ordered population can have finitely many roots, the required `k` incoming labels at each nonroot, and child cap `d<k`. Finite prefixes and their count bounds are constructed from that graph. | Construction of a natural birth-order enumeration from arbitrary real birthdates with finite sublevels is not encoded. |
-| Fixed vertex genders, in the same module | With one parent of each permanent Boolean gender and child cap two, `Int.natAbs(M-F) <= R` follows from actual adjacency counts, including for predecessor-closed prefixes. | This does not settle the two-child fixed-gender avoidance question. |
-| Critical-degree conservation, in the same module | For a predecessor-closed prefix in a finite ambient graph with child cap `k`, `D+E+C = k*R`, where `D` uses full ambient outgoing deficits, `E` incoming excess, and `C` actual outgoing crossing edges. | Infinite full-degree conservation, eventual regularity, and the sharper defect budget are not encoded. |
-| [Binary avoidance](lean/SamuelAlexanderResearch/BinaryAvoidance.lean) | In the source manuscript's actual binary graph, an infinite path spelling its target forces that target to be eventually periodic. Therefore an aperiodic target is avoided from every starting vertex. | This formalizes the source's negative argument. It is not a new construction or the full positive theorem. |
-| [Species bridge](lean/SamuelAlexanderResearch/SpeciesBridge.lean) and [binary population](lean/SamuelAlexanderResearch/BinaryPopulation.lean) | Exact ancestry, roots, finite children, increasing natural dates, finite date sublevels, functional edge labels, parent coverage, and infinitude. The whole avoiding graph is maximal specieslike, satisfies reflection, fails common ancestry, and avoids each aperiodic target. | Natural dates specialize the population model. The positive half of `specieslike_classification_of_positive` is an explicit theorem parameter. |
-| [Two maximal cones](lean/SamuelAlexanderResearch/SpeciesCones.lean) | Exactly two inclusion-maximal sets satisfy IAP, convexity, common ancestry, and reflection: `C0={0} union {n>=2}` and `C1={n>=1}`. They are distinct, specieslike, and cover all vertices. | This is an exact classification inside this particular graph, not a general species theorem. |
-| [General binary root obstruction](lean/SamuelAlexanderResearch/RootObstruction.lean) | Every `BinaryNatPopulation` has distinct roots `0` and `1`, so its whole graph cannot satisfy common ancestry. | At least two roots, not exactly two; the general `k`-label real-date statement is not encoded. |
-| [Static mixing](lean/SamuelAlexanderResearch/StaticMixing.lean) | A common point of fixed rational planar regions belongs to every normalized weighted mix. A checked example proves the midpoint mix can strictly contain the intersection. | Rational vectors and explicit finite sums; no real convex-hull development or infinite lifeline/velocity theorem. |
-| [Interval reachability](lean/SamuelAlexanderResearch/ThueMorseBound.lean) | For any Boolean coloring and target, all matching endpoints from `v>=1` form an exact integer interval. Its two boundaries follow deterministic trajectories; extinction is their coalescence. | The generic reduction does not by itself prove the Thue-Morse sharp bound or the equality family. See the [research note](research/thue-morse/INTERVAL-REDUCTION.md). |
-| [Thue-Morse bits](lean/SamuelAlexanderResearch/ThueMorseBits.lean) | Actual binary digit parity, the even/odd recurrences, the full dyadic-block xor identity, and the required power-subtraction identities. | The sequence is defined recursively, not postulated to have the needed bit properties. |
-| [Sharp Thue-Morse theorem](lean/SamuelAlexanderResearch/SharpThueMorse.lean) | Every matching path from `v>=1` satisfies `3*length <= 8*v-1`; a finite maximum exists; for every `n`, the maximum from `3*2^n-1` is `8*2^n-3`; these are exactly the equality starts. The actual bit identities, dyadic runs, coalescence lemmas, original-edge equivalence, and direct original-path prefix bound are checked. | Specific graph and target phase zero. The exact baseline `H(v)` first-hitting-time formula and real-coefficient optimality remain prose corollaries, not exported endpoints. |
+| [PositiveUnavoidability](lean/SamuelAlexanderResearch/PositiveUnavoidability.lean) | Every eventually periodic binary word is realized; unconditional binary natural-population and specieslike classifications follow. | Derives finite branching and infinite-path selection from actual population axioms. This formalizes the attributed positive theorem. |
+| [BirthOrder](lean/SamuelAlexanderResearch/BirthOrder.lean) | Constructs a bijective enumeration in nondecreasing birth order from infinitude and finite sublevels. | Arbitrary vertex type and linearly preordered time; tied dates are allowed. No enumeration or countability premise. |
+| [PopulationReindex](lean/SamuelAlexanderResearch/PopulationReindex.lean) | Constructs the actual natural-index counting population; preserves labels and child caps; transports subcritical impossibility and at least `k` distinct roots. | Functional `Option Nat` labels below `k`, chronological edges, finite roots, finite sublevels and actual child covers of length at most `d`. |
+| [RealBridges](real/RealBridges.lean) | Binary classification for arbitrary real-birthdated vertex sets; real-date finite-alphabet degree/root results; real-valued sharp coefficients and actual convex-hull inclusion. | Literal Mathlib reals. Coefficients multiply natural vertex indices cast to reals, not arbitrary birth timestamps. See the [real scope note](notes/REAL-BRIDGES-FORMALIZATION.md). |
+| [PopulationCounting](lean/SamuelAlexanderResearch/PopulationCounting.lean) | Actual finite double counts, predecessor-closed prefix bounds, subcritical impossibility, and fixed-gender imbalance. | Simple labelled graphs. The old arithmetic-only DegreeBounds layer remains available. |
+| [InfiniteConservation](lean/SamuelAlexanderResearch/InfiniteConservation.lean) | Full infinite-graph identity `D_N+E_N+C_N=kR_N`; `C_N>=k(k+1)/2` after all roots; finite total defects, eventual full degree `k`, and constant crossing width. | Conservation uses critical child cap `d=k`. The triangular lower bound permits any cap. The defect budget is `D+E<=kR-k(k+1)/2`. |
+| [MinimalCrossing](lean/SamuelAlexanderResearch/MinimalCrossing.lean) | Binary crossing width three on every tail cut forces exactly the `+1,+2` tail edges. With permanent source genders it realizes every word. An avoiding critical fixed-gender population has eventual crossing width at least four. | The four is crossing width, not a child-cap lower bound. General-`k` rigidity and cap-two avoidance remain open. |
+| [BinaryAvoidance](lean/SamuelAlexanderResearch/BinaryAvoidance.lean) and [BinaryPopulation](lean/SamuelAlexanderResearch/BinaryPopulation.lean) | The actual target-dependent graph avoids every non-eventually-periodic target; all population and specieslike hypotheses are checked. | Independent composable formalization of the classification manuscript's negative binary construction; not a claim to have originated it. |
+| [FixedGenderLift](lean/SamuelAlexanderResearch/FixedGenderLift.lean) | A productive core avoids any prescribed aperiodic target with permanent source genders, cap three, exactly two roots, and whole-graph specieslike/inspecies/reflection properties. The earlier cap-four cleaned lift is also checked and is not an inspecies. | Population membership is the retained subset. Deleted indices are not extra vertices or roots. [FixedGenderReindex](lean/SamuelAlexanderResearch/FixedGenderReindex.lean) constructs the subtype enumeration and proves the unconditional cap-three fixed-gender classification. |
+| [SpeciesGlobalIAP](lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean) | Finite/cofinite descendant criteria for IAP and reflection; whole-inspecies/cofinite-descendant equivalence; exact specializations to `P_s`. | Strict ancestry and ambient-versus-internal infinitude are explicit. Broad cofinite-descendant phenomena have prior results in Alexander's 2013 work. |
+| [SpeciesRootCriterion](lean/SamuelAlexanderResearch/SpeciesRootCriterion.lean) | Under root coverage, root-cone IAP is equivalent to the exact maximal IAP/CONV/CA/REF cone classification. Strict natural birth order derives root coverage. | Maximal for the four stated properties, not a general maximal-species theorem. [SpeciesCones](lean/SamuelAlexanderResearch/SpeciesCones.lean) gives the two exact cones of `P_s`. |
+| [GeneralRootObstruction](lean/SamuelAlexanderResearch/GeneralRootObstruction.lean) | The first `k` indices are roots, at least `k` distinct roots exist, and whole-population common ancestry fails for `k>=2`. | Simplicity and all required incoming labels are essential; the count is at least `k`, not exactly `k`. |
+| [LayeredUnavoidability](lean/SamuelAlexanderResearch/LayeredUnavoidability.lean) | Every binary word is realized when every edge advances one layer, all roots are at layer zero and arbitrary layer depths exist. | This is the precise consecutive-layer specialization, not universality from connectedness alone. |
+| [SharpThueMorse](lean/SamuelAlexanderResearch/SharpThueMorse.lean), [ThueMorseBits](lean/SamuelAlexanderResearch/ThueMorseBits.lean), [ThueMorseBound](lean/SamuelAlexanderResearch/ThueMorseBound.lean) | Actual bits and exact interval reachability imply `3L(v)<=8v-1` for `v>=1`, with equality exactly at `v=3*2^n-1`, where `L=8*2^n-3`. | Actual original edges, edge-count lengths, attained maxima, no unchecked trajectory premise. |
+| [SharpCorollaries](lean/SamuelAlexanderResearch/SharpCorollaries.lean) | Exact first-hit classification of the auxiliary baseline trajectory, including starts 0, 1 and 2; rational-coefficient optimality. | Baseline hitting time and matching maximum are distinct definitions. Real coefficient optimality is separately proved in RealBridges. |
+| [FiniteEditStability](lean/SamuelAlexanderResearch/FiniteEditStability.lean) | If `s=t` from index `m`, actual finite matches transport with unchanged length and start displacement at most `m`; `3L_s(v)<=8v+8m-1`, maxima exist, and arbitrarily late near-sharp witnesses exist. | `m` bounds the edited initial segment. The exported displacement is at most `m`; `min(m,ell)` is the suffix cutoff. |
+| [PhaseShift](lean/SamuelAlexanderResearch/PhaseShift.lean) | For the graph rebuilt from `t(k+a)`, `3L_a(v)<=8v+5a-1` and actual dyadic lower witnesses exist in a specified start interval. | Both graph and target change. [PhaseExtremal](lean/SamuelAlexanderResearch/PhaseExtremal.lean) proves equality exactly when `v=3*2^n-a-1` and `a<=2^n`, with maximum `8*2^n-a-3`; see its [scope note](notes/PHASE-EXTREMAL-FORMALIZATION.md). |
+| [QuantitativeAvoidance](lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean), [SlowAvoidance](lean/SamuelAlexanderResearch/SlowAvoidance.lean), [FiniteAvoidance](lean/SamuelAlexanderResearch/FiniteAvoidance.lean) | Periodic prefixes give explicit long matches. Every aperiodic target has an attained finite maximum at every start. For every function `f`, an aperiodic target has finite maxima exceeding `f(v)` at strictly increasing starts. | The word is executable relative to `f`; no separate formal Turing-computability predicate or effective uniform bound is claimed. |
+| [AncestryViews](lean/SamuelAlexanderResearch/AncestryViews.lean), [SpeciesAdapter](lean/SamuelAlexanderResearch/SpeciesAdapter.lean), [HistoryProjection](lean/SamuelAlexanderResearch/HistoryProjection.lean), [ObservationPrediction](lean/SamuelAlexanderResearch/ObservationPrediction.lean) | Fixed-index paths survive erasure; erasure can lose ancestry information; history paths project; exact recovery and prediction have explicit observation-fibre criteria and counterexamples. | These distinguish indexed genetic/history information from unlabelled organism ancestry. See the [interface note](notes/ANCESTRY-OBSERVATION-INTERFACE.md). |
+| [StaticMixing](lean/SamuelAlexanderResearch/StaticMixing.lean) and RealBridges | Rational weighted-mix inclusion, a strict midpoint example, and actual real convex-hull inclusion. | Static algebra only. Infinite CA lifelines, limiting velocities and a new rule-specific speed theorem remain outside these endpoints. |
 
-## Definitions and assumptions that matter
+## Source and review boundary
 
-The avoiding graph has no edge `0 -> 1`. For each `w>=2`, it has incoming edges from `w-1` and `w-2` carrying complementary labels. The first path edge must spell target index zero. These conventions are explicit in the source and independently checked in the graph, avoidance, and interval developments.
+The [classification manuscript, pinned Section 2](https://github.com/avg-netizen/biological-unavoidability/blob/3d6175e3e23f67bd68e7be591b5a9a6d04e496a3/paper.md#2-an-explicit-binary-avoiding-population)
+supplies `P_s` and the negative offset argument. Alexander's
+[2013 paper](https://arxiv.org/html/1212.0186v2) supplies the population framework
+and positive eventual-periodic theorem. His [inspecies paper](https://arxiv.org/html/1201.2869)
+and [2026 cluster paper](https://arxiv.org/html/2602.05274v1) supply the species
+definitions and important precedents. The [older-construction audit](notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
+shows that `T_h` and `H_h` already have inspecies structure; the cap-three
+construction's distinction is arbitrary prescribed target plus a uniform cap.
 
-The final sharp endpoints include `SharpThueMorse.sharp_path_bound`, `sharp_maximum_exists`, `sharp_equality_family`, and `sharp_equality_indices`. The original graph is connected by `binary_edge_iff`, `binary_prefix_reachable`, and `binary_path_prefix_bound`; the result is not limited to an unconnected abstract recurrence. `RootObstruction.population_root_obstruction` quantifies over every `BinaryNatPopulation` and proves roots `0` and `1` and failure of whole-population common ancestry.
+The avoiding graph has no `0 -> 1` edge, path length counts edges, and the
+first edge spells target index zero. Fixed source genders are an additional
+restriction relative to independently labelled edges. Common ancestry of the
+whole graph differs from common ancestry inside a selected cone.
 
-The counting model uses a functional `Option Nat` edge label, so one parent cannot provide several labels on the same edge. The fixed-gender model instead colors the source vertex permanently; this is a separate theorem with a separate hypothesis. Finitely supported child sets represent actual full outgoing counts in the infinite theorem. Its conclusion does not assume a family of finite prefixes or an aggregate count inequality.
+The [statement review](verification/STATEMENT-REVIEW.md) and [gap-closure review](verification/GAP-CLOSURE-REVIEW.md)
+record independent checks of these premises. The [ten proposals](TEN-RESEARCH-IDEAS.md)
+distinguish checked seeds from open generalizations. In particular, the
+[full-height digit formula](research/thue-morse/FULL-HEIGHT-CONJECTURE.md) remains
+conjectural despite exact finite agreement. No review or build establishes
+global literature novelty or an author's private prior knowledge.
 
-The species definitions use strict ancestry in the ambient graph and weak connectivity inside the selected set. Reflection distinguishes infinitely many descendants in the ambient graph from infinitely many inside the set. Common ancestry requires a member of the set to be an ancestor of every other member. These are the conventions in Alexander's [2026 definitions](https://arxiv.org/html/2602.05274v1), not biological predictions inferred from the word "species."
-
-## Statement review and attribution
-
-The [population note](notes/POPULATION-COUNTING-FORMALIZATION.md), [binary proof note](notes/BINARY-AVOIDANCE-FORMALIZATION.md), [species note](notes/SPECIES-BRIDGE-FORMALIZATION.md), and [static mixing note](notes/STATIC-MIXING-FORMALIZATION.md) identify their exact definitions and limits. Separate reviewers inspected the binary offset argument, the graph-to-count and infinite-prefix assumptions, and the static region comparison. The coordinator inspected the composed species endpoint and the interval proof against their definitions. The [review record](verification/STATEMENT-REVIEW.md) records the material scope decisions.
-
-The population framework and positive periodic theorem come from Alexander's [2013 paper](https://arxiv.org/abs/1212.0186). The avoiding construction and its offset argument come from the [2026 classification manuscript, Section 2](https://github.com/avg-netizen/biological-unavoidability/blob/main/paper.md). The manuscript already supplies its own negative formalization; the local Std implementation is independent code intended to compose directly with this repository's new graph modules. Neither that reimplementation nor the elementary counting deductions establish a literature-priority claim.
-
-Alexander's [2026 Example 14(1)](https://arxiv.org/html/2602.05274v1#S6) already exhibits exactly one maximal common-ancestor cone per initial root in a related generational graph. Our graph has different edges, but its two-cone theorem instantiates that known phenomenon. The contribution here is a checked connection between the particular avoiding construction and these species predicates, not discovery of root-cone maximality in general.
-
-## Reproduction and proof dependencies
-
-Run from the repository root, with `lake` and `python` available:
+## Reproduction
 
 ```sh
-lake build
 python checks/audit_lean.py --output verification/formal-audit.json
 python -m unittest discover -s checks -p 'test_*.py' -v
 python checks/check_local_certificate.py
@@ -52,8 +71,9 @@ python research/thue-morse/interval_check.py
 python research/thue-morse/sharp_check.py
 ```
 
-The audit refreshes the library before reading the [endpoint manifest](verification/FormalAudit.lean), verifies the toolchain pin, rejects missing endpoint reports, and rejects every axiom outside `propext`, `Classical.choice`, and `Quot.sound`. It records source SHA-256 values in the [machine-readable receipt](verification/formal-audit.json). The source scan has no `sorry`, `admit`, project axiom declarations, or `native_decide`. Exact rational constant checks use `decide +kernel`.
-
-All six unit tests and the finite diagnostics pass. In particular, the sharp diagnostic checks 18 complete trajectories, 8,140 individual advances, and 256 bounded baseline first-hit times, along with the stored scan's inequality and exact equality set. These are reproducible indexing checks; they do not replace the universal Lean proofs.
-
-An axiom audit cannot detect a theorem whose conclusion was made a parameter. That is why the explicit positive premise of the conditional classification is called out above, and why statement review is separate from successful compilation. The [verification receipt](verification/FORMALIZATION-RECEIPT.md) records the current build and finite checks. The same checks run in [CI](.github/workflows/verify.yml); old CI receipts do not certify this patch.
+The audit first builds the library, verifies the toolchain, checks every selected
+endpoint is reported, and allows only `propext`, `Classical.choice` and
+`Quot.sound`. See [REPRODUCE.md](REPRODUCE.md) and the [real-project note](notes/REAL-BRIDGES-FORMALIZATION.md)
+for Mathlib preparation and `python checks/audit_lean.py --real`. The [workflow](.github/workflows/verify.yml)
+runs the core and real audits independently on Linux. Historical receipts
+apply to their recorded stages, not later changes.

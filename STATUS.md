@@ -1,25 +1,36 @@
 # Verification status
 
-Updated 24 September 2026 (25 September UTC). Lean coverage refers to the actual statements built by the pinned Lean 4.33.1 project. [FORMALIZATION.md](FORMALIZATION.md) is the detailed scope report.
+Updated during the coordinated gap-closure pass of 25 September 2026 UTC.
+The exact checked files and endpoint counts are in the [core](verification/formal-audit.json)
+and [real](verification/real-audit.json) receipts. [FORMALIZATION.md](FORMALIZATION.md)
+states the actual models and hypotheses.
 
-| Claim | Written argument | Finite check | Lean coverage | Remaining work |
-|---|---|---|---|---|
-| Alexander's eventual-periodic unavoidability theorem | Prior published result in ALEX13 | None here | Positive theorem remains a parameter where used | Full formal positive theorem, if pursued; retain attribution. |
-| Binary negative classification | Prior construction and offset proof in CLASS26 | Not needed for the proof | [BinaryAvoidance](lean/SamuelAlexanderResearch/BinaryAvoidance.lean) proves matching implies eventual periodicity, then aperiodic avoidance. [BinaryPopulation](lean/SamuelAlexanderResearch/BinaryPopulation.lean) proves actual natural-date population properties. | Real-date specialization and finite-alphabet lift; full classification still requires the positive result. |
-| Thue-Morse quadratic bound | Historical [overlap-free argument](notes/THUE-MORSE-PATHS.md) | Existing exact scans agree | Not formalized | Superseded as a numerical bound by the sharper constructive proof below. |
-| Sharp `3L(v) <= 8v-1`, equality family, and exact equality set | [Complete constructive proof](research/thue-morse/NEXT-INVARIANT.md), independently reviewed | Previous scans, exact-frontier comparisons, and 18 complete trajectory replays | [Full sharp theorem](lean/SamuelAlexanderResearch/SharpThueMorse.lean) checked, including actual bits, dyadic runs, original-edge bridge, finite maxima, and exact equality classification | External mathematical review and literature priority; finite checks alone do not establish this theorem. |
-| Exact baseline first-hit formula and real-coefficient optimality | Prose corollaries in the [sharp proof](research/thue-morse/NEXT-INVARIANT.md) | 256 bounded `H(v)` checks; stored equality family | Supporting dyadic lemmas and equality classification are checked; the full `H(v)` first-hit statement and real-coefficient optimality are not separately exported | Formalize these corollaries if needed. |
-| Offspring threshold and fixed-gender balance | Direct graph counts | No computation needed | [Actual graph double counts](lean/SamuelAlexanderResearch/PopulationCounting.lean), distinct-label coverage, prefix restriction, gender discrepancy, and infinite natural-order subcritical contradiction | Conversion from real birthdates to exhaustive natural birth order. |
-| Critical-degree conservation | Finite conservation identity | No computation needed | `D+E+C=k*R` with full degrees in a finite ambient graph | Infinite full-degree identity and eventual regularity/width corollaries. |
-| Pruned fixed-gender specieslike avoiding graph | [Written construction](notes/FIXED-GENDER-SPECIESLIKE.md), separately challenged by an AI source reviewer; the remaining graph has infinitely many terminal copies and is not an inspecies | No computation needed | None | Lean formalization, external review, and any claim beyond the existing four-child bound. |
-| Two-child fixed-gender avoidance for every aperiodic binary target | Unresolved | No systematic scan | None | Construction or impossibility result. |
-| Whole-graph specieslike bridge and exact two CA cones | Checked specialization of source definitions; related root-cone phenomenon already appears in ALEX26 Example 14(1) | No computation needed | [SpeciesBridge](lean/SamuelAlexanderResearch/SpeciesBridge.lean), [BinaryPopulation](lean/SamuelAlexanderResearch/BinaryPopulation.lean), [SpeciesCones](lean/SamuelAlexanderResearch/SpeciesCones.lean) | Full positive classification remains explicit; no biological or established novelty claim. |
-| Universal binary natural-date root obstruction | Two distinct roots obstruct common ancestry of the whole graph | No computation needed | [RootObstruction](lean/SamuelAlexanderResearch/RootObstruction.lean) proves this for every `BinaryNatPopulation`, not only the avoiding construction | General `k`-label root counts and real-date enumeration; the theorem gives at least two roots. |
-| Periodic lifelines and static speed-region comparison | Corrected [conditional dynamical reduction](notes/PERIODIC-LIFELINE.md) | Toy local certificate passes | [Rational weighted/midpoint inclusion and strict example](lean/SamuelAlexanderResearch/StaticMixing.lean) | Infinite lifeline existence/convergence, real convex hulls, or a new rule-specific speed theorem. |
-| Automatic-sequence universality decision | Corollary of two cited results | No implementation | None | Explicit decision procedure, if useful. |
+| Claim | Status | Remaining boundary |
+|---|---|---|
+| Positive eventual-periodic unavoidability | Lean proof for binary populations; arbitrary real-birthdate transport and binary classification iff. | The general finite-alphabet positive theorem is not encoded. Attribution remains Alexander's. |
+| Negative binary construction | Lean proof against actual source edges; unconditional specieslike and cap-three fixed-gender classifications. | No claim to have originated the source construction. |
+| Arbitrary birth-order presentation | Enumeration and general degree/root adapter checked; real specialization uses Mathlib reals. | Quantitative slopes still measure the particular graph's vertex index, not arbitrary timestamps. |
+| Infinite critical conservation | Actual full-degree counts, triangular crossing bound, finite total defects, eventual regularity and constant width. | Critical cap and simple-edge assumptions are explicit. |
+| Minimum crossing rigidity | Binary width three on a whole tail forces `+1,+2`; fixed genders then imply all-word realization. | General-`k` theorem and cap-two avoidance remain open. |
+| Three-child productive core | Permanent genders, arbitrary prescribed aperiodic target, two roots, inspecies/specieslike/reflection and avoidance checked. | Whether two children suffice remains open. |
+| General IAP/inspecies and root-cone criteria | Lean endpoints; exact specializations and consecutive-layer universality. | Does not solve unrestricted maximal-species existence or identify empirical species. |
+| Sharp phase-zero Thue-Morse theorem | Full Lean bound, attained maximum, equality family and exact equality indices. | Global novelty not established. |
+| Auxiliary first-hit formula and real coefficient | Exact first-hit endpoint and no-smaller-real-coefficient theorem checked. | No separate Filter.limsup endpoint is claimed. |
+| Finite-edit stability | Actual length-preserving transport, attained maxima, upper bound and lower witnesses; real coefficient `8/3` optimal. | The exported start displacement is at most the edit-prefix length `m`. Optimal additive constants remain open. |
+| Shifted target and graph | Checked `5a` sharp bound, real coefficient optimality, attained maxima and full equality iff at `v=3*2^n-a-1`, `a<=2^n`. | General two-variable digit recurrences are open. |
+| Arbitrarily slow finite maxima | For every function `f`, an aperiodic target has attained maxima exceeding `f` at increasing starts; every other start also has a finite maximum. | Executability is relative to `f`; no formal computability-theory interface. |
+| Complete height formula | Concrete closed-form/ten-coordinate conjecture passes stored and fresh exact finite checks. | No universal proof or Lean theorem. Capped cases are explicitly skipped. |
+| Indexed ancestry and observations | Erasure, projection, information-loss and exact recovery/prediction criteria checked. | No empirical genetic/species inference follows automatically. |
+| Static speed-region comparison | Rational strict example and actual real convex-hull inclusion checked. | CA lifeline existence, limiting velocity, and a stronger rule-specific speed theorem remain unformalized. |
+| Automatic-target decision corollary | Written combination of cited results. | No decision implementation or Lean proof. |
 
-The default build contains eleven Lean modules. The [integrated local receipt](verification/FORMALIZATION-RECEIPT.md) records a successful build, all 80 selected endpoints passing the axiom audit, six passing Python tests, the passing toy local-rule check, and 8,191 interval/set-engine length agreements. The sharp diagnostic passes 18 full trajectories, 8,140 advance comparisons, and 256 first-hit checks. The [JSON receipt](verification/formal-audit.json) records the final exact Lean-source hashes.
+The [independent statement review](verification/GAP-CLOSURE-REVIEW.md) addresses
+model fidelity separately from the axiom audit. The latter builds dependencies
+before checking selected endpoints and allows only `propext`, `Classical.choice`
+and `Quot.sound`. A successful finite experiment is never promoted to a
+universal theorem by this ledger.
 
-Every audited endpoint depends only on subsets of `propext`, `Classical.choice`, and `Quot.sound`. This does not make a theorem with a positive-result parameter unconditional. [Statement review](verification/STATEMENT-REVIEW.md) explicitly checks that distinction.
-
-Historical scans, [the first CI receipt](verification/CI-RECEIPT.md), the earlier [local receipt](verification/LOCAL-RECEIPT.md), and the [initial interval receipt](research/thue-morse/VERIFICATION.md) are retained as records of their original stages. They do not certify later source changes. The current [workflow](.github/workflows/verify.yml) builds all modules, audits the selected endpoints, runs the small tests, and replays both the interval and sharp-proof diagnostics; it does not rerun the long 131,071-start scan.
+The [current workflow](.github/workflows/verify.yml) runs the core build/audit,
+six finite-path tests, local certificate check, interval/trajectory diagnostics,
+and pinned real-project audit. Older local and CI receipts remain historical
+records. Their success does not certify a later patch.

@@ -1,33 +1,60 @@
-# Brief handoff for Dr. Alexander or another mathematical reviewer
+# Brief mathematical handoff
 
-**Purpose.** This public, AI-assisted research notebook follows [Alexander's 2013 paper](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v20i1p31), the separate [2026 classification manuscript](https://github.com/avg-netizen/biological-unavoidability), and a direct connection to [Alexander's 2026 specieslike-clusters paper](https://arxiv.org/html/2602.05274v1). The [research map](RESEARCH-MAP.md) gives plain-language motivation; [STATUS.md](STATUS.md) lists proof, computation, and Lean coverage claim by claim. We would welcome corrections, prior-work pointers, or guidance on which direction is worth pursuing. No message has been sent to Dr. Alexander by this repository.
+This notebook studies the target-dependent avoiding population in the separate
+[September classification manuscript](https://github.com/avg-netizen/biological-unavoidability),
+alongside Alexander's [2013 unavoidability paper](https://arxiv.org/html/1212.0186v2)
+and [2026 specieslike-cluster paper](https://arxiv.org/html/2602.05274v1).
+The [question ledger](QUESTION-LEDGER.md) distinguishes historical questions
+from follow-ons posed here. No message has been sent to Dr. Alexander.
 
-## What is here now
+## Results worth reviewing
 
-| Direction | Reviewable item | Current limit |
-|---|---|---|
-| Quantitative avoidance | For the classification manuscript's explicit Thue–Morse graph, every matching path from `v≥1` has `3·length≤8v−1`. A finite maximum exists; equality occurs **exactly** at `v=3·2^n−1`, where the maximum is `8·2^n−3`. The [proof note](research/thue-morse/NEXT-INVARIANT.md) explains the interval and dyadic-block argument. | The [Lean module](lean/SamuelAlexanderResearch/SharpThueMorse.lean) checks the sharp statement against the original graph edges and actual Thue–Morse bits. This is a result about this graph and target phase, not a literature-priority claim or a bound for every avoiding graph. |
-| Restricted populations | [Graph-level Lean counting](lean/SamuelAlexanderResearch/PopulationCounting.lean) proves that a finite-root, `k`-label population cannot be infinite under child cap `d<k` in the natural-date model. It also checks the binary gender-balance inequality and a finite critical-degree identity. | The general real-birthdate reduction and whether every aperiodic target admits a **two-child fixed-vertex-gender** avoiding population remain unresolved here. The [formalization coverage report](FORMALIZATION.md) records exact premises. |
-| Specieslike clusters | The [Lean bridge](lean/SamuelAlexanderResearch/SpeciesBridge.lean) checks that the whole unlabelled avoiding graph is maximal specieslike and lacks a common ancestor. [Two exact maximal four-property cones](lean/SamuelAlexanderResearch/SpeciesCones.lean) are also checked. A separate [written fixed-gender repair](notes/FIXED-GENDER-SPECIESLIKE.md) gives a connected specieslike avoiding witness after pruning two isolated root copies. | The cofinite-descendant and cone patterns already have precedents in Alexander's [2013 inspecies theorem](https://arxiv.org/html/1201.2869) and [2026 Example 14(1)](https://arxiv.org/html/2602.05274v1#S6). The [prior-work audit](PRIOR-WORK-AUDIT.md) gives exact comparisons. The fixed-gender repair is **not** Lean checked. None of this identifies empirical species. |
-| Cellular automata | A [conditional two-label local certificate](notes/PERIODIC-LIFELINE.md) reduces live-cell paths to Alexander's periodic theorem. For spaceships, the constant-label paths give a stronger convex-hull-intersection bound than the alternating polygon. | The initial alternating-only speed target was weakened by this deduction. No new sharp bound for a specific rule is claimed; the finite rule check is a toy example. |
-| Automatic targets | A [direct corollary](notes/AUTOMATIC-SEQUENCES.md) makes universality of the **particular** graph `P_s` decidable when the target `s` is automatic. | It combines two cited results. There is no new implementation, general graph algorithm, or Lean proof. |
+1. **Sharp quantitative avoidance.** In the manuscript's Thue-Morse graph,
+   `3L(v)<=8v-1`, with equality exactly at `v=3*2^n-1`, where
+   `L=8*2^n-3`. The [proof](research/thue-morse/NEXT-INVARIANT.md) and
+   [Lean development](lean/SamuelAlexanderResearch/SharpThueMorse.lean) include
+   actual target bits, edge semantics and attained maxima.
+2. **Stability and phase.** Finite target edits preserve the optimal coefficient
+   `8/3`. Rebuilding the graph from `t(k+a)` gives `3L_a(v)<=8v+5a-1` and the
+   same optimal coefficient. The exact shifted family is developed separately
+   in [PhaseExtremal](lean/SamuelAlexanderResearch/PhaseExtremal.lean).
+3. **Arbitrarily slow finite avoidance.** For every growth function `f`, an
+   explicit relative construction gives an aperiodic target with actual finite
+   maxima larger than `f(v)` along strictly increasing starts. All starts have
+   finite maxima. See [FiniteAvoidance](lean/SamuelAlexanderResearch/FiniteAvoidance.lean).
+4. **Uniform cap-three fixed-gender witness.** Productive pruning of the
+   manuscript's two-copy lift gives an inspecies avoiding any prescribed
+   aperiodic binary target, with permanent vertex genders and at most three
+   children. The [formalization](lean/SamuelAlexanderResearch/FixedGenderLift.lean)
+   treats the retained vertex set explicitly. Earlier `T_h` and `H_h` examples
+   already have inspecies structure; the arbitrary-target/uniform-cap conjunction
+   is the distinction to review.
+5. **Critical population structure.** Full-degree conservation bounds all
+   defects and forces eventual degree regularity. Crossing width is at least
+   `k(k+1)/2`. In the binary minimum-width case, the tail is exactly the
+   `+1,+2` graph; permanent genders then force universal realization.
 
-## The most useful questions for a brief reply
+The [ten proposals](TEN-RESEARCH-IDEAS.md) describe these results and five further
+structural/computational directions. The most concrete next conjecture is a
+[closed form for all matching heights](research/thue-morse/FULL-HEIGHT-CONJECTURE.md),
+supported by exact stored and fresh computations but not yet proved.
 
-1. Is the [sharp Thue–Morse path-length formula](research/thue-morse/NEXT-INVARIANT.md), now [Lean checked](lean/SamuelAlexanderResearch/SharpThueMorse.lean) for the exact avoiding graph, already known under another formulation? The [prior-work search record](research/PRIOR-WORK-SEARCH-2026-09-24.md) did not verify an equivalent earlier theorem, but is bounded.
-2. Is the [connected fixed-gender specieslike avoiding witness](notes/FIXED-GENDER-SPECIESLIKE.md), proved in writing by pruning the two isolated lift roots, sound and useful? We have not formalized this repair in Lean.
-3. Is there a natural way to repair the **lost incoming label** at the boundary of either [maximal common-ancestor cone](notes/SPECIESLIKE-GENERALIZATION.md), or is that an obstruction worth stating? The whole population cannot have common ancestry under the binary simple-edge axioms.
-4. Does the two-child, fixed-vertex-gender avoidance variant connect to a known construction or obstruction? The [degree note](notes/DEGREE-BOUNDARY.md) describes the necessary counting boundary, not an existence proof.
+## Formal and source scope
 
-A reply on just one point would be useful. Each branch is independent, so a reviewer can ignore the rest.
+The package now constructs the birth-order enumeration, proves the positive
+binary theorem, transports the binary classification to actual real birthdates,
+and encodes general IAP/root-cone and degree/root interfaces. The default core
+is Std-only; the optional real project pins Mathlib. Exact endpoints and hashes
+are in [FORMALIZATION.md](FORMALIZATION.md) and its audit receipts.
 
-## Verification and attribution in one place
+The source classification, the positive theorem and broad cofinite-descendant
+and cone phenomena retain their original attribution. The
+[older-construction audit](notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md) and
+[prior-work ledger](PRIOR-WORK-AUDIT.md) prevent conflating those precedents
+with the narrower quantitative and uniform-cap claims developed here.
 
-- [Question provenance](QUESTION-LEDGER.md) separates Alexander's 2013 classification question, the separate 2026 manuscript's quantitative question, and follow-ons formulated in this notebook. [Biological model scope](BIOLOGICAL-MODEL-SCOPE.md) distinguishes edge-labelled reproduction, fixed vertex genders, organism genealogy, and genetic inheritance.
-- [Sources](SOURCES.md) identify the exact papers, transcript context, and hashes of the supplied source versions. The source PDFs and transcript are not rehosted here.
-- [Prior-work audit](PRIOR-WORK-AUDIT.md), [exact query log](research/PRIOR-WORK-SEARCH-2026-09-24.md), and [original search log](SEARCH-LOG.md) distinguish direct precedents from graph-specific connections. The searches do **not** establish novelty or priority.
-- [Formalization coverage](FORMALIZATION.md), [reproduction commands](REPRODUCE.md), and the [integrated receipt](verification/FORMALIZATION-RECEIPT.md) identify the source-model specializations, theorem endpoints, axiom audit, and local checks. Historical [local](verification/LOCAL-RECEIPT.md) and [CI](verification/CI-RECEIPT.md) receipts apply only to their older commits.
-- [Provenance](PROVENANCE.md) distinguishes attributed earlier results and AI-assisted deductions. A written proof remains subject to independent mathematical review even when local checks pass.
-- The optional [complex-systems interface note](explorations/COMPLEX-SYSTEMS-INTERFACE.md) compares possible dynamical extensions with Levin and Friston. It is background for the owner's broader question, outside the core mathematical claims in this handoff.
-
-The repository owner may use the editable [outreach draft](OUTREACH-DRAFT.md) to contact Dr. Alexander. That decision and message belong to the owner.
+Useful outside feedback would concern an equivalent earlier height formula,
+the cap-two fixed-gender question, the general-`k` rigidity problem, or a
+counterexample to the full-height conjecture. External review and literature
+priority remain open. The repository owner can adapt the
+[outreach draft](OUTREACH-DRAFT.md); sending it is a separate action.

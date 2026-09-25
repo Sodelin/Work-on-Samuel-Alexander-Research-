@@ -1,6 +1,6 @@
 # Reproduction guide
 
-The repository uses Python 3 with only the standard library for finite checks, and Lean 4.33.1 with its bundled standard library for graph proofs and rational arithmetic. No Mathlib download is required.
+The repository uses Python 3 with only the standard library for finite checks, and Lean 4.33.1 with its bundled standard library for graph proofs and rational arithmetic. The optional real-number development separately pins Mathlib; it is not required for the default core build.
 
 ## Lean
 
@@ -11,7 +11,7 @@ lake build
 python checks/audit_lean.py --output verification/formal-audit.json
 ```
 
-On the original Windows host, elan required `ELAN_HOME` to be set to its existing directory and its `bin` directory on `PATH`. The [default import](lean/SamuelAlexanderResearch.lean) builds all eleven modules. The final verified audit passes all 80 selected endpoints, including the full sharp Thue-Morse theorem, original-edge bridge, exact equality set, and universal binary natural-date root obstruction. [FORMALIZATION.md](FORMALIZATION.md) maps claims to statements. The audit refreshes the build, checks the pinned compiler version and every selected endpoint's dependencies, and records source hashes; it fails on missing reports or unexpected axioms. Re-running it updates the receipt timestamp.
+On the original Windows host, elan requires its existing directory in `ELAN_HOME` and its `bin` on `PATH`. The [default import](lean/SamuelAlexanderResearch.lean) builds the entire core library. The [current audit](verification/formal-audit.json) records endpoint counts and hashes; [FORMALIZATION.md](FORMALIZATION.md) maps claims to statements. The audit refreshes the build, verifies the pinned compiler and rejects missing reports or unexpected axioms.
 
 ## Finite checks
 
@@ -37,6 +37,22 @@ python checks/bitset_probe.py --limit 131072 --output checks/scan-bitset-131072.
 
 `interval_check.py` follows the two boundary trajectories given by the proved interval theorem. It compares 8,191 stored exact lengths, 1,632 complete small frontiers including extinction, and 8,192 dyadic substitution-table cases.
 
-`sharp_check.py` independently replays 18 complete trajectories for starts `6q-1` and `3q`, with `q=2^n` and `n=0,...,8`. It checks all 8,140 advances, the last positive offset and first zero, the exact 12 equality starts in the existing 8,192-start scan, and 256 bounded baseline first-hit times. It does not run a new path scan. Its output is explicitly finite corroboration. The universal bound and exact equality set are established by the [constructive proof](research/thue-morse/NEXT-INVARIANT.md) and [Lean sharp theorem](lean/SamuelAlexanderResearch/SharpThueMorse.lean); the full `H(v)` first-hit formula and real-coefficient optimality remain prose corollaries.
+`sharp_check.py` independently replays 18 complete trajectories for starts `6q-1` and `3q`, with `q=2^n` and `n=0,...,8`. It checks all 8,140 advances, the last positive offset and first zero, the exact 12 equality starts in the existing 8,192-start scan, and 256 bounded baseline first-hit times. It does not run a new path scan. Its output is explicitly finite corroboration. The universal bound and exact equality set are established by the [constructive proof](research/thue-morse/NEXT-INVARIANT.md) and [Lean sharp theorem](lean/SamuelAlexanderResearch/SharpThueMorse.lean); the full `H(v)` first-hit formula and real-coefficient optimality now have separate checked endpoints in SharpCorollaries and RealBridges.
 
-The GitHub workflow runs the Lean build, endpoint axiom audit, Python tests, toy local-rule example, interval comparisons, and sharp-proof trajectory checks. It does not run the long finite scans on every push; they can be replayed with the commands above. Successful verification does not fill the explicit positive-classification, real-date enumeration, or infinite critical-conservation gaps listed in [FORMALIZATION.md](FORMALIZATION.md).
+The workflow runs the core and pinned real-project audits, tests and finite diagnostics. Historical long scans are not rerun on every push. The positive binary theorem, enumeration and infinite critical conservation are now encoded; the remaining research and model boundaries are listed in [FORMALIZATION.md](FORMALIZATION.md).
+
+
+## Optional real-number project
+
+Follow [the exact pinned setup](notes/REAL-BRIDGES-FORMALIZATION.md), then run
+`python checks/audit_lean.py --real --output verification/real-audit.json`.
+This separately builds and audits real birthdate transport, real coefficient
+optimality and real convex-hull inclusion. It verifies the Mathlib commit.
+
+## Full-height conjecture diagnostics
+
+`python research/thue-morse/kernel_conjecture_check.py --output research/thue-morse/kernel-conjecture-results.json`
+checks the proposed complete height formula against stored exact values,
+candidate coordinate identities and fresh actual frontier computations.
+Cases exceeding its explicit advance cap are listed as skipped. A passing
+run does not establish the conjecture.
