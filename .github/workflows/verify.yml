@@ -19,6 +19,10 @@ jobs:
         run: python3 checks/audit_lean.py
       - name: Check finite-path tests
         run: python3 -m unittest discover -s checks -p 'test_*.py' -v
+      - name: Check local research library and calibration example
+        run: |
+          python3 -m unittest discover -s research/source-library -p test_source_library.py -v
+          python3 research/open-problems/time-self-reference/calibration_demo.py
       - name: Check GitHub mathematical formatting
         run: python3 checks/check_math_format.py
       - name: Replay finite certificate example

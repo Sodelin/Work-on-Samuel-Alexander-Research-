@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "intake_id": "doc-8b3940d8ac53",
+      "title": "Open questions about time and self-reference in living systems",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1098/rsos.261059"
+      },
+      "authoritative_urls": [
+        "https://doi.org/10.1098/rsos.261059"
+      ]
+    },
+    {
+      "intake_id": "doc-877feb0732f4",
+      "title": "Top-down perspectives on cell membrane potential and protein transcription",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1038/s41598-025-31696-6"
+      },
+      "authoritative_urls": [
+        "https://doi.org/10.1038/s41598-025-31696-6"
+      ]
+    },
+    {
+      "intake_id": "doc-04475c01f9cc",
+      "title": "Lifetime imaging reveals long-distance non-neural bioelectric patterns on timescales from seconds to hours",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1016/j.ydbio.2026.08.001"
+      },
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.ydbio.2026.08.001"
+      ]
+    },
+    {
+      "intake_id": "doc-ea45287f5876",
+      "title": "The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "arxiv": "2608.26116v2"
+      },
+      "authoritative_urls": [
+        "https://arxiv.org/abs/2608.26116v2"
+      ],
+      "observed_publication": {
+        "version": "v2"
+      }
+    },
+    {
+      "intake_id": "doc-e18b52e11a50",
+      "title": "Theories of Aging: From Damage and Programmed Theories to Goal-Directedness",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "preprints": "202608.1219.v1"
+      },
+      "observed_publication": {
+        "version": "v1"
+      }
+    },
+    {
+      "intake_id": "doc-58887288549f",
+      "title": "Ingressing Minds: Causal, Non-physical Patterns In-form Natural, Synthetic, and Hybrid Embodiments",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        },
+        {
+          "method": "Version unresolved: filename labels v4; PDF metadata labels v33. Neither treated as a verified publication version."
+        }
+      ],
+      "observed_publication": {
+        "version": null,
+        "status": "version_conflict_unresolved"
+      }
+    },
+    {
+      "intake_id": "doc-81dc8bf9244d",
+      "title": "Cognitive Offloading Is a Cognitive Universal",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "preprints": "202607.0507.v1"
+      },
+      "observed_publication": {
+        "version": "v1"
+      }
+    },
+    {
+      "intake_id": "doc-c0f6779b1171",
+      "title": "Manipulation of biological systems by self-defecting and foreign agents",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "identifiers": {
+        "doi": "10.1016/j.semcdb.2026.103691"
+      },
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.semcdb.2026.103691"
+      ]
+    }
+  ]
+}

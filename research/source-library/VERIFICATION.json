@@ -1,0 +1,61 @@
+{
+  "recorded_utc": "2026-09-25T14:02:16.676638+00:00",
+  "tool_scope": "Local indexing and metadata export; no source-claim or proof certification",
+  "counts": {
+    "catalog_sources": 23,
+    "pdf_sources": 20,
+    "transcript_sources": 1,
+    "title_only_entries": 2,
+    "pdf_pages": 710,
+    "transcript_segments": 582,
+    "locally_verified_artifacts": 22,
+    "unconfirmed_titles": 5,
+    "sources_with_searchable_text": 21
+  },
+  "tests": {
+    "command": "python -X utf8 -m unittest -v test_source_library.py",
+    "passed": 8,
+    "failed": 0,
+    "observed_final_run_seconds": 0.517
+  },
+  "source_manifest_sha256": "dc1b4c1d3a97f2a82632b8641eb17bdb2edb7d1da5e4263fa41f3b492e43130b",
+  "checks": {
+    "source_byte_hashes_checked": true,
+    "declared_sidecar_hashes_checked": true,
+    "sidecar_row_source_identity_checked": true,
+    "actual_search_queries": [
+      "self-reference",
+      "time",
+      "minimal",
+      "ancestry",
+      "decision",
+      "free energy",
+      "reasoning",
+      "self-reference"
+    ],
+    "catalog_contains_full_text": false,
+    "catalog_local_drive_path_scan": "passed after final metadata update"
+  },
+  "sha256": {
+    "source_library.py": "1a61cd52624ab60efb8b44b9822eaf440d4ff8c70f4616580200b4f4b5d4feb8",
+    "intake_adapter.py": "66a3899b10de057cd8de499667240f712b276944e77fe2b9a9e3b2f2ecd88324",
+    "test_source_library.py": "f2b0b6882981d80bfb4a71f61c5bda72c653839a1f17cabfed859a6e3380ffe1",
+    "README.md": "13c5459f5541f738f03d2d174f0073741554a8361388bf286333bb87b0db3641",
+    "discovery-intake.json": "e023cb48550820c54504c47bdd5da65145c6080df9c91c8ae08d0b4cd775ea50",
+    "reader-metadata-intake.json": "e0ca565b372427991a0254afcade25536b1065fa438c78deed80095d82b9c6e0",
+    "public/catalog.json": "51296d1feea86e2204686a58804fd92897739652c2941058d163e8a555934b7a",
+    "public/CATALOG.md": "7d82ffe237810a2476dd96153799509cd75a5179a91d5a191729a0c7c70d983e"
+  },
+  "remaining": [
+    "Substantive reading and mathematical claim verification belong to the reading task.",
+    "Unconfirmed titles, publication dates, versions, and rights remain explicit.",
+    "Metadata-only commentary entries have no ingested full text.",
+    "Incremental new uploads require rerunning import-intake; the receipt is a snapshot."
+  ],
+  "publication_boundary": "Only code, README, discovery-intake.json, reader-metadata-intake.json, VERIFICATION.json, and public metadata exports are intended as shareable. Database, local receipts and snippet demonstrations remain local.",
+  "metadata_updates": {
+    "reader_supplied_first_page_records": 8,
+    "publisher_confirmation": "pending",
+    "ingressing_minds_version": "Unresolved filename v4 / PDF metadata v33; no verified version inferred."
+  }
+}

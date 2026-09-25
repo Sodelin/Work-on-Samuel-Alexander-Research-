@@ -1,0 +1,900 @@
+{
+  "schema_version": "1.0",
+  "recorded_utc": "2026-09-25T14:22:01.750606+00:00",
+  "source": {
+    "doi": "10.1098/rsos.261059",
+    "title": "Open questions about time and self-reference in living systems",
+    "version": "published PDF",
+    "pdf_sha256": "8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce",
+    "page_numbering": "One-based PDF pages; body page labels agree.",
+    "inventory_scope": "Working twelve-question inventory of this paper, not all questions in the full supplied corpus."
+  },
+  "status_summary": {
+    "author_questions_fully_solved": 0,
+    "precise_subproblems_lean_checked": 2,
+    "precise_subproblems_written_proof_not_lean": 1,
+    "questions_requiring_definitions_model_or_evidence": 9
+  },
+  "evidence_policy": [
+    "Selected endpoint counts describe audited declarations, not discoveries.",
+    "Lean checks certify formal statements under their declared assumptions; empirical validity and source correspondence are separate obligations.",
+    "No novelty claim; no placeholder Lean axioms or sorry scaffolds created for these open obligations.",
+    "Published-commit verification must be read from its own checks, not inferred from this local ledger."
+  ],
+  "verification_snapshot": {
+    "receipt": "exact-abstraction/PUBLIC-VERIFICATION.json",
+    "status": "PASS",
+    "checked_at_utc": "2026-09-25T14:13:28.453951+00:00",
+    "compiler_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "total_selected_endpoints": 16,
+    "no_sorryAx": true,
+    "standard_axiom_allowlist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "current_source_hashes_match_receipt": true,
+    "compiler_rerun_for_this_ledger": false,
+    "modules": [
+      {
+        "module": "ExactAbstraction",
+        "source_path": "exact-abstraction/ExactAbstraction.lean",
+        "sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e",
+        "selected_endpoints": 8,
+        "endpoints": [
+          "ExactAbstraction.exact_factor_iff",
+          "ExactAbstraction.exact_factor_unique",
+          "ExactAbstraction.trajectory_preservation",
+          "ExactAbstraction.compatible_gives_trajectories",
+          "ExactAbstraction.TwoBit.projection_collision",
+          "ExactAbstraction.TwoBit.no_state_only_update",
+          "ExactAbstraction.TwoBit.period_two_after_first",
+          "ExactAbstraction.TwoBit.exact_period_two_after_first"
+        ]
+      },
+      {
+        "module": "MergeHistoryProjection",
+        "source_path": "exact-abstraction/MergeHistoryProjection.lean",
+        "sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554",
+        "selected_endpoints": 8,
+        "endpoints": [
+          "MergeHistoryProjection.split_preserves_legal",
+          "MergeHistoryProjection.adjacent_merge_histories",
+          "MergeHistoryProjection.legal_histories",
+          "MergeHistoryProjection.admissible_splits_with_spectator",
+          "MergeHistoryProjection.same_current_partition",
+          "MergeHistoryProjection.distinct_restored_partitions",
+          "MergeHistoryProjection.no_exact_partition_model",
+          "MergeHistoryProjection.no_partition_only_admissible_split"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "source_question": {
+        "paraphrase": "Does a new concept of time arise with life?",
+        "section": "2.2",
+        "pdf_pages": [
+          5
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_definitions_and_empirical_criteria",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q01-O1",
+          "statement": "Distinguish physical time, internal temporal representation and a measurable biological claim.",
+          "status": "needs_definitions_and_empirical_criteria",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "A selected model plus evidence discriminating its biological interpretation."
+      ],
+      "next_bounded_step": "Distinguish physical time, internal temporal representation and a measurable biological claim.",
+      "author_question_completion_criterion": "A selected model plus evidence discriminating its biological interpretation."
+    },
+    {
+      "id": "Q02",
+      "source_question": {
+        "paraphrase": "Can a non-iterative physical process efficiently explore the vast space of possibilities?",
+        "section": "3.3",
+        "pdf_pages": [
+          8,
+          9
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_computation_resource_model",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q02-O1",
+          "statement": "Define inputs, success probability, cost and state-preparation resources.",
+          "status": "needs_computation_resource_model",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "A theorem or counterexample in the complete specified resource model."
+      ],
+      "next_bounded_step": "Define inputs, success probability, cost and state-preparation resources.",
+      "author_question_completion_criterion": "A theorem or counterexample in the complete specified resource model."
+    },
+    {
+      "id": "Q03",
+      "source_question": {
+        "paraphrase": "Does self-reference require or imply natural time?",
+        "section": "4.2",
+        "pdf_pages": [
+          10,
+          11
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_semantic_and_physical_definitions",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q03-O1",
+          "statement": "Distinguish static description, execution and physical temporal interpretation.",
+          "status": "needs_semantic_and_physical_definitions",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "A precise implication or countermodel; oscillation alone does not establish necessity of time."
+      ],
+      "next_bounded_step": "Distinguish static description, execution and physical temporal interpretation.",
+      "author_question_completion_criterion": "A precise implication or countermodel; oscillation alone does not establish necessity of time."
+    },
+    {
+      "id": "Q04",
+      "source_question": {
+        "paraphrase": "When can the process of generating a result not be separated from the result by projection?",
+        "section": "4.2",
+        "pdf_pages": [
+          11
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": {
+        "name": "Exact controlled deterministic abstraction",
+        "hypotheses": [
+          "Arbitrary control type A, concrete state type X, and observation type Z.",
+          "A fixed deterministic controlled update F : A -> X -> X.",
+          "A surjective observation c : X -> Z.",
+          "For sufficiency: equal current observations imply equal next observations for the same control."
+        ],
+        "conclusion": "An exact reduced deterministic update exists if and only if observation classes respect every update; it is unique on Z and preserves trajectories under identical externally supplied control sequences.",
+        "formal_contract": "(exists Fbar, forall a x, c(F a x) = Fbar a (c x)) iff (forall a x y, c x = c y -> c(F a x) = c(F a y))",
+        "example": "Two-bit joint state (visible result, hidden rule), fixed update (x,r) -> (r,not r), observation (x,r) -> x.",
+        "interpretation_boundary": "The projection exists; its ability to support exact closed dynamics is what can fail."
+      },
+      "precise_subproblem_status": "solved_lean_checked",
+      "obligations": [
+        {
+          "id": "Q04-O1",
+          "statement": "Exact reduced update implies observation-class compatibility.",
+          "status": "lean_checked",
+          "evidence": [
+            "ExactAbstraction.exact_factor_iff"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O2",
+          "statement": "Compatibility and surjectivity yield a reduced update.",
+          "status": "lean_checked",
+          "evidence": [
+            "ExactAbstraction.exact_factor_iff"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O3",
+          "statement": "The reduced update is unique on the observation type.",
+          "status": "lean_checked",
+          "evidence": [
+            "ExactAbstraction.exact_factor_unique"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O4",
+          "statement": "One-step preservation yields every finite controlled trajectory.",
+          "status": "lean_checked",
+          "evidence": [
+            "ExactAbstraction.trajectory_preservation",
+            "ExactAbstraction.compatible_gives_trajectories"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O5",
+          "statement": "The chosen two-bit projection has equal inputs and incompatible next outputs.",
+          "status": "lean_checked",
+          "evidence": [
+            "ExactAbstraction.TwoBit.projection_collision",
+            "ExactAbstraction.TwoBit.no_state_only_update"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O6",
+          "statement": "The full joint-state example has exact eventual period two.",
+          "status": "lean_checked",
+          "evidence": [
+            "ExactAbstraction.TwoBit.period_two_after_first",
+            "ExactAbstraction.TwoBit.exact_period_two_after_first"
+          ],
+          "scope": "precise_subproblem"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "lean_source",
+          "path": "exact-abstraction/ExactAbstraction.lean",
+          "module": "ExactAbstraction"
+        },
+        {
+          "kind": "verification_receipt",
+          "path": "exact-abstraction/PUBLIC-VERIFICATION.json"
+        },
+        {
+          "kind": "scope_note",
+          "path": "exact-abstraction/README.md"
+        }
+      ],
+      "residual_gap": [
+        "This is established quotient/congruence mathematics, not a new theorem.",
+        "No universal failure of process/result projection or necessity of physical time is proved.",
+        "Classical representative choice is not an executable construction for arbitrary types.",
+        "Fixed joint-state semantics does not formalize unrestricted changes of language or semantics.",
+        "No entropy, bit cost, stochastic lumpability, or hidden-state feedback-controller theorem.",
+        "Biological adequacy requires a separate model correspondence."
+      ],
+      "next_bounded_step": "For one chosen application, specify state, observation, action and preserved output; prove compatibility or exhibit an admissible observation collision.",
+      "author_question_completion_criterion": "A justified formal interpretation covering the relevant source claims beyond this one exact-next-state preservation contract."
+    },
+    {
+      "id": "Q05",
+      "source_question": {
+        "paraphrase": "Which formalisms model systems that change their rules and interact with an environment?",
+        "section": "6 opening",
+        "pdf_pages": [
+          15,
+          16
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_model_and_correspondence",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q05-O1",
+          "statement": "Specify state, rule syntax, interpreter, environmental inputs and allowed updates.",
+          "status": "needs_model_and_correspondence",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "Semantics and a proved correspondence to a selected source model."
+      ],
+      "next_bounded_step": "Specify state, rule syntax, interpreter, environmental inputs and allowed updates.",
+      "author_question_completion_criterion": "Semantics and a proved correspondence to a selected source model."
+    },
+    {
+      "id": "Q06",
+      "source_question": {
+        "paraphrase": "How can practical tools support deeper changes of the modeling language itself?",
+        "section": "6.2.3; 7",
+        "pdf_pages": [
+          20,
+          24
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_metamodel_change_contract",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q06-O1",
+          "statement": "Specify language transformations, interpretation and retained invariants.",
+          "status": "needs_metamodel_change_contract",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "A result with explicit interpreter assumptions; merely storing rules as data is insufficient."
+      ],
+      "next_bounded_step": "Specify language transformations, interpretation and retained invariants.",
+      "author_question_completion_criterion": "A result with explicit interpreter assumptions; merely storing rules as data is insufficient."
+    },
+    {
+      "id": "Q07",
+      "source_question": {
+        "paraphrase": "How should self-modifying open systems be analyzed when they outgrow a current model or metric?",
+        "section": "6.3",
+        "pdf_pages": [
+          21
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_adequacy_criterion",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q07-O1",
+          "statement": "Choose observables and a falsifiable criterion for their adequacy.",
+          "status": "needs_adequacy_criterion",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "An inadequacy witness or preservation theorem for those observables."
+      ],
+      "next_bounded_step": "Choose observables and a falsifiable criterion for their adequacy.",
+      "author_question_completion_criterion": "An inadequacy witness or preservation theorem for those observables."
+    },
+    {
+      "id": "Q08",
+      "source_question": {
+        "paraphrase": "How can relational self-production models connect to plausible biological mechanisms?",
+        "section": "6.4.1",
+        "pdf_pages": [
+          21
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_mechanism_and_empirical_correspondence",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q08-O1",
+          "statement": "Choose a specific relational construction and a measurable mechanism.",
+          "status": "needs_mechanism_and_empirical_correspondence",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "Formal correspondence plus empirical evidence, not internal consistency alone."
+      ],
+      "next_bounded_step": "Choose a specific relational construction and a measurable mechanism.",
+      "author_question_completion_criterion": "Formal correspondence plus empirical evidence, not internal consistency alone."
+    },
+    {
+      "id": "Q09",
+      "source_question": {
+        "paraphrase": "How should games represent decisions that merge or split the decision makers themselves?",
+        "section": "6.4.3",
+        "pdf_pages": [
+          22
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": {
+        "name": "Merge-history obstruction for membership-only splitting",
+        "hypotheses": [
+          "Four persistent sites, represented by Fin 4.",
+          "A concrete state is an ordered forest of binary merge histories whose leaves contain each site exactly once.",
+          "The observation is the unordered set of unordered current member sets.",
+          "Splitting the designated first composite restores its immediate predecessor trees.",
+          "Both concrete witnesses select the same current group {0,1,2}, retain spectator {3}, and admit the split."
+        ],
+        "conclusion": "No deterministic function of current membership partition can reproduce all admissible predecessor-restoring splits; therefore no exact deterministic reduced update for the totalized controlled model exists.",
+        "witness": {
+          "left_history": "merge(merge(0,1),2), spectator 3",
+          "right_history": "merge(0,merge(1,2)), spectator 3",
+          "current_partition": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "left_after_split": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "right_after_split": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        },
+        "interpretation_boundary": "A structural operation model with fixed leaf identities, not a complete game with changing controllers, payoffs or biological individuals."
+      },
+      "precise_subproblem_status": "solved_lean_checked",
+      "obligations": [
+        {
+          "id": "Q09-O1",
+          "statement": "The split preserves each-site-exactly-once legality.",
+          "status": "lean_checked",
+          "evidence": [
+            "MergeHistoryProjection.split_preserves_legal"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q09-O2",
+          "statement": "Both histories arise by two list-adjacent merges and all witness states are legal.",
+          "status": "lean_checked",
+          "evidence": [
+            "MergeHistoryProjection.adjacent_merge_histories",
+            "MergeHistoryProjection.legal_histories"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q09-O3",
+          "statement": "Both selected splits are admissible and retain a spectator.",
+          "status": "lean_checked",
+          "evidence": [
+            "MergeHistoryProjection.admissible_splits_with_spectator"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q09-O4",
+          "statement": "Current unordered partitions are equal and next partitions differ.",
+          "status": "lean_checked",
+          "evidence": [
+            "MergeHistoryProjection.same_current_partition",
+            "MergeHistoryProjection.distinct_restored_partitions"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q09-O5",
+          "statement": "Apply the checked Q04 criterion to rule out an exact reduced update.",
+          "status": "lean_checked",
+          "evidence": [
+            "MergeHistoryProjection.no_exact_partition_model"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q09-O6",
+          "statement": "Rule out partition-only prediction even on the admissible split domain.",
+          "status": "lean_checked",
+          "evidence": [
+            "MergeHistoryProjection.no_partition_only_admissible_split"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q09-O7",
+          "statement": "Reproduce the structural collision using pinned original implementation operators.",
+          "status": "executed_with_explicit_mocks",
+          "evidence": [
+            "independent-ipdm-operator-test.json"
+          ],
+          "scope": "bounded_source_correspondence"
+        },
+        {
+          "id": "Q09-O8",
+          "statement": "Prove complete implementation correspondence and policy-generated reachability.",
+          "status": "open",
+          "evidence": [],
+          "scope": "broader_author_question"
+        },
+        {
+          "id": "Q09-O9",
+          "statement": "Define and analyze payoffs, controller persistence and a game solution concept.",
+          "status": "needs_definition",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "lean_source",
+          "path": "exact-abstraction/MergeHistoryProjection.lean",
+          "module": "MergeHistoryProjection"
+        },
+        {
+          "kind": "verification_receipt",
+          "path": "exact-abstraction/PUBLIC-VERIFICATION.json"
+        },
+        {
+          "kind": "scope_note",
+          "path": "exact-abstraction/MERGE-HISTORY.md"
+        },
+        {
+          "kind": "operator_test_receipt",
+          "path": "independent-ipdm-operator-test.json",
+          "status": "PASS_PINNED_OPERATOR_TEST_WITH_EXPLICIT_MOCKS",
+          "repository": "https://github.com/lksshw/IPDm",
+          "commit": "eca9b122480b8c654081d6a844176417aefbbcae",
+          "mocks": [
+            "Agent constructor and get_score",
+            "Tree constructor",
+            "np.argmax",
+            "np.round"
+          ]
+        }
+      ],
+      "residual_gap": [
+        "Lean adjacency is forest-list adjacency; board geometry and active-agent metadata belong only to the separate execution test.",
+        "No full policy scheduler, stochastic reachability, equilibrium or payoff-preservation theorem.",
+        "Published IPDm paper-to-code version equivalence and complete program refinement are unproved.",
+        "No non-Markovness claim for every probability distribution; no entropy theorem.",
+        "Repeated splits may need recursive predecessor history; minimal sufficient memory remains a separate target.",
+        "Persistent leaf sites have no automatic interpretation as biological species, cells or cognitive selves."
+      ],
+      "next_bounded_step": "Specify which future operations a reduced state must predict, retain the needed history and prove sufficiency; select a payoff/controller contract before extending to a game theorem.",
+      "author_question_completion_criterion": "An explicit, source-adequate dynamic-player game model with justified state/controller/payoff semantics and the selected behavioral or solution-concept results."
+    },
+    {
+      "id": "Q10",
+      "source_question": {
+        "paraphrase": "Can rule-changing games retain the intended game-theoretic solution concepts?",
+        "section": "6.4.4",
+        "pdf_pages": [
+          22,
+          23
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_exact_solution_concept_property",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q10-O1",
+          "statement": "Identify the cited domain/powerdomain construction and exact failed condition.",
+          "status": "needs_exact_solution_concept_property",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "A verified repair or counterexample under the source assumptions."
+      ],
+      "next_bounded_step": "Identify the cited domain/powerdomain construction and exact failed condition.",
+      "author_question_completion_criterion": "A verified repair or counterexample under the source assumptions."
+    },
+    {
+      "id": "Q11",
+      "source_question": {
+        "paraphrase": "Is representation foundational, or grounded in autonomous organization?",
+        "section": "7",
+        "pdf_pages": [
+          23,
+          24
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": null,
+      "precise_subproblem_status": "needs_discriminating_formal_or_operational_claim",
+      "hypotheses_status": "not_yet_selected",
+      "conclusion_status": "not_yet_selected",
+      "obligations": [
+        {
+          "id": "Q11-O1",
+          "statement": "Specify an implication or observation that distinguishes the positions.",
+          "status": "needs_discriminating_formal_or_operational_claim",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "source_question_inventory",
+          "path": "README.md"
+        }
+      ],
+      "residual_gap": [
+        "Evidence for the selected claim; no universal philosophical resolution presumed."
+      ],
+      "next_bounded_step": "Specify an implication or observation that distinguishes the positions.",
+      "author_question_completion_criterion": "Evidence for the selected claim; no universal philosophical resolution presumed."
+    },
+    {
+      "id": "Q12",
+      "source_question": {
+        "paraphrase": "How can evolutionary models be calibrated when observed histories cover very few possible outcomes?",
+        "section": "7",
+        "pdf_pages": [
+          24
+        ],
+        "source_doi": "10.1098/rsos.261059"
+      },
+      "author_question_status": "open",
+      "novelty_claim": false,
+      "precise_target": {
+        "name": "Sharp finite-sample impossible-versus-rare branch testing",
+        "hypotheses": [
+          "n is a nonnegative integer.",
+          "Binary trials independently and fully observe occurrence of a designated branch.",
+          "M0 produces only zeros.",
+          "Me produces a branch with constant known probability e, where 0 < e < 1.",
+          "Decision rules may randomize and return one of the two models."
+        ],
+        "definitions": {
+          "q": "(1-e)^n",
+          "alpha": "Probability of selecting Me under M0.",
+          "beta": "Probability of selecting M0 under Me."
+        },
+        "conclusions": [
+          "Minimum over randomized rules of alpha+beta equals q.",
+          "Minimum over randomized rules of max(alpha,beta) equals q/(1+q).",
+          "At n=0 these values are 1 and 1/2."
+        ],
+        "interpretation_boundary": "Finite-sample overlap under different observation laws; not structural non-identifiability from equal complete observation laws."
+      },
+      "precise_subproblem_status": "solved_written_not_lean",
+      "obligations": [
+        {
+          "id": "Q12-O1",
+          "statement": "Compute the all-zero probability q=(1-e)^n.",
+          "status": "written_proof",
+          "evidence": [
+            "CALIBRATION-BOUND.md"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q12-O2",
+          "statement": "For any randomized rule, alpha=a and beta>=q(1-a), hence both lower bounds.",
+          "status": "written_proof_independently_reviewed",
+          "evidence": [
+            "CALIBRATION-BOUND.md"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q12-O3",
+          "statement": "Exhibit attaining rules for the sum and minimax criteria.",
+          "status": "written_proof_with_finite_checks",
+          "evidence": [
+            "CALIBRATION-BOUND.md",
+            "calibration_demo.py",
+            "calibration-results.json"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q12-O4",
+          "statement": "Handle n=0 and rational finite examples.",
+          "status": "executed_exact_finite_checks",
+          "evidence": [
+            "calibration-results.json"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q12-O5",
+          "statement": "Formalize the general finite-probability theorem in Lean.",
+          "status": "open",
+          "evidence": [],
+          "scope": "formal_certification_of_written_subproblem"
+        },
+        {
+          "id": "Q12-O6",
+          "statement": "Justify a biological evolutionary observation/sampling model satisfying the assumptions.",
+          "status": "needs_model_and_evidence",
+          "evidence": [],
+          "scope": "broader_author_question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "written_derivation",
+          "path": "CALIBRATION-BOUND.md"
+        },
+        {
+          "kind": "exact_rational_demo",
+          "path": "calibration_demo.py"
+        },
+        {
+          "kind": "computation_receipt",
+          "path": "calibration-results.json",
+          "status": "PASS",
+          "cases": 15,
+          "deterministic_rules_checked": 834,
+          "limit": "Constructed randomized optima and small deterministic enumerations; not a proof by enumeration for arbitrary n and real e."
+        },
+        {
+          "kind": "independent_statement_review",
+          "record": "Coordinator conversation, bounded review of derivation, code and source page 24; no rerun or compiler invoked in that review."
+        }
+      ],
+      "residual_gap": [
+        "The balanced minimax decision rule uses known e to compute q.",
+        "At fixed finite n, alternatives with arbitrarily small positive e preclude a uniform worst-error guarantee below 1/2.",
+        "For fixed e>0 errors can approach zero as n grows; no finite n gives certainty.",
+        "No general Lean probability proof for this target.",
+        "Dependent or path-dependent trials, observation error, interventions, and counterfactual extrapolation require additional models.",
+        "No complete solution of evolutionary calibration or novel statistical theorem is claimed."
+      ],
+      "next_bounded_step": "If formal certification is prioritized, define the finite binary sample distribution and randomized decision function, prove the shared all-zero contribution, and supply both attaining rules.",
+      "author_question_completion_criterion": "A source-adequate evolutionary calibration model with proved error/identifiability claims and justified links from actual data to its assumptions."
+    }
+  ],
+  "cross_project_connections": [
+    {
+      "classification": "actual_formal_import",
+      "from": "MergeHistoryProjection",
+      "to": "ExactAbstraction",
+      "evidence_path": "exact-abstraction/MergeHistoryProjection.lean",
+      "import_statement": "import ExactAbstraction",
+      "used_endpoint": "ExactAbstraction.exact_factor_iff",
+      "scope": "The checked merge-history instance invokes the generic checked criterion."
+    },
+    {
+      "classification": "shared_proof_method_no_import",
+      "project": "Wong timed-history observation",
+      "repository_path": "real/WongTimedHistory.lean",
+      "endpoints": [
+        "observation_independent",
+        "hidden_times_differ",
+        "lineage_counts_differ",
+        "no_exact_time_decoder",
+        "no_exact_lineage_decoder"
+      ],
+      "shared_method": "Equal retained observation, different hidden target values, contradiction for any universally exact decoder.",
+      "boundary": "Contraction of a finite timed interval event graph; no ExactAbstraction import or theorem transfer asserted."
+    },
+    {
+      "classification": "shared_proof_method_no_import",
+      "project": "Finite-gARG specieslike non-identifiability",
+      "repository_path": "real/FiniteGenomeIdentifiability.lean",
+      "endpoints": [
+        "opposite_compatible_completions",
+        "no_exact_specieslike_verdict",
+        "no_exact_specieslike_decoder"
+      ],
+      "shared_method": "One finite input has two compatible completions with opposite target predicates.",
+      "boundary": "Raw topology and old-node ancestry compatibility; not a DNA dataset, genome-owner inference, stochastic identifiability theorem or biological species classifier."
+    },
+    {
+      "classification": "related_question_different_proof",
+      "project": "Q12 statistical calibration",
+      "shared_question": "What can the available observation distinguish?",
+      "boundary": "The complete probability laws differ; finite outcomes overlap. This is not the equal-observation-law obstruction."
+    },
+    {
+      "classification": "biological_analogy_requires_bridge",
+      "topics": [
+        "merge/split players",
+        "cell collectives",
+        "ancestral populations",
+        "cognitive systems"
+      ],
+      "scope": "Motivates choices of state, individuality and observation.",
+      "boundary": "No shared biological mechanism or universal minimal-systems theorem follows without explicit correspondences and evidence."
+    }
+  ],
+  "next_steps_in_order": [
+    {
+      "priority": 1,
+      "target": "Q09",
+      "action": "State the exact future-operation and state-sufficiency contract before extending the game model."
+    },
+    {
+      "priority": 2,
+      "target": "Q12",
+      "action": "Formalize the already specified sharp finite-probability theorem if Lean certification is prioritized."
+    },
+    {
+      "priority": 3,
+      "target": "Q04 applications",
+      "action": "Apply the verified criterion to one explicit observation/action/target map; label source correspondence separately."
+    }
+  ]
+}

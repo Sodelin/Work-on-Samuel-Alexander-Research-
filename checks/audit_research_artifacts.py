@@ -38,6 +38,8 @@ ARTIFACTS = {
     "research/feedback-speciation/package/FeedbackDynamics.lean": 19,
     "research/feedback-speciation/package/FogartyAffinity.lean": 9,
     "research/feedback-speciation/package/FogartyAffinityFixation.lean": 9,
+    "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean": 8,
+    "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean": 8,
 }
 PRINT_AXIOMS = re.compile(r"^\s*#print\s+axioms\s+([A-Za-z0-9_.]+)\s*$", re.M)
 PLACEHOLDER_WARNING = re.compile(

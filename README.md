@@ -1,6 +1,17 @@
 # Working on Samuel Alexander's research
 
-## Wong completion and feedback follow-up — 25 September 2026
+## Current focus: the authors' open problems
+
+The [proof structure and obligation ledger](research/open-problems/time-self-reference/PROOF-STRUCTURE.md) is the detailed entry point for the current program.
+
+The main research direction now follows explicit questions in the supplied time/self-reference and minimal-systems papers. Start with the [problem map and first results](research/open-problems/time-self-reference/README.md), the [seven-paper triage](research/open-problems/time-self-reference/OTHER-PAPERS.md), and the [source catalog](research/source-library/public/CATALOG.md).
+
+The first two Lean modules check **16 selected endpoints**: an exact deterministic abstraction criterion and a merge-history counterexample showing why the current grouping alone cannot determine a predecessor-restoring split. The independently exercised source operators agree with the finite witness. Full-policy reachability, published-paper/code correspondence, general changing-player game theory and novelty remain open. The calibration bound is written mathematics with exact finite checks, not a Lean probability theorem.
+
+The hosted standalone audit is extended to **129 selected endpoints in 19 files**. Each commit's actual hosted result is recorded in [PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks); adding a gate does not itself mean it has passed. Previous work remains preserved. Broad Wong completion is currently held at documented checkpoints while this priority is pursued.
+
+
+## Published Wong and feedback baseline — earlier 25 September 2026
 
 The [Wong completion ledger](research/wong/completion/README.md) now maps 52
 claim families and records six new integrated modules (58 selected endpoints;
@@ -8,7 +19,7 @@ claim families and records six new integrated modules (58 selected endpoints;
 adds a conditional IAP classification, cultural/genetic boundary examples and
 a quantitative fixation bound for the published Fogarty affinity model.
 Its five new modules contribute 53 selected standalone endpoints; the repository
-CI now checks 113 standalone endpoints in 17 files.
+CI at that snapshot checked 113 standalone endpoints in 17 files.
 
 The Wong paper remains partly formalized. The feedback theorem has strong
 pedigree assumptions, its probability adapter is still written-only, and none
@@ -39,7 +50,7 @@ and precise remaining refinements.
 
 ## Wong 2024: the checked mathematical bridge
 
-The current focus is the [source-linked Wong–Alexander outline](WONG-ALEXANDER-OUTLINE.md)
+The earlier Wong work is documented in the [source-linked Wong–Alexander outline](WONG-ALEXANDER-OUTLINE.md)
 and its [machine-readable connection map](research/wong/connection-map.json).
 The finite gARG model, sample restriction and retained-node contraction are
 connected by exact preservation theorems. The actual gARG completion theorem
