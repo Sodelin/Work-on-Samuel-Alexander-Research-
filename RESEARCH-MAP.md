@@ -1,62 +1,112 @@
 # Research map
 
-Alexander's population axioms turn word realization into a graph question:
-which infinite label sequences occur along a path in every eligible infinite
-population? His [2013 positive theorem](https://arxiv.org/html/1212.0186v2)
-covers eventually periodic words. The separate
-[classification manuscript](https://github.com/avg-netizen/biological-unavoidability)
-gives an explicit avoiding graph for every other target. This notebook uses
-that graph to ask quantitative and structural follow-on questions.
+The user's intended cross-paper connection is **Wong et al. (2024), genome
+ancestral recombination graphs, to Alexander's organism/population and
+specieslike graph framework**. The two sources describe different mathematical
+objects. The [Wong bridge audit](notes/WONG-ALEXANDER-BRIDGE-STATUS.md) records
+the exact source pages, checked adapters, missing hypotheses and next proof
+contracts. This connection now leads the research program.
 
-```mermaid
+The separate [classification manuscript](https://github.com/avg-netizen/biological-unavoidability)
+provides an avoiding graph for each non-eventually-periodic binary word.
+Alexander's [2013 positive theorem](https://arxiv.org/html/1212.0186v2) supplies
+the other side of the classification. Our ten extensions of this construction
+have checked answers to their principal questions in the scopes recorded in
+[TEN-SOLUTIONS](TEN-SOLUTIONS.md). They do not settle the entire Wong bridge or
+all of Alexander's open problems.
+
+~~~mermaid
 flowchart TD
-  A[Population axioms and word classification] --> B[Exact finite matching lengths]
-  A --> C[Degree restrictions and crossing counts]
-  A --> D[Specieslike and inspecies structure]
-  B --> E[Sharp Thue-Morse bound]
-  E --> F[Phase and finite-edit stability]
-  B --> G[Arbitrarily slow finite avoidance]
-  E --> H[Full-height digit conjecture]
-  C --> I[Minimum-width rigidity]
-  C --> J[Cap-two versus cap-three fixed genders]
-  D --> J
-  D --> K[Productive cores and boundary repair]
-  A --> L[Stateful cellular-automaton certificates]
-```
+  W[Wong finite genome ARGs] --> R[Sample-supported ancestry relations]
+  W --> O[Genomes to organism owners]
+  R --> Q[Information preserved or lost by observations]
+  O --> A[Infinite Alexander population hypotheses]
+  A --> S[Specieslike and inspecies predicates]
+  A --> B[Binary word classification]
+  B --> H[Exact matching heights and digit recurrences]
+  B --> D[Degree thresholds and finite port encodings]
+  S --> C[Productive cores and boundary repairs]
+  W --> F[Finite observations do not determine infinite futures]
+  F --> A
+~~~
 
-| Branch | What the proof pass establishes | Next substantial question |
+## Current mathematical coverage
+
+| Branch | What is checked in the package | Remaining substantial work |
 |---|---|---|
-| Quantitative avoidance | Sharp phase-zero bound and equality set; exact baseline first hits; real coefficient optimality; finite-edit and phase stability. | Prove or refute the complete digit/valuation formula for every height. |
-| Quantitative aperiodicity | For every function, a constructed aperiodic target has larger actual finite maxima along increasing starts. | Derive useful upper rates from a concrete modulus of nonperiodicity. |
-| Critical degree | Full infinite conservation and triangular minimum crossing width; binary equality rigidity and fixed-gender universality. | General-$`k`$ rigidity and a finite update description of larger-width tails. |
-| Permanent genders | A productive inspecies core avoids each prescribed aperiodic binary word with cap three. | Decide whether cap two is sufficient or find a target requiring three. |
-| Species interfaces | General finite/cofinite IAP and inspecies criteria, exact root-cone criterion, and consecutive-layer universality. | Productive-core behavior in arbitrary clusters and finite label-boundary repairs. |
-| Observation interfaces | Indexed paths survive erasure but cannot always be recovered; history projection and exact observation/prediction criteria. | Identify specific models whose lineage and observation maps satisfy these interfaces. |
-| Cellular automata | Static weighted-mix comparisons, including actual real convex hulls. | A valid stateful local-rule certificate that strictly improves a known same-rule static bound. |
+| Wong finite gARG foundation | Finite acyclic interval-annotated records; acyclic local relations; an exact all-node parent representation under unique local parenthood; comparable local ancestors; bounded injective topological numbering with exact ancestry reflection; piecewise-constant ancestry away from breakpoints. | Canonical interval serialization, sample-tracing algorithm, concrete traversal runtime, and stronger input-validation conventions. The all-node parent representation and sample-restricted relation are separate checked objects. |
+| Ancestral-material restriction | Exact sample-ending path preservation, idempotence, nested-sample composition and union laws; exact indexed recovery iff every incidence is supported; explicit failure when erasure precedes restriction and an invisible-edge counterexample. | Full simplification algorithms: unary suppression, diamond rewrites and truncation above sample MRCAs are not this restriction operation. |
+| Finite history and infinite populations | Two connected, locally finite, finite-root natural-date completions of any ordered finite prefix preserve old edges and ancestry. One is a whole inspecies/maximal specieslike set; the other fails whole-graph IAP. | Compose the finite gARG encoding with these witnesses in one exact endpoint. The completions are mathematical constructions, not inferred biological futures or a diploid-labelled model. |
+| Genome/pedigree interface | Fixed-locus paths survive erasure; paths project to owner equality or organism ancestry under explicit compatibility. | Justify an owner map in a concrete biological model, then establish that model's infinite population and cluster hypotheses. |
+| Quantitative avoidance | The sharp phase-zero bound and equality set, optimal real coefficient, complete attained maximum at every start including zero, and certified ten-coordinate digit evaluator. | A literal integer-module 2-regularity wrapper is a separate check; optimal representation size and generalizations to other substitutions are not established. |
+| Phase and finite edits | Every phase/start has an exact maximum algorithm. Finite edits preserve the optimal coefficient; the universal integer additive allowance and exact equality test are checked. | A joint phase digit recurrence and better complexity or a smaller cutoff for the now-exact individual additive-constant algorithm. |
+| Quantitative aperiodicity | A break modulus gives an explicit iterated-clock upper bound. Aperiodicity alone allows arbitrarily slow finite avoidance. | Useful moduli and sharp rates for additional concrete word families. |
+| Critical degree and port dynamics | General finite-alphabet minimum-width rigidity; actual critical-population finite port encoding; eventually periodic fair schedules realize every infinite word. | Classification beyond minimum width, effective schedule extraction for additional input models, and stronger quantitative bounds. |
+| Permanent genders | Cap two is sufficient for prescribed binary aperiodic avoidance while retaining a whole-graph inspecies; smaller caps are impossible. | Optimal root counts and constraints beyond the checked construction. |
+| Species interfaces | Exact IAP/inspecies criteria; root-cone and maximality results; productive pruning preserves the infinite word language; finite deficiency exactly characterizes deletion-only repair on a fixed retained set. | General maximal-specieslike existence, arbitrary transformation-preservation criteria, and biological interpretation of a concrete infinite model. |
+| Cellular automata | A complete synthetic three-state rule, a state potential that excludes nonzero horizontal finite-support spaceship motion, and a same-rule optimal static bound, including real convex hulls. | Improvements for natural binary rules or published rules, and other directions or certificate classes. |
+| Observation and dynamics | Recovery iff fibre constancy and exact deterministic prediction iff observation compatibility. | Specific biological or psychological state spaces, transitions, observations and evidence. These generic facts are not an instantiated scientific theory. |
 
-The [ten proposals](TEN-RESEARCH-IDEAS.md) state these targets precisely, with
-checked seeds and decisive tests. [FORMALIZATION.md](FORMALIZATION.md) records
-the exact Lean statements. The positive binary theorem and arbitrary real-date
-model bridges are now checked, so they no longer occupy the research gap list.
-General finite-alphabet positive proofs and full CA dynamics remain outside
-the package.
+The three new bridge modules received individual compiler/axiom checks in the
+current continuation: AncestralRestriction (11 selected endpoints),
+FiniteHistoryCompletion (7) and WongGARG (10). Their registration in a fresh
+aggregate receipt and hosted CI is a separate integration check. The current
+proof inventory is in [FORMALIZATION](FORMALIZATION.md) and
+[STATUS](STATUS.md), with machine-readable source inventories in
+[verification](verification). Receipts apply only to the files and toolchain
+they identify.
+
+## Why the Wong connection is mathematically useful
+
+Wong's Appendix E uses persistent node identities and unsuppressed local
+parent arrays. Sample-based restriction recovers the sample-supported indexed
+edge relation; recovering every original edge also requires support for every
+retained edge-position incidence. The source audit states this condition and
+the checked counterexample without it. The current parent-pointer theorem
+represents the whole local relation; it does not claim execution of tskit's
+sample-tracing algorithm.
+
+That exact finite representation still does not determine an infinite
+genealogical future. An owner map needs a per-edge compatibility proof, and an
+infinite population must satisfy its own birth-order, finiteness and role-label
+conditions. Specieslike status adds connectedness, IAP and ambient convexity.
+The contrasting-completion theorem establishes this limitation for exact
+finite ordered topology and ancestry, not merely for incomplete measurements.
+
+Neither Wong's shared ancestors across local trees nor the repository's
+Thue–Morse digit identities establish literal graph self-similarity. The new
+breakpoint theorem states local constancy between interval boundaries, which
+is another distinct property. Any scale-symmetry claim needs an explicit map
+and a specified preserved structure.
+
+## Attribution and the four deliverables
 
 The [prior-work audit](PRIOR-WORK-AUDIT.md) and
 [older-construction comparison](notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
-matter mathematically: inspecies/cofinite-descendant and multiple-root cone
-phenomena already appear in Alexander's work. His 2013 Section 6 also points
-to forbidden-subtree universality and graph-rank theory. The claims worth
-reviewing here concern narrower quantitative, uniform-cap and simultaneous
-preservation statements, not discovery of those broad connections.
+keep established ideas visible: Alexander already discusses inspecies,
+cofinite descendants, multiple-root cones, universal-graph questions and
+ordinal-rank directions. Wong already describes the genome/pedigree
+relationship and information loss in local-tree simplification.
 
-The [full-height conjecture](research/thue-morse/FULL-HEIGHT-CONJECTURE.md)
-illustrates the evidence boundary: exact finite computations can falsify it,
-but passing them does not certify all indices. Its candidate evaluator remains
-research code until its actual graph identities are proved.
+The former [full-height conjecture](research/thue-morse/FULL-HEIGHT-CONJECTURE.md)
+now has a [checked proof](notes/FULL-HEIGHT-PROOF.md) and certified evaluator.
+The conjecture file is a historical development artifact; its former status
+must not be copied into a current open-problem list.
 
-For review, start with the [handoff](HANDOFF-FOR-ALEXANDER.md),
-[question ledger](QUESTION-LEDGER.md), [status](STATUS.md), and
-[reproduction guide](REPRODUCE.md). The broader emergence discussion is kept
-in the [exploratory appendix](explorations/COMPLEX-SYSTEMS-INTERFACE.md), where
-specific models and maps still need to be supplied. These graph results do
-not classify empirical species or establish biological inheritance models.
+Use [DELIVERY-MAP](DELIVERY-MAP.md) to separate the reproducible Lean release,
+the readable email to Alexander, the focused VibeMathed candidate, and the
+public notebook. The email should explain the Wong bridge and its exact
+boundary. The VibeMathed candidate is the distinct sharp Thue–Morse
+quantitative result answering the separate September manuscript's earlier
+question. A source formalization and a newly resolved open problem are
+different contribution types.
+
+For detailed review, use the [handoff](HANDOFF-FOR-ALEXANDER.md),
+[question ledger](QUESTION-LEDGER.md), and
+[reproduction guide](REPRODUCE.md). The
+[complex-systems appendix](explorations/COMPLEX-SYSTEMS-INTERFACE.md) remains
+exploratory; no concrete Levin, Friston, psychological or consciousness
+model is established by the present graph results.
+
+
+The finite interval output gap for sample restriction and **fixed** node contraction is closed by WongSimplification. Its automatic cells come from the actual input endpoints; output has no new stored endpoints. Adjacent intervals may remain separate. The diamond example distinguishes information lost by removing supported parent identities from information lost by sample filtering. FiniteGenomeIdentifiability is a direct abstract-completion corollary, not a biological observation model.

@@ -1,0 +1,32 @@
+{
+  "mathlib_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "direct_roots": [
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.Order.Archimedean.Basic",
+    "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+    "Mathlib.Analysis.Convex.Hull",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Finset.Filter",
+    "Mathlib.Data.Finset.Max",
+    "Mathlib.Data.Finset.Prod",
+    "Mathlib.Data.Finset.Union",
+    "Mathlib.Data.Fintype.EquivFin",
+    "Mathlib.Data.Fintype.Prod",
+    "Mathlib.Data.List.Sort",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+    "Mathlib.Order.Zorn",
+    "Mathlib.Probability.Kernel.IonescuTulcea.Traj",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.Algebra.InfiniteSum.ENNReal"
+  ],
+  "source_closure_count": 2714,
+  "shared_missing_olean": [],
+  "scope": "Read-only availability check against pinned primary Mathlib source closure; not independent cache acquisition authentication."
+}

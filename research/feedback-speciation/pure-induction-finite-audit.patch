@@ -1,0 +1,6 @@
+--- a/checks/audit_research_artifacts.py
++++ b/checks/audit_research_artifacts.py
+@@ -46,2 +46,3 @@
+     "research/feedback-speciation/finite-epigenetic/RankingReversal.lean": 3,
++    "research/feedback-speciation/pure-induction-finite/PureInductionJoint.lean": 4,
+ }

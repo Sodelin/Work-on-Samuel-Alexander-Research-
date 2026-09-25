@@ -1,0 +1,313 @@
+{
+  "staging_area": "research-coordination/publication/finite-epigenetic-v1",
+  "schema_version": 1,
+  "manifest_note": "MANIFEST.json is preserved byte-for-byte and describes upstream originals. Publication-only changes are listed here and in member hashes.",
+  "four_lean_sources": [
+    {
+      "upstream_sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "path": "FiniteFixation.lean",
+      "staged_sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "identical": true
+    },
+    {
+      "upstream_sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "path": "FiniteEpigenetic.lean",
+      "staged_sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "identical": true
+    },
+    {
+      "upstream_sha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f",
+      "path": "DeterministicEpigenetic.lean",
+      "staged_sha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f",
+      "identical": true
+    },
+    {
+      "upstream_sha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894",
+      "path": "RankingReversal.lean",
+      "staged_sha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894",
+      "identical": true
+    }
+  ],
+  "upstream_manifest_sha256": "d65904d4929bec23c16424bf0ca66f780a8860a6eba0b54936ad178919997650",
+  "staged_changes": [
+    {
+      "upstream_sha256": "ce90c736f3f5877681bfa541ae1074e444e5348cbcfcd93faa4c492f1215c076",
+      "path": "DETERMINISTIC-COMPARISON.md",
+      "staged_sha256": "6a7330fb500307cec68422b3ca26bcd2441d1709fcade0c03e88578e57d886fa",
+      "bytes": 13224
+    },
+    {
+      "upstream_sha256": "be3d7a88610e750f1709d4082cf19b0796935416e20d4bd5a28733074ea7bd1a",
+      "path": "FINITE-RESULT.md",
+      "staged_sha256": "d64298be046af420b073a60e42e799d6b3aa1c391447bff680c806c4eb016c3e",
+      "bytes": 7966
+    },
+    {
+      "upstream_sha256": "be85430f9c6c0cfc194090d93c95c2b791a11092b146daebdd393d547f31e328",
+      "path": "README.md",
+      "staged_sha256": "defd55f19e48abcc0f01897d0f20b6d295f9f864e31e467195a6d6d962df4cee",
+      "bytes": 6550
+    },
+    {
+      "upstream_sha256": "b9bb951ef2ac559f8d615751fa42d63ce9cbc39e2745a0be7a208c7a4c39d3a6",
+      "path": "Check.ps1",
+      "staged_sha256": "5963e92162b2cf4089dedec636d9a6422894fcdb3725581b9e5f23db0fdc6a64",
+      "bytes": 1648
+    }
+  ],
+  "packet": "finite-epigenetic-v1",
+  "upstream_manifest_member_count": 33,
+  "upstream_manifest_file": "MANIFEST.json",
+  "preserved_verification_logs": [
+    {
+      "path": "verification\\FiniteFixation.log",
+      "byte_exact": true
+    },
+    {
+      "path": "verification\\FiniteEpigenetic.log",
+      "byte_exact": true
+    },
+    {
+      "path": "verification\\DeterministicEpigenetic.log",
+      "byte_exact": true
+    },
+    {
+      "path": "verification\\RankingReversal.log",
+      "byte_exact": true
+    }
+  ],
+  "upstream_packet": "feedback-speciation/finite-epigenetic/release/finite-epigenetic-v1",
+  "staged_manifest_members": [
+    {
+      "upstream_sha256": "be85430f9c6c0cfc194090d93c95c2b791a11092b146daebdd393d547f31e328",
+      "path": "README.md",
+      "staged_sha256": "defd55f19e48abcc0f01897d0f20b6d295f9f864e31e467195a6d6d962df4cee",
+      "changed": true,
+      "bytes": 6550
+    },
+    {
+      "upstream_sha256": "7451183f23d1e683c00e93a996352325fb5796b6f4c42aab6eff06fb876667fd",
+      "path": "RELEASE-NOTES.md",
+      "staged_sha256": "7451183f23d1e683c00e93a996352325fb5796b6f4c42aab6eff06fb876667fd",
+      "changed": false,
+      "bytes": 4459
+    },
+    {
+      "upstream_sha256": "be3d7a88610e750f1709d4082cf19b0796935416e20d4bd5a28733074ea7bd1a",
+      "path": "FINITE-RESULT.md",
+      "staged_sha256": "d64298be046af420b073a60e42e799d6b3aa1c391447bff680c806c4eb016c3e",
+      "changed": true,
+      "bytes": 7966
+    },
+    {
+      "upstream_sha256": "ce90c736f3f5877681bfa541ae1074e444e5348cbcfcd93faa4c492f1215c076",
+      "path": "DETERMINISTIC-COMPARISON.md",
+      "staged_sha256": "6a7330fb500307cec68422b3ca26bcd2441d1709fcade0c03e88578e57d886fa",
+      "changed": true,
+      "bytes": 13224
+    },
+    {
+      "upstream_sha256": "d0705e105a4eca313a9b034a466f6f85261ca5df519e20799d17d7a29abc3cd8",
+      "path": "SOURCE-MODEL-CONTRACT.md",
+      "staged_sha256": "d0705e105a4eca313a9b034a466f6f85261ca5df519e20799d17d7a29abc3cd8",
+      "changed": false,
+      "bytes": 16481
+    },
+    {
+      "upstream_sha256": "9f025b49a8f023b7c0c6026d03390eb361a7815514cd24f4289d474acb30ee33",
+      "path": "RESEARCH-QUESTIONS-AND-HANDOFF.md",
+      "staged_sha256": "9f025b49a8f023b7c0c6026d03390eb361a7815514cd24f4289d474acb30ee33",
+      "changed": false,
+      "bytes": 8297
+    },
+    {
+      "upstream_sha256": "96b962a928429dc1115d07a97d82f2e92a3e665c08e0c3264a61f44668631aa2",
+      "path": "PRIOR-WORK.md",
+      "staged_sha256": "96b962a928429dc1115d07a97d82f2e92a3e665c08e0c3264a61f44668631aa2",
+      "changed": false,
+      "bytes": 15097
+    },
+    {
+      "upstream_sha256": "cccb4260daa42520c3c0cde7ac45f6e8839c1d7ed4a04e7c7c66bde71d78d43e",
+      "path": "INDEPENDENT-MODEL-AUDIT.md",
+      "staged_sha256": "cccb4260daa42520c3c0cde7ac45f6e8839c1d7ed4a04e7c7c66bde71d78d43e",
+      "changed": false,
+      "bytes": 14099
+    },
+    {
+      "upstream_sha256": "379fc755b8f7c1001565c09266b8658dd13f8f3ea18a787314596acf6950cd57",
+      "path": "DETERMINISTIC-INDEPENDENT-AUDIT.md",
+      "staged_sha256": "379fc755b8f7c1001565c09266b8658dd13f8f3ea18a787314596acf6950cd57",
+      "changed": false,
+      "bytes": 14745
+    },
+    {
+      "upstream_sha256": "8cfcef2595a039015b3a91da034307c71d6251e4cfe0b02e0e596d5de1cafe36",
+      "path": "FINITE-FIXATION-NOTE.md",
+      "staged_sha256": "8cfcef2595a039015b3a91da034307c71d6251e4cfe0b02e0e596d5de1cafe36",
+      "changed": false,
+      "bytes": 5244
+    },
+    {
+      "upstream_sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "path": "FiniteFixation.lean",
+      "staged_sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "changed": false,
+      "bytes": 15133
+    },
+    {
+      "upstream_sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "path": "FiniteEpigenetic.lean",
+      "staged_sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "changed": false,
+      "bytes": 12917
+    },
+    {
+      "upstream_sha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f",
+      "path": "DeterministicEpigenetic.lean",
+      "staged_sha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f",
+      "changed": false,
+      "bytes": 10445
+    },
+    {
+      "upstream_sha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894",
+      "path": "RankingReversal.lean",
+      "staged_sha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894",
+      "changed": false,
+      "bytes": 1705
+    },
+    {
+      "upstream_sha256": "1b852d6dedd1775eb4733943c9f85af8cad09068838bc41120919f7fb6771a78",
+      "path": "finite_life_cycle.py",
+      "staged_sha256": "1b852d6dedd1775eb4733943c9f85af8cad09068838bc41120919f7fb6771a78",
+      "changed": false,
+      "bytes": 6234
+    },
+    {
+      "upstream_sha256": "0673ba5e48782d353fb4af2bc7607a18d36279d9486e5b3a7707d777fc25cc04",
+      "path": "count_model.py",
+      "staged_sha256": "0673ba5e48782d353fb4af2bc7607a18d36279d9486e5b3a7707d777fc25cc04",
+      "changed": false,
+      "bytes": 3599
+    },
+    {
+      "upstream_sha256": "ec7a8876c02a49a97d9f0ccdecd6ff73c300ada5e07affe90d6da380d74cf54b",
+      "path": "count-certificates.json",
+      "staged_sha256": "ec7a8876c02a49a97d9f0ccdecd6ff73c300ada5e07affe90d6da380d74cf54b",
+      "changed": false,
+      "bytes": 7380
+    },
+    {
+      "upstream_sha256": "e8141b99a56dc541fb7de29e61368c7b4a8175f863a611032411ba306be96d6e",
+      "path": "genetic-exact.json",
+      "staged_sha256": "e8141b99a56dc541fb7de29e61368c7b4a8175f863a611032411ba306be96d6e",
+      "changed": false,
+      "bytes": 160004
+    },
+    {
+      "upstream_sha256": "4f8dcb6c5db29aab052eb5fca29bd4522b5a78197972306e41f42068737a0088",
+      "path": "epigenetic-exact.json",
+      "staged_sha256": "4f8dcb6c5db29aab052eb5fca29bd4522b5a78197972306e41f42068737a0088",
+      "changed": false,
+      "bytes": 128313
+    },
+    {
+      "upstream_sha256": "53302a86d2bb5074421a3c11742508be3cf7176f1cf3030969c7a22688043dbd",
+      "path": "deterministic_comparison.py",
+      "staged_sha256": "53302a86d2bb5074421a3c11742508be3cf7176f1cf3030969c7a22688043dbd",
+      "changed": false,
+      "bytes": 7386
+    },
+    {
+      "upstream_sha256": "4ce879e63c60a8540e41542eda32a73433f7b259ed608fd360886c380b2b8893",
+      "path": "generate_lean.py",
+      "staged_sha256": "4ce879e63c60a8540e41542eda32a73433f7b259ed608fd360886c380b2b8893",
+      "changed": false,
+      "bytes": 12234
+    },
+    {
+      "upstream_sha256": "b9bb951ef2ac559f8d615751fa42d63ce9cbc39e2745a0be7a208c7a4c39d3a6",
+      "path": "Check.ps1",
+      "staged_sha256": "5963e92162b2cf4089dedec636d9a6422894fcdb3725581b9e5f23db0fdc6a64",
+      "changed": true,
+      "bytes": 1648
+    },
+    {
+      "upstream_sha256": "2072ecbdfad3d5e142f382178dedb739e5611ddfb985827ef233664cd3e514b4",
+      "path": "lakefile.lean",
+      "staged_sha256": "2072ecbdfad3d5e142f382178dedb739e5611ddfb985827ef233664cd3e514b4",
+      "changed": false,
+      "bytes": 386
+    },
+    {
+      "upstream_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "path": "lean-toolchain",
+      "staged_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "changed": false,
+      "bytes": 25
+    },
+    {
+      "upstream_sha256": "64777cae3a687fcdacc123238eb4033827c589129b39b79d5339ce50eab636de",
+      "path": "make_receipt.py",
+      "staged_sha256": "64777cae3a687fcdacc123238eb4033827c589129b39b79d5339ce50eab636de",
+      "changed": false,
+      "bytes": 2538
+    },
+    {
+      "upstream_sha256": "48b505ac4e5be1661b48d854a23f7475f3e26d427c17a607af3c2016b98e2765",
+      "path": "make_combined_receipt.py",
+      "staged_sha256": "48b505ac4e5be1661b48d854a23f7475f3e26d427c17a607af3c2016b98e2765",
+      "changed": false,
+      "bytes": 3894
+    },
+    {
+      "upstream_sha256": "d274f64953f19efa23857e2a4d769a49566ad0e91107599fc3e856f5a7b8ddf0",
+      "path": "verify_packet.py",
+      "staged_sha256": "d274f64953f19efa23857e2a4d769a49566ad0e91107599fc3e856f5a7b8ddf0",
+      "changed": false,
+      "bytes": 420
+    },
+    {
+      "upstream_sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0",
+      "path": "verification/finite-receipt.json",
+      "staged_sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0",
+      "changed": false,
+      "bytes": 3046
+    },
+    {
+      "upstream_sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb",
+      "path": "verification/combined-receipt.json",
+      "staged_sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb",
+      "changed": false,
+      "bytes": 5485
+    },
+    {
+      "upstream_sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1",
+      "path": "verification/FiniteFixation.log",
+      "staged_sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1",
+      "changed": false,
+      "bytes": 1579
+    },
+    {
+      "upstream_sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621",
+      "path": "verification/FiniteEpigenetic.log",
+      "staged_sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621",
+      "changed": false,
+      "bytes": 1261
+    },
+    {
+      "upstream_sha256": "3f6fe7dc138c1af22dcfd65cb12a9bf763ce61ffcb5356baf621267453d6a9b0",
+      "path": "verification/DeterministicEpigenetic.log",
+      "staged_sha256": "3f6fe7dc138c1af22dcfd65cb12a9bf763ce61ffcb5356baf621267453d6a9b0",
+      "changed": false,
+      "bytes": 1361
+    },
+    {
+      "upstream_sha256": "2cf2a1acdcbb57fef8e805ce0f3dfbf75576da9e0a7ff93171b9647cdcbad750",
+      "path": "verification/RankingReversal.log",
+      "staged_sha256": "2cf2a1acdcbb57fef8e805ce0f3dfbf75576da9e0a7ff93171b9647cdcbad750",
+      "changed": false,
+      "bytes": 310
+    }
+  ]
+}

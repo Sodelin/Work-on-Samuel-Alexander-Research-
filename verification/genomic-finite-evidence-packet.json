@@ -1,0 +1,28 @@
+{
+  "created_at_utc": "2026-09-25T11:21:48.392762+00:00",
+  "base_public_commit": "8fd86430e78fed06fffe35df2fa85f28bdff48d9",
+  "scope": "Primary evidence map and formalization of known finite-evidence results, adding eight standalone endpoints; no universal genomic species-identification claim. Completion email update sent; VibeMathed curator update awaiting direct user confirmation.",
+  "files_sha256": {
+    "checks/audit_research_artifacts.py": "682748e5c46484085e18a559f32db4510c7d1a99eb37b78ca2f5c28042c82308",
+    "COMPLETION-MAP.md": "be7042f32fcc9b2509b4ddded3a8c52f5302ea488cbf5c72726774e931e7725e",
+    "PUBLICATION-STATUS.md": "fe7cfa13a0ee6472b15bce7d6666bc4ebe62f036821e02c00ede3aac69426639",
+    "README.md": "1370aa6396e5745e5d87447f6d5fa2bc310b69adc6b5d1873f3a2c1400965f71",
+    "research/open-questions/genomic-identifiability/next/Check.ps1": "ff6dfee61b56e0ec13394c045c11276cf70084cbbedaa657b6763ab663ea74b3",
+    "research/open-questions/genomic-identifiability/next/dna_species_evidence_ledger.md": "c6bce847ca1213af3d1015e741f759ab04654d52c3ddeedda1df2740b7094601",
+    "research/open-questions/genomic-identifiability/next/dna_species_search_log.md": "f8f3f6f59b891c3d59647040c6d009203fdc785954af680f1d361485757548bb",
+    "research/open-questions/genomic-identifiability/next/FORMAL-SCOPE.md": "0844e5dfb4ed787fa5e5a9b5b6b9cb2d38311eb219e718e26a64e28f843e0fcf",
+    "research/open-questions/genomic-identifiability/next/README.md": "9500d3437323c51443b2c6ae591516a96e7b3e47f35f32a040325988f3c55643",
+    "research/open-questions/genomic-identifiability/next/search-protocol.json": "1a3c6f79067f42b2780d76be1eef9914ad02a067ad8c7b71b676bbb6e8274ad1",
+    "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean": "01f53ac6176f612beda29475805d5c27293db7a35d10907a2db3ad8a96ae18f5",
+    "research/open-questions/genomic-identifiability/next/validation.txt": "3d0ebb0051e6a93d50b634ab816fb83c6a1193a16d17e71fd67d9303946d5732",
+    "research/open-questions/genomic-identifiability/next/verification.json": "39a515edbd5d9269716cf05bf42d76348c6d0168f6d8548e4e3cd2f2766ae69a",
+    "research/open-questions/genomic-identifiability/README.md": "d903218460bb50e80447f171c27ea96cadf03104b88ca6deb243fa63003fdbbd",
+    "research/open-questions/manifest.json": "c8f80a895950414a3cb64fb40500c2adb077a9d04235960119bfa5fd8694fc23",
+    "verification/genomic-finite-evidence-audit-local.json": "e56378794fefec91060a0e958770cb95c3e7a948bbaba41f1c2787e7c32f8877",
+    "verification/genomic-finite-evidence-format.json": "74d13c27a0373fa7fb551a6a5d7db46eabd66e80484811addbd796d4985496e4"
+  },
+  "core_endpoints": 405,
+  "real_endpoints": 151,
+  "standalone_endpoints": 60,
+  "standalone_modules": 12
+}

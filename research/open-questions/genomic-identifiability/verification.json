@@ -1,0 +1,19 @@
+{
+  "status": "local_lean_pass",
+  "lean_version": "4.33.1",
+  "exit_code": 0,
+  "source_sha256": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
+  "import": "WongAlexander",
+  "import_published_commit": "bcef6da64672310b314f2bc17c96f9535fcaaf5b",
+  "endpoints": [
+    "FiniteGenomeIdentifiability.opposite_compatible_completions",
+    "FiniteGenomeIdentifiability.no_exact_specieslike_verdict",
+    "FiniteGenomeIdentifiability.no_exact_specieslike_decoder"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "Abstract finite-gARG topology completions; not DNA observations, biological owner maps, species delimitation, or a statistical inference result."
+}

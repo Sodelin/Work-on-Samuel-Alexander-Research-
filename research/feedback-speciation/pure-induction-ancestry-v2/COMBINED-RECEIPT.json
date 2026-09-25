@@ -1,0 +1,286 @@
+{
+  "status": "LOCAL_NEW_MODULE_CHECKS_PASS",
+  "recordedUtc": "2026-09-25T17:52:35.776950+00:00",
+  "lean": "4.33.1",
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "freshCompleteDependencyReplay": false,
+  "cleanMachineDownloadTested": false,
+  "selectedNewEndpointCount": 36,
+  "maximumWorkers": 1,
+  "memoryLimitMb": 4096,
+  "modules": [
+    {
+      "module": "PureInductionR1R2",
+      "source": "PureInductionR1R2.lean",
+      "log": "verification/PureInductionR1R2.log",
+      "compilerExitCode": 0,
+      "sourceSha256": "633afd20f24da1c9cb86c5db7dda2bc1596b09cd634fe93ad0a70de0c5a8b85d",
+      "oleanSha256": "3e1a6cadb94a51ffdfedad13bb2a0ed05a0508ba00074cbe6f4373ea6d5878b1",
+      "logSha256": "dc4d310a753b43db26509618107d25dc94da8342b5b89a809d8279d0f3429ee4",
+      "selectedEndpoints": [
+        "PureInductionR1R2.raw_fibre_card",
+        "PureInductionR1R2.raw_event_card",
+        "PureInductionR1R2.raw_designated_numerator",
+        "PureInductionR1R2.ordinaryState_vals",
+        "PureInductionR1R2.ordinary_all_cross",
+        "PureInductionR1R2.pulse_all_cross",
+        "PureInductionR1R2.ordinary_off_support",
+        "PureInductionR1R2.pulse_off_support",
+        "PureInductionR1R2.ordinary_all_real",
+        "PureInductionR1R2.pulse_all_real"
+      ],
+      "axiomReports": {
+        "PureInductionR1R2.raw_fibre_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.raw_event_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.raw_designated_numerator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.ordinaryState_vals": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.ordinary_all_cross": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.pulse_all_cross": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.ordinary_off_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.pulse_off_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.ordinary_all_real": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionR1R2.pulse_all_real": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "compilerEvidenceOrigin": "Sol2 successful compiler handoff, independently checked hashes"
+    },
+    {
+      "module": "PureInductionNoise",
+      "source": "PureInductionNoise.lean",
+      "log": "verification/PureInductionNoise.log",
+      "compilerExitCode": 0,
+      "sourceSha256": "53e77f062c0dfd23b274e9ddc801f8b8136f7783786600a407f6b657584018a0",
+      "oleanSha256": "5930f1c3c49be632c90e0c923f32e2eb2fd942f1dabf008d0c1a42695a97f1ac",
+      "logSha256": "519354f6ea83c0c08ebc79825a602c9fffc9561b40874977d9445105a6f59ebe",
+      "selectedEndpoints": [
+        "PureInductionNoise.parent_schedule_law",
+        "PureInductionNoise.actual_parent_ae_iap",
+        "PureInductionNoise.avoidance_exact",
+        "PureInductionNoise.history_avoid_inter",
+        "PureInductionNoise.history_avoid_conditional",
+        "PureInductionNoise.unresolved_probability_bound",
+        "PureInductionNoise.unresolved_history_bound",
+        "PureInductionNoise.unresolved_conditional_bound"
+      ],
+      "axiomReports": {
+        "PureInductionNoise.parent_schedule_law": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.actual_parent_ae_iap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.avoidance_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.history_avoid_inter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.history_avoid_conditional": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.unresolved_probability_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.unresolved_history_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionNoise.unresolved_conditional_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "compilerEvidenceOrigin": "Direct local compiler result and hashed receipt"
+    },
+    {
+      "module": "PureInductionPaths",
+      "source": "PureInductionPaths.lean",
+      "log": "verification/PureInductionPaths.log",
+      "compilerExitCode": 0,
+      "sourceSha256": "f30a50c742c6348973711fbd73c2139a33efe9185e2218a74874d42a1aaeb4d3",
+      "oleanSha256": "eefc8c8e56ad20150d50f820460d13bba36c40b681c4dd36c0529fb7053c4112",
+      "logSha256": "5e90a3eb33addae9af6b845f182fb405ee419133741d4e16707d4a31f6a30604",
+      "selectedEndpoints": [
+        "PureInductionPaths.countPath_measurable",
+        "PureInductionPaths.countPath_depends_prefix",
+        "PureInductionPaths.pathEvent_eq_noise_box",
+        "PureInductionPaths.path_probability_product",
+        "PureInductionPaths.coupled_measurable",
+        "PureInductionPaths.joint_parent_projection",
+        "PureInductionPaths.unresolved_measurable"
+      ],
+      "axiomReports": {
+        "PureInductionPaths.countPath_measurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionPaths.countPath_depends_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionPaths.pathEvent_eq_noise_box": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionPaths.path_probability_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionPaths.coupled_measurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionPaths.joint_parent_projection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionPaths.unresolved_measurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "compilerEvidenceOrigin": "Direct local compiler result and hashed receipt"
+    },
+    {
+      "module": "PureInductionAncestry",
+      "source": "PureInductionAncestry.lean",
+      "log": "verification/PureInductionAncestry.log",
+      "compilerExitCode": 0,
+      "sourceSha256": "cc58fed43614564e0bdfaa6fb2527b035cf789c45b3096d15ddb8693a64c855d",
+      "oleanSha256": "1a43551b9b1a2fd0c1cf9ea4b7ed991a65cb562404ef04e6ae8e241270482c59",
+      "logSha256": "4049c721c6f2162a2a59906916720be47d3f95aa9ecc208beaeb8e01fd19f00b",
+      "selectedEndpoints": [
+        "PureInductionAncestry.raw_record_mass",
+        "PureInductionAncestry.ordinary_mass",
+        "PureInductionAncestry.pulse_mass",
+        "PureInductionAncestry.finite_path_frozen",
+        "PureInductionAncestry.shared_mass",
+        "PureInductionAncestry.shared_avoidance_exact",
+        "PureInductionAncestry.shared_history_exact",
+        "PureInductionAncestry.shared_conditional_exact",
+        "PureInductionAncestry.resolution_bound",
+        "PureInductionAncestry.resolution_conditional_bound",
+        "PureInductionAncestry.marker_barrier_and_iap"
+      ],
+      "axiomReports": {
+        "PureInductionAncestry.raw_record_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.ordinary_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.pulse_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.finite_path_frozen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.shared_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.shared_avoidance_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.shared_history_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.shared_conditional_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.resolution_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.resolution_conditional_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PureInductionAncestry.marker_barrier_and_iap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "compilerEvidenceOrigin": "Direct local compiler result and hashed receipt"
+    }
+  ],
+  "scope": "Bounded R1-R6: frozen kernel statistic plus actual-law finite-path realization and IAP; no separate raw eventual-fixation-event theorem"
+}

@@ -1,0 +1,21 @@
+{
+  "baseline_commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
+  "direct_imports": [
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+    "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+    "Mathlib.Probability.Kernel.IonescuTulcea.Traj",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Topology.Algebra.InfiniteSum.ENNReal"
+  ],
+  "not_explicit_in_current_workflow": [
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+    "Mathlib.Probability.Kernel.IonescuTulcea.Traj",
+    "Mathlib.Topology.Algebra.InfiniteSum.ENNReal"
+  ],
+  "instruction": "Auditor merges these imports into the current workflow cache command. No workflow file is staged by this lane."
+}

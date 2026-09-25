@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "document_id": "wong-2024-iyae100",
+  "title": "A general and efficient representation of ancestral recombination graphs",
+  "identifiers": {
+    "pmcid": "PMC11373519",
+    "pmcaid": "11373519",
+    "pmcaiid": "11373519",
+    "pmid": "39013109",
+    "doi": "10.1093/genetics/iyae100"
+  },
+  "original": {
+    "received_at_utc": "2026-09-25T12:48:52.320041+00:00",
+    "original_filename": "PMC11373519-fullText.xml",
+    "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11373519/fullTextXML",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11373519/fullTextXML",
+    "declared_content_type": "application/xml",
+    "bytes": 275110,
+    "sha256": "2b77c349f39d2885b3e36d3bcab639a7ef3b9c6217263031aa4bc8f1c2a0d05e",
+    "signature_hex": "3c3f786d6c2076657273696f6e3d2231",
+    "status": "isolated-unparsed",
+    "digital_signature": "not applicable to XML"
+  },
+  "local_original_format": "Published-article XML supplied by Europe PMC",
+  "page_count_for_xml": null,
+  "remote_publisher_version_pdf": {
+    "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/458588307/iyae100.pdf",
+    "pages": 19,
+    "journal_pages": 18,
+    "cover_pages": 1,
+    "local_bytes_or_hash": null
+  },
+  "status": "extracted-unverified",
+  "digital_signature": "not applicable to XML; remote PDF signature not inspected",
+  "original_preservation": "Original XML bytes remain unchanged after intake; derivatives have distinct filenames.",
+  "parse_safety": "Standard-library XML parser; no network during parsing, external entities or embedded code executed; no PDF parser run.",
+  "derivative_manifest": "extraction-manifest.json",
+  "acquisition_limits": [
+    "Original www.ncbi.nlm.nih.gov PMC OA metadata endpoint returned404.",
+    "Current pmc.ncbi.nlm.nih.gov OA metadata endpoint returned404.",
+    "PMC linked PDF returned browser verification challenge via web tool; not bypassed.",
+    "Europe PMC ordinary public PDF endpoint returned403; no retry.",
+    "Edinburgh publisher-version PDF accessible in web tool; no locally acquired bytes or pypdf extraction."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "observed_utc": "2026-09-25T07:15:23.994693+00:00",
+  "repository": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-",
+  "pull_request": 5,
+  "state": "merged",
+  "tested_head": "e0ff308a10702d6f0f43c914f8260525f1ac820c",
+  "merge_commit": "425fee8c90e15656caea954ac92beaf28a5d869f",
+  "tree": "b8a92b409632e9cc0d5320060250e279b137ecfc",
+  "ci": {
+    "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36106341968",
+    "run_id": 36106341968,
+    "job_id": 107979616829,
+    "result": "success",
+    "all_steps": "success"
+  },
+  "formal": {
+    "core_modules": 33,
+    "selected_core_endpoints": 275,
+    "selected_real_endpoints": 19,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source_hashes_match_committed_bytes": true
+  },
+  "formatting": {
+    "files": 56,
+    "expressions": 2167,
+    "local_mathjax_errors": 0,
+    "representative_github_visual_checks": "pass"
+  },
+  "owner_clone": "C:/Users/Owner/Documents/GitHub/Work-on-Samuel-Alexander-Research-",
+  "owner_clone_status": "clean main at merge commit",
+  "scope": [
+    "Literature search is bounded; no global novelty certificate.",
+    "Complete matching-height formula remains conjectural.",
+    "Cap-two fixed-gender avoidance and general-k rigidity remain open.",
+    "General finite-alphabet positive proof and full cellular-automaton dynamics are not encoded.",
+    "No empirical psychology or biological species validation is implied.",
+    "No email sent; tasks remain unarchived."
+  ]
+}

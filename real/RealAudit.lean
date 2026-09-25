@@ -1,4 +1,37 @@
+import WongWaitingTimes
+import WongBigARGDrift
+import WongCountChain
+import WongBigARGAbsorption
+import WongMRCATruncation
+import WongIntervalCanonicalization
+import WongSimplificationNormalForm
+import WongTimedHistory
+import WongMemoizedTracing
+import WongLocalSimplification
+import WongEventDecoding
+import WongRecordTracing
+import WongSampleTracing
+import FounderWindow
+import DirectedIAP
+import SeedIntersections
+import RealFounderWindow
+import FounderMaximal
+import SpeciesReindex
+import SpeciesSeed
+import RealSpeciesTheorem
+import FiniteGenomeIdentifiability
+import WongDiamond
+import WongSimplification
+import WongIntervalNormalization
+import WongBreakpointCells
+import WongEventEncoding
+import WongLocalArity
+import WongExamples
+import WongAlexander
+import WongGARG
 import RealBridges
+import PortEncoding
+import StatefulCAReal
 
 /-! Selected endpoints for the optional real-number development. -/
 #print axioms RealBridges.finiteCover_iff_setFinite
@@ -20,3 +53,340 @@ import RealBridges
 #print axioms RealBridges.real_subcritical_impossible
 #print axioms RealBridges.real_at_least_k_distinct_roots
 #print axioms RealBridges.real_alphabet_le_root_cover_length
+#print axioms PortEncoding.eventual_encoding
+#print axioms PortEncoding.encoding_exact
+#print axioms PortEncoding.encoding_fair
+#print axioms PortEncoding.encoding_legal
+#print axioms PortEncoding.tail_label_lt
+#print axioms PortEncoding.cut_width_constant
+#print axioms PortEncoding.encoded_periodic_realizes
+#print axioms StatefulCAReal.static_east_optimum
+#print axioms StatefulCAReal.static_east_support_one
+#print axioms StatefulCAReal.real_horizontal_spaceship_speed_zero
+#print axioms StatefulCAReal.real_static_gap_and_global_obstruction
+
+#print axioms WongGARG.GARG.locus_path_topology
+#print axioms WongGARG.GARG.locus_acyclic
+#print axioms WongGARG.GARG.topology_iff_erased
+#print axioms WongGARG.GARG.extracted_eq_local_iff_sampleSupported
+#print axioms WongGARG.GARG.local_parent_representation
+#print axioms WongGARG.GARG.local_ancestors_comparable
+#print axioms WongGARG.GARG.locus_path_projects
+#print axioms WongGARG.GARG.exists_finite_topological_numbering
+#print axioms WongGARG.GARG.ancestry_constant_without_breakpoint
+#print axioms WongGARG.GARG.natTopology_path_iff
+
+#print axioms WongAlexander.sample_ancestral_iff
+#print axioms WongAlexander.extracted_sample_path_iff
+#print axioms WongAlexander.finite_catalog_not_infinite
+#print axioms WongAlexander.natural_biosphere_has_real_dates
+#print axioms WongAlexander.ordered_encoded_prefix
+#print axioms WongAlexander.old_encoded_path_iff
+#print axioms WongAlexander.actual_garg_opposite_infinite_completions
+#print axioms WongAlexander.extracted_contracted_sample_path_iff
+#print axioms WongExamples.splitGARG
+#print axioms WongExamples.tailGARG
+#print axioms WongExamples.all_extracted_relations_equal
+#print axioms WongExamples.raw_locus_relations_differ
+#print axioms WongExamples.finite_garg_sample_reconstruction_boundary
+#print axioms WongLocalArity.local_children_subset
+#print axioms WongLocalArity.local_arity_le_graph_arity
+#print axioms WongLocalArity.graph_unary_local_zero_or_one
+#print axioms WongLocalArity.graph_unary_present_locally_unary
+#print axioms WongLocalArity.backward_local_walk_bound
+#print axioms WongLocalArity.no_infinite_backward_local_walk
+#print axioms WongLocalArity.backward_parent_array_bound
+#print axioms WongEventEncoding.ParentSpec.parent_iff_exists_at
+#print axioms WongEventEncoding.EventGraph.encoded_topology
+#print axioms WongEventEncoding.EventGraph.encoded_atLocus
+#print axioms WongEventEncoding.EventGraph.encoded_nonempty_annotations
+#print axioms WongEventEncoding.EventGraph.encoded_unique_parent
+#print axioms WongEventEncoding.EventGraph.encoded_route
+#print axioms WongEventEncoding.EventGraph.encoded_path_iff
+#print axioms WongEventEncoding.EventGraph.erased_encoded_topology
+#print axioms WongEventEncoding.EventGraph.encoded_parent_pointer
+#print axioms WongEventEncoding.ParentSpec.crossover_cut_identified
+
+#print axioms WongBreakpointCells.cells_pairwise_disjoint
+
+#print axioms WongBreakpointCells.exists_cell_of_bracket
+
+#print axioms WongBreakpointCells.locus_covered
+
+#print axioms WongBreakpointCells.locus_constant_on_cell
+
+#print axioms WongIntervalNormalization.CellPresentation.finite_cell_representation
+
+#print axioms WongIntervalNormalization.restriction_union_acyclic
+
+#print axioms WongIntervalNormalization.contraction_union_acyclic
+
+#print axioms WongIntervalNormalization.sample_restriction_representable
+
+#print axioms WongIntervalNormalization.extracted_contraction_representable
+
+#print axioms WongIntervalNormalization.reencoded_contraction_sample_paths
+
+#print axioms WongSimplification.automaticPresentation
+
+#print axioms WongSimplification.automatic_sample_restriction
+
+#print axioms WongSimplification.contraction_unique_parent
+
+#print axioms WongSimplification.automatic_reencoded_simplification
+
+#print axioms WongSimplification.reencoding_breakpoints_subset
+
+#print axioms WongDiamond.garg
+
+#print axioms WongDiamond.nonempty_annotations
+
+#print axioms WongDiamond.canonical_records
+
+#print axioms WongDiamond.unique_parent
+
+#print axioms WongDiamond.sample_supported
+
+#print axioms WongDiamond.contracted_relation_iff
+
+#print axioms WongDiamond.retained_ancestry_iff
+
+#print axioms WongDiamond.sample_ancestry_iff
+
+#print axioms WongDiamond.contracted_relations_agree
+
+#print axioms WongDiamond.raw_relations_differ
+
+#print axioms WongDiamond.diamond_cutoff_information_loss
+
+#print axioms WongDiamond.collapsed_represents_contraction
+
+#print axioms WongDiamond.same_finite_output_hides_cutoff
+
+#print axioms FiniteGenomeIdentifiability.opposite_compatible_completions
+
+#print axioms FiniteGenomeIdentifiability.no_exact_specieslike_verdict
+
+#print axioms FiniteGenomeIdentifiability.no_exact_specieslike_decoder
+
+#print axioms FounderWindowResearch.founder_covers
+#print axioms FounderWindowResearch.commonAncestor_window
+#print axioms FounderWindowResearch.window_directed_union
+#print axioms FounderWindowResearch.directed_union_finite_founders
+#print axioms DirectedIAPResearch.bad_founder_productive
+#print axioms DirectedIAPResearch.productive_descendants_unbounded
+#print axioms DirectedIAPResearch.capture_productive_descendant
+#print axioms DirectedIAPResearch.iap_directed_union_of_finite_founders
+#print axioms SeedIntersections.convex_intersection
+#print axioms SeedIntersections.finite_persistent_member
+#print axioms SeedIntersections.persistent_productive_child
+#print axioms SeedIntersections.reflection_intersection
+#print axioms RealFounderWindow.nonempty_has_earliest
+#print axioms RealFounderWindow.earliest_is_founder
+#print axioms RealFounderWindow.founder_covers
+#print axioms RealFounderWindow.window_finite_founders
+#print axioms RealFounderWindow.commonAncestor_window
+#print axioms RealFounderWindow.window_nonnegative
+#print axioms RealFounderWindow.window_directed_union
+#print axioms RealFounderWindow.directed_union_finite_founders
+#print axioms FounderMaximal.directed_union_connected
+#print axioms FounderMaximal.union_reflection
+#print axioms FounderMaximal.windowSpecies_directed_union
+#print axioms FounderMaximal.maximal_extension_of_directed_union
+#print axioms FounderMaximal.maximal_window_extension_ordered
+#print axioms SpeciesReindex.descendant_iff
+#print axioms SpeciesReindex.finiteSupport_iff
+#print axioms SpeciesReindex.infiniteSupport_iff
+#print axioms SpeciesReindex.iap_iff
+#print axioms SpeciesReindex.convex_iff
+#print axioms SpeciesReindex.reflection_iff
+#print axioms SpeciesReindex.weakReach_iff
+#print axioms SpeciesReindex.weaklyConnected_iff
+#print axioms SpeciesReindex.commonAncestor_iff
+#print axioms SpeciesReindex.founder_iff
+#print axioms SpeciesReindex.finite_founders_iff
+#print axioms SpeciesReindex.window_iff
+#print axioms SpeciesReindex.specieslike_iff
+#print axioms SpeciesReindex.actual_presentation
+#print axioms SpeciesSeed.anchored_minimal_exists
+#print axioms SpeciesSeed.productivePart_convex
+#print axioms SpeciesSeed.productivePart_internal_infinite
+#print axioms SpeciesSeed.minimal_anchored_iap
+#print axioms SpeciesSeed.exists_anchored_seed
+#print axioms SpeciesSeed.exists_seed
+#print axioms RealSpeciesTheorem.windowSpecies_iff
+#print axioms RealSpeciesTheorem.push_maximal
+#print axioms RealSpeciesTheorem.maximal_window_extension
+#print axioms RealSpeciesTheorem.every_vertex_has_seed
+#print axioms RealSpeciesTheorem.every_vertex_in_maximal_real_window
+#print axioms WongSampleTracing.trace_exact
+#print axioms WongSampleTracing.trace_length_le
+#print axioms WongSampleTracing.tracedNodes_exact
+#print axioms WongSampleTracing.extract_some_iff
+#print axioms WongSampleTracing.actual_garg_extraction
+#print axioms WongSampleTracing.actual_garg_reconstruction_iff
+#print axioms WongRecordTracing.lookup_sound
+#print axioms WongRecordTracing.lookup_complete
+#print axioms WongRecordTracing.lookup_represents
+#print axioms WongRecordTracing.records_to_sample_array
+#print axioms WongRecordTracing.records_round_trip_iff
+#print axioms WongEventDecoding.equal_parent_crossover_same_local
+#print axioms WongEventDecoding.crossover_left_identified
+#print axioms WongEventDecoding.crossover_right_identified
+#print axioms WongEventDecoding.normalized_same_local_iff
+#print axioms WongEventDecoding.same_local_of_records_eq
+#print axioms WongEventDecoding.normalized_records_injective
+#print axioms WongEventDecoding.encode_decode
+#print axioms WongEventDecoding.decode_encode
+#print axioms WongEventDecoding.Graph.parents_identified
+#print axioms WongEventDecoding.Graph.graph_identified
+#print axioms WongEventDecoding.Graph.encoded_canonical
+#print axioms WongEventDecoding.kind_signature_injective
+#print axioms WongEventDecoding.decode_kind_signature
+#print axioms WongEventDecoding.encoded_degrees
+#print axioms WongEventDecoding.encoded_kind_recovered
+#print axioms WongEventDecoding.classical_kind_unique
+#print axioms WongEventDecoding.classical_encoded_sample_iff
+#print axioms WongLocalSimplification.contraction_congr_both
+#print axioms WongLocalSimplification.coordinatePresentation
+#print axioms WongLocalSimplification.coordinate_contraction_union_acyclic
+#print axioms WongLocalSimplification.automatic_reencoded_local_simplification
+#print axioms WongLocalSimplification.samples_and_branching_cellwise
+#print axioms WongLocalSimplification.suppressed_at_most_one_child
+#print axioms WongLocalSimplification.unretained_locally_isolated
+#print axioms WongLocalSimplification.samples_and_branching_representable
+
+#print axioms WongMemoizedTracing.visit_complete
+#print axioms WongMemoizedTracing.visit_closed
+#print axioms WongMemoizedTracing.memoExtract_some_iff
+#print axioms WongMemoizedTracing.memoExtract_eq_reference
+#print axioms WongMemoizedTracing.run_write_accounting
+#print axioms WongMemoizedTracing.run_cost_bounds
+#print axioms WongMemoizedTracing.memoized_cost_bounds
+#print axioms WongMemoizedTracing.actual_memoized_extraction
+#print axioms WongMemoizedTracing.records_to_memoized_sample_array
+#print axioms WongMemoizedTracing.memoized_records_round_trip_iff
+
+#print axioms WongTimedHistory.raw_chronology
+#print axioms WongTimedHistory.raw_event_arities
+#print axioms WongTimedHistory.observed_represents_contraction
+#print axioms WongTimedHistory.observed_dates_independent
+#print axioms WongTimedHistory.observed_chronology
+#print axioms WongTimedHistory.observation_independent
+#print axioms WongTimedHistory.counted_edge_iff
+#print axioms WongTimedHistory.hidden_times_differ
+#print axioms WongTimedHistory.lineage_counts_differ
+#print axioms WongTimedHistory.sample_date_is_not_event_date
+#print axioms WongTimedHistory.no_exact_time_decoder
+#print axioms WongTimedHistory.no_exact_lineage_decoder
+
+#print axioms WongMRCATruncation.exists_unique_mrca
+#print axioms WongMRCATruncation.mrca_unique
+#print axioms WongMRCATruncation.common_iff_ancestor_mrca
+#print axioms WongMRCATruncation.truncation_iff_cut_above
+#print axioms WongMRCATruncation.truncation_iff_below_mrca
+#print axioms WongMRCATruncation.sample_paths_preserved
+#print axioms WongMRCATruncation.mrca_sample_paths_preserved
+#print axioms WongMRCATruncation.mrca_reaches_every_sample
+#print axioms WongMRCATruncation.no_incoming_mrca
+#print axioms WongMRCATruncation.truncated_support
+#print axioms WongMRCATruncation.no_common_no_extra_truncation
+#print axioms WongMRCATruncation.ancestral_sample_is_mrca
+#print axioms WongMRCATruncation.singleton_sample_is_mrca
+#print axioms WongMRCATruncation.singleton_has_no_edges
+#print axioms WongMRCATruncation.empty_samples_no_edges
+#print axioms WongMRCATruncation.distinct_sample_roots_no_common
+#print axioms WongMRCATruncation.truncate_at_iff
+#print axioms WongMRCATruncation.truncate_unique_parent
+#print axioms WongMRCATruncation.truncate_sample_supported
+#print axioms WongMRCATruncation.truncate_breakpoints
+#print axioms WongMRCATruncation.truncate_sample_paths
+#print axioms WongMRCATruncation.truncate_mrca_paths
+#print axioms WongMRCATruncation.finite_mrca_truncation
+#print axioms WongMRCATruncation.supported_but_removed
+#print axioms WongIntervalCanonicalization.join_contains
+#print axioms WongIntervalCanonicalization.mergeAdjacent_covers
+#print axioms WongIntervalCanonicalization.mergeAdjacent_lo
+#print axioms WongIntervalCanonicalization.mergeAdjacent_hi
+#print axioms WongIntervalCanonicalization.mergeAdjacent_separated
+#print axioms WongIntervalCanonicalization.mergeAdjacent_of_separated
+#print axioms WongIntervalCanonicalization.mergeAdjacent_idempotent
+#print axioms WongIntervalCanonicalization.separated_semantic_unique
+#print axioms WongIntervalCanonicalization.mergeAdjacent_semantic_unique
+#print axioms WongIntervalCanonicalization.separated_gap
+#print axioms WongIntervalCanonicalization.canonicalRegions_covers
+#print axioms WongIntervalCanonicalization.canonicalRegions_separated
+#print axioms WongIntervalCanonicalization.canonicalRegions_endpoints
+#print axioms WongIntervalCanonicalization.canonicalRegions_unique
+#print axioms WongIntervalCanonicalization.CellPresentation.serializedRegions_separated
+#print axioms WongIntervalCanonicalization.CellPresentation.serializedRegions_covers
+#print axioms WongIntervalCanonicalization.CellPresentation.canonicalGARG_at
+#print axioms WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical
+#print axioms WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal
+#print axioms WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints
+#print axioms WongIntervalCanonicalization.canonicalize_at
+#print axioms WongIntervalCanonicalization.canonicalize_breakpoints
+#print axioms WongIntervalCanonicalization.canonicalize_nonempty
+#print axioms WongIntervalCanonicalization.canonicalize_canonical
+#print axioms WongIntervalCanonicalization.canonicalize_maximal
+#print axioms WongIntervalCanonicalization.serialized_semantic_unique
+#print axioms WongIntervalCanonicalization.serialized_empty
+#print axioms WongIntervalCanonicalization.canonicalize_semantic_unique
+#print axioms WongIntervalCanonicalization.canonicalize_idempotent
+#print axioms WongIntervalCanonicalization.canonicalize_topology
+#print axioms WongIntervalCanonicalization.executable_touching_gap_example
+#print axioms WongSimplificationNormalForm.first_kept_child
+#print axioms WongSimplificationNormalForm.siblings_disjoint
+#print axioms WongSimplificationNormalForm.retained_nonsample_branches
+#print axioms WongSimplificationNormalForm.represented_contraction_normal
+#print axioms WongSimplificationNormalForm.finite_local_normal_form
+#print axioms WongSimplificationNormalForm.finite_resolved_normal_form
+#print axioms WongSimplificationNormalForm.mrca_kept
+#print axioms WongSimplificationNormalForm.truncated_mrca_kept
+#print axioms WongSimplificationNormalForm.canonicalize_paths
+#print axioms WongSimplificationNormalForm.canonical_resolved_normal_form
+
+#print axioms WongBigARGDrift.weighted_gap
+#print axioms WongBigARGDrift.potential_drift
+#print axioms WongCountChain.one_absorbing
+#print axioms WongCountChain.jump_up_mass
+#print axioms WongCountChain.jump_down_mass
+#print axioms WongCountChain.initial_lintegral
+#print axioms WongCountChain.step_lintegral
+#print axioms WongCountChain.ae_positive_counts
+#print axioms WongCountChain.sum_transient_le
+#print axioms WongCountChain.ae_finite_absorption_of_drift
+#print axioms WongCountChain.literal_rate_ratio
+#print axioms WongCountChain.literal_merger_ratio
+#print axioms WongBigARGAbsorption.countPotential_drift
+#print axioms WongBigARGAbsorption.ae_eventually_one
+#print axioms WongBigARGAbsorption.ae_finite_jump_absorption
+#print axioms WongBigARGAbsorption.normalizedRatio_value
+#print axioms WongBigARGAbsorption.literal_up_kernel_mass
+#print axioms WongBigARGAbsorption.literal_down_kernel_mass
+#print axioms WongBigARGAbsorption.literal_rates_ae_finite_absorption
+
+#print axioms WongWaitingTimes.unitClockLaw_probability
+#print axioms WongWaitingTimes.jointLaw_probability
+#print axioms WongWaitingTimes.joint_count_marginal
+#print axioms WongWaitingTimes.joint_clock_marginal
+#print axioms WongWaitingTimes.unit_clock_marginal
+#print axioms WongWaitingTimes.count_clock_independent
+#print axioms WongWaitingTimes.unit_clocks_independent
+#print axioms WongWaitingTimes.measurable_firstHit
+#print axioms WongWaitingTimes.measurable_physicalAbsorptionTime
+#print axioms WongWaitingTimes.holdingLaw_probability
+#print axioms WongWaitingTimes.holdingLaw_survival_cylinder
+#print axioms WongWaitingTimes.joint_holding_observation
+#print axioms WongWaitingTimes.unitClocks_ae_all_positive
+#print axioms WongWaitingTimes.jointClocks_ae_all_positive
+#print axioms WongWaitingTimes.joint_ae_hitsOne
+#print axioms WongWaitingTimes.joint_ae_positive_counts
+#print axioms WongWaitingTimes.physicalAbsorptionTime_eq_ofReal_eventTime
+#print axioms WongWaitingTimes.count_ae_initial
+#print axioms WongWaitingTimes.joint_ae_initial
+#print axioms WongWaitingTimes.literal_rates_ae_finite_physical_absorption
+#print axioms WongWaitingTimes.literal_rates_ae_start_one_zero_time
+#print axioms WongWaitingTimes.literal_rates_ae_positive_physical_time
+#print axioms WongWaitingTimes.rate_three_at_two
+#print axioms WongWaitingTimes.split_mass_two_thirds

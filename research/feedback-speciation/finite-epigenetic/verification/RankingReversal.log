@@ -1,0 +1,3 @@
+'RankingReversal.matched_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankingReversal.genetic_barrier_changes_sides' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankingReversal.certified_gap_between_models' depends on axioms: [propext, Classical.choice, Quot.sound]

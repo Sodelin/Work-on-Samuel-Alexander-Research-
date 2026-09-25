@@ -1,0 +1,27 @@
+name = "feedback_speciation"
+defaultTargets = ["AncestryMixing", "AncestryExamples", "FeedbackDynamics", "FogartyAffinity", "FogartyAffinityFixation"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[lean_lib]]
+name = "SamuelAlexanderResearch"
+srcDir = "vendor"
+roots = ["SamuelAlexanderResearch.SpeciesGlobalIAP"]
+
+[[lean_lib]]
+name = "AncestryMixing"
+
+[[lean_lib]]
+name = "AncestryExamples"
+
+[[lean_lib]]
+name = "FeedbackDynamics"
+
+[[lean_lib]]
+name = "FogartyAffinity"
+
+[[lean_lib]]
+name = "FogartyAffinityFixation"

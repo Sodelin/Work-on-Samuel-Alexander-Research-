@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "checked_at_utc": "2026-09-25T14:13:28.453951+00:00",
+  "compiler_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compiler_exit_codes": [
+    0,
+    0
+  ],
+  "total_selected_endpoints": 16,
+  "line_endings": "LF",
+  "warnings": 0,
+  "errors": 0,
+  "no_sorryAx": true,
+  "standard_axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "modules": [
+    {
+      "module": "ExactAbstraction",
+      "selected_endpoints": 8,
+      "axiom_reports": [
+        {
+          "endpoint": "ExactAbstraction.exact_factor_iff",
+          "axioms": [
+            "Classical.choice"
+          ]
+        },
+        {
+          "endpoint": "ExactAbstraction.exact_factor_unique",
+          "axioms": [
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "ExactAbstraction.trajectory_preservation",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "endpoint": "ExactAbstraction.compatible_gives_trajectories",
+          "axioms": [
+            "propext",
+            "Classical.choice"
+          ]
+        },
+        {
+          "endpoint": "ExactAbstraction.TwoBit.projection_collision",
+          "axioms": []
+        },
+        {
+          "endpoint": "ExactAbstraction.TwoBit.no_state_only_update",
+          "axioms": [
+            "Classical.choice"
+          ]
+        },
+        {
+          "endpoint": "ExactAbstraction.TwoBit.period_two_after_first",
+          "axioms": []
+        },
+        {
+          "endpoint": "ExactAbstraction.TwoBit.exact_period_two_after_first",
+          "axioms": []
+        }
+      ],
+      "source": {
+        "path": "ExactAbstraction.lean",
+        "bytes": 6308,
+        "sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e"
+      },
+      "log": {
+        "path": "validation.txt",
+        "bytes": 802,
+        "sha256": "f9bceaebe7712aecc9592423e55e9ad82dccbf5612d3f2f464f3827cf87f8adb"
+      },
+      "kernel_examples": 2,
+      "executable_evaluations": 2
+    },
+    {
+      "module": "MergeHistoryProjection",
+      "selected_endpoints": 8,
+      "axiom_reports": [
+        {
+          "endpoint": "MergeHistoryProjection.split_preserves_legal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.adjacent_merge_histories",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.legal_histories",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.admissible_splits_with_spectator",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.same_current_partition",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.distinct_restored_partitions",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.no_exact_partition_model",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "endpoint": "MergeHistoryProjection.no_partition_only_admissible_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "source": {
+        "path": "MergeHistoryProjection.lean",
+        "bytes": 6644,
+        "sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554"
+      },
+      "log": {
+        "path": "merge-validation.txt",
+        "bytes": 858,
+        "sha256": "4b589a6c46de090a89fd0876eb32a40687c0e4109020694736f75f9a0f3a1608"
+      }
+    }
+  ],
+  "notes": [
+    {
+      "path": "README.md",
+      "bytes": 5187,
+      "sha256": "42aab8a928f9bf3dd1e6622d4fa3f4bc9ea5a84ef46c12d3e35b575b16b3f845"
+    },
+    {
+      "path": "MERGE-HISTORY.md",
+      "bytes": 5845,
+      "sha256": "e34c9303e17b9986004ad8afaadf4019cb1e216b264469e3ba4561eb106d475f"
+    }
+  ],
+  "source_provenance": {
+    "question_paper_doi": "10.1098/rsos.261059",
+    "question_paper_pdf_sha256": "8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce",
+    "sidecar_name": "doc-8b3940d8ac53.pages.jsonl",
+    "extraction_status": "extracted-unverified",
+    "ipdm_commit": "eca9b122480b8c654081d6a844176417aefbbcae",
+    "ipdm_source_sha256": {
+      "core/helperfunctions.py": "edaacacbb6f09810c0acd9fcbf7642610695501952b04eb59fb0d6a7a2e7a5a4",
+      "core/env.py": "ecabd348002af771e7b07f6ba70aca281efd7f978e9643e33a896ad226cec886"
+    },
+    "operator_test_status": "PASS_PINNED_OPERATOR_TEST_WITH_EXPLICIT_MOCKS",
+    "operator_test_mocks": [
+      "Agent constructor and get_score",
+      "Tree constructor",
+      "np.argmax",
+      "np.round"
+    ]
+  },
+  "scope": [
+    "standard quotient/congruence criterion for controlled deterministic maps and a surjective observation",
+    "trajectory preservation under the identical control sequence",
+    "explicit two-bit rule change inside a fixed finite joint-state model",
+    "failure of a deterministic autonomous next-state update on the chosen observation alone",
+    "exact eventual period two for the full joint dynamics",
+    "legal four-site binary merge forests",
+    "same unordered current partition",
+    "distinct immediate-predecessor split partitions",
+    "two adjacent-merge histories and admissible splits retaining a spectator",
+    "no exact deterministic partition-only update, including on the admissible split domain",
+    "formal adjacency is adjacency in the ordered forest, not board geometry",
+    "the split target has the same site support {0,1,2} in both witnesses",
+    "active agent IDs and controller metadata equality belong only to the separate implementation test"
+  ],
+  "not_claimed": [
+    "complete IPDm implementation refinement",
+    "entropy theorem",
+    "full stochastic policy reachability",
+    "new theorem or whole author-stated problem solved",
+    "non-Markovness for every distribution",
+    "novel theorem",
+    "published IPDm paper formalization",
+    "stochastic Markov obstruction or entropy theorem",
+    "universal bounded semantics for arbitrary self-modification",
+    "whole author-stated open problem solved"
+  ]
+}

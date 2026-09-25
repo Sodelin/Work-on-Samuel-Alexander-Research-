@@ -1,12 +1,37 @@
 # Checked mathematics and exact remaining scope
 
+## Wong graph mathematics and scope
+
+The new [Wong–Alexander outline](WONG-ALEXANDER-OUTLINE.md) records the composed
+interfaces and exact limits. See the endpoint manifests and final source-hash
+receipts for the checked inventory.
+
+| Module | Exact contribution | Boundary |
+|---|---|---|
+| WongGARG | Finite interval DAG, local-parent forest under unique parenthood, derived ordering, exact natural-number path encoding, breakpoint-wise ancestry constancy. | Nonempty annotations and canonical records are explicit additional conditions; interval segmentation is not normalized. |
+| AncestralRestriction | Sample-path preservation, idempotence, nested/union laws, exact support criterion and erasure counterexamples. | Removes nonancestral material; does not remove unary nodes or implement tskit. |
+| AncestryContraction | Removing unretained intermediate nodes preserves exactly retained-node ancestry, also after sample restriction. | This core theorem is relational; the WongSimplification wrapper now generates actual finite interval output. Event identities and path lengths need not survive. |
+| FiniteHistoryCompletion and WongAlexander | Exact embedding of an actual finite gARG into contrasting infinite connected populations, with real dates and opposite whole-species status. | Abstract topology completion, not organism-owner inference, fixed-gender coverage or a prediction of an actual biological future. |
+| WongExamples | Two valid finite three-node interval DAGs have identical sample-extracted local relations and different original graphs. | A reconstruction-boundary example, not a claim that every raw ARG loses information. |
+| WongLocalArity | Local arity bounds, unary presence distinction and finite backward-walk bounds. | Counts original distinct children; traversal bound is not software runtime measurement. |
+| WongEventEncoding | Ordered full-span/single-crossover inheritance becomes an actual interval gARG with matching topology, local routes and paths. Distinct ordered parents identify an interior cutoff. | Does not validate all classical event child arities, normalize storage or establish stochastic inference. |
+| WongBreakpointCells, WongIntervalNormalization and WongSimplification | Derive disjoint cells from actual endpoints and re-encode sample restriction plus fixed-node contraction as a finite gARG. Preserve retained-to-sample ancestry, inherit unique parents, and add no breakpoints. | Samples must be retained for output sample support. Classical construction; adjacent intervals are not coalesced and node retention is fixed across coordinates. |
+| WongDiamond | Fully sample-supported four-node graphs with different crossover cuts have identical contracted relations. | Lost parent identities prevent using full-parent cutoff identifiability after contraction; no tskit implementation claim. |
+| FiniteGenomeIdentifiability | No verdict or decoder from a finite gARG determines whole-specieslike status for every topology-compatible infinite completion. | This is not a DNA-data, biological ownership or statistical species-tree theorem. |
+
+These are source formalizations and project deductions. Priority and empirical
+validity require separate evidence; a passing checker is not a novelty claim.
+
+
 The Lean 4.33.1 library now includes the positive binary theorem, constructed
 birth-order enumeration, full infinite degree counts, productive fixed-gender
 cores, general species criteria, and quantitative extensions of the sharp
 Thue-Morse result. The [core audit](verification/formal-audit.json) and
 [real-number audit](verification/real-audit.json) give the selected endpoint
 counts, dependency checks and exact source hashes. The default library uses
-Std; the optional [real project](real/lakefile.lean) pins Mathlib separately.
+Std; the optional [Mathlib project](real/lakefile.lean) pins Mathlib separately.
+The [ten-proposal solution ledger](TEN-SOLUTIONS.md) records the subsequent
+research results and their exact scope.
 
 This package formalizes the statements listed below. The positive classification
 is binary; it is not a formalization of every finite-alphabet theorem or every
@@ -23,7 +48,15 @@ remains available, while the new positive module proves its missing premise.
 | [RealBridges](real/RealBridges.lean) | Binary classification for arbitrary real-birthdated vertex sets; real-date finite-alphabet degree/root results; real-valued sharp coefficients and actual convex-hull inclusion. | Literal Mathlib reals. Coefficients multiply natural vertex indices cast to reals, not arbitrary birth timestamps. See the [real scope note](notes/REAL-BRIDGES-FORMALIZATION.md). |
 | [PopulationCounting](lean/SamuelAlexanderResearch/PopulationCounting.lean) | Actual finite double counts, predecessor-closed prefix bounds, subcritical impossibility, and fixed-gender imbalance. | Simple labelled graphs. The old arithmetic-only DegreeBounds layer remains available. |
 | [InfiniteConservation](lean/SamuelAlexanderResearch/InfiniteConservation.lean) | Full infinite-graph identity $`D_N+E_N+C_N=kR_N`$; $`C_N\ge\frac{k(k+1)}{2}`$ after all roots; finite total defects, eventual full degree $`k`$, and constant crossing width. | Conservation uses critical child cap $`d=k`$. The triangular lower bound permits any cap. The defect budget is $`D+E\le kR-\frac{k(k+1)}{2}`$. |
-| [MinimalCrossing](lean/SamuelAlexanderResearch/MinimalCrossing.lean) | Binary crossing width three on every tail cut forces exactly the $`+1,+2`$ tail edges. With permanent source genders it realizes every word. An avoiding critical fixed-gender population has eventual crossing width at least four. | The four is crossing width, not a child-cap lower bound. General-$`k`$ rigidity and cap-two avoidance remain open. |
+| [MinimalCrossing](lean/SamuelAlexanderResearch/MinimalCrossing.lean) and [GeneralRigidity](lean/SamuelAlexanderResearch/GeneralRigidity.lean) | Minimum eventual crossing width forces exactly the directed $`k`$th power of a ray for every finite $`k`$. Binary permanent source genders at width three realize every word. | The four in the binary avoiding-width lower bound is crossing width, not a child-cap bound. General rigidity derives geometry from equality on every tail cut. |
+| [CapTwo](lean/SamuelAlexanderResearch/CapTwo.lean) and [CapTwoSpecies](lean/SamuelAlexanderResearch/CapTwoSpecies.lean) | A fixed-gender avoider with child cap $`d`$ exists exactly when $`d\ge2`$ and the target is not eventually periodic. The cap-two witness is a whole-graph inspecies with reflection. | The directed line graph has three roots and preserves the full infinite word language. The line-graph operation is classical; no root-optimality claim is made. |
+| [ProductiveCore](lean/SamuelAlexanderResearch/ProductiveCore.lean) | Productive pruning preserves the entire infinite word language, eligibility and caps; whole-graph IAP makes the core an inspecies. Exact cluster commutation and counterexamples distinguish maximality notions. | The labelled population adapter is binary and naturally indexed. Unrestricted specieslike maximality differs from IAP/CONV/CA/REF maximality. |
+| [BoundaryRepair](lean/SamuelAlexanderResearch/BoundaryRepair.lean) | A fixed infinite retained set admits an eligible deletion-only repair exactly when finitely many vertices lack a required parent label. The canonical repair is the greatest eligible subrelation and minimizes roots. | The vertex set is fixed. Exact repairs of the two source cones include their connectivity consequences. |
+| [FullHeight](lean/SamuelAlexanderResearch/FullHeight.lean) and [DigitRecurrence](lean/SamuelAlexanderResearch/DigitRecurrence.lean) | Closed form for the actual attained Thue-Morse matching maximum at every start, plus a proved ten-coordinate binary recurrence and executable digit evaluator. | Includes start zero, all high-bit cases, the exceptional scale-two branch, and proof that the evaluator returns an actual maximum. |
+| [PhaseHeight](lean/SamuelAlexanderResearch/PhaseHeight.lean) and [FiniteEditExact](lean/SamuelAlexanderResearch/FiniteEditExact.lean) | Exact finite-frontier phase heights; exact finite-edit decomposition, equality criterion, and optimal universal additive constant $`8m-1`$ in $`3L_s(v)\le8v+B`$. | FiniteEditOptimum also proves an exact finite algorithm for each individual best integer constant. Joint phase/index digit recurrences and efficient complexity remain separate. |
+| [QuantitativeModulus](lean/SamuelAlexanderResearch/QuantitativeModulus.lean) | An explicit period/antiperiod break modulus bounds actual matching lengths by an iterated clock; a uniform window $`R`$ gives length less than $`(v+1)R`$. | Modulus existence from aperiodicity uses classical choice; the clock is explicit when a modulus is supplied. The older slow-avoidance theorem gives the complementary lack of a uniform rate. |
+| [PortEncoding](real/PortEncoding.lean), [PortDynamics](lean/SamuelAlexanderResearch/PortDynamics.lean), [FinitePhasePaths](lean/SamuelAlexanderResearch/FinitePhasePaths.lean), [FiniteStatePeriodicity](lean/SamuelAlexanderResearch/FiniteStatePeriodicity.lean) | Every actual critical population has an exact finite fair port encoding; legal eventually periodic schedules realize every infinite label word. Deterministic finite-state orbits are eventually periodic. | Mathlib constructs the actual finite cut bijections. The encoder preserves all edges into the tail, including pre-base sources; it does not assert unconditional schedule periodicity. |
+| [StatefulCA](lean/SamuelAlexanderResearch/StatefulCA.lean) | A complete three-state CA has optimal static rational east bound one, but a state potential proves zero horizontal displacement for every finite-support spaceship. A finite domino oscillator proves nonvacuity. | Actual full configurations and evolution are formalized. This synthetic anisotropic example does not assert a new bound for Life-like or previously published rules. |
 | [BinaryAvoidance](lean/SamuelAlexanderResearch/BinaryAvoidance.lean) and [BinaryPopulation](lean/SamuelAlexanderResearch/BinaryPopulation.lean) | The actual target-dependent graph avoids every non-eventually-periodic target; all population and specieslike hypotheses are checked. | Independent composable formalization of the classification manuscript's negative binary construction; not a claim to have originated it. |
 | [FixedGenderLift](lean/SamuelAlexanderResearch/FixedGenderLift.lean) | A productive core avoids any prescribed aperiodic target with permanent source genders, cap three, exactly two roots, and whole-graph specieslike/inspecies/reflection properties. The earlier cap-four cleaned lift is also checked and is not an inspecies. | Population membership is the retained subset. Deleted indices are not extra vertices or roots. [FixedGenderReindex](lean/SamuelAlexanderResearch/FixedGenderReindex.lean) constructs the subtype enumeration and proves the unconditional cap-three fixed-gender classification. |
 | [SpeciesGlobalIAP](lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean) | Finite/cofinite descendant criteria for IAP and reflection; whole-inspecies/cofinite-descendant equivalence; exact specializations to $`P_s`$. | Strict ancestry and ambient-versus-internal infinitude are explicit. Broad cofinite-descendant phenomena have prior results in Alexander's 2013 work. |
@@ -56,9 +89,10 @@ whole graph differs from common ancestry inside a selected cone.
 
 The [statement review](verification/STATEMENT-REVIEW.md) and [gap-closure review](verification/GAP-CLOSURE-REVIEW.md)
 record independent checks of these premises. The [ten proposals](TEN-RESEARCH-IDEAS.md)
-distinguish checked seeds from open generalizations. In particular, the
-[full-height digit formula](research/thue-morse/FULL-HEIGHT-CONJECTURE.md) remains
-conjectural despite exact finite agreement. No review or build establishes
+preserve the original questions; the [solution ledger](TEN-SOLUTIONS.md) records
+their subsequent resolution. The [full-height digit formula](research/thue-morse/FULL-HEIGHT-CONJECTURE.md)
+is now proved by FullHeight and DigitRecurrence; its earlier finite experiments
+remain historical discovery evidence. No review or build establishes
 global literature novelty or an author's private prior knowledge.
 
 ## Reproduction
@@ -77,3 +111,7 @@ endpoint is reported, and allows only `propext`, `Classical.choice` and
 for Mathlib preparation and `python checks/audit_lean.py --real`. The [workflow](.github/workflows/verify.yml)
 runs the core and real audits independently on Linux. Historical receipts
 apply to their recorded stages, not later changes.
+
+## Current integrated receipt
+
+The follow-up aggregate checks passed: **405 core endpoints and 101 mathlib endpoints**, including 43 newly registered endpoints in ten new modules. Only `propext`, `Classical.choice` and `Quot.sound` occur. See the source hashes in [the core receipt](verification/formal-audit.json) and [the mathlib receipt](verification/real-audit.json). Hosted verification must match the publication commit.

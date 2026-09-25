@@ -1,0 +1,201 @@
+{
+  "auditor_proposal": {
+    "current_artifact_count": 23,
+    "diff_sha256": "2ae0af043307900a3e13ca494a3b9c455915b0ea1f42d83a8d67b2c69c69d2f6",
+    "base_sha256": "e778900334d70a280eee2804c0fc0bf463d19c3ebdca4dc725f68ef642fad3d7",
+    "path": "pure-induction-finite-audit.patch",
+    "dependency_reuse": "The new entry is appended after existing FiniteFixation and FiniteEpigenetic entries; it registers only PureInductionJoint.lean and reuses the auditor cache and existing dependency build. No bundled dependency sources are registered.",
+    "change": "Append only PureInductionJoint.lean with expected endpoint count 4 after the existing finite34 registrations.",
+    "namespace_mapping_change": "None: the source has four unique fully qualified #print axioms names under PureInductionJoint; adding a namespace prefix would duplicate them.",
+    "lean_run_performed": false,
+    "proposed_endpoint_total": 167,
+    "current_endpoint_total": 163,
+    "base_file": "research-coordination/publication/audit_research_artifacts.py",
+    "proposed_artifact_count": 24
+  },
+  "intended_public_path": "research/feedback-speciation/pure-induction-finite/",
+  "schema_version": 1,
+  "upstream_manifest_member_count": 22,
+  "relative_link_check": {
+    "markdown_files": 3,
+    "broken_links": 0
+  },
+  "packet": "pure-induction-finite-v1",
+  "staging_copy_mismatches": 0,
+  "upstream_manifest_sha256": "02c3cc1ff7fa3a252a385dc94ffb1fe159820a672cf4514169fcf4aaedc7b622",
+  "publication_changes": [
+    "All original23packet files remain byte-identical.",
+    "Separate publication manifest and auditor patch are outside the packet directory, preserving its exact-file verifier.",
+    "Auditor patch headers name the actual checks/audit_research_artifacts.py repository target."
+  ],
+  "upstream_members": [
+    {
+      "copy_matches": true,
+      "sha256": "d384127941d5278e6ce124e52e158f548868bafe2b72a29a8bb95858b891ede7",
+      "path": ".gitignore",
+      "bytes": 32,
+      "copy_sha256": "d384127941d5278e6ce124e52e158f548868bafe2b72a29a8bb95858b891ede7"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "882f88fb980d28fb3c64cc8050781acace2f3f7124cb7712126d0426128d693e",
+      "path": "Check.ps1",
+      "bytes": 4941,
+      "copy_sha256": "882f88fb980d28fb3c64cc8050781acace2f3f7124cb7712126d0426128d693e"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "c8825fbd9116f1b4421d39ac983fb44e84bbfb712d652edae393f9ea1152833c",
+      "path": "CHECKPOINT-AND-REMAINING-OBLIGATIONS.md",
+      "bytes": 5409,
+      "copy_sha256": "c8825fbd9116f1b4421d39ac983fb44e84bbfb712d652edae393f9ea1152833c"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "8d855130f073d65a69aea90244aaf8b5df0153661e02f4eeeecd7de8f938ef7b",
+      "path": "DEPENDENCIES.json",
+      "bytes": 1955,
+      "copy_sha256": "8d855130f073d65a69aea90244aaf8b5df0153661e02f4eeeecd7de8f938ef7b"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822",
+      "path": "FiniteEpigenetic.lean",
+      "bytes": 12917,
+      "copy_sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9",
+      "path": "FiniteFixation.lean",
+      "bytes": 15133,
+      "copy_sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "7bd41668c5869e680f14925b76c5624e0d044f9e7a18e3f218795b78b3436a4b",
+      "path": "lake-manifest.json",
+      "bytes": 3670,
+      "copy_sha256": "7bd41668c5869e680f14925b76c5624e0d044f9e7a18e3f218795b78b3436a4b"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "bbdb84d85d0e64aa1cec344dabded09877dd3486119d9613b0f2562e0a896e59",
+      "path": "lakefile.lean",
+      "bytes": 337,
+      "copy_sha256": "bbdb84d85d0e64aa1cec344dabded09877dd3486119d9613b0f2562e0a896e59"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "copy_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb",
+      "path": "provenance/frozen-combined-receipt.json",
+      "bytes": 5485,
+      "copy_sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "4bd1a28278f4b7e41fed678fff42d0c87d12443a214989c93ab88ed9ac4801ca",
+      "path": "provenance/Original-Check.ps1",
+      "bytes": 3439,
+      "copy_sha256": "4bd1a28278f4b7e41fed678fff42d0c87d12443a214989c93ab88ed9ac4801ca"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "ad46c62226236301e0461c7425c5fd29f27fff72dfb010ee0660310837780a2e",
+      "path": "PROVENANCE.json",
+      "bytes": 5419,
+      "copy_sha256": "ad46c62226236301e0461c7425c5fd29f27fff72dfb010ee0660310837780a2e"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a",
+      "path": "PureInductionJoint.lean",
+      "bytes": 6224,
+      "copy_sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "d470c697ed7b3e9f5f8a65cf8801ce8b15adb2106fdde4ea267ff98ad4ec3564",
+      "path": "README.md",
+      "bytes": 6169,
+      "copy_sha256": "d470c697ed7b3e9f5f8a65cf8801ce8b15adb2106fdde4ea267ff98ad4ec3564"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "b2da17a760320ea5c0d3a626b2970cf85983d2c2a170ce9d20d636a567f0eda0",
+      "path": "REPRODUCTION.md",
+      "bytes": 4829,
+      "copy_sha256": "b2da17a760320ea5c0d3a626b2970cf85983d2c2a170ce9d20d636a567f0eda0"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0",
+      "path": "verification/finite-dependency-receipt.json",
+      "bytes": 3046,
+      "copy_sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621",
+      "path": "verification/FiniteEpigenetic.log",
+      "bytes": 1261,
+      "copy_sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1",
+      "path": "verification/FiniteFixation.log",
+      "bytes": 1579,
+      "copy_sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "1cbe1feae4d27121977a3d300b29b93609a88e258ba13f1ab683a48a7ed5b81b",
+      "path": "verification/independent-scope-audit.json",
+      "bytes": 2045,
+      "copy_sha256": "1cbe1feae4d27121977a3d300b29b93609a88e258ba13f1ab683a48a7ed5b81b"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "81646e705e6f1bb0386b584c997a11c9127e6d1ed0cbc9691a681917718aaa8b",
+      "path": "verification/PureInductionJoint.log",
+      "bytes": 822,
+      "copy_sha256": "81646e705e6f1bb0386b584c997a11c9127e6d1ed0cbc9691a681917718aaa8b"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "07325b3d81b928d74fc1981f71bf902a01501f6aa6d8f77483a2afffe5f002c1",
+      "path": "verification/worker-receipt.json",
+      "bytes": 1375,
+      "copy_sha256": "07325b3d81b928d74fc1981f71bf902a01501f6aa6d8f77483a2afffe5f002c1"
+    },
+    {
+      "copy_matches": true,
+      "sha256": "4992cb5d9c9d1b1d88b0b741fe11e5b8609a51390cc7c6f7b3de87eb60f4fc5e",
+      "path": "verify_packet.py",
+      "bytes": 4761,
+      "copy_sha256": "4992cb5d9c9d1b1d88b0b741fe11e5b8609a51390cc7c6f7b3de87eb60f4fc5e"
+    }
+  ],
+  "original_MANIFEST_json_preserved": true,
+  "format_checker": {
+    "unchanged": true,
+    "display_math": 0,
+    "files": 3,
+    "errors": 0,
+    "name": "check_math_format.py",
+    "inline_math": 0,
+    "exit_code": 0
+  },
+  "source_commit_note": "Not supplied; the frozen packet is identified by its upstream manifest SHA-256.",
+  "publication_sidecars_outside_packet": true,
+  "placement_reason": "Frozen verify_packet.py requires exactly the original23 files inside the packet. Publication sidecars live next to that directory.",
+  "publication_manifest_repository_path": "research/feedback-speciation/pure-induction-finite-publication.json"
+}

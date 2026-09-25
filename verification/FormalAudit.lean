@@ -283,3 +283,149 @@ Statement and model review is recorded separately in FORMALIZATION.md.
 #print axioms PhaseExtremal.shifted_equality_necessary
 #print axioms PhaseExtremal.shifted_maximum_exists
 #print axioms PhaseExtremal.shifted_extremal_iff
+
+/-! Solutions and exact structural extensions of the ten proposals. -/
+#print axioms BoundaryRepair.deficient_finite_of_cofinite
+#print axioms BoundaryRepair.cofinite_repair_population
+#print axioms BoundaryRepair.finite_deficiency_iff_repair_exists
+#print axioms BoundaryRepair.repair_greatest
+#print axioms BoundaryRepair.repair_minimal_roots
+#print axioms BoundaryRepair.repair_deleted_edges_bounded
+#print axioms BoundaryRepair.finite_boundary_repair_theorem
+#print axioms BoundaryRepair.ps_c0_repair_roots
+#print axioms BoundaryRepair.ps_c1_repair_roots
+#print axioms BoundaryRepair.ps_c0_cut_edges
+#print axioms BoundaryRepair.ps_c1_cut_edges
+#print axioms BoundaryRepair.ps_c0_repair_not_connected
+#print axioms BoundaryRepair.ps_c1_repair_shifted_geometry
+#print axioms CapTwo.fixedGenderPopulation
+#print axioms CapTwo.parents_exactly
+#print axioms CapTwo.realizes_iff
+#print axioms CapTwo.cap_two_avoider
+#print axioms CapTwo.fixedGender_cap_two_classification
+#print axioms CapTwo.presented
+#print axioms CapTwo.fixedGender_subcritical_impossible
+#print axioms CapTwo.avoiding_population_exists_iff
+#print axioms CapTwoSpecies.reaches_later_source
+#print axioms CapTwoSpecies.vertices_inspecies
+#print axioms CapTwoSpecies.cap_two_inspecies_avoider
+#print axioms DigitRecurrence.X_integral
+#print axioms DigitRecurrence.even_transition
+#print axioms DigitRecurrence.odd_transition
+#print axioms DigitRecurrence.digit_recurrence_of_formula
+#print axioms DigitRecurrence.evaluate_eq_of_formula
+#print axioms DigitRecurrence.formula_unique
+#print axioms DigitRecurrence.actual_digit_recurrence
+#print axioms DigitRecurrence.evaluate_actual_height
+#print axioms DigitRecurrence.evaluate_isMaximum
+#print axioms FiniteEditExact.prefix_decomposition
+#print axioms FiniteEditExact.thue_prefix_decomposition
+#print axioms FiniteEditExact.height_isMaximum
+#print axioms FiniteEditExact.maximum_iff_height
+#print axioms FiniteEditExact.early_extinction
+#print axioms FiniteEditExact.finite_edit_extremal_iff
+#print axioms FiniteEditExact.sharpEdit_equality
+#print axioms FiniteEditExact.optimal_universal_additive_constant
+#print axioms FinitePhasePaths.realizes_all
+#print axioms FiniteStatePeriodicity.repeated_state
+#print axioms FiniteStatePeriodicity.equal_at_offset
+#print axioms FiniteStatePeriodicity.eventually_periodic
+#print axioms FiniteStatePeriodicity.observed_eventually_periodic
+#print axioms FullHeight.height_isMaximum
+#print axioms FullHeight.even_rising
+#print axioms FullHeight.odd_nonspecial
+#print axioms FullHeight.height_formula
+#print axioms FullHeight.height_from_factorization
+#print axioms FullHeight.height_closed_form
+#print axioms GeneralRigidity.minimum_cut_no_late_target
+#print axioms GeneralRigidity.minimum_tail_edges
+#print axioms GeneralRigidity.eventually_minimum_tail_edges
+#print axioms PhaseHeight.mem_frontier
+#print axioms PhaseHeight.boundedHeight_isMaximum
+#print axioms PhaseHeight.height_isMaximum
+#print axioms PhaseHeight.maximum_iff_height
+#print axioms PortDynamics.periodic_schedule_realizes_strict
+#print axioms PortDynamics.decoded_born_iff
+#print axioms PortDynamics.Legal.exact_incoming_parent
+#print axioms PortDynamics.Legal.incoming_parents_injective
+#print axioms PortDynamics.Legal.exact_outgoing_children
+#print axioms PortDynamics.Legal.outgoing_children_injective
+#print axioms PortDynamics.Legal.periodic_realizes
+#print axioms PortDynamics.pending_crosses
+#print axioms PortDynamics.crossing_from_slot
+#print axioms PortDynamics.crossing_slots_injective
+#print axioms PortDynamics.fair_period_flush
+#print axioms ProductiveCore.core_infinite
+#print axioms ProductiveCore.core_population
+#print axioms ProductiveCore.reindexed_core_whole_inspecies
+#print axioms ProductiveCore.reindexed_core_whole_specieslike
+#print axioms ProductiveCore.reindexed_core_language_iff
+#print axioms ProductiveCore.productive_core_theorem
+#print axioms ProductiveCore.maximal_specieslike_descendantClosed
+#print axioms ProductiveCore.maximal_cluster_pruning_commutes
+#print axioms ProductiveCore.four_axioms_pruning_commutes
+#print axioms ProductiveCore.nonmaximal_cluster_productivity_counterexample
+#print axioms ProductiveCore.constrained_maximum_not_descendantClosed
+#print axioms QuantitativeModulus.aperiodic_has_modulus
+#print axioms QuantitativeModulus.prefix_length_lt_clock
+#print axioms QuantitativeModulus.even_break_iff
+#print axioms QuantitativeModulus.odd_break_iff
+#print axioms QuantitativeModulus.prefix_length_lt_uniform_windows
+#print axioms QuantitativeModulus.aperiodic_explicit_bounds
+#print axioms StatefulCA.every_live_row_has_two_parents
+#print axioms StatefulCA.optimal_static_east_bound
+#print axioms StatefulCA.all_generations_in_initial_charge_strip
+#print axioms StatefulCA.no_horizontal_spaceship
+#print axioms StatefulCA.nontrivial_two_cycle
+#print axioms StatefulCA.rDomino_finite
+#print axioms StatefulCA.rDomino_nonempty
+#print axioms StatefulCA.stateful_rule_static_gap_and_global_obstruction
+
+#print axioms AncestralRestriction.locus_sample_path_iff
+#print axioms AncestralRestriction.ancestral_restrict_iff
+#print axioms AncestralRestriction.restriction_resolved
+#print axioms AncestralRestriction.restriction_idempotent
+#print axioms AncestralRestriction.restriction_mono_samples
+#print axioms AncestralRestriction.restriction_nested
+#print axioms AncestralRestriction.restriction_union_iff
+#print axioms AncestralRestriction.erase_restriction_sound
+#print axioms AncestralRestriction.erasure_restriction_do_not_commute
+#print axioms AncestralRestriction.indexed_recovery_iff
+#print axioms AncestralRestriction.raw_graph_not_identified_by_sample_relations
+#print axioms FiniteHistoryCompletion.old_reachability_exact
+#print axioms FiniteHistoryCompletion.join_biosphere
+#print axioms FiniteHistoryCompletion.fork_biosphere
+#print axioms FiniteHistoryCompletion.join_inspecies
+#print axioms FiniteHistoryCompletion.join_maximal_specieslike
+#print axioms FiniteHistoryCompletion.fork_not_iap
+#print axioms FiniteHistoryCompletion.finite_history_does_not_determine_species
+
+#print axioms AncestryContraction.retained_path_iff
+#print axioms AncestryContraction.contract_acyclic
+#print axioms AncestryContraction.nested_contraction_paths
+#print axioms AncestryContraction.locus_retained_path_iff
+#print axioms AncestryContraction.resolved_contracted_sample_path_iff
+
+#print axioms FiniteEditBranch.bad_boundary_join
+
+#print axioms FiniteEditBranch.branch_separation
+
+#print axioms FiniteEditGap.off_extremal_gap
+
+#print axioms FiniteEditAlgorithm.best_attained
+
+#print axioms FiniteEditAlgorithm.sharp_tail_witness
+
+#print axioms FiniteEditAlgorithm.best_at_cutoff_ge_neg_one
+
+#print axioms ThueMorseWindow.reflected_window
+
+#print axioms ThueMorseWindow.same_parity_left_window
+
+#print axioms ThueMorseWindow.same_right_window
+
+#print axioms FiniteEditOptimum.residual_le_finite_best
+
+#print axioms FiniteEditOptimum.individual_optimum_attained
+
+#print axioms FiniteEditOptimum.individual_additive_constant_iff

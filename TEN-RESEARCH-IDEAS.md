@@ -1,5 +1,10 @@
 # Ten research proposals for Alexander's genealogy and word problems
 
+**Proposal history.** This file preserves the questions and proof status at the
+start of the ten-proposal investigation. Several statements described below as
+open have since been proved. Consult [the solution ledger](TEN-SOLUTIONS.md) for
+the current answers, exact formal statements, and remaining refinements.
+
 These are ten precise proposals for discussion, not ten claims of established
 originality. We cannot know which ideas Alexander has considered privately.
 The intended standard is a useful mathematical question, a credible route into

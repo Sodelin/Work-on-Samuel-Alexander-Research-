@@ -1,0 +1,31 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongCountChain.lean:58:32: warning: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [jumpKernel, transition]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongCountChain.lean:63:32: warning: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [jumpKernel, transition]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongCountChain.lean:214:14: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongCountChain.lean:231:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongCountChain.lean:248:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'WongCountChain.one_absorbing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.jump_up_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.jump_down_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.initial_lintegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.step_lintegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.ae_positive_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.sum_transient_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.ae_finite_absorption_of_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.literal_rate_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongCountChain.literal_merger_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]

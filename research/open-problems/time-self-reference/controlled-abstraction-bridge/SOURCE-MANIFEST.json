@@ -1,0 +1,131 @@
+{
+  "recorded_utc": "2026-09-25T09:37:25.199398-07:00",
+  "source_inputs": [
+    {
+      "path": "Published paper PDF; DOI 10.1098/rsos.261059 (verified local copy, not packaged)",
+      "bytes": 1917670,
+      "sha256": "8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce",
+      "role": "published_paper",
+      "expected_sha256": "8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce",
+      "matched_existing_intake_hash": true,
+      "locator": "Published p.11 section 4.2; p.22 section 6.4.3, via existing extraction",
+      "public_source_url": "https://doi.org/10.1098/rsos.261059"
+    },
+    {
+      "path": "Supplied Michael Levin transcript; video Or_3tlEOLj4 (verified local copy, not packaged)",
+      "bytes": 59922,
+      "sha256": "673737b5a37c9af8156e0546218037bfb21501471588b302c980312cf2804a24",
+      "role": "levin_transcript",
+      "expected_sha256": "673737b5a37c9af8156e0546218037bfb21501471588b302c980312cf2804a24",
+      "matched_existing_intake_hash": true,
+      "locator": "Original lines 313-351; timestamps 31:01-34:50",
+      "public_source_url": "https://www.youtube.com/watch?v=Or_3tlEOLj4"
+    },
+    {
+      "path": "Supplied Karl Friston transcript; video Fus2k7F5iN4 (verified local copy, not packaged)",
+      "bytes": 83536,
+      "sha256": "aee82aee63c0dff1478d6faba5bb068212b18774266a2608b2e2914bc93d0fcf",
+      "role": "friston_transcript",
+      "expected_sha256": "aee82aee63c0dff1478d6faba5bb068212b18774266a2608b2e2914bc93d0fcf",
+      "matched_existing_intake_hash": true,
+      "locator": "Original lines 392-414; timestamps 49:31-52:08",
+      "public_source_url": "https://www.youtube.com/watch?v=Fus2k7F5iN4"
+    }
+  ],
+  "public_pinned_snapshots": [
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "bytes": 6308,
+      "sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e",
+      "repository": "Sodelin/Work-on-Samuel-Alexander-Research-",
+      "commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+      "repository_path": "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "retrieved_from": "https://raw.githubusercontent.com/Sodelin/Work-on-Samuel-Alexander-Research-/138dd529643ae5706a9df6a750bd6344ab967a8a/research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "included_in_packet": true
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "bytes": 6644,
+      "sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554",
+      "repository": "Sodelin/Work-on-Samuel-Alexander-Research-",
+      "commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+      "repository_path": "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "retrieved_from": "https://raw.githubusercontent.com/Sodelin/Work-on-Samuel-Alexander-Research-/138dd529643ae5706a9df6a750bd6344ab967a8a/research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "included_in_packet": true
+    },
+    {
+      "path": "research/open-problems/time-self-reference/problem-ledger.json",
+      "bytes": 35781,
+      "sha256": "5f22b63acba134c11ec6b0e67147aa1f44c001ba66390e2a74fc0444ea9f5bcc",
+      "repository": "Sodelin/Work-on-Samuel-Alexander-Research-",
+      "commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+      "repository_path": "research/open-problems/time-self-reference/problem-ledger.json",
+      "retrieved_from": "https://raw.githubusercontent.com/Sodelin/Work-on-Samuel-Alexander-Research-/138dd529643ae5706a9df6a750bd6344ab967a8a/research/open-problems/time-self-reference/problem-ledger.json",
+      "included_in_packet": false
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+      "bytes": 6789,
+      "sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696",
+      "repository": "Sodelin/Work-on-Samuel-Alexander-Research-",
+      "commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+      "repository_path": "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+      "retrieved_from": "https://raw.githubusercontent.com/Sodelin/Work-on-Samuel-Alexander-Research-/138dd529643ae5706a9df6a750bd6344ab967a8a/research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+      "included_in_packet": true
+    }
+  ],
+  "existing_intake_records": [
+    {
+      "path": "Existing internal-intake record README.md (not included)",
+      "bytes": 4129,
+      "sha256": "2c1e84779a0b24a498d2d11cb6b3ab013263f9e90e68c0256ef89785fbe69751"
+    },
+    {
+      "path": "Existing internal-intake record SYNTHESIS-AND-HANDOFF.md (not included)",
+      "bytes": 12112,
+      "sha256": "b0e99ad07db5a09c3dd71d1ec93dfcb8c250da0a7e2d911de3e6905b97e1e159"
+    },
+    {
+      "path": "Existing internal-intake record SOURCE-MATRIX.md (not included)",
+      "bytes": 4777,
+      "sha256": "bb14571f8875951260a4e831bdfacd8a0f1eeeda9cc78f4ffed799ef59701e1f"
+    },
+    {
+      "path": "Existing internal-intake record paper.note.md (not included)",
+      "bytes": 9464,
+      "sha256": "6c245314c3ca3bede07c2070d1c84ba6d1282c0a4dd97569a8985543ea3ff214"
+    },
+    {
+      "path": "Existing internal-intake record paper.pages.md (not included)",
+      "bytes": 155414,
+      "sha256": "629bcd2af8207157efa780409874687d120c69336c2bff75acf58729c17877a3"
+    }
+  ],
+  "prior_work": {
+    "authors": [
+      "Givan",
+      "Dean",
+      "Greig"
+    ],
+    "title": "Equivalence Notions and Model Minimization in Markov Decision Processes",
+    "url": "https://cs.brown.edu/people/tdean/publications/archive/GivanetalAIJ-03.pdf",
+    "inspected_locators": [
+      "section 2.2, printed pp.6-7",
+      "section 3.2, Theorems 1-2, printed pp.11-12",
+      "section 3.3, Theorem 7, printed pp.12-14"
+    ],
+    "coverage": "selected definitions and theorem statements, not full paper/proof review",
+    "local_download": false
+  },
+  "evidence_boundary": {
+    "fresh_primary_hash_checks": true,
+    "fresh_pinned_module_hash_checks": true,
+    "prior_lean_evidence_reused": true,
+    "new_lean_invocations": 0,
+    "new_toy_and_refinement_proofs": "written derivations and bounded author-run Python checks",
+    "independent_final_review": "pending auditor",
+    "empirical_validation": false,
+    "novelty": "unestablished; not claimed"
+  },
+  "public_provenance_note": "Local filesystem paths have been replaced by source labels or immutable repository locators. Hashes, source identities, retrieval commit, URLs, and cited line/page/time locators are retained."
+}

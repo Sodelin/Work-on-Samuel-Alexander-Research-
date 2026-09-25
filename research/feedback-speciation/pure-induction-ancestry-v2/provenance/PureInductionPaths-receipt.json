@@ -1,0 +1,99 @@
+{
+  "reusedDependencies": [
+    {
+      "sourceSha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\package\\vendor\\SamuelAlexanderResearch\\SpeciesBridge.lean"
+    },
+    {
+      "sourceSha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\package\\FeedbackDynamics.lean"
+    },
+    {
+      "sourceSha256": "ddb618e00f758546176eaedfbfc86d7457767133bc784b2990972c07a8fe63fb",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\ExtinctionPedigree.lean"
+    },
+    {
+      "sourceSha256": "a35bc0c6e774cba93c2eebabe0f29530cceb12079d115e4ae28f2a6540aafdc7",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\ParentSchedules.lean"
+    },
+    {
+      "sourceSha256": "3fbb09bbdfa0ffb78cf9e88488bceb3e831fd4f014dfdf3db6fe70370d75bea2",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\UniformParentCounting.lean"
+    },
+    {
+      "sourceSha256": "1cce9f8d1738255cd59e2553ea75dbe3b2078ed4b50d261c28e6b833c8a55325",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\UniformParentProcess.lean"
+    }
+  ],
+  "compilerExitCode": 0,
+  "sourceSha256": "f30a50c742c6348973711fbd73c2139a33efe9185e2218a74874d42a1aaeb4d3",
+  "dependencyMode": "Existing checked local objects; no clean-machine rebuild in this run",
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "status": "PASS",
+  "module": "PureInductionPaths",
+  "lean": "4.33.1",
+  "elapsedSeconds": 37.5316269,
+  "memoryLimitMb": 4096,
+  "selectedEndpoints": [
+    {
+      "declaration": "PureInductionPaths.countPath_measurable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionPaths.countPath_depends_prefix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionPaths.pathEvent_eq_noise_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionPaths.path_probability_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionPaths.coupled_measurable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionPaths.joint_parent_projection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionPaths.unresolved_measurable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "timestampUtc": "2026-09-25T17:39:55.7650749Z",
+  "logSha256": "5e90a3eb33addae9af6b845f182fb405ee419133741d4e16707d4a31f6a30604",
+  "oleanSha256": "eefc8c8e56ad20150d50f820460d13bba36c40b681c4dd36c0529fb7053c4112",
+  "maximumWorkers": 1
+}

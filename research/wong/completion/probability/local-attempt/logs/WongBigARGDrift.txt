@@ -1,0 +1,8 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\integration\resumption\staging\probability-cycle\publish\real\WongBigARGDrift.lean:100:16: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\integration\resumption\staging\probability-cycle\publish\real\WongBigARGDrift.lean:100:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'WongBigARGDrift.weighted_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGDrift.potential_drift' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+'PureInductionNoise.parent_schedule_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.actual_parent_ae_iap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.avoidance_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.history_avoid_inter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.history_avoid_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.unresolved_probability_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.unresolved_history_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionNoise.unresolved_conditional_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

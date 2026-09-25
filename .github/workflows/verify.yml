@@ -19,8 +19,18 @@ jobs:
         run: python3 checks/audit_lean.py
       - name: Check finite-path tests
         run: python3 -m unittest discover -s checks -p 'test_*.py' -v
+      - name: Check local research library and calibration example
+        run: |
+          python3 -m unittest discover -s research/source-library -p test_source_library.py -v
+          python3 research/open-problems/time-self-reference/calibration_demo.py
+      - name: Check GitHub mathematical formatting
+        run: python3 checks/check_math_format.py
+      - name: Check frozen ancestry packet integrity
+        run: python3 research/feedback-speciation/pure-induction-ancestry-v2/verify_packet.py
       - name: Replay finite certificate example
         run: python3 checks/check_local_certificate.py
+      - name: Check every neighborhood of the stateful CA rule
+        run: python3 checks/check_stateful_ca.py
       - name: Compare exact interval and set-frontier engines
         run: python3 research/thue-morse/interval_check.py
       - name: Check sharp-proof trajectory indexing
@@ -31,6 +41,13 @@ jobs:
           MATHLIB_NO_CACHE_ON_UPDATE: '1'
         run: |
           lake update
-          lake exe cache get Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Analysis.Convex.Hull Mathlib.Tactic.Linarith Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring
+          lake exe cache get Mathlib.Order.Zorn Mathlib.Data.Finset.Card Mathlib.Logic.Encodable.Basic Mathlib.SetTheory.Ordinal.Rank Mathlib.Order.WellFounded Mathlib.Data.Finset.Lattice.Fold Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Analysis.Convex.Hull Mathlib.Tactic.Linarith Mathlib.Tactic.Positivity Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Data.Fintype.EquivFin Mathlib.Data.Finset.Union Mathlib.Data.Finset.Max Mathlib.Data.Finset.Prod Mathlib.Data.Fintype.Prod Mathlib.Algebra.BigOperators.Fin Mathlib.Tactic.FieldSimp Mathlib.Tactic.FinCases Mathlib.Data.Finset.Filter Mathlib.Data.Real.Basic Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.Order.BigOperators.Group.Finset Mathlib.Data.Fintype.BigOperators Mathlib.Data.List.Sort Mathlib.Algebra.BigOperators.Group.Finset.Basic Mathlib.MeasureTheory.OuterMeasure.BorelCantelli Mathlib.Probability.Kernel.IonescuTulcea.Traj Mathlib.Topology.Algebra.InfiniteSum.ENNReal Mathlib.Data.Fintype.Card Mathlib.Probability.Distributions.Uniform Mathlib.Probability.Independence.InfinitePi Mathlib.Probability.ProductMeasure Mathlib.Probability.Distributions.Exponential Mathlib.Probability.CDF
       - name: Audit real-number theorem axioms
         run: python3 checks/audit_lean.py --real
+      - name: Audit standalone research proof artifacts
+        run: python3 checks/audit_research_artifacts.py --output verification/research-artifacts.json
+      - name: Preserve standalone research audit receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-artifact-audit
+          path: verification/research-artifacts.json

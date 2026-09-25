@@ -1,0 +1,534 @@
+# Selected theorem statements, without proof bodies
+
+Read REVIEW-BRIEF.md first. Each declaration retains its original variable scope.
+GARG nodes are finite; coordinates carry LinearOrder; Anc includes equality.
+MRCA scope includes (G : GARG Node Coord) (x : Coord).
+Interval CellPresentation scope includes (C : CellPresentation R).
+Definitions and exact imports remain available in the referenced source files.
+
+## WongMRCATruncation.exists_unique_mrca
+
+```lean
+theorem exists_unique_mrca (samples : G.samples.Nonempty) (unique : G.UniqueParentAt x)
+    (common : ∃ a, Common G x a) : ∃! m, IsMRCA G x m
+```
+
+## WongMRCATruncation.mrca_unique
+
+```lean
+theorem mrca_unique {m n : Node} (hm : IsMRCA G x m) (hn : IsMRCA G x n) : m = n
+```
+
+## WongMRCATruncation.common_iff_ancestor_mrca
+
+```lean
+theorem common_iff_ancestor_mrca {m : Node} (hm : IsMRCA G x m) (a : Node) :
+    Common G x a ↔ Anc G x a m
+```
+
+## WongMRCATruncation.truncation_iff_cut_above
+
+```lean
+theorem truncation_iff_cut_above {m : Node} (hm : IsMRCA G x m) (p c : Node) :
+    TruncatedAt G x p c ↔ G.ExtractedAt x p c ∧ ¬ Anc G x c m
+```
+
+## WongMRCATruncation.truncation_iff_below_mrca
+
+```lean
+theorem truncation_iff_below_mrca (unique : G.UniqueParentAt x)
+    {m : Node} (hm : IsMRCA G x m) (p c : Node) :
+    TruncatedAt G x p c ↔ G.ExtractedAt x p c ∧ Anc G x m p
+```
+
+## WongMRCATruncation.sample_paths_preserved
+
+```lean
+theorem sample_paths_preserved {a s : Node} (ha : a ∈ G.samples) (hs : s ∈ G.samples) :
+    Reach (TruncatedAt G x) a s ↔ Reach (G.AtLocus x) a s
+```
+
+## WongMRCATruncation.mrca_sample_paths_preserved
+
+```lean
+theorem mrca_sample_paths_preserved {m s : Node} (hm : IsMRCA G x m)
+    (hs : s ∈ G.samples) :
+    Reach (TruncatedAt G x) m s ↔ Reach (G.AtLocus x) m s
+```
+
+## WongMRCATruncation.mrca_reaches_every_sample
+
+```lean
+theorem mrca_reaches_every_sample {m : Node} (hm : IsMRCA G x m)
+    {s : Node} (hs : s ∈ G.samples) :
+    m = s ∨ Reach (TruncatedAt G x) m s
+```
+
+## WongMRCATruncation.no_incoming_mrca
+
+```lean
+theorem no_incoming_mrca {m : Node} (hm : IsMRCA G x m) (p : Node) :
+    ¬ TruncatedAt G x p m
+```
+
+## WongMRCATruncation.truncated_support
+
+```lean
+theorem truncated_support {p c : Node} (h : TruncatedAt G x p c) :
+    ∃ s ∈ G.samples, c = s ∨ Reach (TruncatedAt G x) c s
+```
+
+## WongMRCATruncation.no_common_no_extra_truncation
+
+```lean
+theorem no_common_no_extra_truncation (h : ¬ ∃ a, Common G x a) (p c : Node) :
+    TruncatedAt G x p c ↔ G.ExtractedAt x p c
+```
+
+## WongMRCATruncation.ancestral_sample_is_mrca
+
+```lean
+theorem ancestral_sample_is_mrca {s : Node} (hs : s ∈ G.samples) (hc : Common G x s) :
+    IsMRCA G x s
+```
+
+## WongMRCATruncation.singleton_sample_is_mrca
+
+```lean
+theorem singleton_sample_is_mrca {s : Node} (samples : G.samples = {s}) :
+    IsMRCA G x s
+```
+
+## WongMRCATruncation.singleton_has_no_edges
+
+```lean
+theorem singleton_has_no_edges {s : Node} (samples : G.samples = {s}) (p c : Node) :
+    ¬ TruncatedAt G x p c
+```
+
+## WongMRCATruncation.empty_samples_no_edges
+
+```lean
+theorem empty_samples_no_edges (samples : G.samples = ∅) (p c : Node) :
+    ¬ TruncatedAt G x p c
+```
+
+## WongMRCATruncation.distinct_sample_roots_no_common
+
+```lean
+theorem distinct_sample_roots_no_common {r s : Node} (hr : r ∈ G.samples)
+    (hs : s ∈ G.samples) (different : r ≠ s)
+    (rootR : ∀ p, ¬ G.AtLocus x p r) (rootS : ∀ p, ¬ G.AtLocus x p s) :
+    ¬ ∃ a, Common G x a
+```
+
+## WongMRCATruncation.truncate_at_iff
+
+```lean
+theorem truncate_at_iff (p c : Node) :
+    (truncate G).AtLocus x p c ↔ TruncatedAt G x p c
+```
+
+## WongMRCATruncation.truncate_unique_parent
+
+```lean
+theorem truncate_unique_parent (unique : G.UniqueParentAt x) :
+    (truncate G).UniqueParentAt x
+```
+
+## WongMRCATruncation.truncate_sample_supported
+
+```lean
+theorem truncate_sample_supported : (truncate G).SampleSupported
+```
+
+## WongMRCATruncation.truncate_breakpoints
+
+```lean
+theorem truncate_breakpoints : (truncate G).breakpoints ⊆ G.breakpoints
+```
+
+## WongMRCATruncation.truncate_sample_paths
+
+```lean
+theorem truncate_sample_paths {a s : Node} (ha : a ∈ G.samples) (hs : s ∈ G.samples) :
+    Reach ((truncate G).AtLocus x) a s ↔ Reach (G.AtLocus x) a s
+```
+
+## WongMRCATruncation.truncate_mrca_paths
+
+```lean
+theorem truncate_mrca_paths {m s : Node} (hm : IsMRCA G x m) (hs : s ∈ G.samples) :
+    Reach ((truncate G).AtLocus x) m s ↔ Reach (G.AtLocus x) m s
+```
+
+## WongMRCATruncation.finite_mrca_truncation
+
+```lean
+theorem finite_mrca_truncation :
+    ∃ H : GARG Node Coord,
+      H.samples = G.samples ∧ H.NonemptyAnnotations ∧ H.CanonicalRecords ∧
+      (∀ y p c, H.AtLocus y p c ↔ TruncatedAt G y p c) ∧
+      H.SampleSupported ∧
+      (∀ y, G.UniqueParentAt y → H.UniqueParentAt y) ∧
+      H.breakpoints ⊆ G.breakpoints ∧
+      (∀ y a s, a ∈ G.samples → s ∈ G.samples →
+        (Reach (H.AtLocus y) a s ↔ Reach (G.AtLocus y) a s)) ∧
+      (∀ y m s, IsMRCA G y m → s ∈ G.samples →
+        (Reach (H.AtLocus y) m s ↔ Reach (G.AtLocus y) m s))
+```
+
+## WongMRCATruncation.supported_but_removed
+
+```lean
+theorem supported_but_removed (samples : G.samples.Nonempty) {p c : Node}
+    (hc : Common G x c) (edge : G.AtLocus x p c) :
+    G.ExtractedAt x p c ∧ ¬ TruncatedAt G x p c
+```
+
+## WongIntervalCanonicalization.join_contains
+
+```lean
+theorem join_contains (I J : Interval Coord) (h : I.hi = J.lo) (x : Coord) :
+    (join I J h).Contains x ↔ I.Contains x ∨ J.Contains x
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_covers
+
+```lean
+theorem mergeAdjacent_covers (L : List (Interval Coord)) (x : Coord) :
+    Covers (mergeAdjacent L) x ↔ Covers L x
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_lo
+
+```lean
+theorem mergeAdjacent_lo (L : List (Interval Coord)) {J : Interval Coord}
+    (hJ : J ∈ mergeAdjacent L) : ∃ I ∈ L, J.lo = I.lo
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_hi
+
+```lean
+theorem mergeAdjacent_hi (L : List (Interval Coord)) {J : Interval Coord}
+    (hJ : J ∈ mergeAdjacent L) : ∃ I ∈ L, J.hi = I.hi
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_separated
+
+```lean
+theorem mergeAdjacent_separated (L : List (Interval Coord)) (hL : Ordered L) :
+    Separated (mergeAdjacent L)
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_of_separated
+
+```lean
+theorem mergeAdjacent_of_separated (L : List (Interval Coord)) (hL : Separated L) :
+    mergeAdjacent L = L
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_idempotent
+
+```lean
+theorem mergeAdjacent_idempotent (L : List (Interval Coord)) (hL : Ordered L) :
+    mergeAdjacent (mergeAdjacent L) = mergeAdjacent L
+```
+
+## WongIntervalCanonicalization.separated_semantic_unique
+
+```lean
+theorem separated_semantic_unique (L M : List (Interval Coord))
+    (hL : Separated L) (hM : Separated M)
+    (heq : ∀ x, Covers L x ↔ Covers M x) : L = M
+```
+
+## WongIntervalCanonicalization.mergeAdjacent_semantic_unique
+
+```lean
+theorem mergeAdjacent_semantic_unique (L M : List (Interval Coord))
+    (hL : Ordered L) (hM : Ordered M) (heq : ∀ x, Covers L x ↔ Covers M x) :
+    mergeAdjacent L = mergeAdjacent M
+```
+
+## WongIntervalCanonicalization.separated_gap
+
+```lean
+theorem separated_gap {L : List (Interval Coord)} (hL : Separated L)
+    {I J : Interval Coord} (hI : I ∈ L) (hJ : J ∈ L) (hne : I ≠ J) :
+    I.hi < J.lo ∨ J.hi < I.lo
+```
+
+## WongIntervalCanonicalization.canonicalRegions_covers
+
+```lean
+theorem canonicalRegions_covers (F : Finset (Interval Coord)) (x : Coord) :
+    Covers (canonicalRegions F) x ↔ ∃ I ∈ F, I.Contains x
+```
+
+## WongIntervalCanonicalization.canonicalRegions_separated
+
+```lean
+theorem canonicalRegions_separated (F : Finset (Interval Coord))
+    (hF : ∀ I ∈ F, ∀ J ∈ F, I ≠ J → I.Disjoint J) : Separated (canonicalRegions F)
+```
+
+## WongIntervalCanonicalization.canonicalRegions_endpoints
+
+```lean
+theorem canonicalRegions_endpoints (F : Finset (Interval Coord)) {J : Interval Coord}
+    (hJ : J ∈ canonicalRegions F) :
+    (∃ I ∈ F, J.lo = I.lo) ∧ (∃ I ∈ F, J.hi = I.hi)
+```
+
+## WongIntervalCanonicalization.canonicalRegions_unique
+
+```lean
+theorem canonicalRegions_unique (F H : Finset (Interval Coord))
+    (hF : ∀ I ∈ F, ∀ J ∈ F, I ≠ J → I.Disjoint J)
+    (hH : ∀ I ∈ H, ∀ J ∈ H, I ≠ J → I.Disjoint J)
+    (heq : ∀ x, (∃ I ∈ F, I.Contains x) ↔ ∃ I ∈ H, I.Contains x) :
+    canonicalRegions F = canonicalRegions H
+```
+
+## WongIntervalCanonicalization.CellPresentation.serializedRegions_separated
+
+```lean
+theorem serializedRegions_separated (a b : Node) : Separated (serializedRegions C a b)
+```
+
+## WongIntervalCanonicalization.CellPresentation.serializedRegions_covers
+
+```lean
+theorem serializedRegions_covers (x : Coord) (a b : Node) :
+    Covers (serializedRegions C a b) x ↔ R x a b
+```
+
+## WongIntervalCanonicalization.CellPresentation.canonicalGARG_at
+
+```lean
+theorem canonicalGARG_at (samples : Finset Node) (acyclic : UnionAcyclic R)
+    (x : Coord) (a b : Node) : (canonicalGARG C samples acyclic).AtLocus x a b ↔ R x a b
+```
+
+## WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical
+
+```lean
+theorem canonicalGARG_canonical (samples : Finset Node) (acyclic : UnionAcyclic R) :
+    (canonicalGARG C samples acyclic).CanonicalRecords
+```
+
+## WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal
+
+```lean
+theorem canonicalGARG_maximal (samples : Finset Node) (acyclic : UnionAcyclic R) :
+    ∀ e ∈ (canonicalGARG C samples acyclic).records,
+      ∀ I ∈ e.regions, ∀ J ∈ e.regions, I ≠ J → I.hi < J.lo ∨ J.hi < I.lo
+```
+
+## WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints
+
+```lean
+theorem canonicalGARG_endpoints (samples : Finset Node) (acyclic : UnionAcyclic R)
+    (B : Finset Coord) (endpoints : ∀ I ∈ C.cells, I.lo ∈ B ∧ I.hi ∈ B) :
+    (canonicalGARG C samples acyclic).breakpoints ⊆ B
+```
+
+## WongIntervalCanonicalization.canonicalize_at
+
+```lean
+theorem canonicalize_at (G : GARG Node Coord) (x : Coord) (a b : Node) :
+    (canonicalize G).AtLocus x a b ↔ G.AtLocus x a b
+```
+
+## WongIntervalCanonicalization.canonicalize_breakpoints
+
+```lean
+theorem canonicalize_breakpoints (G : GARG Node Coord) :
+    (canonicalize G).breakpoints ⊆ G.breakpoints
+```
+
+## WongIntervalCanonicalization.canonicalize_nonempty
+
+```lean
+theorem canonicalize_nonempty (G : GARG Node Coord) : (canonicalize G).NonemptyAnnotations
+```
+
+## WongIntervalCanonicalization.canonicalize_canonical
+
+```lean
+theorem canonicalize_canonical (G : GARG Node Coord) : (canonicalize G).CanonicalRecords
+```
+
+## WongIntervalCanonicalization.canonicalize_maximal
+
+```lean
+theorem canonicalize_maximal (G : GARG Node Coord) :
+    ∀ e ∈ (canonicalize G).records, ∀ I ∈ e.regions, ∀ J ∈ e.regions,
+      I ≠ J → I.hi < J.lo ∨ J.hi < I.lo
+```
+
+## WongIntervalCanonicalization.serialized_semantic_unique
+
+```lean
+theorem serialized_semantic_unique {R Q : Coord → Node → Node → Prop}
+    (C : WongIntervalNormalization.CellPresentation R)
+    (D : WongIntervalNormalization.CellPresentation Q)
+    (heq : ∀ x a b, R x a b ↔ Q x a b) (a b : Node) :
+    CellPresentation.serializedRegions C a b = CellPresentation.serializedRegions D a b
+```
+
+## WongIntervalCanonicalization.serialized_empty
+
+```lean
+theorem serialized_empty {R : Coord → Node → Node → Prop}
+    (C : WongIntervalNormalization.CellPresentation R) (a b : Node)
+    (hempty : ∀ x, ¬ R x a b) : CellPresentation.serializedRegions C a b = []
+```
+
+## WongIntervalCanonicalization.canonicalize_semantic_unique
+
+```lean
+theorem canonicalize_semantic_unique (G H : GARG Node Coord)
+    (hs : G.samples = H.samples)
+    (heq : ∀ x a b, G.AtLocus x a b ↔ H.AtLocus x a b) :
+    canonicalize G = canonicalize H
+```
+
+## WongIntervalCanonicalization.canonicalize_idempotent
+
+```lean
+theorem canonicalize_idempotent (G : GARG Node Coord) :
+    canonicalize (canonicalize G) = canonicalize G
+```
+
+## WongIntervalCanonicalization.canonicalize_topology
+
+```lean
+theorem canonicalize_topology (G : GARG Node Coord) (a b : Node) :
+    (canonicalize G).Topology a b ↔ ∃ x, G.AtLocus x a b
+```
+
+## WongIntervalCanonicalization.executable_touching_gap_example
+
+```lean
+theorem WongIntervalCanonicalization.executable_touching_gap_example :
+    (WongIntervalCanonicalization.mergeAdjacent
+      ([⟨0, 1, by decide⟩, ⟨1, 2, by decide⟩, ⟨2, 3, by decide⟩,
+        ⟨5, 6, by decide⟩] : List (WongGARG.Interval Nat))).map
+      (fun I => (I.lo, I.hi)) = [(0, 3), (5, 6)]
+```
+
+## WongSimplificationNormalForm.first_kept_child
+
+```lean
+theorem first_kept_child (G : GARG Node Coord) (x : Coord)
+    (K : Node → Prop) (keepSamples : ∀ s ∈ G.samples, K s)
+    {a b : Node} (ha : K a) (edge : G.ExtractedAt x a b) :
+    ∃ c, Contract (G.ExtractedAt x) K a c ∧ Anc G x b c
+```
+
+## WongSimplificationNormalForm.siblings_disjoint
+
+```lean
+theorem siblings_disjoint (G : GARG Node Coord) (x : Coord)
+    (unique : G.UniqueParentAt x) {a b c z : Node}
+    (different : b ≠ c) (ab : G.AtLocus x a b) (ac : G.AtLocus x a c)
+    (bz : Anc G x b z) (cz : Anc G x c z) : False
+```
+
+## WongSimplificationNormalForm.retained_nonsample_branches
+
+```lean
+theorem retained_nonsample_branches (G : GARG Node Coord) (x : Coord)
+    (unique : G.UniqueParentAt x) {a : Node}
+    (kept : KeepSamplesAndBranching G x a) (nonsample : a ∉ G.samples) :
+    ∃ b c, b ≠ c ∧
+      Contract (G.ExtractedAt x) (KeepSamplesAndBranching G x) a b ∧
+      Contract (G.ExtractedAt x) (KeepSamplesAndBranching G x) a c
+```
+
+## WongSimplificationNormalForm.represented_contraction_normal
+
+```lean
+theorem represented_contraction_normal (G H : GARG Node Coord)
+    (samples : H.samples = G.samples)
+    (edges : ∀ x a b, H.AtLocus x a b ↔
+      Contract (G.ExtractedAt x) (KeepSamplesAndBranching G x) a b)
+    (x : Coord) (unique : G.UniqueParentAt x) : NoNonsampleUnary H x
+```
+
+## WongSimplificationNormalForm.finite_local_normal_form
+
+```lean
+theorem finite_local_normal_form (G : GARG Node Coord) :
+    ∃ H : GARG Node Coord,
+      H.samples = G.samples ∧ H.NonemptyAnnotations ∧ H.CanonicalRecords ∧
+      (∀ x a b, H.AtLocus x a b ↔
+        Contract (G.ExtractedAt x) (KeepSamplesAndBranching G x) a b) ∧
+      (∀ x, G.UniqueParentAt x → H.UniqueParentAt x ∧ NoNonsampleUnary H x) ∧
+      H.SampleSupported ∧ H.breakpoints ⊆ G.breakpoints ∧
+      (∀ x a s, KeepSamplesAndBranching G x a → s ∈ G.samples →
+        (Reach (H.AtLocus x) a s ↔ Reach (G.AtLocus x) a s))
+```
+
+## WongSimplificationNormalForm.finite_resolved_normal_form
+
+```lean
+theorem finite_resolved_normal_form (G : GARG Node Coord) :
+    ∃ H : GARG Node Coord,
+      H.samples = G.samples ∧ H.NonemptyAnnotations ∧ H.CanonicalRecords ∧
+      (∀ x a b, H.AtLocus x a b ↔
+        Contract ((truncate G).ExtractedAt x)
+          (KeepSamplesAndBranching (truncate G) x) a b) ∧
+      (∀ x, G.UniqueParentAt x → H.UniqueParentAt x ∧ NoNonsampleUnary H x) ∧
+      H.SampleSupported ∧ H.breakpoints ⊆ G.breakpoints ∧
+      (∀ x a s, a ∈ G.samples → s ∈ G.samples →
+        (Reach (H.AtLocus x) a s ↔ Reach (G.AtLocus x) a s)) ∧
+      (∀ x m s, G.samples.Nonempty → IsMRCA G x m → s ∈ G.samples →
+        (Reach (H.AtLocus x) m s ↔ Reach (G.AtLocus x) m s))
+```
+
+## WongSimplificationNormalForm.mrca_kept
+
+```lean
+theorem mrca_kept (G : GARG Node Coord) (x : Coord)
+    (nonempty : G.samples.Nonempty) {m : Node} (hm : IsMRCA G x m) :
+    KeepSamplesAndBranching G x m
+```
+
+## WongSimplificationNormalForm.truncated_mrca_kept
+
+```lean
+theorem truncated_mrca_kept (G : GARG Node Coord) (x : Coord)
+    (nonempty : G.samples.Nonempty) {m : Node} (hm : IsMRCA G x m) :
+    KeepSamplesAndBranching (truncate G) x m
+```
+
+## WongSimplificationNormalForm.canonicalize_paths
+
+```lean
+theorem canonicalize_paths (G : GARG Node Coord) (x : Coord) (a b : Node) :
+    Reach ((WongIntervalCanonicalization.canonicalize G).AtLocus x) a b ↔
+      Reach (G.AtLocus x) a b
+```
+
+## WongSimplificationNormalForm.canonical_resolved_normal_form
+
+```lean
+theorem canonical_resolved_normal_form (G : GARG Node Coord) :
+    ∃ H : GARG Node Coord,
+      H.samples = G.samples ∧ H.NonemptyAnnotations ∧ H.CanonicalRecords ∧
+      (∀ x a b, H.AtLocus x a b ↔
+        Contract ((truncate G).ExtractedAt x)
+          (KeepSamplesAndBranching (truncate G) x) a b) ∧
+      (∀ x, G.UniqueParentAt x → H.UniqueParentAt x ∧ NoNonsampleUnary H x) ∧
+      H.SampleSupported ∧ H.breakpoints ⊆ G.breakpoints ∧
+      (∀ x a s, a ∈ G.samples → s ∈ G.samples →
+        (Reach (H.AtLocus x) a s ↔ Reach (G.AtLocus x) a s)) ∧
+      (∀ x m s, G.samples.Nonempty → IsMRCA G x m → s ∈ G.samples →
+        (Reach (H.AtLocus x) m s ↔ Reach (G.AtLocus x) m s)) ∧
+      (∀ e ∈ H.records, ∀ I ∈ e.regions, ∀ J ∈ e.regions,
+        I ≠ J → I.hi < J.lo ∨ J.hi < I.lo) ∧
+      WongIntervalCanonicalization.canonicalize H = H
+```

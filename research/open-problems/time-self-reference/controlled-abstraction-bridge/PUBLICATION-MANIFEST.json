@@ -1,0 +1,186 @@
+{
+  "manifest_self_hash": "Reported separately by handoff after final write.",
+  "relative_link_check": {
+    "markdown_files": 4,
+    "broken_links": 0
+  },
+  "file_integrity_records": [
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/BRIDGE.md",
+      "staged_sha256": "4d1ad176e2e3eedb5c2df63c3925287d8b239299a739d262e3a54ca1344a2af3",
+      "change": "Math delimiters converted to GitHub-safe syntax; unavailable local synthesis link changed to internal-intake scope reference.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/BRIDGE.md",
+      "original_sha256": "797e1f989fa8805d9d0f44252a213fccde0ef996015ae86d41a920de539f2ff9"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCES.md",
+      "staged_sha256": "5efc0aeeb375ee36625344f494cbcc82f2e39c3718606439563fccfd7c5c992e",
+      "change": "Math delimiters normalized if present; local source paths replaced with public labels and immutable locators.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCES.md",
+      "original_sha256": "8427cd4fd5ae01cfff6be2160d118c5b15d32f4ddf4e1c76051620014fa5e94b"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCE-MANIFEST.json",
+      "staged_sha256": "56ba71b9e59ae7af69e651494667b60035bb1a95743c1ada873e3527e6962cad",
+      "change": "Local paths replaced with descriptive labels or canonical repository paths; hashes and source locators preserved; ledger noted as not copied.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCE-MANIFEST.json",
+      "original_sha256": "e652f62bca076bcd5ff030e5041bf089f25518297b5562db214b621ded007587"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/check_models.py",
+      "staged_sha256": "696a08f6882dcf6361b418e95add86347507e8d2b181d06835e8783db683456c",
+      "change": "Unchanged.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/check_models.py",
+      "original_sha256": "696a08f6882dcf6361b418e95add86347507e8d2b181d06835e8783db683456c"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/FINITE-CHECKS.json",
+      "staged_sha256": "6f52b7eceb2a42b38ed35326de134ed3af2c18e02a129ed5196f92147dc1fa9c",
+      "change": "Frozen original unchanged; disposable replay receipt is separate.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/FINITE-CHECKS.json",
+      "original_sha256": "6f52b7eceb2a42b38ed35326de134ed3af2c18e02a129ed5196f92147dc1fa9c"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOL2-REVIEW.md",
+      "staged_sha256": "2a141a40593f444dc3f9222619b700ee6c3a24c325be433dab95ed9dd04c964a",
+      "change": "Unchanged; scoped review included.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOL2-REVIEW.md",
+      "original_sha256": "2a141a40593f444dc3f9222619b700ee6c3a24c325be433dab95ed9dd04c964a"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "staged_sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e",
+      "change": "Unchanged byte-identical copy from pinned public commit 138dd529643ae5706a9df6a750bd6344ab967a8a.",
+      "public_path": "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "original_sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "staged_sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554",
+      "change": "Unchanged byte-identical copy from pinned public commit 138dd529643ae5706a9df6a750bd6344ab967a8a.",
+      "public_path": "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "original_sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+      "staged_sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696",
+      "change": "Unchanged byte-identical copy from pinned public commit 138dd529643ae5706a9df6a750bd6344ab967a8a.",
+      "public_path": "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+      "original_sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/README.md",
+      "staged_sha256": "be5da0efc8bbeee580b261d610a63c032bf0383f0f3100303fde6fdf2d86ced6",
+      "change": "Editorial precision: distinguishes the finite cell model from the history-sensitive decision model; replay instructions use included source snapshots; theorem claims unchanged.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/README.md",
+      "original_sha256": null
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/REPLAY-RECEIPT.json",
+      "staged_sha256": "a86d3f555f2c99ef3a1dd8181e9315cea48d363427743067ff71a28677b883b4",
+      "change": "New single-run replay receipt for the proposed public layout; no Lean invocation.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/REPLAY-RECEIPT.json",
+      "original_sha256": null
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/ExactAbstraction.lean",
+      "staged_sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e",
+      "change": "Additional byte-identical path copy of original source snapshot, included because unchanged checker resolves source-snapshots/ from packet root.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/ExactAbstraction.lean",
+      "original_sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/MergeHistoryProjection.lean",
+      "staged_sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554",
+      "change": "Additional byte-identical path copy of original source snapshot, included because unchanged checker resolves source-snapshots/ from packet root.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/MergeHistoryProjection.lean",
+      "original_sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554"
+    },
+    {
+      "staged_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/PUBLIC-VERIFICATION.json",
+      "staged_sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696",
+      "change": "Additional byte-identical path copy of original source snapshot, included because unchanged checker resolves source-snapshots/ from packet root.",
+      "public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/PUBLIC-VERIFICATION.json",
+      "original_sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696"
+    }
+  ],
+  "public_allowlist": [
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/README.md",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/BRIDGE.md",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCES.md",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCE-MANIFEST.json",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/check_models.py",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/FINITE-CHECKS.json",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOL2-REVIEW.md",
+    "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+    "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+    "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/REPLAY-RECEIPT.json",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/ExactAbstraction.lean",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/MergeHistoryProjection.lean",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/PUBLIC-VERIFICATION.json",
+    "research/open-problems/time-self-reference/controlled-abstraction-bridge/PUBLICATION-MANIFEST.json"
+  ],
+  "proof_scope": {
+    "new_toy_and_H_refinement": "written derivation plus bounded Python checks only",
+    "new_cycle_lean_invocations": 0,
+    "prior_q04_q09_receipt": "PASS",
+    "merge_history_projection_endpoints": 8,
+    "prior_selected_lean_endpoints": 16,
+    "exact_abstraction_endpoints": 8
+  },
+  "excluded_artifacts": [
+    "STATEMENT-ONLY-BRIEF.md",
+    "HANDOFF.md",
+    "ARTIFACT-MANIFEST.json",
+    "package_packet.py",
+    "source-snapshots/problem-ledger.json",
+    "Published paper PDF and supplied Levin/Friston transcripts",
+    "Internal intake README, synthesis, source matrix, paper notes and page extraction"
+  ],
+  "source_snapshot_commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+  "intended_public_root": "research/open-problems/time-self-reference/controlled-abstraction-bridge/",
+  "packet": "general-connections-cycle1",
+  "source_manifest_transform": {
+    "source_file": "SOURCE-MANIFEST.json",
+    "source_hashes_and_locators_preserved": true,
+    "remote_problem_ledger_pointer_retained_but_snapshot_excluded": true,
+    "local_source_paths_replaced": true
+  },
+  "included_programme_snapshots": [
+    "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+    "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+    "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json"
+  ],
+  "finite_replay": {
+    "all_results_match_except_recorded_utc": true,
+    "status": "MATCH_EXCEPT_TIMESTAMP",
+    "script_sha256": "696a08f6882dcf6361b418e95add86347507e8d2b181d06835e8783db683456c",
+    "lean_invocations": 0,
+    "receipt_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/REPLAY-RECEIPT.json",
+    "attempt_count": 1,
+    "disposable_layout": "proposed public packet layout with included source-snapshots/"
+  },
+  "schema_version": 1,
+  "format_check": {
+    "markdown_files": 4,
+    "exit_code": 0,
+    "inline_math_spans": 133,
+    "display_math_fences": 8,
+    "errors": 0,
+    "checker": "unchanged research-coordination/publication/check_math_format.py"
+  },
+  "checker_input_path_transform": {
+    "checker_unchanged": true,
+    "expected_path": "packet-root/source-snapshots/{ExactAbstraction.lean,MergeHistoryProjection.lean,PUBLIC-VERIFICATION.json}",
+    "added_public_path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/",
+    "bytes_identical_to_author_snapshots": true,
+    "canonical_sibling_copies_preserved": true
+  },
+  "editorial_correction": {
+    "file": "research/open-problems/time-self-reference/controlled-abstraction-bridge/README.md",
+    "before": "two finite models",
+    "after": "a finite cell-state model and a history-sensitive decision model",
+    "reason": "Decision states range over B × B* with arbitrary finite records; finite checker coverage remains explicitly bounded."
+  }
+}

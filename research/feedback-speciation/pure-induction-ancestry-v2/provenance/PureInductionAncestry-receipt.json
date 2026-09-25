@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "compilerExitCode": 0,
+  "oleanSha256": "1a43551b9b1a2fd0c1cf9ea4b7ed991a65cb562404ef04e6ae8e241270482c59",
+  "elapsedSeconds": 25.4269071,
+  "dependencyMode": "Existing checked local objects; no clean-machine rebuild in this run",
+  "module": "PureInductionAncestry",
+  "selectedEndpoints": [
+    {
+      "declaration": "PureInductionAncestry.raw_record_mass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.ordinary_mass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.pulse_mass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.finite_path_frozen",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.shared_mass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.shared_avoidance_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.shared_history_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.shared_conditional_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.resolution_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.resolution_conditional_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "PureInductionAncestry.marker_barrier_and_iap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "maximumWorkers": 1,
+  "reusedDependencies": [
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\package\\vendor\\SamuelAlexanderResearch\\SpeciesBridge.lean",
+      "sourceSha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\package\\FeedbackDynamics.lean",
+      "sourceSha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\ExtinctionPedigree.lean",
+      "sourceSha256": "ddb618e00f758546176eaedfbfc86d7457767133bc784b2990972c07a8fe63fb"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\ParentSchedules.lean",
+      "sourceSha256": "a35bc0c6e774cba93c2eebabe0f29530cceb12079d115e4ae28f2a6540aafdc7"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\UniformParentCounting.lean",
+      "sourceSha256": "3fbb09bbdfa0ffb78cf9e88488bceb3e831fd4f014dfdf3db6fe70370d75bea2"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\feedback-speciation\\extinction\\UniformParentProcess.lean",
+      "sourceSha256": "1cce9f8d1738255cd59e2553ea75dbe3b2078ed4b50d261c28e6b833c8a55325"
+    }
+  ],
+  "memoryLimitMb": 4096,
+  "logSha256": "4049c721c6f2162a2a59906916720be47d3f95aa9ecc208beaeb8e01fd19f00b",
+  "timestampUtc": "2026-09-25T17:42:17.3535035Z",
+  "lean": "4.33.1",
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "sourceSha256": "cc58fed43614564e0bdfaa6fb2527b035cf789c45b3096d15ddb8693a64c855d"
+}

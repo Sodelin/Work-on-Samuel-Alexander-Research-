@@ -1,0 +1,10 @@
+[(false, false), (false, true), (true, false), (false, true), (true, false)]
+[(false, true), (true, false), (false, true), (true, false), (false, true)]
+'ExactAbstraction.exact_factor_iff' depends on axioms: [Classical.choice]
+'ExactAbstraction.exact_factor_unique' depends on axioms: [Quot.sound]
+'ExactAbstraction.trajectory_preservation' depends on axioms: [propext]
+'ExactAbstraction.compatible_gives_trajectories' depends on axioms: [propext, Classical.choice]
+'ExactAbstraction.TwoBit.projection_collision' does not depend on any axioms
+'ExactAbstraction.TwoBit.no_state_only_update' depends on axioms: [Classical.choice]
+'ExactAbstraction.TwoBit.period_two_after_first' does not depend on any axioms
+'ExactAbstraction.TwoBit.exact_period_two_after_first' does not depend on any axioms
