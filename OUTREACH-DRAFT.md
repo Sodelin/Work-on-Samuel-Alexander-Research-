@@ -10,7 +10,7 @@ This is a draft for the repository owner to edit and send. No message has been s
 >
 > One direction studies how long the Thue–Morse sequence can be matched in the classification paper's explicit avoiding population. The notebook gives a written quadratic upper bound using the classical overlap-free property, along with exact code that suggests a much sharper linear bound. The linear bound is still a conjecture; I would not want the computation to be mistaken for a proof. We also recorded a degree-counting observation and a conditional cellular-automaton lifeline method, with their precise verification limits.
 >
-> If any of these connects to a question you find interesting, I would be glad to hear which direction is worth pursuing. Corrections or pointers to prior work would be especially welcome. There is no need to review the whole repository; the README and status table give a short entry point.
+> If any of these connects to a question you find interesting, I would be glad to hear which direction is worth pursuing. Corrections or pointers to prior work would be especially welcome. There is no need to review the whole repository; the [two-minute handoff](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/HANDOFF-FOR-ALEXANDER.md) and [research map](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/main/RESEARCH-MAP.md) give short entry points.
 >
 > Thank you for making the mathematics approachable in your videos.
 
