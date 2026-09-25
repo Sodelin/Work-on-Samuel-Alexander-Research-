@@ -21,7 +21,7 @@ Equivalently, \(W_A(q)\ne\varnothing\), \(W_B(q)\ne\varnothing\), and \(|W_A(q)\
 
 **Proof.** Make a vertex \((x,t)\) for each \(x\in C_t\). For every vertex at \(t\ge1\), use the certificate to choose two distinct live predecessors in \(C_{t-1}\) and color the corresponding incoming edges \(A\) and \(B\). The vertices in \(C_0\) are the only roots, so there are finitely many roots. Each vertex has finitely many children because \(N\) is finite. Finite initial support, a finite neighborhood, and a quiescent zero state imply each \(C_t\) is finite; hence only finitely many vertices have birth time at most any real bound. Nonextinction gives infinitely many vertices. This is a two-gender population in Alexander's sense. The periodic word \(ABAB\ldots\) is unavoidable by his Proposition 5, producing the lifeline. The edge-color choice ensures its step restrictions. \(\square\)
 
-**Spaceship velocity corollary.** If, from some generation onward, \(C_{t+T}=C_t+d\) for fixed positive integer \(T\) and integer vector \(d\), then
+**Alternating-word velocity corollary.** If, from some generation onward, \(C_{t+T}=C_t+d\) for fixed positive integer \(T\) and integer vector \(d\), then
 
 \[
 \boxed{\quad d/T\ \in\ P_{AB}:=\tfrac12\bigl(\operatorname{conv}D_A+\operatorname{conv}D_B\bigr).\quad}
@@ -31,11 +31,20 @@ To see this, pair consecutive \(A,B\) steps. Each pair sum belongs to \(D_A+D_B\
 
 The same argument works for a certified periodic word of labels \(L_1\ldots L_p\): its velocity lies in \(p^{-1}\sum_{i=1}^p\operatorname{conv}D_{L_i}\). The two-label case is the smallest nonconstant example.
 
+**Stronger consequence from constant words.** The same two-label certificate also lets us apply Alexander's theorem separately to the periodic words \(AAAA\ldots\) and \(BBBB\ldots\). These give an infinite all-\(A\) lifeline and an infinite all-\(B\) lifeline; they need not be the same path. In a finite-support spaceship, *every* infinite lifeline has asymptotic velocity \(v=d/T\), by the finite-phase argument above. Averages of all-\(A\) steps lie in \(\operatorname{conv}D_A\), and averages of all-\(B\) steps lie in \(\operatorname{conv}D_B\). Hence the same hypotheses actually give
+
+\[
+\boxed{\quad v\in\operatorname{conv}D_A\cap\operatorname{conv}D_B
+\ \subseteq\ \tfrac12(\operatorname{conv}D_A+\operatorname{conv}D_B).\quad}
+\]
+
+The inclusion holds because any \(v\) in both convex hulls equals \((v+v)/2\). Likewise, the intersection is contained in the average convex set for *every* periodic mixture of these fixed label-step sets. Thus the alternating polygon alone cannot improve the velocity exclusion already obtained from the two constant-label paths. This observation corrects the initial search motivation for this note. It is a deduction from Alexander's periodic theorem, not a claim of a new sharp speed limit.
+
 ## Exact checker and bounded research target
 
-For a radius-one binary rule, enumerate all \(2^9=512\) predecessor bit patterns, retaining those where \(F(q)=1\). For a proposed pair \((D_A,D_B)\), compute \(W_A,W_B\) for each retained pattern and reject the pair if either is empty or their union has size less than two. The companion `check_local_certificate.py` implements this finite check for a supplied neighborhood, rule function, and two step sets; its toy-rule demo checks all eight rows, three of which produce live output. The witness pairs can be recorded as a small, independently replayable certificate table, not merely a yes/no result. Compute the exact rational velocity polygon from the finite set \(\{(a+b)/2:a\in D_A,b\in D_B\}\) via a planar convex hull. A directional upper bound for integer normal \(u\) is the exact rational number \((\max_{a\in D_A}u\cdot a+\max_{b\in D_B}u\cdot b)/2\).
+For a radius-one binary rule, enumerate all \(2^9=512\) predecessor bit patterns, retaining those where \(F(q)=1\). For a proposed pair \((D_A,D_B)\), compute \(W_A,W_B\) for each retained pattern and reject the pair if either is empty or their union has size less than two. The companion `check_local_certificate.py` implements this finite check for a supplied neighborhood, rule function, and two step sets; its toy-rule demo checks all eight rows, three of which produce live output. The witness pairs can be recorded as a small, independently replayable certificate table, not merely a yes/no result. For spaceship velocities, compute the exact polygon \(\operatorname{conv}D_A\cap\operatorname{conv}D_B\). The alternating polygon can be computed too, but is a weaker diagnostic bound. For an integer direction \(u\), the intersection implies the quick necessary bound \(u\cdot v\le\min(\max_{a\in D_A}u\cdot a,\max_{b\in D_B}u\cdot b)\); computing the intersection itself can be stronger still.
 
-A useful search target is a **specific anisotropic or isotropic non-totalistic rule** with a known finite spaceship for which this certified polygon excludes a candidate speed that a simpler one-label direction argument permits. Check known literature and direct geometric bounds before claiming a result. For outer-totalistic B3 rules, Johnston already established broad orthogonal, diagonal, and arbitrary-slope bounds; merely recomputing them is reproduction, not novelty.
+A useful next question is whether a **stateful or phase-sensitive certificate** can constrain successive predecessor choices beyond the static sets \(D_A,D_B\), producing a bound stronger than their convex-hull intersection. No such improvement is established here. Any proposed rule-specific result should be compared with that intersection, direct geometric bounds, and published bounds before claiming a gain. For outer-totalistic B3 rules, Johnston already established broad orthogonal, diagonal, and arbitrary-slope bounds; merely recomputing them is reproduction, not novelty.
 
 As a nonvacuous sanity check, consider the anisotropic rule “the next cell is live exactly when its west neighbor and at least one of its northwest or southwest neighbors were live.” Use \(D_A=\{E,NE\}\), \(D_B=\{E,SE\}\). If west and northwest are live, label the west predecessor \(A\) (step \(E\)) and northwest \(B\) (step \(SE\)). If west and southwest are live, label southwest \(A\) (step \(NE\)) and west \(B\) (step \(E\)). A vertical two-cell domino translates east one cell every generation. Its polygon bound is a useful test of the checker but gives no interesting new speed limit: the rule's mandatory west predecessor already constrains its bounding box more strongly.
 
@@ -48,4 +57,4 @@ As a nonvacuous sanity check, consider the anisotropic rule “the next cell is 
 
 ## Formalization boundary
 
-The finite convex-hull inclusion could be formalized independently in Lean using sums over a periodic list of finite step sets. That would verify only the algebraic velocity step. The substantive local-rule-to-infinite-lifeline bridge still rests on Alexander's graph theorem unless formalized separately. No Lean proof is included in this note.
+The convex-hull intersection and its containment in every periodic mixture could be formalized independently in Lean. That would verify only the algebraic velocity step. The substantive local-rule-to-infinite-lifeline bridge still rests on Alexander's graph theorem unless formalized separately. No Lean proof is included in this note.
