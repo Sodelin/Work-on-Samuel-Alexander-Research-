@@ -22,9 +22,9 @@ ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 
 
-def run(command: list[str]) -> str:
+def run(command: list[str], cwd: Path = ROOT) -> str:
     result = subprocess.run(
-        command, cwd=ROOT, text=True, encoding="utf-8", errors="replace",
+        command, cwd=cwd, text=True, encoding="utf-8", errors="replace",
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=False,
     )
     if result.returncode:
@@ -32,19 +32,20 @@ def run(command: list[str]) -> str:
     return result.stdout
 
 
-def audit() -> dict:
-    manifest = ROOT / "verification" / "FormalAudit.lean"
+def audit(real: bool = False) -> dict:
+    project = ROOT / "real" if real else ROOT
+    manifest = ROOT / "real" / "RealAudit.lean" if real else ROOT / "verification" / "FormalAudit.lean"
     names = re.findall(r"^#print axioms ([A-Za-z0-9_.]+)$", manifest.read_text(encoding="utf-8"), re.M)
     if not names or len(names) != len(set(names)):
         raise RuntimeError("The endpoint manifest must be nonempty and have unique names.")
-    version = run(["lake", "env", "lean", "--version"]).strip()
-    pin = (ROOT / "lean-toolchain").read_text(encoding="utf-8").strip()
+    version = run(["lake", "env", "lean", "--version"], project).strip()
+    pin = (project / "lean-toolchain").read_text(encoding="utf-8").strip()
     if ":v" not in pin or f"version {pin.split(':v', 1)[1]}," not in version:
         raise RuntimeError(f"Lean version differs from the repository pin: {pin!r}, {version!r}")
     # Refresh imports before checking their axioms or hashing their source files.
     # A caller must not receive a receipt for stale compiled dependencies.
-    run(["lake", "build"])
-    output = run(["lake", "env", "lean", str(manifest.relative_to(ROOT))])
+    run(["lake", "build"], project)
+    output = run(["lake", "env", "lean", str(manifest.relative_to(project))], project)
     found = {}
     for name, axioms in re.findall(r"'([^']+)' depends on axioms:\s*\[([^\]]*)\]", output):
         found[name] = [a.strip() for a in axioms.split(",") if a.strip()]
@@ -58,6 +59,17 @@ def audit() -> dict:
     if unexpected:
         raise RuntimeError(f"Unapproved theorem axioms: {unexpected}")
     paths = sorted((ROOT / "lean").rglob("*.lean")) + [manifest]
+    dependencies = {}
+    if real:
+        expected_mathlib = "0df444a360eaa60ab8c11dca51a86af692955474"
+        actual_mathlib = run(["git", "-C", ".lake/packages/mathlib", "rev-parse", "HEAD"], project).strip()
+        if actual_mathlib != expected_mathlib:
+            raise RuntimeError(f"Mathlib revision differs from the audited pin: {actual_mathlib}")
+        if pin != (ROOT / "lean-toolchain").read_text(encoding="utf-8").strip():
+            raise RuntimeError("Real and core projects must use the same Lean version.")
+        dependencies["mathlib"] = actual_mathlib
+        paths += [project / "RealBridges.lean", project / "lakefile.lean",
+                  project / "lake-manifest.json", project / "lean-toolchain"]
     hashes = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
     return {
         "checked_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -66,6 +78,8 @@ def audit() -> dict:
         "endpoint_count": len(names),
         "endpoint_axioms": {name: found[name] for name in names},
         "source_sha256": hashes,
+        "dependencies": dependencies,
+        "project": "real" if real else "core",
         "scope": "Exported endpoint axiom audit; mathematical statement review is separate.",
     }
 
@@ -73,8 +87,9 @@ def audit() -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--real", action="store_true", help="Audit the optional pinned Mathlib project.")
     args = parser.parse_args()
-    report = audit()
+    report = audit(real=args.real)
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

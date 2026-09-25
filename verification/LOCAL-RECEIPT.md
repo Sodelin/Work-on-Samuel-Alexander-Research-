@@ -8,7 +8,7 @@ Run date: 24 September 2026 (America/Los_Angeles). The commands below were run f
 | `python -m unittest discover -s checks -p 'test_*.py' -v` | 6 tests passed | Includes path-history versus endpoint search for starts `0..15`, and bitset versus endpoint search for starts `1..255`. |
 | `python checks/check_local_certificate.py` | `Toy rule certificate: (True, 3, None)` | Three live-output truth-table rows of a toy anisotropic rule. |
 | Replayed `checks/explore.py` for starts `0..8191` | Output agreed with the saved JSON | Exact finite search, with a proved quadratic termination guard. |
-| Compared `explore.path_length(v)` with the saved bitset scan for all `1 <= v < 8192` | All lengths agreed | Independent frontier transitions sharing the same Thue–Morse bit function. |
+| Compared `explore.path_length(v)` with the saved bitset scan for all $`1 \le v < 8192`$ | All lengths agreed | Independent frontier transitions sharing the same Thue–Morse bit function. |
 | Inspected saved bitset scan for starts `1..131071` | `0` counterexamples to the proposed linear inequality, `16` equality cases, and `all_lengths_exact=true` | Finite evidence only. The bitset script reports an over-budget lower bound rather than an exact length if it finds a counterexample. |
 
 ## Saved evidence hashes

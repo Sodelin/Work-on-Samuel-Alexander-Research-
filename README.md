@@ -1,41 +1,47 @@
 # Working on Samuel Alexander's research
 
-This public, AI-assisted research notebook develops bounded follow-on questions from Samuel A. Alexander's [2013 paper on biologically unavoidable sequences](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v20i1p31), the separate [2026 classification manuscript](https://github.com/avg-netizen/biological-unavoidability), and his [specieslike-clusters paper](https://arxiv.org/html/2602.05274v1). It separates established results, Lean-checked special cases, written deductions, finite computations, and open questions.
+A public, AI-assisted mathematics notebook connecting infinite genealogical
+graphs, word avoidance, specieslike clusters and cellular automata. Source
+results, new deductions, conjectures and finite experiments are identified
+separately. This repository has not contacted Dr. Alexander on the owner's behalf.
 
-**Start here:** The [question ledger](QUESTION-LEDGER.md) records each question's origin, answer, and remaining gap. The [research map](RESEARCH-MAP.md) explains the directions in plain language. The [brief handoff](HANDOFF-FOR-ALEXANDER.md) is for Dr. Alexander or another reviewer. The [status table](STATUS.md) and [formalization coverage](FORMALIZATION.md) identify the checked statements and their limits.
+**Start with the [ten research proposals](TEN-RESEARCH-IDEAS.md),
+[brief mathematical handoff](HANDOFF-FOR-ALEXANDER.md), and
+[formalization coverage](FORMALIZATION.md).** The proposals now include several
+proved quantitative and structural results, alongside precise open questions.
 
-> **Current mathematical status:** Lean checks the full sharp bound `3L(v) <= 8v-1` for every `v>=1` in the Thue-Morse avoiding population, the equality formula `L(3*2^n-1)=8*2^n-3`, and the fact that these are exactly the equality starts. The proof includes the actual Thue-Morse bits, every dyadic run, and a bridge to the original edge-labelled graph. Lean also checks actual graph counting, infinite subcritical impossibility for natural birth order, the binary avoidance construction, its specieslike-cluster bridge, the exact two common-ancestor cones, the obstruction to whole-graph common ancestry for every binary natural-date population, and the rational algebra behind the corrected static speed-region comparison. All eleven modules build; all 80 selected endpoints pass the axiom audit. [FORMALIZATION.md](FORMALIZATION.md) gives the precise coverage and remaining premises.
+## Current results
 
-## Results and research questions
+| Direction | Result | What remains |
+|---|---|---|
+| Sharp Thue-Morse avoidance | For $`v\ge1`$, $`3L(v)\le8v-1`$; equality exactly at $`v=3\cdot2^n-1`$, with $`L=8\cdot2^n-3`$; full first-hit corollaries and real-coefficient optimality. | The candidate closed form for every $`L(v)`$ is unproved. |
+| Stability and phase | Finite edits preserve the optimal coefficient $`\frac{8}{3}`$; rebuilding the graph from phase $`a`$ gives $`3L_a(v)\le8v+5a-1`$ for $`v\ge1`$ and the same optimal coefficient, with a complete shifted equality classification. | Finer finite-edit equality sets and joint digit recurrences. |
+| Slow avoidance | For every growth function, an aperiodic target has attained finite matching maxima exceeding that function along increasing starts. | Useful upper bounds from quantitative aperiodicity data. |
+| Fixed vertex genders | Every prescribed aperiodic binary target has a cap-three avoiding productive core that is an inspecies. The retained-subtype classification is checked. | Whether cap two suffices. |
+| Critical degree | Full conservation, triangular minimum crossing count, finite total defects and eventual regularity. Binary minimum width forces $`+1,+2`$ geometry and, with fixed genders, universality. | General-$`k`$ rigidity and larger-width structure. |
+| Formal model closure | The positive binary theorem, birth-order enumeration, actual real-birthdate binary classification, and general degree/root transport are encoded. | General finite-alphabet positive formalization and full CA dynamics. |
+| Species and observation | General IAP/inspecies/root-cone criteria, exact avoiding-graph cones, and indexed ancestry/observation-recovery interfaces. | Broad cluster-core and finite-boundary repair theorems. |
 
-| Line | Current result | Evidence | Next mathematical step |
-|---|---|---|---|
-| [Thue-Morse sharp path length](research/thue-morse/NEXT-INVARIANT.md) | `3L(v) <= 8v-1` for all `v>=1`, with equality exactly at `v=3*2^n-1` and `L(v)=8*2^n-3`. | Complete independently reviewed proof and [full Lean theorem](lean/SamuelAlexanderResearch/SharpThueMorse.lean), including actual bits, dyadic trajectories, and original-edge semantics. Existing scans and the [sharp diagnostic](research/thue-morse/sharp_check.py) remain finite corroboration. | External proof and prior-work review; optional formalization of the exact first-hit formula and real-coefficient optimality, which remain prose corollaries. |
-| [Degree boundary](notes/DEGREE-BOUNDARY.md) | Required `k` labels and child cap `d<k` preclude an infinite naturally ordered population; binary fixed-gender prefix imbalance is at most its root count. Finite ambient critical conservation is also checked. | [Actual graph proofs](lean/SamuelAlexanderResearch/PopulationCounting.lean), including generated infinite prefixes and [statement review](notes/POPULATION-COUNTING-FORMALIZATION.md). | Two-child fixed-gender avoidance; real-date enumeration bridge; infinite critical conservation. |
-| [Specieslike-cluster bridge](notes/SPECIESLIKE-BRIDGE.md) | The whole binary avoiding graph is maximal specieslike, satisfies reflection, and fails common ancestry. With common ancestry imposed, exactly two root cones are maximal. | [Lean graph and avoidance composition](lean/SamuelAlexanderResearch/BinaryPopulation.lean), [two-cone theorem](lean/SamuelAlexanderResearch/SpeciesCones.lean), and [scope note](notes/SPECIES-BRIDGE-FORMALIZATION.md). The full positive theorem remains an explicit premise in Lean. | Extend the formalization to the fixed-gender lift and audit boundary label coverage. |
-| [Universal binary root obstruction](lean/SamuelAlexanderResearch/RootObstruction.lean) | Every `BinaryNatPopulation` has the distinct roots `0` and `1`, so its whole graph cannot satisfy common ancestry. | Checked for every population in the binary natural-date model, beyond the particular avoiding construction. | General finite-alphabet root counts and the real-date enumeration bridge. |
-| [Periodic lifeline certificate](notes/PERIODIC-LIFELINE.md) | Constant-label paths give a convex-hull-intersection bound; fixed weighted static mixing cannot improve it. | Written dynamical reduction, [finite local-rule checker](checks/check_local_certificate.py), and [Lean rational mixing theorem](lean/SamuelAlexanderResearch/StaticMixing.lean). | State or phase constraints that improve the static intersection, followed by prior-work review. |
-| [Automatic-sequence corollary](notes/AUTOMATIC-SEQUENCES.md) | Universality of the specific binary family `P_s` is decidable when `s` is supplied by a finite automaton. | Direct combination of the 2026 manuscript's criterion with the known decidability of ultimate periodicity for automatic sequences. | Implement a certified or independently checked decision procedure if useful. |
+The [core audit](verification/formal-audit.json) and [real-number audit](verification/real-audit.json)
+record exact endpoints, source hashes and permitted proof dependencies. The
+default library is Std-only; the real-number project has a pinned Mathlib
+dependency. The [status table](STATUS.md) states the mathematical boundaries.
 
-The notes identify their precise graph model and quantifiers. A finite search cannot prove an infinite claim; a Lean build checks only the statements encoded in its source. [STATUS.md](STATUS.md) lists the claim-by-claim verification boundary. The full positive classification, the real-date enumeration bridge, and infinite critical-degree conservation remain explicit gaps. Alexander's [2013 inspecies theorem](https://arxiv.org/html/1201.2869) already covers the broad cofinite-descendant phenomenon, and his [2026 Example 14(1)](https://arxiv.org/html/2602.05274v1#S6) exhibits the related root-cone pattern. The [prior-work audit](PRIOR-WORK-AUDIT.md) gives the precise comparison; it does not establish global literature priority. The [biological model note](BIOLOGICAL-MODEL-SCOPE.md) distinguishes organism parenthood from genetic inheritance.
+## Sources and navigation
 
-## Navigate and reproduce
+- [Question ledger](QUESTION-LEDGER.md): where each question originated and what has been answered.
+- [Research map](RESEARCH-MAP.md): motivation and relationships between directions.
+- [Ten proposals](TEN-RESEARCH-IDEAS.md): precise targets, proved seeds and next decisive tests.
+- [Prior-work audit](PRIOR-WORK-AUDIT.md) and [additional source checks](notes/ADDITIONAL-SOURCE-CHECKS.md): verified precedents and remaining priority uncertainty.
+- [Biological model scope](BIOLOGICAL-MODEL-SCOPE.md): organism genealogy, fixed genders and genetic inheritance are distinct models.
+- [Sharp proof](research/thue-morse/NEXT-INVARIANT.md), [full-height conjecture](research/thue-morse/FULL-HEIGHT-CONJECTURE.md), and [formalization notes](FORMALIZATION.md): reviewable mathematics.
+- [Reproduction](REPRODUCE.md), [statement review](verification/GAP-CLOSURE-REVIEW.md), and [verification receipt](verification/FORMALIZATION-RECEIPT.md): exact evidence.
+- [Sources](SOURCES.md), [provenance](PROVENANCE.md) and [editable outreach draft](OUTREACH-DRAFT.md): attribution and an optional owner-controlled review route.
 
-- [RESEARCH-MAP.md](RESEARCH-MAP.md): motivation, dependencies, precise questions, current answers, and possible extensions.
-- [QUESTION-LEDGER.md](QUESTION-LEDGER.md): each question's origin, exact answer, and remaining gap.
-- [HANDOFF-FOR-ALEXANDER.md](HANDOFF-FOR-ALEXANDER.md): short external review guide and three specific questions.
-- [PRIOR-WORK-AUDIT.md](PRIOR-WORK-AUDIT.md): closest verified precedents and the remaining literature uncertainty.
-- [BIOLOGICAL-MODEL-SCOPE.md](BIOLOGICAL-MODEL-SCOPE.md): what the graph axioms do and do not say about reproduction and inheritance.
-- [STATUS.md](STATUS.md): proof, computation, and Lean status for every line.
-- [FORMALIZATION.md](FORMALIZATION.md): exact checked statements, premises, and remaining gaps; [endpoint audit](verification/formal-audit.json) and [statement review](verification/STATEMENT-REVIEW.md).
-- [REPRODUCE.md](REPRODUCE.md): local commands and finite-check scope.
-- [SOURCES.md](SOURCES.md): primary sources, links, and hashes for the supplied document versions.
-- [SEARCH-LOG.md](SEARCH-LOG.md): bounded literature search and its limits.
-- [PROVENANCE.md](PROVENANCE.md): attribution and claim language.
-- [Local verification receipt](verification/LOCAL-RECEIPT.md): exact checks and saved artifact hashes.
-- [GitHub verification workflow](.github/workflows/verify.yml) and [first CI receipt](verification/CI-RECEIPT.md): Lean build and small Python checks on pushes and pull requests.
-- [Thue-Morse proof challenge](TASKS/THUE-MORSE-SHARP-BOUND.md) and [degree-boundary Lean challenge](TASKS/DEGREE-BOUNDARY-LEAN.md): bounded briefs for a stronger proof or formalization run.
-- [Specieslike-cluster bridge](notes/SPECIESLIKE-BRIDGE.md): direct connection to Alexander's 2026 species paper. An [exploratory interface note](explorations/COMPLEX-SYSTEMS-INTERFACE.md) compares possible dynamical extensions with Levin and Friston; it is outside the core proof program.
-- [Outreach draft](OUTREACH-DRAFT.md): an editable note and short video outline that preserve the current proof boundaries. No message has been sent.
-
-The source papers and video transcript are linked and identified, not copied into this public repository. Contributions are welcome when they include exact statements, source citations, a reproducible check where applicable, and a clear separation between checked and conjectural claims.
+Alexander's [2013 positive theorem](https://arxiv.org/html/1212.0186v2), his
+[inspecies results](https://arxiv.org/html/1201.2869), and his
+[2026 cluster examples](https://arxiv.org/html/2602.05274v1) remain attributed
+prior work. The separate [classification manuscript](https://github.com/avg-netizen/biological-unavoidability)
+supplies the target-dependent avoiding graph. The quantitative and structural
+extensions here require external mathematical and priority review; formal
+verification is evidence for the encoded statements, not a novelty certificate.

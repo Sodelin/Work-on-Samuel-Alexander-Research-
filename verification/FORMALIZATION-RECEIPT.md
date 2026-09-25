@@ -1,29 +1,44 @@
 # Integrated formalization receipt
 
-Checked locally on 24 September 2026 (25 September UTC). The final endpoint audit is timestamped `2026-09-25T04:49:28.087647+00:00` and identifies the exact final sources by SHA-256. This receipt describes local execution; the pull request's CI result is recorded separately once observed. It supersedes the earlier eight-module, 52-endpoint integration stage.
+This receipt records the completed local gap-closure pass. The core audit ran
+at `2026-09-25T06:34:15.813834+00:00` and the real audit at
+`2026-09-25T06:35:10.693788+00:00`. Their machine-readable receipts identify every
+audited source by SHA-256. This supersedes the earlier eleven-module,
+80-endpoint integration receipt; older commit-specific receipts remain historical.
 
 | Check | Observed result |
 |---|---|
-| `lake build` | Success; all eleven modules and the default root import build together. |
-| `python checks/audit_lean.py --output verification/formal-audit.json` | Pass, all 80 selected endpoints. All dependencies are subsets of `propext`, `Classical.choice`, `Quot.sound`. |
-| `python -m unittest discover -s checks -p 'test_*.py' -v` | Six tests passed. |
-| `python checks/check_local_certificate.py` | `Toy rule certificate: (True, 3, None)`. |
-| `python research/thue-morse/interval_check.py` | 8,191 exact lengths agreed with stored set-frontier results; 1,632 complete-frontier states agreed with direct edge expansion; 8,192 dyadic-table cases agreed. |
-| `python research/thue-morse/sharp_check.py --output research/thue-morse/sharp-check-results.json` | Pass: 18 complete trajectories, 8,140 advances, descent-entry and extinction-index checks, 256 bounded `H(v)` first-hit checks, and the exact inequality/equality set in the existing 8,192-start scan. |
-| Source placeholder scan | No `sorry`, `admit`, `native_decide`, or project `axiom` declarations in the Lean sources. |
+| Core build and audit | All 33 core modules and the aggregate import build; all 275 selected endpoints pass. |
+| Optional real project | All 19 selected endpoints pass with Mathlib pinned to `0df444a360eaa60ab8c11dca51a86af692955474`. |
+| Proof dependencies | Every audited endpoint uses only subsets of `propext`, `Classical.choice`, `Quot.sound`. |
+| Source placeholder scan | No `sorry`, `admit`, `native_decide` or project axiom declarations. |
+| Finite-path unit tests | Six tests pass. |
+| Toy local certificate | `Toy rule certificate: (True, 3, None)`. |
+| Exact interval diagnostic | 8,191 stored length agreements, 1,632 direct-frontier agreements, 8,192 paired-table checks. |
+| Sharp trajectory diagnostic | 18 complete trajectories, 8,140 advances, 256 first-hit checks and the stored inequality/equality family pass. |
+| New conjecture diagnostic | 131,071 stored positive lengths plus start zero, 16,384 complete coordinate transitions, and 2,200 fresh actual frontier computations agree. Fourteen deliberately long cases reach the cap and are skipped. This does not prove the conjecture. |
+| Documentation integrity | Exactly ten numbered proposals; every local Markdown target exists. |
 
-Toolchain: `leanprover/lean4:v4.33.1`, compiler commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`, Windows GNU release build. Python checks use only the standard library. No long 131,071-start scan was rerun for this patch.
+Compiler: `Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)`. Python diagnostics use the standard
+library. The default proof library remains Std-only. The optional real project
+is separate and uses the same Lean version. Windows cache recovery preserved
+TLS certificate verification and used the ordinary Mathlib unpacker.
 
-The final checked sharp theorem includes the actual Thue-Morse sequence,
-all dyadic run calculations, the interval-to-original-edge bridge, the
-universal path-length bound, existence of finite maxima, the equality
-family, and the exact equality classification. The universal
-`RootObstruction.population_root_obstruction` theorem is also included:
-every binary natural-date population has distinct roots `0` and `1` and
-its whole graph fails common ancestry. The exact full `H(v)` first-hit
-formula and real-coefficient optimality are prose corollaries, not
-separately exported endpoints.
+The [core receipt](formal-audit.json), [real receipt](real-audit.json),
+[statement review](GAP-CLOSURE-REVIEW.md), and [coverage report](../FORMALIZATION.md)
+belong together. Proof dependencies do not by themselves establish statement
+fidelity, significance or novelty. Independent reviews checked the actual
+population, retained-subtype and shifted-graph models.
 
-On the original Windows host the commands used `ELAN_HOME=C:\Users\Owner\.elan` and added its `bin` directory to the command's `PATH`. These are process-local environment settings; no global toolchain configuration was changed.
+Two files had only CRLF-to-LF normalization after their independent review:
+InfiniteConservation and QuantitativeAvoidance. Their non-newline bytes were
+unchanged, the final normalized files were rebuilt, and these receipts hash
+the bytes that are published. The selected proof hashes are also checked
+against Git's index before publication.
 
-The [JSON receipt](formal-audit.json) contains exact final source hashes and the report for each audited endpoint. The [statement review](STATEMENT-REVIEW.md) and [central coverage report](../FORMALIZATION.md) must accompany this receipt: clean axiom dependencies do not erase the explicit positive-classification premise, the missing real-date enumeration bridge, or the remaining infinite critical-conservation development. Alexander's Example 14(1) retains attribution for the related root-cone phenomenon; this receipt establishes no literature-priority claim. Historical receipts certify their original stages, not the final tree recorded here.
+This is local execution evidence. Hosted Linux CI must be observed on the
+published commit separately; previous CI results do not certify this tree.
+The [workflow](../.github/workflows/verify.yml) runs both projects' audits and
+the established finite diagnostics. No long 131,071-start scan was rerun;
+the new conjecture check reuses its stored exact values and independently
+computes the stated fresh cases.

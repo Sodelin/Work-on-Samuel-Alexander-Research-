@@ -1,16 +1,15 @@
 import SamuelAlexanderResearch
 
 /-!
-The exported endpoint manifest for checks/audit_lean.py.
-Only propext, Classical.choice, and Quot.sound are permitted dependencies.
-Formalization scope and mathematical premise review live in FORMALIZATION.md.
-The conditional classification endpoint below remains conditional even though
-its proof has no unexpected axioms: its positive theorem is a parameter.
+Selected endpoint manifest for checks/audit_lean.py. Only propext,
+Classical.choice and Quot.sound are permitted dependencies. The old conditional
+classification helper remains available; PositiveUnavoidability now supplies
+the positive theorem and the unconditional binary classifications.
+Statement and model review is recorded separately in FORMALIZATION.md.
 -/
 
 #print axioms PopulationDegree.offspring_threshold
 #print axioms PopulationDegree.binary_vertex_gender_balance
-
 #print axioms PopulationCounting.double_count
 #print axioms PopulationCounting.nonroot_indegree
 #print axioms PopulationCounting.offspring_edge_bound
@@ -26,18 +25,15 @@ its proof has no unexpected axioms: its positive theorem is a parameter.
 #print axioms PopulationCounting.prefix_binary_gender_balance
 #print axioms PopulationCounting.infinite_subcritical_impossible
 #print axioms PopulationCounting.no_infinite_subcritical_population
-
 #print axioms BinaryAvoidance.decreasing_nat_stabilizes
 #print axioms BinaryAvoidance.matching_implies_eventuallyPeriodic
 #print axioms BinaryAvoidance.aperiodic_target_avoided
-
 #print axioms SpeciesBridge.finiteSupport_iff_bounded
 #print axioms SpeciesBridge.psDescendant_iff
 #print axioms SpeciesBridge.psSubset_iap
 #print axioms SpeciesBridge.psSubset_specieslike_iff
 #print axioms SpeciesBridge.psWhole_bridge
 #print axioms SpeciesBridge.psEvery_vertex_in_maximal_cluster
-
 #print axioms BinaryPopulation.forget_edge_eq
 #print axioms BinaryPopulation.edge_unique_labels
 #print axioms BinaryPopulation.incoming_each_label
@@ -47,7 +43,6 @@ its proof has no unexpected axioms: its positive theorem is a parameter.
 #print axioms BinaryPopulation.aperiodic_specieslike_counterexample
 #print axioms BinaryPopulation.specieslike_unavoidable_implies_eventuallyPeriodic
 #print axioms BinaryPopulation.specieslike_classification_of_positive
-
 #print axioms SpeciesCones.c0_iff
 #print axioms SpeciesCones.c1_iff
 #print axioms SpeciesCones.cone_fourAxioms
@@ -55,25 +50,21 @@ its proof has no unexpected axioms: its positive theorem is a parameter.
 #print axioms SpeciesCones.maximalFourAxioms_iff
 #print axioms SpeciesCones.c0_ne_c1
 #print axioms SpeciesCones.every_vertex_in_maximal_four_cluster
-
 #print axioms RootObstruction.root_zero
 #print axioms RootObstruction.root_one
 #print axioms RootObstruction.descendant_strict
 #print axioms RootObstruction.population_not_commonAncestor
 #print axioms RootObstruction.population_root_obstruction
-
 #print axioms StaticMixing.weightedSum_constant
 #print axioms StaticMixing.intersection_subset_weightedMix
 #print axioms StaticMixing.intersection_subset_midpointMix
 #print axioms StaticMixing.strict_midpoint_example
-
 #print axioms SamuelAlexanderResearch.ThueMorseBound.interval_step
 #print axioms SamuelAlexanderResearch.ThueMorseBound.reachable_iff_interval
 #print axioms SamuelAlexanderResearch.ThueMorseBound.coalescence_persists
 #print axioms SamuelAlexanderResearch.ThueMorseBound.nonempty_iff_separated
 #print axioms SamuelAlexanderResearch.ThueMorseBound.extinct_iff_coalesced
 #print axioms SamuelAlexanderResearch.ThueMorseBound.maximum_length_iff
-
 #print axioms ThueMorseBits.t_zero
 #print axioms ThueMorseBits.t_double
 #print axioms ThueMorseBits.t_double_add_one
@@ -82,7 +73,6 @@ its proof has no unexpected axioms: its positive theorem is a parameter.
 #print axioms ThueMorseBits.t_power_sub_two
 #print axioms ThueMorseBits.t_twice_power_sub_four
 #print axioms ThueMorseBits.t_ten_pow_add_one
-
 #print axioms SharpThueMorse.baseline
 #print axioms SharpThueMorse.upper_join
 #print axioms SharpThueMorse.descent_block
@@ -98,3 +88,198 @@ its proof has no unexpected axioms: its positive theorem is a parameter.
 #print axioms SharpThueMorse.binary_prefix_reachable
 #print axioms SharpThueMorse.binary_path_prefix_bound
 #print axioms SharpThueMorse.sharp_equality_indices
+#print axioms AncestryViews.reach_mono
+#print axioms AncestryViews.fixed_index_path_survives
+#print axioms AncestryViews.reach_time_increases
+#print axioms AncestryViews.erased_path_time_increases
+#print axioms AncestryViews.erasure_converse_fails
+#print axioms AncestryViews.erased_graph_does_not_determine_fixed_index_ancestry
+#print axioms BirthOrder.exists_least
+#print axioms BirthOrder.enumerate_injective
+#print axioms BirthOrder.enumerate_nondecreasing
+#print axioms BirthOrder.enumerate_surjective
+#print axioms BirthOrder.orderedEnumeration_exists
+#print axioms BirthOrder.OrderedEnumeration.index_toFun
+#print axioms BirthOrder.OrderedEnumeration.finiteCover_pullback_iff
+#print axioms BirthOrder.OrderedEnumeration.finiteCover_pullback_bound
+#print axioms BirthOrder.OrderedEnumeration.index_strict
+#print axioms BirthOrder.OrderedEnumeration.edges_increase
+#print axioms BirthOrder.finiteSublevels_of_strict
+#print axioms FiniteEditStability.prefix_lower_bound
+#print axioms FiniteEditStability.backward_prefix
+#print axioms FiniteEditStability.splice_prefix
+#print axioms FiniteEditStability.sharp_family_prefix
+#print axioms FiniteEditStability.finite_edit_transport
+#print axioms FiniteEditStability.thue_zero_maximum
+#print axioms FiniteEditStability.finite_edit_thue_upper
+#print axioms FiniteEditStability.finite_edit_thue_lower
+#print axioms FiniteEditStability.finite_edit_thue_maximum
+#print axioms FiniteEditStability.finite_edit_thue_lower_above
+#print axioms FixedGenderLift.core_reaches_late
+#print axioms FixedGenderLift.core_child_cap_three
+#print axioms FixedGenderLift.core_roots_exactly
+#print axioms FixedGenderLift.core_fixedGenderPopulation
+#print axioms FixedGenderLift.core_specieslike
+#print axioms FixedGenderLift.core_inspecies
+#print axioms FixedGenderLift.full_lift_avoids
+#print axioms FixedGenderLift.productive_core_avoider
+#print axioms FixedGenderLift.core_induced_descendant_iff
+#print axioms FixedGenderLift.productive_core_induced_avoider
+#print axioms FixedGenderLift.clean_roots_exactly
+#print axioms FixedGenderLift.terminal_copies_infinite
+#print axioms FixedGenderLift.clean_not_inspecies
+#print axioms FixedGenderLift.clean_avoider
+#print axioms GeneralRootObstruction.incomingCount_lower
+#print axioms GeneralRootObstruction.initial_vertex_root
+#print axioms GeneralRootObstruction.at_least_k_distinct_roots
+#print axioms GeneralRootObstruction.not_commonAncestor
+#print axioms GeneralRootObstruction.ofInfinitePopulation
+#print axioms GeneralRootObstruction.initial_declared_root
+#print axioms GeneralRootObstruction.alphabet_le_fullRootCount
+#print axioms GeneralRootObstruction.population_not_commonAncestor
+#print axioms GeneralRootObstruction.population_root_obstruction
+#print axioms HistoryProjection.sameOrDescendant_trans
+#print axioms HistoryProjection.path_projects
+#print axioms HistoryProjection.path_projects_strict_of_distinct_owners
+#print axioms HistoryProjection.locus_path_projects
+#print axioms HistoryProjection.erased_path_projects
+#print axioms HistoryProjection.interval_record_path_projects
+#print axioms InfiniteConservation.full_indegree_lower
+#print axioms InfiniteConservation.conservation
+#print axioms InfiniteConservation.indegree_le_crossing
+#print axioms InfiniteConservation.crossing_lower_after_roots
+#print axioms InfiniteConservation.crossing_upper
+#print axioms InfiniteConservation.sharp_defect_bound_after_roots
+#print axioms InfiniteConservation.sharp_defect_bound
+#print axioms InfiniteConservation.defects_stabilize
+#print axioms InfiniteConservation.eventually_zero_local_defects
+#print axioms InfiniteConservation.finite_total_defect
+#print axioms InfiniteConservation.eventually_regular
+#print axioms InfiniteConservation.eventual_constant_crossing
+#print axioms InfiniteConservation.eventual_structure
+#print axioms InfiniteConservation.old_parent_lower
+#print axioms InfiniteConservation.crossing_block_lower
+#print axioms InfiniteConservation.crossing_triangular_lower
+#print axioms InfiniteConservation.triangular_defect_bound
+#print axioms InfiniteConservation.binary_crossing_lower
+#print axioms InfiniteConservation.binary_defect_bound
+#print axioms InfiniteConservation.finite_total_defect_triangular
+#print axioms MinimalCrossing.minimum_cut_internal_edge
+#print axioms MinimalCrossing.minimum_cut_no_late_target
+#print axioms MinimalCrossing.minimum_tail_edges
+#print axioms MinimalCrossing.eventually_minimum_tail_edges
+#print axioms MinimalCrossing.minimum_tail_parents
+#print axioms MinimalCrossing.minimum_tail_genders
+#print axioms MinimalCrossing.minimum_width_realizes_above
+#print axioms MinimalCrossing.minimum_width_realizes_all
+#print axioms MinimalCrossing.avoiding_word_eventual_width_ge_four
+#print axioms ObservationPrediction.recoverable_implies_constant
+#print axioms ObservationPrediction.constant_implies_recoverable
+#print axioms ObservationPrediction.recoverable_iff_constant_on_fibres
+#print axioms ObservationPrediction.collision_obstructs_recovery
+#print axioms ObservationPrediction.recoverable_from_fine_of_coarse
+#print axioms ObservationPrediction.exact_predictor_iff
+#print axioms ObservationPrediction.compatible_observations_agree_in_future
+#print axioms ObservationPrediction.hidden_bit_not_recoverable
+#print axioms ObservationPrediction.same_current_observation_does_not_ensure_prediction
+#print axioms ObservationPrediction.full_state_recovers_target
+#print axioms PhaseShift.row_shift
+#print axioms PhaseShift.edge_translate_iff
+#print axioms PhaseShift.edge_subtract
+#print axioms PhaseShift.prepend_shifted_prefix
+#print axioms PhaseShift.suffix_subtraction
+#print axioms PhaseShift.cut_original_prefix
+#print axioms PhaseShift.thueMorse_shift_prefix_bound
+#print axioms PhaseShift.thueMorse_shift_dyadic_family
+#print axioms PopulationCounting.binary_vertex_gender_balance
+#print axioms PopulationCounting.no_unbounded_finite_prefixes
+#print axioms PopulationCounting.incoming_prefix_degree
+#print axioms PopulationCounting.outgoing_prefix_split
+#print axioms PopulationCounting.infinite_prefix_root_bound
+#print axioms PositiveUnavoidability.good_successor
+#print axioms PositiveUnavoidability.infinite_path_from_good
+#print axioms PositiveUnavoidability.backward_word
+#print axioms PositiveUnavoidability.periodic_spanning
+#print axioms PositiveUnavoidability.periodic_realized_above
+#print axioms PositiveUnavoidability.eventuallyPeriodic_realized
+#print axioms PositiveUnavoidability.binaryNat_classification
+#print axioms PositiveUnavoidability.specieslike_classification
+#print axioms SharpThueMorse.run_ones
+#print axioms SharpThueMorse.run_twos
+#print axioms SharpThueMorse.block_eq
+#print axioms SharpThueMorse.block_ne
+#print axioms SlowAvoidance.target_agrees
+#print axioms SlowAvoidance.target_periodic_prefix
+#print axioms SlowAvoidance.target_aperiodic
+#print axioms SlowAvoidance.starts_strict
+#print axioms SlowAvoidance.finite_match_exceeds
+#print axioms SlowAvoidance.no_infinite_match
+#print axioms SlowAvoidance.arbitrarily_slow_avoidance
+#print axioms AncestryViews.reach_iff_species_descendant
+#print axioms AncestryViews.erasure_eq_existing_forget
+#print axioms AncestryViews.fixed_index_to_species_descendant
+#print axioms AncestryViews.species_descendant_need_not_have_one_index
+#print axioms SpeciesBridge.psWhole_specieslike
+#print axioms SpeciesBridge.psWhole_maximalSpecieslike
+#print axioms SpeciesBridge.psWhole_not_commonAncestor
+#print axioms SpeciesBridge.psDescendants_infinite
+#print axioms SpeciesBridge.psRoot_iff
+#print axioms SpeciesBridge.psNaturalDateBiosphere
+#print axioms SpeciesCones.maximalFourAxioms_specieslike
+#print axioms SpeciesGlobalIAP.all_subsets_iap_iff
+#print axioms SpeciesGlobalIAP.all_infinite_subsets_reflection_iff
+#print axioms SpeciesGlobalIAP.all_subsets_iap_iff_all_infinite_subsets_reflection
+#print axioms SpeciesGlobalIAP.whole_specieslike_iff
+#print axioms SpeciesGlobalIAP.whole_inspecies_iff_cofinite_descendants
+#print axioms SpeciesGlobalIAP.whole_iap_iff_inspecies_of_infinite_descendants
+#print axioms SpeciesGlobalIAP.reflection_iff_empty_or_infinite
+#print axioms SpeciesGlobalIAP.psWhole_inspecies
+#print axioms SpeciesGlobalIAP.psReflection_iff_empty_or_infinite
+#print axioms SpeciesRootCriterion.cone_ps_eq
+#print axioms SpeciesRootCriterion.maximalFourAxioms_ps_iff
+#print axioms SpeciesRootCriterion.cone_weaklyConnected
+#print axioms SpeciesRootCriterion.rootCovered_of_strict_birth_order
+#print axioms SpeciesRootCriterion.root_cone_maximal
+#print axioms SpeciesRootCriterion.maximalFourAxioms_iff_root_cone
+#print axioms SpeciesRootCriterion.root_cone_criterion
+#print axioms SpeciesRootCriterion.root_cone_criterion_of_strict_birth_order
+#print axioms SpeciesRootCriterion.maximalFourAxioms_specieslike
+#print axioms SpeciesRootCriterion.every_vertex_in_maximal_four_cluster
+#print axioms SharpCorollaries.firstHit_iff
+#print axioms SharpCorollaries.firstHit_dyadic
+#print axioms SharpCorollaries.no_smaller_rational_coefficient
+#print axioms QuantitativeAvoidance.periodic_prefix_gives_match
+#print axioms QuantitativeAvoidance.periodic_target_two_step_path
+#print axioms LayeredUnavoidability.every_word_realized
+#print axioms FiniteAvoidance.prefix_to_finitePath
+#print axioms FiniteAvoidance.aperiodic_endpoints_bounded
+#print axioms FiniteAvoidance.aperiodic_prefix_lengths_bounded
+#print axioms FiniteAvoidance.aperiodic_maximum_exists
+#print axioms FiniteAvoidance.aperiodic_finite_extinction
+#print axioms FiniteAvoidance.arbitrarily_slow_finite_maxima
+#print axioms FixedGenderReindex.retained_list_cover
+#print axioms FixedGenderReindex.enumeration
+#print axioms FixedGenderReindex.root_iff
+#print axioms FixedGenderReindex.reindexed_child_cap
+#print axioms FixedGenderReindex.reindexed_binary_population
+#print axioms FixedGenderReindex.realizes_reindex_iff
+#print axioms FixedGenderReindex.eventuallyPeriodic_realized
+#print axioms FixedGenderReindex.fixedGender_cap_three_classification
+#print axioms PopulationReindex.enumeration
+#print axioms PopulationReindex.sumBelow_indicator_le_cover
+#print axioms PopulationReindex.indexedRoot_noParents_iff
+#print axioms PopulationReindex.indexed_child_cap
+#print axioms PopulationReindex.toNatPopulation
+#print axioms PopulationReindex.toNatPopulation_root_iff
+#print axioms PopulationReindex.subcritical_impossible
+#print axioms PopulationReindex.at_least_k_distinct_roots
+#print axioms PopulationReindex.alphabet_le_root_cover_length
+#print axioms PhaseExtremal.staircase
+#print axioms PhaseExtremal.head_path
+#print axioms PhaseExtremal.extremal_path
+#print axioms PhaseExtremal.shifted_equality_family
+#print axioms PhaseExtremal.incoming_unique
+#print axioms PhaseExtremal.extremal_prefix_unique
+#print axioms PhaseExtremal.shifted_equality_necessary
+#print axioms PhaseExtremal.shifted_maximum_exists
+#print axioms PhaseExtremal.shifted_extremal_iff

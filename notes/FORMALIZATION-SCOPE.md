@@ -6,10 +6,10 @@ The new module defines actual labelled adjacency, finite edge sums, distinct-lab
 
 The development uses explicit finite sums in `Std`, so no Mathlib installation was needed. The earlier attempt's unavailable `Finset`/`Fintype` tools were a limitation of that approach, not an obstruction to formalization.
 
-The remaining boundaries are substantive and explicit:
+The later extensions and remaining boundary are explicit:
 
-- Real-valued birthdates with finite sublevels have not been converted to a natural birth-order enumeration in Lean.
-- The critical conservation identity uses full degrees in a **finite ambient graph**. Its infinite version and eventual regularity consequences remain outside the module.
+- BirthOrder and PopulationReindex now construct the natural presentation; RealBridges specializes it to actual real dates.
+- PopulationCounting's identity uses a finite ambient graph. InfiniteConservation now proves the full infinite identity, triangular budget and eventual regularity separately.
 - The two-child fixed-gender avoidance question is a separate mathematical problem and remains unresolved.
 
 See the [detailed counting note](POPULATION-COUNTING-FORMALIZATION.md), [central coverage table](../FORMALIZATION.md), and [integrated verification receipt](../verification/FORMALIZATION-RECEIPT.md). Reproduce with `lake build` and `python checks/audit_lean.py` from the repository root.

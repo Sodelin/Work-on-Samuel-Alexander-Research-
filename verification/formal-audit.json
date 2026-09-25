@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T04:56:11.495211+00:00",
+  "checked_at_utc": "2026-09-25T06:34:15.813834+00:00",
   "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "toolchain_pin": "leanprover/lean4:v4.33.1",
-  "endpoint_count": 80,
+  "endpoint_count": 275,
   "endpoint_axioms": {
     "PopulationDegree.offspring_threshold": [
       "propext",
@@ -361,22 +361,844 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "AncestryViews.reach_mono": [],
+    "AncestryViews.fixed_index_path_survives": [],
+    "AncestryViews.reach_time_increases": [],
+    "AncestryViews.erased_path_time_increases": [],
+    "AncestryViews.erasure_converse_fails": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryViews.erased_graph_does_not_determine_fixed_index_ancestry": [
+      "propext",
+      "Quot.sound"
+    ],
+    "BirthOrder.exists_least": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.enumerate_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.enumerate_nondecreasing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.enumerate_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.orderedEnumeration_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.OrderedEnumeration.index_toFun": [
+      "Classical.choice"
+    ],
+    "BirthOrder.OrderedEnumeration.finiteCover_pullback_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.OrderedEnumeration.finiteCover_pullback_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.OrderedEnumeration.index_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.OrderedEnumeration.edges_increase": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BirthOrder.finiteSublevels_of_strict": [],
+    "FiniteEditStability.prefix_lower_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.backward_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.splice_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.sharp_family_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.finite_edit_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.thue_zero_maximum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.finite_edit_thue_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.finite_edit_thue_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.finite_edit_thue_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteEditStability.finite_edit_thue_lower_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_reaches_late": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_child_cap_three": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_roots_exactly": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_fixedGenderPopulation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_specieslike": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_inspecies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.full_lift_avoids": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.productive_core_avoider": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.core_induced_descendant_iff": [],
+    "FixedGenderLift.productive_core_induced_avoider": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.clean_roots_exactly": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.terminal_copies_infinite": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.clean_not_inspecies": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedGenderLift.clean_avoider": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.incomingCount_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.initial_vertex_root": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.at_least_k_distinct_roots": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.not_commonAncestor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.ofInfinitePopulation": [
+      "propext"
+    ],
+    "GeneralRootObstruction.initial_declared_root": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.alphabet_le_fullRootCount": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.population_not_commonAncestor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GeneralRootObstruction.population_root_obstruction": [
+      "propext",
+      "Quot.sound"
+    ],
+    "HistoryProjection.sameOrDescendant_trans": [],
+    "HistoryProjection.path_projects": [],
+    "HistoryProjection.path_projects_strict_of_distinct_owners": [],
+    "HistoryProjection.locus_path_projects": [],
+    "HistoryProjection.erased_path_projects": [],
+    "HistoryProjection.interval_record_path_projects": [],
+    "InfiniteConservation.full_indegree_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.conservation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.indegree_le_crossing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.crossing_lower_after_roots": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.crossing_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.sharp_defect_bound_after_roots": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.sharp_defect_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.defects_stabilize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.eventually_zero_local_defects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.finite_total_defect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.eventually_regular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.eventual_constant_crossing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.eventual_structure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.old_parent_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.crossing_block_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.crossing_triangular_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.triangular_defect_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.binary_crossing_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.binary_defect_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InfiniteConservation.finite_total_defect_triangular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_cut_internal_edge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_cut_no_late_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_tail_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.eventually_minimum_tail_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_tail_parents": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_tail_genders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_width_realizes_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.minimum_width_realizes_all": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MinimalCrossing.avoiding_word_eventual_width_ge_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationPrediction.recoverable_implies_constant": [],
+    "ObservationPrediction.constant_implies_recoverable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationPrediction.recoverable_iff_constant_on_fibres": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationPrediction.collision_obstructs_recovery": [],
+    "ObservationPrediction.recoverable_from_fine_of_coarse": [],
+    "ObservationPrediction.exact_predictor_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationPrediction.compatible_observations_agree_in_future": [],
+    "ObservationPrediction.hidden_bit_not_recoverable": [],
+    "ObservationPrediction.same_current_observation_does_not_ensure_prediction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationPrediction.full_state_recovers_target": [],
+    "PhaseShift.row_shift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PhaseShift.edge_translate_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PhaseShift.edge_subtract": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PhaseShift.prepend_shifted_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseShift.suffix_subtraction": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PhaseShift.cut_original_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseShift.thueMorse_shift_prefix_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseShift.thueMorse_shift_dyadic_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationCounting.binary_vertex_gender_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationCounting.no_unbounded_finite_prefixes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PopulationCounting.incoming_prefix_degree": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PopulationCounting.outgoing_prefix_split": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PopulationCounting.infinite_prefix_root_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.good_successor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.infinite_path_from_good": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.backward_word": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.periodic_spanning": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.periodic_realized_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.eventuallyPeriodic_realized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.binaryNat_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveUnavoidability.specieslike_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpThueMorse.run_ones": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharpThueMorse.run_twos": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharpThueMorse.block_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpThueMorse.block_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.target_agrees": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.target_periodic_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.target_aperiodic": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.starts_strict": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.finite_match_exceeds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.no_infinite_match": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SlowAvoidance.arbitrarily_slow_avoidance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AncestryViews.reach_iff_species_descendant": [],
+    "AncestryViews.erasure_eq_existing_forget": [],
+    "AncestryViews.fixed_index_to_species_descendant": [],
+    "AncestryViews.species_descendant_need_not_have_one_index": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesBridge.psWhole_specieslike": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesBridge.psWhole_maximalSpecieslike": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesBridge.psWhole_not_commonAncestor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesBridge.psDescendants_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesBridge.psRoot_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesBridge.psNaturalDateBiosphere": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesCones.maximalFourAxioms_specieslike": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.all_subsets_iap_iff": [],
+    "SpeciesGlobalIAP.all_infinite_subsets_reflection_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.all_subsets_iap_iff_all_infinite_subsets_reflection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.whole_specieslike_iff": [],
+    "SpeciesGlobalIAP.whole_inspecies_iff_cofinite_descendants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.whole_iap_iff_inspecies_of_infinite_descendants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.reflection_iff_empty_or_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.psWhole_inspecies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesGlobalIAP.psReflection_iff_empty_or_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesRootCriterion.cone_ps_eq": [],
+    "SpeciesRootCriterion.maximalFourAxioms_ps_iff": [],
+    "SpeciesRootCriterion.cone_weaklyConnected": [],
+    "SpeciesRootCriterion.rootCovered_of_strict_birth_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesRootCriterion.root_cone_maximal": [],
+    "SpeciesRootCriterion.maximalFourAxioms_iff_root_cone": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesRootCriterion.root_cone_criterion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesRootCriterion.root_cone_criterion_of_strict_birth_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesRootCriterion.maximalFourAxioms_specieslike": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SpeciesRootCriterion.every_vertex_in_maximal_four_cluster": [],
+    "SharpCorollaries.firstHit_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpCorollaries.firstHit_dyadic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpCorollaries.no_smaller_rational_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantitativeAvoidance.periodic_prefix_gives_match": [
+      "propext",
+      "Quot.sound"
+    ],
+    "QuantitativeAvoidance.periodic_target_two_step_path": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LayeredUnavoidability.every_word_realized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteAvoidance.prefix_to_finitePath": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FiniteAvoidance.aperiodic_endpoints_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteAvoidance.aperiodic_prefix_lengths_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteAvoidance.aperiodic_maximum_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteAvoidance.aperiodic_finite_extinction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FiniteAvoidance.arbitrarily_slow_finite_maxima": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.retained_list_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.enumeration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.root_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.reindexed_child_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.reindexed_binary_population": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.realizes_reindex_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.eventuallyPeriodic_realized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedGenderReindex.fixedGender_cap_three_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.enumeration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.sumBelow_indicator_le_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.indexedRoot_noParents_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.indexed_child_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.toNatPopulation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.toNatPopulation_root_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.subcritical_impossible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.at_least_k_distinct_roots": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PopulationReindex.alphabet_le_root_cover_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.staircase": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.head_path": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.extremal_path": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.shifted_equality_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.incoming_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.extremal_prefix_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.shifted_equality_necessary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.shifted_maximum_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PhaseExtremal.shifted_extremal_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "source_sha256": {
+    "lean/SamuelAlexanderResearch/AncestryViews.lean": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce",
     "lean/SamuelAlexanderResearch/BinaryAvoidance.lean": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a",
     "lean/SamuelAlexanderResearch/BinaryPopulation.lean": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667",
+    "lean/SamuelAlexanderResearch/BirthOrder.lean": "9774f28a08f43cceab51cc2225b6c572036209c5fe7553f8de08e834c74b34db",
     "lean/SamuelAlexanderResearch/DegreeBounds.lean": "fe099a1b8ead2142434bb8b45c9f91faa823b320560d92c70ee7ba206ddad748",
+    "lean/SamuelAlexanderResearch/FiniteAvoidance.lean": "e2ac08fef95b8ceb6779cb2a656ba9e02c6fcfadaf0e5b81ea57a1a4cc211541",
+    "lean/SamuelAlexanderResearch/FiniteEditStability.lean": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
+    "lean/SamuelAlexanderResearch/FixedGenderLift.lean": "2805ab8ef85a018b2276aa137118f0e64990a6358349e7a1b59006d24a50ba7a",
+    "lean/SamuelAlexanderResearch/FixedGenderReindex.lean": "93953e4e77f092692bc254b52e4d3082459b700eec5a4259c1560ac0daddd3e9",
+    "lean/SamuelAlexanderResearch/GeneralRootObstruction.lean": "e759c8494d27cfc55656f6e902ff094fbd6dd1e33246c8e84d5689eb8a1a3170",
+    "lean/SamuelAlexanderResearch/HistoryProjection.lean": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7",
+    "lean/SamuelAlexanderResearch/InfiniteConservation.lean": "55b11eaa840f25500428fb41652ca91994019e8d1300c8df15c978ac46698ee5",
+    "lean/SamuelAlexanderResearch/LayeredUnavoidability.lean": "3201e19d00bdca2577acd488cb5a925d888b18514b6ef6a8ed72a1a17badb83c",
+    "lean/SamuelAlexanderResearch/MinimalCrossing.lean": "ac9ec8a7775262efaa52d191aec2b793a3a01d45c1167c3ca7ec435131f63f37",
+    "lean/SamuelAlexanderResearch/ObservationPrediction.lean": "2b62f0d1da7c22b43dcc741e24916b5218d3ae5fd7bf09c62e97928321e0fd0f",
+    "lean/SamuelAlexanderResearch/PhaseExtremal.lean": "f5afa259bc027747fd13d286499585898cedc5fa8f0797d2d6828013fb1e0b41",
+    "lean/SamuelAlexanderResearch/PhaseShift.lean": "504c71e130463ef9f2dcac11c77917aa204f42995ee23b722a7db439c7ea8be7",
     "lean/SamuelAlexanderResearch/PopulationCounting.lean": "5545bc9fb9ae97f48cd1075a7df2e12087fe53aafd35f5b141cdea55540ad627",
+    "lean/SamuelAlexanderResearch/PopulationReindex.lean": "815951d97e90f9da0aa83cb0acd8683ffb1aa3460930b7eca7fb522e986ae666",
+    "lean/SamuelAlexanderResearch/PositiveUnavoidability.lean": "dd4d241c2752639015fd98b4fb07b044e533b0c21dadb49b6c90ee9edb925c71",
+    "lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean": "d7483dafa920f71e78eabf6199bd5a50862b8d6b6f8abb3a30f900f43bf71bae",
     "lean/SamuelAlexanderResearch/RootObstruction.lean": "5a119136ab69b4df58019cf850d17c2c0d837b2644afe900837a894fa4e4f62d",
+    "lean/SamuelAlexanderResearch/SharpCorollaries.lean": "22bc1409177624df85d5fac7303790bb544b99519a967e4be7c7e6a7d7e6b2c6",
     "lean/SamuelAlexanderResearch/SharpThueMorse.lean": "a2f29f779a19191630d118c5d851fa475e3d0151d55793a0867feab50d4ba0ee",
+    "lean/SamuelAlexanderResearch/SlowAvoidance.lean": "d6e8e593e81be4a642c0c2d4bf8266e2ad1a1ceb9abfd2559c0559b650f5a520",
+    "lean/SamuelAlexanderResearch/SpeciesAdapter.lean": "f04521f21ef2724a48a7cd9712632617dd729e12f6650c55efedf79b686c15b0",
     "lean/SamuelAlexanderResearch/SpeciesBridge.lean": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
     "lean/SamuelAlexanderResearch/SpeciesCones.lean": "0bf0fb9bc742b1b1260e08fd58adc17d3dab65d778bc1578736f1548a7c37df4",
+    "lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+    "lean/SamuelAlexanderResearch/SpeciesRootCriterion.lean": "c6a151b5909bbf0238dc4ac7879fc518d91dd14b4fb3847952dec0fb65b3f26f",
     "lean/SamuelAlexanderResearch/StaticMixing.lean": "5dc98213607d991388021a76a21dd7c24196e7effc66ef260c77771be48848c1",
     "lean/SamuelAlexanderResearch/ThueMorseBits.lean": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
     "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
-    "lean/SamuelAlexanderResearch.lean": "616cf2be680c8ab55c6d10cb838ffd7ee60b6c874e1ef27090f1f8b73fd66b63",
-    "verification/FormalAudit.lean": "03cd7d2298bbbf466fa265f9cc7fdfc8e739d016c1b6dc640eeb9a0534571521"
+    "lean/SamuelAlexanderResearch.lean": "f03334cfbc6e68c07dbb04e666fa85e5b9167ae52d4671d18750a6638cd99405",
+    "verification/FormalAudit.lean": "d7a75fb14bc78953fd6459f0cd504971505314623017067418895c45e4a27661"
   },
+  "dependencies": {},
+  "project": "core",
   "scope": "Exported endpoint axiom audit; mathematical statement review is separate."
 }
