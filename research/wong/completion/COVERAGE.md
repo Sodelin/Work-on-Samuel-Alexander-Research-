@@ -1,8 +1,8 @@
-# Wong source coverage: probability integration stage
+# Wong source coverage: timed count-history checkpoint
 
-Read the [candidate status and provenance qualification](probability/CANDIDATE-STATUS.md) before using the historical local logs as verification evidence.
+The [count-path result](probability/README.md) and [waiting-time result](probability/holding-times/README.md) describe the current scoped evidence. Earlier candidate receipts remain historical records.
 
-All 52 claim families are preserved. The deterministic 274-endpoint release passed hosted verification at `46aac52e214311fb2c2230b1b4fe37c42ef9e1a9`. This separate stage proposes 19 additional endpoints, for 293; its combined audit and hosted CI are pending.
+All 52 claim families are preserved. The deterministic 274-endpoint release passed hosted verification, followed by the probability addition at 293. The waiting-time addition contributes 24 selected declarations; the [hosted317-real audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580) passed at `a2644182b147eb40816abb278e00c3c6d4709eb8`. Totals refer to the full real library, including other research.
 
 Endpoint totals include other research in the real library and are not a fraction of the paper. B04 and B05 remain partial after the count-process result.
 
@@ -27,8 +27,8 @@ Endpoint totals include other research in the real library and are not a fractio
 | B01 | Little-ARG lineage state | open | Define ordered segment/sample-set state and retired coordinates; prove initialization, sample-partition and mass invariants. |
 | B02 | Effective links and splitting | open | Enumerate effective links and prove count formula; uniform split preserves exact ancestral segments and counts. |
 | B03 | Merge and retire fully-coalesced material | open | Prove canonical overlay, additive overlap, preserved nonoverlap and correct retirement/empty-lineage deletion. |
-| B04 | Big-ARG generator and event recording | partial | Construct rate-dependent exponential holding times and the marked spatial event process; prove lineage/pair/breakpoint selection, graph-prefix validity and the count projection. A discrete count kernel is not the full source generator or event recorder. |
-| B05 | Big nonexplosion and almost-sure absorption | partial | Construct the joint holding-time/count law and continuous-time process, prove finite physical stopping time/nonexplosion, and connect the count law to a marked spatial ARG. Derive any claimed exact expectation or asymptotic separately; sum_transient_le supplies a coarse drift-based probability-sum bound. |
+| B04 | Big-ARG generator and event recording | partial | Construct the source's marked spatial event sampler: uniform selection of a lineage for recombination, a distinct unordered pair for common ancestry, and a breakpoint strictly inside the genome with the specified uniform law. Update extant lineage identities and dated event/edge records, prove valid finite graph prefixes, and prove that forgetting marks and graph data gives this timed stopped count law. A full real-time Markov-state theorem requires its own state-process construction if claimed. |
+| B05 | Big nonexplosion and almost-sure absorption | partial | Construct and validate the marked spatial Big-ARG sampler in B04 and prove its timed count projection has the constructed joint law. Transfer the finite-prefix and finite-physical-time result to that source-faithful graph process, establishing its almost-sure absorption and absence of infinitely many actual pre-absorption events. Do not list the already-proved holding-time construction or count-history finite physical time as still open. Exact expected-event formulas and asymptotics belong to B07 and are separate from this absorption claim. |
 | B06 | Little-ARG absorption | open | Prove nonexplosion and almost-sure retirement of all coordinates, directly or via a justified coupling. |
 | B07 | Big exponential event growth | source clarification required | Resolve expectation, event type, asymptotic regime and rate convention. Literal rates suggest a factor-of-two exponential mismatch; prove the correctly matched result. |
 | B08 | Little quadratic event growth | source clarification required | Find precise bound, expectation and discrete/continuous regime; state dependence on n,m,rho and event types; prove it. |

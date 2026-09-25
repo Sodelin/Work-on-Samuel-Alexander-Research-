@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "LOCAL_LEAN_AND_INDEPENDENT_STATEMENT_REVIEW_PASS_HOSTED_PENDING",
+  "status": "HOSTED_ADMISSION_PASS",
   "source_sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
   "canonical_source": "real/WongWaitingTimes.lean",
   "canonical_and_worker_source_byte_identical": true,
@@ -53,7 +53,7 @@
   "verification_layers": {
     "local_compiler": "PASS24 reported and hashes checked",
     "independent_statement_review": "PASS_FOR_BOUNDED_TIMED_COUNT_HISTORY; internal agent review",
-    "hosted_integration": "pending",
+    "hosted_integration": "PASS at exact proof_commit",
     "external_peer_review": "not established",
     "worldwide_priority": "not established"
   },
@@ -65,5 +65,22 @@
     "Uniform deterministic time bound",
     "Full-paper completion"
   ],
-  "historical_relative_paths": "Review and worker receipts retain original local workspace locators; frozen dependency mappings above identify the canonical public sources."
+  "historical_relative_paths": "Review and worker receipts retain original local workspace locators; frozen dependency mappings above identify the canonical public sources.",
+  "proof_commit": "a2644182b147eb40816abb278e00c3c6d4709eb8",
+  "hosted_admission": {
+    "run": 36173386580,
+    "job": 108198082988,
+    "conclusion": "success",
+    "counts": {
+      "core": 405,
+      "real": 317,
+      "standalone": 234
+    },
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "frozen_ancestry_packet_integrity": "PASS35"
+  }
 }

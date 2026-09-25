@@ -1,6 +1,6 @@
 # From lineage jumps to elapsed time
 
-**Status:** local Lean verification and independent internal statement review passed for 24 selected declarations. Fresh hosted admission is pending. This result adds a clock to the already checked stopped lineage-count process.
+**Status:** local Lean verification, independent internal statement review and [hosted verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580) passed for the 24 selected declarations at [proof commit a2644182](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/a2644182b147eb40816abb278e00c3c6d4709eb8). The complete run checked 405 core, 317 real and 234 standalone selected declarations. This result adds a clock to the already checked stopped lineage-count process.
 
 ## What the theorem says
 

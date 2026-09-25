@@ -14,8 +14,8 @@
   "scope": {
     "inventory": "Complete main text and Appendices A-I at claim-family level: mathematical/algorithmic assertions, examples, imported results, empirical claims and open questions.",
     "completion": "Inventory complete, whole-paper mathematical and empirical completion NOT claimed.",
-    "lane": "Separate 19-endpoint probability publication stage, based on the hosted deterministic 274 release.",
-    "concurrent_work": "Three locally checked and independently reviewed count-process modules proposed for integration; no physical-time or spatial-process construction."
+    "lane": "24-declaration waiting-time addition to the hosted293 real library; combined317 hostedPASS.",
+    "concurrent_work": "Actual timed stopped count-history law and finite physical absorption checked locally and independently reviewed; full marked spatial process remains open."
   },
   "source_review": {
     "primary_xml": "source/PMC11373519-fullText.xml",
@@ -854,10 +854,10 @@
       "kind": "stochastic definition",
       "status": "partial",
       "source_claim": "At k lineages rates are choose(k,2) mergers and k*rho recombinations; stop at 1.",
-      "existing_evidence": "WongCountChain constructs the actual two-outcome stopped count kernel and Ionescu-Tulcea path law. WongBigARGAbsorption identifies both singleton masses with literal split/merger rate ratios, theta=2*b/a, specializing to 2*rho for the source rates.",
-      "remaining_target": "Construct rate-dependent exponential holding times and the marked spatial event process; prove lineage/pair/breakpoint selection, graph-prefix validity and the count projection. A discrete count kernel is not the full source generator or event recorder.",
-      "assumptions": "Merger scale a>0, split scale b>=0, finite normalized theta; rate calibration applies at k>=2. Count one is stopped; zero is a totalization and positive starts almost surely avoid it.",
-      "completion_criterion": "Embedded count-kernel/rate calibration is supplied by the reviewed candidate, pending pinned combined verification; continuous-time and spatial/event-record semantics remain required.",
+      "existing_evidence": "The constructed stopped count kernel and pathLaw have the literal split/merger probabilities at theta=2*b/a. WongWaitingTimes constructs their product with independent unit-exponential innovations and scales each pre-hit wait by q(k)=b*k+a*k*(k-1)/2. The measurable stopped waiting-path map, fixed-count conditional survival cylinders, and exact joint observation integral identify the actual count-and-clock law. At a=1 and b=rho these are the source's count rates.",
+      "remaining_target": "Construct the source's marked spatial event sampler: uniform selection of a lineage for recombination, a distinct unordered pair for common ancestry, and a breakpoint strictly inside the genome with the specified uniform law. Update extant lineage identities and dated event/edge records, prove valid finite graph prefixes, and prove that forgetting marks and graph data gives this timed stopped count law. A full real-time Markov-state theorem requires its own state-process construction if claimed.",
+      "assumptions": "The clock theorem assumes a>0, b>=0 and a finite initial natural count n>=1, with literal source specialization a=1, b=rho. Count one is stopped; the natural-zero totalization is almost surely avoided. Spatial claims additionally require an explicit positive genome length and coordinate regime; a discrete breakpoint sampler must not be silently substituted for a continuous uniform law.",
+      "completion_criterion": "The embedded count kernel and exponential holding-time construction are supplied by the checked sources. Full B04 completion additionally requires a source-faithful marked sampler, correct event recording, finite-prefix graph validity and the proved timed count projection. Preserve the separate hosted-admission status of the new clock module.",
       "cited_reference_ids": [],
       "section_title": "The big and little ARG",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
@@ -877,7 +877,8 @@
       "probability_modules": [
         "WongBigARGDrift",
         "WongCountChain",
-        "WongBigARGAbsorption"
+        "WongBigARGAbsorption",
+        "WongWaitingTimes"
       ],
       "probability_endpoint_evidence": [
         "WongBigARGDrift.weighted_gap",
@@ -898,9 +899,26 @@
         "WongBigARGAbsorption.normalizedRatio_value",
         "WongBigARGAbsorption.literal_up_kernel_mass",
         "WongBigARGAbsorption.literal_down_kernel_mass",
-        "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption",
+        "WongWaitingTimes.jointLaw_probability",
+        "WongWaitingTimes.joint_count_marginal",
+        "WongWaitingTimes.joint_clock_marginal",
+        "WongWaitingTimes.count_clock_independent",
+        "WongWaitingTimes.unit_clocks_independent",
+        "WongWaitingTimes.measurable_firstHit",
+        "WongWaitingTimes.measurable_physicalAbsorptionTime",
+        "WongWaitingTimes.holdingLaw_probability",
+        "WongWaitingTimes.holdingLaw_survival_cylinder",
+        "WongWaitingTimes.joint_holding_observation"
       ],
-      "verification_status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+      "verification_status": "COUNT19_AND_CLOCK24_HOSTED_PASS_SCOPED_STATEMENT_REVIEW_PASS",
+      "pre_waiting_time_contract": {
+        "status": "partial",
+        "existing_evidence": "WongCountChain constructs the actual two-outcome stopped count kernel and Ionescu-Tulcea path law. WongBigARGAbsorption identifies both singleton masses with literal split/merger rate ratios, theta=2*b/a, specializing to 2*rho for the source rates.",
+        "remaining_target": "Construct rate-dependent exponential holding times and the marked spatial event process; prove lineage/pair/breakpoint selection, graph-prefix validity and the count projection. A discrete count kernel is not the full source generator or event recorder.",
+        "assumptions": "Merger scale a>0, split scale b>=0, finite normalized theta; rate calibration applies at k>=2. Count one is stopped; zero is a totalization and positive starts almost surely avoid it.",
+        "completion_criterion": "Embedded count-kernel/rate calibration is supplied by the reviewed candidate, pending pinned combined verification; continuous-time and spatial/event-record semantics remain required."
+      }
     },
     {
       "id": "B05",
@@ -913,10 +931,10 @@
       "kind": "probability theorem",
       "status": "partial",
       "source_claim": "The source asserts finite-time arrival at the grand MRCA, citing quadratic merger versus linear branching.",
-      "existing_evidence": "WongBigARGAbsorption internally supplies an explicit finite all-state potential and proves almost-sure eventual one and finite jump-index absorption under the actual constructed pathLaw. The final endpoint has no assumed drift, recurrence or absorption premise.",
-      "remaining_target": "Construct the joint holding-time/count law and continuous-time process, prove finite physical stopping time/nonexplosion, and connect the count law to a marked spatial ARG. Derive any claimed exact expectation or asymptotic separately; sum_transient_le supplies a coarse drift-based probability-sum bound.",
-      "assumptions": "Finite nonnegative normalized theta and finite natural starting count. Biological interpretation uses positive starts; literal-rate endpoint starts at n+2 with a>0,b>=0. Conclusion is almost sure, not every ambient trajectory or a deterministic jump bound.",
-      "completion_criterion": "Finite jump-index absorption of the stopped embedded count chain is supplied by the reviewed candidate, pending pinned combined verification. The source finite-time ARG statement remains broader until clocks and spatial projection are constructed.",
+      "existing_evidence": "The existing absorption proof establishes a finite first-hit jump index almost surely under the constructed count-path law without assuming recurrence or absorption. WongWaitingTimes now proves almost-sure finite physical absorption for its actual joint law at all n>=1: pre-hit counts are at least two, holding times are positive, event times strictly increase, and the measurable ENNReal absorption value equals the finite real event-time sum. It is zero at n=1 and positive and finite at n>=2. Nonhitting paths receive infinity, so the totalization does not manufacture finite-time absorption.",
+      "remaining_target": "Construct and validate the marked spatial Big-ARG sampler in B04 and prove its timed count projection has the constructed joint law. Transfer the finite-prefix and finite-physical-time result to that source-faithful graph process, establishing its almost-sure absorption and absence of infinitely many actual pre-absorption events. Do not list the already-proved holding-time construction or count-history finite physical time as still open. Exact expected-event formulas and asymptotics belong to B07 and are separate from this absorption claim.",
+      "assumptions": "Finite a>0 and b>=0, positive finite initial count n>=1; literal source rates use a=1 and b=rho. Assertions hold almost surely under the constructed law, not on every ambient path and not with a uniform deterministic time bound. The flat zero-padded tail after the first hit contains no further actual event.",
+      "completion_criterion": "The timed stopped count-history absorption obligation is met by the waiting-time theorem, subject to its recorded integration gate. Full source-level Big-ARG completion requires the marked graph-law correspondence and transfer just described. A filtration stopping-time, semigroup or Markov theorem is not proved merely by measurability of the absorption functional and must be established separately if asserted.",
       "cited_reference_ids": [],
       "section_title": "The big and little ARG",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
@@ -936,7 +954,8 @@
       "probability_modules": [
         "WongBigARGDrift",
         "WongCountChain",
-        "WongBigARGAbsorption"
+        "WongBigARGAbsorption",
+        "WongWaitingTimes"
       ],
       "probability_endpoint_evidence": [
         "WongBigARGDrift.weighted_gap",
@@ -957,9 +976,25 @@
         "WongBigARGAbsorption.normalizedRatio_value",
         "WongBigARGAbsorption.literal_up_kernel_mass",
         "WongBigARGAbsorption.literal_down_kernel_mass",
-        "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption",
+        "WongWaitingTimes.measurable_physicalAbsorptionTime",
+        "WongWaitingTimes.joint_ae_hitsOne",
+        "WongWaitingTimes.joint_ae_positive_counts",
+        "WongWaitingTimes.jointClocks_ae_all_positive",
+        "WongWaitingTimes.physicalAbsorptionTime_eq_ofReal_eventTime",
+        "WongWaitingTimes.joint_ae_initial",
+        "WongWaitingTimes.literal_rates_ae_finite_physical_absorption",
+        "WongWaitingTimes.literal_rates_ae_start_one_zero_time",
+        "WongWaitingTimes.literal_rates_ae_positive_physical_time"
       ],
-      "verification_status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+      "verification_status": "COUNT19_AND_CLOCK24_HOSTED_PASS_SCOPED_STATEMENT_REVIEW_PASS",
+      "pre_waiting_time_contract": {
+        "status": "partial",
+        "existing_evidence": "WongBigARGAbsorption internally supplies an explicit finite all-state potential and proves almost-sure eventual one and finite jump-index absorption under the actual constructed pathLaw. The final endpoint has no assumed drift, recurrence or absorption premise.",
+        "remaining_target": "Construct the joint holding-time/count law and continuous-time process, prove finite physical stopping time/nonexplosion, and connect the count law to a marked spatial ARG. Derive any claimed exact expectation or asymptotic separately; sum_transient_le supplies a coarse drift-based probability-sum bound.",
+        "assumptions": "Finite nonnegative normalized theta and finite natural starting count. Biological interpretation uses positive starts; literal-rate endpoint starts at n+2 with a>0,b>=0. Conclusion is almost sure, not every ambient trajectory or a deterministic jump bound.",
+        "completion_criterion": "Finite jump-index absorption of the stopped embedded count chain is supplied by the reviewed candidate, pending pinned combined verification. The source finite-time ARG statement remains broader until clocks and spatial projection are constructed."
+      }
     },
     {
       "id": "B06",
@@ -2197,167 +2232,36 @@
       ]
     }
   ],
-  "edition": "probability-19-staged-from-hosted-274",
+  "edition": "waiting-times-24-after-hosted-probability-19",
   "integration": {
-    "baseline_commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
-    "baseline_aggregate_endpoints": 274,
-    "total_aggregate_endpoints": 293,
-    "new_endpoints": 19,
-    "status": "CANDIDATE_PENDING_PINNED_HOSTED_293",
-    "modules": [
-      {
-        "module": "WongBigARGDrift",
-        "path": "../../../real/WongBigARGDrift.lean",
-        "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
-        "endpoints": [
-          "WongBigARGDrift.weighted_gap",
-          "WongBigARGDrift.potential_drift"
-        ],
-        "endpoint_count": 2,
-        "axioms": {
-          "WongBigARGDrift.weighted_gap": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGDrift.potential_drift": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ]
-        },
-        "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+    "baseline_commit": "1775ecc85030c0fc55ad17ad4f21490976007a50",
+    "baseline_hosted_run": 36163709838,
+    "baseline_aggregate_endpoints": 293,
+    "new_endpoints": 24,
+    "total_aggregate_endpoints": 317,
+    "status": "HOSTED_PASS_317_REAL",
+    "proof_commit": "a2644182b147eb40816abb278e00c3c6d4709eb8",
+    "hosted_run": 36173386580,
+    "source": "../../../real/WongWaitingTimes.lean",
+    "source_sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
+    "independent_review": "probability/holding-times/INDEPENDENT-REVIEW.json",
+    "publication_record": "probability/holding-times/PUBLICATION.json",
+    "hosted_admission": {
+      "run": 36173386580,
+      "job": 108198082988,
+      "conclusion": "success",
+      "counts": {
+        "core": 405,
+        "real": 317,
+        "standalone": 234
       },
-      {
-        "module": "WongCountChain",
-        "path": "../../../real/WongCountChain.lean",
-        "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
-        "endpoints": [
-          "WongCountChain.one_absorbing",
-          "WongCountChain.jump_up_mass",
-          "WongCountChain.jump_down_mass",
-          "WongCountChain.initial_lintegral",
-          "WongCountChain.step_lintegral",
-          "WongCountChain.ae_positive_counts",
-          "WongCountChain.sum_transient_le",
-          "WongCountChain.ae_finite_absorption_of_drift",
-          "WongCountChain.literal_rate_ratio",
-          "WongCountChain.literal_merger_ratio"
-        ],
-        "endpoint_count": 10,
-        "axioms": {
-          "WongCountChain.one_absorbing": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.jump_up_mass": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.jump_down_mass": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.initial_lintegral": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.step_lintegral": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.ae_positive_counts": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.sum_transient_le": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.ae_finite_absorption_of_drift": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.literal_rate_ratio": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongCountChain.literal_merger_ratio": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ]
-        },
-        "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
-      },
-      {
-        "module": "WongBigARGAbsorption",
-        "path": "../../../real/WongBigARGAbsorption.lean",
-        "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
-        "endpoints": [
-          "WongBigARGAbsorption.countPotential_drift",
-          "WongBigARGAbsorption.ae_eventually_one",
-          "WongBigARGAbsorption.ae_finite_jump_absorption",
-          "WongBigARGAbsorption.normalizedRatio_value",
-          "WongBigARGAbsorption.literal_up_kernel_mass",
-          "WongBigARGAbsorption.literal_down_kernel_mass",
-          "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
-        ],
-        "endpoint_count": 7,
-        "axioms": {
-          "WongBigARGAbsorption.countPotential_drift": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGAbsorption.ae_eventually_one": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGAbsorption.ae_finite_jump_absorption": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGAbsorption.normalizedRatio_value": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGAbsorption.literal_up_kernel_mass": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGAbsorption.literal_down_kernel_mass": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongBigARGAbsorption.literal_rates_ae_finite_absorption": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ]
-        },
-        "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
-      }
-    ],
-    "receipt_path": "../../../verification/real-audit.json",
-    "verification": "Historical19 source-matched local passes and source/statement reviews are retained. Donor dependency pin provenance remains unverified. Lead retry passed scalar only, then stopped at missing Traj.olean; combined293 was not run. Exact pinned hosted293 audit required.",
-    "hosted_ci_status": "NOT_RUN_FOR_THIS_PROBABILITY_RELEASE",
-    "receipt_scope_endpoints": 274,
-    "candidate_status": "probability/CANDIDATE-STATUS.json"
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "frozen_ancestry_packet_integrity": "PASS35"
+    }
   },
   "provisional": [],
   "historical_integration": [
@@ -3490,6 +3394,167 @@
         "run_id": 36158710859,
         "conclusion": "success"
       }
+    },
+    {
+      "baseline_commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
+      "baseline_aggregate_endpoints": 274,
+      "total_aggregate_endpoints": 293,
+      "new_endpoints": 19,
+      "status": "CANDIDATE_PENDING_PINNED_HOSTED_293",
+      "modules": [
+        {
+          "module": "WongBigARGDrift",
+          "path": "../../../real/WongBigARGDrift.lean",
+          "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+          "endpoints": [
+            "WongBigARGDrift.weighted_gap",
+            "WongBigARGDrift.potential_drift"
+          ],
+          "endpoint_count": 2,
+          "axioms": {
+            "WongBigARGDrift.weighted_gap": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGDrift.potential_drift": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+        },
+        {
+          "module": "WongCountChain",
+          "path": "../../../real/WongCountChain.lean",
+          "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+          "endpoints": [
+            "WongCountChain.one_absorbing",
+            "WongCountChain.jump_up_mass",
+            "WongCountChain.jump_down_mass",
+            "WongCountChain.initial_lintegral",
+            "WongCountChain.step_lintegral",
+            "WongCountChain.ae_positive_counts",
+            "WongCountChain.sum_transient_le",
+            "WongCountChain.ae_finite_absorption_of_drift",
+            "WongCountChain.literal_rate_ratio",
+            "WongCountChain.literal_merger_ratio"
+          ],
+          "endpoint_count": 10,
+          "axioms": {
+            "WongCountChain.one_absorbing": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.jump_up_mass": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.jump_down_mass": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.initial_lintegral": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.step_lintegral": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.ae_positive_counts": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.sum_transient_le": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.ae_finite_absorption_of_drift": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.literal_rate_ratio": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongCountChain.literal_merger_ratio": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+        },
+        {
+          "module": "WongBigARGAbsorption",
+          "path": "../../../real/WongBigARGAbsorption.lean",
+          "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+          "endpoints": [
+            "WongBigARGAbsorption.countPotential_drift",
+            "WongBigARGAbsorption.ae_eventually_one",
+            "WongBigARGAbsorption.ae_finite_jump_absorption",
+            "WongBigARGAbsorption.normalizedRatio_value",
+            "WongBigARGAbsorption.literal_up_kernel_mass",
+            "WongBigARGAbsorption.literal_down_kernel_mass",
+            "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+          ],
+          "endpoint_count": 7,
+          "axioms": {
+            "WongBigARGAbsorption.countPotential_drift": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGAbsorption.ae_eventually_one": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGAbsorption.ae_finite_jump_absorption": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGAbsorption.normalizedRatio_value": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGAbsorption.literal_up_kernel_mass": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGAbsorption.literal_down_kernel_mass": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongBigARGAbsorption.literal_rates_ae_finite_absorption": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          },
+          "status": "SOURCE_REVIEWED_HISTORICAL_LOCAL_PASS_PINNED_AGGREGATE_PENDING"
+        }
+      ],
+      "receipt_path": "../../../verification/real-audit.json",
+      "verification": "Historical19 source-matched local passes and source/statement reviews are retained. Donor dependency pin provenance remains unverified. Lead retry passed scalar only, then stopped at missing Traj.olean; combined293 was not run. Exact pinned hosted293 audit required.",
+      "hosted_ci_status": "NOT_RUN_FOR_THIS_PROBABILITY_RELEASE",
+      "receipt_scope_endpoints": 274,
+      "candidate_status": "probability/CANDIDATE-STATUS.json"
     }
   ]
 }
