@@ -17,3 +17,8 @@
 *.gz binary
 *.zip binary
 *.olean binary
+
+# Hash-pinned proof packets preserve their original bytes on every platform.
+/research/feedback-speciation/pure-induction-ancestry-v2/** -text
+/research/wong/completion/probability/holding-times/worker/** -text
+/research/wong/completion/probability/holding-times/INDEPENDENT-REVIEW.json -text

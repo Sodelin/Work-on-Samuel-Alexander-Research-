@@ -1,6 +1,6 @@
 # A shared model for marker inheritance and ancestry
 
-**Checkpoint:** local verification and independent internal review passed for the bounded R1–R6 result. Hosted admission of this packet is pending. [Precise result and scope](pure-induction-ancestry-v2/RESULT-AND-SCOPE.md) · [Local compiler receipts](pure-induction-ancestry-v2/COMBINED-RECEIPT.json) · [Independent review](pure-induction-ancestry-v2/INDEPENDENT-REVIEW.json).
+**Checkpoint:** the bounded R1–R6 result passed local verification, independent internal statement review and [hosted verification at 4351360](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36172191388). The run checked 405 core, 293 real and 234 standalone selected declarations. [Precise result and scope](pure-induction-ancestry-v2/RESULT-AND-SCOPE.md) · [Local compiler receipts](pure-induction-ancestry-v2/COMBINED-RECEIPT.json) · [Independent review](pure-induction-ancestry-v2/INDEPENDENT-REVIEW.json).
 
 ## What connects the two descriptions
 
@@ -39,7 +39,7 @@ The avoidance probability is an equality. The non-resolution statement is an ine
 - Unconditional and earlier-history conditional resolution bounds, with measurable events.
 - Almost-sure ancestry mixing and the precisely stated conjunction with the marker statistic.
 
-The new connection has **36 selected endpoint reports in four modules**. Hosted integration also registers **31 prerequisite reports in four additional modules**. Together these would increase the standalone audit from 167 to 234 selected declarations; this is an expected audit total until the candidate's hosted run succeeds. The strict axiom checks are preserved.
+The new connection has **36 selected endpoint reports in four modules**. Hosted integration also registers **31 prerequisite reports in four additional modules**. Together these increased the standalone audit from 167 to 234 selected declarations. The strict axiom checks are preserved.
 
 ## A remaining distinction
 
@@ -51,4 +51,4 @@ The model is a specified two-deme, two-adult construction. Its assumptions and i
 
 [Reproduction instructions](pure-induction-ancestry-v2/REPRODUCTION.md) describe the portable source packet and exact pins. The original packet is preserved byte-for-byte, including its manifest and historical logs; publication notes sit outside its directory so its integrity verifier continues to work.
 
-The four new modules passed local Lean 4.33.1 checks against previously checked dependency objects. The fresh hosted integration is a separate gate. [Publication integration record](pure-induction-ancestry-v2-publication.json).
+The four new modules first passed local Lean 4.33.1 checks against previously checked dependency objects. The subsequent hosted run rebuilt the registered libraries and compiled all selected standalone sources, checking the reused prerequisite sources and permitted axioms. [Publication integration record](pure-induction-ancestry-v2-publication.json).

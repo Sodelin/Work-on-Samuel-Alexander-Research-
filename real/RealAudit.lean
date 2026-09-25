@@ -1,3 +1,4 @@
+import WongWaitingTimes
 import WongBigARGDrift
 import WongCountChain
 import WongBigARGAbsorption
@@ -364,3 +365,28 @@ import StatefulCAReal
 #print axioms WongBigARGAbsorption.literal_up_kernel_mass
 #print axioms WongBigARGAbsorption.literal_down_kernel_mass
 #print axioms WongBigARGAbsorption.literal_rates_ae_finite_absorption
+
+#print axioms WongWaitingTimes.unitClockLaw_probability
+#print axioms WongWaitingTimes.jointLaw_probability
+#print axioms WongWaitingTimes.joint_count_marginal
+#print axioms WongWaitingTimes.joint_clock_marginal
+#print axioms WongWaitingTimes.unit_clock_marginal
+#print axioms WongWaitingTimes.count_clock_independent
+#print axioms WongWaitingTimes.unit_clocks_independent
+#print axioms WongWaitingTimes.measurable_firstHit
+#print axioms WongWaitingTimes.measurable_physicalAbsorptionTime
+#print axioms WongWaitingTimes.holdingLaw_probability
+#print axioms WongWaitingTimes.holdingLaw_survival_cylinder
+#print axioms WongWaitingTimes.joint_holding_observation
+#print axioms WongWaitingTimes.unitClocks_ae_all_positive
+#print axioms WongWaitingTimes.jointClocks_ae_all_positive
+#print axioms WongWaitingTimes.joint_ae_hitsOne
+#print axioms WongWaitingTimes.joint_ae_positive_counts
+#print axioms WongWaitingTimes.physicalAbsorptionTime_eq_ofReal_eventTime
+#print axioms WongWaitingTimes.count_ae_initial
+#print axioms WongWaitingTimes.joint_ae_initial
+#print axioms WongWaitingTimes.literal_rates_ae_finite_physical_absorption
+#print axioms WongWaitingTimes.literal_rates_ae_start_one_zero_time
+#print axioms WongWaitingTimes.literal_rates_ae_positive_physical_time
+#print axioms WongWaitingTimes.rate_three_at_two
+#print axioms WongWaitingTimes.split_mass_two_thirds

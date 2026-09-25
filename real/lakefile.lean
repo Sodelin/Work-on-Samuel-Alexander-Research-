@@ -106,3 +106,6 @@ lean_lib WongCountChain
 
 @[default_target]
 lean_lib WongBigARGAbsorption
+
+@[default_target]
+lean_lib WongWaitingTimes

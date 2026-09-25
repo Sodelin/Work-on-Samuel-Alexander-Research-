@@ -5,7 +5,7 @@
   "packet_manifest_sha256": "7a319b9c72b40a14260faf3698501dcaf8254ab2f47d279ab2b65817d541fbda",
   "original_packet_bytes_preserved": true,
   "publication_sidecars_outside_packet": true,
-  "status": "LOCAL_CHECKS_AND_SCOPED_REVIEW_PASS_HOSTED_ADMISSION_PENDING",
+  "status": "HOSTED_ADMISSION_PASS",
   "local_new_selected_endpoints": 36,
   "newly_registered_prerequisite_endpoints": 31,
   "standalone_audit_expected": {
@@ -60,5 +60,21 @@
     "Worldwide priority",
     "Raw eventual-fixation-event probability equals fixationValue",
     "Whole Wong or Alexander research programme completion"
-  ]
+  ],
+  "hosted_admission": {
+    "commit": "4351360ecc2f4c267d83a4e58b3454410304f24d",
+    "run": 36172191388,
+    "job": 108194179645,
+    "conclusion": "success",
+    "counts": {
+      "core": 405,
+      "real": 293,
+      "standalone": 234
+    },
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
 }

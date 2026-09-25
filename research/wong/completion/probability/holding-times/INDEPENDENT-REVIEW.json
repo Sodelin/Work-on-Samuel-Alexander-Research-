@@ -1,0 +1,44 @@
+{
+  "status": "PASS_FOR_BOUNDED_TIMED_COUNT_HISTORY",
+  "reviewedAtUtc": "2026-09-25T18:15:20Z",
+  "reviewType": "Independent read-only statement and source audit; no compiler or cache access",
+  "workerSource": "worker/WongWaitingTimes.lean",
+  "workerSourceSha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
+  "workerReceipt": "worker/verification/WongWaitingTimes-receipt.json",
+  "workerReceiptSha256": "3b960969dca365928b07c0a324945e73541ece58420fb515731a7debbe5b2577",
+  "correctionNote": "Receipt SHA256 was rechecked against the receipt bytes and a transcription error in this review record was corrected; theorem assessment is unchanged.",
+  "workerFinalLog": "worker/verification/WongWaitingTimes-final.log",
+  "workerFinalLogSha256": "585cac5b038a8671df521795c9074c3d90f9a4f28d348fcec8a0a074f88e1eee",
+  "frozenInputs": [
+    {
+      "path": "../absorption/WongCountChain.lean",
+      "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae"
+    },
+    {
+      "path": "../absorption/WongBigARGAbsorption.lean",
+      "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518"
+    }
+  ],
+  "primarySource": {
+    "path": "../../source/PMC11373519-fullText.xml",
+    "sha256": "2b77c349f39d2885b3e36d3bcab639a7ef3b9c6217263031aa4bc8f1c2a0d05e",
+    "location": "/article/body[1]/sec[11]/p[5]",
+    "finding": "Big ARG common-ancestor rate choose(k,2), recombination rate k*rho, and finite-time one-lineage claim; a=1 and b=rho reproduce these count rates. Spatial lineage and breakpoint choices are outside this module."
+  },
+  "findings": [
+    "totalRate is b*k+a*k*(k-1)/2 and is proved positive for k>=2, a>0, b>=0. Frozen normalizedRatio=2*b/a and literal_up_kernel_mass/literal_down_kernel_mass identify the jump probabilities used by pathLaw.",
+    "jointLaw is the product of the actual frozen count-path law and infinite independent unit-exponential innovations. The source proves both path marginals, independence between full count and clock paths, and independence among clock coordinates.",
+    "holdingLaw is the measurable fixed-count-path pushforward under stopped rate scaling. holdingLaw_survival_cylinder gives the finite conditional survival product for every positive hitting count path and pre-hit finite cylinder; joint_holding_observation identifies its exact integration against the count-path law for measurable count and waiting-path events.",
+    "firstHit is measurable and totalized to zero off the hitting event; physicalAbsorptionTime is separately measurable and equals infinity off that event. On hitting paths it is exactly the finite pre-hit ENNReal wait sum.",
+    "The frozen ae_finite_jump_absorption supplies hitting almost surely. For all n>=1, the worker derives pre-hit counts>=2, strictly positive waits, strictly increasing event times, finite physical time, and equality with the real first-hit event-time sum. Initial n=1 has firstHit=0 and time=0 almost surely; n>=2 has strictly positive finite time almost surely.",
+    "The rate-three count-two check and two-thirds upward jump mass are explicit endpoints. Common positive rescaling of a and b leaves normalizedRatio unchanged and divides raw waits by the scale by direct algebra; this is not a separate selected Lean endpoint. The b=0 case is included in the theorem quantifiers. Identical clock coordinates would fail the proved independent finite-cylinder law. There is no deterministic upper time bound or finite-time assertion on nonhitting paths."
+  ],
+  "verificationBoundary": "Read-only audit confirmed the source, receipt, frozen-source, primary-XML, and final-log hashes. The worker receipt reports Lean 4.33.1/Mathlib 0df444a360eaa60ab8c11dca51a86af692955474, compiler exit 0, and 24 selected endpoints with only propext, Classical.choice, and Quot.sound. This reviewer did not rerun Lean or independently verify the object cache.",
+  "excludedClaims": [
+    "A constructed real-time state process or full CTMC/Markov-rate theorem",
+    "Marked spatial ARG dynamics, lineage or pair selection, and breakpoint distribution",
+    "A Big/Little ARG spatial projection or exact expected-event/asymptotic result",
+    "A uniform deterministic absorption-time bound"
+  ],
+  "blockers": []
+}
