@@ -3,7 +3,18 @@
 A public, AI-assisted mathematics notebook connecting infinite genealogical
 graphs, word avoidance, specieslike clusters and cellular automata. Source
 results, new deductions, conjectures and finite experiments are identified
-separately. This repository has not contacted Dr. Alexander on the owner's behalf.
+separately. Publication and outreach status are recorded with the relevant release.
+
+## Latest research progress
+
+**Updated 25 September 2026.** Read the [human-readable progress report](RESEARCH-PROGRESS.md) for the latest results, evidence and remaining work.
+
+| Where to go | What you will find |
+|---|---|
+| [Research progress](RESEARCH-PROGRESS.md) | What changed, why it is useful, and what is still local or unfinished |
+| [Current research PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) | Newer published work awaiting integration with the main branch |
+| [Research architecture](RESEARCH-ARCHITECTURE.md) | Three research leads, shared workers, adversarial review and publication rules |
+| [Successful hosted verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36148288120) | The exact checked baseline at commit `138dd529` |
 
 **Start with the [ten research proposals](TEN-RESEARCH-IDEAS.md),
 [brief mathematical handoff](HANDOFF-FOR-ALEXANDER.md), and
