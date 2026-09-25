@@ -1,0 +1,21 @@
+name: Verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lean-and-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          test: false
+          use-mathlib-cache: false
+      - name: Check finite-path tests
+        run: python3 -m unittest discover -s checks -p 'test_*.py' -v
+      - name: Replay finite certificate example
+        run: python3 checks/check_local_certificate.py

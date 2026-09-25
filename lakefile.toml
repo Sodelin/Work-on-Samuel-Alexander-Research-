@@ -1,0 +1,7 @@
+name = "samuel_alexander_research"
+version = "0.1.0"
+defaultTargets = ["SamuelAlexanderResearch"]
+
+[[lean_lib]]
+name = "SamuelAlexanderResearch"
+srcDir = "lean"
