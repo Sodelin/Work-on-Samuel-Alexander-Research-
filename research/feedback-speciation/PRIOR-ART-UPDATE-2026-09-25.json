@@ -1,0 +1,43 @@
+{
+  "recorded_utc": "2026-09-25T17:30:20.754263+00:00",
+  "type": "attribution_and_scope_supplement",
+  "source_task": "01a0d900-7407-7253-9778-00cf6c814a1a",
+  "inputs": [
+    {
+      "name": "prior-art-and-provenance-register.md",
+      "bytes": 18736,
+      "sha256": "0db0607347e87fb778ae6f3ccc283859d9dbcd25f6628f470353c502f6c7f7b0"
+    },
+    {
+      "name": "verified-references.bib",
+      "bytes": 8818,
+      "sha256": "7fca5c56db7c2329a3744f65d288b4af0be836a5a10febf4f5bc2c7bd083189e"
+    },
+    {
+      "name": "verified-pubmed-metadata.json",
+      "bytes": 20820,
+      "sha256": "d2bbd0fd6cad1b0c46b5406d6c2b146ff5fe315bac3ce9cebc54b5d71ff82253"
+    },
+    {
+      "name": "theory-prior-art-audit.md",
+      "bytes": 10418,
+      "sha256": "13333b289638af6c36d5f8849a689fb1e4b5c07acd9038fbd2d7772254b0846e"
+    },
+    {
+      "name": "astra-biomedical-capability-map.md",
+      "bytes": 6182,
+      "sha256": "781c92d83085126f2dae1b96793e924f5b87b16419fa865e385170a462b4e9bd"
+    }
+  ],
+  "root_primary_recheck": {
+    "doi": "10.1111/evo.14494",
+    "pages": [
+      1176,
+      1178
+    ]
+  },
+  "data_reanalyses": 0,
+  "lean_changes": 0,
+  "novelty_established": false,
+  "inspection_limits": "See companion Markdown. Thibert-Plante2011 inspected by biomedical reviewer; bibliographic identity differs from full technical verification."
+}
