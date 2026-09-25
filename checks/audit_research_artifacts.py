@@ -41,6 +41,7 @@ ARTIFACTS = {
     "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean": 8,
     "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean": 8,
 }
+PRINT_NAMESPACES = {'research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean': 'ExactAbstraction.', 'research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean': 'MergeHistoryProjection.'}
 PRINT_AXIOMS = re.compile(r"^\s*#print\s+axioms\s+([A-Za-z0-9_.]+)\s*$", re.M)
 PLACEHOLDER_WARNING = re.compile(
     r"(?:warning[^\n]*(?:\bsorry\b|\badmit\b)|"
@@ -139,6 +140,8 @@ def audit(source_root: Path, dependency_root: Path, compiler: Path | None) -> di
         before = sha256(path)
         text = path.read_text(encoding="utf-8")
         names = PRINT_AXIOMS.findall(text)
+        namespace = PRINT_NAMESPACES.get(relative, "")
+        names = [namespace + name for name in names]
         if len(names) != expected_count or len(names) != len(set(names)):
             raise RuntimeError(f"{relative}: expected {expected_count} unique printed endpoints, got {names!r}")
         if all_names.intersection(names):

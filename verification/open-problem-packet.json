@@ -179,9 +179,9 @@
     },
     {
       "path": "checks/audit_research_artifacts.py",
-      "sha256": "2aded426875c4efa42d9f7225532d57be60f6a75cf0a53c44e7a3248814e60cb",
-      "bytes": 12379,
-      "original_sha256": "2aded426875c4efa42d9f7225532d57be60f6a75cf0a53c44e7a3248814e60cb"
+      "sha256": "08185ec06b04c32854c05c3c0d0db69cd249a7b6435fb320ab1bb307334faa48",
+      "bytes": 12733,
+      "original_sha256": "08185ec06b04c32854c05c3c0d0db69cd249a7b6435fb320ab1bb307334faa48"
     },
     {
       "path": ".github/workflows/verify.yml",
