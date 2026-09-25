@@ -14,7 +14,7 @@ separately. Publication and outreach status are recorded with the relevant relea
 | [Research progress](RESEARCH-PROGRESS.md) | What changed, why it is useful, and what is still local or unfinished |
 | [Current research PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) | Newer published work awaiting integration with the main branch |
 | [Research architecture](RESEARCH-ARCHITECTURE.md) | Three research leads, shared workers, adversarial review and publication rules |
-| [Successful hosted verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36148288120) | The exact checked baseline at commit `138dd529` |
+| [Latest verified research checkpoint](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36163709838) | Research commit `1775ecc8`: 405 core, 293 real and 167 standalone selected Lean declarations |
 
 **Start with the [ten research proposals](TEN-RESEARCH-IDEAS.md),
 [brief mathematical handoff](HANDOFF-FOR-ALEXANDER.md), and
