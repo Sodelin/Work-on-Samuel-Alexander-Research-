@@ -1,5 +1,14 @@
 # Research follow-up publication status
 
+## DNA-identification and delivery follow-up, 25 September 2026
+
+The [new evidence map](research/open-questions/genomic-identifiability/next/README.md) distinguishes DNA-based assignment, species delimitation, tree identification, pedigree identification and Alexander's specieslike target. It records positive and negative primary literature and a new formalization of finite-sample overlap and robust recovery for the prescribed three-taxon law. This is known conditional mathematics, not a theorem that DNA universally determines biological species.
+
+Eight locally checked endpoints are added to the standalone audit, bringing that inventory to **60 endpoints in 12 files**; the registered core/real counts remain 405/151. The exact-commit hosted result is recorded in [PR #6 checks](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks). The probability-tail bound in the explanatory note is a separate written derivation and is not claimed as Lean checked.
+
+A single consolidated completion email was sent and verified in the existing author conversation, linking commit `8fd86430e78fed06fffe35df2fa85f28bdff48d9` and successful Verify run 36127053780. A VibeMathed curator follow-up has been prepared; delivery is not yet confirmed. The original Thue-Morse submission remains unchanged and under review. No duplicate submission was created. Historical delivery descriptions below refer to their own publication snapshots.
+
+
 ## Completion pass: proved statements and reproducible checks
 
 Start with the [completion map](COMPLETION-MAP.md). It distinguishes proved statements, their source questions, and the remaining questions about priority and biological usefulness.

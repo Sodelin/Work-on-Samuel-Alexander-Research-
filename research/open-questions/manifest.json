@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "scope": "Completed scoped theorem arguments and exact formal artifacts; standalone 52-endpoint local audit PASS; founder theorem separately registered in 151-endpoint real aggregate. See current completion map and exact-commit hosted result in PR6.",
+  "scope": "Source-linked open-question reports and checked formal artifacts. The genomic finite-evidence update brings the standalone audit to 60 endpoints across 12 files; core 405 and real 151 remain unchanged. See exact-commit CI in PR 6.",
   "files_sha256": {
     "embedding/Check.ps1": "bdb425d66afd435c8f7e0f6f21129a6b402cba116e3648d0f637f02a38cba270",
     "embedding/dependency-sources.json": "8668d601aabdc00a63a11fca65c1ef61df34bb821c8ed62abc8732e5472e4ed6",
@@ -15,7 +15,7 @@
     "genomic-identifiability/positive/ThreeTaxonIdentifiability.lean": "97eddf62044c37e6973873f987c49ea69e0f9f2081ccd955fd05dc27099c2cf6",
     "genomic-identifiability/positive/validation.txt": "69021a0aec76b930e8143a7b7bc2eee4038e8ce35b81c487ed23560889baad00",
     "genomic-identifiability/positive/verification.json": "dd04918c82a76a681a73b01d605de49f54401189cc6dc4588b0f58bcdbc519cd",
-    "genomic-identifiability/README.md": "e8bab6d45eaa8b600f6e836af35012058a688a05ecfa7737094604703b93b271",
+    "genomic-identifiability/README.md": "d903218460bb50e80447f171c27ea96cadf03104b88ca6deb243fa63003fdbbd",
     "genomic-identifiability/verification.json": "b6d67e3415058a7bd027090fe52ffff141551aaab1700eb33f0ca684313e2cb4",
     "ordinal/COMPLETION-RECEIPT.md": "769b0ae500fd59bd416ce801f054c80b197e02f35a8d202a381ece5f310c5ff6",
     "ordinal/GENERIC-CERTIFICATE.md": "a84e142d412b9dc44d756ce9644875f6d5264b3d337cdc8485a52ff61fe14f19",
@@ -41,6 +41,15 @@
     "README.md": "eaf9f28665a02be83301505c5ffe2d3749b6be9616b78d27c4ae97352805fc16",
     "species/FOUNDER-WINDOW-THEOREM.md": "13c33846073dfce6b60afe130f997380606624eb376cad34781645d47fc33e8a",
     "species/FounderWindow.lean": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
-    "species/VERIFICATION.md": "44e3dbc718dc454a9cb0767472bf8b989ea089c51b9cbee3a4151c8229e0e2d7"
+    "species/VERIFICATION.md": "44e3dbc718dc454a9cb0767472bf8b989ea089c51b9cbee3a4151c8229e0e2d7",
+    "genomic-identifiability/next/Check.ps1": "ff6dfee61b56e0ec13394c045c11276cf70084cbbedaa657b6763ab663ea74b3",
+    "genomic-identifiability/next/dna_species_evidence_ledger.md": "c6bce847ca1213af3d1015e741f759ab04654d52c3ddeedda1df2740b7094601",
+    "genomic-identifiability/next/dna_species_search_log.md": "f8f3f6f59b891c3d59647040c6d009203fdc785954af680f1d361485757548bb",
+    "genomic-identifiability/next/FORMAL-SCOPE.md": "0844e5dfb4ed787fa5e5a9b5b6b9cb2d38311eb219e718e26a64e28f843e0fcf",
+    "genomic-identifiability/next/README.md": "9500d3437323c51443b2c6ae591516a96e7b3e47f35f32a040325988f3c55643",
+    "genomic-identifiability/next/search-protocol.json": "1a3c6f79067f42b2780d76be1eef9914ad02a067ad8c7b71b676bbb6e8274ad1",
+    "genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean": "01f53ac6176f612beda29475805d5c27293db7a35d10907a2db3ad8a96ae18f5",
+    "genomic-identifiability/next/validation.txt": "3d0ebb0051e6a93d50b634ab816fb83c6a1193a16d17e71fd67d9303946d5732",
+    "genomic-identifiability/next/verification.json": "39a515edbd5d9269716cf05bf42d76348c6d0168f6d8548e4e3cd2f2766ae69a"
   }
 }

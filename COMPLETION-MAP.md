@@ -2,6 +2,10 @@
 
 Updated 25 September 2026. Start here for the current project status. Earlier proof receipts remain valid records of their own snapshots.
 
+## Latest focused follow-up
+
+The [DNA-identification evidence map](research/open-questions/genomic-identifiability/next/README.md) adds known primary literature and a checked finite-evidence extension: overlapping finite-sample support, an obstruction to uniform certainty, robust recovery, and the sharp half-gap boundary in the three-taxon model. This adds eight selected standalone endpoints; it does not prove biological species delimitation. The author has received one consolidated completion email update. The VibeMathed curator follow-up is prepared, with delivery unconfirmed; the original submission is unchanged.
+
 ## Where we have reached
 
 **The three main proof directions now have complete, locally checked results at explicit scopes:** ordinal certificates, a universal-embedding obstruction, and maximal specieslike clusters with a real founding window. The earlier quantitative sequence results and finite-genome ancestry results are also complete for their stated models.
@@ -37,7 +41,7 @@ This provides a finite stopping point for the present packet. We can finish the 
 
 ## Technical verification inventory
 
-The integrated library remains at **405 core endpoints** and now has **151 real/Mathlib endpoints**, including the full founder theorem. The separate research-artifact audit **passed locally with 52 printed endpoints across 11 files**: its earlier 39, three generic ordinal endpoints, and ten generic embedding endpoints. These counts describe selected checked statements and must not be presented as counts of discoveries or historical open problems solved. The combined local pass was recorded at 10:56:58 UTC on 25 September 2026. The exact-commit hosted result is recorded separately in PR #6 and its checks.
+The integrated library remains at **405 core endpoints** and now has **151 real/Mathlib endpoints**, including the full founder theorem. The separate research-artifact audit **passed locally with 52 printed endpoints across 11 files** in the previous completion packet. The new eight-endpoint finite-evidence module brings the current selected audit to **60 endpoints in 12 files**; see its [combined local receipt](verification/genomic-finite-evidence-audit-local.json). These counts describe selected checked statements and must not be presented as counts of discoveries or historical open problems solved. The combined local pass was recorded at 10:56:58 UTC on 25 September 2026. The exact-commit hosted result is recorded separately in PR #6 and its checks.
 
 The actual history rank/pruning work has eleven new endpoints plus its six-endpoint prerequisite. The generic natural-certificate and ordinal-certificate files have eight and three respectively. The complete founder proof contributes fifty new registered real endpoints. Historical receipts retain their original counts and source hashes.
 

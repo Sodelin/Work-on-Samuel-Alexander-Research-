@@ -1,5 +1,7 @@
 # What can genomic evidence determine about species?
 
+**New follow-up:** [What is already known about DNA-based identification, and the checked finite-evidence extension](next/README.md).
+
 Date: 25 September 2026. This note responds to the proposed goal of proving that genomic data determines biological species. It distinguishes a general identification question, a newly checked consequence of the project's ancestry model, and an elementary formalization of a known positive example.
 
 ## The research question is important, but needs three definitions

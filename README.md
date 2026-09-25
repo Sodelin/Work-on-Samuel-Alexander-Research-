@@ -2,6 +2,8 @@
 
 **Start here:** [Completion map](COMPLETION-MAP.md) — finished statements, active proof gates, and what the evidence supports.
 
+**Latest focused follow-up:** [What DNA can identify, known results, and a checked finite-evidence step](research/open-questions/genomic-identifiability/next/README.md).
+
 
 A public, AI-assisted mathematics notebook connecting infinite genealogical
 graphs, word avoidance, specieslike clusters and cellular automata. Source

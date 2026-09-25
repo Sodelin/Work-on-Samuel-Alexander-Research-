@@ -1,0 +1,660 @@
+{
+  "checked_at_utc": "2026-09-25T11:20:36.758827+00:00",
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain_pin": "leanprover/lean4:v4.33.1",
+  "toolchain_pin_location": "dependency-root",
+  "toolchain_pin_sha256": {
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\lean-toolchain": "a0ada3782cd088719516bbfdf37b9e7032230e211bf424b85d952ee650c51091",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "artifact_count": 12,
+  "endpoint_count": 60,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "endpoint_axioms": {
+    "OrdinalCertificates.certificate_bounds_every_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinalCertificates.certificate_excludes_realization": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinalCertificates.odd_ray_realizes_tail": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinalCertificates.no_all_phase_natural_rank": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ReachableRankNecessity.reachable_endpoints_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReachableRankNecessity.reachable_maximum_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReachableRankNecessity.rank_isCertificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReachableRankNecessity.rank_is_least": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReachableRankNecessity.avoids_iff_has_natural_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReachableRankNecessity.aperiodic_Ps_has_natural_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HistoryWellFounded.below_wellFounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HistoryWellFounded.finite_word_occurs": [
+      "propext",
+      "Quot.sound"
+    ],
+    "HistoryWellFounded.population_heights_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinalHistoryRank.history_rank_eq_height": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinalHistoryRank.root_rank_eq_omega": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinalHistoryRank.aperiodic_Ps_root_rank_eq_omega": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HistoryPruning.root_survives_every_finite_stage": [
+      "propext",
+      "Quot.sound"
+    ],
+    "HistoryPruning.omega_stage_iff_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HistoryPruning.omega_succ_stage_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HistoryConverse.wellFounded_below_excludes_realization": [
+      "propext",
+      "Quot.sound"
+    ],
+    "HistoryConverse.below_wellFounded_iff_avoids": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.realizes_iff_state_chain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GenericCertificate.avoids_iff_wellFounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.finiteHeight_decreases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.finiteLabelChildren_of_finite_children": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.avoids_iff_natural_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.finiteHeight_least": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.finiteHeight_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericCertificate.avoids_has_least_attained_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericOrdinalCertificate.ordinal_certificate_excludes_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericOrdinalCertificate.avoidance_has_ordinal_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericOrdinalCertificate.avoids_iff_ordinal_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.binaryCover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.exists_ray": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.no_countable_bounded_stretch_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.rootsEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.blowUp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.blowUp_language": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.no_countable_host_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.no_countable_population_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GenericUniversalAvoiders.avoiding_no_countable_population_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.commonAncestor_window": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonIdentifiability.law_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonIdentifiability.law_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonIdentifiability.unique_maximizer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonIdentifiability.law_identifiable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonIdentifiability.boundary_uniform": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonIdentifiability.no_boundary_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.sampleMass_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.sampleMass_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.finite_sample_support_overlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.no_uniform_certain_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.quantitative_error_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.robust_strict_mode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.robust_maximizer_recovers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ThreeTaxonFiniteEvidence.half_gap_tie": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256": {
+    "research/open-questions/ordinal/OrdinalCertificates.lean": "712cc36d5e75c18f6060439591c392a97af80f9b3a23a92c70198c4deac4d2af",
+    "research/open-questions/ordinal/ReachableRankNecessity.lean": "da2be4d009966196e4b160789e968677b913385e2f7d4f037ed50281fed7fa50",
+    "research/open-questions/ordinal/HistoryWellFounded.lean": "e3efce200eac78dd6ec306b3087f5cd0ec87cf8e3f0db939284c62553133ce96",
+    "research/open-questions/ordinal/OrdinalHistoryRank.lean": "67b018434e820175aff7af2d9fa615d7cd4a42844600380b81259f4925198d74",
+    "research/open-questions/ordinal/HistoryPruning.lean": "7441b97fd379513dcc4ef852bf3ee8eae2a2a297ebed2110fe850e2f339e4a3b",
+    "research/open-questions/ordinal/HistoryConverse.lean": "da301f530d3f41b7ce7a1d1dc9917011be7c508b747d252b32c4f62836b09d62",
+    "research/open-questions/ordinal/GenericCertificate.lean": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581",
+    "research/open-questions/ordinal/GenericOrdinalCertificate.lean": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510",
+    "research/open-questions/embedding/GenericUniversalAvoiders.lean": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4",
+    "research/open-questions/species/FounderWindow.lean": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+    "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean": "97eddf62044c37e6973873f987c49ea69e0f9f2081ccd955fd05dc27099c2cf6",
+    "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean": "01f53ac6176f612beda29475805d5c27293db7a35d10907a2db3ad8a96ae18f5"
+  },
+  "artifacts": [
+    {
+      "path": "research/open-questions/ordinal/OrdinalCertificates.lean",
+      "source_sha256": "712cc36d5e75c18f6060439591c392a97af80f9b3a23a92c70198c4deac4d2af",
+      "endpoint_count": 4,
+      "endpoints": [
+        "OrdinalCertificates.certificate_bounds_every_prefix",
+        "OrdinalCertificates.certificate_excludes_realization",
+        "OrdinalCertificates.odd_ray_realizes_tail",
+        "OrdinalCertificates.no_all_phase_natural_rank"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\OrdinalCertificates.olean",
+      "generated_olean_sha256": "baf89b70c6141ed2091bfa7a4c070e54ed5a021b985c594f9e4dc9ce0d89fe73",
+      "compiler_output_sha256": "3a815a111a927086f06aa4d9ec5b960a1d6cda39897cce9a27647ad7a24ed374",
+      "compiler_output": "'OrdinalCertificates.certificate_bounds_every_prefix' depends on axioms: [propext, Quot.sound]\n'OrdinalCertificates.certificate_excludes_realization' depends on axioms: [propext, Quot.sound]\n'OrdinalCertificates.odd_ray_realizes_tail' depends on axioms: [propext, Quot.sound]\n'OrdinalCertificates.no_all_phase_natural_rank' depends on axioms: [propext, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\OrdinalCertificates.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\OrdinalCertificates.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/ReachableRankNecessity.lean",
+      "source_sha256": "da2be4d009966196e4b160789e968677b913385e2f7d4f037ed50281fed7fa50",
+      "endpoint_count": 6,
+      "endpoints": [
+        "ReachableRankNecessity.reachable_endpoints_bounded",
+        "ReachableRankNecessity.reachable_maximum_exists",
+        "ReachableRankNecessity.rank_isCertificate",
+        "ReachableRankNecessity.rank_is_least",
+        "ReachableRankNecessity.avoids_iff_has_natural_certificate",
+        "ReachableRankNecessity.aperiodic_Ps_has_natural_certificate"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\ReachableRankNecessity.olean",
+      "generated_olean_sha256": "251ae339a15faa57a4f6678fcb04e6c2278f8d2783fef3613118fc93600b4796",
+      "compiler_output_sha256": "7ba83d658f243c59742ff5a05203e0e3b5ae9efe7d8e62cceec65009ec0c0d03",
+      "compiler_output": "'ReachableRankNecessity.reachable_endpoints_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReachableRankNecessity.reachable_maximum_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReachableRankNecessity.rank_isCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReachableRankNecessity.rank_is_least' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReachableRankNecessity.avoids_iff_has_natural_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReachableRankNecessity.aperiodic_Ps_has_natural_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\ReachableRankNecessity.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\ReachableRankNecessity.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/HistoryWellFounded.lean",
+      "source_sha256": "e3efce200eac78dd6ec306b3087f5cd0ec87cf8e3f0db939284c62553133ce96",
+      "endpoint_count": 3,
+      "endpoints": [
+        "HistoryWellFounded.below_wellFounded",
+        "HistoryWellFounded.finite_word_occurs",
+        "HistoryWellFounded.population_heights_unbounded"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\HistoryWellFounded.olean",
+      "generated_olean_sha256": "b4c30c3b2bb8a26ae99aedaf51f1e5ec00456b5efb39cbe34a5a5d0a52b01b4f",
+      "compiler_output_sha256": "091dfe7b5a3543cf0e9d27a4e1ebee74f0cf9e7c74cd01e2c9328d86104f8103",
+      "compiler_output": "'HistoryWellFounded.below_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HistoryWellFounded.finite_word_occurs' depends on axioms: [propext, Quot.sound]\n'HistoryWellFounded.population_heights_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\HistoryWellFounded.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\HistoryWellFounded.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/OrdinalHistoryRank.lean",
+      "source_sha256": "67b018434e820175aff7af2d9fa615d7cd4a42844600380b81259f4925198d74",
+      "endpoint_count": 3,
+      "endpoints": [
+        "OrdinalHistoryRank.history_rank_eq_height",
+        "OrdinalHistoryRank.root_rank_eq_omega",
+        "OrdinalHistoryRank.aperiodic_Ps_root_rank_eq_omega"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\OrdinalHistoryRank.olean",
+      "generated_olean_sha256": "77d1350dd3057ba3edb56b908e6499a4d52ce8a3b87edeb2b7554d0c6cf0b868",
+      "compiler_output_sha256": "606e7d30e285483a5f43170c954de21f2c92bbd8b00015ba72455af7f6998f08",
+      "compiler_output": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\OrdinalHistoryRank.lean:47:12: warning: `Ordinal.natCast_succ` has been deprecated: Use `Nat.cast_add_one` instead\n\nNote: The updated constant has a different type:\n  \u2200 {R : Type u_1} [inst : AddMonoidWithOne R] (n : \u2115), \u2191(n + 1) = \u2191n + 1\ninstead of\n  \u2200 (n : \u2115), \u2191n.succ = Order.succ \u2191n\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.natCast_succ` to `Nat.cast_add_one x`).\nC:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\OrdinalHistoryRank.lean:66:10: warning: `Ordinal.natCast_succ` has been deprecated: Use `Nat.cast_add_one` instead\n\nNote: The updated constant has a different type:\n  \u2200 {R : Type u_1} [inst : AddMonoidWithOne R] (n : \u2115), \u2191(n + 1) = \u2191n + 1\ninstead of\n  \u2200 (n : \u2115), \u2191n.succ = Order.succ \u2191n\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.natCast_succ` to `Nat.cast_add_one x`).\nC:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\OrdinalHistoryRank.lean:88:36: warning: `Ordinal.natCast_succ` has been deprecated: Use `Nat.cast_add_one` instead\n\nNote: The updated constant has a different type:\n  \u2200 {R : Type u_1} [inst : AddMonoidWithOne R] (n : \u2115), \u2191(n + 1) = \u2191n + 1\ninstead of\n  \u2200 (n : \u2115), \u2191n.succ = Order.succ \u2191n\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.natCast_succ` to `Nat.cast_add_one x`).\n'OrdinalHistoryRank.history_rank_eq_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrdinalHistoryRank.root_rank_eq_omega' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrdinalHistoryRank.aperiodic_Ps_root_rank_eq_omega' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\OrdinalHistoryRank.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\OrdinalHistoryRank.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/HistoryPruning.lean",
+      "source_sha256": "7441b97fd379513dcc4ef852bf3ee8eae2a2a297ebed2110fe850e2f339e4a3b",
+      "endpoint_count": 3,
+      "endpoints": [
+        "HistoryPruning.root_survives_every_finite_stage",
+        "HistoryPruning.omega_stage_iff_root",
+        "HistoryPruning.omega_succ_stage_empty"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\HistoryPruning.olean",
+      "generated_olean_sha256": "ca8d4f4b5856fb1fc4e8a9a1307218728432089ac163ff13753dedef55052161",
+      "compiler_output_sha256": "52d3cd3f44ec0a12eaf60e72947f0c3562b22054a793a7775facff54e6229f04",
+      "compiler_output": "'HistoryPruning.root_survives_every_finite_stage' depends on axioms: [propext, Quot.sound]\n'HistoryPruning.omega_stage_iff_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HistoryPruning.omega_succ_stage_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\HistoryPruning.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\HistoryPruning.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/HistoryConverse.lean",
+      "source_sha256": "da301f530d3f41b7ce7a1d1dc9917011be7c508b747d252b32c4f62836b09d62",
+      "endpoint_count": 2,
+      "endpoints": [
+        "HistoryConverse.wellFounded_below_excludes_realization",
+        "HistoryConverse.below_wellFounded_iff_avoids"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\HistoryConverse.olean",
+      "generated_olean_sha256": "c7b9881fa5df01d01e2263adbbf16e8cd75585a32059f1eb268f0b90a2424a80",
+      "compiler_output_sha256": "654f8c02e637d9649b29c18607b93fbdbfbc5074bb0b164e732ea6c776c2ed99",
+      "compiler_output": "'HistoryConverse.wellFounded_below_excludes_realization' depends on axioms: [propext, Quot.sound]\n'HistoryConverse.below_wellFounded_iff_avoids' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\HistoryConverse.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\HistoryConverse.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/GenericCertificate.lean",
+      "source_sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581",
+      "endpoint_count": 8,
+      "endpoints": [
+        "GenericCertificate.realizes_iff_state_chain",
+        "GenericCertificate.avoids_iff_wellFounded",
+        "GenericCertificate.finiteHeight_decreases",
+        "GenericCertificate.finiteLabelChildren_of_finite_children",
+        "GenericCertificate.avoids_iff_natural_certificate",
+        "GenericCertificate.finiteHeight_least",
+        "GenericCertificate.finiteHeight_attained",
+        "GenericCertificate.avoids_has_least_attained_certificate"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\GenericCertificate.olean",
+      "generated_olean_sha256": "4af987c687a4c14b5ba1200d1726a4e2e74969e815d8d72f32cf26c9c3173386",
+      "compiler_output_sha256": "2d1ef8838249f1e79c2cef7a4e16e0f0af66e255c4659aac3a45e5404ab4a0e8",
+      "compiler_output": "'GenericCertificate.realizes_iff_state_chain' depends on axioms: [propext, Quot.sound]\n'GenericCertificate.avoids_iff_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericCertificate.finiteHeight_decreases' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericCertificate.finiteLabelChildren_of_finite_children' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericCertificate.avoids_iff_natural_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericCertificate.finiteHeight_least' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericCertificate.finiteHeight_attained' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericCertificate.avoids_has_least_attained_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\GenericCertificate.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\GenericCertificate.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/ordinal/GenericOrdinalCertificate.lean",
+      "source_sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510",
+      "endpoint_count": 3,
+      "endpoints": [
+        "GenericOrdinalCertificate.ordinal_certificate_excludes_realization",
+        "GenericOrdinalCertificate.avoidance_has_ordinal_certificate",
+        "GenericOrdinalCertificate.avoids_iff_ordinal_certificate"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\GenericOrdinalCertificate.olean",
+      "generated_olean_sha256": "9c441cf23ad851e1a7d53c66367c6069db032bd73030017906f3fabca7cee8b9",
+      "compiler_output_sha256": "2156837a680fc81af9eff2aafd057f680e106b18235ab3cbb03b265e9cb786ee",
+      "compiler_output": "'GenericOrdinalCertificate.ordinal_certificate_excludes_realization' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'GenericOrdinalCertificate.avoidance_has_ordinal_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericOrdinalCertificate.avoids_iff_ordinal_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\GenericOrdinalCertificate.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\ordinal\\GenericOrdinalCertificate.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/embedding/GenericUniversalAvoiders.lean",
+      "source_sha256": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4",
+      "endpoint_count": 10,
+      "endpoints": [
+        "GenericUniversalAvoiders.binaryCover",
+        "GenericUniversalAvoiders.exists_ray",
+        "GenericUniversalAvoiders.no_countable_bounded_stretch_family",
+        "GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family",
+        "GenericUniversalAvoiders.rootsEquiv",
+        "GenericUniversalAvoiders.blowUp",
+        "GenericUniversalAvoiders.blowUp_language",
+        "GenericUniversalAvoiders.no_countable_host_family",
+        "GenericUniversalAvoiders.no_countable_population_family",
+        "GenericUniversalAvoiders.avoiding_no_countable_population_family"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\GenericUniversalAvoiders.olean",
+      "generated_olean_sha256": "eca85b799adf73e753453145d0c9dffc50660f4df643132b039c9fae78f0a476",
+      "compiler_output_sha256": "8ed3e031bd9cf5676326f4ec431454c46415afdfae31c353df8df6b2c0c46562",
+      "compiler_output": "'GenericUniversalAvoiders.binaryCover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.exists_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.no_countable_bounded_stretch_family' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'GenericUniversalAvoiders.rootsEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.blowUp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.blowUp_language' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.no_countable_host_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.no_countable_population_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GenericUniversalAvoiders.avoiding_no_countable_population_family' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\embedding",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\GenericUniversalAvoiders.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\embedding\\GenericUniversalAvoiders.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/species/FounderWindow.lean",
+      "source_sha256": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+      "endpoint_count": 4,
+      "endpoints": [
+        "FounderWindowResearch.founder_covers",
+        "FounderWindowResearch.commonAncestor_window",
+        "FounderWindowResearch.window_directed_union",
+        "FounderWindowResearch.directed_union_finite_founders"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\FounderWindow.olean",
+      "generated_olean_sha256": "ad70d2a43279eddc115722f73f1d4a9011cb3165e5b6cfd2bc99765642ce5e14",
+      "compiler_output_sha256": "a67f1384fccfd772c35815138224b1ef293a065dcb04719baf58804a8718cc1f",
+      "compiler_output": "'FounderWindowResearch.founder_covers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FounderWindowResearch.commonAncestor_window' depends on axioms: [propext, Quot.sound]\n'FounderWindowResearch.window_directed_union' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FounderWindowResearch.directed_union_finite_founders' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\species",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\FounderWindow.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\species\\FounderWindow.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean",
+      "source_sha256": "97eddf62044c37e6973873f987c49ea69e0f9f2081ccd955fd05dc27099c2cf6",
+      "endpoint_count": 6,
+      "endpoints": [
+        "ThreeTaxonIdentifiability.law_nonnegative",
+        "ThreeTaxonIdentifiability.law_normalized",
+        "ThreeTaxonIdentifiability.unique_maximizer",
+        "ThreeTaxonIdentifiability.law_identifiable",
+        "ThreeTaxonIdentifiability.boundary_uniform",
+        "ThreeTaxonIdentifiability.no_boundary_decoder"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\ThreeTaxonIdentifiability.olean",
+      "generated_olean_sha256": "5f3aa093fc71767db420ab9fadb75b98b0d69c66d917fd8030f3d21cd665adda",
+      "compiler_output_sha256": "9e776dce6e9da79e3a394c7c1e8a85bceae57c73f9e278cacff76d768fd8bea9",
+      "compiler_output": "'ThreeTaxonIdentifiability.law_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonIdentifiability.law_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonIdentifiability.unique_maximizer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonIdentifiability.law_identifiable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonIdentifiability.boundary_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonIdentifiability.no_boundary_decoder' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\genomic-identifiability\\positive",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\ThreeTaxonIdentifiability.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\genomic-identifiability\\positive\\ThreeTaxonIdentifiability.lean"
+      ]
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean",
+      "source_sha256": "01f53ac6176f612beda29475805d5c27293db7a35d10907a2db3ad8a96ae18f5",
+      "endpoint_count": 8,
+      "endpoints": [
+        "ThreeTaxonFiniteEvidence.sampleMass_positive",
+        "ThreeTaxonFiniteEvidence.sampleMass_lower_bound",
+        "ThreeTaxonFiniteEvidence.finite_sample_support_overlap",
+        "ThreeTaxonFiniteEvidence.no_uniform_certain_decoder",
+        "ThreeTaxonFiniteEvidence.quantitative_error_witness",
+        "ThreeTaxonFiniteEvidence.robust_strict_mode",
+        "ThreeTaxonFiniteEvidence.robust_maximizer_recovers",
+        "ThreeTaxonFiniteEvidence.half_gap_tie"
+      ],
+      "compiler_exit_code": 0,
+      "generated_olean": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\ThreeTaxonFiniteEvidence.olean",
+      "generated_olean_sha256": "e738e6fa8da914695e4d1adf8c600a0bcead79c6df7e94e40f6769a1fee326ae",
+      "compiler_output_sha256": "1b543b4c4aa361ce22da4d035ca15aee156e84604da5b6580eb1c5169804afdc",
+      "compiler_output": "'ThreeTaxonFiniteEvidence.sampleMass_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.sampleMass_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.finite_sample_support_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.no_uniform_certain_decoder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.quantitative_error_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.robust_strict_mode' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.robust_maximizer_recovers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThreeTaxonFiniteEvidence.half_gap_tie' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\genomic-identifiability\\next",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit\\ThreeTaxonFiniteEvidence.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify\\research\\open-questions\\genomic-identifiability\\next\\ThreeTaxonFiniteEvidence.lean"
+      ]
+    }
+  ],
+  "execution": {
+    "mode": "explicit-compiler-with-process-local-cached-LEAN_PATH",
+    "source_root": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify",
+    "dependency_root": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization",
+    "working_directory": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real",
+    "compiler": "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+    "process_local_lean_path": [
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean"
+    ],
+    "generated_artifact_cache": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\research-artifact-audit",
+    "compile_order": [
+      "research/open-questions/ordinal/OrdinalCertificates.lean",
+      "research/open-questions/ordinal/ReachableRankNecessity.lean",
+      "research/open-questions/ordinal/HistoryWellFounded.lean",
+      "research/open-questions/ordinal/OrdinalHistoryRank.lean",
+      "research/open-questions/ordinal/HistoryPruning.lean",
+      "research/open-questions/ordinal/HistoryConverse.lean",
+      "research/open-questions/ordinal/GenericCertificate.lean",
+      "research/open-questions/ordinal/GenericOrdinalCertificate.lean",
+      "research/open-questions/embedding/GenericUniversalAvoiders.lean",
+      "research/open-questions/species/FounderWindow.lean",
+      "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean",
+      "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean"
+    ],
+    "dependency_builds_performed": false,
+    "dependency_downloads_requested": false
+  },
+  "scope": "12 selected standalone research artifacts; these 60 endpoints are separate from the registered core and real library totals. Statement review is separate.",
+  "dependency_scope": "Compilation uses existing built imports. This audit does not rebuild or certify their source-to-object freshness; CI must run it after the existing core and real audits.",
+  "auditor_sha256": "682748e5c46484085e18a559f32db4510c7d1a99eb37b78ca2f5c28042c82308",
+  "overrides": {
+    "source_root": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-1212\\work\\dna-species-next\\verify",
+    "dependency_root": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization",
+    "compiler": "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe"
+  }
+}

@@ -32,6 +32,7 @@ ARTIFACTS = {
     "research/open-questions/embedding/GenericUniversalAvoiders.lean": 10,
     "research/open-questions/species/FounderWindow.lean": 4,
     "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean": 6,
+    "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean": 8,
 }
 PRINT_AXIOMS = re.compile(r"^\s*#print\s+axioms\s+([A-Za-z0-9_.]+)\s*$", re.M)
 PLACEHOLDER_WARNING = re.compile(
