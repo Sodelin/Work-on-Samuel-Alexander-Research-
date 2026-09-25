@@ -14,8 +14,8 @@
   "scope": {
     "inventory": "Complete main text and Appendices A-I at claim-family level: mathematical/algorithmic assertions, examples, imported results, empirical claims and open questions.",
     "completion": "Inventory complete, whole-paper mathematical and empirical completion NOT claimed.",
-    "lane": "Publication coverage documentation only; exact promoted bytes and receipt inspected, no builds rerun by this lane.",
-    "concurrent_work": "Six promoted modules and 58 new endpoints integrated in the209-endpoint aggregate at 2026-09-25T13:26:46.221359+00:00. Earlier four-module/187 receipt preserved in historical_integration; isolated/provisional status for memoized and timed modules superseded."
+    "lane": "Staged exact-source integration; public baseline is preserved; combined and hosted verification are separate.",
+    "concurrent_work": "65 deterministic endpoints staged (24 MRCA, 31 interval, 10 normal form). Count-chain work remains a separate lane and is not counted here."
   },
   "source_review": {
     "primary_xml": "source/PMC11373519-fullText.xml",
@@ -27,7 +27,12 @@
     ],
     "read": "Main text and Appendices A-I inspected through primary PDF web text and full-text XML.",
     "formulas": "Exact primary MathML reviewed: IM29,UM1,IM31,IM38,IM39,IM41,IM42.",
-    "visual": "Requested PDF screenshots returned image-reference text without visible images in this tool transport. Visual PDF review is not claimed; B/E/F-G formulas need a visible source-fidelity follow-up."
+    "visual": "Requested PDF screenshots returned image-reference text without visible images in this tool transport. Visual PDF review is not claimed; B/E/F-G formulas need a visible source-fidelity follow-up.",
+    "deterministic65_review": {
+      "path": "verification/deterministic65/SOL2-REVIEW.md",
+      "sha256": "e8ef0eb926b79782fa170b630a5b1f20f944b99c423e99db7214a1457e40e898",
+      "finding": "Appendix E reconstruction from sample traces needs SampleSupported to recover all original edges; full AtLocus canonicalization is a different input."
+    }
   },
   "baseline_receipts": [
     {
@@ -176,9 +181,9 @@
     }
   ],
   "status_counts": {
-    "checked scoped result": 6,
-    "partial": 12,
-    "open": 17,
+    "checked scoped result": 9,
+    "partial": 11,
+    "open": 15,
     "source clarification required": 8,
     "empirical reproduction open": 6,
     "research agenda": 2,
@@ -412,12 +417,12 @@
       ],
       "title": "Fig.3 local-MRCA truncation",
       "kind": "algorithmic semantics",
-      "status": "open",
+      "status": "checked scoped result",
       "source_claim": "Fig.3 omits entirely coalesced material and the grand MRCA Q after all local genealogies coalesce below it.",
-      "existing_evidence": "ExtractedAt and SampleSupported keep every ancestor of a sample; they do not implement this extra removal.",
-      "remaining_target": "Track descendant sample sets/counts, truncate above local all-sample MRCAs and prove exactly which retained ancestry/MRCA facts survive.",
-      "assumptions": "Unique local parent; connected sample genealogy for all-sample MRCA; explicit forest, zero-sample and one-sample cases.",
-      "completion_criterion": "Checked MRCA truncation and relevant example; no false preservation of paths from removed ancestors.",
+      "existing_evidence": "WongMRCATruncation: 24 locally checked endpoints define reflexive common ancestry, remove edges into fully coalesced material, establish conditional unique MRCA existence, construct an actual finite interval GARG, and preserve sample/MRCA paths. Empty, singleton and sampled-root forest boundaries are explicit.",
+      "remaining_target": "The deterministic stopping semantics is closed. Literal Figure 3 data and stochastic sample-set/count transition semantics are not supplied; B01-B06 remain separate.",
+      "assumptions": "Finite acyclic gARG. MRCA existence requires nonempty samples, unique local parents and an existing common ancestor. The edge-removal construction itself is total; sample IDs and unused catalogue IDs remain.",
+      "completion_criterion": "Exact path-defined stopping rule, conditional MRCA existence and finite-output preservation are checked locally; aggregate and hosted verification are tracked at release level.",
       "cited_reference_ids": [],
       "section_title": "Ancestral material and sample resolution",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s3",
@@ -425,7 +430,44 @@
       "xml_section_path": "//sec[@id=\"iyae100-s3\"]",
       "pdf_pages_1based": [
         5
-      ]
+      ],
+      "public_209_contract": {
+        "status": "open",
+        "existing_evidence": "ExtractedAt and SampleSupported keep every ancestor of a sample; they do not implement this extra removal.",
+        "remaining_target": "Track descendant sample sets/counts, truncate above local all-sample MRCAs and prove exactly which retained ancestry/MRCA facts survive.",
+        "assumptions": "Unique local parent; connected sample genealogy for all-sample MRCA; explicit forest, zero-sample and one-sample cases.",
+        "completion_criterion": "Checked MRCA truncation and relevant example; no false preservation of paths from removed ancestors."
+      },
+      "staged_modules": [
+        "WongMRCATruncation"
+      ],
+      "staged_endpoint_evidence": [
+        "WongMRCATruncation.exists_unique_mrca",
+        "WongMRCATruncation.mrca_unique",
+        "WongMRCATruncation.common_iff_ancestor_mrca",
+        "WongMRCATruncation.truncation_iff_cut_above",
+        "WongMRCATruncation.truncation_iff_below_mrca",
+        "WongMRCATruncation.sample_paths_preserved",
+        "WongMRCATruncation.mrca_sample_paths_preserved",
+        "WongMRCATruncation.mrca_reaches_every_sample",
+        "WongMRCATruncation.no_incoming_mrca",
+        "WongMRCATruncation.truncated_support",
+        "WongMRCATruncation.no_common_no_extra_truncation",
+        "WongMRCATruncation.ancestral_sample_is_mrca",
+        "WongMRCATruncation.singleton_sample_is_mrca",
+        "WongMRCATruncation.singleton_has_no_edges",
+        "WongMRCATruncation.empty_samples_no_edges",
+        "WongMRCATruncation.distinct_sample_roots_no_common",
+        "WongMRCATruncation.truncate_at_iff",
+        "WongMRCATruncation.truncate_unique_parent",
+        "WongMRCATruncation.truncate_sample_supported",
+        "WongMRCATruncation.truncate_breakpoints",
+        "WongMRCATruncation.truncate_sample_paths",
+        "WongMRCATruncation.truncate_mrca_paths",
+        "WongMRCATruncation.finite_mrca_truncation",
+        "WongMRCATruncation.supported_but_removed"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "M08",
@@ -739,7 +781,7 @@
       "kind": "stochastic combinatorics",
       "status": "open",
       "source_claim": "Unordered pairs merge at choose(k,2); overlapping counts add, material of count n is retired.",
-      "existing_evidence": "MathML IM31 and IM34-IM36 verified; no transition semantics.",
+      "existing_evidence": "Primary MathML IM31 and IM34-IM36 reviewed. WongMRCATruncation now verifies the deterministic path-defined fully-coalesced retirement condition on a supplied finite graph. It does not implement stochastic lineage overlay, count addition or a sample-partition invariant.",
       "remaining_target": "Prove canonical overlay, additive overlap, preserved nonoverlap and correct retirement/empty-lineage deletion.",
       "assumptions": "Disjoint sample-set invariant, distinct pair and half-open endpoints; subset coalescence does not retire material.",
       "completion_criterion": "Valid transitions preserve sample genealogy and record the local MRCA correctly.",
@@ -751,7 +793,44 @@
       "pdf_pages_1based": [
         13,
         14
-      ]
+      ],
+      "public_209_contract": {
+        "status": "open",
+        "existing_evidence": "MathML IM31 and IM34-IM36 verified; no transition semantics.",
+        "remaining_target": "Prove canonical overlay, additive overlap, preserved nonoverlap and correct retirement/empty-lineage deletion.",
+        "assumptions": "Disjoint sample-set invariant, distinct pair and half-open endpoints; subset coalescence does not retire material.",
+        "completion_criterion": "Valid transitions preserve sample genealogy and record the local MRCA correctly."
+      },
+      "staged_modules": [
+        "WongMRCATruncation"
+      ],
+      "staged_endpoint_evidence": [
+        "WongMRCATruncation.exists_unique_mrca",
+        "WongMRCATruncation.mrca_unique",
+        "WongMRCATruncation.common_iff_ancestor_mrca",
+        "WongMRCATruncation.truncation_iff_cut_above",
+        "WongMRCATruncation.truncation_iff_below_mrca",
+        "WongMRCATruncation.sample_paths_preserved",
+        "WongMRCATruncation.mrca_sample_paths_preserved",
+        "WongMRCATruncation.mrca_reaches_every_sample",
+        "WongMRCATruncation.no_incoming_mrca",
+        "WongMRCATruncation.truncated_support",
+        "WongMRCATruncation.no_common_no_extra_truncation",
+        "WongMRCATruncation.ancestral_sample_is_mrca",
+        "WongMRCATruncation.singleton_sample_is_mrca",
+        "WongMRCATruncation.singleton_has_no_edges",
+        "WongMRCATruncation.empty_samples_no_edges",
+        "WongMRCATruncation.distinct_sample_roots_no_common",
+        "WongMRCATruncation.truncate_at_iff",
+        "WongMRCATruncation.truncate_unique_parent",
+        "WongMRCATruncation.truncate_sample_supported",
+        "WongMRCATruncation.truncate_breakpoints",
+        "WongMRCATruncation.truncate_sample_paths",
+        "WongMRCATruncation.truncate_mrca_paths",
+        "WongMRCATruncation.finite_mrca_truncation",
+        "WongMRCATruncation.supported_but_removed"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "B04",
@@ -1092,7 +1171,7 @@
       "status": "checked scoped result",
       "source_claim": "Initialize parent array empty; trace each sample rootward at a coordinate until a root or previously traversed parent entry.",
       "existing_evidence": "WongSampleTracing and WongRecordTracing verify executable actual-record extraction. WongMemoizedTracing additionally proves cache closure, visited-entry early stopping, completeness, equality to the reference extractor, actual-gARG extraction with fuel equal to node cardinality, and records_to_memoized_sample_array. Persistent node IDs and unary ancestors are retained.",
-      "remaining_target": "The stated sample-rootward algorithm and abstract write/check/lookup counts are checked. Finite canonical interval serialization remains E03/G06; machine-array storage, concrete record-comparison/runtime costs and external tskit conformance remain M08/G07. No local-MRCA truncation is implied.",
+      "remaining_target": "The sample-rootward algorithm and abstract write/check/lookup counts are checked. Canonical finite interval semantics is now supplied by E03/G06; executable whole-exporter, machine-array storage, concrete scanning/runtime costs and external tskit conformance remain open. MRCA truncation is a separate operation.",
       "assumptions": "Finite acyclic gARG, unique local parent, decidable node equality/ordered-coordinate tests, exact record/sample membership enumerations; duplicate and reordered lists are permitted. A root and an unvisited node both have none, so roots may be looked up repeatedly; this is included in the counts.",
       "completion_criterion": "Faithful memoized extraction from actual records equals ExtractedAt, using node-count fuel, with standard-axiom verification. Count bounds are abstract operation counts, not constant-time machine operations.",
       "cited_reference_ids": [],
@@ -1150,7 +1229,51 @@
         "existing_evidence": "Integrated WongSampleTracing supplies executable fuel-bounded traversal and exact sample-array semantics; WongRecordTracing scans actual finite interval-record lists and proves records_to_sample_array. Fuel equal to the node cardinality suffices, preserving unary ancestors and sparse entries.",
         "remaining_target": "The reference implementation repeats shared paths rather than performing the paper's visited-entry early stop. Memoized traversal is provisional, not credited here. A formal operational cost model, explicit order/idempotence API results and finite-array serialization remain additional targets.",
         "completion_criterion": "Actual records-to-sample-parent relation correctness is integrated. Complete the faithful memoized operational contract and any claimed cost/serialization result separately; no MRCA-truncation claim."
-      }
+      },
+      "public_209_contract": {
+        "status": "checked scoped result",
+        "existing_evidence": "WongSampleTracing and WongRecordTracing verify executable actual-record extraction. WongMemoizedTracing additionally proves cache closure, visited-entry early stopping, completeness, equality to the reference extractor, actual-gARG extraction with fuel equal to node cardinality, and records_to_memoized_sample_array. Persistent node IDs and unary ancestors are retained.",
+        "remaining_target": "The stated sample-rootward algorithm and abstract write/check/lookup counts are checked. Finite canonical interval serialization remains E03/G06; machine-array storage, concrete record-comparison/runtime costs and external tskit conformance remain M08/G07. No local-MRCA truncation is implied.",
+        "assumptions": "Finite acyclic gARG, unique local parent, decidable node equality/ordered-coordinate tests, exact record/sample membership enumerations; duplicate and reordered lists are permitted. A root and an unvisited node both have none, so roots may be looked up repeatedly; this is included in the counts.",
+        "completion_criterion": "Faithful memoized extraction from actual records equals ExtractedAt, using node-count fuel, with standard-axiom verification. Count bounds are abstract operation counts, not constant-time machine operations."
+      },
+      "staged_modules": [
+        "WongIntervalCanonicalization"
+      ],
+      "staged_endpoint_evidence": [
+        "WongIntervalCanonicalization.join_contains",
+        "WongIntervalCanonicalization.mergeAdjacent_covers",
+        "WongIntervalCanonicalization.mergeAdjacent_lo",
+        "WongIntervalCanonicalization.mergeAdjacent_hi",
+        "WongIntervalCanonicalization.mergeAdjacent_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+        "WongIntervalCanonicalization.separated_semantic_unique",
+        "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+        "WongIntervalCanonicalization.separated_gap",
+        "WongIntervalCanonicalization.canonicalRegions_covers",
+        "WongIntervalCanonicalization.canonicalRegions_separated",
+        "WongIntervalCanonicalization.canonicalRegions_endpoints",
+        "WongIntervalCanonicalization.canonicalRegions_unique",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+        "WongIntervalCanonicalization.canonicalize_at",
+        "WongIntervalCanonicalization.canonicalize_breakpoints",
+        "WongIntervalCanonicalization.canonicalize_nonempty",
+        "WongIntervalCanonicalization.canonicalize_canonical",
+        "WongIntervalCanonicalization.canonicalize_maximal",
+        "WongIntervalCanonicalization.serialized_semantic_unique",
+        "WongIntervalCanonicalization.serialized_empty",
+        "WongIntervalCanonicalization.canonicalize_semantic_unique",
+        "WongIntervalCanonicalization.canonicalize_idempotent",
+        "WongIntervalCanonicalization.canonicalize_topology",
+        "WongIntervalCanonicalization.executable_touching_gap_example"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "E02",
@@ -1163,10 +1286,10 @@
       "kind": "representation theorem",
       "status": "partial",
       "source_claim": "The paper argues local arrays with spans recover the gARG; tracing samples sees only supported edges unless an extra convention applies.",
-      "existing_evidence": "WongSampleTracing.actual_garg_reconstruction_iff, WongRecordTracing.records_round_trip_iff and WongMemoizedTracing.memoized_records_round_trip_iff prove indexed sample-parent relations equal all original local edges exactly iff SampleSupported. The memoized implementation also agrees extensionally with the reference.",
-      "remaining_target": "Both executable reference and memoized indexed-relation reconstruction are closed. A finite interval serializer, canonical record/byte round trip and persistent metadata packaging remain E03/G06; all-node recovery is a different observation.",
+      "existing_evidence": "Existing reference and memoized actual-record reconstruction give equality with all local edges exactly iff SampleSupported. WongIntervalCanonicalization additionally supplies unique maximal finite interval records for a supplied indexed relation, semantic graph uniqueness and storage idempotence.",
+      "remaining_target": "Canonical interval semantics is established. A fully executable array-to-record exporter, byte-format round trip and persistent metadata packaging remain open. All-node recovery is a different observation.",
       "assumptions": "Unique local parents at every coordinate; exact actual record/sample enumerations; persistent IDs and unary nodes. Equality concerns indexed edge relations, not syntactic interval partitions.",
-      "completion_criterion": "Receipt covers executable actual-record lookup, cached sample tracing and the semantic iff criterion. Full storage-format serialization remains outstanding.",
+      "completion_criterion": "The indexed-relation iff criterion and canonical interval representation are checked in their named interfaces. Do not claim a byte/storage implementation round trip or erase the SampleSupported condition.",
       "cited_reference_ids": [],
       "section_title": "ARGs and local trees",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
@@ -1207,7 +1330,51 @@
         "existing_evidence": "Integrated WongSampleTracing.actual_garg_reconstruction_iff and WongRecordTracing.records_round_trip_iff prove complete indexed sample-parent arrays equal original local inheritance exactly iff SampleSupported; unsupported-edge counterexample remains.",
         "remaining_target": "Executable extraction-to-indexed-relation recovery is closed. A finite interval serializer and canonical byte/record round trip remain E03/G06. All-node recovery is a different observation; node catalog and sample metadata must accompany arrays.",
         "completion_criterion": "Receipt now covers executable record-scan extraction and the semantic reconstruction iff. Full finite serialization is still required for a storage-format round trip."
-      }
+      },
+      "public_209_contract": {
+        "status": "partial",
+        "existing_evidence": "WongSampleTracing.actual_garg_reconstruction_iff, WongRecordTracing.records_round_trip_iff and WongMemoizedTracing.memoized_records_round_trip_iff prove indexed sample-parent relations equal all original local edges exactly iff SampleSupported. The memoized implementation also agrees extensionally with the reference.",
+        "remaining_target": "Both executable reference and memoized indexed-relation reconstruction are closed. A finite interval serializer, canonical record/byte round trip and persistent metadata packaging remain E03/G06; all-node recovery is a different observation.",
+        "assumptions": "Unique local parents at every coordinate; exact actual record/sample enumerations; persistent IDs and unary nodes. Equality concerns indexed edge relations, not syntactic interval partitions.",
+        "completion_criterion": "Receipt covers executable actual-record lookup, cached sample tracing and the semantic iff criterion. Full storage-format serialization remains outstanding."
+      },
+      "staged_modules": [
+        "WongIntervalCanonicalization"
+      ],
+      "staged_endpoint_evidence": [
+        "WongIntervalCanonicalization.join_contains",
+        "WongIntervalCanonicalization.mergeAdjacent_covers",
+        "WongIntervalCanonicalization.mergeAdjacent_lo",
+        "WongIntervalCanonicalization.mergeAdjacent_hi",
+        "WongIntervalCanonicalization.mergeAdjacent_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+        "WongIntervalCanonicalization.separated_semantic_unique",
+        "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+        "WongIntervalCanonicalization.separated_gap",
+        "WongIntervalCanonicalization.canonicalRegions_covers",
+        "WongIntervalCanonicalization.canonicalRegions_separated",
+        "WongIntervalCanonicalization.canonicalRegions_endpoints",
+        "WongIntervalCanonicalization.canonicalRegions_unique",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+        "WongIntervalCanonicalization.canonicalize_at",
+        "WongIntervalCanonicalization.canonicalize_breakpoints",
+        "WongIntervalCanonicalization.canonicalize_nonempty",
+        "WongIntervalCanonicalization.canonicalize_canonical",
+        "WongIntervalCanonicalization.canonicalize_maximal",
+        "WongIntervalCanonicalization.serialized_semantic_unique",
+        "WongIntervalCanonicalization.serialized_empty",
+        "WongIntervalCanonicalization.canonicalize_semantic_unique",
+        "WongIntervalCanonicalization.canonicalize_idempotent",
+        "WongIntervalCanonicalization.canonicalize_topology",
+        "WongIntervalCanonicalization.executable_touching_gap_example"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "E03",
@@ -1220,10 +1387,10 @@
       "kind": "algorithm correctness",
       "status": "partial",
       "source_claim": "Combine coordinate-wise child/parent incidences into edge interval sets.",
-      "existing_evidence": "Integrated WongRecordTracing verifies executable scanning of actual interval records into local parent pointers. Existing BreakpointCells/IntervalNormalization/Simplification provide classical finite interval output.",
-      "remaining_target": "The new module is a reader, not an interval serializer. Implement endpoint sorting, finite cell output, deterministic record grouping and adjacent merging; prove serialization and canonical inverse laws.",
+      "existing_evidence": "WongIntervalCanonicalization proves executable list merging, union membership, endpoint reuse, strict separation, semantic uniqueness, canonical graph semantics and storage idempotence. Actual finite graph preparation uses classical finite enumeration and activity decisions.",
+      "remaining_target": "Implement and verify computable endpoint/cell enumeration, activity tests and record emission, then specify the external serialization format and parser. The existing graph adapter is noncomputable; only its list-merge component executes.",
       "assumptions": "Half-open intervals, finite endpoints, deterministic ordering, persistent IDs; no silent loss of isolated nodes or samples.",
-      "completion_criterion": "Keep executable record lookup marked checked, while finite canonical serialization remains open. Do not conflate those directions.",
+      "completion_criterion": "Canonical finite interval representation is checked; full executable serialization and external byte/metadata round trips remain open.",
       "cited_reference_ids": [],
       "section_title": "ARGs and local trees",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
@@ -1249,7 +1416,51 @@
           "name": "WongRecordTracing",
           "path": "../../../real/WongRecordTracing.lean"
         }
-      ]
+      ],
+      "public_209_contract": {
+        "status": "partial",
+        "existing_evidence": "Integrated WongRecordTracing verifies executable scanning of actual interval records into local parent pointers. Existing BreakpointCells/IntervalNormalization/Simplification provide classical finite interval output.",
+        "remaining_target": "The new module is a reader, not an interval serializer. Implement endpoint sorting, finite cell output, deterministic record grouping and adjacent merging; prove serialization and canonical inverse laws.",
+        "assumptions": "Half-open intervals, finite endpoints, deterministic ordering, persistent IDs; no silent loss of isolated nodes or samples.",
+        "completion_criterion": "Keep executable record lookup marked checked, while finite canonical serialization remains open. Do not conflate those directions."
+      },
+      "staged_modules": [
+        "WongIntervalCanonicalization"
+      ],
+      "staged_endpoint_evidence": [
+        "WongIntervalCanonicalization.join_contains",
+        "WongIntervalCanonicalization.mergeAdjacent_covers",
+        "WongIntervalCanonicalization.mergeAdjacent_lo",
+        "WongIntervalCanonicalization.mergeAdjacent_hi",
+        "WongIntervalCanonicalization.mergeAdjacent_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+        "WongIntervalCanonicalization.separated_semantic_unique",
+        "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+        "WongIntervalCanonicalization.separated_gap",
+        "WongIntervalCanonicalization.canonicalRegions_covers",
+        "WongIntervalCanonicalization.canonicalRegions_separated",
+        "WongIntervalCanonicalization.canonicalRegions_endpoints",
+        "WongIntervalCanonicalization.canonicalRegions_unique",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+        "WongIntervalCanonicalization.canonicalize_at",
+        "WongIntervalCanonicalization.canonicalize_breakpoints",
+        "WongIntervalCanonicalization.canonicalize_nonempty",
+        "WongIntervalCanonicalization.canonicalize_canonical",
+        "WongIntervalCanonicalization.canonicalize_maximal",
+        "WongIntervalCanonicalization.serialized_semantic_unique",
+        "WongIntervalCanonicalization.serialized_empty",
+        "WongIntervalCanonicalization.canonicalize_semantic_unique",
+        "WongIntervalCanonicalization.canonicalize_idempotent",
+        "WongIntervalCanonicalization.canonicalize_topology",
+        "WongIntervalCanonicalization.executable_touching_gap_example"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "E04",
@@ -1515,12 +1726,12 @@
       ],
       "title": "Coordinate-dependent unary bypass",
       "kind": "algorithm correctness",
-      "status": "partial",
+      "status": "checked scoped result",
       "source_claim": "Final simplification rewrites edges at coordinates where a globally retained node is unary, while retaining it elsewhere.",
-      "existing_evidence": "Integrated WongLocalSimplification closes coordinate-dependent finite-output existence. It derives source-cell constancy for KeepSamplesAndBranching, returns an actual interval GARG, preserves sample IDs/retained sample ancestry, inherits unique parents, gives SampleSupported and no new breakpoints, and proves unretained nodes locally isolated.",
-      "remaining_target": "The construction is noncomputable. It does not yet prove retained nonsample nodes are non-unary in the output, derive a complete normal-form/idempotence theorem, implement the rewrite, merge adjacent output cells or reproduce literal Figure 5. M07's full MRCA truncation interpretation also remains separately stated.",
-      "assumptions": "Finite gARG and shared ordered coordinates; generic theorem takes a cell-constant K(x), while samples-and-branching instance derives that condition. Samples are always protected; unused node IDs remain in the catalog.",
-      "completion_criterion": "The arbitrary cell-dependent re-encoding and concrete source-relevant retention instance are integrated. Full no-removable-unary normal form, executable/canonical output and literal source example remain explicit.",
+      "existing_evidence": "WongSimplificationNormalForm proves that every incident retained nonsample node has two distinct children after contraction under unique local parenthood. Its canonical_resolved_normal_form composes actual MRCA truncation, sample/branching retention and canonical finite interval storage, preserving sample IDs, relevant paths and endpoint supply.",
+      "remaining_target": "The source-relevant deterministic normal-form theorem is established. Full pipeline idempotence, an executable implementation, intermediate global Figure 5c eligibility and literal Figure 5 replication remain separate. The final fixed-point clause is interval storage only.",
+      "assumptions": "Finite acyclic gARG and ordered coordinates. NoNonsampleUnary requires unique local parents. Samples are protected, including sampled ancestors; unused catalogue IDs can be isolated. MRCA path retention is conditional on a supplied IsMRCA and nonempty samples.",
+      "completion_criterion": "Actual finite output has the stated no-nonsample-unary property and exact contracted relation. This satisfies the scoped normal-form criterion; no unconditional all-vertices arity, executable rewrite or whole-pipeline fixed-point claim.",
       "cited_reference_ids": [],
       "section_title": "Levels of simplification",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
@@ -1551,7 +1762,87 @@
           "name": "WongLocalSimplification",
           "path": "../../../real/WongLocalSimplification.lean"
         }
-      ]
+      ],
+      "public_209_contract": {
+        "status": "partial",
+        "existing_evidence": "Integrated WongLocalSimplification closes coordinate-dependent finite-output existence. It derives source-cell constancy for KeepSamplesAndBranching, returns an actual interval GARG, preserves sample IDs/retained sample ancestry, inherits unique parents, gives SampleSupported and no new breakpoints, and proves unretained nodes locally isolated.",
+        "remaining_target": "The construction is noncomputable. It does not yet prove retained nonsample nodes are non-unary in the output, derive a complete normal-form/idempotence theorem, implement the rewrite, merge adjacent output cells or reproduce literal Figure 5. M07's full MRCA truncation interpretation also remains separately stated.",
+        "assumptions": "Finite gARG and shared ordered coordinates; generic theorem takes a cell-constant K(x), while samples-and-branching instance derives that condition. Samples are always protected; unused node IDs remain in the catalog.",
+        "completion_criterion": "The arbitrary cell-dependent re-encoding and concrete source-relevant retention instance are integrated. Full no-removable-unary normal form, executable/canonical output and literal source example remain explicit."
+      },
+      "staged_modules": [
+        "WongMRCATruncation",
+        "WongIntervalCanonicalization",
+        "WongSimplificationNormalForm"
+      ],
+      "staged_endpoint_evidence": [
+        "WongMRCATruncation.exists_unique_mrca",
+        "WongMRCATruncation.mrca_unique",
+        "WongMRCATruncation.common_iff_ancestor_mrca",
+        "WongMRCATruncation.truncation_iff_cut_above",
+        "WongMRCATruncation.truncation_iff_below_mrca",
+        "WongMRCATruncation.sample_paths_preserved",
+        "WongMRCATruncation.mrca_sample_paths_preserved",
+        "WongMRCATruncation.mrca_reaches_every_sample",
+        "WongMRCATruncation.no_incoming_mrca",
+        "WongMRCATruncation.truncated_support",
+        "WongMRCATruncation.no_common_no_extra_truncation",
+        "WongMRCATruncation.ancestral_sample_is_mrca",
+        "WongMRCATruncation.singleton_sample_is_mrca",
+        "WongMRCATruncation.singleton_has_no_edges",
+        "WongMRCATruncation.empty_samples_no_edges",
+        "WongMRCATruncation.distinct_sample_roots_no_common",
+        "WongMRCATruncation.truncate_at_iff",
+        "WongMRCATruncation.truncate_unique_parent",
+        "WongMRCATruncation.truncate_sample_supported",
+        "WongMRCATruncation.truncate_breakpoints",
+        "WongMRCATruncation.truncate_sample_paths",
+        "WongMRCATruncation.truncate_mrca_paths",
+        "WongMRCATruncation.finite_mrca_truncation",
+        "WongMRCATruncation.supported_but_removed",
+        "WongIntervalCanonicalization.join_contains",
+        "WongIntervalCanonicalization.mergeAdjacent_covers",
+        "WongIntervalCanonicalization.mergeAdjacent_lo",
+        "WongIntervalCanonicalization.mergeAdjacent_hi",
+        "WongIntervalCanonicalization.mergeAdjacent_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+        "WongIntervalCanonicalization.separated_semantic_unique",
+        "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+        "WongIntervalCanonicalization.separated_gap",
+        "WongIntervalCanonicalization.canonicalRegions_covers",
+        "WongIntervalCanonicalization.canonicalRegions_separated",
+        "WongIntervalCanonicalization.canonicalRegions_endpoints",
+        "WongIntervalCanonicalization.canonicalRegions_unique",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+        "WongIntervalCanonicalization.canonicalize_at",
+        "WongIntervalCanonicalization.canonicalize_breakpoints",
+        "WongIntervalCanonicalization.canonicalize_nonempty",
+        "WongIntervalCanonicalization.canonicalize_canonical",
+        "WongIntervalCanonicalization.canonicalize_maximal",
+        "WongIntervalCanonicalization.serialized_semantic_unique",
+        "WongIntervalCanonicalization.serialized_empty",
+        "WongIntervalCanonicalization.canonicalize_semantic_unique",
+        "WongIntervalCanonicalization.canonicalize_idempotent",
+        "WongIntervalCanonicalization.canonicalize_topology",
+        "WongIntervalCanonicalization.executable_touching_gap_example",
+        "WongSimplificationNormalForm.first_kept_child",
+        "WongSimplificationNormalForm.siblings_disjoint",
+        "WongSimplificationNormalForm.retained_nonsample_branches",
+        "WongSimplificationNormalForm.represented_contraction_normal",
+        "WongSimplificationNormalForm.finite_local_normal_form",
+        "WongSimplificationNormalForm.finite_resolved_normal_form",
+        "WongSimplificationNormalForm.mrca_kept",
+        "WongSimplificationNormalForm.truncated_mrca_kept",
+        "WongSimplificationNormalForm.canonicalize_paths",
+        "WongSimplificationNormalForm.canonical_resolved_normal_form"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "G06",
@@ -1562,12 +1853,12 @@
       ],
       "title": "Adjacent equal-output coalescing",
       "kind": "algorithm correctness",
-      "status": "open",
+      "status": "checked scoped result",
       "source_claim": "Neighbouring local trees can become identical after simplification and merge into one interval.",
-      "existing_evidence": "Existing cell grouping can retain redundant endpoints; containment of breakpoints does not eliminate them.",
-      "remaining_target": "Merge adjacent equal parent relations/edge supports; prove semantic preservation, maximal components, canonical deterministic output and idempotence.",
-      "assumptions": "Fixed domain/support and persistent IDs; prove the equality relation used for merging.",
-      "completion_criterion": "Identical semantics yields identical normalized output; no redundant boundary remains.",
+      "existing_evidence": "WongIntervalCanonicalization supplies maximal strictly separated intervals per ordered parent-child pair, equal canonical output from equal samples/local edge semantics, and canonicalize_idempotent. The composed normal-form output uses this storage normal form.",
+      "remaining_target": "Canonical interval-record semantics and storage idempotence are closed. An executable whole-GARG exporter, a separately encoded maximal-run tree table and whole-simplification idempotence are not established here.",
+      "assumptions": "Proper half-open intervals in a linear order; list separation requires sorted nonoverlapping inputs. Fixed node IDs and sample set. Full AtLocus input is distinct from sample-traced arrays; empty annotation records may disappear.",
+      "completion_criterion": "Equal indexed edge semantics yields identical canonical graph records and ordered per-pair interval lists. No touching annotation boundary remains for a pair.",
       "cited_reference_ids": [],
       "section_title": "Levels of simplification",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
@@ -1576,7 +1867,62 @@
       "pdf_pages_1based": [
         17,
         18
-      ]
+      ],
+      "public_209_contract": {
+        "status": "open",
+        "existing_evidence": "Existing cell grouping can retain redundant endpoints; containment of breakpoints does not eliminate them.",
+        "remaining_target": "Merge adjacent equal parent relations/edge supports; prove semantic preservation, maximal components, canonical deterministic output and idempotence.",
+        "assumptions": "Fixed domain/support and persistent IDs; prove the equality relation used for merging.",
+        "completion_criterion": "Identical semantics yields identical normalized output; no redundant boundary remains."
+      },
+      "staged_modules": [
+        "WongIntervalCanonicalization",
+        "WongSimplificationNormalForm"
+      ],
+      "staged_endpoint_evidence": [
+        "WongIntervalCanonicalization.join_contains",
+        "WongIntervalCanonicalization.mergeAdjacent_covers",
+        "WongIntervalCanonicalization.mergeAdjacent_lo",
+        "WongIntervalCanonicalization.mergeAdjacent_hi",
+        "WongIntervalCanonicalization.mergeAdjacent_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+        "WongIntervalCanonicalization.separated_semantic_unique",
+        "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+        "WongIntervalCanonicalization.separated_gap",
+        "WongIntervalCanonicalization.canonicalRegions_covers",
+        "WongIntervalCanonicalization.canonicalRegions_separated",
+        "WongIntervalCanonicalization.canonicalRegions_endpoints",
+        "WongIntervalCanonicalization.canonicalRegions_unique",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+        "WongIntervalCanonicalization.canonicalize_at",
+        "WongIntervalCanonicalization.canonicalize_breakpoints",
+        "WongIntervalCanonicalization.canonicalize_nonempty",
+        "WongIntervalCanonicalization.canonicalize_canonical",
+        "WongIntervalCanonicalization.canonicalize_maximal",
+        "WongIntervalCanonicalization.serialized_semantic_unique",
+        "WongIntervalCanonicalization.serialized_empty",
+        "WongIntervalCanonicalization.canonicalize_semantic_unique",
+        "WongIntervalCanonicalization.canonicalize_idempotent",
+        "WongIntervalCanonicalization.canonicalize_topology",
+        "WongIntervalCanonicalization.executable_touching_gap_example",
+        "WongSimplificationNormalForm.first_kept_child",
+        "WongSimplificationNormalForm.siblings_disjoint",
+        "WongSimplificationNormalForm.retained_nonsample_branches",
+        "WongSimplificationNormalForm.represented_contraction_normal",
+        "WongSimplificationNormalForm.finite_local_normal_form",
+        "WongSimplificationNormalForm.finite_resolved_normal_form",
+        "WongSimplificationNormalForm.mrca_kept",
+        "WongSimplificationNormalForm.truncated_mrca_kept",
+        "WongSimplificationNormalForm.canonicalize_paths",
+        "WongSimplificationNormalForm.canonical_resolved_normal_form"
+      ],
+      "verification_status": "PASS_LOCAL_COMBINED_REVIEWED_HOSTED_PENDING"
     },
     {
       "id": "G07",
@@ -1772,55 +2118,165 @@
       ]
     }
   ],
-  "edition": "Six-module first-publication batch",
+  "edition": "deterministic-65-staged-from-public-209",
   "integration": {
-    "receipt_path": "../../../verification/real-audit.json",
-    "receipt_sha256": "608251791079f5bd50698081e8aabb19a36c3c256629df2524efcacb7e03f4bd",
-    "checked_at_utc": "2026-09-25T13:26:46.221359+00:00",
-    "total_aggregate_endpoints": 209,
-    "new_endpoints": 58,
+    "baseline_commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+    "baseline_aggregate_endpoints": 209,
+    "total_aggregate_endpoints": 274,
+    "new_endpoints": 65,
+    "status": "PASS_LOCAL_COMBINED_REVIEWED",
     "modules": [
       {
-        "module": "WongSampleTracing",
-        "path": "../../../real/WongSampleTracing.lean",
-        "sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
-        "manifest_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
-        "receipt_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
-        "all_hashes_match": true,
+        "module": "WongMRCATruncation",
+        "lane": "mrca-truncation",
+        "path": "../../../real/WongMRCATruncation.lean",
+        "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
         "endpoints": [
-          "WongSampleTracing.trace_exact",
-          "WongSampleTracing.trace_length_le",
-          "WongSampleTracing.tracedNodes_exact",
-          "WongSampleTracing.extract_some_iff",
-          "WongSampleTracing.actual_garg_extraction",
-          "WongSampleTracing.actual_garg_reconstruction_iff"
+          "WongMRCATruncation.exists_unique_mrca",
+          "WongMRCATruncation.mrca_unique",
+          "WongMRCATruncation.common_iff_ancestor_mrca",
+          "WongMRCATruncation.truncation_iff_cut_above",
+          "WongMRCATruncation.truncation_iff_below_mrca",
+          "WongMRCATruncation.sample_paths_preserved",
+          "WongMRCATruncation.mrca_sample_paths_preserved",
+          "WongMRCATruncation.mrca_reaches_every_sample",
+          "WongMRCATruncation.no_incoming_mrca",
+          "WongMRCATruncation.truncated_support",
+          "WongMRCATruncation.no_common_no_extra_truncation",
+          "WongMRCATruncation.ancestral_sample_is_mrca",
+          "WongMRCATruncation.singleton_sample_is_mrca",
+          "WongMRCATruncation.singleton_has_no_edges",
+          "WongMRCATruncation.empty_samples_no_edges",
+          "WongMRCATruncation.distinct_sample_roots_no_common",
+          "WongMRCATruncation.truncate_at_iff",
+          "WongMRCATruncation.truncate_unique_parent",
+          "WongMRCATruncation.truncate_sample_supported",
+          "WongMRCATruncation.truncate_breakpoints",
+          "WongMRCATruncation.truncate_sample_paths",
+          "WongMRCATruncation.truncate_mrca_paths",
+          "WongMRCATruncation.finite_mrca_truncation",
+          "WongMRCATruncation.supported_but_removed"
         ],
+        "endpoint_count": 24,
+        "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
         "all_registered": true,
         "axioms": {
-          "WongSampleTracing.trace_exact": [
+          "WongMRCATruncation.exists_unique_mrca": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSampleTracing.trace_length_le": [
-            "propext"
-          ],
-          "WongSampleTracing.tracedNodes_exact": [
+          "WongMRCATruncation.mrca_unique": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSampleTracing.extract_some_iff": [
+          "WongMRCATruncation.common_iff_ancestor_mrca": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSampleTracing.actual_garg_extraction": [
+          "WongMRCATruncation.truncation_iff_cut_above": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongSampleTracing.actual_garg_reconstruction_iff": [
+          "WongMRCATruncation.truncation_iff_below_mrca": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.sample_paths_preserved": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.mrca_sample_paths_preserved": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.mrca_reaches_every_sample": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.no_incoming_mrca": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncated_support": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.no_common_no_extra_truncation": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.ancestral_sample_is_mrca": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.singleton_sample_is_mrca": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.singleton_has_no_edges": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.empty_samples_no_edges": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.distinct_sample_roots_no_common": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncate_at_iff": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncate_unique_parent": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncate_sample_supported": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncate_breakpoints": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncate_sample_paths": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.truncate_mrca_paths": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.finite_mrca_truncation": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongMRCATruncation.supported_but_removed": [
             "propext",
             "Classical.choice",
             "Quot.sound"
@@ -1828,360 +2284,254 @@
         }
       },
       {
-        "module": "WongRecordTracing",
-        "path": "../../../real/WongRecordTracing.lean",
-        "sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
-        "manifest_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
-        "receipt_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
-        "all_hashes_match": true,
+        "module": "WongIntervalCanonicalization",
+        "lane": "interval-canonicalization",
+        "path": "../../../real/WongIntervalCanonicalization.lean",
+        "sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
         "endpoints": [
-          "WongRecordTracing.lookup_sound",
-          "WongRecordTracing.lookup_complete",
-          "WongRecordTracing.lookup_represents",
-          "WongRecordTracing.records_to_sample_array",
-          "WongRecordTracing.records_round_trip_iff"
+          "WongIntervalCanonicalization.join_contains",
+          "WongIntervalCanonicalization.mergeAdjacent_covers",
+          "WongIntervalCanonicalization.mergeAdjacent_lo",
+          "WongIntervalCanonicalization.mergeAdjacent_hi",
+          "WongIntervalCanonicalization.mergeAdjacent_separated",
+          "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+          "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+          "WongIntervalCanonicalization.separated_semantic_unique",
+          "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+          "WongIntervalCanonicalization.separated_gap",
+          "WongIntervalCanonicalization.canonicalRegions_covers",
+          "WongIntervalCanonicalization.canonicalRegions_separated",
+          "WongIntervalCanonicalization.canonicalRegions_endpoints",
+          "WongIntervalCanonicalization.canonicalRegions_unique",
+          "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+          "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+          "WongIntervalCanonicalization.canonicalize_at",
+          "WongIntervalCanonicalization.canonicalize_breakpoints",
+          "WongIntervalCanonicalization.canonicalize_nonempty",
+          "WongIntervalCanonicalization.canonicalize_canonical",
+          "WongIntervalCanonicalization.canonicalize_maximal",
+          "WongIntervalCanonicalization.serialized_semantic_unique",
+          "WongIntervalCanonicalization.serialized_empty",
+          "WongIntervalCanonicalization.canonicalize_semantic_unique",
+          "WongIntervalCanonicalization.canonicalize_idempotent",
+          "WongIntervalCanonicalization.canonicalize_topology",
+          "WongIntervalCanonicalization.executable_touching_gap_example"
         ],
+        "endpoint_count": 31,
+        "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
         "all_registered": true,
         "axioms": {
-          "WongRecordTracing.lookup_sound": [
+          "WongIntervalCanonicalization.join_contains": [
+            "propext"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_covers": [
+            "propext",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_lo": [
+            "propext"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_hi": [
+            "propext"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_separated": [
+            "propext",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_of_separated": [
+            "propext"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_idempotent": [
+            "propext",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.separated_semantic_unique": [
+            "propext",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.mergeAdjacent_semantic_unique": [
+            "propext",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.separated_gap": [
+            "propext"
+          ],
+          "WongIntervalCanonicalization.canonicalRegions_covers": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongRecordTracing.lookup_complete": [
+          "WongIntervalCanonicalization.canonicalRegions_separated": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongRecordTracing.lookup_represents": [
+          "WongIntervalCanonicalization.canonicalRegions_endpoints": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongRecordTracing.records_to_sample_array": [
+          "WongIntervalCanonicalization.canonicalRegions_unique": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongRecordTracing.records_round_trip_iff": [
+          "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated": [
             "propext",
             "Classical.choice",
             "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_at": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_breakpoints": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_nonempty": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_canonical": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_maximal": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.serialized_semantic_unique": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.serialized_empty": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_semantic_unique": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_idempotent": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.canonicalize_topology": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "WongIntervalCanonicalization.executable_touching_gap_example": [
+            "propext"
           ]
         }
       },
       {
-        "module": "WongEventDecoding",
-        "path": "../../../real/WongEventDecoding.lean",
-        "sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
-        "manifest_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
-        "receipt_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
-        "all_hashes_match": true,
+        "module": "WongSimplificationNormalForm",
+        "lane": "normal-form",
+        "path": "../../../real/WongSimplificationNormalForm.lean",
+        "sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
         "endpoints": [
-          "WongEventDecoding.equal_parent_crossover_same_local",
-          "WongEventDecoding.crossover_left_identified",
-          "WongEventDecoding.crossover_right_identified",
-          "WongEventDecoding.normalized_same_local_iff",
-          "WongEventDecoding.same_local_of_records_eq",
-          "WongEventDecoding.normalized_records_injective",
-          "WongEventDecoding.encode_decode",
-          "WongEventDecoding.decode_encode",
-          "WongEventDecoding.Graph.parents_identified",
-          "WongEventDecoding.Graph.graph_identified",
-          "WongEventDecoding.Graph.encoded_canonical",
-          "WongEventDecoding.kind_signature_injective",
-          "WongEventDecoding.decode_kind_signature",
-          "WongEventDecoding.encoded_degrees",
-          "WongEventDecoding.encoded_kind_recovered",
-          "WongEventDecoding.classical_kind_unique",
-          "WongEventDecoding.classical_encoded_sample_iff"
+          "WongSimplificationNormalForm.first_kept_child",
+          "WongSimplificationNormalForm.siblings_disjoint",
+          "WongSimplificationNormalForm.retained_nonsample_branches",
+          "WongSimplificationNormalForm.represented_contraction_normal",
+          "WongSimplificationNormalForm.finite_local_normal_form",
+          "WongSimplificationNormalForm.finite_resolved_normal_form",
+          "WongSimplificationNormalForm.mrca_kept",
+          "WongSimplificationNormalForm.truncated_mrca_kept",
+          "WongSimplificationNormalForm.canonicalize_paths",
+          "WongSimplificationNormalForm.canonical_resolved_normal_form"
         ],
+        "endpoint_count": 10,
+        "scope": "Fresh isolated local aggregate pass; independent statement review passed; hosted CI pending.",
         "all_registered": true,
         "axioms": {
-          "WongEventDecoding.equal_parent_crossover_same_local": [
+          "WongSimplificationNormalForm.first_kept_child": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.crossover_left_identified": [
-            "propext"
-          ],
-          "WongEventDecoding.crossover_right_identified": [
-            "propext"
-          ],
-          "WongEventDecoding.normalized_same_local_iff": [
-            "propext"
-          ],
-          "WongEventDecoding.same_local_of_records_eq": [
+          "WongSimplificationNormalForm.siblings_disjoint": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.normalized_records_injective": [
+          "WongSimplificationNormalForm.retained_nonsample_branches": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.encode_decode": [
+          "WongSimplificationNormalForm.represented_contraction_normal": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.decode_encode": [
+          "WongSimplificationNormalForm.finite_local_normal_form": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.Graph.parents_identified": [
+          "WongSimplificationNormalForm.finite_resolved_normal_form": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.Graph.graph_identified": [
+          "WongSimplificationNormalForm.mrca_kept": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.Graph.encoded_canonical": [
+          "WongSimplificationNormalForm.truncated_mrca_kept": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.kind_signature_injective": [
-            "propext"
-          ],
-          "WongEventDecoding.decode_kind_signature": [],
-          "WongEventDecoding.encoded_degrees": [
+          "WongSimplificationNormalForm.canonicalize_paths": [
             "propext",
             "Classical.choice",
             "Quot.sound"
           ],
-          "WongEventDecoding.encoded_kind_recovered": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongEventDecoding.classical_kind_unique": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongEventDecoding.classical_encoded_sample_iff": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ]
-        }
-      },
-      {
-        "module": "WongLocalSimplification",
-        "path": "../../../real/WongLocalSimplification.lean",
-        "sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
-        "manifest_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
-        "receipt_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
-        "all_hashes_match": true,
-        "endpoints": [
-          "WongLocalSimplification.contraction_congr_both",
-          "WongLocalSimplification.coordinatePresentation",
-          "WongLocalSimplification.coordinate_contraction_union_acyclic",
-          "WongLocalSimplification.automatic_reencoded_local_simplification",
-          "WongLocalSimplification.samples_and_branching_cellwise",
-          "WongLocalSimplification.suppressed_at_most_one_child",
-          "WongLocalSimplification.unretained_locally_isolated",
-          "WongLocalSimplification.samples_and_branching_representable"
-        ],
-        "all_registered": true,
-        "axioms": {
-          "WongLocalSimplification.contraction_congr_both": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.coordinatePresentation": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.coordinate_contraction_union_acyclic": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.automatic_reencoded_local_simplification": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.samples_and_branching_cellwise": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.suppressed_at_most_one_child": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.unretained_locally_isolated": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongLocalSimplification.samples_and_branching_representable": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ]
-        }
-      },
-      {
-        "module": "WongMemoizedTracing",
-        "path": "../../../real/WongMemoizedTracing.lean",
-        "sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
-        "manifest_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
-        "receipt_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
-        "all_hashes_match": true,
-        "endpoints": [
-          "WongMemoizedTracing.visit_complete",
-          "WongMemoizedTracing.visit_closed",
-          "WongMemoizedTracing.memoExtract_some_iff",
-          "WongMemoizedTracing.memoExtract_eq_reference",
-          "WongMemoizedTracing.run_write_accounting",
-          "WongMemoizedTracing.run_cost_bounds",
-          "WongMemoizedTracing.memoized_cost_bounds",
-          "WongMemoizedTracing.actual_memoized_extraction",
-          "WongMemoizedTracing.records_to_memoized_sample_array",
-          "WongMemoizedTracing.memoized_records_round_trip_iff"
-        ],
-        "all_registered": true,
-        "axioms": {
-          "WongMemoizedTracing.visit_complete": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.visit_closed": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.memoExtract_some_iff": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.memoExtract_eq_reference": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.run_write_accounting": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.run_cost_bounds": [
-            "propext",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.memoized_cost_bounds": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.actual_memoized_extraction": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.records_to_memoized_sample_array": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongMemoizedTracing.memoized_records_round_trip_iff": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ]
-        }
-      },
-      {
-        "module": "WongTimedHistory",
-        "path": "../../../real/WongTimedHistory.lean",
-        "sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
-        "manifest_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
-        "receipt_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
-        "all_hashes_match": true,
-        "endpoints": [
-          "WongTimedHistory.raw_chronology",
-          "WongTimedHistory.raw_event_arities",
-          "WongTimedHistory.observed_represents_contraction",
-          "WongTimedHistory.observed_dates_independent",
-          "WongTimedHistory.observed_chronology",
-          "WongTimedHistory.observation_independent",
-          "WongTimedHistory.counted_edge_iff",
-          "WongTimedHistory.hidden_times_differ",
-          "WongTimedHistory.lineage_counts_differ",
-          "WongTimedHistory.sample_date_is_not_event_date",
-          "WongTimedHistory.no_exact_time_decoder",
-          "WongTimedHistory.no_exact_lineage_decoder"
-        ],
-        "all_registered": true,
-        "axioms": {
-          "WongTimedHistory.raw_chronology": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.raw_event_arities": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.observed_represents_contraction": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.observed_dates_independent": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.observed_chronology": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.observation_independent": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.counted_edge_iff": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.hidden_times_differ": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.lineage_counts_differ": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.sample_date_is_not_event_date": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.no_exact_time_decoder": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "WongTimedHistory.no_exact_lineage_decoder": [
+          "WongSimplificationNormalForm.canonical_resolved_normal_form": [
             "propext",
             "Classical.choice",
             "Quot.sound"
@@ -2189,7 +2539,26 @@
         }
       }
     ],
-    "verification": "Fresh combined209-endpoint aggregate passed; all six source hashes equal manifest and receipt; all 58 qualified new endpoints registered with standard axioms."
+    "receipt_path": "../../../verification/real-audit.json",
+    "verification": "61 imported local modules freshly rebuilt into an isolated cache; all 274 exact selected endpoint reports passed with permitted standard axioms only. Independent statement/source review passed with scoped limits. Hosted CI remains separate.",
+    "hosted_ci_status": "NOT_RUN_FOR_THIS_STAGED_RELEASE",
+    "receipt_sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821",
+    "checked_at_utc": "2026-09-25T15:49:51.977409+00:00",
+    "review": {
+      "path": "verification/deterministic65/SOL2-REVIEW.md",
+      "sha256": "e8ef0eb926b79782fa170b630a5b1f20f944b99c423e99db7214a1457e40e898",
+      "verdict": "PASS WITH SCOPED LIMITS",
+      "scope": "Statement/source review; not an independent kernel execution."
+    },
+    "finite_controls": {
+      "path": "verification/deterministic65/evidence/finite-controls.json",
+      "sha256": "78d37f6b732830a6dc2bdc5c057d26244cf9e31a3f4b32709d42a55aacc95722",
+      "count": 15
+    },
+    "input_manifest": {
+      "path": "verification/deterministic65/INPUT-MANIFEST.json",
+      "sha256": "bdd3a31bcb2488c104bd4a00b85f724bb8a2e51e2aaad4e8faaef9318c3be6df"
+    }
   },
   "provisional": [],
   "historical_integration": [
@@ -2456,7 +2825,426 @@
         }
       ],
       "verification": "All four current source hashes equal both manifest promoted hashes and aggregate receipt hashes; every one of 36 endpoints is registered. Only standard axioms appear."
+    },
+    {
+      "receipt_path": "../../../verification/real-audit.json",
+      "receipt_sha256": "608251791079f5bd50698081e8aabb19a36c3c256629df2524efcacb7e03f4bd",
+      "checked_at_utc": "2026-09-25T13:26:46.221359+00:00",
+      "total_aggregate_endpoints": 209,
+      "new_endpoints": 58,
+      "modules": [
+        {
+          "module": "WongSampleTracing",
+          "path": "../../../real/WongSampleTracing.lean",
+          "sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+          "manifest_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+          "receipt_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+          "all_hashes_match": true,
+          "endpoints": [
+            "WongSampleTracing.trace_exact",
+            "WongSampleTracing.trace_length_le",
+            "WongSampleTracing.tracedNodes_exact",
+            "WongSampleTracing.extract_some_iff",
+            "WongSampleTracing.actual_garg_extraction",
+            "WongSampleTracing.actual_garg_reconstruction_iff"
+          ],
+          "all_registered": true,
+          "axioms": {
+            "WongSampleTracing.trace_exact": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSampleTracing.trace_length_le": [
+              "propext"
+            ],
+            "WongSampleTracing.tracedNodes_exact": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSampleTracing.extract_some_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSampleTracing.actual_garg_extraction": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongSampleTracing.actual_garg_reconstruction_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        },
+        {
+          "module": "WongRecordTracing",
+          "path": "../../../real/WongRecordTracing.lean",
+          "sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+          "manifest_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+          "receipt_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+          "all_hashes_match": true,
+          "endpoints": [
+            "WongRecordTracing.lookup_sound",
+            "WongRecordTracing.lookup_complete",
+            "WongRecordTracing.lookup_represents",
+            "WongRecordTracing.records_to_sample_array",
+            "WongRecordTracing.records_round_trip_iff"
+          ],
+          "all_registered": true,
+          "axioms": {
+            "WongRecordTracing.lookup_sound": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongRecordTracing.lookup_complete": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongRecordTracing.lookup_represents": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongRecordTracing.records_to_sample_array": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongRecordTracing.records_round_trip_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        },
+        {
+          "module": "WongEventDecoding",
+          "path": "../../../real/WongEventDecoding.lean",
+          "sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+          "manifest_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+          "receipt_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+          "all_hashes_match": true,
+          "endpoints": [
+            "WongEventDecoding.equal_parent_crossover_same_local",
+            "WongEventDecoding.crossover_left_identified",
+            "WongEventDecoding.crossover_right_identified",
+            "WongEventDecoding.normalized_same_local_iff",
+            "WongEventDecoding.same_local_of_records_eq",
+            "WongEventDecoding.normalized_records_injective",
+            "WongEventDecoding.encode_decode",
+            "WongEventDecoding.decode_encode",
+            "WongEventDecoding.Graph.parents_identified",
+            "WongEventDecoding.Graph.graph_identified",
+            "WongEventDecoding.Graph.encoded_canonical",
+            "WongEventDecoding.kind_signature_injective",
+            "WongEventDecoding.decode_kind_signature",
+            "WongEventDecoding.encoded_degrees",
+            "WongEventDecoding.encoded_kind_recovered",
+            "WongEventDecoding.classical_kind_unique",
+            "WongEventDecoding.classical_encoded_sample_iff"
+          ],
+          "all_registered": true,
+          "axioms": {
+            "WongEventDecoding.equal_parent_crossover_same_local": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.crossover_left_identified": [
+              "propext"
+            ],
+            "WongEventDecoding.crossover_right_identified": [
+              "propext"
+            ],
+            "WongEventDecoding.normalized_same_local_iff": [
+              "propext"
+            ],
+            "WongEventDecoding.same_local_of_records_eq": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.normalized_records_injective": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.encode_decode": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.decode_encode": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.Graph.parents_identified": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.Graph.graph_identified": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.Graph.encoded_canonical": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.kind_signature_injective": [
+              "propext"
+            ],
+            "WongEventDecoding.decode_kind_signature": [],
+            "WongEventDecoding.encoded_degrees": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.encoded_kind_recovered": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.classical_kind_unique": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongEventDecoding.classical_encoded_sample_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        },
+        {
+          "module": "WongLocalSimplification",
+          "path": "../../../real/WongLocalSimplification.lean",
+          "sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+          "manifest_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+          "receipt_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+          "all_hashes_match": true,
+          "endpoints": [
+            "WongLocalSimplification.contraction_congr_both",
+            "WongLocalSimplification.coordinatePresentation",
+            "WongLocalSimplification.coordinate_contraction_union_acyclic",
+            "WongLocalSimplification.automatic_reencoded_local_simplification",
+            "WongLocalSimplification.samples_and_branching_cellwise",
+            "WongLocalSimplification.suppressed_at_most_one_child",
+            "WongLocalSimplification.unretained_locally_isolated",
+            "WongLocalSimplification.samples_and_branching_representable"
+          ],
+          "all_registered": true,
+          "axioms": {
+            "WongLocalSimplification.contraction_congr_both": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.coordinatePresentation": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.coordinate_contraction_union_acyclic": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.automatic_reencoded_local_simplification": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.samples_and_branching_cellwise": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.suppressed_at_most_one_child": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.unretained_locally_isolated": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongLocalSimplification.samples_and_branching_representable": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        },
+        {
+          "module": "WongMemoizedTracing",
+          "path": "../../../real/WongMemoizedTracing.lean",
+          "sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+          "manifest_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+          "receipt_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+          "all_hashes_match": true,
+          "endpoints": [
+            "WongMemoizedTracing.visit_complete",
+            "WongMemoizedTracing.visit_closed",
+            "WongMemoizedTracing.memoExtract_some_iff",
+            "WongMemoizedTracing.memoExtract_eq_reference",
+            "WongMemoizedTracing.run_write_accounting",
+            "WongMemoizedTracing.run_cost_bounds",
+            "WongMemoizedTracing.memoized_cost_bounds",
+            "WongMemoizedTracing.actual_memoized_extraction",
+            "WongMemoizedTracing.records_to_memoized_sample_array",
+            "WongMemoizedTracing.memoized_records_round_trip_iff"
+          ],
+          "all_registered": true,
+          "axioms": {
+            "WongMemoizedTracing.visit_complete": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.visit_closed": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.memoExtract_some_iff": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.memoExtract_eq_reference": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.run_write_accounting": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.run_cost_bounds": [
+              "propext",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.memoized_cost_bounds": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.actual_memoized_extraction": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.records_to_memoized_sample_array": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongMemoizedTracing.memoized_records_round_trip_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        },
+        {
+          "module": "WongTimedHistory",
+          "path": "../../../real/WongTimedHistory.lean",
+          "sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+          "manifest_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+          "receipt_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+          "all_hashes_match": true,
+          "endpoints": [
+            "WongTimedHistory.raw_chronology",
+            "WongTimedHistory.raw_event_arities",
+            "WongTimedHistory.observed_represents_contraction",
+            "WongTimedHistory.observed_dates_independent",
+            "WongTimedHistory.observed_chronology",
+            "WongTimedHistory.observation_independent",
+            "WongTimedHistory.counted_edge_iff",
+            "WongTimedHistory.hidden_times_differ",
+            "WongTimedHistory.lineage_counts_differ",
+            "WongTimedHistory.sample_date_is_not_event_date",
+            "WongTimedHistory.no_exact_time_decoder",
+            "WongTimedHistory.no_exact_lineage_decoder"
+          ],
+          "all_registered": true,
+          "axioms": {
+            "WongTimedHistory.raw_chronology": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.raw_event_arities": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.observed_represents_contraction": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.observed_dates_independent": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.observed_chronology": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.observation_independent": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.counted_edge_iff": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.hidden_times_differ": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.lineage_counts_differ": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.sample_date_is_not_event_date": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.no_exact_time_decoder": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "WongTimedHistory.no_exact_lineage_decoder": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ]
+          }
+        }
+      ],
+      "verification": "Fresh combined209-endpoint aggregate passed; all six source hashes equal manifest and receipt; all 58 qualified new endpoints registered with standard axioms.",
+      "exact_public_receipt_sha256": "daeccb93b0c97d46d862b16af2e04a6fd57dc3a7efaa4182d4b8940d45fc9c24",
+      "embedded_receipt_hash_note": "The inherited ledger named 608251791079f5bd50698081e8aabb19a36c3c256629df2524efcacb7e03f4bd; the receipt bytes pinned at this baseline hash to daeccb93b0c97d46d862b16af2e04a6fd57dc3a7efaa4182d4b8940d45fc9c24. Preserve both; do not treat the embedded historical hash as the current receipt hash."
     }
   ]
 }
-

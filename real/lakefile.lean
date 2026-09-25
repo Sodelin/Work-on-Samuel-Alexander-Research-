@@ -88,3 +88,12 @@ lean_lib WongMemoizedTracing
 
 @[default_target]
 lean_lib WongTimedHistory
+
+@[default_target]
+lean_lib WongMRCATruncation
+
+@[default_target]
+lean_lib WongIntervalCanonicalization
+
+@[default_target]
+lean_lib WongSimplificationNormalForm

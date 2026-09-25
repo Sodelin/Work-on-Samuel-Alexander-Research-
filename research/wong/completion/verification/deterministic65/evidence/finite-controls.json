@@ -1,0 +1,121 @@
+{
+  "status": "PASS_FINITE_CONTROLS",
+  "checked_at_utc": "2026-09-25T15:35:17.646702+00:00",
+  "count": 15,
+  "scope": "Independent finite Python sanity and deliberately false controls; not a Lean proof or whole-paper test.",
+  "script_sha256": "4fa77ce7421315724e7740d205ccbc69d8eec97f836871a3b82a24513f1c847e",
+  "controls": [
+    {
+      "name": "supported edge into MRCA is removed",
+      "observed": true,
+      "expected": true,
+      "meaning": "Kills the false equality between support filtering and truncation."
+    },
+    {
+      "name": "unique MRCA of the worked graph",
+      "observed": [
+        1
+      ],
+      "expected": [
+        1
+      ],
+      "meaning": "Finite independent instance of the explanatory diagram."
+    },
+    {
+      "name": "MRCA-to-sample paths survive",
+      "observed": true,
+      "expected": true,
+      "meaning": "Survival is checked from the MRCA, not from older removed ancestors."
+    },
+    {
+      "name": "older-ancestor paths do not survive",
+      "observed": false,
+      "expected": false,
+      "meaning": "Kills the false claim of all original ancestry preservation."
+    },
+    {
+      "name": "singleton sample leaves no edges",
+      "observed": 0,
+      "expected": 0,
+      "meaning": "Reflexive sample ancestry makes the singleton already coalesced."
+    },
+    {
+      "name": "empty samples leave no edges",
+      "observed": 0,
+      "expected": 0,
+      "meaning": "Support filtering prevents vacuous common ancestry from retaining edges."
+    },
+    {
+      "name": "ancestral sample stays protected",
+      "observed": true,
+      "expected": true,
+      "meaning": "The ancestral sample can have one child; an all-vertices arity claim is false."
+    },
+    {
+      "name": "without unique parents MRCA existence can fail",
+      "observed": [],
+      "expected": [],
+      "meaning": "Two incomparable common ancestors defeat an unconditional existence claim."
+    },
+    {
+      "name": "sampled-root forest has no MRCA",
+      "observed": [],
+      "expected": [],
+      "meaning": "Common-ancestor existence is a real premise."
+    },
+    {
+      "name": "sample traces miss an unsupported branch",
+      "observed": false,
+      "expected": false,
+      "meaning": "Kills the unconditional Appendix E sample-array inverse."
+    },
+    {
+      "name": "touching pieces merge and real gap remains",
+      "observed": [
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "meaning": "Matches the separately kernel-checked Lean example."
+    },
+    {
+      "name": "gap-filling changes semantics",
+      "observed": false,
+      "expected": false,
+      "meaning": "Kills the false claim that arbitrary gaps may be filled."
+    },
+    {
+      "name": "overlap violates ordered-input separation claim",
+      "observed": false,
+      "expected": false,
+      "meaning": "The ordered nonoverlap premise cannot be removed."
+    },
+    {
+      "name": "unsorted input need not normalize",
+      "observed": false,
+      "expected": false,
+      "meaning": "The list merge is not a sorting algorithm."
+    },
+    {
+      "name": "empty interval is outside proper-interval type",
+      "observed": false,
+      "expected": false,
+      "meaning": "Zero-span annotations are not values of Interval; empty region sets are allowed separately."
+    }
+  ]
+}
