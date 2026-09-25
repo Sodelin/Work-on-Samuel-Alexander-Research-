@@ -10,3 +10,9 @@ require mathlib from git
 
 @[default_target]
 lean_lib RealBridges
+
+@[default_target]
+lean_lib PortEncoding
+
+@[default_target]
+lean_lib StatefulCAReal

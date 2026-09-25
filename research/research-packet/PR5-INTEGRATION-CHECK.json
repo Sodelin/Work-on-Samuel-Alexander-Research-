@@ -1,0 +1,34 @@
+{
+  "commit": "e0ff308a10702d6f0f43c914f8260525f1ac820c",
+  "tree": "b8a92b409632e9cc0d5320060250e279b137ecfc",
+  "core_modules": 33,
+  "receipts": [
+    {
+      "receipt": "formal-audit",
+      "endpoint_count": 275,
+      "hashed_sources": 35,
+      "all_match_committed_bytes": true
+    },
+    {
+      "receipt": "real-audit",
+      "endpoint_count": 19,
+      "hashed_sources": 39,
+      "all_match_committed_bytes": true
+    }
+  ],
+  "markdown_local_links": "pass",
+  "source_declaration_scan": "no project axiom/sorry/admit declarations detected; dependency receipts are the stronger check",
+  "hosted_ci": {
+    "status": "success",
+    "run_id": 36106341968,
+    "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36106341968",
+    "tested_head": "e0ff308a10702d6f0f43c914f8260525f1ac820c"
+  },
+  "publication": {
+    "pull_request": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/5",
+    "merged": true,
+    "merge_commit": "425fee8c90e15656caea954ac92beaf28a5d869f",
+    "merged_tree": "b8a92b409632e9cc0d5320060250e279b137ecfc",
+    "owner_clone": "clean main, fast-forwarded to merge commit"
+  }
+}

@@ -32,16 +32,16 @@ Here $`t`$ is the actual checked sequence `ThueMorseBits.t`, not an abstract seq
 - `thue_zero_maximum` proves that the original Thue-Morse graph has maximum matching length exactly one from vertex zero. It includes the one-edge witness $`0 \to 2`$ and rules out all longer prefixes. This handles the possibility that transport from a positive edited-graph start reaches zero.
 - `finite_edit_thue_upper` proves, for every actual finite matching prefix in $`P_{s}`$ with $`\operatorname{path}(0)\ge1`$,
 
-  $$
+  ```math
   3\ell\le8\operatorname{path}(0)+8m-1
-  $$
+  ```
 
 - `HasPrefix s v ell` is existence of an actual matching path function with start $`v`$. `IsMaximumPrefix s v ell` requires such a witness and bounds **every** other witnessed finite length by $`\ell`$. `finite_edit_thue_maximum` proves that every positive start has such a genuine finite maximum and that the maximum satisfies the same integral inequality. Maximum existence is obtained by a finite bounded search argument, not left as a premise.
 - `finite_edit_thue_lower` transports the checked dyadic witnesses back to $`P_{s}`$. Whenever $`m < 3\cdot 2^n-1`$, it produces a positive-start actual matching path of length $`8\cdot 2^n-3`$, with its start within $`m`$ of $`3\cdot 2^n-1`$, and proves
 
-  $$
+  ```math
   8\operatorname{path}(0)\le3(8\cdot2^n-3)+8m+1
-  $$
+  ```
 
 - `finite_edit_thue_lower_above` proves these actual near-sharp witnesses occur above every requested starting-vertex bound. It chooses a sufficiently large dyadic scale internally.
 
