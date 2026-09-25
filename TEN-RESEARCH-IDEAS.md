@@ -188,7 +188,7 @@ relevant comparisons have small shifts determined by the starting offset.
 
 **Checked seed.** The [quantitative
 module](lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean) proves that
-if $`s(k+p)=s(k)`$ for $`k<\ell`$, then the explicit two-step path starting at
+for a positive period $`p>0`$, if $`s(k+p)=s(k)`$ for $`k<\ell`$, then the explicit two-step path starting at
 $`2p-1`$ matches $`\ell`$ edges. Thus very long periodic prefixes create very long
 matches even when the full word is aperiodic. Aperiodicity alone supplies
 finiteness, not a useful numerical rate.
