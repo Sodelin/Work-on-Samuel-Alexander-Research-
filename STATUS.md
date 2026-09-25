@@ -20,4 +20,4 @@ Status recorded for the initial repository package, 24 September 2026. "Lean che
 - Local-rule toy: `python checks/check_local_certificate.py` printed `Toy rule certificate: (True, 3, None)`.
 - Thue–Morse scans: saved JSON reports cover starts `0..8191` and `1..131071`, using different frontier transitions. Their absence of linear-bound counterexamples is finite evidence only.
 
-These are local results. The GitHub Actions workflow is configured but its first remote run must be read separately once the repository is published.
+These are local results. The [first GitHub Actions run](verification/CI-RECEIPT.md) also succeeded for commit `ff010210ba61e2db13295e3ee2cae050bb690c0c`; it built Lean and ran the small Python checks. Remote CI does not run either long finite scan or prove the unformalized propositions.

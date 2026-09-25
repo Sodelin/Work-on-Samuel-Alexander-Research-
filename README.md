@@ -23,6 +23,8 @@ The notes identify their precise graph model and quantifiers. A finite search ca
 - [SEARCH-LOG.md](SEARCH-LOG.md): bounded literature search and its limits.
 - [PROVENANCE.md](PROVENANCE.md): attribution and claim language.
 - [Local verification receipt](verification/LOCAL-RECEIPT.md): exact checks and saved artifact hashes.
-- [GitHub verification workflow](.github/workflows/verify.yml): Lean build and small Python checks on pushes and pull requests. A workflow file is not itself evidence that a remote run has passed.
+- [GitHub verification workflow](.github/workflows/verify.yml) and [first CI receipt](verification/CI-RECEIPT.md): Lean build and small Python checks on pushes and pull requests.
+- [Thue–Morse proof challenge](TASKS/THUE-MORSE-SHARP-BOUND.md) and [degree-boundary Lean challenge](TASKS/DEGREE-BOUNDARY-LEAN.md): bounded briefs for a stronger proof or formalization run.
+- [Outreach draft](OUTREACH-DRAFT.md): an editable note and short video outline that preserve the current proof boundaries. No message has been sent.
 
 The source papers and video transcript are linked and identified, not copied into this public repository. Contributions are welcome when they include exact statements, source citations, a reproducible check where applicable, and a clear separation between checked and conjectural claims.
