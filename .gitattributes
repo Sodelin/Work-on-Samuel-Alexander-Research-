@@ -1,1 +1,19 @@
+# Normalize detected text and use the same checkout bytes on every platform.
+* text=auto eol=lf
+
+# Lean sources are always text, including files used by the proof hash audit.
 *.lean text eol=lf
+
+# Windows batch scripts require their conventional checkout line endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Preserve binary research artifacts without line-ending conversion.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.gz binary
+*.zip binary
+*.olean binary

@@ -1,0 +1,38 @@
+diff --git a/.gitattributes b/.gitattributes
+index 6c059a4..ead8121 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -1 +1,19 @@
++# Normalize detected text and use the same checkout bytes on every platform.
++* text=auto eol=lf
++
++# Lean sources are always text, including files used by the proof hash audit.
+ *.lean text eol=lf
++
++# Windows batch scripts require their conventional checkout line endings.
++*.bat text eol=crlf
++*.cmd text eol=crlf
++
++# Preserve binary research artifacts without line-ending conversion.
++*.pdf binary
++*.png binary
++*.jpg binary
++*.jpeg binary
++*.gif binary
++*.gz binary
++*.zip binary
++*.olean binary
+diff --git a/.editorconfig b/.editorconfig
+new file mode 100644
+--- /dev/null
++++ b/.editorconfig
+@@ -0,0 +1,9 @@
++root = true
++
++[*]
++charset = utf-8
++end_of_line = lf
++insert_final_newline = true
++
++[*.{bat,cmd}]
++end_of_line = crlf
