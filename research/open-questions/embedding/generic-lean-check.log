@@ -1,0 +1,16 @@
+'GenericUniversalAvoiders.binaryCover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.exists_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.no_countable_bounded_stretch_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GenericUniversalAvoiders.rootsEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.blowUp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.blowUp_language' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.no_countable_host_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.no_countable_population_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.avoiding_no_countable_population_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

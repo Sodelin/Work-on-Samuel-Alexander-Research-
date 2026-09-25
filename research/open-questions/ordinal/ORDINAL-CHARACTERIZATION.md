@@ -1,12 +1,29 @@
 # A precise ordinal characterization, its collapse, and the necessary phase restriction
 
-Research date: 25 September 2026. The complete ordinal theorem below has a
-written proof. The natural-certificate equivalence, necessity, attained
-maximality, and leastness are now Lean checked for the repository's binary
-natural-date population model in `ReachableRankNecessity.lean`. Four earlier
-endpoints in `OrdinalCertificates.lean` check certificate soundness and the
-phase counterexample. The transfinite rank, pruning, and Schmidt-rank claims
-are not yet formalized in Lean. No priority claim is made.
+Research date: 25 September 2026. The written theorem below covers Alexander's
+population class. Its formal coverage has now expanded; all the checked results
+listed here have successful local receipts. This note records local completion
+before publication. The exact-commit hosted result is recorded in
+[PR #6 and its checks](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks).
+
+- `GenericOrdinalCertificate.lean` proves avoidance iff a decreasing ordinal
+  certificate exists on reachable states for arbitrary vertex and label types,
+  without any finite-branching hypothesis.
+- `GenericCertificate.lean` proves avoidance iff a decreasing natural certificate
+  exists for arbitrary vertex and label types under finite branching for each
+  fixed label, with a pointwise least attained certificate.
+- The actual matching-history well-foundedness equivalence, Mathlib root rank
+  $`\omega`$, and concrete pruning stages $`\omega`$ and $`\omega+1`$ are checked
+  for every existing `BinaryNatPopulation`.
+- Schmidt rank/kernel, the realizing-population pruning fixed point, and the
+  full source-model generality of the explicit ordinal calculation remain
+  written-only. Generic certificate coverage does not automatically extend
+  the separate binary history modules.
+
+See [the ordinal completion receipt](COMPLETION-RECEIPT.md) and
+[the generic natural-certificate theorem](GENERIC-CERTIFICATE.md), and
+[the generic ordinal-certificate source](GenericOrdinalCertificate.lean). No
+priority claim is made.
 
 ## What Alexander actually asks
 
@@ -17,10 +34,12 @@ Schmidt's rayless-graph characterization. Section 6 supplies no ordinal rank
 definition, no conjectured spectrum of countable ordinals, and no requirement
 that the characterization assign different ranks to different avoiders.
 
-The results here give an exact ordinal characterization under the paper's
-population axioms. They also show that the ordinary prefix-tree interpretation
-collapses completely. Thus they answer a literal interpretation of the
-question, while leaving a richer structural classification of avoiders open.
+The generic ordinal-certificate result gives a checked characterization with
+weaker assumptions than the paper's population axioms. The ordinary
+prefix-tree calculation has a written proof at the source's full generality
+and a Lean proof for the existing binary natural-date model. That invariant
+collapses completely. These answer precise interpretations of the question,
+while leaving a richer structural classification of avoiders open.
 
 ## Definitions
 
@@ -57,6 +76,12 @@ D^\lambda
 These are definitions proposed in this note, not definitions from Alexander.
 
 ## Theorem 1: exact ordinal dichotomy
+
+**Verification scope:** the proof below is written at the full source
+generality. The actual history-tree equivalence, root rank, and displayed
+first-limit pruning calculations are now Lean checked for
+`BinaryNatPopulation`. The Schmidt-rank/kernel assertion and the realizing
+fixed-point assertion remain written-only.
 
 For every population $`P`$ satisfying Alexander's axioms and every target
 $`s`$, the following are equivalent:
@@ -157,7 +182,8 @@ $`v`$. Put an edge
 v\xrightarrow{s(k)}w.
 ```
 
-Restrict this phase graph to $`R_s`$. The following are equivalent:
+Under the population's finite-child assumption, restrict this phase graph
+to $`R_s`$. The following are equivalent:
 
 1. $`P`$ avoids $`s`$.
 2. There is $`r:R_s\to\mathbb N`$ strictly decreasing on every phase edge.
@@ -205,14 +231,26 @@ exclusion of an infinite realization are checked in `OrdinalCertificates.lean`
 without assuming finite branching. Finite branching is used for the converse
 only.
 
-The necessity direction, existence of an attained maximum, strict decrease,
-leastness, and full natural-certificate equivalence are now also checked in
-`ReachableRankNecessity.lean` for every population satisfying the existing
-`BinaryNatPopulation` predicate. This formal result uses the repository's
-actual `FinitePath` and `Realizes` definitions; no continuation bound is
-assumed as an endpoint premise. It uses classical choice to select maxima
-uniformly, and does not provide an executable evaluator from an arbitrary
-avoidance proof.
+The original `ReachableRankNecessity.lean` checks necessity, an attained
+maximum, decrease, leastness, and equivalence using the repository's actual
+`FinitePath` and `Realizes` for every `BinaryNatPopulation`.
+`GenericCertificate.lean` now checks this natural-certificate result for
+arbitrary vertex and label types with finitely many children for each fixed
+vertex and label. No vertex enumeration or binary label encoding is used.
+
+`GenericOrdinalCertificate.lean` separately proves the equivalence of
+statements 1 and 3 for arbitrary vertex and label types **without finite
+branching**. Its exact prefix-plus-tail representation identifies avoidance
+with well-foundedness of reversed reachable-state transitions; Mathlib's
+`Acc.rank` gives the forward certificate and ordinal well-foundedness gives
+the converse. Finite branching is needed to guarantee natural-valued ranks,
+not to obtain the generic ordinal certificate.
+
+These proofs use classical choice and do not provide an executable evaluator
+or a decision procedure from an arbitrary graph description. No continuation
+bound, cofinality claim, or source-model adapter is assumed as an endpoint
+premise. The generic result can use the source's existing vertex and label
+types directly; the formalization still has to represent its edges faithfully.
 
 ## Counterexample: ranking every phase is wrong
 
@@ -302,16 +340,33 @@ Its six printed endpoints are `reachable_endpoints_bounded`,
 `Classical.choice`, and `Quot.sound`; no `sorryAx` appears. The exact receipt
 and proof-file hash are recorded in `NECESSITY-FORMALIZATION.md`.
 
-The natural-certificate characterization is therefore checked for the
-repository's binary natural-date population model. The following remain
-written proofs or unformalized adapters:
+The formerly missing ordinal steps now have checked modules:
+`HistoryWellFounded`, `OrdinalHistoryRank`, `HistoryPruning`, and `HistoryConverse`.
+They connect actual population axioms and actual realizations to well-foundedness,
+attained finite ranks, root rank $`\omega`$, and the first limit/successor pruning
+stages. They do not require an external unbounded-height premise. Their scope
+is the existing binary natural-date model.
 
-- The explicit ordinal rank of the matching-history tree, including root
-  rank $`\omega`$.
-- The pruning equality at $`\omega`$ and extinction at $`\omega+1`$.
-- The Schmidt-rank and kernel calculations.
-- An adapter from arbitrary finite alphabets and arbitrary real birthdates
-  in the source paper to the binary natural-date model used by the Lean code.
+`GenericCertificate` separately removes the Bool/Nat restriction for the
+natural-certificate equivalence, including leastness and attainment, with
+eight checked endpoints. Finitely many children for each fixed vertex and
+label suffice; the alphabet itself need not be finite.
+`GenericOrdinalCertificate` has three checked endpoints and removes even the
+finite-branching requirement for the ordinal-certificate equivalence. All
+printed dependencies are among `propext`, `Classical.choice`, and `Quot.sound`.
+These are classical finite-branching and well-founded-rank arguments in a
+general formal interface; no novelty of those methods is claimed.
+
+The actual binary history-rank and pruning modules contribute eleven checked
+endpoints alongside six from their prior necessity module. Their local
+receipts are complete and the combined standalone audit passed locally with
+52 endpoints across 11 files at 10:56:58 UTC on 25 September 2026. The
+exact-commit hosted result is recorded separately in PR #6 and its checks;
+earlier hosted receipts remain historical snapshots.
+
+The remaining written-only statements are the Schmidt-rank/kernel calculation,
+the realizing-population pruning fixed point, and the explicit ordinal-rank
+calculation at the source paper's full vertex/alphabet generality.
 
 The remaining mathematical bottleneck for a richer reading of Alexander's
 question is to define a rank on genealogical structure which distinguishes

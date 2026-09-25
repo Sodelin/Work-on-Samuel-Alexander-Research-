@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-25T10:43:19.827282+00:00",
+  "exit_code": 0,
+  "compiler": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "file": "GenericCertificate.lean",
+  "sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581",
+  "scope": "Generic avoidance certificate equivalence, leastness, and attained finite-chain maximum on reachable vertex/phase states; arbitrary vertex and label types; finite children for each fixed label.",
+  "printed_endpoints": [
+    {
+      "name": "GenericCertificate.realizes_iff_state_chain",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.avoids_iff_wellFounded",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.finiteHeight_decreases",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.finiteLabelChildren_of_finite_children",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.avoids_iff_natural_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.finiteHeight_least",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.finiteHeight_attained",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericCertificate.avoids_has_least_attained_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "imports": [
+    "Mathlib.Order.WellFounded",
+    "Mathlib.Data.Finset.Lattice.Fold",
+    "Mathlib.Data.Fintype.EquivFin"
+  ],
+  "prohibited_axiom_found": false,
+  "source_has_admission": false,
+  "limitations": [
+    "Classical noncomputable construction; no executable decision procedure.",
+    "No explicit ordinal, omega-pruning, Schmidt-rank calculation, or richer hierarchy.",
+    "No biological identification claim."
+  ],
+  "source_checkout_modified": false,
+  "dependencies_downloaded": false
+}

@@ -5,10 +5,10 @@ The exact population law of rooted gene-tree topologies identifies a rooted spec
 The primary source is Allman, Degnan, and Rhodes, *Identifying the Rooted Species Tree from the Distribution of Unrooted Gene Trees under the Coalescent*, [arXiv:0912.4472v2, Introduction, example surrounding Eq. (1)](https://arxiv.org/html/0912.4472v2#S1). For a designated rooted topology $`s`$ on three labeled taxa and internal branch length $`t`$ in coalescent units, it states
 
 ```math
-P(g=s)=1-\frac{2}{3}e^{-t},\qquad P(g\ne s)=\frac{1}{3}e^{-t}.
+\Pr(G=s)=1-\frac{2}{3}e^{-t},\qquad \Pr(G=a)=\frac{1}{3}e^{-t}\quad(a\ne s).
 ```
 
-Put $`c=e^{-t}`$. For $`t>0`$, $`0<c<1`$, so the matching probability exceeds either alternative by $`1-c>0`$. The paper also states the general rooted-triple identifiability result in Proposition 1.
+Here $`G`$ is the gene-tree topology and $`a`$ is each fixed alternative. The combined event $`G\ne s`$ has probability $`2e^{-t}/3`$. Put $`c=e^{-t}`$. For $`t>0`$, $`0<c<1`$, so the matching probability exceeds either alternative by $`1-c>0`$. The paper also states the general rooted-triple identifiability result in Proposition 1.
 
 ## What the Lean file checks
 

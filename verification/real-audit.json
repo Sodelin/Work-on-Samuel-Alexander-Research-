@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T10:12:36.043144+00:00",
+  "checked_at_utc": "2026-09-25T10:46:04.818931+00:00",
   "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "toolchain_pin": "leanprover/lean4:v4.33.1",
-  "endpoint_count": 101,
+  "endpoint_count": 151,
   "endpoint_axioms": {
     "RealBridges.finiteCover_iff_setFinite": [
       "propext",
@@ -504,6 +504,239 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "FounderWindowResearch.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.commonAncestor_window": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.bad_founder_productive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.productive_descendants_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.capture_productive_descendant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.iap_directed_union_of_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.convex_intersection": [],
+    "SeedIntersections.finite_persistent_member": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.persistent_productive_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.reflection_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.nonempty_has_earliest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.earliest_is_founder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.commonAncestor_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.directed_union_connected": [],
+    "FounderMaximal.union_reflection": [],
+    "FounderMaximal.windowSpecies_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.maximal_extension_of_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.maximal_window_extension_ordered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.descendant_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.finiteSupport_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.infiniteSupport_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.iap_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.convex_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.reflection_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.weakReach_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.weaklyConnected_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.commonAncestor_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.founder_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.finite_founders_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.window_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.specieslike_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.actual_presentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.anchored_minimal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.productivePart_convex": [],
+    "SpeciesSeed.productivePart_internal_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.minimal_anchored_iap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.exists_anchored_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.exists_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.windowSpecies_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.push_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.maximal_window_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.every_vertex_has_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.every_vertex_in_maximal_real_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "source_sha256": {
@@ -563,10 +796,18 @@
     "lean/SamuelAlexanderResearch/ThueMorseBound.lean": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
     "lean/SamuelAlexanderResearch/ThueMorseWindow.lean": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f",
     "lean/SamuelAlexanderResearch.lean": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1",
-    "real/RealAudit.lean": "5565e4786a23776bbf67beca2de9ee4c07d6284541f0d65f85f3c71114f05b48",
+    "real/RealAudit.lean": "e195ca982226136dd630a0175585a25904b97b4272e94139e3e22972317cbaaf",
+    "real/DirectedIAP.lean": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0",
     "real/FiniteGenomeIdentifiability.lean": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
+    "real/FounderMaximal.lean": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4",
+    "real/FounderWindow.lean": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
     "real/PortEncoding.lean": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4",
     "real/RealBridges.lean": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
+    "real/RealFounderWindow.lean": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9",
+    "real/RealSpeciesTheorem.lean": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540",
+    "real/SeedIntersections.lean": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e",
+    "real/SpeciesReindex.lean": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd",
+    "real/SpeciesSeed.lean": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb",
     "real/StatefulCAReal.lean": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7",
     "real/WongAlexander.lean": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
     "real/WongBreakpointCells.lean": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d",
@@ -577,7 +818,7 @@
     "real/WongIntervalNormalization.lean": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f",
     "real/WongLocalArity.lean": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
     "real/WongSimplification.lean": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab",
-    "real/lakefile.lean": "ccfa23517f59d6a1616bd1e3f9cb05a0cbeab07f37e2353c7df1c9415bc643dc",
+    "real/lakefile.lean": "035886258d76b8d11671b86822086fd192eda2e6a048adebcb70d361f082e838",
     "real/lake-manifest.json": "24c900a45c3f706d5e3a0336f3808fcc9b03bb3407e7b5ae23eeb8c283726d33",
     "real/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
   },

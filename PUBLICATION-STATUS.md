@@ -1,10 +1,22 @@
 # Research follow-up publication status
 
-## Open-question research notebook
+## Completion pass: proved statements and reproducible checks
 
-The [new notebook](research/open-questions/README.md) records three source-linked open-question investigations and the genomic-identification question. It distinguishes full written arguments from locally compiled Lean artifacts. The complete reachable natural-rank characterization in the existing binary model, its attained least-rank construction, a finite-completion nonidentifiability corollary and a known positive three-taxon law example are locally checked. The full transfinite/Schmidt, embedding and founder-window existence arguments are not fully Lean formalized.
+Start with the [completion map](COMPLETION-MAP.md). It distinguishes proved statements, their source questions, and the remaining questions about priority and biological usefulness.
 
-Most notebook proof files have local receipts outside the main aggregate audit. The finite-completion nonidentifiability corollary is also integrated into the Mathlib audit. See the notebook for exact source hashes and the remaining model, attribution and integration boundaries.
+The current completion packet closes three previously written-only proof obligations:
+
+- **Founder-window specieslike clusters:** a complete existence and constrained-maximality theorem with literal real birthdates, including tied dates, on natural-number organism identifiers. Every organism belongs to a maximal reflecting specieslike cluster whose founders lie in a fixed nonnegative real-time window. The seed, union/intersection, maximality and reindexing arguments are checked. Eight promoted modules add 50 selected endpoints, bringing the real library to **151**; the core remains **405**. See the [theorem and exact assumptions](notes/REAL-FOUNDER-WINDOW-THEOREM.md) and [frozen owner packet](verification/founder-window-packet.json).
+- **Universal avoiding populations:** the full generic population construction and nonuniversality proof are compiled, including exact infinite-word language preservation, root equivalence, and exclusion of every countable family under injective edge-preserving maps or maps with a finite global bound on edge stretching. See the [statement and scope](research/open-questions/embedding/UNIVERSAL-AVOIDER-NONEXISTENCE.md).
+- **Ordinal characterization:** arbitrary labelled graphs admit an ordinal certificate exactly when they avoid the target; finite branching gives a natural-number certificate. The actual binary natural-date population history tree is also checked: avoidance is equivalent to well-foundedness, the artificial root rank is omega, and the specified finite/omega/omega-plus-one pruning stages are proved. See the [scope map](research/open-questions/ordinal/ORDINAL-CHARACTERIZATION.md).
+
+The new [research artifact auditor](checks/audit_research_artifacts.py) compiles **11 standalone modules with 52 selected endpoints**, in dependency order, after the ordinary library builds. It checks the actual compiler's reported axioms and rejects proof placeholders. The [local combined receipt](verification/research-artifacts-local.json) records the final local audit; the workflow uploads a fresh receipt for its exact checkout. The generic embedding proof is integrated through this standalone gate, instead of changing the frozen real-library aggregate. Its original handoff receipt's proposed library placement is therefore superseded by this reproducible integration route.
+
+The ordinary hosted build for the resulting commit is recorded in [PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) and its [checks](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks). Publication-stage notes do not predict the result of that subsequent build. These counts describe audited declarations, not independent discoveries.
+
+Still outside the checked claims are the written Schmidt-rank/kernel discussion, the realizing-case pruning fixed-point statement, and extension of the actual root-rank/pruning modules beyond the binary natural-date model. Arbitrary unbounded-stretch or ancestry-only embeddings, fixed child-cap preservation, empirical species identification, and global novelty are also not established. Those boundaries do not leave the displayed formal theorem statements unfinished.
+
+The [genomic-identification notebook](research/open-questions/genomic-identifiability/README.md) preserves the distinction between ambiguity of abstract infinite completions and identification under a specified statistical model. The positive three-taxon example uses a known law. Its prose now states the probability of each particular alternative correctly, separately from their combined probability; the Lean law was already correct.
 
 ## Integrated refinement packet
 
@@ -20,7 +32,7 @@ The central theorem embeds a finite interval ARG into two connected infinite pop
 
 Read the [Wong-Alexander outline](WONG-ALEXANDER-OUTLINE.md), [connection map](research/wong/connection-map.json), [delivery map](DELIVERY-MAP.md) and [refinement ledger](REFINEMENT-LEDGER.md). Stronger unanswered targets remain explicit. A literal binary-kernel wrapper, proof-feedback-tool edits, caches and uncompiled refinement drafts are excluded.
 
-The Wong snapshot `bcef6da64672310b314f2bc17c96f9535fcaaf5b` passed [Verify run 36120063594](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36120063594). A later commit's hosted result is recorded separately in [PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6). The repository build does not automatically compile the isolated research artifacts above.
+The Wong snapshot `bcef6da64672310b314f2bc17c96f9535fcaaf5b` passed [Verify run 36120063594](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36120063594). A later commit's hosted result is recorded separately in [PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6). That earlier repository build did not automatically compile the isolated research artifacts. The current completion pass adds the standalone gate described above.
 
 ## Initial snapshot checked and shared
 

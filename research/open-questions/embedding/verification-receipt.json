@@ -1,0 +1,119 @@
+{
+  "createdAt": "2026-09-25T10:45:58.924Z",
+  "status": "PASS",
+  "lean": "4.33.1",
+  "mathlibCommit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "projectDependencyCommit": "425fee8c90e15656caea954ac92beaf28a5d869f",
+  "auditedEndpointCount": 10,
+  "endpointAudits": [
+    {
+      "name": "GenericUniversalAvoiders.binaryCover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.exists_ray",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.no_countable_bounded_stretch_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.rootsEquiv",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.blowUp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.blowUp_language",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.no_countable_host_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.no_countable_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.avoiding_no_countable_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "admissionScan": [],
+  "artifacts": [
+    {
+      "name": "GenericUniversalAvoiders.lean",
+      "bytes": 21037,
+      "sha256": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4"
+    },
+    {
+      "name": "generic-lean-check.log",
+      "bytes": 1127,
+      "sha256": "6875ac325c19039bdc574195716bdabf9f6a63703c48e989b9336d2774254e8d"
+    },
+    {
+      "name": "FORMALIZATION-RECEIPT.md",
+      "bytes": 5615,
+      "sha256": "42adcdc9e11dc0f635d313e5a936833149d106854b36d85c3e9b92b8c9a1cc2b"
+    },
+    {
+      "name": "dependency-sources.json",
+      "bytes": 5432,
+      "sha256": "8668d601aabdc00a63a11fca65c1ef61df34bb821c8ed62abc8732e5472e4ed6"
+    },
+    {
+      "name": "Check.ps1",
+      "bytes": 747,
+      "sha256": "bdb425d66afd435c8f7e0f6f21129a6b402cba116e3648d0f637f02a38cba270"
+    }
+  ],
+  "verificationScope": "Local direct Lean check of exact source using cached pinned libraries. Publication integration and hosted CI are separate."
+}

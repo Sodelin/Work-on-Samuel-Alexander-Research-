@@ -1,5 +1,8 @@
 # Working on Samuel Alexander's research
 
+**Start here:** [Completion map](COMPLETION-MAP.md) — finished statements, active proof gates, and what the evidence supports.
+
+
 A public, AI-assisted mathematics notebook connecting infinite genealogical
 graphs, word avoidance, specieslike clusters and cellular automata. Source
 results, new deductions, conjectures and finite experiments are identified

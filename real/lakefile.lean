@@ -46,3 +46,27 @@ lean_lib WongDiamond
 
 @[default_target]
 lean_lib FiniteGenomeIdentifiability
+
+@[default_target]
+lean_lib FounderWindow
+
+@[default_target]
+lean_lib DirectedIAP
+
+@[default_target]
+lean_lib SeedIntersections
+
+@[default_target]
+lean_lib RealFounderWindow
+
+@[default_target]
+lean_lib FounderMaximal
+
+@[default_target]
+lean_lib SpeciesReindex
+
+@[default_target]
+lean_lib SpeciesSeed
+
+@[default_target]
+lean_lib RealSpeciesTheorem

@@ -1,6 +1,6 @@
 # A bounded founding period as a replacement for common ancestry
 
-Date: 2026-09-25. Status: new candidate theorem with a complete written proof; several supporting lemmas checked in Lean, but the full existence theorem has not been formalized or independently reviewed. This is a bounded response to the paper's stated open direction, not a claim of literature priority or a completed biological species definition.
+Date: 2026-09-25. Status: the full founder-window existence theorem is now proved in Lean for graphs with natural-number organism identifiers and real birthdates, including tied birthdates. The eight registered real modules contribute 50 new audit endpoints; the registered real aggregate passed with 151 endpoints. See the [completed real-founder-window theorem packet](../../../notes/REAL-FOUNDER-WINDOW-THEOREM.md) and [actual original-graph endpoint](../../../real/RealSpeciesTheorem.lean). The written argument below is retained; the fixed-cardinality corollary and explanatory counterexamples remain written results. No literature-priority or biological-plausibility claim is made.
 
 ## Source target and scope
 
@@ -30,11 +30,11 @@ This says that all founders appear during a fixed initial period of the cluster.
 
 Let $`\mathcal K_\Delta`$ be the nonempty sets that are connected, convex, satisfy IAP, satisfy REF, and satisfy $`W_\Delta`$.
 
-## Candidate theorem
+## Founder-window theorem
 
 **For every $`\Delta\ge0`$, every member $`S`$ of $`\mathcal K_\Delta`$ is contained in an inclusion-maximal member of $`\mathcal K_\Delta`$. Consequently every organism in every infinite biosphere belongs to a maximal member of $`\mathcal K_\Delta`$.**
 
-The consequence uses Alexander's Theorem 13 only to supply an initial cluster containing the organism. That cluster has CA and therefore $`W_\Delta`$. The new argument proves extension to maximality in the larger class, whose competitors may have several founders and fail CA.
+The written proof uses Alexander's Theorem 13 to supply an initial cluster containing the organism. The completed Lean proof independently supplies this seed through `SpeciesSeed.exists_seed` and `RealSpeciesTheorem.every_vertex_has_seed`, so a seed is not an endpoint premise. That cluster has CA and therefore $`W_\Delta`$. The new argument proves extension to maximality in the larger class, whose competitors may have several founders and fail CA.
 
 In fact $`\mathcal K_\Delta`$ is closed under all nonempty directed unions, a slightly stronger closure statement than chain-union closure.
 
@@ -114,6 +114,8 @@ Finally CA implies $`W_\Delta`$: if $`a`$ is the common ancestor, then $`a`$ is 
 
 ## The constraint really permits failure of CA
 
+**Written examples:** the following constructions are not separately registered Lean endpoints in the eight-module founder-window packet.
+
 Take two parentless organisms $`a`$ and $`b`$, both born at time 0. Give them a shared child $`c_0`$ at time 1, followed by the ray $`c_0\longrightarrow c_1\longrightarrow c_2\longrightarrow\cdots`$ with $`t(c_n)=n+1`$. The whole graph is connected and convex, every vertex has cofinite descendants, and REF holds. Its founder set is $`\{a,b\}`$, so $`W_0`$ holds, but CA fails.
 
 The whole graph is maximal in $`\mathcal K_0`$ because it contains every vertex. Thus the new theorem is not just a relabeling of CA. For any $`\Delta>0`$, the founders may instead have distinct births 0 and $`\Delta/2`$, followed by the shared child after both births.
@@ -122,11 +124,15 @@ For each positive integer $`k`$, the same construction with $`k`$ coeval founder
 
 ## A second corollary: a fixed finite founder count
 
+**Written corollary:** the fixed-cardinality replacement constraint is not part of the completed real-founder-window formalization.
+
 For each fixed integer $`k\ge1`$, replace $`W_\Delta`$ by $`|F(S)|\le k`$. The resulting connected IAP+CONV+REF class has the same maximal-extension and every-organism existence theorem.
 
 Indeed, if the union of a directed family had $`k+1`$ distinct founders, choose a common stage containing all of them. They are all still founders in that stage, contradicting its bound. Thus the union has at most $`k`$ founders and Lemma 4 applies. Initial clusters exist because CA supplies one founder. For $`k\ge2`$ the allowed class strictly contains examples failing CA.
 
 ## Sharp failure: finitely many founders without uniform control is insufficient
+
+**Written counterexample:** the comb argument below remains separate from the registered Lean theorem packet.
 
 Use the paper's comb construction, with vertices $`v_n,w_n`$ for $`n\ge0`$ and edges
 
@@ -142,20 +148,35 @@ Choose an omitted $`w_j`$. Adding just $`w_j`$ preserves connectivity through it
 
 Consequently no such $`S`$ is maximal even after imposing 'finitely many founders.' This proves actual nonexistence of constrained maxima through $`v_0`$, not merely failure of an increasing-union proof. Fixed temporal or cardinal bounds prevent this enlargement from continuing indefinitely inside their respective classes.
 
-## Lean evidence and exact remaining work
+## Completed Lean theorem and exact remaining scope
 
-The companion `FounderWindow.lean` imports the existing `SpeciesBridge` definitions and was checked with Lean 4.33.1 against the owner's already compiled base module, without modifying or rebuilding the owner checkout. It establishes:
+The [completed theorem packet](../../../notes/REAL-FOUNDER-WINDOW-THEOREM.md) now closes the substantial formal gates previously listed here. Its strongest original-graph endpoint is [`RealSpeciesTheorem.every_vertex_in_maximal_real_window`](../../../real/RealSpeciesTheorem.lean). It assumes finite children, finite strict real-birthdate sublevels, chronological edges, and a fixed nonnegative real duration. Organism identifiers are natural numbers and need not be chronological; birthdates are real numbers and may tie. There is no finite-root assumption, assumed seed, assumed infinite ray, or assumed IAP descendant cone.
 
-- `founder_covers`: strict natural birth order makes every member a founder or a founder's descendant.
-- `founder_restrict`: a founder of a larger set stays a founder in each smaller set containing it.
-- `window_finite_founders`: a founding window gives finitely many founders.
-- `commonAncestor_window`: CA implies every nonnegative natural founding window.
-- `nonempty_has_minimum`: a nonempty subset of natural birth ranks has a least member.
-- `window_directed_union`: the window property passes to every nonempty directed union.
-- `directed_union_finite_founders`: the directed union has finitely many founders.
+For every organism, the endpoint constructs a maximal connected, ancestry-convex, IAP, reflecting cluster whose founders satisfy the same fixed real-window constraint. Every competing superset is quantified over in the original graph with the original birth function and unchanged duration. The conditional extension endpoint, `maximal_window_extension`, accepts an existing class member and does not require a separate nonnegative-duration premise; universal per-organism existence uses nonnegativity to admit the constructed seed.
 
-The successful compiler run returned exit code 0. Printed endpoint axioms were only `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx` occurred. These are supporting lemmas, not a machine-checked existence proof. The formal model uses natural ranks and natural window widths. The written theorem above uses the paper's real birthdates, including the possibility of coeval founders.
+The checked proof is distributed across eight registered modules:
 
-The next substantial formal lemma is Lemma 4: IAP passes to a directed union of convex reflecting IAP sets provided the union has finitely many internal founders. Its proof needs a generalized finite-founder Koenig lemma, followed by the reflection/convexity capture argument. After that, Zorn and real-date transfer remain explicit gates.
+| Module | Checked contribution |
+|---|---|
+| [FounderWindow.lean](../../../real/FounderWindow.lean) | Founder coverage and the ordered-presentation groundwork. |
+| [DirectedIAP.lean](../../../real/DirectedIAP.lean) | IAP closure for directed unions of convex reflecting IAP sets when the union has finitely many founders. |
+| [SeedIntersections.lean](../../../real/SeedIntersections.lean) | Reflection survives the downward-directed intersections needed by the seed construction. |
+| [SpeciesSeed.lean](../../../real/SpeciesSeed.lean) | A genuine connected, convex IAP+CA+REF seed through every organism. |
+| [RealFounderWindow.lean](../../../real/RealFounderWindow.lean) | Literal real-window closure under directed unions and finiteness of the union's founder set. |
+| [FounderMaximal.lean](../../../real/FounderMaximal.lean) | Zorn extension within the class having the same fixed constraints. |
+| [SpeciesReindex.lean](../../../real/SpeciesReindex.lean) | Faithful relabelling preserving actual real birthdates, ties, ancestry, species predicates, and duration. |
+| [RealSpeciesTheorem.lean](../../../real/RealSpeciesTheorem.lean) | Per-organism seeds, maximal extension, and maximal-cluster existence in the original real-birthdate graph. |
 
-Interpretation also remains open: whether a chosen founding duration is biologically plausible, and whether this parameterized broadening is 'qualitatively different' in the author's intended informal sense. The mathematical existence statement no longer assumes CA; the method deliberately extends the source's compactness proof. No targeted primary-source check establishes novelty beyond the inspected version of this paper.
+The formal IAP-union proof uses productive descendants to obtain the contradiction; it does not take a ray as a premise. The seed proof supplies the source's initialization obligation internally. Real-date transport preserves the literal birth function and duration; chronological enumeration is internal to the proof and does not replace time by ordinal or natural rank.
+
+The eight modules contribute **50 selected audit endpoints**, registered in [RealAudit.lean](../../../real/RealAudit.lean). The completed registered real aggregate passed with **151 endpoints**; its receipt is [real-audit.json](../../../verification/real-audit.json). Allowed axioms are only `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx` is permitted. Lean is pinned to 4.33.1 and Mathlib to `0df444a360eaa60ab8c11dca51a86af692955474`.
+
+### Earlier local milestone
+
+The earlier companion [`FounderWindow.lean`](FounderWindow.lean) remains a supporting local milestone. It imports the existing `SpeciesBridge` definitions and checks `founder_covers`, `founder_restrict`, `window_finite_founders`, `commonAncestor_window`, `nonempty_has_minimum`, `window_directed_union`, and `directed_union_finite_founders` for natural birth ranks and natural window widths. Its successful Lean 4.33.1 run used only the standard axioms above. That earlier milestone is not the full real-date existence proof; the eight-module packet now supplies that proof.
+
+### What remains outside the completed theorem
+
+The fixed-cardinality corollary, the comb nonexistence argument, and the explanatory multiple-founder examples above remain written results unless separately formalized. This packet does not provide an arbitrary-vertex-type wrapper, uniqueness, a species partition, an effective construction, or a biological classification algorithm. Publication and hosted CI are release checks for the exact packet and should be reported separately from its mathematical scope.
+
+Interpretation also remains open: whether a chosen founding duration is biologically plausible, and whether this parameterized broadening is “qualitatively different” in the author's intended informal sense. The mathematical existence statement no longer assumes CA; the method extends the source's compactness proof. The formalization does not establish literature novelty or biological plausibility.

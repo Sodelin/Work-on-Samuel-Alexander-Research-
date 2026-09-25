@@ -1,6 +1,6 @@
 # No universal avoiding population under graph embeddings
 
-Research note, 25 September 2026. Written proof reviewed by a separate AI task; not Lean certified or independently reviewed by a human expert. This is not a claim of worldwide priority. The general locally finite graph obstruction is classical (de Bruijn, reported by Rado; see Lehner below). The application here verifies preservation of Alexander's population axioms and entire infinite-word language.
+Research note, 25 September 2026. The complete generic population construction and nonuniversality theorem, including the finite global edge-stretch extension, are now checked locally in Lean 4.33.1 in [GenericUniversalAvoiders.lean](GenericUniversalAvoiders.lean), with ten audited endpoints. This note records local completion before publication; the exact-commit hosted result is recorded in [PR #6 checks](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks). The written proof was also reviewed by a separate AI task; independent human expert review and worldwide priority are not established. The general locally finite graph obstruction is classical (de Bruijn, reported by Rado; see Lehner below). The population-specific formalization checks preservation of Alexander's axioms, actual roots and entire infinite-word language. [Section 8](#8-lean-formalization-and-verification-status) maps the checked endpoints and remaining scope boundaries.
 
 ## Source question and interpretation
 
@@ -28,7 +28,7 @@ Here s is assumed avoidable, so C_s is nonempty. The result below gives a negati
 2. **The actual roots of Q are in a canonical bijection with the roots of P.**
 3. **The underlying undirected graph of Q admits no adjacency embedding into any U_j.**
 
-If P has permanent vertex genders giving its edge labels, Q does too. If P is connected as an undirected graph, Q is connected as an undirected graph.
+The written construction also preserves permanent vertex genders when they give the edge labels, and preserves undirected connectivity when P is connected. These two additional properties are argued below; they are not separately exposed as checked endpoints in the current Lean module.
 
 Consequently, for every biologically avoidable s, C_s has no weak universal member, no strong universal member, and no countable family of members into which all members embed. The same negative statement holds even when potential hosts are permitted to realize s, provided that they remain countable and locally finite.
 
@@ -119,6 +119,8 @@ The construction uses one source population and changes only finite multipliciti
 
 ## 4. Scope of the negative answer
 
+The formal nonuniversality result covers the embedding obstructions, full language and actual root-set equivalence. The connectivity and permanent-vertex-gender refinements below retain their written-proof status.
+
 | Formulation | Consequence and reason |
 |---|---|
 | Weak graph universality in the sense of the cited Cherlin–Shelah paper | Impossible, even after forgetting directions and labels. |
@@ -142,7 +144,7 @@ The original question is phrased broadly as “to what extent,” so a result fo
 - **A prescribed uniform upper bound on children, or an exact number of parents per gender:** finite blow-ups preserve local finiteness and at-least-one-parent-per-gender, but not a fixed degree cap or uniqueness of parents. Those are separate restricted-class questions.
 - **Uncountable universal families or hosts outside local finiteness:** the theorem gives no positive construction and no exact universality cardinal for these changes of scope.
 
-There is no unresolved step in the ordinary proof of the displayed theorem. Its connection to the source question depends on explicitly adopting subgraph embeddings, the default notion used by Alexander's cited comparison. The proof has not yet been integrated into the project's Lean development.
+The displayed theorem and the bounded-stretch extension now have complete local Lean proofs in the accompanying standalone module. Their connection to the source question depends on explicitly adopting the stated embedding category; ordinary subgraph embeddings are the default notion used by Alexander's cited comparison. The module is published beside this note and is selected by the research-artifact auditor after the existing library build. It is not added to the main real-library endpoint aggregate, and the exact-commit hosted result is recorded separately in PR #6 checks.
 
 Nonuniversality via finite neighborhood growth is a classical kind of obstruction for locally finite graph classes. Applying the finite-fibre lemma to Alexander's particular class gives a concrete negative answer to this population question; it does not, by itself, establish a new general result in graph theory or worldwide priority.
 
@@ -157,9 +159,9 @@ Nonuniversality via finite neighborhood growth is a classical kind of obstructio
 - Weak connectivity is distinct from having exactly one biological root.
 - Host local finiteness follows from both A2 and A3 when hosts are Alexander populations.
 
-## 6. Bounded-stretch extension (written proof only)
+## 6. Bounded-stretch extension (also checked in Lean)
 
-The same negative conclusion holds if an injective vertex map may send adjacent vertices to points at distance at most a positive integer L, with one finite L applying to the entire map. L may depend on the map; no common bound across all maps is assumed. This observation is a deduction of the separate review, not a result attributed to the cited sources.
+The same negative conclusion holds if an injective vertex map may send adjacent vertices to points at distance at most a positive integer L, with one finite L applying to the entire map. L may depend on the map; no common bound across all maps is assumed. This extension was developed during the separate review and is now checked by `GenericUniversalAvoiders.no_countable_bounded_stretch_family`, together with its actual-population specialization. It is not attributed to the cited sources, and no worldwide novelty claim is made.
 
 Enumerate every triple (j,u,L), with u in host U_j and L a positive integer, by positive indices k. Using the same source ray, replace the earlier multiplicity by
 
@@ -177,4 +179,46 @@ Florian Lehner, *A note on classes of subgraphs of locally finite graphs*, Journ
 
 A theorem about the full class of locally finite graphs does not automatically imply the same theorem for an arbitrary subclass. For Alexander's avoidance classes, the specific step established here is closure under finite-fibre blow-ups while preserving exact infinite-word language and biological root count. This supplies the necessary population-specific construction. This bounded check does not certify worldwide novelty of that application or of the finite-stretch strengthening.
 
-The source axioms were rechecked against [Alexander, Definition 1](https://arxiv.org/html/1212.0186v2), and the weak/strong convention against [Cherlin–Shelah, introduction](https://arxiv.org/pdf/math/0512218). Full Lean certification would require the blow-up, population preservation, language equivalence and diagonal argument together, rather than only the final finite-cardinality contradiction.
+The source axioms were rechecked against [Alexander, Definition 1](https://arxiv.org/html/1212.0186v2), and the weak/strong convention against [Cherlin–Shelah, introduction](https://arxiv.org/pdf/math/0512218). The completed local Lean proof now includes the full blow-up population object, population preservation, exact language equivalence, actual-root equivalence, a derived ray, and the diagonal obstruction. The interpretation of the source question and any novelty assessment remain separate from kernel verification.
+
+
+## 8. Lean formalization and verification status
+
+The accompanying [GenericUniversalAvoiders.lean](GenericUniversalAvoiders.lean) formalizes a generic `Population V Label` with arbitrary vertex and label types and actual real birthdates. The fields are infinitude, finite birth sublevels, strict birth order on edges, a unique label for each ordered vertex pair, finitely many parentless roots, finitely many children per vertex, and a parent of each label for every nonroot. Every finite nonempty gender alphabet from Alexander's source model is included. The formalization is not restricted to binary labels or to vertices initially identified with natural numbers.
+
+The selected audit prints ten fully qualified endpoints, all with only the permitted standard axioms `propext`, `Classical.choice` and `Quot.sound`:
+
+| Checked endpoint in `GenericUniversalAvoiders` | Content |
+|---|---|
+| `binaryCover` | Builds the auxiliary two-copy binary population from the generic population and discharges its fields. |
+| `exists_ray` | Derives an injective directed ray; a ray is not assumed as input to the nonuniversality theorem. |
+| `blowUp` | Constructs the complete population with arbitrary positive finite fibre sizes. |
+| `blowUp_language` | Proves equality of the entire realized infinite-word language, by projection and section. |
+| `rootsEquiv` | Gives a genuine equivalence of actual root sets when original root fibres have size one. |
+| `no_countable_host_family` | Defeats every countable family of encodable locally finite relational hosts by an actual population blow-up. |
+| `no_countable_population_family` | Specializes to actual population hosts and derives their countability and local finiteness from their axioms. |
+| `avoiding_no_countable_population_family` | Preserves avoidance of a specified word and excludes every injective adjacency-preserving map into the candidate population family. |
+| `no_countable_bounded_stretch_family` | Produces one population excluding every injective map into every listed host with any finite global edge-stretch bound. |
+| `avoiding_no_countable_bounded_stretch_population_family` | Combines word avoidance, full language equality, singleton root fibres, and the finite-stretch obstruction for actual population hosts. |
+
+The formal proof derives a ray starting at some vertex; the start need not be a root. This is sufficient because only positive-index ray vertices have enlarged fibres, and each such vertex has an incoming ray edge and is therefore not a root. The written proof above uses a root-starting ray, which is a convenient stronger choice. Both constructions preserve every actual root fibre as a singleton.
+
+The general host theorem assumes an encoding for each host vertex type and finite neighbour sets. For the actual-population corollaries, both properties are derived. Host avoidance, preservation of labels or directions, preservation of nonedges, and preservation of roots are not required of the forbidden maps. The finite-stretch result uses graph powers to include every natural-number stretch bound in the diagonal family; the bound may depend on the proposed map.
+
+### What the current check establishes
+
+- The frozen generic module compiled locally using Lean **4.33.1** and the pinned Mathlib revision **0df444a360eaa60ab8c11dca51a86af692955474**.
+- All ten selected endpoint axiom reports passed. These standalone research endpoints are separate from the registered core and real-library endpoint totals.
+- The module lives beside this research note. The research-artifact auditor compiles it using the existing built project dependencies; it is not placed among the main `real` library modules.
+- The exact-commit hosted result is recorded in PR #6 checks. A successful earlier library CI run does not certify this newly added module.
+- Compilation establishes the formal statements. The source-model comparison above, biological interpretation and independent human expert review remain distinct.
+
+After the existing core and real-library build/audit steps, the selected research artifacts can be checked with:
+
+```sh
+python3 checks/audit_research_artifacts.py --output verification/research-artifacts.json
+```
+
+### Remaining category boundaries
+
+Connectivity and permanent-vertex-gender preservation remain written extensions, without separate checked endpoints in this module. The theorem does not preserve a prescribed uniform child cap or exact parent counts. It does not settle embeddings with arbitrary unbounded edge stretch, arbitrary ancestry-only embeddings, or noninjective maps. These are changes of mathematical category, not omitted steps in the checked adjacency and finite-global-stretch theorems.

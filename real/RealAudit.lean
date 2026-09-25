@@ -1,3 +1,11 @@
+import FounderWindow
+import DirectedIAP
+import SeedIntersections
+import RealFounderWindow
+import FounderMaximal
+import SpeciesReindex
+import SpeciesSeed
+import RealSpeciesTheorem
 import FiniteGenomeIdentifiability
 import WongDiamond
 import WongSimplification
@@ -147,3 +155,54 @@ import StatefulCAReal
 #print axioms FiniteGenomeIdentifiability.no_exact_specieslike_verdict
 
 #print axioms FiniteGenomeIdentifiability.no_exact_specieslike_decoder
+
+#print axioms FounderWindowResearch.founder_covers
+#print axioms FounderWindowResearch.commonAncestor_window
+#print axioms FounderWindowResearch.window_directed_union
+#print axioms FounderWindowResearch.directed_union_finite_founders
+#print axioms DirectedIAPResearch.bad_founder_productive
+#print axioms DirectedIAPResearch.productive_descendants_unbounded
+#print axioms DirectedIAPResearch.capture_productive_descendant
+#print axioms DirectedIAPResearch.iap_directed_union_of_finite_founders
+#print axioms SeedIntersections.convex_intersection
+#print axioms SeedIntersections.finite_persistent_member
+#print axioms SeedIntersections.persistent_productive_child
+#print axioms SeedIntersections.reflection_intersection
+#print axioms RealFounderWindow.nonempty_has_earliest
+#print axioms RealFounderWindow.earliest_is_founder
+#print axioms RealFounderWindow.founder_covers
+#print axioms RealFounderWindow.window_finite_founders
+#print axioms RealFounderWindow.commonAncestor_window
+#print axioms RealFounderWindow.window_nonnegative
+#print axioms RealFounderWindow.window_directed_union
+#print axioms RealFounderWindow.directed_union_finite_founders
+#print axioms FounderMaximal.directed_union_connected
+#print axioms FounderMaximal.union_reflection
+#print axioms FounderMaximal.windowSpecies_directed_union
+#print axioms FounderMaximal.maximal_extension_of_directed_union
+#print axioms FounderMaximal.maximal_window_extension_ordered
+#print axioms SpeciesReindex.descendant_iff
+#print axioms SpeciesReindex.finiteSupport_iff
+#print axioms SpeciesReindex.infiniteSupport_iff
+#print axioms SpeciesReindex.iap_iff
+#print axioms SpeciesReindex.convex_iff
+#print axioms SpeciesReindex.reflection_iff
+#print axioms SpeciesReindex.weakReach_iff
+#print axioms SpeciesReindex.weaklyConnected_iff
+#print axioms SpeciesReindex.commonAncestor_iff
+#print axioms SpeciesReindex.founder_iff
+#print axioms SpeciesReindex.finite_founders_iff
+#print axioms SpeciesReindex.window_iff
+#print axioms SpeciesReindex.specieslike_iff
+#print axioms SpeciesReindex.actual_presentation
+#print axioms SpeciesSeed.anchored_minimal_exists
+#print axioms SpeciesSeed.productivePart_convex
+#print axioms SpeciesSeed.productivePart_internal_infinite
+#print axioms SpeciesSeed.minimal_anchored_iap
+#print axioms SpeciesSeed.exists_anchored_seed
+#print axioms SpeciesSeed.exists_seed
+#print axioms RealSpeciesTheorem.windowSpecies_iff
+#print axioms RealSpeciesTheorem.push_maximal
+#print axioms RealSpeciesTheorem.maximal_window_extension
+#print axioms RealSpeciesTheorem.every_vertex_has_seed
+#print axioms RealSpeciesTheorem.every_vertex_in_maximal_real_window
