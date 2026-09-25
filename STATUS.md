@@ -1,6 +1,6 @@
 # Verification status
 
-Status recorded for the initial repository package, 24 September 2026. "Lean checked" below refers to a successful local Lean 4.33.1 build of the exact repository module. It does not describe a complete formalization of the cited papers.
+Status checked 24 September 2026, including the later specieslike and cellular-automaton clarifications. "Lean checked" below refers to a successful local Lean 4.33.1 build of the exact repository module. It does not describe a complete formalization of the cited papers.
 
 | Claim | Written argument | Finite check | Lean coverage | Remaining gate |
 |---|---|---|---|---|
@@ -10,7 +10,8 @@ Status recorded for the initial repository package, 24 September 2026. "Lean che
 | Proposed linear bound and equality family | No proof | Set-frontier starts `0..8191`; bitset-transition starts `1..131071`; no counterexamples in claimed ranges and all shared lengths agree | None | Proof or counterexample. |
 | Offspring threshold and binary gender balance | Proved by edge counts in [note](notes/DEGREE-BOUNDARY.md) | No computation needed | [Arithmetic consequences](lean/SamuelAlexanderResearch/DegreeBounds.lean) compile from count premises | Formalize finite graph, edge counts, and birthdate prefix assumptions for an end-to-end Lean theorem. |
 | Two-child fixed-gender avoidance for all aperiodic binary sequences | No result | No systematic scan | None | Construction or impossibility theorem; prior-art review. |
-| Periodic lifeline certificate and velocity polygon | Proved as a conditional reduction in [note](notes/PERIODIC-LIFELINE.md) | Generic finite checker passes a toy valid rule and rejects a one-parent negative case | None | Independent mathematical review; a specific useful new speed application. |
+| Binary specieslike-cluster bridge | Direct written deduction in [note](notes/SPECIESLIKE-BRIDGE.md) from the classification's `P_s` and Alexander's 2026 cluster definitions | No computation needed | None | Independent review of the definition match and proof; no biological or novelty claim. |
+| Periodic lifeline certificate and velocity bounds | Proved as a conditional reduction in [note](notes/PERIODIC-LIFELINE.md); constant-label paths strengthen the alternating polygon to a convex-hull intersection for spaceships | Generic finite checker passes a toy valid rule and rejects a one-parent negative case | None | Independent mathematical review; any new application must beat the static intersection and prior bounds. |
 | Automatic-sequence universality decision | Direct corollary from two cited results | No implementation | None | An explicit algorithm and formalization only if this line is pursued. |
 
 ## Local checks performed
