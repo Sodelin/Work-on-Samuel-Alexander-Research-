@@ -1,5 +1,16 @@
 # Working on Samuel Alexander's research
 
+## Latest research progress
+
+**Updated 25 September 2026.** Read the [human-readable progress report](RESEARCH-PROGRESS.md) for the latest results, evidence and remaining work.
+
+| Where to go | What you will find |
+|---|---|
+| [Research progress](RESEARCH-PROGRESS.md) | What changed, why it is useful, and what is still local or unfinished |
+| [Current research PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) | Newer published work awaiting integration with the main branch |
+| [Research architecture](RESEARCH-ARCHITECTURE.md) | Three research leads, shared workers, adversarial review and publication rules |
+| [Successful hosted verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36148288120) | The exact checked baseline at commit `138dd529` |
+
 ## Current focus: the authors' open problems
 
 The [proof structure and obligation ledger](research/open-problems/time-self-reference/PROOF-STRUCTURE.md) is the detailed entry point for the current program.
