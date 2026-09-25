@@ -10,29 +10,29 @@ from follow-ons posed here. No message has been sent to Dr. Alexander.
 ## Results worth reviewing
 
 1. **Sharp quantitative avoidance.** In the manuscript's Thue-Morse graph,
-   `3L(v)<=8v-1` for `v>=1`, with equality exactly at `v=3*2^n-1`, where
-   `L=8*2^n-3`. The [proof](research/thue-morse/NEXT-INVARIANT.md) and
+   $3L(v)\le8v-1$ for $v\ge1$, with equality exactly at $v=3\cdot2^n-1$, where
+   $L=8\cdot2^n-3$. The [proof](research/thue-morse/NEXT-INVARIANT.md) and
    [Lean development](lean/SamuelAlexanderResearch/SharpThueMorse.lean) include
    actual target bits, edge semantics and attained maxima.
 2. **Stability and phase.** Finite target edits preserve the optimal coefficient
-   `8/3`. Rebuilding the graph from `t(k+a)` gives `3L_a(v)<=8v+5a-1` for `v>=1` and the
+   $\frac{8}{3}$. Rebuilding the graph from $t(k+a)$ gives $3L_a(v)\le8v+5a-1$ for $v\ge1$ and the
    same optimal coefficient. The exact shifted family is developed separately
    in [PhaseExtremal](lean/SamuelAlexanderResearch/PhaseExtremal.lean).
-3. **Arbitrarily slow finite avoidance.** For every growth function `f`, an
+3. **Arbitrarily slow finite avoidance.** For every growth function $f$, an
    explicit relative construction gives an aperiodic target with actual finite
-   maxima larger than `f(v)` along strictly increasing starts. All starts have
+   maxima larger than $f(v)$ along strictly increasing starts. All starts have
    finite maxima. See [FiniteAvoidance](lean/SamuelAlexanderResearch/FiniteAvoidance.lean).
 4. **Uniform cap-three fixed-gender witness.** Productive pruning of the
    manuscript's two-copy lift gives an inspecies avoiding any prescribed
    aperiodic binary target, with permanent vertex genders and at most three
    children. The [formalization](lean/SamuelAlexanderResearch/FixedGenderLift.lean)
-   treats the retained vertex set explicitly. Earlier `T_h` and `H_h` examples
+   treats the retained vertex set explicitly. Earlier $T_h$ and $H_h$ examples
    already have inspecies structure; the arbitrary-target/uniform-cap conjunction
    is the distinction to review.
 5. **Critical population structure.** Full-degree conservation bounds all
    defects and forces eventual degree regularity. At cuts after all roots, crossing width is at least
-   `k(k+1)/2`. In the binary minimum-width case, the tail is exactly the
-   `+1,+2` graph; permanent genders then force universal realization.
+   $\frac{k(k+1)}{2}$. In the binary minimum-width case, the tail is exactly the
+   $+1,+2$ graph; permanent genders then force universal realization.
 
 The [ten proposals](TEN-RESEARCH-IDEAS.md) describe these results and five further
 structural/computational directions. The most concrete next conjecture is a
@@ -54,7 +54,7 @@ and cone phenomena retain their original attribution. The
 with the narrower quantitative and uniform-cap claims developed here.
 
 Useful outside feedback would concern an equivalent earlier height formula,
-the cap-two fixed-gender question, the general-`k` rigidity problem, or a
+the cap-two fixed-gender question, the general-$k$ rigidity problem, or a
 counterexample to the full-height conjecture. External review and literature
 priority remain open. The repository owner can adapt the
 [outreach draft](OUTREACH-DRAFT.md); sending it is a separate action.

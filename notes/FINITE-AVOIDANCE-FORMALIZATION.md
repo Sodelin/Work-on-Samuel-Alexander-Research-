@@ -1,21 +1,21 @@
 # Attained finite maxima for every aperiodic target and start
 
-[`FiniteAvoidance.lean`](../lean/SamuelAlexanderResearch/FiniteAvoidance.lean) closes the finite-maximum packaging boundary for the actual target-dependent graphs `P_s`. The main endpoint needs only a Boolean target `s`, a proof that `s` is not eventually periodic, and a natural starting vertex `v`. It accepts no finite bound, compactness assumption, or assumed maximum. It includes `v = 0`.
+[`FiniteAvoidance.lean`](../lean/SamuelAlexanderResearch/FiniteAvoidance.lean) closes the finite-maximum packaging boundary for the actual target-dependent graphs $P_{s}$. The main endpoint needs only a Boolean target $s$, a proof that $s$ is not eventually periodic, and a natural starting vertex $v$. It accepts no finite bound, compactness assumption, or assumed maximum. It includes $v = 0$.
 
 ## Exact predicates and proof chain
 
 The module reuses the existing predicates without redefining their semantics:
 
-- `BinaryAvoidance.Edge s u w b` is an actual edge of the row-colored +1/+2 construction, with the original missing edge `0 → 1` and destination condition `w ≥ 2`.
-- `QuantitativeAvoidance.MatchesPrefix s path ell` checks all first `ell` edges against the target's first `ell` symbols.
-- `FiniteEditStability.HasPrefix s v ell` asserts existence of such an actual path function starting at `v`.
-- `FiniteEditStability.IsMaximumPrefix s v ell` requires an attained length-`ell` witness and bounds every other witnessed finite matching length by `ell`. Length zero is included.
+- `BinaryAvoidance.Edge s u w b` is an actual edge of the row-colored +1/+2 construction, with the original missing edge $0 \to 1$ and destination condition $w \ge 2$.
+- `QuantitativeAvoidance.MatchesPrefix s path ell` checks all first $\ell$ edges against the target's first $\ell$ symbols.
+- `FiniteEditStability.HasPrefix s v ell` asserts existence of such an actual path function starting at $v$.
+- `FiniteEditStability.IsMaximumPrefix s v ell` requires an attained length-$\ell$ witness and bounds every other witnessed finite matching length by $\ell$. Length zero is included.
 
 `prefix_to_finitePath` converts an actual function-path prefix into `PositiveUnavoidability.FinitePath (Edge s) s 0 ell (path 0) (path ell)`. Induction appends the final edge with its original target phase, preserving both endpoints.
 
 `aperiodic_endpoints_bounded` proves that the matching endpoints reachable from any fixed start are bounded. If they were unbounded, the already proved `PositiveUnavoidability.infinite_path_from_good` would construct an actual infinite matching path. Its finite-child hypothesis is supplied by `BinaryPopulation.children_finite s`, a theorem about the concrete graph. The resulting infinite path contradicts `BinaryAvoidance.aperiodic_target_avoided`. Thus the finite-branching argument and absence of an infinite match produce the bound as a conclusion.
 
-`aperiodic_prefix_lengths_bounded` converts this endpoint bound to a bound on lengths. Every actual edge advances at least one index, so the existing finite displacement theorem gives `path 0 + ell ≤ path ell`. This is why bounded endpoints bound all possible matching lengths, not just the length of one selected path.
+`aperiodic_prefix_lengths_bounded` converts this endpoint bound to a bound on lengths. Every actual edge advances at least one index, so the existing finite displacement theorem gives $\operatorname{path}(0)+\ell\le\operatorname{path}(\ell)$. This is why bounded endpoints bound all possible matching lengths, not just the length of one selected path.
 
 `aperiodic_maximum_exists` then applies the existing bounded finite maximum argument and proves:
 
@@ -24,18 +24,18 @@ The module reuses the existing predicates without redefining their semantics:
   ∀ v, ∃ ell, FiniteEditStability.IsMaximumPrefix s v ell
 ```
 
-`aperiodic_finite_extinction` gives the equivalent explicit endpoint: some length `ell` is attained, and every strictly longer actual matching prefix is absent. Both theorems cover every natural start, including roots and zero. They are classical existence results; they do not claim an effective procedure that extracts a bound from an arbitrary black-box target and a proof of aperiodicity.
+`aperiodic_finite_extinction` gives the equivalent explicit endpoint: some length $\ell$ is attained, and every strictly longer actual matching prefix is absent. Both theorems cover every natural start, including roots and zero. They are classical existence results; they do not claim an effective procedure that extracts a bound from an arbitrary black-box target and a proof of aperiodicity.
 
 ## Slow avoidance now uses actual finite maxima
 
 `arbitrarily_slow_finite_maxima` composes the preceding theorem with the frozen `SlowAvoidance.arbitrarily_slow_avoidance`. For every function `f : Nat → Nat`, it supplies:
 
-1. an actual Boolean sequence `s` that is not eventually periodic and has no infinite matching path in `P_s`;
+1. an actual Boolean sequence $s$ that is not eventually periodic and has no infinite matching path in $P_{s}$;
 2. an attained finite maximum at every starting vertex;
 3. strictly increasing starting vertices `starts j`; and
-4. for each `j`, an attained finite maximum `ell` at `starts j` with `f (starts j) < ell`.
+4. for each $j$, an attained finite maximum $\ell$ at `starts j` with $f(\operatorname{starts}(j))<\ell$.
 
-The final strict inequality follows because the previously constructed finite witness is no longer than the attained maximum. No monotonicity or computability assumption on `f` is needed. This strengthens the earlier long-finite-witness statement with the missing maximum-existence assertion; it makes no claim about a uniform upper bound for all aperiodic targets.
+The final strict inequality follows because the previously constructed finite witness is no longer than the attained maximum. No monotonicity or computability assumption on $f$ is needed. This strengthens the earlier long-finite-witness statement with the missing maximum-existence assertion; it makes no claim about a uniform upper bound for all aperiodic targets.
 
 ## Verification and provenance
 

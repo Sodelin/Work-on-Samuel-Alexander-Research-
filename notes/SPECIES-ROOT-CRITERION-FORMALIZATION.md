@@ -2,15 +2,15 @@
 
 [`SpeciesRootCriterion.lean`](../lean/SamuelAlexanderResearch/SpeciesRootCriterion.lean) proves the root-cone criterion from the merged [`SPECIESLIKE-GENERALIZATION.md`](SPECIESLIKE-GENERALIZATION.md). The graph is an arbitrary relation `E : Nat → Nat → Prop`. All four species predicates are reused from `SpeciesBridge`, with strict nonempty-path descendants and ambient-graph convexity and reflection.
 
-The central conclusion is exact: assuming every vertex lies in a root cone, **every root cone has IAP if and only if the inclusion-maximal IAP + convexity + common-ancestor + reflection subsets are exactly all root cones**. Root coverage is also derived from the hypothesis that each edge `u → v` has `u < v`.
+The central conclusion is exact: assuming every vertex lies in a root cone, **every root cone has IAP if and only if the inclusion-maximal IAP + convexity + common-ancestor + reflection subsets are exactly all root cones**. Root coverage is also derived from the hypothesis that each edge $u \to v$ has $u < v$.
 
 ## Exact definitions and semantic bridges
 
-`Cone E r` contains `r` and every strict descendant of `r`. `RootCovered E` says that every vertex belongs to such a cone whose initial vertex has no incoming edges. `RootConesIAP E` requires IAP for every root cone.
+`Cone E r` contains $r$ and every strict descendant of $r$. `RootCovered E` says that every vertex belongs to such a cone whose initial vertex has no incoming edges. `RootConesIAP E` requires IAP for every root cone.
 
-`FourAxioms E S` is the conjunction `IAP E S ∧ Convex E S ∧ CommonAncestor E S ∧ Reflection E S`. `MaximalFourAxioms E S` adds inclusion-maximality among subsets satisfying exactly this conjunction. `RootConeClassification E` says that a subset is maximal in this class if and only if it equals `Cone E r` for a root `r`.
+`FourAxioms E S` is the conjunction `IAP E S ∧ Convex E S ∧ CommonAncestor E S ∧ Reflection E S`. `MaximalFourAxioms E S` adds inclusion-maximality among subsets satisfying exactly this conjunction. `RootConeClassification E` says that a subset is maximal in this class if and only if it equals `Cone E r` for a root $r$.
 
-The new definitions are parameterized by `E`, whereas the existing `SpeciesCones` module specializes to `PsEdge`. The checked bridges `cone_ps_eq`, `fourAxioms_ps_iff`, and `maximalFourAxioms_ps_iff` are all definitional equalities or equivalences proved by reflexivity. The existing exact two-cone theorem and its definitions remain unchanged.
+The new definitions are parameterized by $E$, whereas the existing `SpeciesCones` module specializes to `PsEdge`. The checked bridges `cone_ps_eq`, `fourAxioms_ps_iff`, and `maximalFourAxioms_ps_iff` are all definitional equalities or equivalences proved by reflexivity. The existing exact two-cone theorem and its definitions remain unchanged.
 
 ## Checked statements
 
@@ -18,11 +18,11 @@ All names below are in namespace `SpeciesRootCriterion`.
 
 | Endpoint | Hypotheses and conclusion |
 | --- | --- |
-| `rootCovered_of_strict_birth_order` | From `∀ u v, E u v → u < v`, proves `RootCovered E`. |
+| `rootCovered_of_strict_birth_order` | From $\forall  u v, E u v \to u < v$, proves `RootCovered E`. |
 | `cone_weaklyConnected` | Every vertex cone is weakly connected in its induced subgraph. No root premise is needed. |
 | `cone_convex`, `cone_commonAncestor`, `cone_reflection` | Every vertex cone satisfies these three predicates. |
 | `cone_specieslike` | A vertex cone with IAP is specieslike. |
-| `root_cone_subset_iff_root_eq` | The cone of a root `r` is contained in another vertex's cone iff that vertex equals `r`. In particular, distinct root cones are incomparable by inclusion. |
+| `root_cone_subset_iff_root_eq` | The cone of a root $r$ is contained in another vertex's cone iff that vertex equals $r$. In particular, distinct root cones are incomparable by inclusion. |
 | `root_cone_maximal` | A root cone with IAP is a maximal four-property set. This direction needs no coverage assumption. |
 | `maximalFourAxioms_iff_root_cone` | Under root coverage and IAP for all root cones, the exact maximal family is all root cones. |
 | `root_cone_criterion` | Under root coverage, `RootConesIAP E ↔ RootConeClassification E`. |

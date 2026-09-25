@@ -7,9 +7,9 @@ advance exactly one layer, every root in layer zero, and a vertex at every
 layer depth. Its target word is arbitrary, with no periodicity condition.
 
 Backward parent choices build a correctly ordered finite matching path from
-layer zero to any vertex in layer `n`. Layer-zero vertices are roots, so all
+layer zero to any vertex in layer $n$. Layer-zero vertices are roots, so all
 these paths start in one finite set. Their endpoints cannot remain bounded
-in birth order because a path of `n` strict edges ends at index at least `n`.
+in birth order because a path of $n$ strict edges ends at index at least $n$.
 The internally proved finite-branching argument then constructs an infinite
 matching path.
 

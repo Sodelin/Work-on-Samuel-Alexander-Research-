@@ -30,10 +30,10 @@ theorem PositiveUnavoidability.eventuallyPeriodic_realized
     BinaryPopulation.Realizes E s
 ```
 
-Here eventual periodicity means that there exist `start` and `p>0` with
-`s(k+p)=s(k)` for every `k>=start`. Realization means the existence of an
+Here eventual periodicity means that there exist `start` and $p>0$ with
+$s(k+p)=s(k)$ for every $k\ge\operatorname{start}$. Realization means the existence of an
 actual function `path : Nat → Nat` with
-`E (path k) (path (k+1)) (s k)` for every `k`, beginning at target index zero.
+`E (path k) (path (k+1)) (s k)` for every $k$, beginning at target index zero.
 No start vertex, family of populated layers, matching path, compactness
 principle, or positive unavoidability theorem is an additional premise.
 
@@ -66,8 +66,8 @@ construction. Its positive implication is now supplied by
 
 ## Proof components and orientation
 
-The internal `FinitePath E s k n u v` predicate describes a genuine length-`n`
-edge path from `u` to `v`, spelling target indices `k` through `k+n-1`.
+The internal `FinitePath E s k n u v` predicate describes a genuine length-$n$
+edge path from $u$ to $v$, spelling target indices $k$ through $k+n-1$.
 Concatenation, final-edge extension, strict endpoint growth, and shifting by
 a period are proved for this predicate.
 

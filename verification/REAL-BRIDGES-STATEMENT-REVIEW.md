@@ -24,8 +24,8 @@ The limits below should remain attached to the theorem descriptions.
 
 | Field | Mathematical premise |
 |---|---|
-| `infinite` | No finite list exhausts the arbitrary vertex type `V`. |
-| `sublevels` | For every real `r`, only finitely many vertices have birthdate at most `r`. |
+| `infinite` | No finite list exhausts the arbitrary vertex type $V$. |
+| `sublevels` | For every real $r$, only finitely many vertices have birthdate at most $r$. |
 | `chronological` | Every directed edge strictly increases the real birthdate. |
 | `unique` | An ordered pair of vertices cannot carry two different Boolean labels. |
 | `roots` | There are finitely many parentless vertices. |
@@ -52,8 +52,8 @@ that member, and choose a least birthdate in this finite set. Linearity makes
 it least in the original set. Repeatedly choose a least unused vertex.
 
 Freshness proves injectivity, and the least-choice property proves
-nondecreasing dates. For surjectivity, suppose a vertex `x` is never chosen.
-Every chosen vertex then has birthdate at most that of `x`. More distinct
+nondecreasing dates. For surjectivity, suppose a vertex $x$ is never chosen.
+Every chosen vertex then has birthdate at most that of $x$. More distinct
 choices than the finite sublevel's covering-list length give a contradiction.
 Choice resolves ties; no computable enumeration is claimed.
 
@@ -63,30 +63,30 @@ Surjectivity also transfers incoming parents. These arguments supply every
 field required by `BinaryNatPopulation p.reindexed`.
 
 `RealBridges.eventuallyPeriodic_realized` invokes the proved positive natural
-population theorem and maps the resulting infinite path back to `V`.
+population theorem and maps the resulting infinite path back to $V$.
 Its assumptions are just the real population and eventual periodicity of the
 given binary word. The positive theorem is not an input premise.
 
 `finite_real_sublevels_of_strict` is also sound: the non-strict sublevel at
-`r` lies inside the strict sublevel at `r+1`.
+$r$ lies inside the strict sublevel at $r+1$.
 
 ## Real-valued sharp coefficients
 
 The original upper endpoint converts the checked natural inequality to
-`ell <= (8/3)*v - 1/3` over the reals. Natural subtraction is removed using
+$\ell\le\frac{8}{3}v-\frac{1}{3}$ over the reals. Natural subtraction is removed using
 the positive-start hypothesis before casting. Its optimality endpoint uses
-the attained dyadic family and the positive real gap `8-3*c`.
+the attained dyadic family and the positive real gap $8-3\cdot c$.
 
 The generic helper `coefficient_from_late_witnesses` has an explicit premise
 that arbitrarily large starts have actual witnesses with
-`8*v <= 3*ell+B`. That is a legitimate sufficient criterion, not an
+$8\cdot v \le 3\cdot \ell+B$. That is a legitimate sufficient criterion, not an
 unconditional theorem. The concrete finite-edit and phase endpoints derive
 this premise internally from their proved path families. They do not ask
 the caller to supply the desired optimality claim.
 
-For any real `c < 8/3` and any real additive constant `C`, choose a natural
-threshold above `(3*C+B)/(8-3*c)`. A witness beyond it forces
-`c*v+C < ell`. Positivity of the gap, rather than a sign assumption on `c`,
+For any real $c<\frac{8}{3}$ and any real additive constant $C$, choose a natural
+threshold above $\frac{3C+B}{8-3c}$. A witness beyond it forces
+$c\cdot v+C < \ell$. Positivity of the gap, rather than a sign assumption on $c$,
 makes this valid for negative coefficients too.
 
 The finite-edit maximum predicate requires an actual `MatchesPrefix`
@@ -95,9 +95,9 @@ the finite upper bound, with the length-zero path supplying nonemptiness.
 The phase maximum is obtained the same way. These are maxima of actual
 matching prefixes, not maxima of an unrelated auxiliary trajectory.
 
-The real additive terms are `(8*m-1)/3` and `(5*a-1)/3`. In the statements
+The real additive terms are $\frac{8m-1}{3}$ and $\frac{5a-1}{3}$. In the statements
 these are real arithmetic, with the natural parameters coerced to reals;
-at `m=0` or `a=0` they give `-1/3`. They are not truncated natural
+at $m=0$ or $a=0$ they give $-\frac{1}{3}$. They are not truncated natural
 subtractions. Positive starts ensure the underlying integer bounds are
 cast soundly.
 
@@ -111,7 +111,7 @@ original graph fixed.
 - At the reviewed source state, the real population endpoint proves the
   positive binary theorem. It does not itself package a real-birthdate
   classification equivalence or an arbitrary-finite-alphabet theorem.
-- The `8/3` inequalities measure matching length against natural vertex
+- The $\frac{8}{3}$ inequalities measure matching length against natural vertex
   indices, cast to real numbers. They are not bounds against the population's
   physical real birthdates. No quantitative comparison between arbitrary
   timestamps and enumeration indices is proved.
@@ -119,11 +119,11 @@ original graph fixed.
   explicit witness endpoints. This file does not contain a separate theorem
   stated using Mathlib's `Filter.limsup`. The informal limsup interpretation
   requires the supplied upper and arbitrarily late lower witnesses.
-- `finite_edit_transport` currently exposes displacement at most `m`.
-  Its construction uses `min(m,ell)`, but the stronger bound written in our
+- `finite_edit_transport` currently exposes displacement at most $m$.
+  Its construction uses $\min(m,\ell)$, but the stronger bound written in our
   audit packet is not a separately exposed conclusion of that endpoint.
 - The normalized weighted-mix inclusion is a static module identity:
-  choose the same common point from both sets and use `a+b=1`.
+  choose the same common point from both sets and use $a+b=1$.
   Negative weights are allowed by this valid inclusion. When describing
   a convex mixture, add nonnegativity to that interpretation. Instantiating
   the sets as real convex hulls adds no dynamics or empirical claim.
@@ -172,7 +172,7 @@ separate verification actions.
 
 `binaryRealOfNat` takes an actual `BinaryNatPopulation E` and supplies every
 field of `BinaryRealPopulation Nat`. Its birthdate is the natural index cast
-to the reals. For any real cutoff `r`, an integer `n > r` gives a covering
+to the reals. For any real cutoff $r$, an integer $n > r$ gives a covering
 list `List.range n`; thus finite real sublevels are proved, including negative
 cutoffs. Chronological order follows by casting the existing strict natural
 edge order. Infinitude, uniqueness of labels, finite roots, finite children,
@@ -197,11 +197,11 @@ silently described as a theorem quantified over every universe at once.
 
 `RealLabelledPopulation birth k d` specializes the arbitrary ordered-time
 presentation to actual real dates. Its edge is `V -> V -> Option Nat`, with
-valid labels restricted to values below `k`; it consequently represents
-simple functional labels over a `k`-element alphabet. Roothood means all
+valid labels restricted to values below $k$; it consequently represents
+simple functional labels over a $k$-element alphabet. Roothood means all
 incoming edge values are `none`.
 
-The uniform child cap is supplied by covering lists of length at most `d`.
+The uniform child cap is supplied by covering lists of length at most $d$.
 This is a local maximum-child-count premise, not an assumed global counting
 inequality. Lists may have duplicates or extra vertices, which cannot make
 their length smaller than the number of distinct covered children. The
@@ -212,15 +212,15 @@ is bounded by the transferred covering list.
 indicator, finite support bounds and actual adjacency counts. The three real
 wrappers then provide:
 
-- Impossibility when `d < k`.
-- An injective family of `k` actual parentless vertices.
-- A lower bound `k <= roots.length` for every finite list covering all roots.
+- Impossibility when $d < k$.
+- An injective family of $k$ actual parentless vertices.
+- A lower bound $k\le\operatorname{length}(\mathrm{roots})$ for every finite list covering all roots.
 
 The injective-family result directly states distinctness; it is stronger than
 relying only on a list-length conclusion that might contain duplicates.
 The wrappers introduce no new proof premise beyond the population and the
 explicit inequality or covering list in their respective statements.
-For `k=0`, a valid edge is impossible, making every vertex a root; infinitude
+For $k=0$, a valid edge is impossible, making every vertex a root; infinitude
 and finite roots therefore make the population assumptions inconsistent.
 No nonempty-alphabet positive classification is being smuggled into this case.
 
@@ -236,6 +236,6 @@ were `E759C8494D27CFC55656F6E902FF094FBD6DD1E33246C8E84D5689EB8A1A3170`
 for `GeneralRootObstruction.lean` and
 `5545BC9FB9AE97F48CD1075A7DF2E12087FE53AAFD35F5B141CDEA55540AD627`
 for `PopulationCounting.lean`. The labels are single-valued on each ordered
-vertex pair, but multiple parents may have the same label: exactly `k`
+vertex pair, but multiple parents may have the same label: exactly $k$
 total parents is not an assumption. No connectivity or positive minimum
 time gap is assumed.

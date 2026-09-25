@@ -14,14 +14,14 @@ dependency. No novelty or human peer-review claim is made.
 
 ## Exact graph and theorem
 
-The binary edge-labelled construction `P_s` has the same underlying graph for
-every target word `s`. Its vertices are `Nat`, with
+The binary edge-labelled construction $P_{s}$ has the same underlying graph for
+every target word $s$. Its vertices are `Nat`, with
 
-```text
-PsEdge u w  :=  2 <= w and (w = u + 1 or w = u + 2).
-```
+$$
+\operatorname{PsEdge}(u,w)\iff 2\le w\land(w=u+1\lor w=u+2).
+$$
 
-There is no edge `0 -> 1`. Labels do not enter the species predicates, so the
+There is no edge $0 \to 1$. Labels do not enter the species predicates, so the
 module works directly with this explicit graph rather than assuming that some
 unspecified population is a cluster. The principal theorem is:
 
@@ -59,20 +59,20 @@ of this finite-cover property, not an assumed cardinality predicate.
 
 | Lean result | Mathematical content |
 | --- | --- |
-| `positive_reaches` | Every `u >= 1` reaches every `w > u`. |
-| `zero_reaches` | Vertex `0` reaches every `w >= 2`. |
-| `psDescendant_iff` | Strict reachability is exactly `u < w` and `2 <= w`. |
-| `psNonDescendant_iff` | A non-descendant `w` is exactly one with `w <= u` or `w <= 1`. |
-| `psNonDescendant_bound`, `psNonDescendants_finite` | Every non-descendant of `u` is below `u + 2`, giving an explicit finite cover. |
-| `psWhole_weaklyConnected` | Any two vertices connect through the common descendant `u + v + 2`. |
+| `positive_reaches` | Every $u \ge 1$ reaches every $w > u$. |
+| `zero_reaches` | Vertex $0$ reaches every $w \ge 2$. |
+| `psDescendant_iff` | Strict reachability is exactly $u < w$ and $2 \le w$. |
+| `psNonDescendant_iff` | A non-descendant $w$ is exactly one with $w \le u$ or $w \le 1$. |
+| `psNonDescendant_bound`, `psNonDescendants_finite` | Every non-descendant of $u$ is below $u + 2$, giving an explicit finite cover. |
+| `psWhole_weaklyConnected` | Any two vertices connect through the common descendant $u + v + 2$. |
 | `psSubset_iap` | Every subset of this graph has IAP, since each global non-descendant set is finite. |
 | `psSubset_specieslike_iff` | In this graph, a subset is specieslike exactly when it is weakly connected and convex. |
 | `whole_convex`, `whole_reflection` | The whole vertex set is convex and satisfies REF for any ambient graph on `Nat`. |
 | `psWhole_specieslike`, `psWhole_maximalSpecieslike` | The whole graph is a specieslike cluster and is inclusion-maximal in itself. |
-| `psRoot_iff` | A vertex has no parents exactly when it is `0` or `1`. |
-| `psWhole_not_commonAncestor` | The two roots rule out CA. A proposed common ancestor equal to `0` cannot reach `1`; any other candidate cannot reach `0`. |
+| `psRoot_iff` | A vertex has no parents exactly when it is $0$ or $1$. |
+| `psWhole_not_commonAncestor` | The two roots rule out CA. A proposed common ancestor equal to $0$ cannot reach $1$; any other candidate cannot reach $0$. |
 | `psDescendants_infinite` | Every vertex has infinitely many descendants. |
-| `psChildren_finite` | All children of `v` belong to `[v + 1, v + 2]`. |
+| `psChildren_finite` | All children of $v$ belong to $[v + 1, v + 2]$. |
 | `psNaturalDateBiosphere` | Parent dates increase; natural-date prefixes and each child set are finite; the vertex set is infinite. |
 | `psEvery_vertex_in_maximal_cluster` | Each vertex of this graph belongs to a maximal specieslike cluster satisfying REF. |
 
@@ -83,9 +83,9 @@ alternative-assumptions question about arbitrary ambient biospheres.
 
 [Alexander's Definition 1](https://arxiv.org/html/2602.05274v1#S2) uses real
 birthdates and finite populations before every real bound. This module uses
-`t(v) = v` with natural-number date bounds. To specialize the same construction
+$t(v) = v$ with natural-number date bounds. To specialize the same construction
 to real birthdates, the remaining standard mathematical step is: for each real
-`r`, choose a natural `N > r`; then the vertices with real birthdate below `r`
+$r$, choose a natural $N > r$; then the vertices with real birthdate below $r$
 are contained in `List.range N`. The strict-order-preserving embedding of `Nat`
 into `Real` supplies the parent-date condition. That real embedding and
 Archimedean step are **not formalized here**. `Std` is the only dependency.
@@ -101,17 +101,17 @@ there is no assumed identification between two separate witness models.
 vertex pairs, the natural-date biosphere package, finitely many roots, and an
 incoming edge of each Bool label at every non-root. The module proves these
 properties for `Edge s`. It additionally checks that each incoming label has
-exactly one parent, the two parents are distinct, the roots are exactly `0`
-and `1`, vertex `0` has only child `2`, and every positive vertex has exactly
+exactly one parent, the two parents are distinct, the roots are exactly $0$
+and $1$, vertex $0$ has only child $2$, and every positive vertex has exactly
 the two indicated children.
 
 The imported local module
 [`BinaryAvoidance.lean`](../lean/SamuelAlexanderResearch/BinaryAvoidance.lean)
 is a fresh Std-only formalization of the binary argument in
 [the classification manuscript, Section 2](https://github.com/avg-netizen/biological-unavoidability/blob/main/paper.md).
-A matching path has `path(k) >= 2k`; the natural offset `path(k) - 2k` is
-nonincreasing and stabilizes. A stable odd offset gives period `e + 1`, while a
-stable even offset gives period `2(e + 1)`. Starts are unrestricted, so the
+A matching path has $\operatorname{path}(k)\ge2k$; the natural offset `path(k) - 2k` is
+nonincreasing and stabilizes. A stable odd offset gives period $e + 1$, while a
+stable even offset gives period $2(e + 1)$. Starts are unrestricted, so the
 conclusion covers paths from every vertex. Independent inspection of this
 local proof found no discrepancy with the manuscript's argument; this is
 separate AI review, not human review.
@@ -137,7 +137,7 @@ The real-date boundary described above still applies.
 ## Precise conditional classification corollary
 
 `BinaryPopulation.SpecieslikeUnavoidable s` means that every
-`BinaryNatPopulation` whose whole graph is specieslike realizes `s`.
+`BinaryNatPopulation` whose whole graph is specieslike realizes $s$.
 The theorem
 `BinaryPopulation.specieslike_unavoidable_implies_eventuallyPeriodic` proves
 unconditionally that this property forces eventual periodicity, by applying
@@ -173,13 +173,12 @@ convexity, CA, and REF inside the fixed ambient `PsEdge` graph.
 `MaximalFourAxioms S` is inclusion-maximality among sets with those four
 properties.
 
-For `Cone r = {r} union {strict descendants of r}`, the module proves all four
+For $\operatorname{Cone}(r)=\{r\}\cup\{\text{strict descendants of }r\}$, the module proves all four
 properties and weak connectivity. In particular:
 
-```text
-C0 = Cone 0 = {0} union {v | 2 <= v}
-C1 = Cone 1 = {v | 1 <= v}
-```
+$$
+\begin{aligned}C_0&=\operatorname{Cone}(0)=\{0\}\cup\{v:2\le v\},\\C_1&=\operatorname{Cone}(1)=\{v:1\le v\}.\end{aligned}
+$$
 
 `SpeciesCones.c0_iff` and `SpeciesCones.c1_iff` verify these descriptions. The
 main endpoint is the exact classification
@@ -190,9 +189,9 @@ SpeciesCones.maximalFourAxioms_iff (S : SpeciesBridge.NatSet) :
 ```
 
 The key lemma `commonAncestor_subset_root_cone` uses CA alone: a common
-ancestor equal to `0` puts the entire set inside `C0`; a positive common
-ancestor puts it inside `C1`. Both root cones meet the four predicates. A
-proper extension of `C0` or `C1` satisfying CA cannot move into the other cone,
+ancestor equal to $0$ puts the entire set inside $C0$; a positive common
+ancestor puts it inside $C1$. Both root cones meet the four predicates. A
+proper extension of $C0$ or $C1$ satisfying CA cannot move into the other cone,
 because it would have to retain its original root. Maximality therefore forces
 one of the two displayed sets.
 
@@ -200,12 +199,12 @@ one of the two displayed sets.
 `SpeciesCones.maximalFourAxioms_specieslike` proves the classified maximal
 sets are specieslike clusters, and
 `SpeciesCones.every_vertex_in_maximal_four_cluster` gives a containing maximal
-constrained cluster for every vertex. Vertex `0` belongs only to `C0`, vertex
-`1` only to `C1`, and vertices from `2` onward belong to both, by the explicit
+constrained cluster for every vertex. Vertex $0$ belongs only to $C0$, vertex
+$1$ only to $C1$, and vertices from $2$ onward belong to both, by the explicit
 membership characterizations. This exact classification remains specific to
 the binary graph; it does not answer the general arbitrary-biosphere problem.
 
-The related root-cone phenomenon already appears in Alexander's [2026 Example 14(1)](https://arxiv.org/html/2602.05274v1#S6), for a different generational graph with `k` initial roots. This two-cone proof is a checked specialization to the avoiding construction, not a novelty claim for the general phenomenon.
+The related root-cone phenomenon already appears in Alexander's [2026 Example 14(1)](https://arxiv.org/html/2602.05274v1#S6), for a different generational graph with $k$ initial roots. This two-cone proof is a checked specialization to the avoiding construction, not a novelty claim for the general phenomenon.
 
 ## Reproduction and axiom audit
 
@@ -221,7 +220,7 @@ $env:ELAN_HOME = 'C:\Users\Owner\.elan'
 ```
 
 Run from the repository root. All displayed commands were verified with exit
-code `0`. The dependency build makes the local imports available to the two
+code $0$. The dependency build makes the local imports available to the two
 composition checks. The three modules contain 21 `#print axioms` commands,
 covering the principal graph, population, avoidance, conditional classification,
 and two-cone endpoints. Their union is exactly the standard Lean axioms

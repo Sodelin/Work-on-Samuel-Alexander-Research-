@@ -2,11 +2,11 @@
 
 The checked module is [`SpeciesGlobalIAP.lean`](../lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean). It imports only the existing Std-based `SpeciesBridge` module. Its generic theorems quantify over an arbitrary directed edge relation `E : Nat → Nat → Prop`; they do not assume acyclicity, chronological edges, finite roots, or finite children. The ambient vertex set is all natural numbers and is therefore infinite.
 
-`Descendant E u v` retains the existing strict convention: a nonempty directed path from `u` to `v`. With a cycle, a vertex can be its own strict descendant. All generic proofs in this module handle that case. Finiteness is the existing finite-list-cover predicate `FiniteSupport`, already proved equivalent to boundedness for subsets of `Nat` in `SpeciesBridge`.
+`Descendant E u v` retains the existing strict convention: a nonempty directed path from $u$ to $v$. With a cycle, a vertex can be its own strict descendant. All generic proofs in this module handle that case. Finiteness is the existing finite-list-cover predicate `FiniteSupport`, already proved equivalent to boundedness for subsets of `Nat` in `SpeciesBridge`.
 
 ## Definitions and endpoints
 
-`FiniteOrCofiniteDescendants E` says that, for every vertex `v`, its ambient descendant set is finite or its ambient non-descendant set is finite. `CofiniteDescendants E` requires the latter for every vertex.
+`FiniteOrCofiniteDescendants E` says that, for every vertex $v$, its ambient descendant set is finite or its ambient non-descendant set is finite. `CofiniteDescendants E` requires the latter for every vertex.
 
 | Checked endpoint in namespace `SpeciesGlobalIAP` | Exact content |
 | --- | --- |
@@ -23,9 +23,9 @@ The checked module is [`SpeciesGlobalIAP.lean`](../lean/SamuelAlexanderResearch/
 
 The new definitions of ancestral closure and inspecies are explicit:
 
-- `AncestrallyClosed E S`: if `v` belongs to `S` and `u` is an ancestor of `v`, then `u` belongs to `S`.
-- `InfinitaryGenus E S`: `S` is infinite and ancestrally closed.
-- `Inspecies E S`: `S` is an infinitary genus and every infinitary genus contained in `S` contains all of `S`. This is inclusion-minimality among infinite ancestrally closed subsets, with no additional maximality, connectivity, or common-ancestor premise.
+- `AncestrallyClosed E S`: if $v$ belongs to $S$ and $u$ is an ancestor of $v$, then $u$ belongs to $S$.
+- `InfinitaryGenus E S`: $S$ is infinite and ancestrally closed.
+- `Inspecies E S`: $S$ is an infinitary genus and every infinitary genus contained in $S$ contains all of $S$. This is inclusion-minimality among infinite ancestrally closed subsets, with no additional maximality, connectivity, or common-ancestor premise.
 
 The species predicates IAP and REF come from [Alexander, arXiv:2602.05274v1](https://arxiv.org/html/2602.05274v1), Definitions 2 and 9. The infinitary-genus and inspecies definitions follow [Alexander, *Infinite graphs in systematic biology, with an application to the species problem*](https://arxiv.org/html/1201.2869), Definitions 3 and 4. Proposition 6 of that earlier work establishes the related cofinite-descendant property for members of an inspecies. These formalizations are direct deductions and whole-graph specializations of the definitions, with no claim of priority. The working prose specification is the independently reviewed `SPECIESLIKE-GENERALIZATION.md` in the companion research repository.
 
@@ -33,7 +33,7 @@ The species predicates IAP and REF come from [Alexander, arXiv:2602.05274v1](htt
 
 For the REF converse, suppose a vertex has both infinitely many descendants and infinitely many non-descendants. The set consisting of that vertex together with its non-descendants is infinite. Its internal descendant set from that vertex is contained in a singleton, even when there are cycles. Consequently this set violates REF. The forward implication partitions any infinite subset into its internal descendant part and its part contained in the finite ambient non-descendant set.
 
-For the inspecies converse, if a vertex `v` has infinitely many non-descendants, removing both `v` and all descendants of `v` leaves a proper infinite ancestrally closed subset. Excluding `v` explicitly makes this argument valid even for vertices with no descendants. Conversely, any infinite ancestral-closed subset must contain every vertex whose descendant set is cofinite: otherwise that entire subset would lie in a finite non-descendant set.
+For the inspecies converse, if a vertex $v$ has infinitely many non-descendants, removing both $v$ and all descendants of $v$ leaves a proper infinite ancestrally closed subset. Excluding $v$ explicitly makes this argument valid even for vertices with no descendants. Conversely, any infinite ancestral-closed subset must contain every vertex whose descendant set is cofinite: otherwise that entire subset would lie in a finite non-descendant set.
 
 For `PsEdge`, the existing theorem `psNonDescendants_finite` supplies cofinite descendants at every vertex, and `psDescendants_infinite` supplies their infinitude. The new result that the whole set is an inspecies is compatible with the existing failure of the common-ancestor property: roots 0 and 1 prevent any one vertex from being an ancestor of every other vertex, although every vertex is an ancestor of all but finitely many vertices.
 

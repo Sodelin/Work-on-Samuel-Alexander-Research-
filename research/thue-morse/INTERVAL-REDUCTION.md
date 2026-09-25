@@ -8,92 +8,105 @@ sharp claims, with the Thue-Morse-specific Lean results in
 
 ## Population and statement
 
-Let `color : N -> {0,1}` be any binary vertex coloring and let `b_0,b_1,...` be any
-binary target word. For every `w>=2`, the incoming edges are `w-1 -> w` with
-label `color(w)`, and `w-2 -> w` with label `1-color(w)`. There is no edge `0 -> 1`.
-Start at an integer `v>=1`; the first matched edge has target label `b_0`.
+Let $\operatorname{color}:\mathbb{N}\to\{0,1\}$ be any binary vertex coloring and let $b_0,b_1,\ldots$ be any
+binary target word. For every $w\ge 2$, the incoming edges are $w-1 \to w$ with
+label $\operatorname{color}(w)$, and $w-2 \to w$ with label $1-\operatorname{color}(w)$. There is no edge $0 \to 1$.
+Start at an integer $v\ge 1$; the first matched edge has target label $b_0$.
 
-For each bit `b`, define the deterministic map
+For each bit $b$, define the deterministic map
 
-    f_b(x) = x+1, if color(x+1)=b;
-             x+2, otherwise.
+$$
+f_b(x)=\begin{cases}x+1,&\operatorname{color}(x+1)=b,\\x+2,&\text{otherwise}.\end{cases}
+$$
 
-Define `A_0=v`, `C_0=v+1`, and
+Define $A_0=v$, $C_0=v+1$, and
 
-    A_(k+1) = f_(b_k)(A_k),
-    C_(k+1) = f_(b_k)(C_k).
+$$
+\begin{aligned}
+A_{k+1}&=f_{b_k}(A_k),\\
+C_{k+1}&=f_{b_k}(C_k).
+\end{aligned}
+$$
 
-**Theorem.** For every `k>=0`, the complete set of endpoints of matching paths
-of length `k` from `v` is the half-open integer interval `[A_k,C_k)`. This
-includes the empty case `A_k=C_k`. The maps `f_b` are nondecreasing, so
-`A_k<=C_k` for all `k`; equality persists once it occurs.
+**Theorem.** For every $k\ge 0$, the complete set of endpoints of matching paths
+of length $k$ from $v$ is the half-open integer interval $[A_k,C_k)$. This
+includes the empty case $A_k=C_k$. The maps $f_b$ are nondecreasing, so
+$A_k\le C_k$ for all $k$; equality persists once it occurs.
 
-Consequently, if `L(v)` is finite, its exact characterization is
+Consequently, if $L(v)$ is finite, its exact characterization is
 
-    A_(L(v)) < C_(L(v)),
-    A_(L(v)+1) = C_(L(v)+1).
+$$
+\begin{aligned}
+A_{L(v)}&<C_{L(v)},\\
+A_{L(v)+1}&=C_{L(v)+1}.
+\end{aligned}
+$$
 
-Equivalently, `L(v)` is one less than the first coalescence index. The empty
-frontier at depth `k+1` means that length `k` is the maximum; this shift is
-essential, for example `L(1)=0` and `L(2)=5` in the Thue-Morse instance.
+Equivalently, $L(v)$ is one less than the first coalescence index. The empty
+frontier at depth $k+1$ means that length $k$ is the maximum; this shift is
+essential, for example $L(1)=0$ and $L(2)=5$ in the Thue-Morse instance.
 
 ## Proof
 
-First, `x+1 <= f_b(x) <= x+2`. If `x<y`, then
-`f_b(x)<=x+2<=y+1<=f_b(y)`; equality of inputs is immediate. Thus `f_b` is
+First, $x+1 \le f_b(x) \le x+2$. If $x<y$, then
+$f_b(x)\le x+2\le y+1\le f_b(y)$; equality of inputs is immediate. Thus $f_b$ is
 nondecreasing.
 
-Suppose the current frontier is `[a,c)`, where `1<=a<=c`. If `a=c`, its
-successor frontier is empty and `[f_b(a),f_b(c))` is empty as well. Assume
-`a<c`. A candidate successor lies between `a+1` and `c+1`, inclusively.
-Every integer `w` with `a+2<=w<=c` has both predecessors `w-1` and `w-2` in
+Suppose the current frontier is $[a,c)$, where $1\le a\le c$. If $a=c$, its
+successor frontier is empty and $[f_b(a),f_b(c))$ is empty as well. Assume
+$a<c$. A candidate successor lies between $a+1$ and $c+1$, inclusively.
+Every integer $w$ with $a+2\le w\le c$ has both predecessors $w-1$ and $w-2$ in
 the frontier. Their two incoming labels are complementary, so exactly one
-matches `b`; hence every such interior successor is reachable. At the lower
-boundary, `a+1` has only predecessor `a` in the frontier and is included
-exactly when `color(a+1)=b`. At the upper boundary, `c+1` has only predecessor
-`c-1` in the frontier and is included exactly when `color(c+1)!=b`.
+matches $b$; hence every such interior successor is reachable. At the lower
+boundary, $a+1$ has only predecessor $a$ in the frontier and is included
+exactly when $\operatorname{color}(a+1)=b$. At the upper boundary, $c+1$ has only predecessor
+$c-1$ in the frontier and is included exactly when $\operatorname{color}(c+1)\ne b$.
 
 These conditions say precisely that the new frontier is
-`[f_b(a),f_b(c))`. They also cover a singleton input: the interior range is
+$[f_b(a),f_b(c))$. They also cover a singleton input: the interior range is
 empty, and the two boundary candidates determine the result. Because
-`a>=1`, every candidate successor is at least 2; the omitted `0 -> 1` edge
-is respected. Induction from the singleton `[v,v+1)` proves the theorem.
+$a\ge 1$, every candidate successor is at least 2; the omitted $0 \to 1$ edge
+is respected. Induction from the singleton $[v,v+1)$ proves the theorem.
 Once the boundary values coincide, applying the same next map keeps them
 equal, proving persistence of extinction. QED.
 
 ## Specialization and an exact dyadic recurrence
 
-For the research challenge set `color(n)=b_n=t(n)`, where
-`t(n)=popcount(n) mod 2`. The elementary identities
+For the research challenge set $\operatorname{color}(n)=b_n=t(n)$, where
+$t(n)=\operatorname{popcount}(n) \bmod 2$. The elementary identities
 
-    t(2m)=t(m),  t(2m+1)=1-t(m)
+$$
+t(2m)=t(m),\qquad t(2m+1)=1-t(m)
+$$
 
 follow directly from appending a binary digit. Thus consecutive target bits
-at indices `2j,2j+1` are `b,1-b`, with `b=t(j)`. Put
-`H_b=f_(1-b) o f_b`. For all `m>=0`:
+at indices $2j,2j+1$ are $b,1-b$, with $b=t(j)$. Put
+$H_b=f_{1-b}\circ f_b$. For all $m\ge 0$:
 
-| Input | Condition | Output of `H_b` |
+| Input | Condition | Output of $H_b$ |
 |---|---|---|
-| `2m` | `t(m+1)=b` | `2m+3` |
-| `2m` | `t(m+1)!=b` and `t(m)=b` | `2m+4` |
-| `2m` | `t(m+1)!=b` and `t(m)!=b` | `2m+2` |
-| `2m+1` | `t(m+1)=b` | `2m+3` |
-| `2m+1` | `t(m+1)!=b` and `t(m+2)=b` | `2m+5` |
-| `2m+1` | `t(m+1)!=b` and `t(m+2)!=b` | `2m+4` |
+| $2m$ | $t(m+1)=b$ | $2m+3$ |
+| $2m$ | $t(m+1)\ne b$ and $t(m)=b$ | $2m+4$ |
+| $2m$ | $t(m+1)\ne b$ and $t(m)\ne b$ | $2m+2$ |
+| $2m+1$ | $t(m+1)=b$ | $2m+3$ |
+| $2m+1$ | $t(m+1)\ne b$ and $t(m+2)=b$ | $2m+5$ |
+| $2m+1$ | $t(m+1)\ne b$ and $t(m+2)\ne b$ | $2m+4$ |
 
 Here is a direct verification, independent of the diagnostic computation.
-For even input, if `t(m)!=b`, the first map sends `2m` to `2m+1`; the second
-map sends this to `2m+2` when `t(m+1)!=b`, and to `2m+3` otherwise. If
-`t(m)=b`, the first map sends `2m` to `2m+2`; the second sends this to
-`2m+3` when `t(m+1)=b`, and to `2m+4` otherwise. These are exactly the first
-three rows. For odd input, when `t(m+1)=b` the two maps successively reach
-`2m+2` and `2m+3`. Otherwise the first reaches `2m+3`, and the second reaches
-`2m+4` when `t(m+2)!=b`, or `2m+5` when `t(m+2)=b`. This proves the last
+For even input, if $t(m)\ne b$, the first map sends $2m$ to $2m+1$; the second
+map sends this to $2m+2$ when $t(m+1)\ne b$, and to $2m+3$ otherwise. If
+$t(m)=b$, the first map sends $2m$ to $2m+2$; the second sends this to
+$2m+3$ when $t(m+1)=b$, and to $2m+4$ otherwise. These are exactly the first
+three rows. For odd input, when $t(m+1)=b$ the two maps successively reach
+$2m+2$ and $2m+3$. Otherwise the first reaches $2m+3$, and the second reaches
+$2m+4$ when $t(m+2)\ne b$, or $2m+5$ when $t(m+2)=b$. This proves the last
 three rows.
 
 Therefore the trajectory at even times can be computed exactly by
 
-    X_(2j+2) = H_(t(j))(X_(2j)).
+$$
+X_{2j+2}=H_{t(j)}(X_{2j}).
+$$
 
 This table is a proved substitution reduction, but does not by itself give
 an induction for the sharp constant: the even and odd cases retain
@@ -101,26 +114,28 @@ different neighboring half-scale bits. The subsequent proof controls
 the meeting time using explicit dyadic blocks of boundary advances.
 In precise terms, the sharp global bound is equivalent to coalescence by
 
-    K(v) = floor((8v-1)/3) + 1,
+$$
+K(v)=\left\lfloor\frac{8v-1}{3}\right\rfloor+1,
+$$
 
-for every `v>=1`. The equality formula requires separation at
-`k=8*2^n-3` and coalescence at `k+1`, starting from `3*2^n-1` and `3*2^n`.
+for every $v\ge 1$. The equality formula requires separation at
+$k=8\cdot 2^n-3$ and coalescence at $k+1$, starting from $3\cdot 2^n-1$ and $3\cdot 2^n$.
 The subsequent [dyadic trajectory proof](NEXT-INVARIANT.md) and
 [`SharpThueMorse.lean`](../../lean/SamuelAlexanderResearch/SharpThueMorse.lean)
-prove these infinite claims and the exact equality set. The full `H(v)`
+prove these infinite claims and the exact equality set. The full $H(v)$
 first-hit formula and real-coefficient optimality now have separate checked endpoints in SharpCorollaries and RealBridges.
 
 ## Lean scope and verification
 
 The independent module is
 `lean/SamuelAlexanderResearch/ThueMorseBound.lean`, importing only `Std`.
-It defines the actual incoming-edge relation with `2<=w`, using inequality
+It defines the actual incoming-edge relation with $2\le w$, using inequality
 of Boolean bits for the complementary label. It proves:
 
 - `interval_step`: exact one-step image of an interval for arbitrary binary
   coloring and target bit.
 - `reachable_iff_interval`: exact frontiers for all lengths, including empty
-  frontiers, from every `v>=1` and arbitrary target word.
+  frontiers, from every $v\ge 1$ and arbitrary target word.
 - `coalescence_persists`: equality of two trajectories at one depth implies
   equality at every later depth.
 - `maximum_length_iff`: maximum matching length is strict separation at that

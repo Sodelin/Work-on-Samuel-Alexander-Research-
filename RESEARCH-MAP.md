@@ -28,7 +28,7 @@ flowchart TD
 |---|---|---|
 | Quantitative avoidance | Sharp phase-zero bound and equality set; exact baseline first hits; real coefficient optimality; finite-edit and phase stability. | Prove or refute the complete digit/valuation formula for every height. |
 | Quantitative aperiodicity | For every function, a constructed aperiodic target has larger actual finite maxima along increasing starts. | Derive useful upper rates from a concrete modulus of nonperiodicity. |
-| Critical degree | Full infinite conservation and triangular minimum crossing width; binary equality rigidity and fixed-gender universality. | General-`k` rigidity and a finite update description of larger-width tails. |
+| Critical degree | Full infinite conservation and triangular minimum crossing width; binary equality rigidity and fixed-gender universality. | General-$k$ rigidity and a finite update description of larger-width tails. |
 | Permanent genders | A productive inspecies core avoids each prescribed aperiodic binary word with cap three. | Decide whether cap two is sufficient or find a target requiring three. |
 | Species interfaces | General finite/cofinite IAP and inspecies criteria, exact root-cone criterion, and consecutive-layer universality. | Productive-core behavior in arbitrary clusters and finite label-boundary repairs. |
 | Observation interfaces | Indexed paths survive erasure but cannot always be recovered; history projection and exact observation/prediction criteria. | Identify specific models whose lineage and observation maps satisfy these interfaces. |

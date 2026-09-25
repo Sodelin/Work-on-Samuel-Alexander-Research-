@@ -8,7 +8,7 @@ verification status. No shared repository, proposal dossier, or Lean source
 was edited to prepare this packet.
 
 The two main findings are concrete. First, a finite change to a Thue–Morse
-target preserves the sharp leading coefficient `8/3`, with an explicit
+target preserves the sharp leading coefficient $\frac{8}{3}$, with an explicit
 additive upper allowance. Second, the three-child productive core actually
 has infinitely many vertices with exactly three children for every aperiodic
 binary target. These statements concern the precise construction below.
@@ -17,29 +17,29 @@ or empirical biological validity.
 
 ## 1. Exact construction and inspected source state
 
-Let `s : N -> {0,1}` and write `not a = 1-a`. Define
+Let $s:\mathbb{N}\to\{0,1\}$ and write $\neg a = 1-a$. Define
 
-\[
+$$
 r_s(2j)=s(j),\qquad r_s(2j+1)=1-s(j).
-\]
+$$
 
 The labelled edge predicate is
 
-\[
+$$
 E_s(u,w,a)\iff w\ge2\ \land\
 \big[(w=u+1\land a=r_s(w))\ \lor\
 (w=u+2\land a=1-r_s(w))\big].
-\]
+$$
 
-In particular, the edge `0 -> 1` is absent. The roots are 0 and 1, and every
-vertex `w >= 2` has one incoming edge of each binary label. These are the
+In particular, the edge $0 \to 1$ is absent. The roots are 0 and 1, and every
+vertex $w \ge 2$ has one incoming edge of each binary label. These are the
 equations in Section 2 of the classification manuscript [S1].
 
 A **finite matching path of length ell** is a list of vertices
-`p_0,...,p_ell` satisfying `E_s(p_k,p_(k+1),s(k))` for every `k < ell`.
+$p_0,\ldots,p_\ell$ satisfying $E_{s}(p_{k},p_{k+1},s(k))$ for every $k < \ell$.
 There is no assumption that the path extends infinitely. Equivalently, use a
-function `p : N -> N` with edge obligations only for `k < ell`; values beyond
-`ell` are irrelevant. All new upper bounds below quantify directly over these
+function $p:\mathbb{N}\to\mathbb{N}$ with edge obligations only for $k < \ell$; values beyond
+$\ell$ are irrelevant. All new upper bounds below quantify directly over these
 finite paths.
 
 The following files were inspected in both checkouts where available:
@@ -66,79 +66,79 @@ finite prefixes of the actual edge predicate.
 
 ### 2.1 Finite offset and step bounds
 
-For every finite matching `s`-path of length `ell` and every `0 <= k <= ell`,
+For every finite matching $s$-path of length $\ell$ and every $0 \le k \le \ell$,
 
-\[
+$$
 p_k\ge2k,\qquad p_0+k\le p_k\le p_0+2k.
-\]
+$$
 
 **Proof.** Each edge increases its vertex number by one or two, which proves
 the second pair of bounds by induction. For the first, the base case is
-`p_0 >= 0`. Suppose `p_k >= 2k` and `k < ell`. If `p_k >= 2k+1`, either
-allowed step gives `p_(k+1) >= 2k+2`. Otherwise `p_k=2k`. A step of one
-would enter `2k+1` with label `r_s(2k+1)=1-s(k)`, contradicting the required
-label `s(k)`; for `k=0`, that edge is also absent. Thus the step must be two.
-This proves the induction without assuming any edges after depth `ell`.
+$p_0 \ge 0$. Suppose $p_{k} \ge 2k$ and $k < \ell$. If $p_{k} \ge 2k+1$, either
+allowed step gives $p_{k+1} \ge 2k+2$. Otherwise $p_{k}=2k$. A step of one
+would enter $2k+1$ with label $r_{s}(2k+1)=1-s(k)$, contradicting the required
+label $s(k)$; for $k=0$, that edge is also absent. Thus the step must be two.
+This proves the induction without assuming any edges after depth $\ell$.
 
 ### 2.2 Agreement of tails implies agreement of late graph edges
 
-Suppose `s(k)=q(k)` for every `k >= m`. Then `r_s(w)=r_q(w)` for every
-`w >= 2m`, since `floor(w/2) >= m`. Consequently, for every target vertex
-`w >= 2m` and every `u,a`,
+Suppose $s(k)=q(k)$ for every $k \ge m$. Then $r_{s}(w)=r_{q}(w)$ for every
+$w \ge 2m$, since $\left\lfloor\frac{w}{2}\right\rfloor \ge m$. Consequently, for every target vertex
+$w \ge 2m$ and every $u,a$,
 
-\[
+$$
 E_s(u,w,a)\iff E_q(u,w,a).
-\]
+$$
 
 The agreement condition concerns the **target vertex** of an edge. No claim
 about the source vertex being large is required.
 
 ### 2.3 Backward realization of a finite prescribed prefix
 
-For any binary target `q`, integer `m >= 0`, and vertex `w >= 2m`, there is a
-length-`m` path `a_0,...,a_m=w` in `P_q` whose forward labels are
-`q(0),...,q(m-1)`. Its start `u=a_0` satisfies
+For any binary target $q$, integer $m \ge 0$, and vertex $w \ge 2m$, there is a
+length-$m$ path $a_0,\ldots,a_{m}=w$ in $P_{q}$ whose forward labels are
+$q(0),\ldots,q(m-1)$. Its start $u=a_0$ satisfies
 
-\[
+$$
 w-2m\le u\le w-m.
-\]
+$$
 
-**Proof.** When `m=0`, use the length-zero path at `w`. Otherwise choose
-parents backward, requesting labels in the order `q(m-1),...,q(0)`.
-Before the `(j+1)`st backward choice, with `0 <= j < m`, the current vertex
-is at least `w-2j >= 2(m-j) >= 2`. It therefore has an incoming edge of the
+**Proof.** When $m=0$, use the length-zero path at $w$. Otherwise choose
+parents backward, requesting labels in the order $q(m-1),\ldots,q(0)$.
+Before the $(j+1)$st backward choice, with $0 \le j < m$, the current vertex
+is at least $w-2j \ge 2(m-j) \ge 2$. It therefore has an incoming edge of the
 requested label. Each backward step subtracts one or two, proving the stated
 bounds. Ending at root 0 or root 1 is allowed; the construction never needs
 to choose a parent of that endpoint.
 
 ### 2.4 Transport theorem for arbitrary binary targets and every finite length
 
-Assume `s(k)=q(k)` for all `k >= m`. If a finite `s`-matching path of any
-length `ell >= 0` starts at `v`, put `r=min(m,ell)`. Then a finite
-`q`-matching path of the **same length** starts at some `u` with
+Assume $s(k)=q(k)$ for all $k \ge m$. If a finite $s$-matching path of any
+length $\ell \ge 0$ starts at $v$, put $r=\min(m,\ell)$. Then a finite
+$q$-matching path of the **same length** starts at some $u$ with
 
-\[
+$$
 u+r\ge v,\qquad u\le v+r.
-\]
+$$
 
-Thus, as integer inequalities, `|u-v| <= min(m,ell)`. This formulation
+Thus, as integer inequalities, $\lvert u-v\rvert \le \min(m,\ell)$. This formulation
 incorporates the stronger short-path observation supplied by the independent
 side audit.
 
-**Proof.** Write `w=p_r`. By Lemma 2.1, `w >= 2r`. Prepend the length-`r`
-prefix from Lemma 2.3 for target `q`, ending at `w`. If `ell<m`, then
-`r=ell` and there is no suffix: this prefix is already the entire required
-path. If `ell>=m`, then `r=m`; keep the original suffix
-`p_m,...,p_ell`. Every suffix edge has target vertex at least `2m`, so
-Lemma 2.2 transfers it from `P_s` to `P_q`; its label at original index
-`k>=m` also equals `q(k)`. Concatenation gives the desired path.
+**Proof.** Write $w=p_{r}$. By Lemma 2.1, $w \ge 2r$. Prepend the length-$r$
+prefix from Lemma 2.3 for target $q$, ending at $w$. If $\ell<m$, then
+$r=\ell$ and there is no suffix: this prefix is already the entire required
+path. If $\ell\ge m$, then $r=m$; keep the original suffix
+$p_{m},\ldots,p_\ell$. Every suffix edge has target vertex at least $2m$, so
+Lemma 2.2 transfers it from $P_{s}$ to $P_{q}$; its label at original index
+$k\ge m$ also equals $q(k)$. Concatenation gives the desired path.
 
-Both old and new starts lie in the integer interval `[w-2r,w-r]`, because
-each of their first `r` steps has size one or two. Their distance is
-therefore at most `r`, proving the displayed bounds. When `r=0`, including
-`m=0` or `ell=0`, the construction has `u=v` and uses a length-zero prefix.
+Both old and new starts lie in the integer interval $[w-2r,w-r]$, because
+each of their first $r$ steps has size one or two. Their distance is
+therefore at most $r$, proving the displayed bounds. When $r=0$, including
+$m=0$ or $\ell=0$, the construction has $u=v$ and uses a length-zero prefix.
 
-This theorem is symmetric in `s,q`. It does not assume aperiodicity,
+This theorem is symmetric in $s,q$. It does not assume aperiodicity,
 computability, existence of maximum path lengths, or a Thue–Morse target.
 It transports finite witnesses; it does not provide an infinite-path
 compactness theorem by itself.
@@ -146,24 +146,24 @@ compactness theorem by itself.
 If finite maxima are separately known to exist at the relevant starts, an
 immediate envelope corollary is
 
-\[
-L_s(v)\le\max\{L_q(u):u\in\mathbb N,\ |u-v|\le m\},
-\]
+$$
+L_s(v)\le\max\{L_q(u):u\in\mathbb N,\ \lvert u-v\rvert\le m\},
+$$
 
-and the symmetric inequality with `s,q` interchanged. Include zero among
+and the symmetric inequality with $s,q$ interchanged. Include zero among
 the possible nearby starts. The finite-path theorem is primary; this
 corollary does not silently assume unproved existence of maxima.
 
 ## 3. Finite edits preserve the sharp Thue–Morse coefficient
 
-Let `t(n)` be the parity of the number of ones in the binary expansion of
-`n`. Fix `m >= 0` and a target `s` with `s(k)=t(k)` for every `k >= m`.
+Let $t(n)$ be the parity of the number of ones in the binary expansion of
+$n$. Fix $m \ge 0$ and a target $s$ with $s(k)=t(k)$ for every $k \ge m$.
 The argument uses the following existing sharp results as inputs:
 
-1. Every finite `t`-matching path of length `ell` from `u >= 1` satisfies
-   `3ell <= 8u-1`.
-2. For each `n >= 0`, there exists a matching path from
-   `v_n=3*2^n-1` of length `ell_n=8*2^n-3`.
+1. Every finite $t$-matching path of length $\ell$ from $u \ge 1$ satisfies
+   $3\ell \le 8u-1$.
+2. For each $n \ge 0$, there exists a matching path from
+   $v_{n}=3\cdot 2^n-1$ of length $\ell_{n}=8\cdot 2^n-3$.
 
 The inspected Lean endpoints are `binary_path_prefix_bound` and
 `sharp_equality_family`, together with `binary_edge_iff` and the definition
@@ -172,87 +172,87 @@ path, not maximality of that path.
 
 ### 3.1 The zero-start exception for the original target
 
-The standard identities `t(2j)=t(j)` and `t(2j+1)=1-t(j)` give
-`r_t(w)=t(w)` for every `w`. This is the substitution of actual Thue–Morse
+The standard identities $t(2j)=t(j)$ and $t(2j+1)=1-t(j)$ give
+$r_{t}(w)=t(w)$ for every $w$. This is the substitution of actual Thue–Morse
 bits for row labels used below; it is also the inspected
 `SharpThueMorse.binary_row_eq` endpoint.
 
-Every `t`-matching path from 0 has length at most one, and the one-edge path
-`0 -> 2` exists. Indeed `t(0)=0`, `t(1)=1`, `t(2)=1`, `t(3)=0`, and
-`t(4)=1`. The only edge out of 0 goes to 2 and has label `1-t(2)=0`, so it
+Every $t$-matching path from 0 has length at most one, and the one-edge path
+$0 \to 2$ exists. Indeed $t(0)=0$, $t(1)=1$, $t(2)=1$, $t(3)=0$, and
+$t(4)=1$. The only edge out of 0 goes to 2 and has label $1-t(2)=0$, so it
 matches the first bit. At the next step, both possible labels out of 2 are
-0: the edge to 3 has label `t(3)=0`, and the edge to 4 has label
-`1-t(4)=0`. Neither matches `t(1)=1`.
+0: the edge to 3 has label $t(3)=0$, and the edge to 4 has label
+$1-t(4)=0$. Neither matches $t(1)=1$.
 
 This finite check is given as a written argument here. It must be added as
 a lemma or discharged directly if the formal implementation needs it.
 
 ### 3.2 Explicit upper bound, formulated only for finite paths
 
-**Theorem.** For every `v >= 1`, every `ell >= 0`, and every finite
-`s`-matching path of length `ell` from `v`,
+**Theorem.** For every $v \ge 1$, every $\ell \ge 0$, and every finite
+$s$-matching path of length $\ell$ from $v$,
 
-\[
+$$
 \boxed{3\ell\le8v+8m-1.}
-\]
+$$
 
 **Proof, including all boundary cases.**
 
-- If `m=0`, then `s=t` everywhere and the existing sharp finite-path bound
+- If $m=0$, then $s=t$ everywhere and the existing sharp finite-path bound
   proves the result directly.
-- Suppose `m>=1` and `ell<m`. Then `ell<=m-1`, so
-  `3ell<=3m-3<=8v+8m-1`.
-- Suppose `m>=1` and `ell>=m`. The transport theorem gives a matching
-  `t`-path of length `ell` from some `u<=v+m`. If `u>=1`, the sharp bound
-  gives `3ell<=8u-1<=8v+8m-1`.
-- In the remaining case `u=0`, Section 3.1 gives `ell<=1`, hence
-  `3ell<=3<=8v+8m-1` because `v>=1`. No positive-start theorem is applied
+- Suppose $m\ge 1$ and $\ell<m$. Then $\ell\le m-1$, so
+  $3\ell\le 3m-3\le 8v+8m-1$.
+- Suppose $m\ge 1$ and $\ell\ge m$. The transport theorem gives a matching
+  $t$-path of length $\ell$ from some $u\le v+m$. If $u\ge 1$, the sharp bound
+  gives $3\ell\le 8u-1\le 8v+8m-1$.
+- In the remaining case $u=0$, Section 3.1 gives $\ell\le 1$, hence
+  $3\ell\le 3\le 8v+8m-1$ because $v\ge 1$. No positive-start theorem is applied
   at zero.
 
-The hypotheses contain no claim that `L_s(v)` already exists. As a later
-elementary corollary, the set of attainable lengths from any `v>=1` is
+The hypotheses contain no claim that $L_{s}(v)$ already exists. As a later
+elementary corollary, the set of attainable lengths from any $v\ge 1$ is
 nonempty (it contains zero) and bounded by this theorem, so it has a largest
-element. Only after this observation is the notation `L_s(v)` needed.
+element. Only after this observation is the notation $L_{s}(v)$ needed.
 
 ### 3.3 Sharpness survives, via nearby starting vertices
 
-For every sufficiently large `n` with `ell_n >= m` and `v_n > m`, transport
-the existing sharp `t`-path to an `s`-path. This gives an actual finite path
-of length `ell_n` from a positive vertex `u_n` satisfying
+For every sufficiently large $n$ with $\ell_{n} \ge m$ and $v_{n} > m$, transport
+the existing sharp $t$-path to an $s$-path. This gives an actual finite path
+of length $\ell_{n}$ from a positive vertex $u_{n}$ satisfying
 
-\[
+$$
 |u_n-v_n|\le m,\qquad
 \ell_n=\frac{8v_n-1}{3}.
-\]
+$$
 
-In particular `u_n -> infinity`. These nearby starts are the reason finite
+In particular $u_{n} \to \infty$. These nearby starts are the reason finite
 edits cannot destroy asymptotic sharpness, even if they destroy matching
 paths from the original extremal indices themselves.
 
 **Coefficient-optimality theorem without maximum notation.** For every
-real `c < 8/3` and every real additive constant `B`, there are `v>=1`,
-`ell>=0`, and an actual finite `s`-matching path from `v` of length `ell`
-such that `ell > c*v+B`.
+real $c < \frac{8}{3}$ and every real additive constant $B$, there are $v\ge 1$,
+$\ell\ge 0$, and an actual finite $s$-matching path from $v$ of length $\ell$
+such that $\ell > c\cdot v+B$.
 
-**Proof.** Use the witnesses `u_n,ell_n` above. Since `|u_n-v_n|<=m`,
+**Proof.** Use the witnesses $u_{n},\ell_{n}$ above. Since $|u_{n}-v_{n}|\le m$,
 
-\[
+$$
 \ell_n-cu_n
 \ge(8/3-c)v_n-1/3-|c|m\longrightarrow+\infty.
-\]
+$$
 
-The absolute value handles negative `c` as well as nonnegative `c`.
-Eventually the expression exceeds `B`.
+The absolute value handles negative $c$ as well as nonnegative $c$.
+Eventually the expression exceeds $B$.
 
 Once maxima have been defined using the boundedness corollary, the upper
 bound and the attained paths give the equivalent statement
 
-\[
+$$
 \boxed{\limsup_{v\to\infty}\frac{L_s(v)}v=\frac83.}
-\]
+$$
 
 This does not assert that all starts attain the ratio, that the original
-exact equality indices survive, or that the explicit allowance `8m-1` is
+exact equality indices survive, or that the explicit allowance $8m-1$ is
 the best possible additive allowance for a particular edit.
 
 ### 3.4 Relation to prior work and proposal wording
@@ -276,18 +276,18 @@ or literature priority.
 
 ### 4.1 Lift and retained vertices
 
-Use vertices `(v,a)` with `v in N`, `a in {0,1}`, and permanent gender `a`.
-Put an edge from `(v,a)` to `(w,b)` exactly when `E_s(v,w,a)`; the target
-gender `b` is unrestricted. Every lifted edge therefore has its source's
+Use vertices $(v,a)$ with $v\in\mathbb{N}$, $a \in \{0,1\}$, and permanent gender $a$.
+Put an edge from $(v,a)$ to $(w,b)$ exactly when $E_{s}(v,w,a)$; the target
+gender $b$ is unrestricted. Every lifted edge therefore has its source's
 permanent gender. Define the active set
 
-\[
+$$
 A_s=\{(v,a):\exists w\ E_s(v,w,a)\}.
-\]
+$$
 
-The core is the graph induced on `A_s`; deleted copies are not vertices and
+The core is the graph induced on $A_{s}$; deleted copies are not vertices and
 must not be counted as new roots. The active owner source encodes
-`(v,a)` as `2v+bit(a)`.
+$(v,a)$ as `2v+bit(a)`.
 
 The finite-alphabet lift is in Section 3 of the classification manuscript
 [S1]. The active-set restriction and its three-child property are an
@@ -297,30 +297,30 @@ additional analysis of that lift.
 
 The following identities follow directly from the edge equations:
 
-\[
+$$
 \begin{aligned}
 \{a:(0,a)\in A_s\}&=\{1-s(1)\},\\
 \{a:(2j+1,a)\in A_s\}&=\{s(j+1)\}\qquad(j\ge0),\\
 \{a:(2k,a)\in A_s\}&=\{1-s(k),1-s(k+1)\}\qquad(k\ge1).
 \end{aligned}
-\]
+$$
 
-**Proof.** Base vertex 0 has only child 2, with label `1-r_s(2)=1-s(1)`.
-For the odd base `2j+1`, the outgoing edge to `2j+2` has label `s(j+1)`;
-the outgoing edge to `2j+3` has label `1-r_s(2j+3)=s(j+1)` as well.
-For the positive even base `2k`, the outgoing labels are
-`r_s(2k+1)=1-s(k)` and `1-r_s(2k+2)=1-s(k+1)`. These are all possible
-child indices. The exception at base 0 must be retained because `0 -> 1`
+**Proof.** Base vertex 0 has only child 2, with label $1-r_{s}(2)=1-s(1)$.
+For the odd base $2j+1$, the outgoing edge to $2j+2$ has label $s(j+1)$;
+the outgoing edge to $2j+3$ has label $1-r_{s}(2j+3)=s(j+1)$ as well.
+For the positive even base $2k$, the outgoing labels are
+$r_{s}(2k+1)=1-s(k)$ and $1-r_{s}(2k+2)=1-s(k+1)$. These are all possible
+child indices. The exception at base 0 must be retained because $0 \to 1$
 is absent.
 
 Thus every odd base has exactly one active copy. A positive even base has
-two active copies precisely at an adjacent change `s(k) != s(k+1)`;
+two active copies precisely at an adjacent change $s(k) \ne  s(k+1)$;
 otherwise it has one.
 
 ### 4.3 Upper cap three
 
 Every lifted source can have children only over its next one or two base
-indices, namely `v+1` and `v+2`, subject to the source label. Among those
+indices, namely $v+1$ and $v+2$, subject to the source label. Among those
 indices one is odd and supports exactly one active copy; the even index
 supports at most two. Consequently every retained source has at most three
 distinct retained children.
@@ -331,52 +331,52 @@ the population and induced-graph checks.
 
 ### 4.4 Exact attainment formula
 
-For each `j>=0`, let
+For each $j\ge 0$, let
 
-\[
+$$
 x_j=(2j+1,s(j+1)).
-\]
+$$
 
-It is the unique active copy over `2j+1`. Both outgoing base edges have its
+It is the unique active copy over $2j+1$. Both outgoing base edges have its
 gender, so its children in the induced core are **exactly**
 
-\[
+$$
 \{(2j+2,b):b\in\{1-s(j+1),1-s(j+2)\}\}
 \ \cup\ \{(2j+3,s(j+2))\}.
-\]
+$$
 
 The sets lie over different base indices. The even-base part has two
-distinct vertices precisely when `s(j+1) != s(j+2)`. Therefore
+distinct vertices precisely when $s(j+1) \ne  s(j+2)$. Therefore
 
-\[
+$$
 \deg^+_{A_s}(x_j)=
 \begin{cases}
 3,&s(j+1)\ne s(j+2),\\
 2,&s(j+1)=s(j+2).
 \end{cases}
-\]
+$$
 
 This counts **distinct child vertices**, as the population cap requires;
 it is not a count of labels or paths.
 
 ### 4.5 Infinitely many three-child vertices
 
-If `s` is not eventually constant, there are infinitely many indices
-`k>=1` with `s(k) != s(k+1)`. Otherwise the finitely many changes have a
+If $s$ is not eventually constant, there are infinitely many indices
+$k\ge 1$ with $s(k) \ne  s(k+1)$. Otherwise the finitely many changes have a
 largest index, after which induction makes every successive bit equal,
-contradicting non-eventual constancy. Each such `k=j+1` gives the distinct
-vertex `x_j` of outdegree three by Section 4.4. Thus the induced core has
+contradicting non-eventual constancy. Each such $k=j+1$ gives the distinct
+vertex $x_{j}$ of outdegree three by Section 4.4. Thus the induced core has
 infinitely many three-child vertices.
 
-In particular this applies when `s` is not eventually periodic, because an
+In particular this applies when $s$ is not eventually periodic, because an
 eventually constant sequence has eventual period one. The hypothesis needed
 for attainment is weaker than the hypothesis needed for self-avoidance.
 
 ### 4.6 Why further ancestral pruning cannot solve cap two
 
 For this lift, any active copy reaches both copies over some child base
-`w>=2`. Once both copies over a base `z>=1` have been reached, the copy
-whose gender is `r_s(z+1)` has edges to both copies over `z+1`. Induction
+$w\ge 2$. Once both copies over a base $z\ge 1$ have been reached, the copy
+whose gender is $r_{s}(z+1)$ has edges to both copies over $z+1$. Induction
 therefore reaches every copy over every sufficiently late base. Every
 intermediate vertex on a path ending at an active vertex is itself active,
 because it has a next edge. These paths consequently survive in the induced
@@ -385,9 +385,9 @@ core when their endpoint is retained.
 There is at least one active copy over every base index, so the core is
 infinite. The preceding paragraph shows that every core vertex has
 cofinitely many core descendants. It follows directly that every infinite
-ancestor-closed subset `T` of the core is the whole core: for any core vertex
-`x`, an infinite `T` intersects the cofinite descendant set of `x`; ancestral
-closure then forces `x` into `T`.
+ancestor-closed subset $T$ of the core is the whole core: for any core vertex
+$x$, an infinite $T$ intersects the cofinite descendant set of $x$; ancestral
+closure then forces $x$ into $T$.
 
 This is the inspecies minimality mechanism in Alexander's Definition 4 and
 Propositions 5–6 [S2]. The active owner source contains `core_inspecies` and
@@ -397,18 +397,18 @@ Consequently a smaller **infinite ancestor-closed induced vertex subset**
 of this core cannot eliminate its three-child vertices. This does not rule
 out edge deletion with repairs, a subset that is not ancestor closed, a
 different lift, or a completely different two-child construction. It does
-not prove `d_vertex(s)=3`.
+not prove $d_{\mathrm{vertex}}(s)=3$.
 
 ### 4.7 Earlier inspecies avoiders and the remaining distinction
 
 The companion `OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md` derives cofinite
-descendants, hence whole-graph inspecies, for Alexander's older `T_h` and
-`H_h` constructions [S8]. Thus merely giving some fixed-gender inspecies
+descendants, hence whole-graph inspecies, for Alexander's older $T_{h}$ and
+$H_{h}$ constructions [S8]. Thus merely giving some fixed-gender inspecies
 avoider is already implicit in that work. Their displayed avoidance proofs
-use `h(n) -> infinity`; the companion's degree calculation gives maximum
-outdegree `h(n)+1` in generation `n`. The relevant comparison here is the
+use $h(n) \to \infty$; the companion's degree calculation gives maximum
+outdegree $h(n)+1$ in generation $n$. The relevant comparison here is the
 uniform cap three for an arbitrary prescribed aperiodic binary target.
-This comparison does not exclude bounded-`h` variants; it supplies no
+This comparison does not exclude bounded-$h$ variants; it supplies no
 priority certificate for the stronger combination.
 
 ## 5. Full audit of the ten research proposals
@@ -434,18 +434,18 @@ distinguishing feature.
 ### Proposal 2: minimal crossing count and eventual ray powers
 
 The proposed equality analysis appears sound. State simplicity, a complete
-birth-order enumeration, and eventual indegree and outdegree exactly `k`.
-At a sufficiently late cut, the next `k` vertices require at least
-`k,k-1,...,1` incoming edges crossing the cut. If the total is
-`k(k+1)/2`, every lower bound is tight: all available internal edges among
-those `k` vertices occur, and no crossing edge terminates after the block.
+birth-order enumeration, and eventual indegree and outdegree exactly $k$.
+At a sufficiently late cut, the next $k$ vertices require at least
+$k,k-1,\ldots,1$ incoming edges crossing the cut. If the total is
+$k(k+1)/2$, every lower bound is tight: all available internal edges among
+those $k$ vertices occur, and no crossing edge terminates after the block.
 Apply the last assertion to every sufficiently late cut to bound all tail
-edge lengths by `k`. Full outdegree then forces exactly the edges
-`v -> v+1,...,v+k`. This is a direct proof route before any broad search.
+edge lengths by $k$. Full outdegree then forces exactly the edges
+$v \to v+1,\ldots,v+k$. This is a direct proof route before any broad search.
 
-For `k=2`, permanent genders on this eventual `+1,+2` graph must alternate:
+For $k=2$, permanent genders on this eventual $+1,+2$ graph must alternate:
 the two parents of each nonroot have different genders. From a sufficiently
-late vertex of the requested initial gender, choose a `+1` or `+2` step to
+late vertex of the requested initial gender, choose a $+1$ or $+2$ step to
 make the next source gender opposite or equal, as required. Thus it realizes
 every binary word. This supplies the claimed obstruction at minimal width,
 conditional on the equality theorem. No exact prior match was verified in
@@ -470,12 +470,12 @@ widths three and four.
 
 ### Proposal 4: a finite binary-digit description of all maxima
 
-The `2`-regularity question is precise. Define `L(0)` before taking the
-`2`-kernel; Section 3.1 gives `L_t(0)=1`. Allouche–Shallit is the direct
-framework [S4]. Add `2`-synchronization as a stronger candidate: a finite
-automaton recognizing binary pairs `(v,L(v))` would imply `2`-regularity,
+The $2$-regularity question is precise. Define $L(0)$ before taking the
+$2$-kernel; Section 3.1 gives $L_{t}(0)=1$. Allouche–Shallit is the direct
+framework [S4]. Add $2$-synchronization as a stronger candidate: a finite
+automaton recognizing binary pairs $(v,L(v))$ would imply $2$-regularity,
 using the established synchronized-sequence theory [S5]. Neither conclusion
-follows from automaticity of `t` or of a one-step transition.
+follows from automaticity of $t$ or of a one-step transition.
 
 Require a computational search to output candidate coupled functions and
 identities for their even/odd arguments. Prove their closure and initial
@@ -485,10 +485,10 @@ subsequences are neighboring objects, not automatically this path function.
 
 ### Proposal 5: phase shifts
 
-The model distinction is correct: for `s_a(k)=t(k+a)`, the corresponding row
-is `r_(s_a)(w)=t(w+2a)`. Keeping `P_t` fixed instead gives consecutive-edge
-realizations of the shifted target from `a-1` for `a>=2`. That is a different
-question. Normalize the changed graph by the coordinate `w+2a` and track
+The model distinction is correct: for $s_{a}(k)=t(k+a)$, the corresponding row
+is $r_{s_{a}}(w)=t(w+2a)$. Keeping $P_{t}$ fixed instead gives consecutive-edge
+realizations of the shifted target from $a-1$ for $a\ge 2$. That is a different
+question. Normalize the changed graph by the coordinate $w+2a$ and track
 the relative target phase before starting an expensive search. The phase-zero
 sharp proof does not establish the coefficient for all phases.
 
@@ -496,22 +496,22 @@ sharp proof does not establish the coefficient for all phases.
 
 Replace the vague modulus with, for example,
 
-\[
+$$
 M_s(K,p,\epsilon)=\min\{j\ge K:
 s(j+p)\ne s(j)\mathbin{\mathrm{xor}}\epsilon\},
 \qquad p>0,\ \epsilon\in\{0,1\}.
-\]
+$$
 
 Non-eventual periodicity makes it finite for both values of `epsilon`:
-eventual equality gives period `p`, while eventual antiperiodicity gives
-period `2p`. Stable offset plateaus can then be bounded by these failure
+eventual equality gives period $p$, while eventual antiperiodicity gives
+period $2p$. Stable offset plateaus can then be bounded by these failure
 times. The modulus must account for the evolving starting index, not merely
 the first failed comparison of an initial prefix.
 
 The arbitrary-computable-growth target has an elementary candidate route:
-at stage `n`, repeat the current prefix of length `p_n` long enough to beat
-`f(2p_n-1)` using the checked periodic-prefix seed; afterwards extend the
-word to defeat the next enumerated eventual-period pair `(K,q)`. Ensure
+at stage $n$, repeat the current prefix of length $p_{n}$ long enough to beat
+$f(2p_{n}-1)$ using the checked periodic-prefix seed; afterwards extend the
+word to defeat the next enumerated eventual-period pair $(K,q)$. Ensure
 prefix lengths strictly increase and the diagonal witness indices are fresh.
 This is a proof plan, not a completed construction in this packet. The source
 already observes the absence of a uniform target-independent bound [S1].
@@ -562,7 +562,7 @@ it is not claimed to preserve every cluster predicate.
 
 ### Proposal 10: stateful cellular-automaton potentials
 
-The inequality `u dot d <= c+h(q)-h(q')` is a standard finite weighted-graph
+The inequality $u \cdot d \le c+h(q)-h(q')$ is a standard finite weighted-graph
 potential certificate. Its optimum is controlled by the maximum cycle mean,
 equivalently a sign-reversed instance of classical cycle-mean optimization
 [S6]. The substantial work is a sound local-rule state graph and a strictly
@@ -574,7 +574,7 @@ one slow lifeline does not alone bound the speed of every live cell. For a
 bounded-width translating spaceship, a suitable lifeline shares its average
 translation velocity, but that argument needs to be included.
 
-Johnston already proves the `c/3` diagonal and `c/2` orthogonal spaceship
+Johnston already proves the $c/3$ diagonal and $c/2$ orthogonal spaceship
 bounds for the 2x2 rule, with an oblique-direction consequence [S7]. Reproving
 them with potentials is a certificate or formalization contribution. A speed
 improvement needs a valid comparison with the applicable published bound for
@@ -641,8 +641,8 @@ The finite-edit work can be kept small and compositional:
 2. Prove the finite offset induction and the one/two-step distance bounds.
 3. Prove row/edge agreement above twice the target cutoff.
 4. Build a finite labelled prefix backward from a sufficiently high vertex.
-5. Prove symmetric finite-prefix transport with `r=min(m,ell)`, `u+r>=v`,
-   and `u<=v+r`, including the empty-suffix case `ell<m`.
+5. Prove symmetric finite-prefix transport with $r=\min(m,\ell)$, $u+r\ge v$,
+   and $u\le v+r$, including the empty-suffix case $\ell<m$.
 6. Prove the zero-start Thue–Morse length bound and transfer the checked sharp
    upper bound to all edited finite paths.
 7. Transport the checked attained family. State coefficient optimality using

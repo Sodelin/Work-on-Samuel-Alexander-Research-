@@ -73,7 +73,7 @@ python research/thue-morse/sharp_check.py --output research/thue-morse/sharp-che
 ```
 
 It exits 0: 18 complete trajectories, 8,140 advance comparisons, and 256
-bounded `H(v)` checks pass, along with the inequality and exact equality
+bounded $H(v)$ checks pass, along with the inequality and exact equality
 set in the saved scan. These finite diagnostics do not replace the
 universal Lean proofs in the current integrated receipt.
 

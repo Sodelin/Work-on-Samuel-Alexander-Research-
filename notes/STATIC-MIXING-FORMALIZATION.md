@@ -6,7 +6,7 @@
 
 The general endpoint is `StaticMixing.intersection_subset_weightedMix`. Its assumptions say that the weights are nonnegative and sum to one, and that the point belongs to every input region. The conclusion constructs the weighted-mix witness. The proof establishes that repeating the same vector in every summand returns that vector. It does not assume the desired set inclusion as an algebraic premise.
 
-The two-region specialization is `StaticMixing.intersection_subset_midpointMix`. A further checked example shows strict containment: the vertical segments from (1,0) to (1,1) and from (1,-1) to (1,0) intersect only at their common endpoint, while their midpoint mix also contains (1,1/2).
+The two-region specialization is `StaticMixing.intersection_subset_midpointMix`. A further checked example shows strict containment: the vertical segments from $(1,0)$ to $(1,1)$ and from $(1,-1)$ to $(1,0)$ intersect only at their common endpoint, while their midpoint mix also contains $(1,\tfrac12)$.
 
 The finite-list representation chooses one point per index value. Repeated indices therefore reuse that point. This suffices for the inclusion witness, including in an occurrence-wise Minkowski sum, but the module does not assert equality with an independent-choice sum for repeated indices and nonconvex regions. Distinct labels with frequency weights cover the intended static application directly.
 
