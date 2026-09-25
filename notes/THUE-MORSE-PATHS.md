@@ -1,6 +1,6 @@
 # Finite matching paths in the Thue–Morse avoiding population
 
-**Status.** This note proves a quadratic upper bound for finite matching paths in the specific population of Section 2 of [*A classification of biologically unavoidable sequences*](https://github.com/avg-netizen/biological-unavoidability/blob/main/paper.md) (10 September 2026). It also reports a finite computation and two conjectures. It does not claim a sharp bound or a new literature priority result.
+**Status.** This note preserves the original quadratic proof and finite evidence for the population in Section 2 of [*A classification of biologically unavoidable sequences*](https://github.com/avg-netizen/biological-unavoidability/blob/main/paper.md) (10 September 2026). The two questions originally recorded below and the exact equality set are now resolved by the independently reviewed [sharp dyadic trajectory proof](../research/thue-morse/NEXT-INVARIANT.md) and its [full Lean implementation](../lean/SamuelAlexanderResearch/SharpThueMorse.lean). The checked proof includes actual bits, dyadic runs, the original-edge bridge, and finite maxima. The [final audit](../verification/formal-audit.json) passes 80 selected endpoints across eleven modules. No literature-priority claim is established.
 
 ## Definition
 
@@ -39,7 +39,7 @@ The stated uniform bound is a looser expression that dominates both cases. QED.
 
 **External premise.** Overlap-freeness is classical. A primary research publication by Jean Berstel and Patrice Seebold, *A characterization of overlap-free morphisms*, *Discrete Applied Mathematics* 46 (1993), 275–281, gives the definition and states Thue's theorem as Theorem 2.1; its Lemma 4.1 discusses preservation under the Thue–Morse morphism: https://igm.univ-mlv.fr/~berstel/Articles/1993OverlapFree.pdf . The quadratic argument above is not formalized in Lean here. Section 2 of the [classification repository](https://github.com/avg-netizen/biological-unavoidability/blob/main/paper.md) supplies the population and offset induction.
 
-## Exact finite search
+## Historical exact finite search
 
 `explore.py` performs breadth-first search. At depth `k`, its set contains every endpoint of a path starting at `v` whose first `k` labels match `t(0),...,t(k-1)`. It applies both outgoing edges and deduplicates endpoints. The first empty next frontier gives `L(v)=k` exactly. The proved quadratic bound is an assertion guard: if it were exceeded, the program fails instead of reporting a truncated length. The computation does not certify the quadratic theorem; that rests on the proof above.
 
@@ -60,11 +60,15 @@ This second implementation checked every start `1 <= v < 131072`. It found no co
 
 An independent small-case test enumerates distinct path histories rather than merging endpoints. The six tests also compare both frontier implementations for all starts `1<=v<=255`. These checks catch transition or stopping-index errors in that range; the larger computational agreement provides additional diagnostic evidence, not a proof of implementation correctness.
 
-## Conjectures and limits
+## Original conjectures and their resolution
 
-1. **Provisional global inequality:** `L(v) <= floor((8v-1)/3)` for every `v>=1`. The finite scans are evidence, not a proof.
-2. **Provisional equality family:** `L(3*2^n-1)=8*2^n-3` for all `n>=0`. The scans verify `n<=15` only.
+The statements below were the conjectures motivating the search. The [constructive trajectory proof](../research/thue-morse/NEXT-INVARIANT.md) and [Lean sharp theorem](../lean/SamuelAlexanderResearch/SharpThueMorse.lean) now prove both, and `sharp_equality_indices` proves that the displayed family contains every equality start. The scans remain finite evidence and are not substituted for that argument.
 
-The leading constant `8/3` in the first conjecture would be optimal if the equality family holds. A proof likely needs the substitution structure of Thue–Morse and a recursive description of reachable frontiers; the overlap-free argument alone sums separate offset budgets and loses too much information.
+1. **Global inequality:** `L(v) <= floor((8v-1)/3)` for every `v>=1`.
+2. **Equality family:** `L(3*2^n-1)=8*2^n-3` for all `n>=0`. The historical scans checked only `n<=15`; the new proof covers every natural `n`.
+
+The leading constant `8/3` is optimal by the infinite equality family. That real-coefficient statement and the exact baseline `H(v)` first-hit formula are prose corollaries; the bound, finite maxima, equality family, and exact equality classification are exported Lean endpoints. The sharp proof combines exact interval frontiers with dyadic blocks of boundary advances. The older overlap-free argument above remains valid but gives a weaker numerical bound.
+
+For a small reproducible check of the sharp proof's indexing, run `python research/thue-morse/sharp_check.py`. It passes 18 full trajectory replays, 8,140 advance comparisons, and 256 bounded first-hit checks, and compares the inequality and exact equality set with the saved 8,192-start scan. Its output is finite corroboration, not the basis of the universal proof.
 
 The calculation concerns only the exact edge-labelled `P_t` population and paths matching the Thue–Morse sequence from index zero. It says nothing yet about arbitrary target phases, other avoiding populations, or physical biological systems.

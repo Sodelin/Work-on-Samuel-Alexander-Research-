@@ -15,7 +15,13 @@ jobs:
         with:
           test: false
           use-mathlib-cache: false
+      - name: Audit exported theorem axioms
+        run: python3 checks/audit_lean.py
       - name: Check finite-path tests
         run: python3 -m unittest discover -s checks -p 'test_*.py' -v
       - name: Replay finite certificate example
         run: python3 checks/check_local_certificate.py
+      - name: Compare exact interval and set-frontier engines
+        run: python3 research/thue-morse/interval_check.py
+      - name: Check sharp-proof trajectory indexing
+        run: python3 research/thue-morse/sharp_check.py

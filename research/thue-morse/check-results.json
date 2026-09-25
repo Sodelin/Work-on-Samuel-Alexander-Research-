@@ -1,0 +1,13 @@
+{
+  "status": "all diagnostic finite checks passed",
+  "proof_status_of_sharp_bound": "proved separately; this checker is finite corroboration only",
+  "sharp_proof": "lean/SamuelAlexanderResearch/SharpThueMorse.lean",
+  "stored_set_engine_length_comparisons": 8191,
+  "stored_set_engine_start_range": [
+    1,
+    8191
+  ],
+  "direct_frontier_state_comparisons": 1632,
+  "paired_formula_cases": 8192,
+  "universal_proof": "lean/SamuelAlexanderResearch/ThueMorseBound.lean"
+}
