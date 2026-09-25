@@ -11,6 +11,12 @@
 | [Research architecture](RESEARCH-ARCHITECTURE.md) | Three research leads, shared workers, adversarial review and publication rules |
 | [Successful hosted verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36148288120) | The exact checked baseline at commit `138dd529` |
 
+## Newly published: a finite-population comparison
+
+[Read the worked example and proof packet](research/feedback-speciation/finite-epigenetic/README.md): adding finite offspring sampling reverses the genetic/epigenetic ordering in the specified matched models. The package includes four Lean modules, exact reference computations, source correspondence, independent internal reviews and a byte-level publication manifest.
+
+Its **34 selected declarations have local evidence**, with the interrupted deterministic exit explicitly qualified in the receipt. This upload adds them to the strict hosted audit, bringing the registered standalone target to **163 declarations in 23 files**. Consult the commit-specific PR checks before treating that new target as passed. The interpretation remains a comparison of stated models, with novelty and biological applicability assessed separately.
+
 ## Current focus: the authors' open problems
 
 The [proof structure and obligation ledger](research/open-problems/time-self-reference/PROOF-STRUCTURE.md) is the detailed entry point for the current program.

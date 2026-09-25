@@ -1,0 +1,13 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\feedback-speciation\finite-epigenetic\DeterministicEpigenetic.lean:70:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'DeterministicEpigenetic.background_from_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.background_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.row_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.marker_box_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.generation_four_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.all_later_mean_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.deterministic_genetic_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.limiting_genetic_RI_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.pure_induction_RI_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeterministicEpigenetic.deterministic_ranking_strict' depends on axioms: [propext, Classical.choice, Quot.sound]

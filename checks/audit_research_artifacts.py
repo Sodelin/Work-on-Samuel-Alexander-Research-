@@ -40,8 +40,16 @@ ARTIFACTS = {
     "research/feedback-speciation/package/FogartyAffinityFixation.lean": 9,
     "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean": 8,
     "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean": 8,
+    "research/feedback-speciation/finite-epigenetic/FiniteFixation.lean": 11,
+    "research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean": 10,
+    "research/feedback-speciation/finite-epigenetic/DeterministicEpigenetic.lean": 10,
+    "research/feedback-speciation/finite-epigenetic/RankingReversal.lean": 3,
 }
 PRINT_NAMESPACES = {'research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean': 'ExactAbstraction.', 'research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean': 'MergeHistoryProjection.'}
+PRINT_NAMESPACES.update({
+    "research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean": "FiniteEpigenetic.",
+    "research/feedback-speciation/finite-epigenetic/RankingReversal.lean": "RankingReversal.",
+})
 PRINT_AXIOMS = re.compile(r"^\s*#print\s+axioms\s+([A-Za-z0-9_.]+)\s*$", re.M)
 PLACEHOLDER_WARNING = re.compile(
     r"(?:warning[^\n]*(?:\bsorry\b|\badmit\b)|"
