@@ -8,7 +8,7 @@ alongside Samuel A. Alexander's 2013 unavoidability and inspecies papers and
 Samuel Allen Alexander's 2026 specieslike-cluster paper. The
 [source ledger](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/SOURCES.md) identifies the exact works and versions. The
 [question ledger](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/QUESTION-LEDGER.md) distinguishes the historical classification
-question from follow-ons posed here. No message has been sent to Dr. Alexander.
+question from follow-ons posed here. A research email has been sent, and Alexander acknowledged it with interest in looking more closely as time permits. That acknowledgment is not a completed mathematical review or endorsement.
 
 The main results in all ten proof lanes are now Lean-checked under their stated
 models and hypotheses. The [current answers](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/TEN-SOLUTIONS.md) give the result
@@ -157,5 +157,4 @@ recurrences, optimal root counts, structure beyond minimum crossing width,
 joint phase/index formulas, individual edited-target constants, and improvements
 for natural CA rules. Mathematical verification does not establish empirical
 species boundaries or reveal what an author has considered privately. The
-repository owner can adapt the [outreach draft](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/OUTREACH-DRAFT.md); sending it
-is a separate action.
+repository owner can adapt the historical [outreach draft](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/OUTREACH-DRAFT.md); any further message is a separate action.
