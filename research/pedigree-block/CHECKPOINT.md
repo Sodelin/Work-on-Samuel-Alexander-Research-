@@ -1,5 +1,7 @@
 # Finite-family proof checkpoint
 
+**Accepted:** clean proof commit `ae0beee8d04e32c45f28d2f465b924d6816c82a5`; seven project modules, 31 selected declarations, Lean 4.33.1, Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`. Every selected axiom report uses only `propext`, `Classical.choice` and `Quot.sound`, or no axioms. There is no remaining failed statement in this admitted closure. Evidence is in `verification/RESULT.json`; the unproved extensions below retain their separate status.
+
 The base is `a096e498045a07d867f1a2201870596fbfaad68a`, whose ARG proof sources were verified at `1ac3dd9446e7264336f0764040ff47ad684099cb`. This separate worktree is `codex/pedigree-block-recovery-2026-09-27`. Original ARG sources and source-family ledger are preserved. Shared registration, this packet and the compiler-lock override belong to the coordinating lane.
 
 ## Acceptance gate

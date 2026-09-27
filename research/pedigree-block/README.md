@@ -1,6 +1,6 @@
 # Recovering sampled families from independent inheritance blocks
 
-This is a separate one-generation specialization motivated by Kim, Mossel, Ramnarayan and Turner. Its verification status and exact source commit are recorded in `verification/RESULT.json` when the combined gate finishes. It does not replace the earlier marked-ARG checkpoint or claim the full REC-GEN theorem.
+This separate one-generation specialization motivated by Kim, Mossel, Ramnarayan and Turner passed its clean-commit Lean audit at `ae0beee8d04e32c45f28d2f465b924d6816c82a5`: seven project modules and 31 selected declarations. The [exact receipt](verification/RESULT.json) records the pinned toolchain and standard-axiom checks. It does not replace the earlier marked-ARG checkpoint or claim the full REC-GEN theorem.
 
 ## What is being recovered
 

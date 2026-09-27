@@ -1,7 +1,7 @@
 {
   "earlier_arg_selected_declarations": 415,
   "novelty": "No novelty or first-formalization claim. Bounded prior-formalization search found none in inspected sources only.",
-  "checked_proof_commit": null,
+  "checked_proof_commit": "ae0beee8d04e32c45f28d2f465b924d6816c82a5",
   "selected_new_declarations": 31,
   "schema_version": 1,
   "base_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
@@ -10,7 +10,7 @@
   "earlier_arg_audit_preserved": true,
   "claims": [
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "id": "MODEL",
       "claim": "Independent fair child/block bits and independent family law are derived from a finite uniform PMF.",
       "endpoints": [
@@ -22,7 +22,7 @@
       "source": "KMRT section 4.1, first-generation specialization conditional on fixed founder families"
     },
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "id": "GRAPH",
       "claim": "Exact disconnection characterization for every positive block count and every nonempty family.",
       "endpoints": [
@@ -32,7 +32,7 @@
       "source": "Independent elementary derivation under the stated model; no novelty claim"
     },
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "id": "COUNT",
       "claim": "Exact exceptional probability (2^n-1)/2^(B*n) for n+1 children.",
       "endpoints": [
@@ -43,7 +43,7 @@
       "source": "Independent elementary finite counting proof"
     },
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "id": "OBSERVATION",
       "claim": "Observed sharing-component relation recovers true sampled families iff all local graphs are connected; no hidden labels used by adjacency.",
       "endpoints": [
@@ -55,7 +55,7 @@
       "source": "Independent model-to-observation proof with explicit injective parent symbols"
     },
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "endpoints": [
         "recovered_probability",
         "output_recovery_probability",
@@ -67,7 +67,7 @@
       "id": "RECOVERY"
     },
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "id": "MORE_BLOCKS",
       "claim": "Adding blocks preserves each one-family sharing path and connectivity, without independence.",
       "endpoints": [
@@ -77,7 +77,7 @@
       "source": "Independent deterministic graph observation"
     },
     {
-      "status": "DEVELOPMENT_PASS_PENDING_EXACT_GATE",
+      "status": "FORMAL_SCOPED_PASS",
       "endpoints": [
         "repeatBlock_share_iff",
         "repeatBlock_connected_iff",

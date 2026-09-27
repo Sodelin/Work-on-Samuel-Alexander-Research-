@@ -1,0 +1,125 @@
+{
+  "proof_commit": "ae0beee8d04e32c45f28d2f465b924d6816c82a5",
+  "working_tree_status": "",
+  "exact_clean_commit": true,
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    {
+      "module": "PedigreeBlockModel",
+      "source": "real\\PedigreeBlockModel.lean",
+      "signature": {
+        "source_sha256": "e43fe3ab0c243e7f121077d5a12dae99120ee9c1762bc576b5e487f6631ebf83",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 14.581,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+    },
+    {
+      "module": "PedigreeBlockGraph",
+      "source": "real\\PedigreeBlockGraph.lean",
+      "signature": {
+        "source_sha256": "7bb5462c855e74d9b38dfd76c31b504ed7414dc4630671f222a097b21771cc84",
+        "dependencies": {
+          "PedigreeBlockModel": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.411,
+      "log_sha256": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff",
+      "object_sha256": "0fee755a3639e44b3137288aa17c8f5c6298d507862520fcbbd87509b0bb2967"
+    },
+    {
+      "module": "PedigreeBlockProbability",
+      "source": "real\\PedigreeBlockProbability.lean",
+      "signature": {
+        "source_sha256": "0ba98d4cc1c25f684f0808222370ffcc8b2dd85a8935fce6baeefa98b5a9a7b8",
+        "dependencies": {
+          "PedigreeBlockModel": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 24.052,
+      "log_sha256": "ac98d556ce102e8cf3c32724b690ee2700f3322a57aa772a89b52b05a5d27399",
+      "object_sha256": "21dadba8ebbc5f8882d0c4657fb19b8a91d19b78a64545f2dd6b07b20e69d653"
+    },
+    {
+      "module": "PedigreeBlockObservation",
+      "source": "real\\PedigreeBlockObservation.lean",
+      "signature": {
+        "source_sha256": "292e19d568c280c741c82214e9dde68272a5165e8699aa8cbfa30cbd532db949",
+        "dependencies": {
+          "PedigreeBlockModel": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 10.635,
+      "log_sha256": "6a0374e37f7de450481d5c70bdadc1f2e6f15548d95c8bb177267ac48568b8ac",
+      "object_sha256": "80774a01db6647e4b209e1290eba802745efb32d9943fe3763d214f41c3b4be8"
+    },
+    {
+      "module": "PedigreeBlockRecovery",
+      "source": "real\\PedigreeBlockRecovery.lean",
+      "signature": {
+        "source_sha256": "a1736c0d033ed87e385d9d2a23a4f8362d2ebc41999f2e7c73a7c35d2d57230b",
+        "dependencies": {
+          "PedigreeBlockGraph": "0fee755a3639e44b3137288aa17c8f5c6298d507862520fcbbd87509b0bb2967",
+          "PedigreeBlockProbability": "21dadba8ebbc5f8882d0c4657fb19b8a91d19b78a64545f2dd6b07b20e69d653",
+          "PedigreeBlockObservation": "80774a01db6647e4b209e1290eba802745efb32d9943fe3763d214f41c3b4be8"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 23.271,
+      "log_sha256": "750cf5ab31a5ab7215ce70808fade43ae0993ca732cb3e5df11d268624a1667d",
+      "object_sha256": "29786f99142754e0dcf9e38587f9a87c42fd4a540e4101afb027e344f711858f"
+    },
+    {
+      "module": "PedigreeBlockDependence",
+      "source": "real\\PedigreeBlockDependence.lean",
+      "signature": {
+        "source_sha256": "ad35d3736ed31627a931342bace75e9b17941e752b9ae30264a3f076d45b2126",
+        "dependencies": {
+          "PedigreeBlockProbability": "21dadba8ebbc5f8882d0c4657fb19b8a91d19b78a64545f2dd6b07b20e69d653",
+          "PedigreeBlockGraph": "0fee755a3639e44b3137288aa17c8f5c6298d507862520fcbbd87509b0bb2967"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 25.252,
+      "log_sha256": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2",
+      "object_sha256": "7e8385c57d402629764ee369135a75773ef47ac86a55b459ae3fd6a8d2fe2cce"
+    },
+    {
+      "module": "PedigreeBlockAudit",
+      "source": "real\\PedigreeBlockAudit.lean",
+      "signature": {
+        "source_sha256": "fd0e8c47fab2c0ae85491b9b0d7bad07e109c7a2451330a55ce4612a2cb1c36f",
+        "dependencies": {
+          "PedigreeBlockRecovery": "29786f99142754e0dcf9e38587f9a87c42fd4a540e4101afb027e344f711858f",
+          "PedigreeBlockDependence": "7e8385c57d402629764ee369135a75773ef47ac86a55b459ae3fd6a8d2fe2cce"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 90.916,
+      "log_sha256": "e73142350d4e548c6ac34a66a46ef8f136a0abc61e9d6917a9dd17b70d9f01cb",
+      "object_sha256": "a718596e372610732a9714fea924c0407ef83e3263bfde40945842bfa5e8085d"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Requested import closure only; source correspondence and full repository verification are separate."
+}
