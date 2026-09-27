@@ -1,0 +1,8 @@
+'MergeHistoryProjection.split_preserves_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.adjacent_merge_histories' depends on axioms: [propext]
+'MergeHistoryProjection.legal_histories' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.admissible_splits_with_spectator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.same_current_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.distinct_restored_partitions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.no_exact_partition_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.no_partition_only_admissible_split' depends on axioms: [propext, Classical.choice, Quot.sound]

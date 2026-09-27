@@ -1,0 +1,8 @@
+'PositiveUnavoidability.good_successor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveUnavoidability.infinite_path_from_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveUnavoidability.backward_word' depends on axioms: [propext, Quot.sound]
+'PositiveUnavoidability.periodic_spanning' depends on axioms: [propext, Quot.sound]
+'PositiveUnavoidability.periodic_realized_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveUnavoidability.eventuallyPeriodic_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveUnavoidability.binaryNat_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveUnavoidability.specieslike_classification' depends on axioms: [propext, Classical.choice, Quot.sound]

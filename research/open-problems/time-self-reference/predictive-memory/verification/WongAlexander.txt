@@ -1,0 +1,8 @@
+'WongAlexander.sample_ancestral_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.extracted_sample_path_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.finite_catalog_not_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.natural_biosphere_has_real_dates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.ordered_encoded_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.old_encoded_path_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.actual_garg_opposite_infinite_completions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAlexander.extracted_contracted_sample_path_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

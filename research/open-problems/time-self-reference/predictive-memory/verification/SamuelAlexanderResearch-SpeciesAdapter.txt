@@ -1,0 +1,4 @@
+'AncestryViews.reach_iff_species_descendant' does not depend on any axioms
+'AncestryViews.erasure_eq_existing_forget' does not depend on any axioms
+'AncestryViews.fixed_index_to_species_descendant' does not depend on any axioms
+'AncestryViews.species_descendant_need_not_have_one_index' depends on axioms: [propext, Quot.sound]

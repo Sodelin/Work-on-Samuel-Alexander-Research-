@@ -7,13 +7,14 @@
     "version": "published PDF",
     "pdf_sha256": "8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce",
     "page_numbering": "One-based PDF pages; body page labels agree.",
-    "inventory_scope": "Working twelve-question inventory of this paper, not all questions in the full supplied corpus."
+    "inventory_scope": "Q01-Q12 are our working decomposition of explicit questions, gaps and themes in this one paper, not twelve verbatim author conjectures or all questions in the supplied corpus."
   },
   "status_summary": {
     "author_questions_fully_solved": 0,
-    "precise_subproblems_lean_checked": 2,
+    "precise_subproblems_lean_checked": 3,
     "precise_subproblems_written_proof_not_lean": 1,
-    "questions_requiring_definitions_model_or_evidence": 9
+    "questions_requiring_definitions_model_or_evidence": 8,
+    "counting_unit": "Working question entries with a completed selected narrow target, not theorem declarations, discoveries, or full source questions."
   },
   "evidence_policy": [
     "Selected endpoint counts describe audited declarations, not discoveries.",
@@ -100,6 +101,10 @@
         {
           "kind": "source_question_inventory",
           "path": "README.md"
+        },
+        {
+          "kind": "bounded_connection_not_source_solution",
+          "path": "predictive-memory/BIOLOGY.md"
         }
       ],
       "residual_gap": [
@@ -267,6 +272,36 @@
             "ExactAbstraction.TwoBit.exact_period_two_after_first"
           ],
           "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O7",
+          "statement": "Construct the coarsest exact predictive state and prove its universal factorization.",
+          "status": "lean_checked",
+          "evidence": [
+            "PredictiveState.coarsest_exact"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O8",
+          "statement": "Mechanize arbitrary-history sufficiency and generic probe-refinement factorization from the written bridge.",
+          "status": "lean_checked",
+          "evidence": [
+            "ControlledMemory.cross_model_all_times",
+            "ControlledMemory.probe_refinement_factor"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O9",
+          "statement": "Prove conditional feedback preservation and intervention-relative lower bounds.",
+          "status": "lean_checked",
+          "evidence": [
+            "PredictiveState.feedback_trajectories",
+            "ControlledMemory.at_least_four",
+            "ControlledMemory.passive_future_iff"
+          ],
+          "scope": "precise_subproblem"
         }
       ],
       "evidence": [
@@ -282,6 +317,22 @@
         {
           "kind": "scope_note",
           "path": "exact-abstraction/README.md"
+        },
+        {
+          "kind": "lean_source",
+          "path": "predictive-memory/PredictiveState.lean"
+        },
+        {
+          "kind": "lean_source",
+          "path": "predictive-memory/ControlledMemory.lean"
+        },
+        {
+          "kind": "verification_receipt",
+          "path": "predictive-memory/verification/PROOF-RECEIPT.json"
+        },
+        {
+          "kind": "scope_note",
+          "path": "predictive-memory/RESULTS.md"
         }
       ],
       "residual_gap": [
@@ -289,11 +340,42 @@
         "No universal failure of process/result projection or necessity of physical time is proved.",
         "Classical representative choice is not an executable construction for arbitrary types.",
         "Fixed joint-state semantics does not formalize unrestricted changes of language or semantics.",
-        "No entropy, bit cost, stochastic lumpability, or hidden-state feedback-controller theorem.",
-        "Biological adequacy requires a separate model correspondence."
+        "Biological adequacy requires a separate model correspondence.",
+        "No entropy, physical storage cost or stochastic-kernel preservation theorem.",
+        "Feedback preservation assumes the actual controller factors through the retained state; this is not inferred for an unknown organism."
       ],
-      "next_bounded_step": "For one chosen application, specify state, observation, action and preserved output; prove compatibility or exhibit an admissible observation collision.",
-      "author_question_completion_criterion": "A justified formal interpretation covering the relevant source claims beyond this one exact-next-state preservation contract."
+      "next_bounded_step": "Specify finite stochastic kernels, output and initial-law contracts; prove actionwise pushforward and finite-word response-law preservation for a selected biological observation process.",
+      "author_question_completion_criterion": "A justified formal interpretation covering the relevant source claims beyond this one exact-next-state preservation contract.",
+      "extension_targets": [
+        {
+          "name": "Coarsest exact predictive state and arbitrary-history memory",
+          "status": "lean_checked",
+          "hypotheses": [
+            "Arbitrary state, action and output types with a fixed total deterministic update and observation.",
+            "Future equivalence compares outputs after every finite action word, including the empty word.",
+            "A competing representation preserves output and every action; onto is required for its unique global factor map.",
+            "Closed-loop preservation additionally requires the actual control choice to factor through the retained state."
+          ],
+          "conclusions": [
+            "The future-equivalence quotient has exact controlled dynamics and is coarsest by unique surjective output- and action-preserving factorization.",
+            "Inequivalent states admit a finite separating intervention word; distinguishable families inject into every exact representation.",
+            "The cell and arbitrary-record history models have exactly four predictive classes under the stipulated actions; one parity bit suffices beyond visible state.",
+            "No fixed recent-record suffix determines parity for all histories; equal-length reachable histories can have equal visible output and different common-probe responses.",
+            "Restricting actions can merge classes, and a changed probe can invalidate the old retained state."
+          ],
+          "evidence": [
+            "PredictiveState.coarsest_exact",
+            "PredictiveState.distinguishing_word",
+            "PredictiveState.distinguishable_card_le",
+            "PredictiveState.feedback_trajectories",
+            "ControlledMemory.history_future_iff",
+            "ControlledMemory.at_least_four",
+            "ControlledMemory.no_finite_suffix_decoder",
+            "ControlledMemory.reachable_probe_witness"
+          ],
+          "boundary": "Established quotient/minimization mathematics under fixed semantics; no entropy, biological mechanism, stochastic law, or universal change-of-language theorem."
+        }
+      ]
     },
     {
       "id": "Q05",
@@ -383,30 +465,82 @@
       },
       "author_question_status": "open",
       "novelty_claim": false,
-      "precise_target": null,
-      "precise_subproblem_status": "needs_adequacy_criterion",
-      "hypotheses_status": "not_yet_selected",
-      "conclusion_status": "not_yet_selected",
+      "precise_target": {
+        "name": "Global finite-depth adequacy certificate and finite-horizon limitation",
+        "hypotheses": [
+          "Fixed total deterministic dynamics and visible output.",
+          "DepthEq n compares all intervention words of length at most n.",
+          "For every pair of declared states, depth-n agreement implies depth-(n+1) agreement."
+        ],
+        "conclusion": "Depth-n equivalence then equals full finite-future equivalence.",
+        "counterexample": "For every n, a countdown state and a silent state agree through n but differ at n+1; no uniform finite horizon suffices for arbitrary infinite systems.",
+        "interpretation_boundary": "The certificate quantifies over all declared state pairs and actions; it is not inferred from finite observed agreement or fitted predictions."
+      },
+      "precise_subproblem_status": "solved_lean_checked",
+      "hypotheses_status": "explicit_in_formal_contract",
+      "conclusion_status": "lean_checked_for_selected_contract",
       "obligations": [
         {
           "id": "Q07-O1",
-          "statement": "Choose observables and a falsifiable criterion for their adequacy.",
-          "status": "needs_adequacy_criterion",
+          "statement": "Define finite-depth agreement and prove the bounded-word equivalence.",
+          "status": "lean_checked",
+          "evidence": [
+            "PredictiveState.depth_iff_words"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q07-O2",
+          "statement": "Prove a global stabilization certificate for all finite horizons.",
+          "status": "lean_checked",
+          "evidence": [
+            "PredictiveState.stabilization_complete"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q07-O3",
+          "statement": "Exhibit agreement through any finite horizon with later disagreement.",
+          "status": "lean_checked",
+          "evidence": [
+            "HistoryObservation.arbitrary_delayed_distinction"
+          ],
+          "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q07-O4",
+          "statement": "Give adequacy/error claims when the model, states or actions are unknown or changing.",
+          "status": "needs_model_and_evidence",
           "evidence": [],
           "scope": "broader_author_question"
         }
       ],
       "evidence": [
         {
-          "kind": "source_question_inventory",
-          "path": "README.md"
+          "kind": "lean_source",
+          "path": "predictive-memory/PredictiveState.lean"
+        },
+        {
+          "kind": "lean_source",
+          "path": "predictive-memory/HistoryObservation.lean"
+        },
+        {
+          "kind": "verification_receipt",
+          "path": "predictive-memory/verification/PROOF-RECEIPT.json"
+        },
+        {
+          "kind": "exact_finite_examples",
+          "path": "predictive-memory/verification/EXACT-EXAMPLES.json"
         }
       ],
       "residual_gap": [
-        "An inadequacy witness or preservation theorem for those observables."
+        "No inference of global adequacy from sampled agreement.",
+        "Finite partition search and the finite-state termination bound are not mechanized as an algorithm.",
+        "Unknown dynamics, stochastic observation error and expanding action or modeling languages require separate contracts.",
+        "No universal analysis method for open-ended self-modification or source-complete biological claim."
       ],
-      "next_bounded_step": "Choose observables and a falsifiable criterion for their adequacy.",
-      "author_question_completion_criterion": "An inadequacy witness or preservation theorem for those observables."
+      "next_bounded_step": "Extend the preservation contract to a chosen stochastic observation model and quantify which unobserved states/actions remain uncertified.",
+      "author_question_completion_criterion": "A source-adequate model of the relevant open-ended changes, with justified observables, inadequacy/error guarantees and correspondence beyond a fixed deterministic transition system."
     },
     {
       "id": "Q08",
@@ -437,6 +571,10 @@
         {
           "kind": "source_question_inventory",
           "path": "README.md"
+        },
+        {
+          "kind": "bounded_connection_not_source_solution",
+          "path": "predictive-memory/BIOLOGY.md"
         }
       ],
       "residual_gap": [
@@ -696,6 +834,10 @@
         {
           "kind": "source_question_inventory",
           "path": "README.md"
+        },
+        {
+          "kind": "bounded_connection_not_source_solution",
+          "path": "predictive-memory/BIOLOGY.md"
         }
       ],
       "residual_gap": [
@@ -878,23 +1020,67 @@
       ],
       "scope": "Motivates choices of state, individuality and observation.",
       "boundary": "No shared biological mechanism or universal minimal-systems theorem follows without explicit correspondences and evidence."
+    },
+    {
+      "classification": "proved_controlled_mapping",
+      "project": "Ancestral restriction and actual finite interval gARG extraction",
+      "repository_paths": [
+        "research/open-problems/time-self-reference/predictive-memory/AncestryObservation.lean",
+        "research/open-problems/time-self-reference/predictive-memory/WongPredictiveBridge.lean"
+      ],
+      "endpoints": [
+        "AncestryObservation.restriction_all_words",
+        "WongPredictiveBridge.actual_garg_restriction_all_words"
+      ],
+      "preservation": "Compress to S, then perform destructive ancestral restrictions to subsets of S; exact final relation preserved through the existing fixed-locus extraction map.",
+      "boundary": "Not a marked ARG generator, interval-record dynamics, sample expansion, organism identification or biological mechanism."
+    },
+    {
+      "classification": "proved_consequence_of_existing_completion_mapping",
+      "project": "Finite-gARG global IAP observation limit",
+      "repository_path": "research/open-problems/time-self-reference/predictive-memory/WongPredictiveBridge.lean",
+      "endpoint": "WongPredictiveBridge.no_global_iap_decoder",
+      "preservation": "For each actual finite gARG, an injective code preserves both old edges and old ancestry paths in admissible infinite completions with opposite global IAP.",
+      "boundary": "No arbitrary decoder of that finite view decides global IAP over all compatible completions; information insufficiency, not computational undecidability or a biological species classifier."
     }
   ],
   "next_steps_in_order": [
     {
       "priority": 1,
-      "target": "Q09",
-      "action": "State the exact future-operation and state-sufficiency contract before extending the game model."
+      "target": "Q04/Q07 stochastic extension",
+      "action": "Specify finite stochastic kernels, output and initial-law contracts; prove actionwise pushforward and finite-word response-law preservation for a selected biological observation process."
     },
     {
       "priority": 2,
       "target": "Q12",
-      "action": "Formalize the already specified sharp finite-probability theorem if Lean certification is prioritized."
+      "action": "If formal certification is prioritized, define the finite binary sample distribution and randomized decision function, prove the shared all-zero contribution, and supply both attaining rules."
     },
     {
       "priority": 3,
-      "target": "Q04 applications",
-      "action": "Apply the verified criterion to one explicit observation/action/target map; label source correspondence separately."
+      "target": "Q09",
+      "action": "Specify which future operations a reduced state must predict, retain the needed history and prove sufficiency; select a payoff/controller contract before extending to a game theorem."
+    },
+    {
+      "priority": 4,
+      "target": "Biological correspondence",
+      "action": "Declare units, preselection assignment, clock/context, measurement and sampling; distinguish stable type, state change and selection before mechanism identification."
+    },
+    {
+      "priority": 5,
+      "target": "Wong dynamic transfer",
+      "action": "Require a proved marked-process and observation-kernel mapping before transferring the fixed-locus graph result to stochastic ARG generation."
     }
-  ]
+  ],
+  "updated_utc": "2026-09-27T04:03:56.907575+00:00",
+  "continuation_verification": {
+    "receipt": "predictive-memory/verification/PROOF-RECEIPT.json",
+    "status": "PASS",
+    "checked_at_utc": "2026-09-27T03:56:14.387699+00:00",
+    "fresh_project_rebuild": true,
+    "new_top_level_theorems_audited": 56,
+    "historical_endpoints_reaudited": 16,
+    "no_sorryAx": true,
+    "current_source_hashes_match_receipt": true,
+    "scope": "Local source-hashed proof replay, not hosted CI or empirical validation."
+  }
 }

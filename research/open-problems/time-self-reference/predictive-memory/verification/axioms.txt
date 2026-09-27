@@ -1,0 +1,72 @@
+'PredictiveState.future_refl' does not depend on any axioms
+'PredictiveState.future_observe' does not depend on any axioms
+'PredictiveState.future_step' does not depend on any axioms
+'PredictiveState.encode_eq_iff' depends on axioms: [propext, Quot.sound]
+'PredictiveState.quotient_observe' does not depend on any axioms
+'PredictiveState.quotient_step' depends on axioms: [Quot.sound]
+'PredictiveState.run_commutes' does not depend on any axioms
+'PredictiveState.exact_refinement_future' does not depend on any axioms
+'PredictiveState.factors_iff' depends on axioms: [Classical.choice]
+'PredictiveState.coarsest_exact' depends on axioms: [Classical.choice, Quot.sound]
+'PredictiveState.distinguishing_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredictiveState.distinguishable_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredictiveState.distinguishable_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredictiveState.restrict_actions' does not depend on any axioms
+'PredictiveState.depth_iff_words' does not depend on any axioms
+'PredictiveState.future_depth' does not depend on any axioms
+'PredictiveState.stabilization_complete' does not depend on any axioms
+'PredictiveState.feedback_commutes' does not depend on any axioms
+'PredictiveState.feedback_trajectories' depends on axioms: [propext]
+'ControlledMemory.parity_append_false' depends on axioms: [propext]
+'ControlledMemory.parity_append_true' depends on axioms: [propext]
+'ControlledMemory.cell_commutes' does not depend on any axioms
+'ControlledMemory.history_commutes' depends on axioms: [propext]
+'ControlledMemory.cellSummary_onto' does not depend on any axioms
+'ControlledMemory.historySummary_onto' does not depend on any axioms
+'ControlledMemory.parity_replicate_false' depends on axioms: [propext]
+'ControlledMemory.no_finite_suffix_decoder' depends on axioms: [propext]
+'ControlledMemory.cross_model_all_words' depends on axioms: [propext]
+'ControlledMemory.cross_model_all_times' depends on axioms: [propext]
+'ControlledMemory.probe_refinement_factor' does not depend on any axioms
+'ControlledMemory.cell_future_iff' does not depend on any axioms
+'ControlledMemory.history_future_iff' depends on axioms: [propext]
+'ControlledMemory.at_least_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ControlledMemory.memory_required_at_fixed_visible' does not depend on any axioms
+'ControlledMemory.reachable_probe_witness' does not depend on any axioms
+'ControlledMemory.all_summaries_reachable' does not depend on any axioms
+'ControlledMemory.passive_visible_exact' does not depend on any axioms
+'ControlledMemory.passive_future_iff' does not depend on any axioms
+'ControlledMemory.changed_probe_refutes_summary' does not depend on any axioms
+'HistoryObservation.stable_run' depends on axioms: [propext]
+'HistoryObservation.stable_type_matched_history_null' depends on axioms: [propext]
+'HistoryObservation.selection_no_history_effect' does not depend on any axioms
+'HistoryObservation.selected_history_perfectly_predicts' depends on axioms: [propext]
+'HistoryObservation.delayed_run' depends on axioms: [propext, Quot.sound]
+'HistoryObservation.silent_run' does not depend on any axioms
+'HistoryObservation.arbitrary_delayed_distinction' depends on axioms: [propext, Quot.sound]
+'AncestryObservation.larger_after_smaller' depends on axioms: [propext, Quot.sound]
+'AncestryObservation.restriction_commutes' depends on axioms: [propext, Quot.sound]
+'AncestryObservation.restriction_all_words' depends on axioms: [propext, Quot.sound]
+'AncestryObservation.sample_query_factors' does not depend on any axioms
+'AncestryObservation.same_existing_samples' depends on axioms: [propext, Quot.sound]
+'AncestryObservation.expanded_sample_distinguishes' depends on axioms: [propext, Quot.sound]
+'AncestryObservation.no_universal_sample_expansion' depends on axioms: [propext, Quot.sound]
+'WongPredictiveBridge.extracted_is_compress' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPredictiveBridge.actual_garg_restriction_all_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPredictiveBridge.no_global_iap_decoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExactAbstraction.exact_factor_iff' depends on axioms: [Classical.choice]
+'ExactAbstraction.exact_factor_unique' depends on axioms: [Quot.sound]
+'ExactAbstraction.trajectory_preservation' depends on axioms: [propext]
+'ExactAbstraction.compatible_gives_trajectories' depends on axioms: [propext, Classical.choice]
+'ExactAbstraction.TwoBit.projection_collision' does not depend on any axioms
+'ExactAbstraction.TwoBit.no_state_only_update' depends on axioms: [Classical.choice]
+'ExactAbstraction.TwoBit.period_two_after_first' does not depend on any axioms
+'ExactAbstraction.TwoBit.exact_period_two_after_first' does not depend on any axioms
+'MergeHistoryProjection.split_preserves_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.adjacent_merge_histories' depends on axioms: [propext]
+'MergeHistoryProjection.legal_histories' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.admissible_splits_with_spectator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.same_current_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.distinct_restored_partitions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.no_exact_partition_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MergeHistoryProjection.no_partition_only_admissible_split' depends on axioms: [propext, Classical.choice, Quot.sound]

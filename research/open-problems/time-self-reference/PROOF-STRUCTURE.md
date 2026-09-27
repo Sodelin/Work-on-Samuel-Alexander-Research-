@@ -1,8 +1,14 @@
 # Proof structure and remaining obligations
 
-## Where the research stands
+This is the **25 September starting checkpoint**. The
+[27 September source-to-result audit](predictive-memory/AUDIT.md) and
+[precise continuation results](predictive-memory/RESULTS.md) advance its
+obligations. The [problem ledger](problem-ledger.json) is the canonical current
+record; all full author questions remain open.
 
-We have completed **three precisely stated subproblems**: two have checked Lean proofs, and one has a written general proof supported by exact finite computation. **None of the twelve broader questions in the source paper is recorded as fully solved.** This distinction tells us what can be reused now and what still needs a mathematical definition, a proof, or empirical evidence.
+## Where the research stood
+
+At this checkpoint we had completed **three precisely stated subproblems**: two with checked Lean proofs, and one with a written general proof supported by exact finite computation. **None of the full source questions represented by our twelve working targets was recorded as solved.** This distinction tells us what can be reused and what still needs a mathematical definition, a proof, or empirical evidence.
 
 This map follows the [twelve-question inventory](README.md). The source is Abramsky et al., *Open questions about time and self-reference in living systems*, [DOI 10.1098/rsos.261059](https://doi.org/10.1098/rsos.261059), published PDF SHA-256 `8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce`. Page numbers below are from that published PDF. The questions are paraphrased; Q01–Q12 are our inventory identifiers.
 

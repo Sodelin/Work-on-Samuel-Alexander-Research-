@@ -4,6 +4,8 @@ A public, AI-assisted mathematics notebook on labelled ancestry graphs, sequence
 
 **Start here: [Complete plain-language mathematics report](MATH-RESEARCH-REPORT.md).** It explains what was proved, what remains open, and how the work relates to Alexander's source questions. For current status by topic, read [Ten solutions](TEN-SOLUTIONS.md) and [three-track research progress](RESEARCH-PROGRESS.md).
 
+For the separate Royal Society track, read [When the same appearance can hide a different future](TIME-AND-MEMORY.md): the paper's questions, our precise results, biological implications, and remaining gaps on one page.
+
 ## Current checkpoint
 
 The newer research is in [draft PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6), which is **open and unmerged**. Its last cited hosted proof checkpoint is [commit `a2644182`](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/a2644182b147eb40816abb278e00c3c6d4709eb8): [Verify run 36173386580 passed](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580) with **405 core, 317 real/Mathlib, and 234 standalone selected Lean declarations**. The numbers include supporting lemmas; they are not counts of discoveries or solved historical problems. Subsequent documentation commits do not change the proof snapshot certified by that run.

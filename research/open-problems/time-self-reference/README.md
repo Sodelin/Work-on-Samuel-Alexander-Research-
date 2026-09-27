@@ -1,6 +1,17 @@
 # Open problems in time, self-reference and changing systems
 
-## Current direction — 25 September 2026
+## Current continuation — 27 September 2026
+
+**Start with the [one-page public reading route](../../../TIME-AND-MEMORY.md).**
+The [predictive-memory results](predictive-memory/RESULTS.md) extend the prior
+exact-abstraction criterion and written bridge to coarsest predictive state,
+arbitrary histories, distinguishing interventions, and a global adequacy
+certificate. The [source-to-result audit](predictive-memory/AUDIT.md) identifies
+proved ancestry mappings and the separate biological evidence gates. Read the
+[source-hashed verification receipt](predictive-memory/verification/PROOF-RECEIPT.json)
+for the exact current check status. No full author question is marked solved.
+
+## Starting direction — 25 September 2026
 
 The user has redirected the main research effort toward **problems explicitly stated by the supplied papers**. The proposed unified minimal systems theory remains a motivating idea. We will discover which mathematical connections survive by working on the authors' questions.
 
@@ -10,7 +21,7 @@ The [author's institutional record](https://www-users.york.ac.uk/~ss44/bib/ss/no
 
 ## Follow the proof structure
 
-Start with the [proof structure and remaining obligations](PROOF-STRUCTURE.md). It gives the source question, precise assumptions, conclusion, proof obligations, evidence, and residual gap for each active target. The [machine-readable problem ledger](problem-ledger.json) records the same status boundaries across all twelve source questions. Connections are marked as actual formal imports, shared proof methods, or biological analogies requiring further evidence.
+The [prior proof structure and obligations](PROOF-STRUCTURE.md) gives the starting source questions, assumptions and conclusions. The [canonical machine-readable problem ledger](problem-ledger.json) records current status across our twelve working targets. These are our decomposition of the paper, not twelve verbatim author conjectures. Connections are marked as actual formal imports, shared proof methods, or biological analogies requiring further evidence.
 
 ## First completed results
 
@@ -75,7 +86,7 @@ This is a working inventory of this one paper, not a claim to have inventoried e
 
 These links identify usable prior work. They do not constitute a completed novelty search or show that the biological agenda is subsumed by existing results.
 
-## Previous work remains available
+## Historical related-work checkpoint — 25 September 2026
 
 The previous public baseline is [commit 414e79a](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/414e79a02ac940da8cd89d58211c5a1fba760233), with its [Wong coverage map](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/414e79a02ac940da8cd89d58211c5a1fba760233/research/wong/completion/COVERAGE.md) and [successful hosted verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36142086589).
 

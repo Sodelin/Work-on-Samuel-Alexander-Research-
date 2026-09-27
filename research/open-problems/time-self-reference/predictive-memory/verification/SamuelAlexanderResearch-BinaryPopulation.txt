@@ -1,0 +1,8 @@
+'BinaryPopulation.forget_edge_eq' depends on axioms: [propext, Quot.sound]
+'BinaryPopulation.edge_is_binaryNatPopulation' depends on axioms: [propext, Quot.sound]
+'BinaryPopulation.explicit_specieslike_avoider' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPopulation.aperiodic_specieslike_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPopulation.specieslike_unavoidable_implies_eventuallyPeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryPopulation.specieslike_classification_of_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
