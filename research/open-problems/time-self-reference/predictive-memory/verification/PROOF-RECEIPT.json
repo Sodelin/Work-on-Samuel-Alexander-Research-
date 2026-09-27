@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "status": "PASS",
-  "checked_at_utc": "2026-09-27T03:56:14.387699+00:00",
+  "checked_at_utc": "2026-09-27T04:45:28.582756+00:00",
   "compiler_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
-  "source_commit_before_replay": "6f4745a451ee3f47b79b76395ca5ef3ef6b60529",
+  "source_commit_before_replay": "ea4d9cd09a16e617ef617d32d6e9c446617ad19c",
   "source_identity_policy": "Per-file SHA256 below; commit may precede uncommitted input edits.",
   "standard_axiom_allowlist": [
     "Classical.choice",
@@ -291,15 +291,31 @@
       "compiler_exit_code": 0,
       "log": "WongPredictiveBridge.txt",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "StochasticAbstraction",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/StochasticAbstraction.lean",
+      "source_sha256": "943a395e85d3df0fbd8e4570fa205f3a2748cfdaa744ce1add9380b8d41453ce",
+      "compiler_exit_code": 0,
+      "log": "StochasticAbstraction.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "StochasticExamples",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/StochasticExamples.lean",
+      "source_sha256": "78c2f7ea2a59e2d3f3446b22df575353e527d067117863c9a0b3568f38ac1f2c",
+      "compiler_exit_code": 0,
+      "log": "StochasticExamples.txt",
+      "log_sha256": "8e05435565254f9476cc9a4a64eb31c493ba823087b572472b5440f25fc12de6"
     }
   ],
-  "verification_script_sha256": "59710228d629df1904c49dffd918e980e532212cecd48c9eb9c50a170f4d12cd",
+  "verification_script_sha256": "f7c72d4c7a6395d7a0fe710539b43127c543b4a452c6d2bc3efeadc2b18d2e88",
   "fresh_project_rebuild": true,
   "compiler_serialization": "shared OS byte lock",
   "axiom_audit_exit_code": 0,
-  "selected_new_theorem_count": 56,
+  "selected_new_theorem_count": 92,
   "selected_historical_endpoint_count": 16,
-  "axiom_log_sha256": "27255919efcd5e7cee31858404aef94e162944438509c5a4e7d49fe095224e8e",
+  "axiom_log_sha256": "eabfb12b3e9d8c090c727ce2d3529dcbed7eb8421e659d0f4b4d7abe1ee17ab7",
   "axiom_reports": {
     "PredictiveState.encode_eq_iff": [
       "propext",
@@ -414,6 +430,181 @@
       "Quot.sound"
     ],
     "WongPredictiveBridge.no_global_iap_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.exact_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.exact_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.bind_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.one_step_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.exact_iff_all_initial_laws": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.runLaw_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.runLaw_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.mapHistory_append": [
+      "propext"
+    ],
+    "StochasticAbstraction.mapHistory_comp": [
+      "propext"
+    ],
+    "StochasticAbstraction.view_comp": [
+      "propext",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.experiment_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.experimentLaw_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.observationPolicy_factors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.observed_experiment_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.observed_statistic_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.deterministic_instance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.joint_sensor_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.joint_sensor_observed_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.coin_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.coin_not": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.first_marginals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.second_marginals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.correlated_agrees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.anticorrelated_disagrees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.matching_marginals_different_joint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_is_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.same_all_traces": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.no_trace_based_test_separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.same_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.u_one_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.b_one_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_one_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_profile_ne_u": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_profile_ne_b": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.profile_pushes_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.no_commuting_profile_kernel": [
       "propext",
       "Classical.choice",
       "Quot.sound"

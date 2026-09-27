@@ -6,7 +6,10 @@
 The [predictive-memory results](predictive-memory/RESULTS.md) extend the prior
 exact-abstraction criterion and written bridge to coarsest predictive state,
 arbitrary histories, distinguishing interventions, and a global adequacy
-certificate. The [source-to-result audit](predictive-memory/AUDIT.md) identifies
+certificate. The [stochastic continuation](predictive-memory/STOCHASTIC.md)
+adds exact PMF reduction, adaptive joint-history preservation, correlated
+measurement noise and an all-horizon limit of output trace equivalence.
+The [source-to-result audit](predictive-memory/AUDIT.md) identifies
 proved ancestry mappings and the separate biological evidence gates. Read the
 [source-hashed verification receipt](predictive-memory/verification/PROOF-RECEIPT.json)
 for the exact current check status. No full author question is marked solved.

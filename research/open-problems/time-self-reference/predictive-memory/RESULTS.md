@@ -2,11 +2,11 @@
 
 Continuation of the [problem ledger](../problem-ledger.json) and
 [controlled-abstraction bridge](../controlled-abstraction-bridge/BRIDGE.md).
-Status: **PASS**, fresh committed-source replay. All 35 project imports compiled;
-56 new theorem declarations and 16 historical selected endpoints passed the
-transitive axiom audit. The source-hashed receipt identifies the exact inputs.
-These counts include supporting lemmas and do not count discoveries or solved
-author questions.
+The deterministic results below are preserved. The subsequent
+[stochastic gate](STOCHASTIC.md) proves PMF lumpability, joint history-law
+preservation and strict counterexamples. The [source-hashed receipt](verification/PROOF-RECEIPT.json)
+identifies the exact current inputs and verification counts, including
+supporting lemmas rather than discoveries or solved author questions.
 
 ## The general result
 

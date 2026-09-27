@@ -302,6 +302,27 @@
             "ControlledMemory.passive_future_iff"
           ],
           "scope": "precise_subproblem"
+        },
+        {
+          "id": "Q04-O10",
+          "statement": "Prove the discrete stochastic fibre criterion and unique exact kernel.",
+          "status": "lean_checked",
+          "evidence": [
+            "StochasticAbstraction.exact_iff",
+            "StochasticAbstraction.exact_unique"
+          ],
+          "scope": "precise_extension"
+        },
+        {
+          "id": "Q04-O11",
+          "statement": "Preserve complete finite adaptive state/action and noisy observed/action laws with explicit initial and policy contracts.",
+          "status": "lean_checked",
+          "evidence": [
+            "StochasticAbstraction.experimentLaw_preserves",
+            "StochasticAbstraction.observed_experiment_law",
+            "StochasticAbstraction.joint_sensor_observed_law"
+          ],
+          "scope": "precise_extension"
         }
       ],
       "evidence": [
@@ -333,6 +354,18 @@
         {
           "kind": "scope_note",
           "path": "predictive-memory/RESULTS.md"
+        },
+        {
+          "kind": "lean_source",
+          "path": "predictive-memory/StochasticAbstraction.lean"
+        },
+        {
+          "kind": "lean_source",
+          "path": "predictive-memory/StochasticExamples.lean"
+        },
+        {
+          "kind": "scope_note",
+          "path": "predictive-memory/STOCHASTIC.md"
         }
       ],
       "residual_gap": [
@@ -341,10 +374,11 @@
         "Classical representative choice is not an executable construction for arbitrary types.",
         "Fixed joint-state semantics does not formalize unrestricted changes of language or semantics.",
         "Biological adequacy requires a separate model correspondence.",
-        "No entropy, physical storage cost or stochastic-kernel preservation theorem.",
-        "Feedback preservation assumes the actual controller factors through the retained state; this is not inferred for an unknown organism."
+        "Feedback preservation assumes the actual controller factors through the retained state; this is not inferred for an unknown organism.",
+        "No entropy or physical storage-cost theorem.",
+        "General continuous measures, approximate preservation, partial actions and empirical identification of joint kernels remain additional gates."
       ],
-      "next_bounded_step": "Specify finite stochastic kernels, output and initial-law contracts; prove actionwise pushforward and finite-word response-law preservation for a selected biological observation process.",
+      "next_bounded_step": "Define total-variation error for approximate joint-kernel preservation and prove an adaptive finite-horizon joint-law bound, with biological variables and model correspondence separately justified.",
       "author_question_completion_criterion": "A justified formal interpretation covering the relevant source claims beyond this one exact-next-state preservation contract.",
       "extension_targets": [
         {
@@ -374,6 +408,38 @@
             "ControlledMemory.reachable_probe_witness"
           ],
           "boundary": "Established quotient/minimization mathematics under fixed semantics; no entropy, biological mechanism, stochastic law, or universal change-of-language theorem."
+        },
+        {
+          "name": "Exact stochastic abstraction and complete finite experiment laws",
+          "status": "lean_checked",
+          "hypotheses": [
+            "Fixed total K : A -> X -> PMF X; arbitrary carrier types with countably supported probability distributions.",
+            "Onto q for global existence/uniqueness iff pushed K laws are constant on every q fibre; preservation of a supplied exact kernel does not need onto.",
+            "Current output decoder d(q(x))=p(x), pushed initial law, and the actual conditional policy factors through retained history including past actions.",
+            "Noisy sensors use a joint next-state/measurement law pushed by q x identity, Markov in the declared latent X; persistent sensor memory is part of X."
+          ],
+          "conclusions": [
+            "Fibre compatibility is equivalent to existence of an exact kernel, uniquely determined for onto q.",
+            "The complete joint finite retained-state/action and observed/action history laws are preserved under adaptive randomized policies with the stated information interface.",
+            "Equality of separate component marginals does not imply equality of their joint law.",
+            "A six-state one-action example has equal complete joint output trace laws at every finite horizon yet no kernel on complete predictive profiles commuting with actual transitions.",
+            "Every randomized decision based only on each recorded finite output trace has the same law at the two equivalent starting states.",
+            "The example has an exact affine midpoint relation among predictive laws at every horizon, without a biological geometry or metric claim."
+          ],
+          "evidence": [
+            "StochasticAbstraction.exact_iff",
+            "StochasticAbstraction.exact_unique",
+            "StochasticAbstraction.exact_iff_all_initial_laws",
+            "StochasticAbstraction.experimentLaw_preserves",
+            "StochasticAbstraction.observed_experiment_law",
+            "StochasticAbstraction.joint_sensor_observed_law",
+            "StochasticExamples.matching_marginals_different_joint",
+            "StochasticExamples.c_is_mixture",
+            "StochasticExamples.same_all_traces",
+            "StochasticExamples.no_trace_based_test_separates",
+            "StochasticExamples.no_commuting_profile_kernel"
+          ],
+          "boundary": "Established lumpability and PMF algebra under fixed conditional sampling semantics; not a fitted biological mechanism, general continuous-kernel theorem, approximate bound, coarsest stochastic bisimulation construction, or mapping of the Wong generator. The counterexample allows other realizations of its output laws and does not disprove output-history feedback preservation."
         }
       ]
     },
@@ -513,6 +579,17 @@
           "status": "needs_model_and_evidence",
           "evidence": [],
           "scope": "broader_author_question"
+        },
+        {
+          "id": "Q07-O5",
+          "statement": "Distinguish all-horizon joint output prediction from a commuting stochastic state quotient.",
+          "status": "lean_checked",
+          "evidence": [
+            "StochasticExamples.same_all_traces",
+            "StochasticExamples.no_commuting_profile_kernel",
+            "StochasticExamples.no_trace_based_test_separates"
+          ],
+          "scope": "precise_extension"
         }
       ],
       "evidence": [
@@ -531,6 +608,14 @@
         {
           "kind": "exact_finite_examples",
           "path": "predictive-memory/verification/EXACT-EXAMPLES.json"
+        },
+        {
+          "kind": "lean_source",
+          "path": "predictive-memory/StochasticExamples.lean"
+        },
+        {
+          "kind": "scope_note",
+          "path": "predictive-memory/STOCHASTIC.md"
         }
       ],
       "residual_gap": [
@@ -539,7 +624,7 @@
         "Unknown dynamics, stochastic observation error and expanding action or modeling languages require separate contracts.",
         "No universal analysis method for open-ended self-modification or source-complete biological claim."
       ],
-      "next_bounded_step": "Extend the preservation contract to a chosen stochastic observation model and quantify which unobserved states/actions remain uncertified.",
+      "next_bounded_step": "Define total-variation error for approximate joint-kernel preservation and prove an adaptive finite-horizon joint-law bound, with biological variables and model correspondence separately justified.",
       "author_question_completion_criterion": "A source-adequate model of the relevant open-ended changes, with justified observables, inadequacy/error guarantees and correspondence beyond a fixed deterministic transition system."
     },
     {
@@ -575,13 +660,35 @@
         {
           "kind": "bounded_connection_not_source_solution",
           "path": "predictive-memory/BIOLOGY.md"
+        },
+        {
+          "kind": "coordinated_primary_source_and_design_audit",
+          "path": "predictive-memory/STENTOR-EVIDENCE.md"
+        },
+        {
+          "kind": "source_receipt_not_new_fit",
+          "path": "predictive-memory/verification/STENTOR-SOURCE-RECEIPT.json"
         }
       ],
       "residual_gap": [
         "Formal correspondence plus empirical evidence, not internal consistency alone."
       ],
-      "next_bounded_step": "Choose a specific relational construction and a measurable mechanism.",
-      "author_question_completion_criterion": "Formal correspondence plus empirical evidence, not internal consistency alone."
+      "next_bounded_step": "In the separate evidence lane, establish record-level assignment and cell/lineage links for the declared response-law contrast; do not infer a mechanism from predictive fit or post-treatment matching.",
+      "author_question_completion_criterion": "Formal correspondence plus empirical evidence, not internal consistency alone.",
+      "extension_targets": [
+        {
+          "name": "Assigned-history/common-probe evidence contract",
+          "status": "needs_linked_data_and_identification",
+          "primary_source_doi": "10.1016/j.cub.2026.03.080",
+          "required_records": [
+            "Baseline cell and lineage IDs",
+            "Assignment unit and mechanism",
+            "Probe, elapsed time and culture/run",
+            "All eligible outcomes, division, detachment, missingness and exclusions by arm"
+          ],
+          "boundary": "Parent-progeny association and molecular perturbations are relevant evidence, not identification of the retained state or a formal metabolism-repair realization. Post-treatment visible-state selection does not identify the proposed causal contrast."
+        }
+      ]
     },
     {
       "id": "Q09",
@@ -1042,13 +1149,20 @@
       "endpoint": "WongPredictiveBridge.no_global_iap_decoder",
       "preservation": "For each actual finite gARG, an injective code preserves both old edges and old ancestry paths in admissible infinite completions with opposite global IAP.",
       "boundary": "No arbitrary decoder of that finite view decides global IAP over all compatible completions; information insufficiency, not computational undecidability or a biological species classifier."
+    },
+    {
+      "classification": "stochastic_correspondence_required_not_established",
+      "project": "Wong marked stochastic generator",
+      "repository_path": "research/open-problems/time-self-reference/predictive-memory/StochasticAbstraction.lean",
+      "available_contract": "Joint finite experiment-law preservation for discrete PMF kernels under actionwise pushforward, observation decoding, pushed initial law and policy factorization.",
+      "boundary": "Wong real clocks/cuts use general measures; no generator-law or measurement-kernel mapping is proved here. The earlier fixed-locus graph map stays valid at its own scope."
     }
   ],
   "next_steps_in_order": [
     {
       "priority": 1,
-      "target": "Q04/Q07 stochastic extension",
-      "action": "Specify finite stochastic kernels, output and initial-law contracts; prove actionwise pushforward and finite-word response-law preservation for a selected biological observation process."
+      "target": "Q04/Q07 approximate stochastic response geometry",
+      "action": "Define total-variation error for approximate joint-kernel preservation and prove an adaptive finite-horizon joint-law bound, with biological variables and model correspondence separately justified."
     },
     {
       "priority": 2,
@@ -1063,7 +1177,7 @@
     {
       "priority": 4,
       "target": "Biological correspondence",
-      "action": "Declare units, preselection assignment, clock/context, measurement and sampling; distinguish stable type, state change and selection before mechanism identification."
+      "action": "In the separate evidence lane, establish record-level assignment and cell/lineage links for the declared response-law contrast; do not infer a mechanism from predictive fit or post-treatment matching."
     },
     {
       "priority": 5,
@@ -1071,16 +1185,17 @@
       "action": "Require a proved marked-process and observation-kernel mapping before transferring the fixed-locus graph result to stochastic ARG generation."
     }
   ],
-  "updated_utc": "2026-09-27T04:03:56.907575+00:00",
+  "updated_utc": "2026-09-27T04:54:33.756217+00:00",
   "continuation_verification": {
     "receipt": "predictive-memory/verification/PROOF-RECEIPT.json",
     "status": "PASS",
-    "checked_at_utc": "2026-09-27T03:56:14.387699+00:00",
+    "checked_at_utc": "2026-09-27T04:45:28.582756+00:00",
     "fresh_project_rebuild": true,
-    "new_top_level_theorems_audited": 56,
+    "project_sources_rebuilt": 37,
+    "new_top_level_theorems_audited": 92,
     "historical_endpoints_reaudited": 16,
     "no_sorryAx": true,
     "current_source_hashes_match_receipt": true,
-    "scope": "Local source-hashed proof replay, not hosted CI or empirical validation."
+    "scope": "Local fresh committed-source proof replay; hosted CI and empirical validation remain separate evidence."
   }
 }

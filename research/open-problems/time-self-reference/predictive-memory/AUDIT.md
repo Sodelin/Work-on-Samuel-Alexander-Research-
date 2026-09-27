@@ -79,6 +79,27 @@ assignment. A theorem proves a specified deterministic same-unit, same-clock
 null. The stochastic/causal assumptions needed for a statistical test are
 written explicitly, not silently inferred from that theorem.
 
+The [stochastic continuation](STOCHASTIC.md) now closes the general discrete
+kernel-preservation gate. For onto encodings, fibre-constant pushed laws are
+necessary and sufficient for a unique exact kernel. With output decoding,
+the pushed initial law and policy factorization, the complete finite joint
+state/action and observation/action laws are preserved. Joint noisy-sensor
+kernels allow state/measurement correlation. The construction uses Mathlib
+PMFs with countable support; it does not cover arbitrary continuous kernels.
+
+Two Lean counterexamples audit what this buys. Equal component marginals can
+hide different joint laws. More strongly, equal complete output trace laws
+at every finite horizon need not yield an exact commuting kernel on those
+predictive profiles. The latter is an all-horizon affine-mixture argument,
+not finite enumeration. Its geometry is a relation between response laws,
+not a biological spatial model. The [new independent review](STOCHASTIC-SCOPE-REVIEW.md)
+checks these definitions and limits.
+
+The coordinated [Stentor source/design handoff](STENTOR-EVIDENCE.md) supplies
+a distinct primary study and explicit assigned-history/common-probe estimand.
+It does not close record-level data linkage, selection, or causal mechanism
+identification. The canonical evidence and mathematical lanes remain separate.
+
 ## Coverage of the working question ledger
 
 Every row below retains `author_question_status: open`.
@@ -88,11 +109,11 @@ Every row below retains `author_question_status: open`.
 | Q01: life and time, §2.2 p.5 | The suffix/parity example separates recorded history from sufficient predictive memory. | Define physical time versus temporal representation; establish an operational biological claim. No emergence-of-time theorem. |
 | Q02: non-iterative exploration, §3.3 pp.8–9 | No new theorem. | Choose computation, preparation, probability-of-success and resource models before a speedup or impossibility claim. |
 | Q03: self-reference and time, §4.2 pp.10–11 | Earlier oscillation remains a model example; the new quotient adds no necessity-of-time result. | Define the self-reference and temporal predicates; a formal implication or countermodel must target those definitions. |
-| Q04: process/result projection, §4.2 p.11 | Exact criterion extended to coarsest predictive state, minimal distinctions, feedback under an explicit policy factorization, and arbitrary-history bridge. | Justify the chosen deterministic prediction interpretation; extend to justified stochastic/biological semantics. |
+| Q04: process/result projection, §4.2 p.11 | Deterministic coarsest state and history bridge; stochastic fibre criterion, unique kernel, adaptive joint histories and correlated-sensor preservation. | Fixed discrete-kernel interpretation still needs biological correspondence; approximation and general continuous measures remain open. |
 | Q05: rule-changing open systems, §6 pp.15–16 | Rules or controller memory can be included in a joint state when their interpreter is fixed. | Specify an intended rule-changing system and prove its interpretation map. This observation is not unrestricted semantic change. |
 | Q06: changing modeling language, §6.2.3 p.20 and §7 p.24 | No new formal language transformation. | Syntax, interpretations, transformations and retained invariants; a fixed interpreter cannot certify a changing one. |
-| Q07: detecting inadequacy, §6.3 p.21 | Stable finite-depth equivalence certifies all-horizon adequacy on the declared system; delayed revelation and a changed probe show limits. | Unknown dynamics, unobserved states, stochastic error and expanding action languages require additional contracts and evidence. |
-| Q08: plausible biological mechanism, §6.4.1 p.21 | Operational retention/probe questions, primary-source comparisons, and confounding/selection counterexamples. | An actual biological state, measurement and intervention map, followed by discriminating empirical evidence. No metabolism–repair realization proved. |
+| Q07: detecting inadequacy, §6.3 p.21 | Deterministic depth certificate; all-horizon stochastic trace equivalence can still fail exact state-kernel preservation. | Unknown dynamics, unobserved states, quantitative approximation and expanding action languages require additional contracts and evidence. |
+| Q08: plausible biological mechanism, §6.4.1 p.21 | Operational retention/probe questions, primary-source comparisons, confounding/selection examples and a Stentor response-law evidence contract. | Actual biological state, measurement and intervention map plus record-level discriminating evidence. No metabolism–repair realization proved. |
 | Q09: changing decision makers, §6.4.3 p.22 | The old partition-only obstruction remains checked. The new generic refinement can describe sufficient state after a future operation family is fixed. | Prove a bridge for a complete merge/split game including membership, memory, controllers, payoffs and legality. |
 | Q10: game solution notions, §6.4.4 pp.22–23 | No new equilibrium or domain-theoretic result. | Read the cited construction and identify a precise failed/preserved condition before altering its solution concept. |
 | Q11: representation and autonomy, §7 pp.23–24 | Predictive state is relative to declared observations and interventions; this clarifies one representational task. | A discriminating operational implication of the philosophical alternatives, plus evidence. |
@@ -110,11 +131,27 @@ Every row below retains `author_question_status: open`.
 
 ## Remaining work in executable order
 
-1. Extend the exact-map contract to finite stochastic transition kernels and
-   output laws: a specified pushforward kernel must commute for every
-   intervention, with an initial-law and observation contract. Prove law
-   preservation and distinguish it from weaker trace equivalence. Then select
-   one biological observation process that could meet those assumptions.
+Usefulness check before opening another theorem lane:
+
+| Exact question answered | Established mathematics and current evidence | Observation or decision enabled | Gap to a biological claim |
+|---|---|---|---|
+| Which distinctions may a fixed deterministic predictor discard? | Established behavioral quotient; Lean universal factorization and arbitrary-history bridge. | Reject an insufficient code, retain the necessary distinctions, and exhibit a separating intervention word. | Identify physical variables and validate the model's intervention semantics. |
+| When can a stochastic reduced model reproduce an adaptive experiment? | Established lumpability and PMF algebra; Lean fibre criterion, uniqueness and complete joint finite-history preservation. | Use a reduced model for the same observation/action experiment when its explicit commutation, initial-law and policy contracts hold. | Empirical estimates do not certify uniform exact kernels or an adequate Markov state. |
+| Do perfect output predictions identify the state transitions? | Established trace/bisimulation distinction; Lean all-horizon six-state witness and randomized-test corollary. | Avoid interpreting predictive agreement as a unique latent mechanism; seek a new informative probe or measurement. | The witness is invented and does not prove that a particular organism has either mechanism. |
+| Are separately matching sensor and state marginals enough? | Lean copied/complemented-bit counterexample; joint noisy-sensor preservation theorem. | Preserve or measure their joint law when noise can be correlated. | A real sensor's persistent state and sampling context must enter the declared model. |
+| Can the checked Stentor outputs identify acquired cellular memory? | Coordinated primary-source and author-output audit; metadata repairs with unresolved fields, no new RNA fit. | Use exact sample joins, retain time-matched controls, and separate duration, frequency, culture and post-treatment selection. | Individual behavioral linkage, allocation and mechanism-specific evidence remain missing. |
+
+The new contribution here is the checked implementation, explicit contracts,
+source correspondence and reproducible counterexamples, not a novelty claim
+for the mathematical theories. The next theorem is justified by the need to
+turn imperfect model preservation into an explicit prediction-error bound.
+It remains conditional on a uniform model-error premise that data must support.
+
+1. Quantify approximate preservation under the same stochastic joint-kernel
+   and controller contract: name a distance such as total variation, bound
+   one-step mismatch and prove a finite-horizon joint-law error bound. Treat
+   response-space geometry as a declared mathematical construction; link it
+   to tissue geometry only through a separate biological correspondence.
 2. Formalize the existing rare-event testing theorem, including the finite
    product law, randomized decisions, the shared all-zero contribution and
    both attaining rules. This closes a precise certification gap, not the
@@ -122,10 +159,10 @@ Every row below retains `author_question_status: open`.
 3. For changing agents, specify the source game's full state and admissible
    histories, legal controls, memory transfer and payoff semantics. Only then
    ask whether the predictive quotient preserves its relevant solution notion.
-4. For biology, specify and collect/read data that distinguish stable type,
-   within-unit change, clock/context dependence and selection. A candidate
-   storage variable must be measured and causally perturbed under explicit
-   controls; a predictive fit alone cannot identify the mechanism.
+4. For biology, use the assigned-history/common-probe contract in
+   [STENTOR-EVIDENCE.md](STENTOR-EVIDENCE.md), requiring linked baseline units,
+   allocation, timing and selection records. A candidate storage variable
+   needs selective measurement/perturbation evidence; a fit cannot identify it.
 5. For Wong dynamics, first supply the separate lane's marked-process and
    observation maps. Require kernel/path-law preservation before importing
    the Royal Society interpretation. Do not promote the fixed-locus graph

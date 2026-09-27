@@ -1,7 +1,8 @@
 # When the same appearance can hide a different future
 
 **Start here for the time and self-reference research.** This is a separate
-track within the ancestry repository. Verified continuation, 27 September 2026 UTC. **None of the source paper's full questions is declared solved.**
+track within the ancestry repository, continued on 27 September 2026 UTC.
+**None of the source paper's full questions is declared solved.**
 
 ## What the paper asks
 
@@ -15,26 +16,31 @@ decomposition of that agenda, not twelve verbatim author conjectures.
 
 ## What we established
 
-The central mathematical result concerns a **specified deterministic model**,
-a specified visible output, and specified allowed interventions:
+For a **specified deterministic model**, visible output and intervention set,
+two states can share one exact predictive description precisely when every
+allowed finite intervention sequence gives the same visible result. Grouping
+states this way gives the coarsest exact predictive state. In our invented
+memory example, one retained bit beyond the visible bit suffices for arbitrary
+histories; no fixed window of recent history always replaces it.
 
-> Two states may share one predictive description exactly when every permitted
-> finite intervention sequence gives the same visible result. Grouping states
-> this way gives the coarsest exact predictive state. Every other exact model
-> that retains the visible output must retain at least these distinctions.
+For a **specified stochastic model**, we proved the exact condition under
+which a reduced state preserves transition probabilities. With the matching
+initial distribution and observation map, it preserves complete finite
+observation-and-action histories, even when randomized interventions adapt
+to earlier observations. Noisy measurements are covered through a joint
+state/measurement law that can include correlated noise.
 
-This extends the earlier next-step criterion into a general description of how
-to repair lost information. It reuses established mathematics of behavioral
-equivalence and machine minimization; it is not a claim to have discovered that
-theory. We encode the statements and proofs in **Lean**, which checks that the
-conclusions follow from the stated assumptions.
+We also proved a limit: two states can predict exactly the same visible
+histories at **every finite horizon**, yet merging them can fail to preserve
+the actual state transitions. No randomized test of those recorded histories
+separates them. Predicting outputs and retaining exact dynamics are different
+requirements. These results reuse established mathematics; **Lean checks the
+proofs against explicit assumptions**, not the truth of a biological model.
 
-In the worked model, a visible bit and one retained memory bit suffice even
-when the detailed history grows without bound. The full history and an
-irrelevant changing bit may be discarded. Four predictive states are necessary
-and attainable. A fixed window of recent history cannot always replace the
-memory bit. These statements cover arbitrary finite histories and all future
-horizons, rather than only the short examples previously tested.
+## Why it helps with biology
+
+The work sharpens three questions: **what must be retained, which intervention
+exposes it, and what evidence identifies its cause?**
 
 ```mermaid
 flowchart LR
@@ -44,42 +50,47 @@ flowchart LR
     C -->|same probe| E[Response: 1]
 ```
 
-## Why it helps with biology
+The diagram is invented mathematics. A fitted prediction is a separate
+evidence level; identifying a biological storage mechanism needs measurements
+and interventions. A predictive history effect can also reveal permanent
+differences between cells. Selecting cells by a later visible state can create
+a misleading effect even after randomized history assignment.
 
-It makes three questions precise: **what distinction must a model retain,
-which intervention exposes it, and what evidence identifies its cause?** The
-diagram is invented mathematics. A model fitted to measured responses is a
-different kind of evidence. An experimentally supported storage mechanism
-requires biological measurements and interventions.
+The [Stentor evidence contract](research/open-problems/time-self-reference/predictive-memory/STENTOR-EVIDENCE.md)
+connects a primary study's distinct probes and molecular perturbations to a
+specific next test: assigned, time-matched histories, a common probe, linked
+cell/lineage records, and complete selection accounting. The checked public
+data routes do not yet establish the records needed to identify that contrast.
+The [biology note](research/open-problems/time-self-reference/predictive-memory/BIOLOGY.md)
+also connects the question to Levin's planarian work.
 
-A predictive history effect can arise from permanent differences between
-cells. Our counterexamples show this exactly, including a case where selecting
-cells by their later visible state creates a misleading effect despite initial
-randomization. The [biology note](research/open-problems/time-self-reference/predictive-memory/BIOLOGY.md)
-states the evidence needed to distinguish these explanations and connects the
-question to published cellular and planarian work.
+There is a useful geometry connection: in the stochastic example, one state's
+predictions are exactly the midpoint of two others' predictions. This shows
+how a mixture of response programs can mimic an internal random transition.
+It is geometry of predictions; a geometry of tissue or morphogenesis still
+needs biological variables, measurements and an explicit correspondence.
 
 ## Does this connect to ancestry?
 
-Yes, for a precisely proved operation: simplifying ancestry to an original
-sample set commutes with subsequent destructive restrictions to its subsets.
-The mapping is instantiated in the repository's finite genomic-ancestry model.
-Adding new samples can require information that was discarded. A separate
-proved consequence shows that even exact finite old edges and ancestry paths
-cannot determine a specified infinite-population ancestry property across
-admissible completions. These are graph results, not a biological species test
-or a proof about the complete stochastic ARG generator.
+For a proved operation, yes: simplifying ancestry to an original sample set
+commutes with later destructive restrictions to its subsets. The mapping is
+instantiated in the finite genomic-ancestry model. Adding samples can require
+discarded information. Another proved limit shows that exact finite edges and
+paths cannot determine a specified infinite-population ancestry property over
+all admissible completions. These are graph results. A mapping of Wong's full
+stochastic generator, its clocks and observations remains unproved.
 
 ## What remains open, and where to read next
 
-The source's broader claims about time, self-reference, semantic change,
-changing decision makers and biological mechanisms remain open. The next
-mathematical gate is a stochastic, intervention-preserving version tied to a
-specified biological observation process; the next evidence gate is data that
-separate changing state from stable type and selection.
+Time, self-reference, changing decision makers, semantic change and biological
+mechanisms remain broader open questions. The next mathematical gate is a
+quantified approximation bound when stochastic preservation is imperfect;
+the next evidence gate is a justified biological observation/intervention
+model. The general rare-observation testing theorem still needs formalization.
 
-Read the [precise results and proof route](research/open-problems/time-self-reference/predictive-memory/RESULTS.md),
-[source-to-result audit](research/open-problems/time-self-reference/predictive-memory/AUDIT.md),
-and [verification receipt](research/open-problems/time-self-reference/predictive-memory/verification/PROOF-RECEIPT.json).
-The [canonical problem ledger](research/open-problems/time-self-reference/problem-ledger.json)
+Read the [deterministic results](research/open-problems/time-self-reference/predictive-memory/RESULTS.md),
+[stochastic theorem and counterexamples](research/open-problems/time-self-reference/predictive-memory/STOCHASTIC.md),
+and [source-to-result audit](research/open-problems/time-self-reference/predictive-memory/AUDIT.md).
+The [verification receipt](research/open-problems/time-self-reference/predictive-memory/verification/PROOF-RECEIPT.json)
+identifies checked inputs; the [canonical ledger](research/open-problems/time-self-reference/problem-ledger.json)
 keeps the full questions and remaining gates visible.

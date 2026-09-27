@@ -108,15 +108,20 @@ restore the retained distinction, with controls for direct probe effects and
 general responsiveness. Quantifying a complete physiological state or
 identifying a mechanism is a remaining experimental gate.
 
-## Exact next formal contract
+## Stochastic mathematical gate and the next evidence contract
 
-Select one finite-state stochastic model before generalizing further. Specify
-state `X`, actions `A`, measurements `p`, and kernels `K_a(x)` with a declared
-time step. For a proposed retained state `q`, require output decoding and
-actionwise pushforward equality `q_* K_a(x) = Kbar_a(q(x))`, including the
-initial law. Prove finite-word response-law preservation, and then a converse
-or counterexample appropriate to the chosen notion of stochastic equivalence.
-Deterministic future equivalence must not silently be substituted for
-probabilistic bisimulation or observational predictive sufficiency. Data
-identification, partial actions, approximation error and model misspecification
-remain additional obligations.
+The next formal contract is now checked in [STOCHASTIC.md](STOCHASTIC.md):
+actionwise pushforward equality characterizes exact PMF lumping for an onto
+encoding, and preserves complete finite observation/action histories with a
+matching initial law and policy interface. Joint transition/measurement
+kernels cover correlated measurement noise. A separate all-horizon example
+proves that output trace equivalence is weaker than an exact commuting state
+quotient. These are model-level statements, not inferred cellular laws.
+
+The coordinated [Stentor evidence note](STENTOR-EVIDENCE.md) adds a distinct
+primary study, source/data receipts and an assigned-history/common-probe
+contract. Behavioral linkage and assignment metadata remain an evidence gate.
+Data identification, partial actions, approximation error, continuous kernels
+and model misspecification remain additional mathematical or empirical
+obligations. A biological mechanism claim still requires its own correspondence
+and selective perturbation evidence.
