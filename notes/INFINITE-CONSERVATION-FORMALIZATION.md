@@ -16,8 +16,8 @@ The prefix is the set of vertices less than $`N`$. The quantities are:
 | `InfiniteConservation.fullInDegree p v` | Number of all parents of $`v`$, summed over sources less than $`v`$; birth order proves there are no others. |
 | `prefixRootCount p N` | Actual declared root count below $`N`$, written $`R_{N}`$. |
 | `PopulationCounting.fullRootCount p` | Actual full root count, written $`R`$. |
-| `outgoingDeficit p N` | $`D_{N} = \sum_{u<N} (k - \operatorname{fullOutDegree} u)`$. |
-| `incomingExcess p N` | $`E_{N} = \sum_{v<N, \operatorname{nonroot} v} (\operatorname{fullInDegree} v - k)`$. |
+| `outgoingDeficit p N` | $`D_{N} = \sum_{u<N} (k - \mathrm{fullOutDegree} u)`$. |
+| `incomingExcess p N` | $`E_{N} = \sum_{v<N, \mathrm{nonroot} v} (\mathrm{fullInDegree} v - k)`$. |
 | `crossingCount p N` | $`C_{N}`$, the number of all edges from sources below $`N`$ to targets at or above $`N`$, including targets arbitrarily far beyond the prefix. |
 | `localDefect p v` | The nonnegative outgoing deficit plus nonroot incoming excess at one vertex. |
 | `totalDefect p N` | $`D_{N} + E_{N}`$, also proved equal to the sum of `localDefect` below $`N`$. |
@@ -33,7 +33,7 @@ All names below are in namespace `InfiniteConservation`.
 | Endpoint | Formally checked statement |
 |---|---|
 | `conservation p N` | $`D_{N} + E_{N} + C_{N} = k \cdot R_{N}`$ for every prefix of the infinite graph. |
-| `crossing_lower_after_roots p N hN` | $`k \le C_{N}`$ when $`\operatorname{rootSupport}\le N`$; this theorem even permits a general child cap $`d`$. |
+| `crossing_lower_after_roots p N hN` | $`k \le C_{N}`$ when $`\mathrm{rootSupport}\le N`$; this theorem even permits a general child cap $`d`$. |
 | `crossing_upper p N` | $`C_{N} \le k \cdot R`$ for every prefix at the critical cap. |
 | `sharp_defect_bound_after_roots p N hN` | $`D_{N} + E_{N} \le k \cdot (R - 1)`$ once all roots are inside. |
 | `sharp_defect_bound p N` | The same sharp inequality for every prefix, by monotonicity of nonnegative defect sums. |
@@ -54,11 +54,11 @@ All names below are in namespace `InfiniteConservation`.
 
 ## Proof route
 
-For each prefix, $`\operatorname{ambientBound}(p,N)=N+1+\sum_{u<N}\operatorname{childSupport}(u)`$ contains the prefix and all its child supports. The existing `infinitePrefix` constructs a finite population on that ambient range. `finite_outdegree_eq`, `finite_indegree_eq`, and `finite_crossing_eq` prove equality of the relevant finite counts with the full infinite counts. Applying the previously checked finite conservation identity therefore gives the genuine infinite identity.
+For each prefix, $`\mathrm{ambientBound}(p,N)=N+1+\sum_{u<N}\mathrm{childSupport}(u)`$ contains the prefix and all its child supports. The existing `infinitePrefix` constructs a finite population on that ambient range. `finite_outdegree_eq`, `finite_indegree_eq`, and `finite_crossing_eq` prove equality of the relevant finite counts with the full infinite counts. Applying the previously checked finite conservation identity therefore gives the genuine infinite identity.
 
 After all roots, vertex $`N`$ is a nonroot. Its $`k`$ distinct required incoming edges all come from vertices below $`N`$, so they are included in $`C_{N}`$. This gives the crossing lower bound. The conservation identity then supplies the sharp defect budget. Nonnegative monotonicity extends that budget to earlier prefixes.
 
-The stronger count uses the first $`k`$ vertices after the cut. At vertex $`N+i`$, at most $`i`$ parents can lie inside the new block, because all parents precede their child and there is at most one edge per ordered pair. At least $`k-i`$ incoming edges therefore come from below $`N`$. These edges are disjoint across their different targets. Summing and double-counting the same adjacency entries gives $`C_{N} \ge \sum_{i<k}(k-i)`$. The module proves that this sum is exactly $`\frac{k(k+1)}{2}`$. Combining this with conservation gives the stronger full-defect budget. The hypotheses used here are explicit: $`N\ge\operatorname{rootSupport}`$, so all of these future vertices are nonroots. No critical child cap is needed until the defect-budget conclusion.
+The stronger count uses the first $`k`$ vertices after the cut. At vertex $`N+i`$, at most $`i`$ parents can lie inside the new block, because all parents precede their child and there is at most one edge per ordered pair. At least $`k-i`$ incoming edges therefore come from below $`N`$. These edges are disjoint across their different targets. Summing and double-counting the same adjacency entries gives $`C_{N} \ge \sum_{i<k}(k-i)`$. The module proves that this sum is exactly $`\frac{k(k+1)}{2}`$. Combining this with conservation gives the stronger full-defect budget. The hypotheses used here are explicit: $`N\ge\mathrm{rootSupport}`$, so all of these future vertices are nonroots. No critical child cap is needed until the defect-budget conclusion.
 
 The residual budget `k*(R-1) - totalDefect p N` is a decreasing natural-valued sequence. The module reuses the existing `BinaryAvoidance.decreasing_nat_stabilizes` lemma. Once consecutive total-defect sums agree, their new local summand is zero. Outside the root support, the pointwise upper and lower degree bounds then give exact degrees $`k`$. Finally, conservation with stable root and defect counts gives stable crossing width.
 

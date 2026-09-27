@@ -8,15 +8,15 @@ sharp claims, with the Thue-Morse-specific Lean results in
 
 ## Population and statement
 
-Let $`\operatorname{color}:\mathbb{N}\to\{0,1\}`$ be any binary vertex coloring and let $`b_0,b_1,\ldots`$ be any
+Let $`\mathrm{color}:\mathbb{N}\to\{0,1\}`$ be any binary vertex coloring and let $`b_0,b_1,\ldots`$ be any
 binary target word. For every $`w\ge 2`$, the incoming edges are $`w-1 \to w`$ with
-label $`\operatorname{color}(w)`$, and $`w-2 \to w`$ with label $`1-\operatorname{color}(w)`$. There is no edge $`0 \to 1`$.
+label $`\mathrm{color}(w)`$, and $`w-2 \to w`$ with label $`1-\mathrm{color}(w)`$. There is no edge $`0 \to 1`$.
 Start at an integer $`v\ge 1`$; the first matched edge has target label $`b_0`$.
 
 For each bit $`b`$, define the deterministic map
 
 ```math
-f_b(x)=\begin{cases}x+1,&\operatorname{color}(x+1)=b,\\x+2,&\text{otherwise}.\end{cases}
+f_b(x)=\begin{cases}x+1,&\mathrm{color}(x+1)=b,\\x+2,&\text{otherwise}.\end{cases}
 ```
 Define $`A_0=v`$, $`C_0=v+1`$, and
 
@@ -56,8 +56,8 @@ Every integer $`w`$ with $`a+2\le w\le c`$ has both predecessors $`w-1`$ and $`w
 the frontier. Their two incoming labels are complementary, so exactly one
 matches $`b`$; hence every such interior successor is reachable. At the lower
 boundary, $`a+1`$ has only predecessor $`a`$ in the frontier and is included
-exactly when $`\operatorname{color}(a+1)=b`$. At the upper boundary, $`c+1`$ has only predecessor
-$`c-1`$ in the frontier and is included exactly when $`\operatorname{color}(c+1)\ne b`$.
+exactly when $`\mathrm{color}(a+1)=b`$. At the upper boundary, $`c+1`$ has only predecessor
+$`c-1`$ in the frontier and is included exactly when $`\mathrm{color}(c+1)\ne b`$.
 
 These conditions say precisely that the new frontier is
 $`[f_b(a),f_b(c))`$. They also cover a singleton input: the interior range is
@@ -69,8 +69,8 @@ equal, proving persistence of extinction. QED.
 
 ## Specialization and an exact dyadic recurrence
 
-For the research challenge set $`\operatorname{color}(n)=b_n=t(n)`$, where
-$`t(n)=\operatorname{popcount}(n) \bmod 2`$. The elementary identities
+For the research challenge set $`\mathrm{color}(n)=b_n=t(n)`$, where
+$`t(n)=\mathrm{popcount}(n) \bmod 2`$. The elementary identities
 
 ```math
 t(2m)=t(m),\qquad t(2m+1)=1-t(m)

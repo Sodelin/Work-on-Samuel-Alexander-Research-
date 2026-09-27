@@ -6,8 +6,8 @@ For a Boolean target $`s`$, the module defines $`r(2j)=s(j)`$ and $`r(2j+1)=\neg
 
 The formal proof establishes:
 
-1. Every matching infinite path satisfies $`\operatorname{path}(k)\ge2k`$.
-2. The natural offset $`\operatorname{path}(k)-2k`$ never increases.
+1. Every matching infinite path satisfies $`\mathrm{path}(k)\ge2k`$.
+2. The natural offset $`\mathrm{path}(k)-2k`$ never increases.
 3. Every nonincreasing natural sequence eventually stabilizes, using a proved minimum-of-range argument.
 4. A stable even offset forces an eventually complementary shift, and applying it twice gives a positive period. A stable odd offset directly gives a positive period.
 5. Consequently an aperiodic target has no infinite matching path, from any starting vertex.

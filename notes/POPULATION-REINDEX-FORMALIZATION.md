@@ -9,7 +9,7 @@ The main consequences are `subcritical_impossible`, which rules out a child cap 
 `PresentedPopulation birth k d` uses arbitrary types $`V`$ of vertices and `Time` of birth times. Its local assumptions are:
 
 - `InfiniteVertices V`: every finite list of vertices omits some vertex.
-- `FiniteSublevels birth`: for every time $`r`$, a finite list covers all vertices $`x`$ with $`\operatorname{birth}(x)\le r`$.
+- `FiniteSublevels birth`: for every time $`r`$, a finite list covers all vertices $`x`$ with $`\mathrm{birth}(x)\le r`$.
 - A functional edge map `edge : V -> V -> Option Nat`. `none` means no edge; `some label` means one edge with that label, and every label is less than $`k`$.
 - Every actual edge strictly increases birth time.
 - A finite list covers the actual roots, defined by `NoParents edge x := forall parent, edge parent x = none`.

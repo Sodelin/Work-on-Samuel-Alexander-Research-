@@ -31,7 +31,7 @@ theorem PositiveUnavoidability.eventuallyPeriodic_realized
 ```
 
 Here eventual periodicity means that there exist `start` and $`p>0`$ with
-$`s(k+p)=s(k)`$ for every $`k\ge\operatorname{start}`$. Realization means the existence of an
+$`s(k+p)=s(k)`$ for every $`k\ge\mathrm{start}`$. Realization means the existence of an
 actual function `path : Nat → Nat` with
 `E (path k) (path (k+1)) (s k)` for every $`k`$, beginning at target index zero.
 No start vertex, family of populated layers, matching path, compactness

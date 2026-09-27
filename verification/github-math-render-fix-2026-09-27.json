@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-27",
+  "source_commit": "8aab99d46e5e8146ae3b375e6dac307467807bea",
+  "purpose": "GitHub Markdown math presentation repair",
+  "substitution": "Within Markdown math, replace \\operatorname{...} with \\mathrm{...}; redirect 32 links from immutable pre-fix Markdown to the current branch rendering.",
+  "operatorname_occurrences_replaced": 172,
+  "pinned_markdown_links_redirected": 32,
+  "mathematical_statements_changed": false,
+  "lean_sources_changed": false,
+  "historical_boundary": "Earlier proof commits and frozen packet manifests remain immutable evidence of their original bytes. This formatting commit creates new presentation bytes; historical hashes do not certify these reformatted Markdown files.",
+  "files": [
+    {
+      "path": "FORMALIZATION.md",
+      "original_blob_sha": "95d075a2a142e0da78d48dae4c8e044b72bd457d",
+      "rendered_blob_sha": "c00a52d6ccd32301864183627aa98cbf92b29a61",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "HANDOFF-FOR-ALEXANDER.md",
+      "original_blob_sha": "4454c32c41f940806916325b20cd3c00f6a79389",
+      "rendered_blob_sha": "3c33178926e9abbc2faaf46187ea93ebd2bce576",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "MATH-RESEARCH-REPORT.md",
+      "original_blob_sha": "740f57137f0d92f777d51006d6028bcdb7427ef2",
+      "rendered_blob_sha": "0ecb96cad3386965bbcf13b4f768118167ec2925",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "QUESTION-LEDGER.md",
+      "original_blob_sha": "4564fe5a3bef16785961df43921bf1eb6832bd84",
+      "rendered_blob_sha": "a81ceff0db45f14d61655bd7a20215c04f6d097b",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "README.md",
+      "original_blob_sha": "2b45ffe6b549750bc2dd4a461136ea20c496ced6",
+      "rendered_blob_sha": "1b1151c8e293669a3887552d76b32ca8876c46c8",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "RESEARCH-MAP.md",
+      "original_blob_sha": "6ad562de0b7b302282126b59afdddc6b89d9a8de",
+      "rendered_blob_sha": "e1afc9973b37a3ed9ab1f5307e7c096b4ae48134",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "TEN-RESEARCH-IDEAS.md",
+      "original_blob_sha": "83ee2248275d13e0c16302cd36a4314c40dbf3c9",
+      "rendered_blob_sha": "4b5c231cf725bf4e5ab4dce619cfcb1c6d9fa849",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "TEN-SOLUTIONS.md",
+      "original_blob_sha": "ff15e8bffe0e39c7e0820f0023bf30ee14c6b496",
+      "rendered_blob_sha": "8f128a69c8112bd2e337d6f6393cbba129045882",
+      "operatorname_occurrences_replaced": 0
+    },
+    {
+      "path": "explorations/COMPLEX-SYSTEMS-INTERFACE.md",
+      "original_blob_sha": "efd3c8dfb42e736bfdc1a59cc8c685ec81438ea7",
+      "rendered_blob_sha": "8631e1f4adbf1da356632f8a357d7fd97895f318",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/BINARY-AVOIDANCE-FORMALIZATION.md",
+      "original_blob_sha": "54a2bb9cdbb758ca2144173aa81a0ee7f47c06a5",
+      "rendered_blob_sha": "f195c0cf54ec0c58d4f6e3278a1278c451185a3b",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/BIRTH-ORDER-FORMALIZATION.md",
+      "original_blob_sha": "0cee4e0e27e8ea7454ccf5afed29037277c92c8f",
+      "rendered_blob_sha": "1f2f961a26f22155fd1a5a773a1252f19245a1be",
+      "operatorname_occurrences_replaced": 9
+    },
+    {
+      "path": "notes/CAP-TWO-SPECIES.md",
+      "original_blob_sha": "900baf0db0ce587b653edade50df4a88806e86e4",
+      "rendered_blob_sha": "005d65bde41371e19b8da4336ceb2167133b7624",
+      "operatorname_occurrences_replaced": 8
+    },
+    {
+      "path": "notes/CAP-TWO-THRESHOLD.md",
+      "original_blob_sha": "0ac5a7b191d194f2312e3d4159de6ff73660c2ba",
+      "rendered_blob_sha": "edcc0c7147cdd3832c7f8862b2e28ab900899f96",
+      "operatorname_occurrences_replaced": 7
+    },
+    {
+      "path": "notes/FINITE-AVOIDANCE-FORMALIZATION.md",
+      "original_blob_sha": "ce0c2c229cbc1024a7d2132e04095dfd82ce28d0",
+      "rendered_blob_sha": "01d282f0edbeeb4e8b5163572c031c9ca1dc5329",
+      "operatorname_occurrences_replaced": 3
+    },
+    {
+      "path": "notes/FINITE-EDIT-EXACT-FORMALIZATION.md",
+      "original_blob_sha": "7ea15a6e9fc5c95713fc6ebd7d12209bbaf7bac1",
+      "rendered_blob_sha": "0a130e393960c2f391af654165f80a5aabf64fb5",
+      "operatorname_occurrences_replaced": 7
+    },
+    {
+      "path": "notes/FINITE-EDIT-STABILITY-FORMALIZATION.md",
+      "original_blob_sha": "d390666d9b28b7f605df5601a62c03d908243afe",
+      "rendered_blob_sha": "63808ba6ec28df229052e5bd5922a43897c67712",
+      "operatorname_occurrences_replaced": 14
+    },
+    {
+      "path": "notes/FINITE-PHASE-PATHS-FORMALIZATION.md",
+      "original_blob_sha": "2bca0b420da3a00e928b3b77ec11113aad6f2d5a",
+      "rendered_blob_sha": "e3b482d2f16fa75d03e88e088ac26bc1ab45b872",
+      "operatorname_occurrences_replaced": 6
+    },
+    {
+      "path": "notes/FIXED-GENDER-LIFT-FORMALIZATION.md",
+      "original_blob_sha": "447af8148ab1e9d0fb0c9c6953ffcab1a50486c1",
+      "rendered_blob_sha": "df0ac1b8893d16722e71d3840947c7455534d4bc",
+      "operatorname_occurrences_replaced": 12
+    },
+    {
+      "path": "notes/INFINITE-CONSERVATION-FORMALIZATION.md",
+      "original_blob_sha": "5264021f5808947bc51f4de7e1b187635b83a395",
+      "rendered_blob_sha": "ba713764dd58787dae0a6fa13201545cfceb0d01",
+      "operatorname_occurrences_replaced": 7
+    },
+    {
+      "path": "notes/MINIMAL-CROSSING-FORMALIZATION.md",
+      "original_blob_sha": "ebb739843d26f05e61446df26d7a126ee1d2f8e4",
+      "rendered_blob_sha": "b56fbc606d9e68dabb3551b17127712079bbe39b",
+      "operatorname_occurrences_replaced": 3
+    },
+    {
+      "path": "notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md",
+      "original_blob_sha": "ffcba0cafda8a881d088afce607a90c5c276195b",
+      "rendered_blob_sha": "d9840b6939555a6a6b5e11b910026e59ffba7c88",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/PERIODIC-LIFELINE.md",
+      "original_blob_sha": "9ee34efb59eaf995ecf309e02705806dcb86c3a9",
+      "rendered_blob_sha": "fa4c92ea4717f517e3521c94e2240b603b7c17d0",
+      "operatorname_occurrences_replaced": 12
+    },
+    {
+      "path": "notes/PHASE-EXTREMAL-FORMALIZATION.md",
+      "original_blob_sha": "b01b41db9bd328bad77bb900e810164ffe95acff",
+      "rendered_blob_sha": "6807d0eb049d5d69a320456b8343c25345119219",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/PHASE-SHIFT-FORMALIZATION.md",
+      "original_blob_sha": "f3b0f6271694676889eca8343140916536ae741f",
+      "rendered_blob_sha": "8ddf6678ee126addb26263a5061f360aa53a3087",
+      "operatorname_occurrences_replaced": 6
+    },
+    {
+      "path": "notes/POPULATION-COUNTING-FORMALIZATION.md",
+      "original_blob_sha": "cd6642f94a8944efb1c45fa5fb9c8bf1fb3693d0",
+      "rendered_blob_sha": "bad736a09ab21b8f609ea193f2c8800f27bef255",
+      "operatorname_occurrences_replaced": 8
+    },
+    {
+      "path": "notes/POPULATION-REINDEX-FORMALIZATION.md",
+      "original_blob_sha": "4897282609536a8ded3535cc189c0432efa23277",
+      "rendered_blob_sha": "ffb334c71d809c98cbcf13c4b4a59bab1e0efe6a",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/PORT-DYNAMICS-FORMALIZATION.md",
+      "original_blob_sha": "53302fd73d745baaa2a2958580bce3eaa1b7a94c",
+      "rendered_blob_sha": "7a2b93fa28113bc31525382758c94cfb9edfc313",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/POSITIVE-UNAVOIDABILITY-FORMALIZATION.md",
+      "original_blob_sha": "cb70fe02dfdf6c0770a46e4d5af8b6c275b95dc0",
+      "rendered_blob_sha": "47f43494562154f282ea78557ea7d807ba1945b4",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/QUANTITATIVE-MODULUS-THEOREM.md",
+      "original_blob_sha": "99958d39bf84b54fc41e21e97fce0ed8dd0680af",
+      "rendered_blob_sha": "a330c1afacc024a0dc9773f382d70d5d8ef3744d",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/REAL-FOUNDER-WINDOW-THEOREM.md",
+      "original_blob_sha": "07c7d0924b1b230ed2383355c3b181daa8df232f",
+      "rendered_blob_sha": "bf42122655b9574979f7e6e43bdf0e60949a9bf5",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/SLOW-AVOIDANCE-FORMALIZATION.md",
+      "original_blob_sha": "71e94ef2bae6c7feabe2a1807a10514d00094277",
+      "rendered_blob_sha": "fcbd3d5c92d2f7f37f1833ee0d6ae5e8262570c1",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/SPECIES-BRIDGE-FORMALIZATION.md",
+      "original_blob_sha": "a0f2b3976721ae2f9f4f794335c82db38f84f687",
+      "rendered_blob_sha": "8c2f36f51a2f3589bac8438e8f395972efc8903a",
+      "operatorname_occurrences_replaced": 5
+    },
+    {
+      "path": "notes/WONG-ALEXANDER-BRIDGE-STATUS.md",
+      "original_blob_sha": "d660d764a1459129876e26a24995f51824d760dc",
+      "rendered_blob_sha": "0f9a19860b773e61d78b00195f26ecb340dbe39c",
+      "operatorname_occurrences_replaced": 3
+    },
+    {
+      "path": "notes/WONG-DIAMOND.md",
+      "original_blob_sha": "609391ff1e9221988a93870800a70ca41cb7282b",
+      "rendered_blob_sha": "33e0b76cb0881c5e8b6f0ce5c92f04e494c90be7",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "notes/WONG-TIMED-HISTORY.md",
+      "original_blob_sha": "c3deee29c298a878f0beb23ed890cbc0cce2f690",
+      "rendered_blob_sha": "f7a875a80ec9dbaea29c35faabc96809ace700ae",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/source-audits/LINE-GRAPH-PRIOR-ART-AUDIT.md",
+      "original_blob_sha": "8164f2cf7c7970b0449dc7e2811542a14aeab45e",
+      "rendered_blob_sha": "0398181dc31198c898e2b5ae74611e382776df88",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/source-audits/MAXIMAL-SPECIESLIKE-SOURCE-AUDIT.md",
+      "original_blob_sha": "d63d29d73e122600680777a4dc8c1ba5188e40de",
+      "rendered_blob_sha": "2c9a1e9199da1185d7dad8590cec7074f05fa5a2",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/source-audits/PROPOSAL10-STATEFUL-CA-AUDIT.md",
+      "original_blob_sha": "c95f91b3c160f57283d828c153225dd3e209d5f3",
+      "rendered_blob_sha": "63b24b60491a9a4a7476d181940537705c109d76",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "notes/source-audits/PROPOSAL3-FINITE-PORT-AUDIT.md",
+      "original_blob_sha": "66d6fb03883b376c49b2d724406655904bffd04b",
+      "rendered_blob_sha": "bcbe1602d46f08aa6073c6792601f5debb02a1c4",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "research/feedback-speciation/MANUSCRIPT.md",
+      "original_blob_sha": "d72b982c604d278e1f25f5289f2641aa531555cb",
+      "rendered_blob_sha": "83c8212fe0c15800c1461919b7f9d9917e2a5ba4",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/DETERMINISTIC-COMPARISON.md",
+      "original_blob_sha": "caf2106175c73833f1bfda13516780e74f181b9d",
+      "rendered_blob_sha": "5a87170acfcae81299afe2faa703802e29fe6d13",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/open-problems/time-self-reference/independent-rsos-review.md",
+      "original_blob_sha": "6219e3050372ad97517f549221f6dc4c2a59668b",
+      "rendered_blob_sha": "eb0794c2644544947caa0a10405e63887ff845ac",
+      "operatorname_occurrences_replaced": 3
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/README.md",
+      "original_blob_sha": "9af475746a0c1fe993fe49dce0bc721540da9d84",
+      "rendered_blob_sha": "4123e6935fe9e6336e290f10b22bbf868f0af187",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/open-questions/ordinal/COMPLETION-RECEIPT.md",
+      "original_blob_sha": "daf4db8b08bb0c86470ae5f3c31dc9ea0b03e966",
+      "rendered_blob_sha": "7c11ffd587d3fd5c5a1892f069d5aba6df6127bc",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/open-questions/ordinal/GENERIC-CERTIFICATE.md",
+      "original_blob_sha": "e724f5d58eec670ade9bc0f218eff9fbe10149e2",
+      "rendered_blob_sha": "e85991bb8afdd2bd6f08c78295cbea0568c4250e",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "research/open-questions/ordinal/ORDINAL-CERTIFICATE.md",
+      "original_blob_sha": "49baacb1c3c7e9ebc9ff60a0fc151cbe5222cfd9",
+      "rendered_blob_sha": "a10b68df2be8fe53c8b71257380d8698b87c25ae",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/open-questions/ordinal/ORDINAL-CHARACTERIZATION.md",
+      "original_blob_sha": "ed60c131c68be01e1223c395955e2c2bf3803531",
+      "rendered_blob_sha": "f1c541c6ee7971baee7357c80df4cb74336b0e3a",
+      "operatorname_occurrences_replaced": 6
+    },
+    {
+      "path": "research/research-packet/LINE-GRAPH-PRIOR-ART-AUDIT.md",
+      "original_blob_sha": "8164f2cf7c7970b0449dc7e2811542a14aeab45e",
+      "rendered_blob_sha": "0398181dc31198c898e2b5ae74611e382776df88",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/research-packet/MAXIMAL-SPECIESLIKE-SOURCE-AUDIT.md",
+      "original_blob_sha": "d63d29d73e122600680777a4dc8c1ba5188e40de",
+      "rendered_blob_sha": "2c9a1e9199da1185d7dad8590cec7074f05fa5a2",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/research-packet/PROPOSAL10-STATEFUL-CA-AUDIT.md",
+      "original_blob_sha": "c95f91b3c160f57283d828c153225dd3e209d5f3",
+      "rendered_blob_sha": "63b24b60491a9a4a7476d181940537705c109d76",
+      "operatorname_occurrences_replaced": 2
+    },
+    {
+      "path": "research/research-packet/PROPOSAL3-FINITE-PORT-AUDIT.md",
+      "original_blob_sha": "66d6fb03883b376c49b2d724406655904bffd04b",
+      "rendered_blob_sha": "bcbe1602d46f08aa6073c6792601f5debb02a1c4",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "research/thue-morse/INTERVAL-REDUCTION.md",
+      "original_blob_sha": "43d3dbc45304b44cfcd6adda6ee83412fe87ff5b",
+      "rendered_blob_sha": "a537b69f38a3b27b0c072a3084d5f70afafb3a3a",
+      "operatorname_occurrences_replaced": 8
+    },
+    {
+      "path": "research/thue-morse/NEXT-INVARIANT.md",
+      "original_blob_sha": "346eaeb78107d8d539beb7729348aead988c8764",
+      "rendered_blob_sha": "90429f1d81ab411b0d80262e9efbcc58bb95eeac",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/mrca-truncation/README.md",
+      "original_blob_sha": "b6eb8ab563cfad7a25743e80a3bc7727eb90d982",
+      "rendered_blob_sha": "4dd6f97786493704f7a0f89fa940e141810d34d2",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "verification/REAL-BRIDGES-STATEMENT-REVIEW.md",
+      "original_blob_sha": "6069bf99eb667c39c13def6ab3dd304d15c4f5a9",
+      "rendered_blob_sha": "62f02b21af9782955ac0be9dba6652260f8e7d28",
+      "operatorname_occurrences_replaced": 1
+    },
+    {
+      "path": "checks/check_math_format.py",
+      "original_blob_sha": "7a9523a7c1a6ff8bff37c36cd2afe0beeb96fb6a",
+      "rendered_blob_sha": "8331b7bad271a7fc800b29e8cddafafedb278f02",
+      "operatorname_occurrences_replaced": 0
+    }
+  ],
+  "main_branch_note": "The file list records the full draft-branch transformation. The main branch contains only its published subset; see main_specific_overrides for the one file whose pre-fix Markdown differed from the draft branch.",
+  "main_specific_overrides": [
+    {
+      "path": "notes/FINITE-EDIT-STABILITY-FORMALIZATION.md",
+      "original_blob_sha": "00a37209957d05a31338e4478097135d8967e2cd",
+      "rendered_blob_sha": "fa534853aab29d664149b8d7a20c0910b5cfc989",
+      "operatorname_occurrences_replaced": 14
+    }
+  ]
+}

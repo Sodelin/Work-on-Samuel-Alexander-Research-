@@ -11,7 +11,7 @@ preserve the historical stages before this complete formalization.
 
 ## Exact statement
 
-Write $`t(n)=\operatorname{popcount}(n) \bmod 2`$. For each integer $`w\ge 2`$, the population has
+Write $`t(n)=\mathrm{popcount}(n) \bmod 2`$. For each integer $`w\ge 2`$, the population has
 edges $`w-1 \to w`$ labelled $`t(w)`$ and $`w-2 \to w`$ labelled $`1-t(w)`$; there is
 no edge $`0 \to 1`$. A matching path starting at $`v`$ has its edge at index $`k`$
 labelled $`t(k)`$, beginning with $`k=0`$. Let $`L(v)`$ be its maximum length.

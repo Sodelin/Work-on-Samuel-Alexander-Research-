@@ -176,7 +176,7 @@ $`L_a(v)=8\cdot2^n-a-3`$. The [formalization note](notes/PHASE-EXTREMAL-FORMALIZ
 records the construction and uniqueness argument. Joint digit recurrences
 remain open.
 
-**First decisive test.** Adapt the exact interval checker to $`\operatorname{row}(s_a)`$ and
+**First decisive test.** Adapt the exact interval checker to $`\mathrm{row}(s_a)`$ and
 $`s_a`$, and inspect dyadic phase classes. A successful proof should transport
 the existing descent argument or identify precisely why a new descent is
 needed. The phase-zero result is an input, not a proof of phase invariance.
