@@ -1,6 +1,6 @@
 # Which ownership observations identify long-term ancestry?
 
-This bounded Q2 extension reuses the frozen eight-copy construction owned by the separate genome-pedigree lane. Its new question is which additional ownership observations distinguish the constructed histories. The proof is an elementary, exact deduction in that model; no priority or biological reconstruction claim is made. Verification status and exact commits are recorded in the checkpoint and ledger.
+This bounded Q2 extension reuses the frozen eight-copy construction owned by the separate genome-pedigree lane. Its new question is which additional ownership observations distinguish the constructed histories. The proof is an elementary, exact deduction in that model; no priority or biological reconstruction claim is made. The clean-commit Lean gate passed at `c071d4b895b8fe979211b68ac30240f8833e707d`: five project modules and 20 selected axiom reports, including 15 new observation endpoints. [Exact evidence](verification/RESULT.json) and the checkpoint preserve the scope.
 
 ## The observation we actually assume
 
