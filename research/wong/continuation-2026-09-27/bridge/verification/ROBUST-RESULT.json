@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SOURCE_SNAPSHOT_PENDING_INTEGRATED_COMMIT",
+  "proof_base_commit": "01db8c4cbb82000950ff7d3e7252b5438416c7c3",
+  "source_sha256": "a2ed87e4162f3e6f0c127805bfe9619e9ba8b3649aaeade3cc8b8ef554b16c30",
+  "log_sha256": "eccc25f86878aef94365e1de6fd87a100c93eeda8629e33e3939057b422bfabd",
+  "project_import_closure_modules": 35,
+  "acceptance_endpoints": {
+    "WongPedigreeRobust.iap_iff_of_finite_projection_errors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "seconds": 19.047,
+  "scope": "Single finite-error owner-projection IAP theorem. Final combined exact commit remains the root lane responsibility.",
+  "reproduce": "python -X utf8 research\\wong\\continuation-2026-09-27\\check.py WongPedigreeRobust"
+}

@@ -1,0 +1,1930 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "01db8c4cbb82000950ff7d3e7252b5438416c7c3",
+  "scope": "Independent source-family recommendations; root owns shared coverage ledger and exact-commit combined verification.",
+  "source_xml_sha256": "2b77c349f39d2885b3e36d3bcab639a7ef3b9c6217263031aa4bc8f1c2a0d05e",
+  "coverage_fraction": null,
+  "coverage_fraction_reason": "Endpoint counts are not a paper coverage percentage.",
+  "claims": [
+    {
+      "id": "M01",
+      "title": "Finite interval gARG",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s1",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[2]",
+          "section_id": "iyae100-s1",
+          "paragraph": 2,
+          "text_sha256_utf8": "357fe908a8768783f1439c9efa0fc386d829df1c358db0d3b74aa55c0497225f",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[3]",
+          "section_id": "iyae100-s1",
+          "paragraph": 3,
+          "text_sha256_utf8": "f364ec47dfbfa5c69f4588cdcc84c22b8e7870e0768240a2db217b3968d9ac56",
+          "mathml_ids": [
+            "IM1",
+            "IM2",
+            "IM3",
+            "IM4"
+          ]
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "Every valid generated finite prefix has an acyclic interval-gARG projection with a unique local parent. Full raw lineage identities remain in the richer record.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.recorded_prefix_toGARG",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 393,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.projected_atLocus_iff",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 403,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.projected_unique_parent_at",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 424,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        }
+      ],
+      "remaining_obligation": "No additional foundation gap. Endpoint gARG projection can forget raw lineage identity and breakpoint information; do not identify it with the full record."
+    },
+    {
+      "id": "M02",
+      "title": "Genome bounds, dates, owners and metadata",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s1",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[1]",
+          "section_id": "iyae100-s1",
+          "paragraph": 1,
+          "text_sha256_utf8": "04b9919dfab2421a1138a75554ff6c397ebb9569b1fd235f878bebc900959f81",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[3]",
+          "section_id": "iyae100-s1",
+          "paragraph": 3,
+          "text_sha256_utf8": "f364ec47dfbfa5c69f4588cdcc84c22b8e7870e0768240a2db217b3968d9ac56",
+          "mathml_ids": [
+            "IM1",
+            "IM2",
+            "IM3",
+            "IM4"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[4]",
+          "section_id": "iyae100-s1",
+          "paragraph": 4,
+          "text_sha256_utf8": "32bb7138aa11c3678368ea1df570fc9abcefc3c82f90941de409b16885471a24",
+          "mathml_ids": [
+            "IM5",
+            "IM6"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[5]",
+          "section_id": "iyae100-s1",
+          "paragraph": 5,
+          "text_sha256_utf8": "2f8d4ee745ba8dc877dc2828905697210d5c52ddf54907b77b2431e273d1e6d3",
+          "mathml_ids": [
+            "IM7",
+            "IM8",
+            "IM9",
+            "IM10",
+            "IM11",
+            "IM12",
+            "IM13"
+          ]
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "The generated history has bounded nonempty inherited intervals and physical dates with strict chronology. Owner projection is treated explicitly and conditionally.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.projected_nonempty_annotations",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 418,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedDated.realized_edge_chronology",
+          "path": "real/WongMarkedDated.lean",
+          "line": 142,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        },
+        {
+          "declaration": "WongMarkedDated.law_ae_realize_validDated",
+          "path": "real/WongMarkedDated.lean",
+          "line": 183,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        },
+        {
+          "declaration": "WongPedigreeBridge.pathSound_of_faithful",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 43,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        }
+      ],
+      "remaining_obligation": "Arbitrary metadata, inference of organism owners from an ARG, and a biological pedigree sampling model remain outside these results."
+    },
+    {
+      "id": "M03",
+      "title": "Multiple crossovers and gene conversion",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s1",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s1\"]/p[2]",
+          "section_id": "iyae100-s1",
+          "paragraph": 2,
+          "text_sha256_utf8": "357fe908a8768783f1439c9efa0fc386d829df1c358db0d3b74aa55c0497225f",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s2\"]/p[2]",
+          "section_id": "iyae100-s2",
+          "paragraph": 2,
+          "text_sha256_utf8": "2b052597ee0287f857123602b45d675f5816c78c5076df35520c70230d47346d",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Encode a finite partition with a selected parent per cell; prove routing equivalence; instantiate two-cut gene conversion and multiple crossovers."
+    },
+    {
+      "id": "M04",
+      "title": "Classical event arity and parent ordering",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s2\"]/p[1]",
+          "section_id": "iyae100-s2",
+          "paragraph": 1,
+          "text_sha256_utf8": "afa397e15278e56382b649aeb7c31b34def55d15a8666d44bc68a79827899065",
+          "mathml_ids": [
+            "IM16",
+            "IM17",
+            "IM18"
+          ]
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "The actual recorder consumes/allocates one/two lineage identities at a split and two/one at a merger. Terminal-root and one-sample boundary cases are explicit.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.split_preserves_valid",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 261,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.merge_preserves_valid",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 288,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.merge_terminal_root",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 646,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.start_one_no_event",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 625,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        }
+      ],
+      "remaining_obligation": "Old endpoint-node degree theorems still require their stated ClassicalShape hypotheses. They do not become unrestricted edge-multiplicity degree decoders."
+    },
+    {
+      "id": "M05",
+      "title": "Lossless event encoding before simplification",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s3",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s3\"]/p[4]",
+          "section_id": "iyae100-s3",
+          "paragraph": 4,
+          "text_sha256_utf8": "aa1ed1a8d4db15b6ec52f67a2fadb3919a8f5f3a1b0452940508a9048a26809c",
+          "mathml_ids": [
+            "IM22",
+            "IM23",
+            "IM24"
+          ]
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "Raw uncoalesced single-event records decode without the old Normalized restriction, including two distinct lineages with the same endpoints. Stable IDs and event logs retain the full generated record.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.raw_records_injective",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 543,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.raw_decode_encode",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 596,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.raw_encode_decode",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 601,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_shared_endpoints",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 705,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_distinct_lineages",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 710,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_not_normalized",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 718,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_raw_decode",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 732,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_cut_retained",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 737,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        }
+      ],
+      "remaining_obligation": "The older normalized theorem remains scoped to its old representation. The new result covers the specified single-crossover event records and generated history; arbitrary multi-crossover/gene-conversion events remain M03."
+    },
+    {
+      "id": "M06",
+      "title": "Sample-support restriction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s3",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s3\"]/p[1]",
+          "section_id": "iyae100-s3",
+          "paragraph": 1,
+          "text_sha256_utf8": "4481b4a05305c2c4902b06b2afc76f1a6528a4e33858e91c8dc2a6ab1fb5918f",
+          "mathml_ids": [
+            "IM21"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s3\"]/p[2]",
+          "section_id": "iyae100-s3",
+          "paragraph": 2,
+          "text_sha256_utf8": "64a3c96e5c99f4d539ec3f8e4605bac28e8482a787a96acac3ccb0295fd98c7c",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s3\"]/p[3]",
+          "section_id": "iyae100-s3",
+          "paragraph": 3,
+          "text_sha256_utf8": "562db4cf78c6b2b28e2a0641c2e46d4c5be738122978845da8c18af161c75eeb",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Preserve the exact operation name. It keeps ancestors above local MRCAs, unlike M07."
+    },
+    {
+      "id": "M07",
+      "title": "Fig.3 local-MRCA truncation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s3",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s3\"]/p[5]",
+          "section_id": "iyae100-s3",
+          "paragraph": 5,
+          "text_sha256_utf8": "51acced34d0633e522cb5120858ee7391de325721bc31dd75aac2b64d9b7f4cc",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "The deterministic stopping semantics is closed. Literal Figure 3 data and stochastic sample-set/count transition semantics are not supplied; B01-B06 remain separate."
+    },
+    {
+      "id": "M08",
+      "title": "Tables and incremental local-tree recovery",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s5\"]/p[1]",
+          "section_id": "iyae100-s5",
+          "paragraph": 1,
+          "text_sha256_utf8": "daa6b12054151dac270e8c41f9d253c48556ff123e72373da41df57396cb262a",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define executable sorted tables and across-coordinate remove/insert updates, prove equivalence to direct extraction and analyze record scanning, functional-cache evaluation, actual array allocation and machine costs. The new per-coordinate abstract count theorem does not prove those costs."
+    },
+    {
+      "id": "M09",
+      "title": "Unresolved event order in coarse topology",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s6",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s2\"]/p[3]",
+          "section_id": "iyae100-s2",
+          "paragraph": 3,
+          "text_sha256_utf8": "6ff34770fc494074c82a040a0b73e22527370aa4f8fcc59b1d59e94faadfc425",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s6\"]/p[1]",
+          "section_id": "iyae100-s6",
+          "paragraph": 1,
+          "text_sha256_utf8": "adee1f2fe660a4279f9cc6607c3269c8938ad3364ab497e8f4644930031c223e",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define valid refinements and observation fibres; construct different event orders with one coarse gARG."
+    },
+    {
+      "id": "M10",
+      "title": "Recombination detectability",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s4",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s4\"]/p[3]",
+          "section_id": "iyae100-s4",
+          "paragraph": 3,
+          "text_sha256_utf8": "f16e00d4a970075c1527df3b14ed15025192c94d874d36ac14a6068b9fb37ab7",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "A precise new detectability witness proves that raw records distinguish two different recombination cuts while endpoint-local semantics agree.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.reunion_cut_retained",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 737,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_local_cut_forgotten",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 746,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        }
+      ],
+      "remaining_obligation": "The source broader empirical/statistical detectability discussion is not a quantified identification theorem. No detection probability or species classifier is proved."
+    },
+    {
+      "id": "M11",
+      "title": "Tree-metric costs and overlooked shared identity",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s6",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s6\"]/p[2]",
+          "section_id": "iyae100-s6",
+          "paragraph": 2,
+          "text_sha256_utf8": "228285621360ed968268319c8fb213367af465f08cc10245fa82bcfbd4c79bd9",
+          "mathml_ids": [
+            "IM25"
+          ]
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Choose the actual metric/algorithm and prove its cost; separately give equal local observations with different shared internal identities."
+    },
+    {
+      "id": "M12",
+      "title": "Scalability, software use and standardization",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s5\"]/p[2]",
+          "section_id": "iyae100-s5",
+          "paragraph": 2,
+          "text_sha256_utf8": "542acff7f65818b3c3489557b146b34dc13d4f7d50507797623ad1bf2e08f0b3",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s6\"]/p[3]",
+          "section_id": "iyae100-s6",
+          "paragraph": 3,
+          "text_sha256_utf8": "24c3d6fc1239f5917740df36ca9c329dbde6e6337f3d612f10e5a8e9d3c5d082",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s6\"]/p[4]",
+          "section_id": "iyae100-s6",
+          "paragraph": 4,
+          "text_sha256_utf8": "16f251f028eed53019423a249d4c90cd9a4cc2be934505984d2447c811d58354",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "empirical reproduction open",
+      "recommended_status": "empirical reproduction open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Record historical versions, cited benchmarks and interoperability examples; document recommendation as judgment."
+    },
+    {
+      "id": "M13",
+      "title": "Uncertainty and improved global benchmarks",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#iyae100-s6",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s6\"]/p[1]",
+          "section_id": "iyae100-s6",
+          "paragraph": 1,
+          "text_sha256_utf8": "adee1f2fe660a4279f9cc6607c3269c8938ad3364ab497e8f4644930031c223e",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"iyae100-s6\"]/p[2]",
+          "section_id": "iyae100-s6",
+          "paragraph": 2,
+          "text_sha256_utf8": "228285621360ed968268319c8fb213367af465f08cc10245fa82bcfbd4c79bd9",
+          "mathml_ids": [
+            "IM25"
+          ]
+        }
+      ],
+      "baseline_status": "research agenda",
+      "recommended_status": "research agenda",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Keep explicit source open-question inventory and needed definitions; assess any new theorem independently."
+    },
+    {
+      "id": "A01",
+      "title": "Big/Little common-observable law",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app1",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app1\"]/p[1]",
+          "section_id": "app1",
+          "paragraph": 1,
+          "text_sha256_utf8": "3a8a6c4c439b190cf4a25d8c5ba3fd477f14018101ed0ac437fab238ac7918a8",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[1]",
+          "section_id": "app2",
+          "paragraph": 1,
+          "text_sha256_utf8": "74fb314b1d9a0d47148a2b5a2b8f0f01df174bbade214262bd46196e2ae8a92b",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "A full marked Big process now exists under the explicit continuous-breakpoint interpretation.",
+      "anchors": [],
+      "remaining_obligation": "No matching Little process or Big/Little common sample-observable law has been constructed. This family remains open."
+    },
+    {
+      "id": "A02",
+      "title": "NP-hard minimum recombination reconstruction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app1",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app1\"]/p[5]",
+          "section_id": "app1",
+          "paragraph": 5,
+          "text_sha256_utf8": "f405c57ad4cf52462ee8abe35b534f4ecabfee0770b057f2286d3e66891fe3b4",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Recover exact decision problem, mutation assumptions, input encoding and threshold; prove polynomial reduction with yes/no equivalence."
+    },
+    {
+      "id": "A03",
+      "title": "Coalescent, ASG and inference history",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app1",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app1\"]/p[1]",
+          "section_id": "app1",
+          "paragraph": 1,
+          "text_sha256_utf8": "3a8a6c4c439b190cf4a25d8c5ba3fd477f14018101ed0ac437fab238ac7918a8",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app1\"]/p[3]",
+          "section_id": "app1",
+          "paragraph": 3,
+          "text_sha256_utf8": "483949e377a629ff899bf36b5a0c4e0858b80f1bd8f18ae10cde3b36c318eb3e",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app1\"]/p[4]",
+          "section_id": "app1",
+          "paragraph": 4,
+          "text_sha256_utf8": "d14bb44f412fe230c1ddf0d82e513758cd9a787361153837246663b0ebb39c27",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app1\"]/p[6]",
+          "section_id": "app1",
+          "paragraph": 6,
+          "text_sha256_utf8": "1f785a2fe361f7e6a2589ac8e3ea5b28c9b82a6854bf428babebcd2e55dfce1a",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "context documented",
+      "recommended_status": "context documented",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "If claiming mathematical coverage of the ASG description, define random graph and tree-selection kernel. Historical mentions do not require proving every cited article."
+    },
+    {
+      "id": "B01",
+      "title": "Little-ARG lineage state",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[2]",
+          "section_id": "app2",
+          "paragraph": 2,
+          "text_sha256_utf8": "c286f1094a4f95197bb1e598733917b56f1dbae643ea53ab61c123166b3d0965",
+          "mathml_ids": [
+            "IM26",
+            "IM27",
+            "IM28",
+            "IM29",
+            "IM30"
+          ]
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define ordered segment/sample-set state and retired coordinates; prove initialization, sample-partition and mass invariants."
+    },
+    {
+      "id": "B02",
+      "title": "Effective links and splitting",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[2]",
+          "section_id": "app2",
+          "paragraph": 2,
+          "text_sha256_utf8": "c286f1094a4f95197bb1e598733917b56f1dbae643ea53ab61c123166b3d0965",
+          "mathml_ids": [
+            "IM26",
+            "IM27",
+            "IM28",
+            "IM29",
+            "IM30"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[3]",
+          "section_id": "app2",
+          "paragraph": 3,
+          "text_sha256_utf8": "902f804f5fa96d030e3fa5f3345a4407a7ad9bdae12ad1da31a97df96fa9d8a4",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Enumerate effective links and prove count formula; uniform split preserves exact ancestral segments and counts."
+    },
+    {
+      "id": "B03",
+      "title": "Merge and retire fully-coalesced material",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[4]",
+          "section_id": "app2",
+          "paragraph": 4,
+          "text_sha256_utf8": "b4bc32e2cacc1616e5e045b2913888642149cd2ae7a76d3787cd39bf472d5141",
+          "mathml_ids": [
+            "IM31",
+            "IM32",
+            "IM33",
+            "IM34",
+            "IM35",
+            "IM36",
+            "IM37"
+          ]
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Prove canonical overlay, additive overlap, preserved nonoverlap and correct retirement/empty-lineage deletion."
+    },
+    {
+      "id": "B04",
+      "title": "Big-ARG generator and event recording",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[5]",
+          "section_id": "app2",
+          "paragraph": 5,
+          "text_sha256_utf8": "5832cce8a3d6789526dfdcc6a7ea83f04360e43067a151719619b0072e66dedc",
+          "mathml_ids": [
+            "IM38",
+            "IM39",
+            "IM40"
+          ]
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "The general-n marked construction now has stable lineage IDs, full-genome splits, merger pairs, event logs, Borel-measurable finite records, a probability law, an actual-recorder adaptive mark law, and a dated-history count/time projection.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedLaw.finiteChoiceLaw_singleton",
+          "path": "real/WongMarkedLaw.lean",
+          "line": 67,
+          "source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+        },
+        {
+          "declaration": "WongMarkedLaw.cutLaw_apply",
+          "path": "real/WongMarkedLaw.lean",
+          "line": 95,
+          "source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+        },
+        {
+          "declaration": "WongMarkedLaw.unordered_pair_mass",
+          "path": "real/WongMarkedLaw.lean",
+          "line": 141,
+          "source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+        },
+        {
+          "declaration": "WongMarkedLaw.law_probability",
+          "path": "real/WongMarkedLaw.lean",
+          "line": 204,
+          "source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+        },
+        {
+          "declaration": "WongMarkedProcess.prefix_valid_count",
+          "path": "real/WongMarkedProcess.lean",
+          "line": 92,
+          "source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59"
+        },
+        {
+          "declaration": "WongMarkedMeasurable.measurable_stoppedRecord",
+          "path": "real/WongMarkedMeasurable.lean",
+          "line": 347,
+          "source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+        },
+        {
+          "declaration": "WongMarkedMeasurable.stoppedRecordLaw_probability",
+          "path": "real/WongMarkedMeasurable.lean",
+          "line": 370,
+          "source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+        },
+        {
+          "declaration": "WongAdaptiveSelection.recorder_mark_cylinder",
+          "path": "real/WongAdaptiveSelection.lean",
+          "line": 267,
+          "source_sha256": "ac8ec96239575413b57d731742d126047d7d69725aa180b27a875d161fbb0163",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "ac8ec96239575413b57d731742d126047d7d69725aa180b27a875d161fbb0163",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "e4fd7da691c45453e4278cace23d5046b0443af80a6ba86f9dde1e283b4effd2"
+        },
+        {
+          "declaration": "WongMarkedDated.historyLaw_probability",
+          "path": "real/WongMarkedDated.lean",
+          "line": 90,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        },
+        {
+          "declaration": "WongMarkedDated.history_count_time_projection",
+          "path": "real/WongMarkedDated.lean",
+          "line": 95,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        }
+      ],
+      "remaining_obligation": "Checked for positive finite sample size, positive genome length, and the declared rate normalization. Breakpoints use normalized Lebesgue measure on (0,L). Figure A1 and Little use discrete links; the Big paragraph does not explicitly switch domains. Discrete-link equivalence, an all-history real-time Markov/generator theorem, and other demographic models are not proved."
+    },
+    {
+      "id": "B05",
+      "title": "Big nonexplosion and almost-sure absorption",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[5]",
+          "section_id": "app2",
+          "paragraph": 5,
+          "text_sha256_utf8": "5832cce8a3d6789526dfdcc6a7ea83f04360e43067a151719619b0072e66dedc",
+          "mathml_ids": [
+            "IM38",
+            "IM39",
+            "IM40"
+          ]
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "Finite jump absorption and finite physical time are transferred to the actual valid marked graph; dated histories become constant after the stopping index.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedProcess.law_ae_stoppedRecord",
+          "path": "real/WongMarkedProcess.lean",
+          "line": 151,
+          "source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59"
+        },
+        {
+          "declaration": "WongMarkedProcess.law_ae_finite_physical_graph",
+          "path": "real/WongMarkedProcess.lean",
+          "line": 159,
+          "source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59"
+        },
+        {
+          "declaration": "WongMarkedDated.realize_constant_tail",
+          "path": "real/WongMarkedDated.lean",
+          "line": 114,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        },
+        {
+          "declaration": "WongMarkedDated.law_ae_realize_validDated",
+          "path": "real/WongMarkedDated.lean",
+          "line": 183,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        }
+      ],
+      "remaining_obligation": "The stopping rule is one active lineage (GMRCA), with n=1 stopped immediately. The final dated-validity endpoint is an almost-everywhere input-space realization theorem; do not silently rename it an output-space predicate theorem. A general unstopped CTMC construction is a stronger unproved extension."
+    },
+    {
+      "id": "B06",
+      "title": "Little-ARG absorption",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[4]",
+          "section_id": "app2",
+          "paragraph": 4,
+          "text_sha256_utf8": "b4bc32e2cacc1616e5e045b2913888642149cd2ae7a76d3787cd39bf472d5141",
+          "mathml_ids": [
+            "IM31",
+            "IM32",
+            "IM33",
+            "IM34",
+            "IM35",
+            "IM36",
+            "IM37"
+          ]
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Prove nonexplosion and almost-sure retirement of all coordinates, directly or via a justified coupling."
+    },
+    {
+      "id": "B07",
+      "title": "Big exponential event growth",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[6]",
+          "section_id": "app2",
+          "paragraph": 6,
+          "text_sha256_utf8": "5098d531453503f79f2c9b72980a1062e4c0c4191520a1bb05b8f644c4f16f2f",
+          "mathml_ids": [
+            "IM41",
+            "IM42"
+          ]
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Resolve expectation, event type, asymptotic regime and rate convention. Literal rates suggest a factor-of-two exponential mismatch; prove the correctly matched result."
+    },
+    {
+      "id": "B08",
+      "title": "Little quadratic event growth",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[6]",
+          "section_id": "app2",
+          "paragraph": 6,
+          "text_sha256_utf8": "5098d531453503f79f2c9b72980a1062e4c0c4191520a1bb05b8f644c4f16f2f",
+          "mathml_ids": [
+            "IM41",
+            "IM42"
+          ]
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Find precise bound, expectation and discrete/continuous regime; state dependence on n,m,rho and event types; prove it."
+    },
+    {
+      "id": "B09",
+      "title": "Timed lineage/link counts and likelihood",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[7]",
+          "section_id": "app2",
+          "paragraph": 7,
+          "text_sha256_utf8": "e03ecf7e848c7191ec41becc83c96daafcfadbcba90301251f07d06ff903e2ba",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "Lineage counts and event times are computed from the actual recorded history and their joint law equals the already checked count/time process.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedProcess.recorded_count_time_projection",
+          "path": "real/WongMarkedProcess.lean",
+          "line": 248,
+          "source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59"
+        },
+        {
+          "declaration": "WongMarkedDated.history_count_time_projection",
+          "path": "real/WongMarkedDated.lean",
+          "line": 95,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        }
+      ],
+      "remaining_obligation": "A full Little-ARG effective-link trajectory and the source likelihood calculation remain unformalized. No marginal-likelihood or inference implementation is certified."
+    },
+    {
+      "id": "B10",
+      "title": "Extrinsic paired-parent timing convention",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app2",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[7]",
+          "section_id": "app2",
+          "paragraph": 7,
+          "text_sha256_utf8": "e03ecf7e848c7191ec41becc83c96daafcfadbcba90301251f07d06ff903e2ba",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define enriched timed nodes and grouping; prove recovery of event partition and k(t),nu(t), including gaps."
+    },
+    {
+      "id": "C01",
+      "title": "Matrix moves and along-genome SPR",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app3",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app3\"]/p[1]",
+          "section_id": "app3",
+          "paragraph": 1,
+          "text_sha256_utf8": "2acd553a674a72870c7f77348060ffda1a8977cbbf74a3dfd2600b4ab557fb40",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define named mutation/coalescence/recombination moves and prove compatibility of constructed ARGs; formalize event-to-SPR relation including invisible events."
+    },
+    {
+      "id": "C02",
+      "title": "Monte Carlo, approximations and consensus",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app3",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app3\"]/p[2]",
+          "section_id": "app3",
+          "paragraph": 2,
+          "text_sha256_utf8": "ced4ab90b7139fb000a95ba364908c8532c4031a05c81004b7c94042962acc24",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app3\"]/p[3]",
+          "section_id": "app3",
+          "paragraph": 3,
+          "text_sha256_utf8": "b4dd4ad539e34acc46b272791c87af7a63fc3c56da9ae728fb5ba1311522abd8",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Obtain precise primary target/approximation and filtering/consensus rules for any claimed formal coverage; prove a clearly named property."
+    },
+    {
+      "id": "C03",
+      "title": "Historical inference scalability",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app3",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app3\"]/p[2]",
+          "section_id": "app3",
+          "paragraph": 2,
+          "text_sha256_utf8": "ced4ab90b7139fb000a95ba364908c8532c4031a05c81004b7c94042962acc24",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "empirical reproduction open",
+      "recommended_status": "empirical reproduction open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Record historical versions, hardware, sample/sequence sizes and cited experiments; reproduce if asserting independent confirmation."
+    },
+    {
+      "id": "D01",
+      "title": "Cell-lineage tagging and owner projection",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app4",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app4\"]/p[1]",
+          "section_id": "app4",
+          "paragraph": 1,
+          "text_sha256_utf8": "b3e8487c4e607d34135b1eb9824e332439752fc183c91bc7fd2ebdd89ed91a5a",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "New conditional transfer and obstruction theorems connect richer inheritance histories with organism ancestry. These are mathematical extensions motivated by Wong cell/owner tagging, not claims that Wong states Alexander theorems.",
+      "anchors": [
+        {
+          "declaration": "WongPedigreeBridge.iap_iff",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 125,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        {
+          "declaration": "WongPedigreeBridge.reflection_iff",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 142,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        {
+          "declaration": "WongPedigreeBridge.convex_iff",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 217,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        {
+          "declaration": "WongPedigreeBridge.specieslike_descends",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 258,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        {
+          "declaration": "WongPedigreeBridge.specieslike_iff",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 332,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        {
+          "declaration": "WongPedigreeBridge.maximal_saturated_iff",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 352,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        {
+          "declaration": "WongPedigreeBridge.sound_projection_does_not_determine_iap",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 421,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        }
+      ],
+      "remaining_obligation": "Finite fibres, onto ownership, ancestry reflection for every pair of representatives with different owners, saturation, and connected fibres where needed are substantial extra assumptions. Mere sound owner projection does not identify IAP or a biological species."
+    },
+    {
+      "id": "D02",
+      "title": "Mutation information resolving cellular bifurcations",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app4",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app4\"]/p[2]",
+          "section_id": "app4",
+          "paragraph": 2,
+          "text_sha256_utf8": "34ecee935d3118ae36352fe0f446e8921088afccfaa278525aa81638f2e3a261",
+          "mathml_ids": [
+            "IM54",
+            "IM55",
+            "IM56"
+          ]
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define binary cell lineage and explicit sufficient mutation observations; prove distinction of the relevant branch order and give failures with inadequate data."
+    },
+    {
+      "id": "E01",
+      "title": "Executable sample-to-root extraction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[2]",
+          "section_id": "app5",
+          "paragraph": 2,
+          "text_sha256_utf8": "513c68b0b4ef88fa83a4f70974076a702b48af6986318233cfcd6d592abaa725",
+          "mathml_ids": [
+            "IM57",
+            "IM58",
+            "IM59",
+            "IM60",
+            "IM61",
+            "IM62",
+            "IM63",
+            "IM64",
+            "IM65",
+            "IM66",
+            "IM67",
+            "IM68",
+            "IM69",
+            "IM70"
+          ]
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "The sample-rootward algorithm and abstract write/check/lookup counts are checked. Canonical finite interval semantics is now supplied by E03/G06; executable whole-exporter, machine-array storage, concrete scanning/runtime costs and external tskit conformance remain open. MRCA truncation is a separate operation."
+    },
+    {
+      "id": "E02",
+      "title": "Local-array reconstruction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[3]",
+          "section_id": "app5",
+          "paragraph": 3,
+          "text_sha256_utf8": "7e89d2494f2fa12d2ebf5bf7b71489da63e06022bd147dfafbd854ab16be17be",
+          "mathml_ids": [
+            "IM71",
+            "IM72",
+            "IM73",
+            "IM74",
+            "IM75"
+          ]
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Canonical interval semantics is established. A fully executable array-to-record exporter, byte-format round trip and persistent metadata packaging remain open. All-node recovery is a different observation."
+    },
+    {
+      "id": "E03",
+      "title": "Executable finite interval serialization",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[3]",
+          "section_id": "app5",
+          "paragraph": 3,
+          "text_sha256_utf8": "7e89d2494f2fa12d2ebf5bf7b71489da63e06022bd147dfafbd854ab16be17be",
+          "mathml_ids": [
+            "IM71",
+            "IM72",
+            "IM73",
+            "IM74",
+            "IM75"
+          ]
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Implement and verify computable endpoint/cell enumeration, activity tests and record emission, then specify the external serialization format and parser. The existing graph adapter is noncomputable; only its list-merge component executes."
+    },
+    {
+      "id": "E04",
+      "title": "Information loss from unlabelled or suppressed trees",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[4]",
+          "section_id": "app5",
+          "paragraph": 4,
+          "text_sha256_utf8": "46a8a2833073a8a5f32854d955602c916882b820ff0ba8a1e349c372074dd3f2",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[5]",
+          "section_id": "app5",
+          "paragraph": 5,
+          "text_sha256_utf8": "f6a070d35bfb53ba1843d3ab5d8ba51486f4dd542f6fe5b1a56cecb8e9079452",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[6]",
+          "section_id": "app5",
+          "paragraph": 6,
+          "text_sha256_utf8": "5e98d76ded1302b186cc3b8d587ecc67a303a4d5e4edbd54d2da4886e6412e01",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "A new local-semantic information-loss witness and a deterministic observation-fibre obstruction strengthen the existing loss examples.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.reunion_local_cut_forgotten",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 746,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongPedigreeBridge.no_specieslike_recovery_from_garg_coarsening",
+          "path": "real/WongPedigreeBridge.lean",
+          "line": 464,
+          "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        }
+      ],
+      "remaining_obligation": "The generic species-like obstruction uses explicitly supplied incompatible abstract completions; it is not distributional or diploid statistical non-identifiability, nor a proof of every source simplification example."
+    },
+    {
+      "id": "E05",
+      "title": "NP-hard SPR reconstruction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[7]",
+          "section_id": "app5",
+          "paragraph": 7,
+          "text_sha256_utf8": "3d2354036c6da98722c9e25a83d7bc102c60fbb0cba6cd6389973ca8fba6453c",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Select exact rooted/unrooted primary theorem, tree class, labels, moves and threshold; prove polynomial reduction."
+    },
+    {
+      "id": "E06",
+      "title": "SPR with shared internal identities",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app5",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app5\"]/p[7]",
+          "section_id": "app5",
+          "paragraph": 7,
+          "text_sha256_utf8": "3d2354036c6da98722c9e25a83d7bc102c60fbb0cba6cd6389973ca8fba6453c",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "research agenda",
+      "recommended_status": "research agenda",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "State which nodes are shared and which moves are allowed; keep a separate research question."
+    },
+    {
+      "id": "F01",
+      "title": "Local arity bounds and presence",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app6",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app6\"]/p[1]",
+          "section_id": "app6",
+          "paragraph": 1,
+          "text_sha256_utf8": "a2cba0641089763f209881308b89414d09a79b3152c5e854029e2aad5fca7362",
+          "mathml_ids": [
+            "IM76",
+            "IM77",
+            "IM78",
+            "IM79",
+            "IM80",
+            "IM81",
+            "IM82"
+          ]
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Connect executable sample arrays to these counts after E01; preserve distinction between absence and local unary presence."
+    },
+    {
+      "id": "F02",
+      "title": "Locally unary examples and sampled ancestors",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app6",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app6\"]/p[2]",
+          "section_id": "app6",
+          "paragraph": 2,
+          "text_sha256_utf8": "4e16039214fe56f2efb2d5b3936543e3d008cc7f6d2b8ceeac461cb475c0140d",
+          "mathml_ids": [
+            "IM83",
+            "IM84"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app6\"]/p[3]",
+          "section_id": "app6",
+          "paragraph": 3,
+          "text_sha256_utf8": "7595f0fa427fb49dd31cc40aad6e988011ad1698b3c746e139670e3a9f7fbdab",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app6\"]/p[4]",
+          "section_id": "app6",
+          "paragraph": 4,
+          "text_sha256_utf8": "da03fd20bcce3f2b883639032e13acced771073579f17bc4cdd50aecbbd3f35c",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Instantiate varying arity, graph-binary/always-unary, pass-through, recombinant and sampled-ancestor examples; prove counts and safe retention behavior."
+    },
+    {
+      "id": "G01",
+      "title": "Wright-Fisher generation of the example",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[2]",
+          "section_id": "app7",
+          "paragraph": 2,
+          "text_sha256_utf8": "c805b490ce0a8207abfc8cbfdb027b81db2c3fbf9b9bf4f67917613c5489fdc4",
+          "mathml_ids": [
+            "IM85"
+          ]
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define generations, random parent choices, recombination and overlap coalescence; prove finite generated prefixes are gARGs and reproduce the instance separately."
+    },
+    {
+      "id": "G02",
+      "title": "Span and coalescent fraction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[3]",
+          "section_id": "app7",
+          "paragraph": 3,
+          "text_sha256_utf8": "69d07ab8715973d3f47af158ac7a84a7c4da67397d7d830ed82a05bfd9012638",
+          "mathml_ids": [
+            "IM86",
+            "IM87"
+          ]
+        }
+      ],
+      "baseline_status": "open",
+      "recommended_status": "open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Define coordinate measure, local presence, coalescence set and fraction; prove bounds, invariance under partition changes and zero/one cases."
+    },
+    {
+      "id": "G03",
+      "title": "Diamonds and super-diamonds",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[5]",
+          "section_id": "app7",
+          "paragraph": 5,
+          "text_sha256_utf8": "8b39711c2510169f30cb2fd8c1a29c5303ba390b8b34ba45ec3adfcb5db5b539",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "The immediate split/reunion control is valid in the general recorder and preserves two lineage identities while forgetting the cut under endpoint-local semantics.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.reunion_valid",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 672,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_counts",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 685,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_local_cut_forgotten",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 746,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        }
+      ],
+      "remaining_obligation": "This control is not a replacement for the general marked construction. Full super-diamond classification and all literal source figure claims are not added here."
+    },
+    {
+      "id": "G04",
+      "title": "Remove vertices that never coalesce locally",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[6]",
+          "section_id": "app7",
+          "paragraph": 6,
+          "text_sha256_utf8": "6849718f62ff093f71a9b7012c5b8db8d263bd4d5d0490cf4f3158730330421f",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "The Figure5c stage removes nodes never locally coalescent across the entire genome. Derive and verify that global eligibility rule separately; the new cell-dependent rule targets Figure5d-type contraction and does not itself identify the global stage."
+    },
+    {
+      "id": "G05",
+      "title": "Coordinate-dependent unary bypass",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[7]",
+          "section_id": "app7",
+          "paragraph": 7,
+          "text_sha256_utf8": "79f5949fa4f3513af06310c30eb343df91aebc732b410aff5962467961a31f2f",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "The source-relevant deterministic normal-form theorem is established. Full pipeline idempotence, an executable implementation, intermediate global Figure 5c eligibility and literal Figure 5 replication remain separate. The final fixed-point clause is interval storage only."
+    },
+    {
+      "id": "G06",
+      "title": "Adjacent equal-output coalescing",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[7]",
+          "section_id": "app7",
+          "paragraph": 7,
+          "text_sha256_utf8": "79f5949fa4f3513af06310c30eb343df91aebc732b410aff5962467961a31f2f",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[2]",
+          "section_id": "app8",
+          "paragraph": 2,
+          "text_sha256_utf8": "ee0aa87c6690c6b9807690f93516495553c5910ec2fce0ab14950884b8d72e81",
+          "mathml_ids": [
+            "IM88",
+            "IM89"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[4]",
+          "section_id": "app8",
+          "paragraph": 4,
+          "text_sha256_utf8": "8203a0f94e241e21e206c9a09e735f823d5095f56b3b44c146f24e15bca08ace",
+          "mathml_ids": [
+            "IM91",
+            "IM92"
+          ]
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Canonical interval-record semantics and storage idempotence are closed. An executable whole-GARG exporter, a separately encoded maximal-run tree table and whole-simplification idempotence are not established here."
+    },
+    {
+      "id": "G07",
+      "title": "External simplify implementations",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app7",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"iyae100-s3\"]/p[3]",
+          "section_id": "iyae100-s3",
+          "paragraph": 3,
+          "text_sha256_utf8": "562db4cf78c6b2b28e2a0641c2e46d4c5be738122978845da8c18af161c75eeb",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[1]",
+          "section_id": "app7",
+          "paragraph": 1,
+          "text_sha256_utf8": "d6b16c84f45e4e0b83448ca257d12057fbfa130c25343ac5ac57c4dab5637253",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app7\"]/p[2]",
+          "section_id": "app7",
+          "paragraph": 2,
+          "text_sha256_utf8": "c805b490ce0a8207abfc8cbfdb027b81db2c3fbf9b9bf4f67917613c5489fdc4",
+          "mathml_ids": [
+            "IM85"
+          ]
+        }
+      ],
+      "baseline_status": "empirical reproduction open",
+      "recommended_status": "empirical reproduction open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Pin software versions/configurations and validate conformance through adapters/examples; full implementation verification is a distinct project."
+    },
+    {
+      "id": "H01",
+      "title": "Supported diamond loses breakpoint information",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app8",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[1]",
+          "section_id": "app8",
+          "paragraph": 1,
+          "text_sha256_utf8": "a9cb72b0ac72d3ebb8781814c4c7c437dcd9f61fa7723cc9d9216294b8e187eb",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[2]",
+          "section_id": "app8",
+          "paragraph": 2,
+          "text_sha256_utf8": "ee0aa87c6690c6b9807690f93516495553c5910ec2fce0ab14950884b8d72e81",
+          "mathml_ids": [
+            "IM88",
+            "IM89"
+          ]
+        }
+      ],
+      "baseline_status": "checked scoped result",
+      "recommended_status": "checked scoped result",
+      "added_evidence": "The immediate split/reunion control is valid in the general recorder and preserves two lineage identities while forgetting the cut under endpoint-local semantics.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedRecorder.reunion_valid",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 672,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_counts",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 685,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        {
+          "declaration": "WongMarkedRecorder.reunion_local_cut_forgotten",
+          "path": "real/WongMarkedRecorder.lean",
+          "line": 746,
+          "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        }
+      ],
+      "remaining_obligation": "This control is not a replacement for the general marked construction. Full super-diamond classification and all literal source figure claims are not added here."
+    },
+    {
+      "id": "H02",
+      "title": "Timing and lineage precision loss",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app8",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[3]",
+          "section_id": "app8",
+          "paragraph": 3,
+          "text_sha256_utf8": "a8cd2ca9598f22df266eff9e7cac05061ae8663893b7efb9f13db5827aa92697",
+          "mathml_ids": [
+            "IM90"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[4]",
+          "section_id": "app8",
+          "paragraph": 4,
+          "text_sha256_utf8": "8203a0f94e241e21e206c9a09e735f823d5095f56b3b44c146f24e15bca08ace",
+          "mathml_ids": [
+            "IM91",
+            "IM92"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app2\"]/p[7]",
+          "section_id": "app2",
+          "paragraph": 7,
+          "text_sha256_utf8": "e03ecf7e848c7191ec41becc83c96daafcfadbcba90301251f07d06ff903e2ba",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "partial",
+      "recommended_status": "partial",
+      "added_evidence": "The richer dated record retains the actual count/time path; its projection agrees in law with the checked process.",
+      "anchors": [
+        {
+          "declaration": "WongMarkedDated.history_count_time_projection",
+          "path": "real/WongMarkedDated.lean",
+          "line": 95,
+          "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "module_receipt_exit_code": 0,
+          "module_receipt_source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+          "receipt_matches_current_source": true,
+          "module_object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        }
+      ],
+      "remaining_obligation": "Existing losses under simplified representations remain scoped counterexamples. The richer preservation theorem is not a converse reconstruction theorem from simplified gARGs."
+    },
+    {
+      "id": "H03",
+      "title": "Literal Figure 5 tree counts and boundaries",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app8",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[2]",
+          "section_id": "app8",
+          "paragraph": 2,
+          "text_sha256_utf8": "ee0aa87c6690c6b9807690f93516495553c5910ec2fce0ab14950884b8d72e81",
+          "mathml_ids": [
+            "IM88",
+            "IM89"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[3]",
+          "section_id": "app8",
+          "paragraph": 3,
+          "text_sha256_utf8": "a8cd2ca9598f22df266eff9e7cac05061ae8663893b7efb9f13db5827aa92697",
+          "mathml_ids": [
+            "IM90"
+          ]
+        },
+        {
+          "xpath": "//sec[@id=\"app8\"]/p[4]",
+          "section_id": "app8",
+          "paragraph": 4,
+          "text_sha256_utf8": "8203a0f94e241e21e206c9a09e735f823d5095f56b3b44c146f24e15bca08ace",
+          "mathml_ids": [
+            "IM91",
+            "IM92"
+          ]
+        }
+      ],
+      "baseline_status": "empirical reproduction open",
+      "recommended_status": "empirical reproduction open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Load published/supplementary intervals, validate graphs, apply specified transformations and compute counts/lost boundaries."
+    },
+    {
+      "id": "I01",
+      "title": "Four inference outputs and exact inputs",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app9",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[1]",
+          "section_id": "app9",
+          "paragraph": 1,
+          "text_sha256_utf8": "161ff444855e5eda89d9380917a135ed519c070dbbd5f133dea66cab431f43a4",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[2]",
+          "section_id": "app9",
+          "paragraph": 2,
+          "text_sha256_utf8": "856ba2109882ca32cc24d45aa533055c4fc2da48a7fcbb9400e63eb63fcec723",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[3]",
+          "section_id": "app9",
+          "paragraph": 3,
+          "text_sha256_utf8": "76459a6863b98d757b966c76e1b8bfe7481c7c3b0561a88d4ce71550e1498b07",
+          "mathml_ids": [
+            "IM93",
+            "IM94"
+          ]
+        }
+      ],
+      "baseline_status": "empirical reproduction open",
+      "recommended_status": "empirical reproduction open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Pin paper code/data/output hashes, versions/seeds; parse and validate actual gARGs. Distinguish archived-output validation from inference rerun."
+    },
+    {
+      "id": "I02",
+      "title": "Seven-recombination parsimony optimum",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app9",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[4]",
+          "section_id": "app9",
+          "paragraph": 4,
+          "text_sha256_utf8": "ac25b431c675e6797bc9c82eb002fe2257490619ca9b503583551e1387c6cd5d",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "source clarification required",
+      "recommended_status": "source clarification required",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Recover exact data/model; certify a compatible 7-event history and rule out all histories with fewer events using a sound certificate or imported theorem."
+    },
+    {
+      "id": "I03",
+      "title": "Figure 4 metrics and persistent clade claims",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373519/#app9",
+      "source_locators": [
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[4]",
+          "section_id": "app9",
+          "paragraph": 4,
+          "text_sha256_utf8": "ac25b431c675e6797bc9c82eb002fe2257490619ca9b503583551e1387c6cd5d",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[5]",
+          "section_id": "app9",
+          "paragraph": 5,
+          "text_sha256_utf8": "6c5dca5644c2b158de22350a350a14d3bc3ec72ab56dabb0899aab7948d69b00",
+          "mathml_ids": []
+        },
+        {
+          "xpath": "//sec[@id=\"app9\"]/p[6]",
+          "section_id": "app9",
+          "paragraph": 6,
+          "text_sha256_utf8": "e214bac229f56ba3ef6810b1f2081ecdbed55b13c6d086942c400e610beff650",
+          "mathml_ids": []
+        }
+      ],
+      "baseline_status": "empirical reproduction open",
+      "recommended_status": "empirical reproduction open",
+      "added_evidence": "No continuation theorem closes an additional obligation in this family.",
+      "anchors": [],
+      "remaining_obligation": "Compute all named metrics from pinned outputs: shared breakpoints, parent counts, coalescent spans, branch order, persistent nodes/edges and named clade across full span."
+    }
+  ]
+}

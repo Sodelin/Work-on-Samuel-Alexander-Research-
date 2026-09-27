@@ -1,0 +1,16 @@
+'WongPedigreeBridge.finiteSupport_preimage_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.infiniteSupport_preimage_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.iap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.reflection_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.commonAncestor_descends' does not depend on any axioms
+'WongPedigreeBridge.convex_pullback' does not depend on any axioms
+'WongPedigreeBridge.convex_iff' does not depend on any axioms
+'WongPedigreeBridge.specieslike_descends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.specieslike_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.maximal_saturated_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.maximalSpecieslike_descends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.iap_iff_of_finite_ancestry_errors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.sound_projection_does_not_determine_iap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.no_specieslike_recovery_from_garg_coarsening' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

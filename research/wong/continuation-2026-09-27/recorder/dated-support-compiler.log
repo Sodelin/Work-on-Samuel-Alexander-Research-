@@ -1,0 +1,7 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongDatedSupport.lean:34:0: warning: Definition `WongDatedSupport.measurableEq_of_injective_code` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongDatedSupport.lean:34:0: warning: Definition `measurableEq_of_injective_code` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+'WongDatedSupport.measurable_validDated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongDatedSupport.historyLaw_ae_validDated' depends on axioms: [propext, Classical.choice, Quot.sound]

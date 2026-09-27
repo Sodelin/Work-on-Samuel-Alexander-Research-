@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "Single stronger conditional IAP transfer theorem",
+  "module": "real/WongPedigreeRobust.lean",
+  "classification": "new_mechanized_elementary_deduction_from_source_definition",
+  "endpoint": "WongPedigreeRobust.iap_iff_of_finite_projection_errors",
+  "source": {
+    "id": "SPEC26",
+    "url": "https://arxiv.org/html/2602.05274v1",
+    "locator": "Definition 2",
+    "correspondence": "IAP predicate definition; source does not state the owner-projection theorem"
+  },
+  "statement": "An onto owner map with finite fibres preserves and reflects IAP on a saturated candidate if each representative has only finitely many ancestry-path disagreements within that candidate.",
+  "assumptions": [
+    "owner map is onto",
+    "each owner fibre is finite",
+    "for every a in q^-1(S), finitely many b in q^-1(S) disagree on DescR(a,b) versus DescE(q(a),q(b))"
+  ],
+  "not_claimed": [
+    "uniform finite error bound",
+    "finite edited parent edges imply finite ancestry disagreement",
+    "empirical ARG inference satisfies this hypothesis",
+    "REF, convexity, connectivity, maximality or specieslike transfer under only these assumptions",
+    "biological species classification",
+    "novelty or source attribution of this extension"
+  ],
+  "dependencies": [
+    "WongPedigreeBridge.finiteSupport_iff_off_finite",
+    "WongPedigreeBridge.finiteSupport_preimage_iff"
+  ],
+  "verification_status": "PASS_SOURCE_SNAPSHOT_PENDING_INTEGRATED_COMMIT",
+  "verification_receipt": "research/wong/continuation-2026-09-27/bridge/verification/ROBUST-RESULT.json",
+  "verified_source_sha256": "a2ed87e4162f3e6f0c127805bfe9619e9ba8b3649aaeade3cc8b8ef554b16c30",
+  "proof_commit": null,
+  "source_checks_utc_date": "2026-09-27"
+}

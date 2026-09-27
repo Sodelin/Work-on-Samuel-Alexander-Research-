@@ -1,0 +1,70 @@
+{
+  "status": "PASS_SOURCE_SNAPSHOT_PENDING_INTEGRATED_COMMIT",
+  "proof_base_commit": "01db8c4cbb82000950ff7d3e7252b5438416c7c3",
+  "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+  "log_sha256": "598954f8d3246701da2a5f61d63b309ce6e0c13eb8adec7bba3201310d2c0282",
+  "project_import_closure_modules": 34,
+  "acceptance_endpoints": {
+    "WongPedigreeBridge.finiteSupport_preimage_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.infiniteSupport_preimage_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.iap_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.reflection_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.commonAncestor_descends": [],
+    "WongPedigreeBridge.convex_pullback": [],
+    "WongPedigreeBridge.convex_iff": [],
+    "WongPedigreeBridge.specieslike_descends": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.specieslike_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.maximal_saturated_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.maximalSpecieslike_descends": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.iap_iff_of_finite_ancestry_errors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.sound_projection_does_not_determine_iap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WongPedigreeBridge.no_specieslike_recovery_from_garg_coarsening": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "scope": "Source snapshot and preserved compiler evidence. The final combined exact commit is verified by the parent lane."
+}

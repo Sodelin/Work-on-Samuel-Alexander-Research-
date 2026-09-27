@@ -22,3 +22,10 @@
 /research/feedback-speciation/pure-induction-ancestry-v2/** -text
 /research/wong/completion/probability/holding-times/worker/** -text
 /research/wong/completion/probability/holding-times/INDEPENDENT-REVIEW.json -text
+
+# Preserve the exact bytes of the reviewed continuation packets and sources.
+/research/wong/continuation-2026-09-27/** -text
+/real/WongMarked*.lean -text
+/real/WongDatedSupport.lean -text
+/real/WongAdaptiveSelection.lean -text
+/real/WongPedigree*.lean -text
