@@ -30,7 +30,7 @@ The core proofs use Std. The Mathlib project, including `PortEncoding`,
 in the [current aggregate audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/real-audit.json). The publication
 at `beca7b814d7751de0cb2329b13fad41786473c25` passed 405 core and 101 Mathlib
 endpoint audits in its exact-commit hosted run. The literal
-[`DigitRegularity` module](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/real/DigitRegularity.lean) is the explicitly pending
+[`DigitRegularity` module](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/REFINEMENT-LEDGER.md) is the explicitly pending
 compile item above, distinct from the already certified finite binary recurrence.
 [Formalization coverage](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/FORMALIZATION.md), [current status](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/STATUS.md), and
 [statement review](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/GAP-CLOSURE-REVIEW.md) track exact endpoints,
