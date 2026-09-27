@@ -128,7 +128,7 @@ checks; repository-wide integration receipts are recorded separately in
 [FORMALIZATION.md](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/FORMALIZATION.md) and [STATUS.md](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/STATUS.md).
 
 The proved binary recursion must be distinguished from the optional
-[`DigitRegularity` wrapper](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/real/DigitRegularity.lean): its statement that the
+[`DigitRegularity` wrapper](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/REFINEMENT-LEDGER.md): its statement that the
 integer span of the full 2-kernel is finitely generated has passed a mathematical
 statement review, but compilation is still pending in this handoff. No checked
 wrapper claim is made here.
