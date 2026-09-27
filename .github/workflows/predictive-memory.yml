@@ -36,7 +36,7 @@ jobs:
           MATHLIB_NO_CACHE_ON_UPDATE: '1'
         run: |
           lake update
-          lake exe cache get Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Analysis.Convex.Hull Mathlib.Data.Finset.Basic Mathlib.Data.Finset.Union Mathlib.Data.Fintype.Card Mathlib.Data.Fintype.EquivFin Mathlib.Data.Fintype.Fin Mathlib.Data.Fintype.Prod Mathlib.Data.Quot Mathlib.Logic.Function.Basic Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity Mathlib.Tactic.Ring
+          lake exe cache get Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Analysis.Convex.Hull Mathlib.Data.Finset.Basic Mathlib.Data.Finset.Union Mathlib.Data.Fintype.Card Mathlib.Data.Fintype.EquivFin Mathlib.Data.Fintype.Fin Mathlib.Data.Fintype.Prod Mathlib.Data.Quot Mathlib.Logic.Function.Basic Mathlib.Probability.ProbabilityMassFunction.Constructions Mathlib.Probability.Distributions.Uniform Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity Mathlib.Tactic.Ring
       - name: Fresh project rebuild and axiom audit
         run: python3 research/open-problems/time-self-reference/predictive-memory/verify.py --dependency-root real
       - name: Exact constructed examples

@@ -39,7 +39,8 @@ def main():
     ap.add_argument("--development", action="store_true",
                     help="Reuse unchanged, previously checked private outputs; final receipt must use fresh replay")
     ap.add_argument("--modules", nargs="*", default=[
-        "ControlledMemory", "HistoryObservation", "AncestryObservation", "WongPredictiveBridge"])
+        "ControlledMemory", "HistoryObservation", "AncestryObservation", "WongPredictiveBridge",
+        "StochasticExamples"])
     args = ap.parse_args()
     if args.compiler_lock:
         if os.name != "nt":
