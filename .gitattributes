@@ -33,3 +33,7 @@
 # Exact finite-family proof and evidence bytes.
 /real/PedigreeBlock*.lean -text
 /research/pedigree-block/** -text
+
+# Preserve the exact pinned Q1 dependency and Q2 verification bytes.
+real/Pairing*.lean -text
+research/owner-observations/** -text

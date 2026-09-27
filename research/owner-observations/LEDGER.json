@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "proof_commit": null,
+  "base_commit": "5c38a01483395afc44caa90d0833a75fb128c58b",
+  "research_label": "CANDIDATE_MODEL_SPECIFIC_DEDUCTION_NO_PRIORITY_CLAIM",
+  "q1_dependency_commit": "1ba951e4417c930e76ef0f5ace747c9ccb681338",
+  "claims": [
+    {
+      "id": "OBSERVATION",
+      "status": "DEVELOPMENT_PROOF_PENDING_EXACT_GATE",
+      "claim": "Co-ownership query is the equality of supplied owner IDs for copies 0 and 3; its exact values are computed from Q1.",
+      "endpoints": [
+        "PairingObservation.query_coownership",
+        "PairingObservation.query_formula",
+        "PairingObservation.query_mixing",
+        "PairingObservation.query_splitting"
+      ]
+    },
+    {
+      "id": "STATIC_MASK",
+      "status": "DEVELOPMENT_PROOF_PENDING_EXACT_GATE",
+      "claim": "Full masked observations distinguish missing from false; equality has the stated per-sample criterion.",
+      "endpoints": [
+        "PairingObservation.observe_eq_iff",
+        "PairingObservation.split_observation_eq_iff"
+      ]
+    },
+    {
+      "id": "INFINITE_CRITERION",
+      "status": "DEVELOPMENT_PROOF_PENDING_EXACT_GATE",
+      "claim": "IAP is identifiable in Family exactly when sampled odd generations are unbounded.",
+      "endpoints": [
+        "PairingObservation.identifies_iap_iff"
+      ]
+    },
+    {
+      "id": "FINITE_BOUNDARY",
+      "status": "DEVELOPMENT_PROOF_PENDING_EXACT_GATE",
+      "claim": "A bounded mask cannot identify IAP in Family; a positive observed bit certifies its negative-IAP branch.",
+      "endpoints": [
+        "PairingObservation.no_bounded_sampling_decoder",
+        "PairingObservation.observed_positive_not_iap"
+      ]
+    },
+    {
+      "id": "EVEN_COMPLETE",
+      "status": "DEVELOPMENT_PROOF_PENDING_EXACT_GATE",
+      "claim": "All owner assignments at every even generation and the common full copy graph still do not identify IAP.",
+      "endpoints": [
+        "PairingObservation.even_owner_agreement",
+        "PairingObservation.even_owners_equal",
+        "PairingObservation.no_even_ownership_decoder"
+      ]
+    },
+    {
+      "id": "Q3_BOUNDED_CLASS",
+      "status": "DEVELOPMENT_PROOF_PENDING_EXACT_GATE",
+      "claim": "For even B>=2, identification in BoundedFamily is equivalent to sampling some odd t>B; one query at B+1 determines IAP.",
+      "endpoints": [
+        "PairingObservation.bounded_identifies_iap_iff",
+        "PairingObservation.bounded_iap_iff_one_query"
+      ]
+    }
+  ],
+  "unproved_or_outside_scope": [
+    "IAP identifiability over arbitrary pedigrees/schedules",
+    "Inference of owner labels or persistent copy matching from ordinary sequence equality or phasing",
+    "Noisy or adaptive sampling protocols",
+    "Equal probability laws or positive-probability realization under a biological recombination process",
+    "Learning the switch-bound/model-class assumption from finite observations",
+    "Full pedigree or switch-time reconstruction",
+    "Biological species classification"
+  ],
+  "prior_work": "PRIOR-WORK.md",
+  "independent_review": "INDEPENDENT-REVIEW.md",
+  "stopping_condition": "Accept this single static criterion and its finite-bound corollary; preserve the exact proof and stop expansion of this lane."
+}

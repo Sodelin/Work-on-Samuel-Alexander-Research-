@@ -1,0 +1,36 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:42:27: warning: This simp argument is unused:
+  he
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [splitting, hs, hst, ho]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:79:5: error: unknown tactic
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:78:2: error: unsolved goals
+case mp
+T : Nat → Prop
+D : (Nat → Option Bool) → Prop
+hD : ∀ (K : Schedule), Family K → (D (observe T K) ↔ IAP (Edge K) Whole)
+N : Nat
+⊢ ∃ t, N < t ∧ T t ∧ t % 2 = 1
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:75:82: error: unsolved goals
+case mpr
+T : Nat → Prop
+⊢ UnboundedOdd T → IdentifiesIAP T
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:160:5: error: unknown tactic
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:159:2: error: unsolved goals
+case mp
+T : Nat → Prop
+B : Nat
+hB2 : 2 ≤ B
+hBe : B % 2 = 0
+D : (Nat → Option Bool) → Prop
+hD : ∀ (K : Schedule), BoundedFamily B K → (D (observe T K) ↔ IAP (Edge K) Whole)
+⊢ ∃ t, B < t ∧ T t ∧ t % 2 = 1
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PairingObservation.lean:156:63: error: unsolved goals
+case mpr
+T : Nat → Prop
+B : Nat
+hB2 : 2 ≤ B
+hBe : B % 2 = 0
+⊢ (∃ t, B < t ∧ T t ∧ t % 2 = 1) → BoundedIdentifiesIAP T B

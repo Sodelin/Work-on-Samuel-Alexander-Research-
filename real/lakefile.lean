@@ -161,3 +161,12 @@ lean_lib PedigreeBlockRecovery
 
 @[default_target]
 lean_lib PedigreeBlockAudit
+
+@[default_target]
+lean_lib PairingCore
+
+@[default_target]
+lean_lib PairingObservation
+
+@[default_target]
+lean_lib PairingObservationAudit

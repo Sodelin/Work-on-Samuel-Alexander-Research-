@@ -1,0 +1,26 @@
+{
+  "origin_checkout": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-27\\royal-society",
+  "origin_proof_commit": "1ba951e4417c930e76ef0f5ace747c9ccb681338",
+  "origin_path": "research/genome-pedigree/PairingCore.lean",
+  "local_path": "real/PairingCore.lean",
+  "source_sha256": "f8723988f843354641a66e7cb71b021721864132d9f46b269efab2697c66db94",
+  "source_bytes": 22488,
+  "import_policy": "Exact frozen source bytes, independently rebuilt in this isolated extension; Q1 construction is reused, not reimplemented.",
+  "existing_dependency_sources": {
+    "SamuelAlexanderResearch.SpeciesGlobalIAP": {
+      "path": "lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean",
+      "origin_blob_sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+      "working_sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+      "comparison": "identical after CRLF-to-LF normalization"
+    },
+    "SamuelAlexanderResearch.SpeciesBridge": {
+      "path": "lean/SamuelAlexanderResearch/SpeciesBridge.lean",
+      "origin_blob_sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+      "working_sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+      "comparison": "identical after CRLF-to-LF normalization"
+    }
+  },
+  "q1_final_acceptance": "Fresh private release replay passed; exact final receipt retained under dependency-evidence. This extension rebuilds its own smaller import closure.",
+  "q1_evidence_commit": "4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2",
+  "q1_receipt_sha256": "49aee3776b19c24b1053e9f6dd13b3db6ac5d9c4b2419cdfa84dcafbd24b48c1"
+}
