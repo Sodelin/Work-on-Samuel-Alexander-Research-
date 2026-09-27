@@ -1,5 +1,7 @@
 # Research progress: what is finished, what is next
 
+**Public reading update, 26 September 2026 Pacific.** For the full project-wide account, including the newer scoped answers to the ten notebook proposals, read the [mathematics research report](MATH-RESEARCH-REPORT.md) and [ten-solution ledger](TEN-SOLUTIONS.md). This page remains the detailed status of the Wong, shared-inheritance, and time/self-reference tracks. Draft PR #6 is open and unmerged; its proof sources and the hosted proof checkpoint are linked below.
+
 Updated 25 September 2026. This page follows the three bounded research tracks. [Draft PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) · [Roles and resource limits](RESEARCH-ARCHITECTURE.md).
 
 ## The latest result in plain language
