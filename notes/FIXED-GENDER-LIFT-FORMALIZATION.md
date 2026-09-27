@@ -16,9 +16,9 @@ For each $`w \ge 2`$, the incoming edges are $`(w-1) \to w`$ with label $`r(w)`$
 The lift encodes $`(v,b)`$ by `copy v b = 2*v + bit b`. It defines
 
 ```math
-\operatorname{LiftEdge}_s(x,y)
-\iff E_s\bigl(\operatorname{base}(x),\operatorname{base}(y),
-                  \operatorname{gender}(x)\bigr),
+\mathrm{LiftEdge}_s(x,y)
+\iff E_s\bigl(\mathrm{base}(x),\mathrm{base}(y),
+                  \mathrm{gender}(x)\bigr),
 ```
 where `base x = x / 2` and `gender x` is the parity bit. Thus every lifted edge is labelled by the **fixed gender of its source**. In pair notation, $`(u,a) \to (w,b)`$ holds exactly when $`E_s(u,w,a)`$, independently of $`b`$.
 
@@ -52,12 +52,12 @@ This is a genuine population on a retained subset of encoded naturals. It is not
 The core retains
 
 ```math
-\operatorname{Core}_s(v,a)\iff\exists w\;E_s(v,w,a).
+\mathrm{Core}_s(v,a)\iff\exists w\;E_s(v,w,a).
 ```
 Every base index has a retained copy. At every odd index the retained gender is uniquely determined:
 
 ```math
-\operatorname{Core}_s(2j+1,a)\iff a=s(j+1).
+\mathrm{Core}_s(2j+1,a)\iff a=s(j+1).
 ```
 At base zero the retained gender is $`\neg s(1)`$. These identities handle the roots and the degree argument without exceptional unproved cases.
 
@@ -66,8 +66,8 @@ A source at base $`v`$ can have children only at bases $`v+1`$ and $`v+2`$. One 
 The universal reachability bound is
 
 ```math
-\operatorname{Core}_s(x)\ \land\
-\operatorname{base}(x)+2\le\operatorname{base}(y)
+\mathrm{Core}_s(x)\ \land\
+\mathrm{base}(x)+2\le\mathrm{base}(y)
 \quad\Longrightarrow\quad
 x\text{ is a strict ancestor of }y\text{ in the full lift}.
 ```
@@ -76,8 +76,8 @@ Indeed, a productive copy reaches both copies of one of its next two base indice
 `core_induced_descendant_iff` proves that every path ending at a retained vertex survives restriction to the core. Every intermediate vertex has an outgoing edge along the path and is therefore retained. Consequently, each core individual is a strict ancestor of all but finitely many core individuals, with the explicit non-descendant bound
 
 ```math
-\neg\operatorname{Descendant}(x,y)
-\quad\Longrightarrow\quad y<2\bigl(\operatorname{base}(x)+2\bigr).
+\neg\mathrm{Descendant}(x,y)
+\quad\Longrightarrow\quad y<2\bigl(\mathrm{base}(x)+2\bigr).
 ```
 This yields IAP. Two core individuals have a common retained descendant sufficiently far ahead, giving weak connectivity. Convexity is proved both in the full lift and in the induced graph. For inspecies minimality, let $`T`$ be an infinite ancestrally closed subset of the core. If a core individual $`x`$ were absent from $`T`$, none of its strict descendants could lie in $`T`$. The displayed bound would make $`T`$ finite, a contradiction. Thus $`T`$ must equal the core. These structural conclusions require no aperiodicity hypothesis and no supplied compactness or cofinite-ancestry premise.
 
@@ -113,7 +113,7 @@ Reflection (Induced (LiftEdge s) (Core s)) (Core s) ∧
 The explicit retained terminal family is
 
 ```math
-\operatorname{TerminalCopy}_s(j)
+\mathrm{TerminalCopy}_s(j)
   =\bigl(2j+3,\neg s(j+2)\bigr),\qquad j\ge0.
 ```
 `terminal_copy_clean`, `terminal_copy_not_core`, and `terminal_copy_no_children` prove the membership and terminal claims; `terminal_copies_infinite` proves that this family is infinite. The core is an infinite ancestrally closed proper subset of the cleaned population, so `clean_not_inspecies` follows directly from the definition. This comparison preserves the original written claim rather than incorrectly upgrading the graph that still contains those terminal copies.

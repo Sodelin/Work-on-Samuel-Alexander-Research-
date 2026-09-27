@@ -5,13 +5,13 @@
 All paths are actual finite matching paths in the manuscript's own-target graph $`P_s`$. For a path starting at $`v`$, its nonnegative offset at time $`i`$ is
 
 ```math
-d_i=\operatorname{path}(i)-2i.
+d_i=\mathrm{path}(i)-2i.
 ```
 
 Each edge leaves this offset unchanged or reduces it by one. A constant offset $`d`$ can take a two-step edge at time $`i`$ only if
 
 ```math
-s(i)=\neg\operatorname{row}_s(2i+d+2).
+s(i)=\neg\mathrm{row}_s(2i+d+2).
 ```
 
 Call failure of this equality a **break**. This condition is expressed only in target bits, independently of any matching path. For $`d=2e`$ a break is $`s(i+e+1)=s(i)`$, a failure of antiperiod $`e+1`$. For $`d=2e+1`$ it is $`s(i+e+1)\ne s(i)`$, a failure of period $`e+1`$.

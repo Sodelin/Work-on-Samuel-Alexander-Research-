@@ -18,7 +18,7 @@ This is why the directed construction preserves an original outdegree cap. The u
 
 The [pinned classification manuscript, §2](https://github.com/avg-netizen/biological-unavoidability/blob/3d6175e3e23f67bd68e7be591b5a9a6d04e496a3/paper.md) defines $`P_s`$ on $`\mathbb N`$ with roots 0 and 1. For each $`v\ge2`$ it has two incoming arcs $`v-1\to v`$ and $`v-2\to v`$ with complementary binary edge labels. Vertex 0 has one child; every original vertex $`v\ge1`$ has two. The manuscript proves that if an infinite path spells target $`s`$, then $`s`$ is eventually periodic. Thus a non-eventually-periodic $`s`$ is avoided from **every** starting vertex, not only the roots.
 
-Form $`L(P_s)`$ with a vertex for each original arc $`e`$, an adjacency $`e\to f`$ exactly when $`\operatorname{head}(e)=\operatorname{tail}(f)`$, and permanent vertex gender $`\gamma(e)=g(e)`$, the original edge label. Give $`e=(u,v)`$ birthdate $`v`$.
+Form $`L(P_s)`$ with a vertex for each original arc $`e`$, an adjacency $`e\to f`$ exactly when $`\mathrm{head}(e)=\mathrm{tail}(f)`$, and permanent vertex gender $`\gamma(e)=g(e)`$, the original edge label. Give $`e=(u,v)`$ birthdate $`v`$.
 
 | Population property | Calculation for $`L(P_s)`$ |
 |---|---|

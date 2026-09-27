@@ -214,7 +214,7 @@ wrappers then provide:
 
 - Impossibility when $`d < k`$.
 - An injective family of $`k`$ actual parentless vertices.
-- A lower bound $`k\le\operatorname{length}(\mathrm{roots})`$ for every finite list covering all roots.
+- A lower bound $`k\le\mathrm{length}(\mathrm{roots})`$ for every finite list covering all roots.
 
 The injective-family result directly states distinctness; it is stronger than
 relying only on a list-length conclusion that might contain duplicates.

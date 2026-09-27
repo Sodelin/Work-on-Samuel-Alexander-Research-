@@ -58,7 +58,7 @@ D_{q/2}.
 ```
 The staircase product is empty when $`q=2`$. The **four initial runs have length $`3q+2`$**. The staircase adds $`q-2`$ edges, giving a complete head of length $`4q`$. The recursive tail has length $`4q-3`$; total length is $`8q-3`$.
 
-The implementation builds actual finite paths using `Part`, `Segment`, and `joinPath`. `Part phase path len` checks each actual edge against $`t(\operatorname{phase}+i)`$. One-step and two-step segments use the explicit functions $`x+i`$ and $`x+2\cdot i`$. Concatenation preserves their shared endpoint and all early vertices. Thus the proof constructs the run pattern directly; it does not postulate a path with those comparisons.
+The implementation builds actual finite paths using `Part`, `Segment`, and `joinPath`. `Part phase path len` checks each actual edge against $`t(\mathrm{phase}+i)`$. One-step and two-step segments use the explicit functions $`x+i`$ and $`x+2\cdot i`$. Concatenation preserves their shared endpoint and all early vertices. Thus the proof constructs the run pattern directly; it does not postulate a path with those comparisons.
 
 ### The four initial runs
 

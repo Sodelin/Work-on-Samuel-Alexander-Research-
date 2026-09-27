@@ -76,7 +76,7 @@ This is a mathematical local contraction, not a correctness theorem about the ts
 For times before the final root, the code counts raw edges $`(p,c)`$ satisfying
 
 ```math
-\operatorname{age}(c)\leq t<\operatorname{age}(p).
+\mathrm{age}(c)\leq t<\mathrm{age}(p).
 ```
 
 This includes a lineage at its younger endpoint and excludes it at its older endpoint, so at an event it counts the lineages immediately after that event in backward time. The witness uses $`t=3`$, which is not any event time in either history.

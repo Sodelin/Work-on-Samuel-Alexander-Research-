@@ -9,23 +9,23 @@ The construction and its sharp unshifted Thue–Morse endpoint are imported from
 `row_shift` proves, for every binary word $`s`$ and all natural $`a,w`$,
 
 ```math
-\operatorname{row}(\operatorname{shift}(s,a),w)=\operatorname{row}(s,w+2a).
+\mathrm{row}(\mathrm{shift}(s,a),w)=\mathrm{row}(s,w+2a).
 ```
 Consequently `edge_translate` carries each actual shifted edge to an original edge by adding $`2\cdot a`$ to both vertices. The reverse equivalence `edge_translate_iff` explicitly requires the shifted destination to be at least 2. `edge_subtract` requires original source at least $`2\cdot a`$ and original destination at least $`2\cdot a + 2`$. These conditions preserve the missing edge $`0 \to 1`$ and the behavior of natural subtraction.
 
-`prepend_shifted_prefix` takes a length-$`\ell`$ match in $`P_{\operatorname{shift}(s,a)}`$ from vertex $`v`$ and constructs a length-$`\ell+a`$ match in $`P_{s}`$ from a vertex $`u`$ satisfying
+`prepend_shifted_prefix` takes a length-$`\ell`$ match in $`P_{\mathrm{shift}(s,a)}`$ from vertex $`v`$ and constructs a length-$`\ell+a`$ match in $`P_{s}`$ from a vertex $`u`$ satisfying
 
 ```math
 v\le u\le v+a.
 ```
 The shifted path is first translated by $`2\cdot a`$. Its initial translated vertex is at least $`2\cdot a`$, so the shared backward construction can prepend the first $`a`$ labels of $`s`$. The theorem also records the exact suffix identity: the new path at time $`k+a`$ is the old path at time $`k`$ plus $`2\cdot a`$.
 
-`suffix_subtraction` and `cut_original_prefix` prove the converse construction. A match in $`P_{s}`$ from $`u`$ with length $`\ell \ge a`$ yields a match in $`P_{\operatorname{shift}(s,a)}`$ of length $`\ell-a`$ from a vertex $`v`$ satisfying
+`suffix_subtraction` and `cut_original_prefix` prove the converse construction. A match in $`P_{s}`$ from $`u`$ with length $`\ell \ge a`$ yields a match in $`P_{\mathrm{shift}(s,a)}`$ of length $`\ell-a`$ from a vertex $`v`$ satisfying
 
 ```math
 u-a\le v\le u,
 ```
-where natural subtraction already truncates the lower bound at zero. The new path is explicitly `path (k+a) - 2*a`. The finite own-target lower bound $`2k\le\operatorname{path}(k)`$ ensures that every subtraction is valid and that every new edge destination is at least 2. The displacement bound gives the starting interval. No unrestricted graph-translation equivalence is assumed.
+where natural subtraction already truncates the lower bound at zero. The new path is explicitly `path (k+a) - 2*a`. The finite own-target lower bound $`2k\le\mathrm{path}(k)`$ ensures that every subtraction is valid and that every new edge destination is at least 2. The displacement bound gives the starting interval. No unrestricted graph-translation equivalence is assumed.
 
 ## Shifted Thue–Morse consequence
 

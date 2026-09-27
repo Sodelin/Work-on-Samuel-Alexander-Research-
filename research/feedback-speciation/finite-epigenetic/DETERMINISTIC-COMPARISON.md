@@ -20,7 +20,7 @@ Both experiments use secondary contact, with adults initially EEbb in deme 1 and
 The deterministic life cycle is migration, viability selection with normalization by the receiving deme's mean fitness, recombination and gamete formation, random mating, and epimutation. Genotypes have fitness 1, 3/4, or 1/2 according to their number of locally maladapted selected alleles. The neutral marker itself does not affect fitness. With a common asymptotic marker frequency B-hat, the source barrier measure here is
 
 ```math
-\operatorname{RI}=1-\frac{\widehat B}{m/2}=1-8\widehat B.
+\mathrm{RI}=1-\frac{\widehat B}{m/2}=1-8\widehat B.
 ```
 
 The finite comparison uses deterministic preselection migration pools followed by independent final offspring sampling, one diploid per deme. It is an explicit finite extension. In particular, replacing deterministic selection by the expectation of the finite transition kernel would be a different calculation: normalization by random mean fitness generally does not commute with expectation. The script here directly updates deterministic frequencies.
@@ -135,7 +135,7 @@ M=\frac{1228259142369}{18042773705392}<\frac1{14}.
 The convex-combination invariant implies c ≤ M, and hence the following exact strict comparison, independently of any reported numerical digits:
 
 ```math
-\operatorname{RI}_{\rm genetic}
+\mathrm{RI}_{\rm genetic}
 \ge1-8M
 =\frac{1027087570805}{2255346713174}
 >\frac37,

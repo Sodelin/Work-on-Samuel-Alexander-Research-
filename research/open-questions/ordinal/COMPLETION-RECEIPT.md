@@ -11,9 +11,9 @@ binary target $`s`$ which $`P`$ avoids, the code proves the actual Mathlib
 ordinal rank of its matching-history tree:
 
 ```math
-\operatorname{rank}(\varnothing)=\omega,
+\mathrm{rank}(\varnothing)=\omega,
 \qquad
-\operatorname{rank}(h)=H(h)\in\mathbb N
+\mathrm{rank}(h)=H(h)\in\mathbb N
 \quad\text{for every nonempty history }h.
 ```
 

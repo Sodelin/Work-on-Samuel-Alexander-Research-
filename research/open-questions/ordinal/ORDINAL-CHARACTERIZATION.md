@@ -187,7 +187,7 @@ to $`R_s`$. The following are equivalent:
 
 1. $`P`$ avoids $`s`$.
 2. There is $`r:R_s\to\mathbb N`$ strictly decreasing on every phase edge.
-3. There is $`r:R_s\to\operatorname{Ord}`$ strictly decreasing on every phase edge.
+3. There is $`r:R_s\to\mathrm{Ord}`$ strictly decreasing on every phase edge.
 
 Write $`s^{(k)}(i)=s(k+i)`$ for the tail beginning at phase $`k`$. Under
 avoidance, the pointwise least such natural certificate is
@@ -261,14 +261,14 @@ roots are $`0`$ and $`1`$, and destinations $`w\ge2`$ have the two incoming
 edges $`w-1\to w`$ and $`w-2\to w`$. Let
 
 ```math
-\operatorname{row}_s(2j)=s(j),
+\mathrm{row}_s(2j)=s(j),
 \qquad
-\operatorname{row}_s(2j+1)=\neg s(j),
+\mathrm{row}_s(2j+1)=\neg s(j),
 ```
 
 where $`\neg`$ denotes Boolean complementation. Label the $`+1`$ edge by
-$`\operatorname{row}_s(w)`$ and the $`+2`$ edge by
-$`\neg\operatorname{row}_s(w)`$.
+$`\mathrm{row}_s(w)`$ and the $`+2`$ edge by
+$`\neg\mathrm{row}_s(w)`$.
 
 For every binary $`s`$, the path
 
@@ -277,7 +277,7 @@ For every binary $`s`$, the path
 ```
 
 has edge labels $`s(1),s(2),s(3),\ldots`$, because the $`+2`$ edge to
-$`2k+3`$ has label $`\neg\operatorname{row}_s(2k+3)=s(k+1)`$. Thus the
+$`2k+3`$ has label $`\neg\mathrm{row}_s(2k+3)=s(k+1)`$. Thus the
 full phase graph $`V\times\mathbb N`$ has the infinite path
 
 ```math

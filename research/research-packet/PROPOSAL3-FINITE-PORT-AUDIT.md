@@ -164,7 +164,7 @@ The new module `lean/SamuelAlexanderResearch/PortDynamics.lean` imports `FiniteP
 | `token_origin`, `decoded_born_iff` | A decoded edge between tail births is exactly one token's insertion followed by its next consumption. |
 | `decoded_label_unique` | Simple consumption gives a unique label for each source-child pair. |
 | `Legal.exact_incoming_parent`, `Legal.incoming_parents_injective` | Every tail birth has precisely one distinct parent for each of the $`k`$ labels. |
-| `Legal.exact_outgoing_children`, `Legal.outgoing_children_injective` | Under fairness, the selected input slots provide an explicit bijection between $`\operatorname{Fin}(k)`$ and each tail birth's children. |
+| `Legal.exact_outgoing_children`, `Legal.outgoing_children_injective` | Under fairness, the selected input slots provide an explicit bijection between $`\mathrm{Fin}(k)`$ and each tail birth's children. |
 | `pending_crosses`, `crossing_from_slot`, `crossing_slots_injective` | Under fairness and simplicity, current slots are an explicit bijective representation of the decoded edges crossing the current cut. |
 | `fair_period_block`, `fair_period_flush` | In the periodic tail every slot is consumed in each period, so all tokens carried into a period are replaced during it. |
 | `phase_incoming` | The finite quotient's incoming-label property is derived from actual incoming token coverage and full schedule periodicity. It is not a premise. |

@@ -29,7 +29,7 @@ For every label word $`s:\mathbb N\to A`$, it proves a path with
 \qquad
 v_n<v_{n+1},
 \qquad
-\operatorname{DecodedEdge}(v_n,v_{n+1},s_n).
+\mathrm{DecodedEdge}(v_n,v_{n+1},s_n).
 ```
 
 The quantified alphabet `A : Type` need not be explicitly finite. Incoming coverage using finitely many slots already restricts which alphabets can satisfy the hypotheses. The population-specific wrapper `Legal.periodic_realizes` uses `Fin k`.

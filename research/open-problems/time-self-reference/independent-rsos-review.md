@@ -94,17 +94,17 @@ Agent 3 is an unchanged spectator. In both final states, active IDs are $`\{3,5\
 Split the same active ID 5. The outputs are
 
 ```math
-\pi(\operatorname{split}_5(H_L))
+\pi(\mathrm{split}_5(H_L))
 =\{\{0,1\},\{2\},\{3\}\},
 ```
 ```math
-\pi(\operatorname{split}_5(H_R))
+\pi(\mathrm{split}_5(H_R))
 =\{\{0\},\{1,2\},\{3\}\}.
 ```
 The outputs differ because 0 and 1 belong to the same block in the first and to different blocks in the second. Therefore no deterministic map $`\bar S`$ on those observed states can satisfy
 
 ```math
-\pi\circ\operatorname{split}_5=\bar S\circ\pi
+\pi\circ\mathrm{split}_5=\bar S\circ\pi
 ```
 on all admissible histories. The proof is an equality collision followed by different outputs. It should reuse the project's general exact-projection criterion if available, with this source-specific finite witness.
 

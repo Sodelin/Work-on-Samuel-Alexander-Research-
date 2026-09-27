@@ -45,7 +45,7 @@ The Lean implementation represents a finite word by its length and a total bit f
 Since $`r_{j} \ge 2`$, $`W_{j}`$ is a prefix of $`W_{j+1}`$. The lengths strictly increase and satisfy $`p_{j} \ge j+1`$. The limit is therefore defined without an existential choice of an infinite extension:
 
 ```math
-s(k)=\operatorname{wordBit}(f,k+1,k).
+s(k)=\mathrm{wordBit}(f,k+1,k).
 ```
 `wordBit_extends`, `wordBit_coherent`, and `target_agrees` prove that any bit already inside any stage is exactly the corresponding limit bit. The definition samples stage $`k+1`$, whose proved length bound is sufficient to contain index $`k`$.
 
@@ -61,7 +61,7 @@ Both positions $`k`$ and $`k+p_{j}`$ lie in the repeated block whenever $`k < \e
 ```math
 s(k+p_j)=s(k)\qquad(k<\ell_j).
 ```
-`target_periodic_prefix` proves this identity. `QuantitativeAvoidance.periodic_prefix_gives_match` then supplies a matching path with $`\ell_{j}`$ edges starting at $`v_{j}=2p_{j}-1`$. Its explicit form is $`\operatorname{path}(k)=2k+v_j`$, so it always takes a two-step edge. Because $`p_{j} \ge 1`$,
+`target_periodic_prefix` proves this identity. `QuantitativeAvoidance.periodic_prefix_gives_match` then supplies a matching path with $`\ell_{j}`$ edges starting at $`v_{j}=2p_{j}-1`$. Its explicit form is $`\mathrm{path}(k)=2k+v_j`$, so it always takes a two-step edge. Because $`p_{j} \ge 1`$,
 
 ```math
 \ell_j\ge f(v_j)+1>f(v_j).

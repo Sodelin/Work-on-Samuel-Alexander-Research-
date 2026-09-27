@@ -7,9 +7,9 @@
 For any vertex type V, any label type A, any labelled edge relation E, and any target sequence s:
 
 ```math
-\neg\operatorname{Realizes}(E,s)
+\neg\mathrm{Realizes}(E,s)
 \quad\Longleftrightarrow\quad
-\exists r:R_s\to\operatorname{Ord}\;
+\exists r:R_s\to\mathrm{Ord}\;
 \forall ((v,k)\to(w,k+1)),\quad r(w,k+1)<r(v,k).
 ```
 

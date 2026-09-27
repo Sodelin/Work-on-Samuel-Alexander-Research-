@@ -12,7 +12,7 @@ question from follow-ons posed here. A research email has been sent, and Alexand
 
 The main results in all ten proof lanes are now Lean-checked under their stated
 models and hypotheses. The [current answers](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/TEN-SOLUTIONS.md) give the result
-map; the [original ten proposals](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/TEN-RESEARCH-IDEAS.md) remain a historical
+map; the [original ten proposals](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/TEN-RESEARCH-IDEAS.md) remain a historical
 question snapshot. The separate literal integer-module 2-regularity wrapper
 still awaits compilation; the full height formula and executable binary
 recurrence themselves are already checked.
@@ -26,8 +26,8 @@ recurrence themselves are already checked.
    Projection and lifting preserve every infinite word path without changing
    its initial letter. Caps below two are impossible. The same retained graph
    is an inspecies, specieslike, and reflecting. See the
-   [threshold proof](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/CAP-TWO-THRESHOLD.md) and
-   [species theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/CAP-TWO-SPECIES.md). Three-root minimality is not claimed.
+   [threshold proof](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/CAP-TWO-THRESHOLD.md) and
+   [species theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/CAP-TWO-SPECIES.md). Three-root minimality is not claimed.
 2. **Minimum crossing width determines the tail for every finite alphabet.**
    In an actual naturally ordered population with $`k`$ required incoming
    labels and child cap $`k`$, full-degree conservation forces eventual
@@ -43,7 +43,7 @@ recurrence themselves are already checked.
    cardinality. Decoding recovers exactly every labelled edge whose target is
    on the chosen tail, including edges from earlier sources. If the complete
    schedule is eventually periodic, the checked
-   [periodic-schedule theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/PORT-DYNAMICS-FORMALIZATION.md) realizes
+   [periodic-schedule theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/PORT-DYNAMICS-FORMALIZATION.md) realizes
    every infinite word from a fixed finite block of starts. Periodicity is an
    additional hypothesis; finite width alone does not establish it. The encoder
    uses classical finite bijections and makes no canonical or effective
@@ -62,7 +62,7 @@ recurrence themselves are already checked.
    $`v\ge1`$, with optimal coefficient $`8/3`$. Equality holds exactly when,
    for a dyadic $`q=2^n`$, $`a\le q`$, $`v=3q-a-1`$, and
    $`L_a(v)=8q-a-3`$. The
-   [phase equality theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/PHASE-EXTREMAL-FORMALIZATION.md) and
+   [phase equality theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/PHASE-EXTREMAL-FORMALIZATION.md) and
    [finite frontier algorithm](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/PHASE-HEIGHT-FORMALIZATION.md) cover the
    stated equality family and all phase/start maxima respectively. The latter
    includes start zero; it is not a joint phase/index digit formula.
@@ -72,8 +72,8 @@ recurrence themselves are already checked.
    $`B_0=0`$ and $`B_{r+1}=M(v,B_r)`$. Uniform window length $`R`$ gives
    $`\ell<(v+1)R`$. Every non-eventually-periodic word has such a modulus;
    its existence proof uses classical choice, while the bound is explicit
-   given the modulus. See [QuantitativeModulus](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/QUANTITATIVE-MODULUS-THEOREM.md).
-   Conversely, [FiniteAvoidance](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/FINITE-AVOIDANCE-FORMALIZATION.md)
+   given the modulus. See [QuantitativeModulus](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/QUANTITATIVE-MODULUS-THEOREM.md).
+   Conversely, [FiniteAvoidance](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/FINITE-AVOIDANCE-FORMALIZATION.md)
    proves that every proposed growth function is exceeded by actual finite
    maxima along increasing starts for a suitable aperiodic target. All starts
    of that target still have finite attained maxima.
@@ -85,7 +85,7 @@ recurrence themselves are already checked.
    $`m`$ target labels follow the explicit all-two-step prefix. A finite
    frontier decomposition gives an exact maximum at every specified start,
    including early extinction and zero. See
-   [FiniteEditExact](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/FINITE-EDIT-EXACT-FORMALIZATION.md). A particular
+   [FiniteEditExact](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/FINITE-EDIT-EXACT-FORMALIZATION.md). A particular
    edited target can have a smaller best additive constant; its global
    classification remains separate.
 8. **Productive pruning preserves the entire infinite word language.**
@@ -139,14 +139,14 @@ historical classification question. The separate September 2026 manuscript
 supplies the target-dependent $`P_s`$ construction and the classification;
 these are not discoveries of this notebook. Alexander's 2013 inspecies results
 already supply cofinite descendants, and his 2026 Example 14 supplies earlier
-root-cone patterns. The [older-construction audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
+root-cone patterns. The [older-construction audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
 and [prior-work ledger](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/PRIOR-WORK-AUDIT.md) preserve those distinctions.
 
 The methods also have established antecedents: Harary and Norman and later
 Orlin for line digraphs; Mateus de Oliveira Oliveira for finite-frontier slice
 encodings; Young, Tarjan, and Orlin for graph potentials, with Karp and
 Dasdan and Gupta for cycle-mean methods. See the
-[line-digraph audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/source-audits/LINE-GRAPH-PRIOR-ART-AUDIT.md) and
+[line-digraph audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/source-audits/LINE-GRAPH-PRIOR-ART-AUDIT.md) and
 [port/CA source comparison](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/source-audits/PROPOSALS3-10-SOURCE-AUDIT.md).
 The precise model corollaries and quantitative formulas are the results to
 assess. Bounded literature searches do not certify their priority, and the

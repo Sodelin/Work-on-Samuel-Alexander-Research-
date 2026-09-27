@@ -10,21 +10,21 @@ The main graph theorem takes `p : PopulationCounting.InfiniteLabeledPopulation 2
 
 Write $`C_{N}`$ for `InfiniteConservation.crossingCount p N`: the full number of edges with source below $`N`$ and target at least $`N`$. Every child is included in this count through its source's certified child-support bound. It is not an assumed aggregate or a count in a truncated ambient graph.
 
-The rigidity hypothesis is explicit: there is a cutoff `start`, all roots are below it, and **$`C_{N} = 3`$ for every $`N\ge\operatorname{start}`$**. This is the equality case of the previously proved universal binary lower bound $`C_{N} \ge 3`$ on root-free cuts. A single minimum-width cut suffices for the local conclusions below; the tail edge theorem needs the equality at every later cut.
+The rigidity hypothesis is explicit: there is a cutoff `start`, all roots are below it, and **$`C_{N} = 3`$ for every $`N\ge\mathrm{start}`$**. This is the equality case of the previously proved universal binary lower bound $`C_{N} \ge 3`$ on root-free cuts. A single minimum-width cut suffices for the local conclusions below; the tail edge theorem needs the equality at every later cut.
 
 ## Checked conclusions and proof mechanism
 
 1. `minimum_cut_columns` proves that, at one root-free cut of width three, exactly two edges enter vertex $`N`$ from before the cut and exactly one enters vertex $`N+1`$ from before the cut. The two required parents of $`N`$ are both old; $`N+1`$ can have at most one new parent. Their lower bounds exhaust the three crossing edges.
 2. `minimum_cut_internal_edge` consequently proves the actual edge $`N \to N+1`$ exists. `minimum_cut_no_late_target` proves that **no source below $`N`$ can have an edge to a target at least $`N+2`$**. The latter proof counts the first two target columns together with any proposed later target column and compares their sum with the actual full crossing count. Both local results work with any offspring cap $`d`$.
 3. `regular_of_equal_crossing` uses full-degree conservation at $`N`$ and $`N+1`$, stable roots, and equality of the two cut widths to prove zero local defect and exact full in/outdegrees two at $`N`$. There is no regularity premise or separately chosen eventual regularity threshold.
-4. `minimum_tail_edges` proves, for every $`u\ge\operatorname{start}`$ and every natural $`v`$,
+4. `minimum_tail_edges` proves, for every $`u\ge\mathrm{start}`$ and every natural $`v`$,
 
    ```lean
    (p.edge u v).isSome = true ↔ v = u+1 ∨ v = u+2
    ```
 
    Apply the local no-late-target theorem at cut $`u+1`$ to exclude jumps of length at least three. Strict birth order excludes nonforward edges. The full outdegree is two, so both remaining possible edges must exist. The conclusion holds from the supplied cutoff itself. `eventually_minimum_tail_edges` packages the version where the initial minimum-width cutoff has not been required to contain all roots.
-5. `minimum_tail_parents` also proves that the **only** parents of $`u+2`$, for $`u\ge\operatorname{start}`$, are $`u`$ and $`u+1`$. Its proof excludes earlier exceptional sources by applying the minimum-cut theorem at $`u`$.
+5. `minimum_tail_parents` also proves that the **only** parents of $`u+2`$, for $`u\ge\mathrm{start}`$, are $`u`$ and $`u+1`$. Its proof excludes earlier exceptional sources by applying the minimum-cut theorem at $`u`$.
 
 ## Fixed source genders and actual labelled paths
 

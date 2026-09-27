@@ -5,24 +5,24 @@
 Every positive port $`x`$ represents one original edge, with
 
 ```math
-\operatorname{source}(x)=\lfloor x/2\rfloor,
+\mathrm{source}(x)=\lfloor x/2\rfloor,
 \qquad
-\operatorname{target}(x)=\operatorname{source}(x)+1+(x\bmod2).
+\mathrm{target}(x)=\mathrm{source}(x)+1+(x\bmod2).
 ```
 
-Port zero is omitted because the original graph has no edge from zero to one. An arc from port $`x`$ to port $`y`$ means that the original edges are consecutive: $`\operatorname{source}(y)=\operatorname{target}(x)`$.
+Port zero is omitted because the original graph has no edge from zero to one. An arc from port $`x`$ to port $`y`$ means that the original edges are consecutive: $`\mathrm{source}(y)=\mathrm{target}(x)`$.
 
 ## Cofinite descendants
 
 For every retained port $`x`$, every port $`y`$ satisfying
 
 ```math
-\operatorname{source}(y)\ge\operatorname{target}(x)
+\mathrm{source}(y)\ge\mathrm{target}(x)
 ```
 
 is a strict descendant. Equality gives a direct arc. Larger source indices are reached by inserting the original consecutive edges; the proof is an induction on the destination source index.
 
-Consequently every non-descendant has index below $`2\operatorname{target}(x)`$. Thus each retained vertex has only finitely many non-descendants. The retained set is infinite and ancestrally closed. If an infinite ancestrally closed subset omitted $`x`$, it would have to omit all descendants of $`x`$, leaving only a finite set. This proves inclusion minimality and hence the inspecies property.
+Consequently every non-descendant has index below $`2\mathrm{target}(x)`$. Thus each retained vertex has only finitely many non-descendants. The retained set is infinite and ancestrally closed. If an infinite ancestrally closed subset omitted $`x`$, it would have to omit all descendants of $`x`$, leaving only a finite set. This proves inclusion minimality and hence the inspecies property.
 
 The graph is also weakly connected, since any two ports reach a sufficiently late common port. Convexity and reflection hold in the retained graph. All arcs already have both endpoints retained, so evaluating the predicates on the actual induced graph gives the same result; deleted port zero is not counted as a vertex or root.
 

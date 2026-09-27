@@ -17,7 +17,7 @@ This is a deterministic finite-graph formalization of that source operation. It 
 Write $`R_x(p,c)`$ for the gARG's inheritance edge at position $`x`$, directed ancestor to descendant. Define reflexive local ancestry by
 
 ```math
-A_x(a,b)\iff a=b\ \lor\ \operatorname{Reach}(R_x,a,b).
+A_x(a,b)\iff a=b\ \lor\ \mathrm{Reach}(R_x,a,b).
 ```
 
 Reflexivity matters when a designated sample is itself ancestral or the sample set has one member. Let $`S`$ be the designated sample set and define

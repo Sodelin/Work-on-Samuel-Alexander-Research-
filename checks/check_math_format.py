@@ -22,11 +22,13 @@ def inspect(path):
         if fence:
             if marker and marker[1][0] == fence[0] and len(marker[1]) >= fence[1] and not marker[2].strip():
                 fence = None
+            elif fence[3] == "math" and re.search(r"\\operatorname\b", line):
+                errors.append({"line": number, "issue": "GitHub blocks operatorname; use mathrm"})
             continue
         if marker:
             if inline_open:
                 errors.append({"line": number, "issue": "inline math crosses a code fence"})
-            fence = (marker[1][0], len(marker[1]), number)
+            fence = (marker[1][0], len(marker[1]), number, marker[2].strip())
             if marker[2].strip() == "math":
                 counts["display"] += 1
             continue
@@ -39,6 +41,8 @@ def inspect(path):
                 body = line[pos:] if end < 0 else line[pos:end]
                 if is_table and re.search(r"(?<!\\)\|", body):
                     errors.append({"line": number, "issue": "unescaped table pipe inside math"})
+                if re.search(r"\\operatorname\b", body):
+                    errors.append({"line": number, "issue": "GitHub blocks operatorname; use mathrm"})
                 if end < 0:
                     break
                 inline_open = False

@@ -20,7 +20,7 @@ For a nonempty set S, a **founder** is a member with no strict ancestor in S, us
 
 ~~~math
 W_\Delta(S)\quad\Longleftrightarrow\quad
-\forall r\in F(S),\quad \operatorname{birth}(r)\le m(S)+\Delta.
+\forall r\in F(S),\quad \mathrm{birth}(r)\le m(S)+\Delta.
 ~~~
 
 Let K_Delta consist of the sets that are nonempty, connected in their induced undirected graph, ancestry-convex, satisfy the identical ancestor point axiom (IAP), satisfy reflection (REF), and satisfy W_Delta. IAP means that each member has either only finitely many descendants in the set or only finitely many nondescendants in it. REF means that a member with infinitely many ambient descendants has infinitely many descendants inside the set.

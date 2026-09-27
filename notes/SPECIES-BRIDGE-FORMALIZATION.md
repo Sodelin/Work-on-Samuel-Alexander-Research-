@@ -18,7 +18,7 @@ The binary edge-labelled construction $`P_{s}`$ has the same underlying graph fo
 every target word $`s`$. Its vertices are `Nat`, with
 
 ```math
-\operatorname{PsEdge}(u,w)\iff 2\le w\land(w=u+1\lor w=u+2).
+\mathrm{PsEdge}(u,w)\iff 2\le w\land(w=u+1\lor w=u+2).
 ```
 There is no edge $`0 \to 1`$. Labels do not enter the species predicates, so the
 module works directly with this explicit graph rather than assuming that some
@@ -108,7 +108,7 @@ The imported local module
 [`BinaryAvoidance.lean`](../lean/SamuelAlexanderResearch/BinaryAvoidance.lean)
 is a fresh Std-only formalization of the binary argument in
 [the classification manuscript, Section 2](https://github.com/avg-netizen/biological-unavoidability/blob/main/paper.md).
-A matching path has $`\operatorname{path}(k)\ge2k`$; the natural offset `path(k) - 2k` is
+A matching path has $`\mathrm{path}(k)\ge2k`$; the natural offset `path(k) - 2k` is
 nonincreasing and stabilizes. A stable odd offset gives period $`e + 1`$, while a
 stable even offset gives period $`2(e + 1)`$. Starts are unrestricted, so the
 conclusion covers paths from every vertex. Independent inspection of this
@@ -172,11 +172,11 @@ convexity, CA, and REF inside the fixed ambient `PsEdge` graph.
 `MaximalFourAxioms S` is inclusion-maximality among sets with those four
 properties.
 
-For $`\operatorname{Cone}(r)=\{r\}\cup\{\text{strict descendants of }r\}`$, the module proves all four
+For $`\mathrm{Cone}(r)=\{r\}\cup\{\text{strict descendants of }r\}`$, the module proves all four
 properties and weak connectivity. In particular:
 
 ```math
-\begin{aligned}C_0&=\operatorname{Cone}(0)=\{0\}\cup\{v:2\le v\},\\C_1&=\operatorname{Cone}(1)=\{v:1\le v\}.\end{aligned}
+\begin{aligned}C_0&=\mathrm{Cone}(0)=\{0\}\cup\{v:2\le v\},\\C_1&=\mathrm{Cone}(1)=\{v:1\le v\}.\end{aligned}
 ```
 `SpeciesCones.c0_iff` and `SpeciesCones.c1_iff` verify these descriptions. The
 main endpoint is the exact classification

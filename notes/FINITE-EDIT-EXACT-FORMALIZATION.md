@@ -33,10 +33,10 @@ the nonexistent edge `0 -> 1`.
 from `m` onward,
 
 ```math
-\operatorname{HasPrefix}(s,v,m+\ell)
+\mathrm{HasPrefix}(s,v,m+\ell)
 \Longleftrightarrow
 \exists w\in F_s(v,m),\quad
-\operatorname{HasPrefix}(\operatorname{shift}(t,m),w-2m,\ell).
+\mathrm{HasPrefix}(\mathrm{shift}(t,m),w-2m,\ell).
 ```
 
 The forward direction cuts and translates the actual path. The reverse
@@ -76,9 +76,9 @@ choice of a successful continuation is an endpoint hypothesis.
 Define the finite condition
 
 ```math
-\operatorname{TwoPrefix}(s,v,m)
+\mathrm{TwoPrefix}(s,v,m)
 \quad\Longleftrightarrow\quad
-\forall k<m,\ s(k)=1-\operatorname{row}_s(v+2k+2).
+\forall k<m,\ s(k)=1-\mathrm{row}_s(v+2k+2).
 ```
 
 This says exactly that the explicit path `v,v+2,...,v+2m` matches the first
@@ -89,12 +89,12 @@ For `v>=1`, `finite_edit_extremal_iff` proves
 
 ```math
 \begin{split}
-&\operatorname{IsMaximumPrefix}(s,v,L)
+&\mathrm{IsMaximumPrefix}(s,v,L)
   \ \land\ 3L=8v+8m-1\\
 &\quad\Longleftrightarrow\quad
 \exists n,\quad m\le q=2^n,\quad
 v=3q-m-1,\quad L=8q-3,\quad
-\operatorname{TwoPrefix}(s,v,m).
+\mathrm{TwoPrefix}(s,v,m).
 \end{split}
 ```
 

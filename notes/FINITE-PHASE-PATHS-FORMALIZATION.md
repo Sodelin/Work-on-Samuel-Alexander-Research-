@@ -7,19 +7,19 @@ compactness ingredient used by the periodic-port argument. It imports only
 ## Exact endpoint
 
 Let $`p>0`$, let $`A`$ be any label type, and let
-$`E:\operatorname{Fin}(p)\times\operatorname{Fin}(p)\times A\to\operatorname{Prop}`$
+$`E:\mathrm{Fin}(p)\times\mathrm{Fin}(p)\times A\to\mathrm{Prop}`$
 be a labelled edge relation. Assume every phase has an incoming edge of every
 label:
 
 ```math
-\forall v\in\operatorname{Fin}(p)\;\forall a\in A\;
-\exists u\in\operatorname{Fin}(p),\ E(u,v,a).
+\forall v\in\mathrm{Fin}(p)\;\forall a\in A\;
+\exists u\in\mathrm{Fin}(p),\ E(u,v,a).
 ```
 
 Then `FinitePhasePaths.realizes_all` proves
 
 ```math
-\forall s:\mathbb N\to A\;\exists f:\mathbb N\to\operatorname{Fin}(p)\;
+\forall s:\mathbb N\to A\;\exists f:\mathbb N\to\mathrm{Fin}(p)\;
 \forall n\in\mathbb N,\ E(f(n),f(n+1),s(n)).
 ```
 

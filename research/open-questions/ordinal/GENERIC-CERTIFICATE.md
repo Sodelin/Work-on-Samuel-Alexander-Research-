@@ -9,7 +9,7 @@ Let V be any vertex type, A any label type, E a labelled edge relation, and s a 
 Assume each vertex has finitely many children of each fixed label. Then:
 
 ```math
-\neg\operatorname{Realizes}(E,s)
+\neg\mathrm{Realizes}(E,s)
 \quad\Longleftrightarrow\quad
 \exists r:R_s\to\mathbb N\;
 \forall ((v,k)\to(w,k+1)),\quad r(w,k+1)<r(v,k).

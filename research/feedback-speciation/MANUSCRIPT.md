@@ -46,7 +46,7 @@ g(u)\geq t,\ d(u)=a,\ E(u,v),\ d(v)=b.
 ```
 Let $`R^*`$ denote reflexive transitive reachability. Demes belong to the same strongly connected component when each is $`R^*`$-reachable from the other.
 
-For $`S\subseteq V`$, write $`\operatorname{IAP}(S)`$ when every $`v\in S`$ satisfies
+For $`S\subseteq V`$, write $`\mathrm{IAP}(S)`$ when every $`v\in S`$ satisfies
 ```math
 \bigl|\{w\in S:v\prec w\}\bigr|<\infty
 \quad\text{or}\quad
@@ -66,7 +66,7 @@ g(w)\geq N(v)\quad\Longrightarrow\quad
 
 (b) For every infinite $`S\subseteq V`$,
 ```math
-\operatorname{IAP}(S)
+\mathrm{IAP}(S)
 \quad\Longleftrightarrow\quad
 \exists C\text{ an }R\text{-component}:
 \left|\{v\in S:d(v)\notin C\}\right|<\infty.

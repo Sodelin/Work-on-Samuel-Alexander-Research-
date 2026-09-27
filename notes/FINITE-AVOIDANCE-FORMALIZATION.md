@@ -15,7 +15,7 @@ The module reuses the existing predicates without redefining their semantics:
 
 `aperiodic_endpoints_bounded` proves that the matching endpoints reachable from any fixed start are bounded. If they were unbounded, the already proved `PositiveUnavoidability.infinite_path_from_good` would construct an actual infinite matching path. Its finite-child hypothesis is supplied by `BinaryPopulation.children_finite s`, a theorem about the concrete graph. The resulting infinite path contradicts `BinaryAvoidance.aperiodic_target_avoided`. Thus the finite-branching argument and absence of an infinite match produce the bound as a conclusion.
 
-`aperiodic_prefix_lengths_bounded` converts this endpoint bound to a bound on lengths. Every actual edge advances at least one index, so the existing finite displacement theorem gives $`\operatorname{path}(0)+\ell\le\operatorname{path}(\ell)`$. This is why bounded endpoints bound all possible matching lengths, not just the length of one selected path.
+`aperiodic_prefix_lengths_bounded` converts this endpoint bound to a bound on lengths. Every actual edge advances at least one index, so the existing finite displacement theorem gives $`\mathrm{path}(0)+\ell\le\mathrm{path}(\ell)`$. This is why bounded endpoints bound all possible matching lengths, not just the length of one selected path.
 
 `aperiodic_maximum_exists` then applies the existing bounded finite maximum argument and proves:
 
@@ -33,7 +33,7 @@ The module reuses the existing predicates without redefining their semantics:
 1. an actual Boolean sequence $`s`$ that is not eventually periodic and has no infinite matching path in $`P_{s}`$;
 2. an attained finite maximum at every starting vertex;
 3. strictly increasing starting vertices `starts j`; and
-4. for each $`j`$, an attained finite maximum $`\ell`$ at `starts j` with $`f(\operatorname{starts}(j))<\ell`$.
+4. for each $`j`$, an attained finite maximum $`\ell`$ at `starts j` with $`f(\mathrm{starts}(j))<\ell`$.
 
 The final strict inequality follows because the previously constructed finite witness is no longer than the attained maximum. No monotonicity or computability assumption on $`f`$ is needed. This strengthens the earlier long-finite-witness statement with the missing maximum-existence assertion; it makes no claim about a uniform upper bound for all aperiodic targets.
 

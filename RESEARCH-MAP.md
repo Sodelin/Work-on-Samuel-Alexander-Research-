@@ -5,7 +5,7 @@
 The user's intended cross-paper connection is **Wong et al. (2024), genome
 ancestral recombination graphs, to Alexander's organism/population and
 specieslike graph framework**. The two sources describe different mathematical
-objects. The [Wong bridge audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/WONG-ALEXANDER-BRIDGE-STATUS.md) records
+objects. The [Wong bridge audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/WONG-ALEXANDER-BRIDGE-STATUS.md) records
 the exact source pages, checked adapters, missing hypotheses and next proof
 contracts. This connection now leads the research program.
 
@@ -84,7 +84,7 @@ and a specified preserved structure.
 ## Attribution and the four deliverables
 
 The [prior-work audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/PRIOR-WORK-AUDIT.md) and
-[older-construction comparison](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
+[older-construction comparison](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
 keep established ideas visible: Alexander already discusses inspecies,
 cofinite descendants, multiple-root cones, universal-graph questions and
 ordinal-rank directions. Wong already describes the genome/pedigree
@@ -106,7 +106,7 @@ different contribution types.
 For detailed review, use the [handoff](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/HANDOFF-FOR-ALEXANDER.md),
 [question ledger](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/QUESTION-LEDGER.md), and
 [reproduction guide](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/REPRODUCE.md). The
-[complex-systems appendix](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/explorations/COMPLEX-SYSTEMS-INTERFACE.md) remains
+[complex-systems appendix](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/codex/research-followup-2026-09-25/explorations/COMPLEX-SYSTEMS-INTERFACE.md) remains
 exploratory; no concrete Levin, Friston, psychological or consciousness
 model is established by the present graph results.
 

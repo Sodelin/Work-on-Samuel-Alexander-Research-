@@ -52,7 +52,7 @@ internal nodes are unretained by single retained-to-retained edges.
 For either cutoff, the exact result is:
 
 ~~~math
-\operatorname{Contract}(G_x,\{0,3\})(a,b)
+\mathrm{Contract}(G_x,\{0,3\})(a,b)
 \quad\Longleftrightarrow\quad
 x<3\ \land\ a=0\ \land\ b=3.
 ~~~

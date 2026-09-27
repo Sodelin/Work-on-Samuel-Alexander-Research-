@@ -31,9 +31,9 @@ This gives a concrete research method: look for histories with the same observab
 For every finite gARG $`G`$ in the project's Wong model, the existing completion theorem supplies infinite populations $`A`$ and $`B`$ preserving precisely the same raw old edges and ancestry paths. Both satisfy the declared birth-date, finite-past, finite-child, finite-root and connectivity conditions. Yet
 
 ```math
-\operatorname{Specieslike}(A,V_A),
+\mathrm{Specieslike}(A,V_A),
 \qquad
-\neg\operatorname{Specieslike}(B,V_B).
+\neg\mathrm{Specieslike}(B,V_B).
 ```
 
 The new [FiniteGenomeIdentifiability.lean](FiniteGenomeIdentifiability.lean) extracts the direct consequence: no verdict using only $`G`$ correctly decides **whole-population specieslikeness for every topology-compatible completion**. The file's `Compatible` definition specifies that compatibility exactly.

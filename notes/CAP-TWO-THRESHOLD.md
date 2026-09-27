@@ -6,10 +6,10 @@ The threshold is **two**. The Lean endpoint
 ```math
 \begin{split}
 &\exists E,S,g,\quad
-  \operatorname{FixedGenderPopulation}(E,S,g,\mathrm{cap})
-  \ \land\ \neg\operatorname{RealizesOn}(E,S,g,s)\\
+  \mathrm{FixedGenderPopulation}(E,S,g,\mathrm{cap})
+  \ \land\ \neg\mathrm{RealizesOn}(E,S,g,s)\\
 &\hspace{3em}\Longleftrightarrow\quad
-  2\le\mathrm{cap}\ \land\ \neg\operatorname{EventuallyPeriodic}(s).
+  2\le\mathrm{cap}\ \land\ \neg\mathrm{EventuallyPeriodic}(s).
 \end{split}
 ```
 
@@ -36,9 +36,9 @@ bottleneck.
 The explicit natural-number encoding uses positive ports `x >= 1`:
 
 ```math
-\operatorname{source}(x)=\lfloor x/2\rfloor,
+\mathrm{source}(x)=\lfloor x/2\rfloor,
 \qquad
-\operatorname{target}(x)=\lfloor x/2\rfloor+1+(x\bmod2).
+\mathrm{target}(x)=\lfloor x/2\rfloor+1+(x\bmod2).
 ```
 
 An even port represents the original one-step edge and an odd port represents
@@ -89,9 +89,9 @@ the declared label. `edge_port` proves the converse representation.
 For every pair of Boolean words `s` and `word`, `realizes_iff` proves
 
 ```math
-\operatorname{RealizesOn}(\mathrm{Arc},\mathrm{Vertices},g_s,\mathrm{word})
+\mathrm{RealizesOn}(\mathrm{Arc},\mathrm{Vertices},g_s,\mathrm{word})
 \quad\Longleftrightarrow\quad
-\operatorname{Realizes}(P_s,\mathrm{word}).
+\mathrm{Realizes}(P_s,\mathrm{word}).
 ```
 
 Projection sends a new path `x(k)` to `source(x(k))`. Lifting sends an

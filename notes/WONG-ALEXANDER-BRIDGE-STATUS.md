@@ -126,9 +126,9 @@ The local parent-array entry for c is its unique parent in this relation, or
 none. Reconstructing edges from all arrays gives R_S exactly. Consequently:
 
 ~~~math
-\operatorname{reconstruct}(\operatorname{extract}_S(R))=R
+\mathrm{reconstruct}(\mathrm{extract}_S(R))=R
 \quad\Longleftrightarrow\quad
-\forall x,p,c,\ R(x,p,c)\Longrightarrow \operatorname{Supported}_S(x,c).
+\forall x,p,c,\ R(x,p,c)\Longrightarrow \mathrm{Supported}_S(x,c).
 ~~~
 
 The equality compares indexed inheritance relations or canonical interval

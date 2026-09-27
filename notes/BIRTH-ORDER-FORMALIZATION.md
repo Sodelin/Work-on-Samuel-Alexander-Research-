@@ -41,7 +41,7 @@ weakens the finite-cover condition.
 | `toFun : Nat -> V` | The constructed enumeration. |
 | `injective` | Distinct indices name distinct vertices. |
 | `surjective` | Every vertex appears at an index. |
-| `nondecreasing` | $`i \le j`$ implies $`\operatorname{birth}(\operatorname{toFun}(i))\le\operatorname{birth}(\operatorname{toFun}(j))`$. |
+| `nondecreasing` | $`i \le j`$ implies $`\mathrm{birth}(\mathrm{toFun}(i))\le\mathrm{birth}(\mathrm{toFun}(j))`$. |
 
 `BirthOrder.orderedEnumeration_exists` exports existence of that complete
 record from the stated hypotheses. The later transport lemmas accept the
@@ -87,7 +87,7 @@ When the time type additionally has `LT Time` and `Std.LawfulOrderLT Time`,
 `e.index_strict` proves:
 
 ```math
-\operatorname{birth}(x)<\operatorname{birth}(y)\implies e.\operatorname{index}(x)<e.\operatorname{index}(y).
+\mathrm{birth}(x)<\mathrm{birth}(y)\implies e.\mathrm{index}(x)<e.\mathrm{index}(y).
 ```
 `e.edges_increase` consequently transfers any edge relation whose parents have
 strictly earlier dates to one with strictly increasing natural indices. For a
@@ -116,7 +116,7 @@ a separate hypothesis of the subcritical degree theorem.
 
 ## Strict sublevels and actual real numbers
 
-The core endpoint uses finite sublevels $`\operatorname{birth}(x)\le r`$. The theorem
+The core endpoint uses finite sublevels $`\mathrm{birth}(x)\le r`$. The theorem
 `finiteSublevels_of_strict` proves that finite strict sublevels suffice whenever
 every time has a strictly larger time. For real times, $`r + 1`$ is such a larger
 bound. This handles the strict-sublevel convention without assuming that tied

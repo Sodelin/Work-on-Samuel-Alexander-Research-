@@ -31,10 +31,10 @@ For a set $`S\subseteq V`$, use the following working predicates:
 ```math
 \begin{aligned}
 D_S(v)&=\{w\in S:v\prec w\},\\
-\operatorname{IAP}(S)&\iff
+\mathrm{IAP}(S)&\iff
   \forall v\in S,\quad
   D_S(v)\text{ is finite}\ \lor\ S\setminus D_S(v)\text{ is finite},\\
-\operatorname{Conv}(S)&\iff
+\mathrm{Conv}(S)&\iff
   \forall a,c\in S\ \forall b\in V,\quad
   a\prec b\prec c\Longrightarrow b\in S.
 \end{aligned}
