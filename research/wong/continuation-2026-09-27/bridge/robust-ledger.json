@@ -28,9 +28,10 @@
     "WongPedigreeBridge.finiteSupport_iff_off_finite",
     "WongPedigreeBridge.finiteSupport_preimage_iff"
   ],
-  "verification_status": "PASS_SOURCE_SNAPSHOT_PENDING_INTEGRATED_COMMIT",
+  "verification_status": "PASS_LOCAL_EXACT_COMMIT",
   "verification_receipt": "research/wong/continuation-2026-09-27/bridge/verification/ROBUST-RESULT.json",
   "verified_source_sha256": "a2ed87e4162f3e6f0c127805bfe9619e9ba8b3649aaeade3cc8b8ef554b16c30",
-  "proof_commit": null,
-  "source_checks_utc_date": "2026-09-27"
+  "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb",
+  "source_checks_utc_date": "2026-09-27",
+  "combined_verification": "research/wong/continuation-2026-09-27/verification/RESULT.json"
 }

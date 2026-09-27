@@ -1,0 +1,1305 @@
+{
+  "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb",
+  "working_tree_status": "",
+  "exact_clean_commit": true,
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    {
+      "module": "WongCountChain",
+      "source": "real\\WongCountChain.lean",
+      "signature": {
+        "source_sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 210.621,
+      "log_sha256": "aa18f29a179287af8f5cdc121739a2b2f26728d846ab9f0acecc0296f9cce189",
+      "object_sha256": "ca4a3d17d7194ddf976bec71049becd8a421b514c7ac438b319932445ae755b3"
+    },
+    {
+      "module": "WongBigARGDrift",
+      "source": "real\\WongBigARGDrift.lean",
+      "signature": {
+        "source_sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 16.821,
+      "log_sha256": "b4f015fb5d99cb9bc50b705fcc03f2871f5fe5014ba4480616096cd58e7fa0d5",
+      "object_sha256": "c7f502652d43694088624ee7d23ec32cf00f03407e01b5b8072c7300b6c71d77"
+    },
+    {
+      "module": "WongBigARGAbsorption",
+      "source": "real\\WongBigARGAbsorption.lean",
+      "signature": {
+        "source_sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+        "dependencies": {
+          "WongCountChain": "ca4a3d17d7194ddf976bec71049becd8a421b514c7ac438b319932445ae755b3",
+          "WongBigARGDrift": "c7f502652d43694088624ee7d23ec32cf00f03407e01b5b8072c7300b6c71d77"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 26.305,
+      "log_sha256": "3a3cd7e1fff753d5d8f082026f6dc32de2b73d52af8560b392fef719b7133f0c",
+      "object_sha256": "e372f7fc3c96d4b830add9d714d025f572169dfc73abf59a074180ef415f0c89"
+    },
+    {
+      "module": "WongWaitingTimes",
+      "source": "real\\WongWaitingTimes.lean",
+      "signature": {
+        "source_sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
+        "dependencies": {
+          "WongBigARGAbsorption": "e372f7fc3c96d4b830add9d714d025f572169dfc73abf59a074180ef415f0c89"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 35.27,
+      "log_sha256": "12acec8c43ff63215de5368b5da5b89365519eeb00787fab96012ef25957cc52",
+      "object_sha256": "8a4842a646cb15e50b402e976fc9c3049d95dcaf9f3da9dc402c251692d8d24d"
+    },
+    {
+      "module": "WongMarkedLaw",
+      "source": "real\\WongMarkedLaw.lean",
+      "signature": {
+        "source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+        "dependencies": {
+          "WongWaitingTimes": "8a4842a646cb15e50b402e976fc9c3049d95dcaf9f3da9dc402c251692d8d24d"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.828,
+      "log_sha256": "3e92846200f80e98c75ab76a54ad114b9df66a7fa75fdb214ec3f936dec1ab3d",
+      "object_sha256": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestryViews",
+      "source": "lean\\SamuelAlexanderResearch\\AncestryViews.lean",
+      "signature": {
+        "source_sha256": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 12.73,
+      "log_sha256": "122b77e8bf1abc1d26fd5c048ab60308a7fd21692036ac0effc7b1b634bda07a",
+      "object_sha256": "52c17ecd46a581a25bd0cc0d04151d61c316ba103fee5b7adb24c1bd6aa7dfde"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BinaryAvoidance",
+      "source": "lean\\SamuelAlexanderResearch\\BinaryAvoidance.lean",
+      "signature": {
+        "source_sha256": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.387,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "7170e24a7b8e7085cbabfab93b54f58f1277507ed32bc8454e6d9320b9285aa0"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesBridge",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesBridge.lean",
+      "signature": {
+        "source_sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.92,
+      "log_sha256": "50da5d9051744a50c9223e5a18cc1d4960c2760c5457309efdb0bf878539d46f",
+      "object_sha256": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BinaryPopulation",
+      "source": "lean\\SamuelAlexanderResearch\\BinaryPopulation.lean",
+      "signature": {
+        "source_sha256": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667",
+        "dependencies": {
+          "SamuelAlexanderResearch.BinaryAvoidance": "7170e24a7b8e7085cbabfab93b54f58f1277507ed32bc8454e6d9320b9285aa0",
+          "SamuelAlexanderResearch.SpeciesBridge": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.685,
+      "log_sha256": "cdfd0554c1dfd5bb0de0ba3bfad621093ed1cb1599bcca3a6d7b74d97e1860ce",
+      "object_sha256": "aa5d6fc7ca80c4d6d5027f4a6fa55597fe8354f2b3a301a2a00b0ef9f51001dc"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesAdapter",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesAdapter.lean",
+      "signature": {
+        "source_sha256": "f04521f21ef2724a48a7cd9712632617dd729e12f6650c55efedf79b686c15b0",
+        "dependencies": {
+          "SamuelAlexanderResearch.AncestryViews": "52c17ecd46a581a25bd0cc0d04151d61c316ba103fee5b7adb24c1bd6aa7dfde",
+          "SamuelAlexanderResearch.BinaryPopulation": "aa5d6fc7ca80c4d6d5027f4a6fa55597fe8354f2b3a301a2a00b0ef9f51001dc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 2.994,
+      "log_sha256": "e710b5a053361f9d47fc1b239e4d7bd272159a45aa4d6249f46331814d7f4f5e",
+      "object_sha256": "0f938d19651547cc09774590d3a0fd6dc1fa063f5929b21fb1f2a52327400f60"
+    },
+    {
+      "module": "SamuelAlexanderResearch.HistoryProjection",
+      "source": "lean\\SamuelAlexanderResearch\\HistoryProjection.lean",
+      "signature": {
+        "source_sha256": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesAdapter": "0f938d19651547cc09774590d3a0fd6dc1fa063f5929b21fb1f2a52327400f60"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.224,
+      "log_sha256": "1e2a521154d87f625e2a2887ae5ac3ce4c9c1127426e40a7f92d2610fc43de41",
+      "object_sha256": "6e99d5a4c381a83a760c777f04d7d147d2caf38e425996a5bf3c5a75a838e8cd"
+    },
+    {
+      "module": "WongGARG",
+      "source": "real\\WongGARG.lean",
+      "signature": {
+        "source_sha256": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
+        "dependencies": {
+          "SamuelAlexanderResearch.HistoryProjection": "6e99d5a4c381a83a760c777f04d7d147d2caf38e425996a5bf3c5a75a838e8cd"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.122,
+      "log_sha256": "564695782faff857fb67c30fc4edff88c40b8559fc6a119c03169d70a72069ba",
+      "object_sha256": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11"
+    },
+    {
+      "module": "WongEventEncoding",
+      "source": "real\\WongEventEncoding.lean",
+      "signature": {
+        "source_sha256": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87",
+        "dependencies": {
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.34,
+      "log_sha256": "b2f8b10c9fd053ce323c14180eb9b8329db8b5fc703754f8bcaea0cf19a5c062",
+      "object_sha256": "d07faa1ccd7795e89f93b418c74533283c122b790102229a35e841222d7fbc3e"
+    },
+    {
+      "module": "WongEventDecoding",
+      "source": "real\\WongEventDecoding.lean",
+      "signature": {
+        "source_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+        "dependencies": {
+          "WongEventEncoding": "d07faa1ccd7795e89f93b418c74533283c122b790102229a35e841222d7fbc3e"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.124,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "6a21304ade5af19c31e48a99f47d9540f91cffd7e334ca9f21ff402891dcb75b"
+    },
+    {
+      "module": "WongMarkedRecorder",
+      "source": "real\\WongMarkedRecorder.lean",
+      "signature": {
+        "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+        "dependencies": {
+          "WongEventDecoding": "6a21304ade5af19c31e48a99f47d9540f91cffd7e334ca9f21ff402891dcb75b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 17.061,
+      "log_sha256": "d3d9ffc66b570c3908bd1ff27fedd1ff5ea1017bde358270aa30909bae6726c9",
+      "object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+    },
+    {
+      "module": "WongMarkedProcess",
+      "source": "real\\WongMarkedProcess.lean",
+      "signature": {
+        "source_sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555",
+        "dependencies": {
+          "WongMarkedLaw": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932",
+          "WongMarkedRecorder": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 29.191,
+      "log_sha256": "84c601d028f0b973eb814c415c30cbb48ded4c5aa74ba12ed423d5a4a24c6b5c",
+      "object_sha256": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59"
+    },
+    {
+      "module": "WongMarkedMeasurable",
+      "source": "real\\WongMarkedMeasurable.lean",
+      "signature": {
+        "source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+        "dependencies": {
+          "WongMarkedProcess": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 28.547,
+      "log_sha256": "3a553e26d71632b9a308aff08eba8d2e4a3a07e09b9c872030b16b63abe84534",
+      "object_sha256": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+    },
+    {
+      "module": "WongMarkedSupport",
+      "source": "real\\WongMarkedSupport.lean",
+      "signature": {
+        "source_sha256": "57d485a53aa9ba32aa98f75c8812b55f1976c142f74fe7624ce819131669a5de",
+        "dependencies": {
+          "WongMarkedMeasurable": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.153,
+      "log_sha256": "0946ea471f5cb2a319681a58051d288ef0a1ad3ab7823fa75fb7e70f6a94f97f",
+      "object_sha256": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695"
+    },
+    {
+      "module": "WongMarkedDated",
+      "source": "real\\WongMarkedDated.lean",
+      "signature": {
+        "source_sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974",
+        "dependencies": {
+          "WongMarkedMeasurable": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 26.373,
+      "log_sha256": "3c11c298ffda4ffffb2c7e6c9eae5c3055eb28ca79c1f18f6d74d6d01de51b32",
+      "object_sha256": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+    },
+    {
+      "module": "WongDatedSupport",
+      "source": "real\\WongDatedSupport.lean",
+      "signature": {
+        "source_sha256": "162ffdb8b0b3409a9f65ff7b9403a85135be54a2995a7647a3f211c61b8cb993",
+        "dependencies": {
+          "WongMarkedSupport": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695",
+          "WongMarkedDated": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.719,
+      "log_sha256": "5dcd6f0dc83381a4a55446af546dfdb8fee5973155905f807cf72a06c94944e0",
+      "object_sha256": "cf9c1f198b14d456ba4a48ade946f3b3fecd6d3af8e9e88f5ec15fed41285693"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BirthOrder",
+      "source": "lean\\SamuelAlexanderResearch\\BirthOrder.lean",
+      "signature": {
+        "source_sha256": "9774f28a08f43cceab51cc2225b6c572036209c5fe7553f8de08e834c74b34db",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.497,
+      "log_sha256": "4933e9133b07aa01302fe39ca846eb3aaf99eaadb5b168c654ef7f7cf3d0fcf4",
+      "object_sha256": "794b54755fdfc364d27414a0e33a43bb0c4f57743419af70b3f78e7e0a95f6f4"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PositiveUnavoidability",
+      "source": "lean\\SamuelAlexanderResearch\\PositiveUnavoidability.lean",
+      "signature": {
+        "source_sha256": "dd4d241c2752639015fd98b4fb07b044e533b0c21dadb49b6c90ee9edb925c71",
+        "dependencies": {
+          "SamuelAlexanderResearch.BinaryPopulation": "aa5d6fc7ca80c4d6d5027f4a6fa55597fe8354f2b3a301a2a00b0ef9f51001dc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.628,
+      "log_sha256": "bbdb2b6bfdc1b5cc61f1429b6421a7ae9efe9415cd90b9d4f06f09085b4bd8bc",
+      "object_sha256": "7b5ef2782cdc1282d381d3262b893aa65bc37b9a062ff315c4e2f8162179c667"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ThueMorseBound",
+      "source": "lean\\SamuelAlexanderResearch\\ThueMorseBound.lean",
+      "signature": {
+        "source_sha256": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.664,
+      "log_sha256": "b1a0e97f6a93303d114f5b31975cd72611b315b24cabbb9a91ade6096d691211",
+      "object_sha256": "77ff015c314bd17dca73139a899dc45fe5bfab7598eb16f5c6268d6944d124c0"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ThueMorseBits",
+      "source": "lean\\SamuelAlexanderResearch\\ThueMorseBits.lean",
+      "signature": {
+        "source_sha256": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.417,
+      "log_sha256": "7386ad6cd9502df31abc7a1cc8109a3bc7e4d210c6a952c828b70afbd25a198f",
+      "object_sha256": "429897fb65c4f450f08f0fcf1e5d03db24004b85b18fb3a5717b284ced3fe232"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SharpThueMorse",
+      "source": "lean\\SamuelAlexanderResearch\\SharpThueMorse.lean",
+      "signature": {
+        "source_sha256": "a2f29f779a19191630d118c5d851fa475e3d0151d55793a0867feab50d4ba0ee",
+        "dependencies": {
+          "SamuelAlexanderResearch.ThueMorseBound": "77ff015c314bd17dca73139a899dc45fe5bfab7598eb16f5c6268d6944d124c0",
+          "SamuelAlexanderResearch.ThueMorseBits": "429897fb65c4f450f08f0fcf1e5d03db24004b85b18fb3a5717b284ced3fe232",
+          "SamuelAlexanderResearch.BinaryAvoidance": "7170e24a7b8e7085cbabfab93b54f58f1277507ed32bc8454e6d9320b9285aa0"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 8.41,
+      "log_sha256": "312489ed848342e754e5f7d10c40567ca15d6465acc8da6e99cf42a071430eba",
+      "object_sha256": "2e3cd50b2d7769472020542ebfab31ded1e1b3159d740d4e344d453b0eb18df9"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SharpCorollaries",
+      "source": "lean\\SamuelAlexanderResearch\\SharpCorollaries.lean",
+      "signature": {
+        "source_sha256": "22bc1409177624df85d5fac7303790bb544b99519a967e4be7c7e6a7d7e6b2c6",
+        "dependencies": {
+          "SamuelAlexanderResearch.SharpThueMorse": "2e3cd50b2d7769472020542ebfab31ded1e1b3159d740d4e344d453b0eb18df9"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.68,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "72d41ed8dd6cea072e5f46f8dbfc8d6dbdcdc240e58ff47c4494c4b119e6a033"
+    },
+    {
+      "module": "SamuelAlexanderResearch.QuantitativeAvoidance",
+      "source": "lean\\SamuelAlexanderResearch\\QuantitativeAvoidance.lean",
+      "signature": {
+        "source_sha256": "d7483dafa920f71e78eabf6199bd5a50862b8d6b6f8abb3a30f900f43bf71bae",
+        "dependencies": {
+          "SamuelAlexanderResearch.BinaryAvoidance": "7170e24a7b8e7085cbabfab93b54f58f1277507ed32bc8454e6d9320b9285aa0"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.207,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "162208f783b2d8b5ce161b71d7278706b1dc6f06d582fd8d631a8a3a3bdb41c8"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FiniteEditStability",
+      "source": "lean\\SamuelAlexanderResearch\\FiniteEditStability.lean",
+      "signature": {
+        "source_sha256": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
+        "dependencies": {
+          "SamuelAlexanderResearch.QuantitativeAvoidance": "162208f783b2d8b5ce161b71d7278706b1dc6f06d582fd8d631a8a3a3bdb41c8",
+          "SamuelAlexanderResearch.SharpThueMorse": "2e3cd50b2d7769472020542ebfab31ded1e1b3159d740d4e344d453b0eb18df9",
+          "SamuelAlexanderResearch.BinaryPopulation": "aa5d6fc7ca80c4d6d5027f4a6fa55597fe8354f2b3a301a2a00b0ef9f51001dc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.668,
+      "log_sha256": "73df224f3d9eda19a9c02473a874a92b9a2f286ce36d1ed7167887a5254fc609",
+      "object_sha256": "fc3ce38e8fbc87b2a141b662ae3a528cbd97a8544f31d90922d062bceb0168e8"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PhaseShift",
+      "source": "lean\\SamuelAlexanderResearch\\PhaseShift.lean",
+      "signature": {
+        "source_sha256": "504c71e130463ef9f2dcac11c77917aa204f42995ee23b722a7db439c7ea8be7",
+        "dependencies": {
+          "SamuelAlexanderResearch.QuantitativeAvoidance": "162208f783b2d8b5ce161b71d7278706b1dc6f06d582fd8d631a8a3a3bdb41c8",
+          "SamuelAlexanderResearch.SharpThueMorse": "2e3cd50b2d7769472020542ebfab31ded1e1b3159d740d4e344d453b0eb18df9",
+          "SamuelAlexanderResearch.FiniteEditStability": "fc3ce38e8fbc87b2a141b662ae3a528cbd97a8544f31d90922d062bceb0168e8"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.215,
+      "log_sha256": "8f2e3589fe260027bfe1acd3b1c5e7ba28ed91fec772767128fc8cb287b531b2",
+      "object_sha256": "2a96990650a3ef33094eba5020a886abc4def931d5ab3ac10c6774d9207a595d"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PopulationCounting",
+      "source": "lean\\SamuelAlexanderResearch\\PopulationCounting.lean",
+      "signature": {
+        "source_sha256": "5545bc9fb9ae97f48cd1075a7df2e12087fe53aafd35f5b141cdea55540ad627",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.98,
+      "log_sha256": "3ba731bea30b95fcdd334ccb5d3a283b6df968f0e48be8a21be0d25a580a4a59",
+      "object_sha256": "19831297dd543b1e61b17067fcefd21514ac9830d4bfad3e1e17c56303248064"
+    },
+    {
+      "module": "SamuelAlexanderResearch.InfiniteConservation",
+      "source": "lean\\SamuelAlexanderResearch\\InfiniteConservation.lean",
+      "signature": {
+        "source_sha256": "55b11eaa840f25500428fb41652ca91994019e8d1300c8df15c978ac46698ee5",
+        "dependencies": {
+          "SamuelAlexanderResearch.PopulationCounting": "19831297dd543b1e61b17067fcefd21514ac9830d4bfad3e1e17c56303248064",
+          "SamuelAlexanderResearch.BinaryAvoidance": "7170e24a7b8e7085cbabfab93b54f58f1277507ed32bc8454e6d9320b9285aa0"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.336,
+      "log_sha256": "a78431d6ec44f782ce0773a88552c9c66cd350ec03b4e3647f40e1a9b32fbf89",
+      "object_sha256": "2eac5ba717ae02598dbf827d53e9e34cd5d16c17d1bd96dc1c46440789f9b5f9"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesCones",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesCones.lean",
+      "signature": {
+        "source_sha256": "0bf0fb9bc742b1b1260e08fd58adc17d3dab65d778bc1578736f1548a7c37df4",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesBridge": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.297,
+      "log_sha256": "b46c0106e3142183db6dbb9009c0f56e43c4cd43be830313a04a4294418fc9f4",
+      "object_sha256": "d7b0e1717a612ce6618e37753df5be1804bc00e5881f022767304f474fdbb245"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesRootCriterion",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesRootCriterion.lean",
+      "signature": {
+        "source_sha256": "c6a151b5909bbf0238dc4ac7879fc518d91dd14b4fb3847952dec0fb65b3f26f",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesCones": "d7b0e1717a612ce6618e37753df5be1804bc00e5881f022767304f474fdbb245"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.304,
+      "log_sha256": "f20692cd04a2011a3b0aad0d1b47032ae1e63a10ef94c8a260e734adf77ee249",
+      "object_sha256": "abd695883de446872bda9d4b07316f71049e436784e709d21928f25398b32ec3"
+    },
+    {
+      "module": "SamuelAlexanderResearch.GeneralRootObstruction",
+      "source": "lean\\SamuelAlexanderResearch\\GeneralRootObstruction.lean",
+      "signature": {
+        "source_sha256": "e759c8494d27cfc55656f6e902ff094fbd6dd1e33246c8e84d5689eb8a1a3170",
+        "dependencies": {
+          "SamuelAlexanderResearch.InfiniteConservation": "2eac5ba717ae02598dbf827d53e9e34cd5d16c17d1bd96dc1c46440789f9b5f9",
+          "SamuelAlexanderResearch.SpeciesRootCriterion": "abd695883de446872bda9d4b07316f71049e436784e709d21928f25398b32ec3"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.313,
+      "log_sha256": "14bda2e772d2cae609c62e79b42ac22c2577a2c24ff513abe1f1489faafc7476",
+      "object_sha256": "709ea9fd9651205a9a2d865c6fed62e0158bbc9193f1cb827da5c612b3db3bdb"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PopulationReindex",
+      "source": "lean\\SamuelAlexanderResearch\\PopulationReindex.lean",
+      "signature": {
+        "source_sha256": "815951d97e90f9da0aa83cb0acd8683ffb1aa3460930b7eca7fb522e986ae666",
+        "dependencies": {
+          "SamuelAlexanderResearch.BirthOrder": "794b54755fdfc364d27414a0e33a43bb0c4f57743419af70b3f78e7e0a95f6f4",
+          "SamuelAlexanderResearch.GeneralRootObstruction": "709ea9fd9651205a9a2d865c6fed62e0158bbc9193f1cb827da5c612b3db3bdb"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.43,
+      "log_sha256": "d03596739b487c7ed315b26e21c04e9f162799ab1f76ee9e1726e21c32786a32",
+      "object_sha256": "a25544e0c87e1be194d4c73150a97c7b7524d018169d6aadbfd668917f8239e7"
+    },
+    {
+      "module": "RealBridges",
+      "source": "real\\RealBridges.lean",
+      "signature": {
+        "source_sha256": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
+        "dependencies": {
+          "SamuelAlexanderResearch.BirthOrder": "794b54755fdfc364d27414a0e33a43bb0c4f57743419af70b3f78e7e0a95f6f4",
+          "SamuelAlexanderResearch.PositiveUnavoidability": "7b5ef2782cdc1282d381d3262b893aa65bc37b9a062ff315c4e2f8162179c667",
+          "SamuelAlexanderResearch.SharpCorollaries": "72d41ed8dd6cea072e5f46f8dbfc8d6dbdcdc240e58ff47c4494c4b119e6a033",
+          "SamuelAlexanderResearch.FiniteEditStability": "fc3ce38e8fbc87b2a141b662ae3a528cbd97a8544f31d90922d062bceb0168e8",
+          "SamuelAlexanderResearch.PhaseShift": "2a96990650a3ef33094eba5020a886abc4def931d5ab3ac10c6774d9207a595d",
+          "SamuelAlexanderResearch.PopulationReindex": "a25544e0c87e1be194d4c73150a97c7b7524d018169d6aadbfd668917f8239e7"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 20.104,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "4773b39adbe02ca956d108ef5ad4613dde2a15c53fd5f3f12375657772105acf"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestralRestriction",
+      "source": "lean\\SamuelAlexanderResearch\\AncestralRestriction.lean",
+      "signature": {
+        "source_sha256": "9a8c8f611ccac15ddd737188bf8f5a65057d01befa52c597f2c3c7508fdd8ac1",
+        "dependencies": {
+          "SamuelAlexanderResearch.AncestryViews": "52c17ecd46a581a25bd0cc0d04151d61c316ba103fee5b7adb24c1bd6aa7dfde"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.295,
+      "log_sha256": "dd6ec2e448b8a2b14ba89a3afcc17abd3dbacf02914562a717573da949613499",
+      "object_sha256": "f97f58be2661556edbb29fc34dd268364d7ab6da8db053f5be77b07e13c8b0e4"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestryContraction",
+      "source": "lean\\SamuelAlexanderResearch\\AncestryContraction.lean",
+      "signature": {
+        "source_sha256": "06a094722d166aabaa1d4cfd3a4bf38480a1e05b590b14b3bd2bcd7f72a06068",
+        "dependencies": {
+          "SamuelAlexanderResearch.AncestralRestriction": "f97f58be2661556edbb29fc34dd268364d7ab6da8db053f5be77b07e13c8b0e4"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.12,
+      "log_sha256": "4060dab41b612333d93d3d08326b6ba0c474bacff1094748850d3d224460eb3b",
+      "object_sha256": "5b308dbb373ae1bdcf132eb469e89f4fc2514de062468fdc7b602f9fe436a28f"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesGlobalIAP",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesGlobalIAP.lean",
+      "signature": {
+        "source_sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesBridge": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.537,
+      "log_sha256": "55e685fac5e9e67def016ac29b09d52a9f3a8afeed193a144c28d0fa76910c8f",
+      "object_sha256": "c5457bc857037a00c16cbffb35592db959c7b7d7ae71433cc2fa0b9286422f0d"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FiniteHistoryCompletion",
+      "source": "lean\\SamuelAlexanderResearch\\FiniteHistoryCompletion.lean",
+      "signature": {
+        "source_sha256": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesGlobalIAP": "c5457bc857037a00c16cbffb35592db959c7b7d7ae71433cc2fa0b9286422f0d"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.715,
+      "log_sha256": "6dfc810ae2803a3567554b3a10d8aade430af107c23c0fbc269d7bc08d62599a",
+      "object_sha256": "3fb097297067376e7cc8e18e0b9399d3354dcbf4e8f24ece648bd2d19c52ac82"
+    },
+    {
+      "module": "WongAlexander",
+      "source": "real\\WongAlexander.lean",
+      "signature": {
+        "source_sha256": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
+        "dependencies": {
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11",
+          "RealBridges": "4773b39adbe02ca956d108ef5ad4613dde2a15c53fd5f3f12375657772105acf",
+          "SamuelAlexanderResearch.AncestralRestriction": "f97f58be2661556edbb29fc34dd268364d7ab6da8db053f5be77b07e13c8b0e4",
+          "SamuelAlexanderResearch.AncestryContraction": "5b308dbb373ae1bdcf132eb469e89f4fc2514de062468fdc7b602f9fe436a28f",
+          "SamuelAlexanderResearch.FiniteHistoryCompletion": "3fb097297067376e7cc8e18e0b9399d3354dcbf4e8f24ece648bd2d19c52ac82"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 16.651,
+      "log_sha256": "10e54d1285c241e8451d0e09b532968e541ae8c46fab69f7cff5a87a04f5dc35",
+      "object_sha256": "c1bc9de23f065fb0ff02af45fbb2b9affe631eee5a4252c6894d66e66791231a"
+    },
+    {
+      "module": "FiniteGenomeIdentifiability",
+      "source": "real\\FiniteGenomeIdentifiability.lean",
+      "signature": {
+        "source_sha256": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5",
+        "dependencies": {
+          "WongAlexander": "c1bc9de23f065fb0ff02af45fbb2b9affe631eee5a4252c6894d66e66791231a"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 16.267,
+      "log_sha256": "e7dadfedc72bd89c486ff3e34e35ffaa445b6737b8e67b3fc69e71db7c197259",
+      "object_sha256": "5d44a6546bcc44c4adae478791dd1755606e6cdd97748585670a8ac5927e7f62"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ObservationPrediction",
+      "source": "lean\\SamuelAlexanderResearch\\ObservationPrediction.lean",
+      "signature": {
+        "source_sha256": "2b62f0d1da7c22b43dcc741e24916b5218d3ae5fd7bf09c62e97928321e0fd0f",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.078,
+      "log_sha256": "872361c9f1d7bbc74677eead432bdd7f1a587369e9f972f1ed51f18066d0ec90",
+      "object_sha256": "34b16bce1e63242b93ccb19e22fc7c420047001efc7e1606acca38e363d4f9a4"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FixedGenderLift",
+      "source": "lean\\SamuelAlexanderResearch\\FixedGenderLift.lean",
+      "signature": {
+        "source_sha256": "2805ab8ef85a018b2276aa137118f0e64990a6358349e7a1b59006d24a50ba7a",
+        "dependencies": {
+          "SamuelAlexanderResearch.BinaryPopulation": "aa5d6fc7ca80c4d6d5027f4a6fa55597fe8354f2b3a301a2a00b0ef9f51001dc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.281,
+      "log_sha256": "69166a850371f08a7efeeb7b2985fbea9c58b87b4504a79a162d42e7e7ba8600",
+      "object_sha256": "93a790b26cd3b2fc986a6ff200e974b4e901420067b8361027c262ac0ba8492b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FixedGenderReindex",
+      "source": "lean\\SamuelAlexanderResearch\\FixedGenderReindex.lean",
+      "signature": {
+        "source_sha256": "93953e4e77f092692bc254b52e4d3082459b700eec5a4259c1560ac0daddd3e9",
+        "dependencies": {
+          "SamuelAlexanderResearch.BirthOrder": "794b54755fdfc364d27414a0e33a43bb0c4f57743419af70b3f78e7e0a95f6f4",
+          "SamuelAlexanderResearch.FixedGenderLift": "93a790b26cd3b2fc986a6ff200e974b4e901420067b8361027c262ac0ba8492b",
+          "SamuelAlexanderResearch.PositiveUnavoidability": "7b5ef2782cdc1282d381d3262b893aa65bc37b9a062ff315c4e2f8162179c667"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.208,
+      "log_sha256": "01a049fd19d2b5e2b23bf14957ca3b1bfb4556af6597ecbf207b3a89f292808f",
+      "object_sha256": "c863cbe1435b41e1e60b02052653bc20db3907069de39e2f10d644a2d5d1ed87"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ProductiveCore",
+      "source": "lean\\SamuelAlexanderResearch\\ProductiveCore.lean",
+      "signature": {
+        "source_sha256": "0e83a9bc0c2d870553a1243558a580f49dfc6def79af03afcc8c3b6d4b9568a1",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesRootCriterion": "abd695883de446872bda9d4b07316f71049e436784e709d21928f25398b32ec3",
+          "SamuelAlexanderResearch.SpeciesGlobalIAP": "c5457bc857037a00c16cbffb35592db959c7b7d7ae71433cc2fa0b9286422f0d",
+          "SamuelAlexanderResearch.FixedGenderReindex": "c863cbe1435b41e1e60b02052653bc20db3907069de39e2f10d644a2d5d1ed87",
+          "SamuelAlexanderResearch.PopulationReindex": "a25544e0c87e1be194d4c73150a97c7b7524d018169d6aadbfd668917f8239e7"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.534,
+      "log_sha256": "1cb41ba96d0b9b30011df6da0233739449d51d536507b48ee285d6fefbc9427d",
+      "object_sha256": "f1a5632720b6119801d3c575b0a937274a9d0bba72901ae241e838b5f19e8fb8"
+    },
+    {
+      "module": "WongPedigreeBridge",
+      "source": "real\\WongPedigreeBridge.lean",
+      "signature": {
+        "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+        "dependencies": {
+          "FiniteGenomeIdentifiability": "5d44a6546bcc44c4adae478791dd1755606e6cdd97748585670a8ac5927e7f62",
+          "SamuelAlexanderResearch.ObservationPrediction": "34b16bce1e63242b93ccb19e22fc7c420047001efc7e1606acca38e363d4f9a4",
+          "SamuelAlexanderResearch.ProductiveCore": "f1a5632720b6119801d3c575b0a937274a9d0bba72901ae241e838b5f19e8fb8"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 16.783,
+      "log_sha256": "598954f8d3246701da2a5f61d63b309ce6e0c13eb8adec7bba3201310d2c0282",
+      "object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+    },
+    {
+      "module": "WongPedigreeRobust",
+      "source": "real\\WongPedigreeRobust.lean",
+      "signature": {
+        "source_sha256": "a2ed87e4162f3e6f0c127805bfe9619e9ba8b3649aaeade3cc8b8ef554b16c30",
+        "dependencies": {
+          "WongPedigreeBridge": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.047,
+      "log_sha256": "eccc25f86878aef94365e1de6fd87a100c93eeda8629e33e3939057b422bfabd",
+      "object_sha256": "38f3eb8bbaf81f7ac785d2df399b5119c2ccc4f4492ba02a3630be94768f33f4"
+    },
+    {
+      "module": "WongAdaptiveSelection",
+      "source": "real\\WongAdaptiveSelection.lean",
+      "signature": {
+        "source_sha256": "ac8ec96239575413b57d731742d126047d7d69725aa180b27a875d161fbb0163",
+        "dependencies": {
+          "WongMarkedLaw": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932",
+          "WongMarkedMeasurable": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 26.326,
+      "log_sha256": "ead1a82fd981978b60fcef894cbe9072bd2fae39fc6fa016a5dd21dea1042be9",
+      "object_sha256": "e4fd7da691c45453e4278cace23d5046b0443af80a6ba86f9dde1e283b4effd2"
+    },
+    {
+      "module": "WongBreakpointCells",
+      "source": "real\\WongBreakpointCells.lean",
+      "signature": {
+        "source_sha256": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d",
+        "dependencies": {
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.684,
+      "log_sha256": "746a634454ae17e6d3591a4e6a4c79870fb776c4fd3b3821e912f678cc76b1de",
+      "object_sha256": "e884ce539df2b694700781163e9dffa6689f1c8362dd327c158a5bc935634d38"
+    },
+    {
+      "module": "WongIntervalNormalization",
+      "source": "real\\WongIntervalNormalization.lean",
+      "signature": {
+        "source_sha256": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f",
+        "dependencies": {
+          "WongAlexander": "c1bc9de23f065fb0ff02af45fbb2b9affe631eee5a4252c6894d66e66791231a"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.148,
+      "log_sha256": "495f7ab91c7d59baa2c53acaf459c612343f0b4d5566f02a93c7e6ec8a584719",
+      "object_sha256": "eed7899e2900a308ddbb242c6015760a50b15dc8d68119bc66b42dc3a5f86e50"
+    },
+    {
+      "module": "WongSimplification",
+      "source": "real\\WongSimplification.lean",
+      "signature": {
+        "source_sha256": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab",
+        "dependencies": {
+          "WongBreakpointCells": "e884ce539df2b694700781163e9dffa6689f1c8362dd327c158a5bc935634d38",
+          "WongIntervalNormalization": "eed7899e2900a308ddbb242c6015760a50b15dc8d68119bc66b42dc3a5f86e50"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.733,
+      "log_sha256": "992027d3efa2e076a785488fb0f1959c52c85eca41f52bb0ff0bbdf806013d4c",
+      "object_sha256": "72eff00646f03b7c376bb6d0f7939dccd2c868418929a47fe0b9b306d298fafc"
+    },
+    {
+      "module": "WongMRCATruncation",
+      "source": "real\\WongMRCATruncation.lean",
+      "signature": {
+        "source_sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+        "dependencies": {
+          "WongSimplification": "72eff00646f03b7c376bb6d0f7939dccd2c868418929a47fe0b9b306d298fafc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.595,
+      "log_sha256": "ca3355d09e1a929141eaa55ff3fabbf8369c1cb871e6f33dc6b375250fdf5647",
+      "object_sha256": "e5d60ae76418383d1642cf2e3c20d8281adde28b4a1fc5fd324548ac823c1b3d"
+    },
+    {
+      "module": "WongIntervalCanonicalization",
+      "source": "real\\WongIntervalCanonicalization.lean",
+      "signature": {
+        "source_sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+        "dependencies": {
+          "WongSimplification": "72eff00646f03b7c376bb6d0f7939dccd2c868418929a47fe0b9b306d298fafc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 22.64,
+      "log_sha256": "c0f2b26fcd0ddcc271ea5e74d10168c4ec949e15689fb701db53a0af4a96ffd0",
+      "object_sha256": "823d6327097343cdfae988dde452225aba9656eeeb5e7b6ecd7e07049ddf30cb"
+    },
+    {
+      "module": "WongLocalSimplification",
+      "source": "real\\WongLocalSimplification.lean",
+      "signature": {
+        "source_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+        "dependencies": {
+          "WongSimplification": "72eff00646f03b7c376bb6d0f7939dccd2c868418929a47fe0b9b306d298fafc"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.571,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "b1ba98f010b75b91ee2091a20910e4acee214130e83e9e6f7e638ed044a379cb"
+    },
+    {
+      "module": "WongSimplificationNormalForm",
+      "source": "real\\WongSimplificationNormalForm.lean",
+      "signature": {
+        "source_sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
+        "dependencies": {
+          "WongMRCATruncation": "e5d60ae76418383d1642cf2e3c20d8281adde28b4a1fc5fd324548ac823c1b3d",
+          "WongLocalSimplification": "b1ba98f010b75b91ee2091a20910e4acee214130e83e9e6f7e638ed044a379cb",
+          "WongIntervalCanonicalization": "823d6327097343cdfae988dde452225aba9656eeeb5e7b6ecd7e07049ddf30cb"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 20.423,
+      "log_sha256": "d178fdbc8c09252b4a14bbc7231515d883baabdf7f30ff3ee5c23f606beb81bd",
+      "object_sha256": "c80d1b96844aa32536ba28d3dc9143ab36f886464ead75bfa90617cb6003b8e6"
+    },
+    {
+      "module": "WongTimedHistory",
+      "source": "real\\WongTimedHistory.lean",
+      "signature": {
+        "source_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+        "dependencies": {
+          "WongEventEncoding": "d07faa1ccd7795e89f93b418c74533283c122b790102229a35e841222d7fbc3e",
+          "SamuelAlexanderResearch.AncestryContraction": "5b308dbb373ae1bdcf132eb469e89f4fc2514de062468fdc7b602f9fe436a28f"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.364,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "af89c09c6550d0287ef9661b46ea81edcafae24512a60b59d2ab9e2ce44ea21d"
+    },
+    {
+      "module": "WongSampleTracing",
+      "source": "real\\WongSampleTracing.lean",
+      "signature": {
+        "source_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+        "dependencies": {
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 14.761,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "8da5b6d2c6921e2e9526c7ae1c4f1cff3b708e7fc89c485250774934e2a0c95b"
+    },
+    {
+      "module": "WongRecordTracing",
+      "source": "real\\WongRecordTracing.lean",
+      "signature": {
+        "source_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+        "dependencies": {
+          "WongSampleTracing": "8da5b6d2c6921e2e9526c7ae1c4f1cff3b708e7fc89c485250774934e2a0c95b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 14.774,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "0903711c1fbd2edf09988ae095b577a368d25a9bd17d1ed69e4682cca04ba825"
+    },
+    {
+      "module": "WongMemoizedTracing",
+      "source": "real\\WongMemoizedTracing.lean",
+      "signature": {
+        "source_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+        "dependencies": {
+          "WongRecordTracing": "0903711c1fbd2edf09988ae095b577a368d25a9bd17d1ed69e4682cca04ba825"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 15.979,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "1d20a4f17e2dd289ddb7eecaefc6c8b0bf359df91f06bbb51a7da86cb25e016e"
+    },
+    {
+      "module": "FounderWindow",
+      "source": "real\\FounderWindow.lean",
+      "signature": {
+        "source_sha256": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesBridge": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.927,
+      "log_sha256": "325fff4e39db9f62bc3ba8926c7c6cca7e6cc2b913f57bbdba011399eff6f024",
+      "object_sha256": "f1c50ffeb9ae27038fcc2d359b5cad25cf0a7b0a182201895549d8587842fd0b"
+    },
+    {
+      "module": "DirectedIAP",
+      "source": "real\\DirectedIAP.lean",
+      "signature": {
+        "source_sha256": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0",
+        "dependencies": {
+          "FounderWindow": "f1c50ffeb9ae27038fcc2d359b5cad25cf0a7b0a182201895549d8587842fd0b",
+          "SamuelAlexanderResearch.ProductiveCore": "f1a5632720b6119801d3c575b0a937274a9d0bba72901ae241e838b5f19e8fb8"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.17,
+      "log_sha256": "cecf58538709277cefb95227f94ab1c015ffd8a06ba82cd39eb310da0f8202c6",
+      "object_sha256": "1d92c1a73f0e20c0041810197625997e9dac97236b38fc7c7cbcf4cbecca1686"
+    },
+    {
+      "module": "SeedIntersections",
+      "source": "real\\SeedIntersections.lean",
+      "signature": {
+        "source_sha256": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e",
+        "dependencies": {
+          "SamuelAlexanderResearch.ProductiveCore": "f1a5632720b6119801d3c575b0a937274a9d0bba72901ae241e838b5f19e8fb8"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.741,
+      "log_sha256": "9c59d70bc5c90f9b21025c39226940c8ad3786f8f9071584e0b43ab535aa4f45",
+      "object_sha256": "5f81dc1e7bf9d61cbf9aab1ff59a99d549ff79e5369dd0f81f0199782df02ef6"
+    },
+    {
+      "module": "RealFounderWindow",
+      "source": "real\\RealFounderWindow.lean",
+      "signature": {
+        "source_sha256": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9",
+        "dependencies": {
+          "SamuelAlexanderResearch.BirthOrder": "794b54755fdfc364d27414a0e33a43bb0c4f57743419af70b3f78e7e0a95f6f4",
+          "FounderWindow": "f1c50ffeb9ae27038fcc2d359b5cad25cf0a7b0a182201895549d8587842fd0b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 17.335,
+      "log_sha256": "64c3c3d0e4b8e516268431b294531de342bb8d66f5de6946362042ecf25011b4",
+      "object_sha256": "b7f4f38b1902e2ddfa2eb5d9c84c9a671210d2ec973534f287bf66b63677d5c9"
+    },
+    {
+      "module": "FounderMaximal",
+      "source": "real\\FounderMaximal.lean",
+      "signature": {
+        "source_sha256": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4",
+        "dependencies": {
+          "DirectedIAP": "1d92c1a73f0e20c0041810197625997e9dac97236b38fc7c7cbcf4cbecca1686",
+          "RealFounderWindow": "b7f4f38b1902e2ddfa2eb5d9c84c9a671210d2ec973534f287bf66b63677d5c9"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 16.503,
+      "log_sha256": "bfeda9f607100914c4cafcaf2c0383a76dbf5030e6f21b06c8a52ea9cb5ce4ad",
+      "object_sha256": "62e648c15989d7583922fb4e14b6134b8a76f3134b0ce2cf82fbd311bff121b2"
+    },
+    {
+      "module": "SpeciesReindex",
+      "source": "real\\SpeciesReindex.lean",
+      "signature": {
+        "source_sha256": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd",
+        "dependencies": {
+          "RealFounderWindow": "b7f4f38b1902e2ddfa2eb5d9c84c9a671210d2ec973534f287bf66b63677d5c9"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 17.012,
+      "log_sha256": "842a4dee33aa4887a52a522558e197a67dfdffffa138787b0faba5fdd797e25e",
+      "object_sha256": "6af2c55d3fca9ff2bc780c5ae69f09bb1bf60a8210a8ca163b7dd72217c42bc0"
+    },
+    {
+      "module": "SpeciesSeed",
+      "source": "real\\SpeciesSeed.lean",
+      "signature": {
+        "source_sha256": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb",
+        "dependencies": {
+          "SeedIntersections": "5f81dc1e7bf9d61cbf9aab1ff59a99d549ff79e5369dd0f81f0199782df02ef6",
+          "DirectedIAP": "1d92c1a73f0e20c0041810197625997e9dac97236b38fc7c7cbcf4cbecca1686"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 11.595,
+      "log_sha256": "f986740f11d2a0645c4e5eeb59798d9d854a3048cc65270db079ad2b1c786114",
+      "object_sha256": "7048dbed594a943cd683a1fe3a6e0172f732d4ab1a816affe7468a05a988f2d4"
+    },
+    {
+      "module": "RealSpeciesTheorem",
+      "source": "real\\RealSpeciesTheorem.lean",
+      "signature": {
+        "source_sha256": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540",
+        "dependencies": {
+          "FounderMaximal": "62e648c15989d7583922fb4e14b6134b8a76f3134b0ce2cf82fbd311bff121b2",
+          "SpeciesReindex": "6af2c55d3fca9ff2bc780c5ae69f09bb1bf60a8210a8ca163b7dd72217c42bc0",
+          "SpeciesSeed": "7048dbed594a943cd683a1fe3a6e0172f732d4ab1a816affe7468a05a988f2d4"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 15.837,
+      "log_sha256": "e1b7322eb4b3b64355980368a5311f5ab36f7b26d04b7caba217c6c185ccc68a",
+      "object_sha256": "02f6b3357bd69b058aeede199bfed424e9fb5e036eaacb6a380c84490c5398c7"
+    },
+    {
+      "module": "WongDiamond",
+      "source": "real\\WongDiamond.lean",
+      "signature": {
+        "source_sha256": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd",
+        "dependencies": {
+          "WongEventEncoding": "d07faa1ccd7795e89f93b418c74533283c122b790102229a35e841222d7fbc3e",
+          "SamuelAlexanderResearch.AncestryContraction": "5b308dbb373ae1bdcf132eb469e89f4fc2514de062468fdc7b602f9fe436a28f"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 15.196,
+      "log_sha256": "c980f9a0a974e771e79f9d22c2e707513d5c9084162fa51d688ecc4bd47ac1cb",
+      "object_sha256": "471a2546c427a30210e0d526ce5b768640b2097fdcd7d3c5eb4d36ad25ee4c2e"
+    },
+    {
+      "module": "WongLocalArity",
+      "source": "real\\WongLocalArity.lean",
+      "signature": {
+        "source_sha256": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55",
+        "dependencies": {
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.995,
+      "log_sha256": "798eb2536d4f73a56c1f37ad8c6017416e662e5096ea78948cb4628e9ebd212c",
+      "object_sha256": "7186dd57efced21441fe22a4f471a398d3b4787715b576786d9a71dfa706f19e"
+    },
+    {
+      "module": "WongExamples",
+      "source": "real\\WongExamples.lean",
+      "signature": {
+        "source_sha256": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59",
+        "dependencies": {
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 14.554,
+      "log_sha256": "49b932a9051075cc1407e0f7bc6f0ae7ffa8957ce4b474a5916c33b33e953c07",
+      "object_sha256": "a780b9c52bfcbb44cb1b03f6ed00e4037dcc84586185f6b380a4d1b62ad4f8f3"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FinitePhasePaths",
+      "source": "lean\\SamuelAlexanderResearch\\FinitePhasePaths.lean",
+      "signature": {
+        "source_sha256": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.903,
+      "log_sha256": "e8744fb82a3ca8e7c6569492ea6258081cb676f42e7d6ab2e128dee6ccc163e5",
+      "object_sha256": "6fd3533d2df2fc89fd5001bc18897ec4eb93553c57f98cee1034b7c9839f8319"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PortDynamics",
+      "source": "lean\\SamuelAlexanderResearch\\PortDynamics.lean",
+      "signature": {
+        "source_sha256": "445c6ac224b99c66199a157b8895161892954d1584053d2d3440b6f7e4fecd7d",
+        "dependencies": {
+          "SamuelAlexanderResearch.FinitePhasePaths": "6fd3533d2df2fc89fd5001bc18897ec4eb93553c57f98cee1034b7c9839f8319"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 6.099,
+      "log_sha256": "169471212d703454ed75e17def5ece8f180733e063d80c9e2ea857c116dbbbf2",
+      "object_sha256": "650681df64f085fcc283dfd671bfca5f26ff7a9b264fa504e5807c355c1baed4"
+    },
+    {
+      "module": "PortEncoding",
+      "source": "real\\PortEncoding.lean",
+      "signature": {
+        "source_sha256": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4",
+        "dependencies": {
+          "SamuelAlexanderResearch.PortDynamics": "650681df64f085fcc283dfd671bfca5f26ff7a9b264fa504e5807c355c1baed4",
+          "SamuelAlexanderResearch.InfiniteConservation": "2eac5ba717ae02598dbf827d53e9e34cd5d16c17d1bd96dc1c46440789f9b5f9"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 18.087,
+      "log_sha256": "8cdfd7f79810c8c74b219ca68d9de9066e90f7a335aefb835313e63f9bfc51b7",
+      "object_sha256": "e01f885402b024ef8f0cafe2afc9727f36dbe259dd00d8895baba88ad92ac8cf"
+    },
+    {
+      "module": "SamuelAlexanderResearch.StatefulCA",
+      "source": "lean\\SamuelAlexanderResearch\\StatefulCA.lean",
+      "signature": {
+        "source_sha256": "f02f2b808a0c15d85b26c55559b54621599e89a04c44957679612f24bd4c9bba",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 5.233,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "dbc72fd6d0cf03fc2750c8720d0a45a90cd5ae0f69c4c0427f2ec596a6a498af"
+    },
+    {
+      "module": "StatefulCAReal",
+      "source": "real\\StatefulCAReal.lean",
+      "signature": {
+        "source_sha256": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7",
+        "dependencies": {
+          "SamuelAlexanderResearch.StatefulCA": "dbc72fd6d0cf03fc2750c8720d0a45a90cd5ae0f69c4c0427f2ec596a6a498af"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 19.234,
+      "log_sha256": "abd1471f1148e23e482696db642f5b62cc715680b1a9a585d818d593bb4377b3",
+      "object_sha256": "55436d1c05d9ef998910819ce64ccbf9d457f2f64657b08278a823a101a5f3d1"
+    },
+    {
+      "module": "RealAudit",
+      "source": "real\\RealAudit.lean",
+      "signature": {
+        "source_sha256": "a3fdcc9e804a51524032791e3bccb3954209e773e5fc581a17987b4bbe1eabc0",
+        "dependencies": {
+          "WongDatedSupport": "cf9c1f198b14d456ba4a48ade946f3b3fecd6d3af8e9e88f5ec15fed41285693",
+          "WongMarkedSupport": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695",
+          "WongPedigreeRobust": "38f3eb8bbaf81f7ac785d2df399b5119c2ccc4f4492ba02a3630be94768f33f4",
+          "WongMarkedRecorder": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663",
+          "WongMarkedLaw": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932",
+          "WongMarkedProcess": "2e9bd3f41a07aa0124e4a6da02eb1bf2e7c3e9520e146e8f466eb60ade6a5c59",
+          "WongMarkedMeasurable": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05",
+          "WongAdaptiveSelection": "e4fd7da691c45453e4278cace23d5046b0443af80a6ba86f9dde1e283b4effd2",
+          "WongMarkedDated": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515",
+          "WongPedigreeBridge": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db",
+          "WongWaitingTimes": "8a4842a646cb15e50b402e976fc9c3049d95dcaf9f3da9dc402c251692d8d24d",
+          "WongBigARGDrift": "c7f502652d43694088624ee7d23ec32cf00f03407e01b5b8072c7300b6c71d77",
+          "WongCountChain": "ca4a3d17d7194ddf976bec71049becd8a421b514c7ac438b319932445ae755b3",
+          "WongBigARGAbsorption": "e372f7fc3c96d4b830add9d714d025f572169dfc73abf59a074180ef415f0c89",
+          "WongMRCATruncation": "e5d60ae76418383d1642cf2e3c20d8281adde28b4a1fc5fd324548ac823c1b3d",
+          "WongIntervalCanonicalization": "823d6327097343cdfae988dde452225aba9656eeeb5e7b6ecd7e07049ddf30cb",
+          "WongSimplificationNormalForm": "c80d1b96844aa32536ba28d3dc9143ab36f886464ead75bfa90617cb6003b8e6",
+          "WongTimedHistory": "af89c09c6550d0287ef9661b46ea81edcafae24512a60b59d2ab9e2ce44ea21d",
+          "WongMemoizedTracing": "1d20a4f17e2dd289ddb7eecaefc6c8b0bf359df91f06bbb51a7da86cb25e016e",
+          "WongLocalSimplification": "b1ba98f010b75b91ee2091a20910e4acee214130e83e9e6f7e638ed044a379cb",
+          "WongEventDecoding": "6a21304ade5af19c31e48a99f47d9540f91cffd7e334ca9f21ff402891dcb75b",
+          "WongRecordTracing": "0903711c1fbd2edf09988ae095b577a368d25a9bd17d1ed69e4682cca04ba825",
+          "WongSampleTracing": "8da5b6d2c6921e2e9526c7ae1c4f1cff3b708e7fc89c485250774934e2a0c95b",
+          "FounderWindow": "f1c50ffeb9ae27038fcc2d359b5cad25cf0a7b0a182201895549d8587842fd0b",
+          "DirectedIAP": "1d92c1a73f0e20c0041810197625997e9dac97236b38fc7c7cbcf4cbecca1686",
+          "SeedIntersections": "5f81dc1e7bf9d61cbf9aab1ff59a99d549ff79e5369dd0f81f0199782df02ef6",
+          "RealFounderWindow": "b7f4f38b1902e2ddfa2eb5d9c84c9a671210d2ec973534f287bf66b63677d5c9",
+          "FounderMaximal": "62e648c15989d7583922fb4e14b6134b8a76f3134b0ce2cf82fbd311bff121b2",
+          "SpeciesReindex": "6af2c55d3fca9ff2bc780c5ae69f09bb1bf60a8210a8ca163b7dd72217c42bc0",
+          "SpeciesSeed": "7048dbed594a943cd683a1fe3a6e0172f732d4ab1a816affe7468a05a988f2d4",
+          "RealSpeciesTheorem": "02f6b3357bd69b058aeede199bfed424e9fb5e036eaacb6a380c84490c5398c7",
+          "FiniteGenomeIdentifiability": "5d44a6546bcc44c4adae478791dd1755606e6cdd97748585670a8ac5927e7f62",
+          "WongDiamond": "471a2546c427a30210e0d526ce5b768640b2097fdcd7d3c5eb4d36ad25ee4c2e",
+          "WongSimplification": "72eff00646f03b7c376bb6d0f7939dccd2c868418929a47fe0b9b306d298fafc",
+          "WongIntervalNormalization": "eed7899e2900a308ddbb242c6015760a50b15dc8d68119bc66b42dc3a5f86e50",
+          "WongBreakpointCells": "e884ce539df2b694700781163e9dffa6689f1c8362dd327c158a5bc935634d38",
+          "WongEventEncoding": "d07faa1ccd7795e89f93b418c74533283c122b790102229a35e841222d7fbc3e",
+          "WongLocalArity": "7186dd57efced21441fe22a4f471a398d3b4787715b576786d9a71dfa706f19e",
+          "WongExamples": "a780b9c52bfcbb44cb1b03f6ed00e4037dcc84586185f6b380a4d1b62ad4f8f3",
+          "WongAlexander": "c1bc9de23f065fb0ff02af45fbb2b9affe631eee5a4252c6894d66e66791231a",
+          "WongGARG": "f4c9aa2b2c93bef486e845b82980ce19b40d6d2cf86cbb47505e41f824c3db11",
+          "RealBridges": "4773b39adbe02ca956d108ef5ad4613dde2a15c53fd5f3f12375657772105acf",
+          "PortEncoding": "e01f885402b024ef8f0cafe2afc9727f36dbe259dd00d8895baba88ad92ac8cf",
+          "StatefulCAReal": "55436d1c05d9ef998910819ce64ccbf9d457f2f64657b08278a823a101a5f3d1"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 29.742,
+      "log_sha256": "1918c103c9023cee037c61bf89fbf536175870f3985cfb1120c6b04ed6df3a11",
+      "object_sha256": "6b9232227a56bf5d7b45b12c4b30ce7fb0e783ec1baaf6fc8d846e64a8c35681"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Requested import closure only; source correspondence and full repository verification are separate."
+}

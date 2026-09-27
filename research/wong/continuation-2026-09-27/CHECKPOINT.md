@@ -1,5 +1,7 @@
 # Exact checkpoint and continuation route
 
+**Verified proof commit:** `1ac3dd9446e7264336f0764040ff47ad684099cb`. Local combined PASS: 77 project modules and 415 selected declarations (317 prior, 98 additions); Lean 4.33.1 with the pinned Mathlib revision. Only `propext`, `Classical.choice`, and `Quot.sound` appear. Final audit target recompiled at a clean commit with source/object-validated dependency reuse. [Receipt and scope](verification/RESULT.json).
+
 The complete objective is not being declared finished. The marked Big-ARG
 construction and its conditional connection to Alexander now have general
 proofs; the paper also contains Little-ARG, asymptotic, algorithmic and empirical

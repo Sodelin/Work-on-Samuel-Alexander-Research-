@@ -289,9 +289,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "M02",
@@ -377,9 +378,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "M03",
@@ -507,9 +509,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "M05",
@@ -592,9 +595,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "M06",
@@ -907,9 +911,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "M11",
@@ -1529,7 +1534,7 @@
         "WongWaitingTimes.holdingLaw_survival_cylinder",
         "WongWaitingTimes.joint_holding_observation"
       ],
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT",
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL",
       "pre_waiting_time_contract": {
         "status": "partial",
         "existing_evidence": "WongCountChain constructs the actual two-outcome stopped count kernel and Ionescu-Tulcea path law. WongBigARGAbsorption identifies both singleton masses with literal split/merger rate ratios, theta=2*b/a, specializing to 2*rho for the source rates.",
@@ -1575,7 +1580,8 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       }
     },
     {
@@ -1645,7 +1651,7 @@
         "WongWaitingTimes.literal_rates_ae_start_one_zero_time",
         "WongWaitingTimes.literal_rates_ae_positive_physical_time"
       ],
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT",
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL",
       "pre_waiting_time_contract": {
         "status": "partial",
         "existing_evidence": "WongBigARGAbsorption internally supplies an explicit finite all-state potential and proves almost-sure eventual one and finite jump-index absorption under the actual constructed pathLaw. The final endpoint has no assumed drift, recurrence or absorption premise.",
@@ -1684,7 +1690,8 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       }
     },
     {
@@ -1920,9 +1927,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "B10",
@@ -2170,9 +2178,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "D02",
@@ -2681,9 +2690,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "E05",
@@ -3060,9 +3070,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "G04",
@@ -3520,9 +3531,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "H02",
@@ -3613,9 +3625,10 @@
         ],
         "evidence_ledger": "../continuation-2026-09-27/source-audit/final-coverage-delta.json",
         "verification": "../continuation-2026-09-27/verification/RESULT.json",
-        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed."
+        "scope": "Continuous-breakpoint marked Big ARG and conditional pedigree bridge; whole-paper completion is not claimed.",
+        "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb"
       },
-      "verification_status": "LOCAL_PASSED_SOURCES_EXACT_COMBINED_COMMIT_IN_CONTINUATION_RECEIPT"
+      "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
     },
     {
       "id": "H03",
@@ -5192,6 +5205,8 @@
       "WongDatedSupport.measurable_validDated",
       "WongDatedSupport.historyLaw_ae_validDated"
     ],
-    "robust_bridge_endpoint": "WongPedigreeRobust.iap_iff_of_finite_projection_errors"
+    "robust_bridge_endpoint": "WongPedigreeRobust.iap_iff_of_finite_projection_errors",
+    "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb",
+    "verification_status": "PASS_LOCAL_EXACT_COMMIT_415_REAL"
   }
 }

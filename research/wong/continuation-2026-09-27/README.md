@@ -1,5 +1,7 @@
 # From a recombining genome history to an organism ancestry model
 
+**Local exact-commit verification passed:** `1ac3dd9446e7264336f0764040ff47ad684099cb`, 77 project modules and 415 selected declarations, including 98 additions. [Evidence and scope](verification/RESULT.json). This is a scoped marked-process and bridge result, not whole-paper completion.
+
 This continuation starts from research branch commit
 `01db8c4cbb82000950ff7d3e7252b5438416c7c3` and the current public progress
 report (GitHub blob `cc07be5e143938e935197ddfb962b9e046f4fed5`). The prior
