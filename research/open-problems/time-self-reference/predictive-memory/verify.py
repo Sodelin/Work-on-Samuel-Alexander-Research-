@@ -120,7 +120,7 @@ def main():
     receipt_path = logs / "PROOF-RECEIPT.json"
 
     def save():
-        receipt_path.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+        receipt_path.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8", newline="\n")
 
     endpoints = []
     invalidated = False
@@ -139,7 +139,7 @@ def main():
                               errors="replace", stdout=subprocess.PIPE,
                               stderr=subprocess.STDOUT, timeout=180))
         log_name = name.replace(".", "-") + ".txt"
-        (logs / log_name).write_text(proc.stdout, encoding="utf-8")
+        (logs / log_name).write_text(proc.stdout, encoding="utf-8", newline="\n")
         receipt["modules"].append({
             "module": name, "source_path": src.relative_to(ROOT).as_posix(),
             "source_sha256": sha(src), "compiler_exit_code": proc.returncode,
@@ -168,11 +168,11 @@ def main():
     all_endpoints = endpoints + historical
     audit = build / "PredictiveMemoryAudit.lean"
     audit.write_text("\n".join([f"import {m}" for m in ["MergeHistoryProjection"] + args.modules] +
-                               [f"#print axioms {e}" for e in all_endpoints]) + "\n", encoding="utf-8")
+                               [f"#print axioms {e}" for e in all_endpoints]) + "\n", encoding="utf-8", newline="\n")
     proc = subprocess.run([args.lean, audit.name], cwd=build, env=env, text=True,
                           encoding="utf-8", errors="replace", stdout=subprocess.PIPE,
                           stderr=subprocess.STDOUT, timeout=180)
-    (logs / "axioms.txt").write_text(proc.stdout, encoding="utf-8")
+    (logs / "axioms.txt").write_text(proc.stdout, encoding="utf-8", newline="\n")
     reports = re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", proc.stdout)
     no_axioms = re.findall(r"'([^']+)' does not depend on any axioms", proc.stdout)
     checked = {n: [a.strip() for a in aa.replace("\n", " ").split(",") if a.strip()]

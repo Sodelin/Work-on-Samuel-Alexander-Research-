@@ -113,7 +113,7 @@ def main():
         "stable_timed_type_predictions": predictions,
         "biological_observations_used": 0, "fitted_models": 0,
     }
-    (HERE / "verification" / "EXACT-EXAMPLES.json").write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
+    (HERE / "verification" / "EXACT-EXAMPLES.json").write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8", newline="\n")
     print("PASS: global finite-state refinement, 64 ordered pairs, two exact selection/type counterexamples")
 
 
