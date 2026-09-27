@@ -1,0 +1,51 @@
+# Pedigree recovery: existing mathematics, machine formalization, and the new specialization
+
+The existing REC-GEN theorem has an ordinary mathematical proof. I did not identify a public machine-checked formalization of the full theorem in this bounded search. The ancestry owner is now implementing a smaller, stronger one-generation specialization in a separate worktree. Its general written proof is complete and independently reviewed. The latest owner snapshot reports that the common Lean model passes, the observation bridge is being checked, and graph/probability proofs remain in progress. The complete new recovery theorem is not yet reported verified in Lean.
+
+## What “already formalized” means here
+
+Kim, Mossel, Ramnarayan and Turner, [Efficient Reconstruction of Stochastic Pedigrees](https://arxiv.org/abs/2005.03810), give precise definitions and a conventional proof. Theorem 6.1 states asymptotic recovery of an induced coupled subpedigree covering a specified fraction of each generation under their idealized random pedigree and inheritance model. Its scope depends on population size, fertility, depth, independent inheritance blocks and distinct founder symbols. It is neither an unconditional recovery claim nor an assurance that every finite dataset determines its full ancestry.
+
+A Lean, Isabelle or Coq formalization would encode a precise statement and a proof checked by that system. Formalization can use classical mathematics, including classical logical principles: “classical proof” and “machine-checked proof” are not exclusive categories. The word *formal* in a mathematical paper does not itself establish proof-assistant checking.
+
+The search checked the paper, two authors' research pages ([Turner](https://paxtonturner.github.io/), [Kim](https://yk23.github.io/)), targeted title/arXiv/pedigree-plus-proof-assistant searches, and the complete 48-file tree of the [linked REC-GEN implementation](https://github.com/dvulakh/RecGen/tree/832d313b042fe74775d410d68bfebaeadef7f37c). That repository contains C++ implementation and simulation materials; no Lean, Coq, Isabelle, Agda or Mizar file was found. The result is **no public machine proof identified in these sources**, not a claim that none exists anywhere or that a new formalization would be the first.
+
+The [Mossel–Vulakh follow-up](https://psb.stanford.edu/psb-online/proceedings/psb23/mossel.pdf) studies finite simulation performance and improved heuristics. Algorithm code and simulation evidence are additional kinds of support; they do not constitute a machine-checked proof of the asymptotic theorem.
+
+## How this fits the existing project
+
+| Piece of work | Question it answers | What it does not supply |
+|---|---|---|
+| Existing checked Wong work | Does the encoded random genome-ancestry process and its recorded history satisfy the specified laws and invariants? | A general inference algorithm recovering organism parenthood from observed genomes |
+| Existing organism-ancestry bridge and counterexamples | Which properties transfer when an owner map and the stated ancestry assumptions are supplied? What information can finite records fail to determine? | Missing relatives, indefinite future ancestry, or a species classification from finite data alone |
+| REC-GEN mathematical theorem | Can a large part of a pedigree be recovered with high probability in its specified random model? | Recovery for arbitrary pedigrees or every finite realization |
+| New one-generation specialization | Can we recover the sampled children's family partition under a simpler, explicit block-copying model? | The full multigeneration REC-GEN theorem, a coupling to Wong's recombination process, or Alexander's infinite cluster properties |
+
+There is no contradiction between the negative and positive results. A negative result can show that a finite observation is compatible with different unrestricted ancestry completions. A positive statistical theorem restricts the model and quantifies a procedure's success probability under that model. A distribution may identify a family partition even though one draw from that distribution can remain ambiguous. The new specialization makes those differences precise.
+
+## The specialization now owned by “Formalize Wong ARG and ancestry”
+
+My initial proposal used triples of children sharing a symbol. The owner found a simpler and stronger estimator under the same restricted founder assumptions: join two children whenever they share a symbol at any observed block, then take connected components. The formalization effort uses that result; there is no duplicate implementation in this packet.
+
+The model fixes a partition of labeled sampled children into nonempty families. Families have disjoint founder-parent pairs. At each block all parents have distinct symbols. Every child independently copies one of its two parents with probability one half, independently between blocks. Symbols are observed exactly. There are B >= 1 blocks; family sizes are m_i. Singleton families are allowed.
+
+An edge can never cross a true family. Within a family, two children's binary inheritance vectors fail to share any block exactly when those vectors are complements. A family is disconnected precisely when all its children occupy one complementary pair of vectors, with both vectors present. Counting that failure event gives the written exact result:
+
+```math
+\Pr(\text{all sampled families recovered})
+=\prod_i\left[1-(2^{m_i-1}-1)2^{-B(m_i-1)}\right].
+```
+
+For three siblings and two independent blocks, recovery by this procedure has probability 13/16. The original triple-sharing proposal gives 7/16. Pairwise matches across different blocks can connect all siblings without any one block being shared by all three. This comparison concerns the two restricted estimators, not the full REC-GEN algorithm or statistical optimality.
+
+The written development also distinguishes identifiability of the observation distribution from success on one finite sample. Same-family pairs share at least one block with probability 1-2^(-B), while different-family pairs never do. Distinct family partitions therefore have different sharing-graph laws in this model.
+
+Independence is consequential. If every block repeats the same parental choice for each child, more positions do not provide more independent inheritance information. For three siblings the procedure's success remains 1/4 however many identical-choice blocks are observed. This is why the project must not silently equate extra positions or a higher recombination parameter with the proved independent-block model.
+
+## Ownership, evidence, and next gate
+
+The owner reports 117,642 exact finite assignments and 5,020 monotonicity controls checked, in addition to the general written proof and its independent review. Those computations support the proof-development process; they are not machine checking of the general theorem. This packet did not rerun them.
+
+The written source inspected here is `RECOVERY-THEOREM.md` in the owner's `wong-alexander-handoff/pedigree-recovery` folder, SHA-256 `eed2dd0de4c42869e2dc56d8017f7439ce9b67f606b764a8862d73a74514076e`. Implementation is in the separate `pedigree-block-recovery` checkout. The earlier 415-declaration checked ARG checkpoint remains separate and does not certify this new result.
+
+The next completion gate belongs to the owner: check the graph and finite-probability results in Lean, inspect their exact hypotheses and axioms, then record the accepted scope and proof commit. No claim of the full REC-GEN theorem being formalized should follow from completing this specialization. Source attribution remains with the existing literature, and this elementary development carries no novelty or first-formalization claim.

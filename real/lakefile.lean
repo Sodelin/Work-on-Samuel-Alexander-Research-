@@ -140,3 +140,24 @@ lean_lib WongMarkedSupport
 
 @[default_target]
 lean_lib WongDatedSupport
+
+@[default_target]
+lean_lib PedigreeBlockModel
+
+@[default_target]
+lean_lib PedigreeBlockGraph
+
+@[default_target]
+lean_lib PedigreeBlockProbability
+
+@[default_target]
+lean_lib PedigreeBlockObservation
+
+@[default_target]
+lean_lib PedigreeBlockDependence
+
+@[default_target]
+lean_lib PedigreeBlockRecovery
+
+@[default_target]
+lean_lib PedigreeBlockAudit

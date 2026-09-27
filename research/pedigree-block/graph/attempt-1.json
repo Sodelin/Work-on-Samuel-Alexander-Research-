@@ -1,0 +1,16 @@
+{
+  "module": "PedigreeBlockGraph",
+  "source": "real\\PedigreeBlockGraph.lean",
+  "signature": {
+    "source_sha256": "dc4fb6ddea73611e43c6fc99169bdba3c24b49d54eb7ae45cef43d0c8f501437",
+    "dependencies": {
+      "PedigreeBlockModel": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 1,
+  "seconds": 12.553,
+  "log_sha256": "af591877e9b3e7cec5be285133fdaab0dd91a1b003112ac89905158ca373dff6",
+  "object_sha256": null
+}

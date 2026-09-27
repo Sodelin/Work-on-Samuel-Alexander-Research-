@@ -141,7 +141,9 @@ if __name__ == '__main__':
     # if a process exits unexpectedly; no stale-owner file can block research.
     import msvcrt
     BUILD.mkdir(parents=True, exist_ok=True)
-    with (BUILD / 'compiler.lock').open('a+b') as lock:
+    lock_path = pathlib.Path(os.environ.get('WONG_COMPILER_LOCK', str(BUILD / 'compiler.lock')))
+    lock_path.parent.mkdir(parents=True, exist_ok=True)
+    with lock_path.open('a+b') as lock:
         if lock.tell() == 0:
             lock.write(b'0')
             lock.flush()

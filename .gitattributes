@@ -29,3 +29,7 @@
 /real/WongDatedSupport.lean -text
 /real/WongAdaptiveSelection.lean -text
 /real/WongPedigree*.lean -text
+
+# Exact finite-family proof and evidence bytes.
+/real/PedigreeBlock*.lean -text
+/research/pedigree-block/** -text
