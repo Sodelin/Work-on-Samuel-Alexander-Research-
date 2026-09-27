@@ -1,9 +1,11 @@
 # Research map
 
+**Current public reading copy, 26 September 2026 Pacific.** Linked research sources use draft-PR snapshot `022df5fc`; the exact hosted proof checkpoint remains [`a2644182`](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/a2644182b147eb40816abb278e00c3c6d4709eb8). See the [full report](MATH-RESEARCH-REPORT.md).
+
 The user's intended cross-paper connection is **Wong et al. (2024), genome
 ancestral recombination graphs, to Alexander's organism/population and
 specieslike graph framework**. The two sources describe different mathematical
-objects. The [Wong bridge audit](notes/WONG-ALEXANDER-BRIDGE-STATUS.md) records
+objects. The [Wong bridge audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/WONG-ALEXANDER-BRIDGE-STATUS.md) records
 the exact source pages, checked adapters, missing hypotheses and next proof
 contracts. This connection now leads the research program.
 
@@ -12,7 +14,7 @@ provides an avoiding graph for each non-eventually-periodic binary word.
 Alexander's [2013 positive theorem](https://arxiv.org/html/1212.0186v2) supplies
 the other side of the classification. Our ten extensions of this construction
 have checked answers to their principal questions in the scopes recorded in
-[TEN-SOLUTIONS](TEN-SOLUTIONS.md). They do not settle the entire Wong bridge or
+[TEN-SOLUTIONS](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/TEN-SOLUTIONS.md). They do not settle the entire Wong bridge or
 all of Alexander's open problems.
 
 ~~~mermaid
@@ -51,9 +53,9 @@ The three new bridge modules received individual compiler/axiom checks in the
 current continuation: AncestralRestriction (11 selected endpoints),
 FiniteHistoryCompletion (7) and WongGARG (10). Their registration in a fresh
 aggregate receipt and hosted CI is a separate integration check. The current
-proof inventory is in [FORMALIZATION](FORMALIZATION.md) and
-[STATUS](STATUS.md), with machine-readable source inventories in
-[verification](verification). Receipts apply only to the files and toolchain
+proof inventory is in [FORMALIZATION](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/FORMALIZATION.md) and
+[STATUS](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/STATUS.md), with machine-readable source inventories in
+[verification](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification). Receipts apply only to the files and toolchain
 they identify.
 
 ## Why the Wong connection is mathematically useful
@@ -81,19 +83,19 @@ and a specified preserved structure.
 
 ## Attribution and the four deliverables
 
-The [prior-work audit](PRIOR-WORK-AUDIT.md) and
-[older-construction comparison](notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
+The [prior-work audit](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/PRIOR-WORK-AUDIT.md) and
+[older-construction comparison](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md)
 keep established ideas visible: Alexander already discusses inspecies,
 cofinite descendants, multiple-root cones, universal-graph questions and
 ordinal-rank directions. Wong already describes the genome/pedigree
 relationship and information loss in local-tree simplification.
 
-The former [full-height conjecture](research/thue-morse/FULL-HEIGHT-CONJECTURE.md)
-now has a [checked proof](notes/FULL-HEIGHT-PROOF.md) and certified evaluator.
+The former [full-height conjecture](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/research/thue-morse/FULL-HEIGHT-CONJECTURE.md)
+now has a [checked proof](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/notes/FULL-HEIGHT-PROOF.md) and certified evaluator.
 The conjecture file is a historical development artifact; its former status
 must not be copied into a current open-problem list.
 
-Use [DELIVERY-MAP](DELIVERY-MAP.md) to separate the reproducible Lean release,
+Use [DELIVERY-MAP](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/DELIVERY-MAP.md) to separate the reproducible Lean release,
 the readable email to Alexander, the focused VibeMathed candidate, and the
 public notebook. The email should explain the Wong bridge and its exact
 boundary. The VibeMathed candidate is the distinct sharp Thue–Morse
@@ -101,10 +103,10 @@ quantitative result answering the separate September manuscript's earlier
 question. A source formalization and a newly resolved open problem are
 different contribution types.
 
-For detailed review, use the [handoff](HANDOFF-FOR-ALEXANDER.md),
-[question ledger](QUESTION-LEDGER.md), and
-[reproduction guide](REPRODUCE.md). The
-[complex-systems appendix](explorations/COMPLEX-SYSTEMS-INTERFACE.md) remains
+For detailed review, use the [handoff](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/HANDOFF-FOR-ALEXANDER.md),
+[question ledger](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/QUESTION-LEDGER.md), and
+[reproduction guide](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/REPRODUCE.md). The
+[complex-systems appendix](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/explorations/COMPLEX-SYSTEMS-INTERFACE.md) remains
 exploratory; no concrete Levin, Friston, psychological or consciousness
 model is established by the present graph results.
 

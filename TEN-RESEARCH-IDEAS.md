@@ -1,9 +1,6 @@
 # Ten research proposals for Alexander's genealogy and word problems
 
-**Proposal history.** This file preserves the questions and proof status at the
-start of the ten-proposal investigation. Several statements described below as
-open have since been proved. Consult [the solution ledger](TEN-SOLUTIONS.md) for
-the current answers, exact formal statements, and remaining refinements.
+> **Original proposal snapshot.** The questions and proposed tests below record how the research began. Their present status has changed substantially: the main question in each proposal now has a scoped answer. Read [Ten solutions](TEN-SOLUTIONS.md) for the checked result and remaining boundary of each, and the [full mathematics report](MATH-RESEARCH-REPORT.md) for a plain-language account. Statements below such as “remains open,” “conjectural,” or “first decisive test” describe the **historical proposal stage**, not the current proof status. The work does not claim to solve ten historical Alexander conjectures or establish worldwide originality.
 
 These are ten precise proposals for discussion, not ten claims of established
 originality. We cannot know which ideas Alexander has considered privately.
@@ -326,13 +323,6 @@ bounds](https://arxiv.org/abs/1203.1644) are direct prior work. A new contributi
 would be an explicit stronger rule-specific certificate with a proof of its
 scope, not the general potential method.
 
-## Suggested order of attack
+## Current continuation
 
-The strongest next proof targets are the exact full-height formula in proposal
-4, general-$`k`$ rigidity in proposal 2, and the cap-two obstruction/construction
-in proposal 1. Proposals 5, 6 and 7 now contain proved quantitative results;
-their remaining questions are explicitly narrower. Proposals 3, 8 and 9 seek
-structural generalizations. Proposal 10 needs an actual improvement for a
-specified cellular-automaton rule. Alexander's 2013 Section 6 already mentions
-forbidden-subtree universality and graph-rank theory, so those are relevant
-existing connections rather than discoveries of this notebook.
+The ten main proposal questions now have scoped answers in [Ten solutions](TEN-SOLUTIONS.md). Useful remaining work includes joint phase/index digit recurrences, optimal root counts, classifications beyond minimum crossing width, stronger results for natural published cellular-automaton rules, and the separate source-question tracks in the [full report](MATH-RESEARCH-REPORT.md). The individual finite-edit optimum is included in the 405-endpoint core audit; the optional literal binary-kernel wrapper remains outside the audited import graph. Earlier suggested proof targets above remain as the development record.

@@ -1,89 +1,31 @@
 # Working on Samuel Alexander's research
 
-A public, AI-assisted mathematics notebook connecting infinite genealogical
-graphs, word avoidance, specieslike clusters and cellular automata. Source
-results, new deductions, conjectures and finite experiments are identified
-separately. Publication and outreach status are recorded with the relevant release.
+A public, AI-assisted mathematics notebook on labelled ancestry graphs, sequence avoidance, specieslike clusters, inheritance models, and related questions. The repository contains precise theorems, computations, proposed extensions, source comparisons, and verification records. They have different evidence levels.
 
-## Latest research progress
+**Start here: [Complete plain-language mathematics report](MATH-RESEARCH-REPORT.md).** It explains what was proved, what remains open, and how the work relates to Alexander's source questions. For current status by topic, read [Ten solutions](TEN-SOLUTIONS.md) and [three-track research progress](RESEARCH-PROGRESS.md).
 
-**Updated 25 September 2026.** Read the [human-readable progress report](RESEARCH-PROGRESS.md) for the latest results, evidence and remaining work.
+## Current checkpoint
 
-| Where to go | What you will find |
-|---|---|
-| [Research progress](RESEARCH-PROGRESS.md) | What changed, why it is useful, and what is still local or unfinished |
-| [Current research PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) | Newer published work awaiting integration with the main branch |
-| [Research architecture](RESEARCH-ARCHITECTURE.md) | Three research leads, shared workers, adversarial review and publication rules |
-| [Latest verified research checkpoint](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580) | Research commit `a2644182`: 405 core, 317 real and 234 standalone selected Lean declarations |
+The newer research is in [draft PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6), which is **open and unmerged**. Its last cited hosted proof checkpoint is [commit `a2644182`](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/a2644182b147eb40816abb278e00c3c6d4709eb8): [Verify run 36173386580 passed](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580) with **405 core, 317 real/Mathlib, and 234 standalone selected Lean declarations**. The numbers include supporting lemmas; they are not counts of discoveries or solved historical problems. Subsequent documentation commits do not change the proof snapshot certified by that run.
 
-**Start with the [ten research proposals](TEN-RESEARCH-IDEAS.md),
-[brief mathematical handoff](HANDOFF-FOR-ALEXANDER.md), and
-[formalization coverage](FORMALIZATION.md).** The proposals now include several
-proved quantitative and structural results, alongside precise open questions.
-
-## Current results
-
-| Direction | Result | What remains |
+| Direction | Current result | Remaining boundary |
 |---|---|---|
-| Sharp Thue-Morse avoidance | The sharp bound, equality cases, [complete all-start height formula](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/FULL-HEIGHT-PROOF.md) and [ten-coordinate integer digit recurrence](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/DIGIT-RECURRENCE.md) are proved for actual matching paths. | Broader target families and phase-dependent digit recurrences remain separate. |
-| Stability and phase | Finite edits preserve the optimal coefficient $`\frac{8}{3}`$; rebuilding the graph from phase $`a`$ gives $`3L_a(v)\le8v+5a-1`$ for $`v\ge1`$ and the same optimal coefficient, with a complete shifted equality classification. | Finer finite-edit equality sets and phase-dependent digit recurrences. |
-| Slow avoidance | For every growth function, an aperiodic target has attained finite matching maxima exceeding that function along increasing starts. | Useful upper bounds from quantitative aperiodicity data. |
-| Fixed vertex genders | A [cap-two population](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/CAP-TWO-SPECIES.md) with permanent genders avoids every prescribed non-eventually-periodic binary target while retaining whole-graph inspecies/reflection properties; the separate cap bound is optimal. | Extensions to other label classes and model assumptions remain separate. |
-| Critical degree | Full conservation and [general finite-label rigidity](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/GENERAL-RIGIDITY-THEOREM.md): eventual minimum crossing width forces exactly the next-# Working on Samuel Alexander's research
+| Thue–Morse matching paths | Sharp length bound, equality cases, [complete maximum at every start](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/FULL-HEIGHT-PROOF.md), and a proved ten-coordinate digit evaluator | Broader targets, joint phase digit recurrences, literature priority |
+| Permanent vertex labels and child cap | [Cap two suffices](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/CAP-TWO-SPECIES.md) for the specified arbitrary-target binary construction, retaining whole-graph inspecies/reflection; smaller caps fail | Optimal root count and other model classes |
+| Critical genealogy structure | Eventual minimum crossing width forces [general finite-label tail rigidity](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/GENERAL-RIGIDITY-THEOREM.md) | Larger-width classification |
+| Maximal ancestry clusters | [Real founder-window existence theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/REAL-FOUNDER-WINDOW-THEOREM.md) under explicit birth and branching assumptions | Unique partitions and empirical species identification |
+| Shared inheritance and pedigree | [One raw random history](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/research/feedback-speciation/PURE-INDUCTION-ANCESTRY.md) realizes finite marker-count histories and an almost-sure ancestry property | Separate raw infinite-stream fixation-event equality |
+| Wong ancestral recombination graphs | Deterministic simplification, count absorption, and physical waiting-time law checked at their stated scopes | Full marked spatial ARG/process correspondence |
+| Time and self-reference | Bounded exact-abstraction results and a reviewed two-model information-loss example | Broad source questions and source-specific equilibrium framework |
 
-A public, AI-assisted mathematics notebook connecting infinite genealogical
-graphs, word avoidance, specieslike clusters and cellular automata. Source
-results, new deductions, conjectures and finite experiments are identified
-separately. Publication and outreach status are recorded with the relevant release.
+## Where to look
 
-## Latest research progress
+1. [Mathematics research report](MATH-RESEARCH-REPORT.md): a friend-readable account of the whole project, including evidence and remaining work.
+2. [Ten solutions](TEN-SOLUTIONS.md): the exact status of the ten notebook proposals. The [original proposals](TEN-RESEARCH-IDEAS.md) are retained as development history.
+3. [Question ledger](QUESTION-LEDGER.md): source attribution and the boundary of each answer.
+4. [Research progress](RESEARCH-PROGRESS.md): current Wong, inheritance/ancestry, and abstraction tracks.
+5. [Formalization](FORMALIZATION.md) and [status](STATUS.md): precise encoded claims and checks; [research architecture](RESEARCH-ARCHITECTURE.md) explains how publication and review are separated.
 
-**Updated 25 September 2026.** Read the [human-readable progress report](RESEARCH-PROGRESS.md) for the latest results, evidence and remaining work.
+Alexander's [2013 unavoidability theorem](https://arxiv.org/html/1212.0186v2), [inspecies work](https://arxiv.org/html/1201.2869), and [2026 cluster examples](https://arxiv.org/html/2602.05274v1) retain their attribution. The separate [classification manuscript](https://github.com/avg-netizen/biological-unavoidability) supplies the target-dependent avoiding graph. Formal verification of a stated theorem does not establish worldwide novelty, biological applicability, or external expert endorsement.
 
-| Where to go | What you will find |
-|---|---|
-| [Research progress](RESEARCH-PROGRESS.md) | What changed, why it is useful, and what is still local or unfinished |
-| [Current research PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6) | Newer published work awaiting integration with the main branch |
-| [Research architecture](RESEARCH-ARCHITECTURE.md) | Three research leads, shared workers, adversarial review and publication rules |
-| [Latest verified research checkpoint](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580) | Research commit `a2644182`: 405 core, 317 real and 234 standalone selected Lean declarations |
-
-**Start with the [ten research proposals](TEN-RESEARCH-IDEAS.md),
-[brief mathematical handoff](HANDOFF-FOR-ALEXANDER.md), and
-[formalization coverage](FORMALIZATION.md).** The proposals now include several
-proved quantitative and structural results, alongside precise open questions.
-
-## Current results
-
-| Direction | Result | What remains |
-|---|---|---|
-| Sharp Thue-Morse avoidance | The sharp bound, equality cases, [complete all-start height formula](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/FULL-HEIGHT-PROOF.md) and [ten-coordinate integer digit recurrence](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/DIGIT-RECURRENCE.md) are proved for actual matching paths. | Broader target families and phase-dependent digit recurrences remain separate. |
-| Stability and phase | Finite edits preserve the optimal coefficient $`\frac{8}{3}`$; rebuilding the graph from phase $`a`$ gives $`3L_a(v)\le8v+5a-1`$ for $`v\ge1`$ and the same optimal coefficient, with a complete shifted equality classification. | Finer finite-edit equality sets and phase-dependent digit recurrences. |
-| Slow avoidance | For every growth function, an aperiodic target has attained finite matching maxima exceeding that function along increasing starts. | Useful upper bounds from quantitative aperiodicity data. |
-| Fixed vertex genders | A [cap-two population](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/CAP-TWO-SPECIES.md) with permanent genders avoids every prescribed non-eventually-periodic binary target while retaining whole-graph inspecies/reflection properties; the separate cap bound is optimal. | Extensions to other label classes and model assumptions remain separate. |
-k`$ tail adjacency. Binary fixed-gender universality has its separate hypotheses. | Larger-width structure; one isolated minimum cut does not establish the tail theorem. |
-| Formal model closure | The positive binary theorem, birth-order enumeration, actual real-birthdate binary classification, and general degree/root transport are encoded. | General finite-alphabet positive formalization and full CA dynamics. |
-| Species and observation | General IAP/inspecies/root-cone criteria, exact avoiding-graph cones, and indexed ancestry/observation-recovery interfaces. | Broad cluster-core and finite-boundary repair theorems. |
-
-The [core audit](verification/formal-audit.json) and [real-number audit](verification/real-audit.json)
-record exact endpoints, source hashes and permitted proof dependencies. The
-default library is Std-only; the real-number project has a pinned Mathlib
-dependency. The [status table](STATUS.md) states the mathematical boundaries.
-
-## Sources and navigation
-
-- [Question ledger](QUESTION-LEDGER.md): where each question originated and what has been answered.
-- [Research map](RESEARCH-MAP.md): motivation and relationships between directions.
-- [Ten proposals](TEN-RESEARCH-IDEAS.md): precise targets, proved seeds and next decisive tests.
-- [Prior-work audit](PRIOR-WORK-AUDIT.md) and [additional source checks](notes/ADDITIONAL-SOURCE-CHECKS.md): verified precedents and remaining priority uncertainty.
-- [Biological model scope](BIOLOGICAL-MODEL-SCOPE.md): organism genealogy, fixed genders and genetic inheritance are distinct models.
-- [Sharp proof](research/thue-morse/NEXT-INVARIANT.md), [proved full-height formula](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/notes/FULL-HEIGHT-PROOF.md), and [formalization notes](FORMALIZATION.md): reviewable mathematics.
-- [Reproduction](REPRODUCE.md), [statement review](verification/GAP-CLOSURE-REVIEW.md), and [verification receipt](verification/FORMALIZATION-RECEIPT.md): exact evidence.
-- [Sources](SOURCES.md), [provenance](PROVENANCE.md) and [editable outreach draft](OUTREACH-DRAFT.md): attribution and an optional owner-controlled review route.
-
-Alexander's [2013 positive theorem](https://arxiv.org/html/1212.0186v2), his
-[inspecies results](https://arxiv.org/html/1201.2869), and his
-[2026 cluster examples](https://arxiv.org/html/2602.05274v1) remain attributed
-prior work. The separate [classification manuscript](https://github.com/avg-netizen/biological-unavoidability)
-supplies the target-dependent avoiding graph. The quantitative and structural
-extensions here require external mathematical and priority review; formal
-verification is evidence for the encoded statements, not a novelty certificate.
+The submission titled “Exact Thue–Morse matching heights in an avoiding population” was observed in [VibeMathed's under-review queue](https://vibemathed.com/queue) on 27 September 2026 UTC. Queue presence is not a curator decision.

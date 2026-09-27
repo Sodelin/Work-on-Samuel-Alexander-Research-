@@ -1,8 +1,10 @@
 # Verification status
 
+**Current public reading copy, 26 September 2026 Pacific.** Linked proof sources use draft-PR snapshot `022df5fc`; the exact hosted proof checkpoint remains [`a2644182`](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/a2644182b147eb40816abb278e00c3c6d4709eb8). See the [full report](MATH-RESEARCH-REPORT.md).
+
 ## Wong graph mathematics and scope
 
-The new [Wong–Alexander outline](WONG-ALEXANDER-OUTLINE.md) records the composed
+The new [Wong–Alexander outline](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/WONG-ALEXANDER-OUTLINE.md) records the composed
 interfaces and exact limits. See the endpoint manifests and final source-hash
 receipts for the checked inventory.
 
@@ -24,8 +26,8 @@ validity require separate evidence; a passing checker is not a novelty claim.
 
 
 Updated during the ten-proposal solution pass of 25 September 2026 UTC.
-The exact checked files and endpoint counts are in the [core](verification/formal-audit.json)
-and [real](verification/real-audit.json) receipts. [FORMALIZATION.md](FORMALIZATION.md)
+The exact checked files and endpoint counts are in the [core](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/formal-audit.json)
+and [real](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/real-audit.json) receipts. [FORMALIZATION.md](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/FORMALIZATION.md)
 states the actual models and hypotheses.
 
 | Claim | Status | Remaining boundary |
@@ -50,17 +52,17 @@ states the actual models and hypotheses.
 | Stateful cellular automaton | A complete three-state rule has exact static east support one, but no finite-support horizontally moving spaceship. Both rational and literal real convex-hull statements are checked. | This is a synthetic rule and a specified static certificate class, not an improvement for Life-like or published rules. |
 | Automatic-target decision corollary | Written combination of cited results. | No decision implementation or Lean proof. |
 
-The [independent statement review](verification/GAP-CLOSURE-REVIEW.md) addresses
+The [independent statement review](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/GAP-CLOSURE-REVIEW.md) addresses
 model fidelity separately from the axiom audit. The latter builds dependencies
 before checking selected endpoints and allows only `propext`, `Classical.choice`
 and `Quot.sound`. A successful finite experiment is never promoted to a
 universal theorem by this ledger.
 
-The [current workflow](.github/workflows/verify.yml) runs the core build/audit,
+The [current workflow](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/.github/workflows/verify.yml) runs the core build/audit,
 six finite-path tests, local certificate check, interval/trajectory diagnostics,
 and pinned real-project audit. Older local and CI receipts remain historical
 records. Their success does not certify a later patch.
 
 ## Current integrated receipt
 
-The follow-up aggregate checks passed: **405 core endpoints and 101 mathlib endpoints**, including 43 newly registered endpoints in ten new modules. Only `propext`, `Classical.choice` and `Quot.sound` occur. See the source hashes in [the core receipt](verification/formal-audit.json) and [the mathlib receipt](verification/real-audit.json). Hosted verification must match the publication commit.
+The follow-up aggregate checks passed: **405 core endpoints and 101 mathlib endpoints**, including 43 newly registered endpoints in ten new modules. Only `propext`, `Classical.choice` and `Quot.sound` occur. See the source hashes in [the core receipt](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/formal-audit.json) and [the mathlib receipt](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/022df5fc1240c76c6837e89d38e3009cd020b341/verification/real-audit.json). Hosted verification must match the publication commit.
