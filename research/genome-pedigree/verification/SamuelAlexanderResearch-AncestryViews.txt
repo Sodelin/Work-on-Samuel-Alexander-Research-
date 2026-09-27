@@ -1,0 +1,6 @@
+'AncestryViews.reach_mono' does not depend on any axioms
+'AncestryViews.fixed_index_path_survives' does not depend on any axioms
+'AncestryViews.reach_time_increases' does not depend on any axioms
+'AncestryViews.erased_path_time_increases' does not depend on any axioms
+'AncestryViews.erasure_converse_fails' depends on axioms: [propext, Quot.sound]
+'AncestryViews.erased_graph_does_not_determine_fixed_index_ancestry' depends on axioms: [propext, Quot.sound]

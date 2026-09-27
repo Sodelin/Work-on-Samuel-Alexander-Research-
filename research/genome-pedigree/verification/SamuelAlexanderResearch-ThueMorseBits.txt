@@ -1,0 +1,8 @@
+'ThueMorseBits.t_zero' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_double' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_double_add_one' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_dyadic_block' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_power_sub_three' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_power_sub_two' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_twice_power_sub_four' depends on axioms: [propext, Quot.sound]
+'ThueMorseBits.t_ten_pow_add_one' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,8 @@
+'PhaseShift.row_shift' depends on axioms: [propext, Quot.sound]
+'PhaseShift.edge_translate_iff' depends on axioms: [propext, Quot.sound]
+'PhaseShift.edge_subtract' depends on axioms: [propext, Quot.sound]
+'PhaseShift.prepend_shifted_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhaseShift.suffix_subtraction' depends on axioms: [propext, Quot.sound]
+'PhaseShift.cut_original_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhaseShift.thueMorse_shift_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhaseShift.thueMorse_shift_dyadic_family' depends on axioms: [propext, Classical.choice, Quot.sound]
