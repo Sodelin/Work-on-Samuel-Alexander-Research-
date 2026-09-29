@@ -1,0 +1,6 @@
+'HistoryProjection.sameOrDescendant_trans' does not depend on any axioms
+'HistoryProjection.path_projects' does not depend on any axioms
+'HistoryProjection.path_projects_strict_of_distinct_owners' does not depend on any axioms
+'HistoryProjection.locus_path_projects' does not depend on any axioms
+'HistoryProjection.erased_path_projects' does not depend on any axioms
+'HistoryProjection.interval_record_path_projects' does not depend on any axioms

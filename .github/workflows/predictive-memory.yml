@@ -1,0 +1,53 @@
+name: Predictive memory proofs
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/predictive-memory.yml'
+      - 'research/open-problems/time-self-reference/**'
+      - 'lean/**'
+      - 'real/**'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: predictive-memory-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: false
+          use-github-cache: false
+      - name: Prepare only the pinned external proof dependencies
+        working-directory: real
+        env:
+          MATHLIB_NO_CACHE_ON_UPDATE: '1'
+        run: |
+          lake update
+          lake exe cache get Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Analysis.Convex.Hull Mathlib.Data.Finset.Basic Mathlib.Data.Finset.Union Mathlib.Data.Fintype.Card Mathlib.Data.Fintype.EquivFin Mathlib.Data.Fintype.Fin Mathlib.Data.Fintype.Prod Mathlib.Data.Quot Mathlib.Logic.Function.Basic Mathlib.Probability.ProbabilityMassFunction.Constructions Mathlib.Probability.Distributions.Uniform Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity Mathlib.Tactic.Ring
+      - name: Fresh project rebuild and axiom audit
+        run: python3 research/open-problems/time-self-reference/predictive-memory/verify.py --dependency-root real
+      - name: Exact constructed examples
+        run: python3 research/open-problems/time-self-reference/predictive-memory/check_examples.py
+      - name: Validate evidence and local reading links
+        run: python3 research/open-problems/time-self-reference/predictive-memory/check_packet.py
+      - name: Check public mathematical formatting
+        run: python3 checks/check_math_format.py TIME-AND-MEMORY.md research/open-problems/time-self-reference/predictive-memory
+      - name: Preserve this run's proof receipt and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: predictive-memory-proof-evidence
+          path: research/open-problems/time-self-reference/predictive-memory/verification/

@@ -1,0 +1,6 @@
+'SamuelAlexanderResearch.ThueMorseBound.interval_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SamuelAlexanderResearch.ThueMorseBound.reachable_iff_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SamuelAlexanderResearch.ThueMorseBound.coalescence_persists' does not depend on any axioms
+'SamuelAlexanderResearch.ThueMorseBound.maximum_length_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,52 @@
+name: Genome pedigree proofs
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/genome-pedigree.yml'
+      - 'research/genome-pedigree/**'
+      - 'GENOMES-AND-PEDIGREES.md'
+      - 'lean/**'
+      - 'real/**'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: genome-pedigree-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: false
+          use-github-cache: false
+      - name: Prepare the pinned external dependencies
+        working-directory: real
+        env:
+          MATHLIB_NO_CACHE_ON_UPDATE: '1'
+        run: |
+          lake update
+          lake exe cache get Mathlib.Algebra.Order.Archimedean.Basic Mathlib.Algebra.Order.Archimedean.Real.Basic Mathlib.Analysis.Convex.Hull Mathlib.Data.Finset.Union Mathlib.Data.Fintype.EquivFin Mathlib.Data.Fintype.Prod Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity Mathlib.Tactic.Ring
+      - name: Rebuild project sources and audit every new public theorem
+        run: python3 research/genome-pedigree/verify.py --dependency-root real
+      - name: Verify receipt integrity and reading links
+        run: python3 research/genome-pedigree/check_packet.py
+      - name: Check public mathematical formatting
+        run: python3 checks/check_math_format.py GENOMES-AND-PEDIGREES.md research/genome-pedigree
+      - name: Preserve this run's proof evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: genome-pedigree-proof-evidence
+          path: research/genome-pedigree/verification/

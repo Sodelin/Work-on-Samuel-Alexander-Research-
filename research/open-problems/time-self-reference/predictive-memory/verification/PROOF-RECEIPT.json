@@ -1,0 +1,698 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "checked_at_utc": "2026-09-27T04:45:28.582756+00:00",
+  "compiler_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_commit_before_replay": "ea4d9cd09a16e617ef617d32d6e9c446617ad19c",
+  "source_identity_policy": "Per-file SHA256 below; commit may precede uncommitted input edits.",
+  "standard_axiom_allowlist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "module": "ExactAbstraction",
+      "source_path": "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "source_sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e",
+      "compiler_exit_code": 0,
+      "log": "ExactAbstraction.txt",
+      "log_sha256": "559d60266add2d3d618fa92c54625cfe943668f36d4dc772e8ff68b148bbac82"
+    },
+    {
+      "module": "MergeHistoryProjection",
+      "source_path": "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "source_sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554",
+      "compiler_exit_code": 0,
+      "log": "MergeHistoryProjection.txt",
+      "log_sha256": "c764b47ea4627bbd2d07132d258e07c8c211e867a29188fa33c4e6d0ae1511bf"
+    },
+    {
+      "module": "PredictiveState",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/PredictiveState.lean",
+      "source_sha256": "4738c91ecdac1be616ab0716c09b80aa6c40e691bcac0ef2e4298410656f6f94",
+      "compiler_exit_code": 0,
+      "log": "PredictiveState.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ControlledMemory",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/ControlledMemory.lean",
+      "source_sha256": "5d4ffca3a645e350ca42540f2b77181a3a8625b2177442ed28d501cd241b02e1",
+      "compiler_exit_code": 0,
+      "log": "ControlledMemory.txt",
+      "log_sha256": "abadae0c13d2be3f8956989612ad407d3559c8784d9b81bf240b3431ef8a3c0e"
+    },
+    {
+      "module": "HistoryObservation",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/HistoryObservation.lean",
+      "source_sha256": "2a4e6f6bc7c8fc008cff1c4563747842d8d2882d83e692637dd6657b3e777d89",
+      "compiler_exit_code": 0,
+      "log": "HistoryObservation.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestryViews",
+      "source_path": "lean/SamuelAlexanderResearch/AncestryViews.lean",
+      "source_sha256": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-AncestryViews.txt",
+      "log_sha256": "122cd242417a4429ce515faf0d66c1a858cea89805ad2c143e608d8460e6100f"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestralRestriction",
+      "source_path": "lean/SamuelAlexanderResearch/AncestralRestriction.lean",
+      "source_sha256": "9a8c8f611ccac15ddd737188bf8f5a65057d01befa52c597f2c3c7508fdd8ac1",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-AncestralRestriction.txt",
+      "log_sha256": "94481b329393da3fbe67dae8b2aa84672f7fb30176e95db275a860e1ca2badfd"
+    },
+    {
+      "module": "AncestryObservation",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/AncestryObservation.lean",
+      "source_sha256": "9790ddc196ce3ff30b6abd03a940f7cb0f1543dfb86f954f85ffe9fc87890f50",
+      "compiler_exit_code": 0,
+      "log": "AncestryObservation.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BinaryAvoidance",
+      "source_path": "lean/SamuelAlexanderResearch/BinaryAvoidance.lean",
+      "source_sha256": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-BinaryAvoidance.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesBridge",
+      "source_path": "lean/SamuelAlexanderResearch/SpeciesBridge.lean",
+      "source_sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SpeciesBridge.txt",
+      "log_sha256": "9d7ac66690854b22ca0a34240c79f4aded769a2d40eb6ac4aa653090c50e5278"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BinaryPopulation",
+      "source_path": "lean/SamuelAlexanderResearch/BinaryPopulation.lean",
+      "source_sha256": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-BinaryPopulation.txt",
+      "log_sha256": "a07f8ef3e255f7e0f6ae33bff5558943f5b8acb498df8ab0747b96263796011f"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesAdapter",
+      "source_path": "lean/SamuelAlexanderResearch/SpeciesAdapter.lean",
+      "source_sha256": "f04521f21ef2724a48a7cd9712632617dd729e12f6650c55efedf79b686c15b0",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SpeciesAdapter.txt",
+      "log_sha256": "caadc149c8b611be0b62539927873103f87a513bf175533fb3f6a9e0f4a4d146"
+    },
+    {
+      "module": "SamuelAlexanderResearch.HistoryProjection",
+      "source_path": "lean/SamuelAlexanderResearch/HistoryProjection.lean",
+      "source_sha256": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-HistoryProjection.txt",
+      "log_sha256": "bedfc7b0a42c075bc9f1b43c020c62de586ea1f04cb917ff10d6fba1951aa71d"
+    },
+    {
+      "module": "WongGARG",
+      "source_path": "real/WongGARG.lean",
+      "source_sha256": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016",
+      "compiler_exit_code": 0,
+      "log": "WongGARG.txt",
+      "log_sha256": "262167cf4f148f3b00a2dec5392a24baf1e49544de64924246e879f874b75b0d"
+    },
+    {
+      "module": "SamuelAlexanderResearch.BirthOrder",
+      "source_path": "lean/SamuelAlexanderResearch/BirthOrder.lean",
+      "source_sha256": "9774f28a08f43cceab51cc2225b6c572036209c5fe7553f8de08e834c74b34db",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-BirthOrder.txt",
+      "log_sha256": "916c968b345b46090e8ecfc58ccd6ffd99cc8bd084376746358ff83a944b482c"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PositiveUnavoidability",
+      "source_path": "lean/SamuelAlexanderResearch/PositiveUnavoidability.lean",
+      "source_sha256": "dd4d241c2752639015fd98b4fb07b044e533b0c21dadb49b6c90ee9edb925c71",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-PositiveUnavoidability.txt",
+      "log_sha256": "cf2ee7cb962414260fa592e5526d735d3487810163599fd48222a599fa2ae37f"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ThueMorseBound",
+      "source_path": "lean/SamuelAlexanderResearch/ThueMorseBound.lean",
+      "source_sha256": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-ThueMorseBound.txt",
+      "log_sha256": "390314ee9dea1f33d629127d2c2613a2bf63563272ef58f137b351a579976144"
+    },
+    {
+      "module": "SamuelAlexanderResearch.ThueMorseBits",
+      "source_path": "lean/SamuelAlexanderResearch/ThueMorseBits.lean",
+      "source_sha256": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-ThueMorseBits.txt",
+      "log_sha256": "9a9eb685d8ba7254c74ffb0e0899623fd817b441f417e71a55288c30ca77e3e9"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SharpThueMorse",
+      "source_path": "lean/SamuelAlexanderResearch/SharpThueMorse.lean",
+      "source_sha256": "a2f29f779a19191630d118c5d851fa475e3d0151d55793a0867feab50d4ba0ee",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SharpThueMorse.txt",
+      "log_sha256": "6c52fa36e53380073c11650a68b39e2346410175cf392123a7f53ff6e324216d"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SharpCorollaries",
+      "source_path": "lean/SamuelAlexanderResearch/SharpCorollaries.lean",
+      "source_sha256": "22bc1409177624df85d5fac7303790bb544b99519a967e4be7c7e6a7d7e6b2c6",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SharpCorollaries.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SamuelAlexanderResearch.QuantitativeAvoidance",
+      "source_path": "lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean",
+      "source_sha256": "d7483dafa920f71e78eabf6199bd5a50862b8d6b6f8abb3a30f900f43bf71bae",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-QuantitativeAvoidance.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FiniteEditStability",
+      "source_path": "lean/SamuelAlexanderResearch/FiniteEditStability.lean",
+      "source_sha256": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-FiniteEditStability.txt",
+      "log_sha256": "3ea72085983e4fab005546d7b36567d74037abaafef44553b196fd8f6aa38d26"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PhaseShift",
+      "source_path": "lean/SamuelAlexanderResearch/PhaseShift.lean",
+      "source_sha256": "504c71e130463ef9f2dcac11c77917aa204f42995ee23b722a7db439c7ea8be7",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-PhaseShift.txt",
+      "log_sha256": "663fdeeec77fcf05e78e59b44d907a3f9de097779d541190f140ba40970aed91"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PopulationCounting",
+      "source_path": "lean/SamuelAlexanderResearch/PopulationCounting.lean",
+      "source_sha256": "5545bc9fb9ae97f48cd1075a7df2e12087fe53aafd35f5b141cdea55540ad627",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-PopulationCounting.txt",
+      "log_sha256": "8845180194381846ee6818a7213158ec03a71b9bf35aa54d4d8d559bd35227f9"
+    },
+    {
+      "module": "SamuelAlexanderResearch.InfiniteConservation",
+      "source_path": "lean/SamuelAlexanderResearch/InfiniteConservation.lean",
+      "source_sha256": "55b11eaa840f25500428fb41652ca91994019e8d1300c8df15c978ac46698ee5",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-InfiniteConservation.txt",
+      "log_sha256": "b57f3d219e3f928c611bf85fcc72fc1a1396122c16ff728fe299c0f5d0e0160e"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesCones",
+      "source_path": "lean/SamuelAlexanderResearch/SpeciesCones.lean",
+      "source_sha256": "0bf0fb9bc742b1b1260e08fd58adc17d3dab65d778bc1578736f1548a7c37df4",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SpeciesCones.txt",
+      "log_sha256": "1e2022cebb5dbef85ffbc521a8c6077bf984db13b5fea2380b9ebed430ba96fd"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesRootCriterion",
+      "source_path": "lean/SamuelAlexanderResearch/SpeciesRootCriterion.lean",
+      "source_sha256": "c6a151b5909bbf0238dc4ac7879fc518d91dd14b4fb3847952dec0fb65b3f26f",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SpeciesRootCriterion.txt",
+      "log_sha256": "4c7fe11381f0cc77e446b9e1bc4d4d5419a37f08421aa82cf123c0e666c29026"
+    },
+    {
+      "module": "SamuelAlexanderResearch.GeneralRootObstruction",
+      "source_path": "lean/SamuelAlexanderResearch/GeneralRootObstruction.lean",
+      "source_sha256": "e759c8494d27cfc55656f6e902ff094fbd6dd1e33246c8e84d5689eb8a1a3170",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-GeneralRootObstruction.txt",
+      "log_sha256": "88b9b101c8e0622155ac073393d5dcec1c741fea402d973406b86ba4f1253c13"
+    },
+    {
+      "module": "SamuelAlexanderResearch.PopulationReindex",
+      "source_path": "lean/SamuelAlexanderResearch/PopulationReindex.lean",
+      "source_sha256": "815951d97e90f9da0aa83cb0acd8683ffb1aa3460930b7eca7fb522e986ae666",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-PopulationReindex.txt",
+      "log_sha256": "efcd9ca0b5430ae370a5649f0371db6538a446e1548797e4c6772196e8d7f127"
+    },
+    {
+      "module": "RealBridges",
+      "source_path": "real/RealBridges.lean",
+      "source_sha256": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a",
+      "compiler_exit_code": 0,
+      "log": "RealBridges.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "SamuelAlexanderResearch.AncestryContraction",
+      "source_path": "lean/SamuelAlexanderResearch/AncestryContraction.lean",
+      "source_sha256": "06a094722d166aabaa1d4cfd3a4bf38480a1e05b590b14b3bd2bcd7f72a06068",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-AncestryContraction.txt",
+      "log_sha256": "b470f0b865bdda2b435fc77161b43d10184104735f8cc9b9614c5ac3e2baf1d9"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesGlobalIAP",
+      "source_path": "lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean",
+      "source_sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-SpeciesGlobalIAP.txt",
+      "log_sha256": "56e51a59081dc89ed2c65356a7785fe1b63e583620c8e7a74b9ca209560e6e99"
+    },
+    {
+      "module": "SamuelAlexanderResearch.FiniteHistoryCompletion",
+      "source_path": "lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean",
+      "source_sha256": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b",
+      "compiler_exit_code": 0,
+      "log": "SamuelAlexanderResearch-FiniteHistoryCompletion.txt",
+      "log_sha256": "dd26a09dca18c1e1a385c3a138fbfa32ef908894129a17e5414ff0c77b80f187"
+    },
+    {
+      "module": "WongAlexander",
+      "source_path": "real/WongAlexander.lean",
+      "source_sha256": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666",
+      "compiler_exit_code": 0,
+      "log": "WongAlexander.txt",
+      "log_sha256": "66798d707d273006ca7f84f10702deabc0d7bce3adbb7f6ffbf3c492d777016b"
+    },
+    {
+      "module": "WongPredictiveBridge",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/WongPredictiveBridge.lean",
+      "source_sha256": "636070e36c8a874613d652ddcd59f352874030e9e66b1a32a2edced10d96943a",
+      "compiler_exit_code": 0,
+      "log": "WongPredictiveBridge.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "StochasticAbstraction",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/StochasticAbstraction.lean",
+      "source_sha256": "943a395e85d3df0fbd8e4570fa205f3a2748cfdaa744ce1add9380b8d41453ce",
+      "compiler_exit_code": 0,
+      "log": "StochasticAbstraction.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "StochasticExamples",
+      "source_path": "research/open-problems/time-self-reference/predictive-memory/StochasticExamples.lean",
+      "source_sha256": "78c2f7ea2a59e2d3f3446b22df575353e527d067117863c9a0b3568f38ac1f2c",
+      "compiler_exit_code": 0,
+      "log": "StochasticExamples.txt",
+      "log_sha256": "8e05435565254f9476cc9a4a64eb31c493ba823087b572472b5440f25fc12de6"
+    }
+  ],
+  "verification_script_sha256": "f7c72d4c7a6395d7a0fe710539b43127c543b4a452c6d2bc3efeadc2b18d2e88",
+  "fresh_project_rebuild": true,
+  "compiler_serialization": "shared OS byte lock",
+  "axiom_audit_exit_code": 0,
+  "selected_new_theorem_count": 92,
+  "selected_historical_endpoint_count": 16,
+  "axiom_log_sha256": "eabfb12b3e9d8c090c727ce2d3529dcbed7eb8421e659d0f4b4d7abe1ee17ab7",
+  "axiom_reports": {
+    "PredictiveState.encode_eq_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PredictiveState.quotient_step": [
+      "Quot.sound"
+    ],
+    "PredictiveState.factors_iff": [
+      "Classical.choice"
+    ],
+    "PredictiveState.coarsest_exact": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PredictiveState.distinguishing_word": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PredictiveState.distinguishable_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PredictiveState.distinguishable_card_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PredictiveState.feedback_trajectories": [
+      "propext"
+    ],
+    "ControlledMemory.parity_append_false": [
+      "propext"
+    ],
+    "ControlledMemory.parity_append_true": [
+      "propext"
+    ],
+    "ControlledMemory.history_commutes": [
+      "propext"
+    ],
+    "ControlledMemory.parity_replicate_false": [
+      "propext"
+    ],
+    "ControlledMemory.no_finite_suffix_decoder": [
+      "propext"
+    ],
+    "ControlledMemory.cross_model_all_words": [
+      "propext"
+    ],
+    "ControlledMemory.cross_model_all_times": [
+      "propext"
+    ],
+    "ControlledMemory.history_future_iff": [
+      "propext"
+    ],
+    "ControlledMemory.at_least_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "HistoryObservation.stable_run": [
+      "propext"
+    ],
+    "HistoryObservation.stable_type_matched_history_null": [
+      "propext"
+    ],
+    "HistoryObservation.selected_history_perfectly_predicts": [
+      "propext"
+    ],
+    "HistoryObservation.delayed_run": [
+      "propext",
+      "Quot.sound"
+    ],
+    "HistoryObservation.arbitrary_delayed_distinction": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryObservation.larger_after_smaller": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryObservation.restriction_commutes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryObservation.restriction_all_words": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryObservation.same_existing_samples": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryObservation.expanded_sample_distinguishes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AncestryObservation.no_universal_sample_expansion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongPredictiveBridge.extracted_is_compress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongPredictiveBridge.actual_garg_restriction_all_words": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongPredictiveBridge.no_global_iap_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.exact_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.exact_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.bind_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.one_step_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.exact_iff_all_initial_laws": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.runLaw_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.runLaw_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.mapHistory_append": [
+      "propext"
+    ],
+    "StochasticAbstraction.mapHistory_comp": [
+      "propext"
+    ],
+    "StochasticAbstraction.view_comp": [
+      "propext",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.experiment_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.experimentLaw_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.observationPolicy_factors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.observed_experiment_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.observed_statistic_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.deterministic_instance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.joint_sensor_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticAbstraction.joint_sensor_observed_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.coin_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.coin_not": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.first_marginals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.second_marginals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.correlated_agrees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.anticorrelated_disagrees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.matching_marginals_different_joint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_is_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.same_all_traces": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.no_trace_based_test_separates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.same_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.u_one_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.b_one_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_one_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_profile_ne_u": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.c_profile_ne_b": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.profile_pushes_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "StochasticExamples.no_commuting_profile_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ExactAbstraction.exact_factor_iff": [
+      "Classical.choice"
+    ],
+    "ExactAbstraction.exact_factor_unique": [
+      "Quot.sound"
+    ],
+    "ExactAbstraction.trajectory_preservation": [
+      "propext"
+    ],
+    "ExactAbstraction.compatible_gives_trajectories": [
+      "propext",
+      "Classical.choice"
+    ],
+    "ExactAbstraction.TwoBit.no_state_only_update": [
+      "Classical.choice"
+    ],
+    "MergeHistoryProjection.split_preserves_legal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MergeHistoryProjection.adjacent_merge_histories": [
+      "propext"
+    ],
+    "MergeHistoryProjection.legal_histories": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MergeHistoryProjection.admissible_splits_with_spectator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MergeHistoryProjection.same_current_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MergeHistoryProjection.distinct_restored_partitions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MergeHistoryProjection.no_exact_partition_model": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MergeHistoryProjection.no_partition_only_admissible_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PredictiveState.future_refl": [],
+    "PredictiveState.future_observe": [],
+    "PredictiveState.future_step": [],
+    "PredictiveState.quotient_observe": [],
+    "PredictiveState.run_commutes": [],
+    "PredictiveState.exact_refinement_future": [],
+    "PredictiveState.restrict_actions": [],
+    "PredictiveState.depth_iff_words": [],
+    "PredictiveState.future_depth": [],
+    "PredictiveState.stabilization_complete": [],
+    "PredictiveState.feedback_commutes": [],
+    "ControlledMemory.cell_commutes": [],
+    "ControlledMemory.cellSummary_onto": [],
+    "ControlledMemory.historySummary_onto": [],
+    "ControlledMemory.probe_refinement_factor": [],
+    "ControlledMemory.cell_future_iff": [],
+    "ControlledMemory.memory_required_at_fixed_visible": [],
+    "ControlledMemory.reachable_probe_witness": [],
+    "ControlledMemory.all_summaries_reachable": [],
+    "ControlledMemory.passive_visible_exact": [],
+    "ControlledMemory.passive_future_iff": [],
+    "ControlledMemory.changed_probe_refutes_summary": [],
+    "HistoryObservation.selection_no_history_effect": [],
+    "HistoryObservation.silent_run": [],
+    "AncestryObservation.sample_query_factors": [],
+    "ExactAbstraction.TwoBit.projection_collision": [],
+    "ExactAbstraction.TwoBit.period_two_after_first": [],
+    "ExactAbstraction.TwoBit.exact_period_two_after_first": []
+  },
+  "unexpected_axioms": {},
+  "missing_axiom_reports": [],
+  "no_sorryAx": true
+}

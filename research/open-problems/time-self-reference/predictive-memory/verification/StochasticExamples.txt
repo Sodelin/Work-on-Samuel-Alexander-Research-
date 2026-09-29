@@ -1,0 +1,9 @@
+StochasticExamples.lean:56:2: warning: Try `simp at hh` instead of `simpa using hh`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+StochasticExamples.lean:139:2: warning: Try `simp at hc` instead of `simpa using hc`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+StochasticExamples.lean:149:2: warning: Try `simp at hc` instead of `simpa using hc`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

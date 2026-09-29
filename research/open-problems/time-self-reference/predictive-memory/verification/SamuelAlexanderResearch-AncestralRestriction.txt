@@ -1,0 +1,11 @@
+'AncestralRestriction.locus_sample_path_iff' does not depend on any axioms
+'AncestralRestriction.ancestral_restrict_iff' does not depend on any axioms
+'AncestralRestriction.restriction_resolved' does not depend on any axioms
+'AncestralRestriction.restriction_idempotent' does not depend on any axioms
+'AncestralRestriction.restriction_mono_samples' does not depend on any axioms
+'AncestralRestriction.restriction_nested' does not depend on any axioms
+'AncestralRestriction.restriction_union_iff' does not depend on any axioms
+'AncestralRestriction.erase_restriction_sound' does not depend on any axioms
+'AncestralRestriction.erasure_restriction_do_not_commute' depends on axioms: [propext, Quot.sound]
+'AncestralRestriction.indexed_recovery_iff' does not depend on any axioms
+'AncestralRestriction.raw_graph_not_identified_by_sample_relations' depends on axioms: [propext, Quot.sound]
