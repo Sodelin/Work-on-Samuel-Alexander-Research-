@@ -584,5 +584,27 @@
     36631876394,
     36631876393
   ],
-  "broader_author_questions_closed_scope": "Royal Society time and self-reference agenda; separately listed Alexander answers retain their explicit scopes"
+  "broader_author_questions_closed_scope": "Royal Society time and self-reference agenda; separately listed Alexander answers retain their explicit scopes",
+  "publication_audit_2026_09_29": {
+    "status": "prepared-for-curator-delivery",
+    "index": "research/publication-audit-2026-09-29/README.md",
+    "revisions": "research/publication-audit-2026-09-29/REVISIONS.json",
+    "existing_pending_entry_keys": [
+      "finite-epigenetic",
+      "genome-ownership",
+      "ownership-sampling",
+      "sampled-family-recovery",
+      "universal-avoider",
+      "ordinal-realization",
+      "founder-window"
+    ],
+    "entry_count": 7,
+    "social_audit_repository": "Sodelin/Formalizing-Soft-Sciences",
+    "social_audit_main_commit": "a9da0073c3a42804122945fa90d9c5440bcc4575",
+    "social_declarations_accounted_for": 85,
+    "social_hosted_verification_run": 36638142382,
+    "proof_sources_changed": false,
+    "catalog_acceptance_claimed": false,
+    "researcher_emails_sent": false
+  }
 }

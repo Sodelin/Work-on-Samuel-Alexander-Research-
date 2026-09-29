@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "createdAtUTC": "2026-09-29T22:07:37.948479+00:00",
+  "auditDate": "2026-09-29",
+  "scope": "bounded adversarial publication audit; no proof-source edits or external writes",
+  "queryEngine": "web search interface",
+  "searchRestrictions": {
+    "dateCutoff": null,
+    "language": "primarily English",
+    "stablePerQueryTotalsAvailable": false,
+    "exhaustiveCitationIndexSearch": false
+  },
+  "queries": [
+    {
+      "id": "W1.1",
+      "query": "\"Biologically unavoidable sequences\" \"universal\"",
+      "observedOutcome": "Original article and existing classification entry; no exact current embedding resolution independently verified."
+    },
+    {
+      "id": "W1.2",
+      "query": "\"Biologically unavoidable sequences\" ordinal characterization",
+      "observedOutcome": "Original Section6 recovered; no independently verified later exact characterization located."
+    },
+    {
+      "id": "W1.3",
+      "query": "\"Specieslike clusters\" \"founder\"",
+      "observedOutcome": "Original source and mirrors; no exact founder-window predecessor verified."
+    },
+    {
+      "id": "W1.4",
+      "query": "\"Specieslike clusters based on identical ancestor points\"",
+      "observedOutcome": "ArXiv and publisher identity; 2026 journal publication confirmed."
+    },
+    {
+      "id": "W2.1",
+      "query": "\"universal\" \"avoiding populations\" Alexander",
+      "observedOutcome": "Mostly irrelevant lexical matches; none used as proof."
+    },
+    {
+      "id": "W2.2",
+      "query": "\"gendered\" \"population\" \"ordinal\" Alexander",
+      "observedOutcome": "No exact external theorem verified in result sample."
+    },
+    {
+      "id": "W2.3",
+      "query": "\"specieslike\" \"common ancestor\" \"maximal\" -site:emergentmind.com",
+      "observedOutcome": "Original paper and mirrors; explicit non-CA direction confirmed in primary text."
+    },
+    {
+      "id": "W2.4",
+      "query": "\"well-founded relation\" \"ordinal rank\" theorem",
+      "observedOutcome": "Classical rank references, PaulTaylor and Cousot-Cousot; primary/official sources used."
+    },
+    {
+      "id": "W3.1",
+      "query": "\"specieslike\" \"founding\" window",
+      "observedOutcome": "No exact prior theorem verified; unrelated biological window hits excluded."
+    },
+    {
+      "id": "W3.2",
+      "query": "\"specieslike\" \"finite\" \"founders\"",
+      "observedOutcome": "Original source and unrelated hits; no exact prior theorem verified."
+    },
+    {
+      "id": "W3.3",
+      "query": "\"identical ancestor point\" \"maximal\" \"constraints\"",
+      "observedOutcome": "Original source; no independent replacement-constraint result verified."
+    },
+    {
+      "id": "W3.4",
+      "query": "\"universal\" \"locally finite\" \"bounded stretch\" graphs",
+      "observedOutcome": "No exact population-specific prior theorem verified in returned sample."
+    },
+    {
+      "id": "W4.1",
+      "query": "\"Biologically unavoidable sequences\" correction erratum universal ordinal",
+      "observedOutcome": "Journal copy and classification entry; no correction notice verified."
+    },
+    {
+      "id": "W4.2",
+      "query": "\"Specieslike clusters based on identical ancestor points\" correction erratum extension",
+      "observedOutcome": "Publisher and arXiv identity; no correction notice verified."
+    },
+    {
+      "id": "W4.3",
+      "query": "\"founder window\" \"species\" theorem",
+      "observedOutcome": "Mostly irrelevant literal matches; no exact theorem verified."
+    },
+    {
+      "id": "W4.4",
+      "query": "\"locally finite graphs\" \"nonuniversality\" \"blow-up\"",
+      "observedOutcome": "No exact population-specific predecessor verified in returned sample."
+    }
+  ],
+  "sources": [
+    {
+      "id": "A2013",
+      "title": "Biologically unavoidable sequences",
+      "author": "Samuel A. Alexander",
+      "version": "EJC20(1)P31(2013); arXiv1212.0186v2",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i1p31/pdf/",
+      "locator": "Definition1 p1; Section6 p12 (journal); Section6 p9 (arXiv)",
+      "access": "primary full text read in journal extraction and arXiv HTML",
+      "supports": [
+        "original universality question",
+        "original ordinal characterization question",
+        "population axioms"
+      ],
+      "quotedExcerpts": [
+        "universal among all such",
+        "a characterization in terms of ordinal numbers"
+      ],
+      "quotedWordCount": 11
+    },
+    {
+      "id": "A2026",
+      "title": "Specieslike clusters based on identical ancestor points",
+      "author": "Samuel Allen Alexander",
+      "version": "arXiv2602.05274v1; accepted manuscript; live record only v1",
+      "url": "https://arxiv.org/pdf/2602.05274v1",
+      "locator": "InformalQuestion4 p9; Theorem13 p16; paragraph after proof p17",
+      "access": "primary full text inspected",
+      "supports": [
+        "non-CA replacement request",
+        "CA plus REF existence theorem",
+        "plausibility component"
+      ],
+      "quotedExcerpts": [
+        "a solution not requiring the CA property"
+      ],
+      "quotedWordCount": 7
+    },
+    {
+      "id": "A2026-PUB",
+      "title": "Published specieslike article record",
+      "url": "https://link.springer.com/article/10.1007/s00285-026-02361-x",
+      "version": "JMathBiol92 article41; published2026-02-28",
+      "access": "publisher metadata and abstract; full text subscription-gated",
+      "supports": [
+        "publication identity and dates"
+      ],
+      "limits": [
+        "no full version-of-record text comparison"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "CHERLIN-SHELAH",
+      "title": "Universal graphs with a forbidden subtree",
+      "url": "https://arxiv.org/pdf/math/0512218",
+      "version": "arXiv manuscript; JCTB97(2007)293-333",
+      "locator": "Introduction manuscriptp1; Theorem1 manuscriptp3; journal introductionp293",
+      "access": "arXiv full text; Rutgers author-hosted journal PDF failed restricted URL",
+      "supports": [
+        "weak versus strong universality",
+        "finite forbidden-tree theorem"
+      ],
+      "limits": [
+        "not infinite labelled exclusion under population axioms"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "LEHNER",
+      "title": "A note on classes of subgraphs of locally finite graphs",
+      "url": "https://arxiv.org/pdf/2205.12824",
+      "version": "arXiv2205.12824v1 2022-05-25; JCTB161(2023)52-62",
+      "locator": "p2 Theorems1.1/1.2; p6 Theorem3.1; p7 Cor3.2; p8 Cor3.6",
+      "access": "arXiv full text inspected; author PDF failed restricted URL",
+      "supports": [
+        "de Bruijn attribution through Rado",
+        "host criteria",
+        "fixed-degree class admits locally finite host"
+      ],
+      "limits": [
+        "subclass closure requires proof",
+        "Rado original not read"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "BONATO-ETAL",
+      "title": "Twins of rayless graphs",
+      "url": "https://arxiv.org/pdf/0911.3803",
+      "version": "arXiv0911.3803; JCTB101(1)(2011)60-65",
+      "locator": "Section2 Definition2 p3",
+      "access": "primary manuscript full text inspected",
+      "supports": [
+        "Schmidt separator/component rank differs from ordinary continuation height"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "COUSOT-COUSOT",
+      "title": "An Abstract Interpretation Framework for Termination",
+      "url": "https://www.di.ens.fr/~cousot/publications.www/CousotCousot-POPL12-ACM-p245-258-2012.pdf",
+      "version": "POPL2012 author-hosted paper",
+      "locator": "pp245-246; Introduction, Section2 and Section4.3",
+      "access": "primary author PDF inspected",
+      "supports": [
+        "ranking and fixed-point methods predate application"
+      ],
+      "limits": [
+        "PDF find had no match for ordinal rank and least; no uninspected later numbered theorem relied upon"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "MATHLIB-RANK",
+      "title": "Mathlib.SetTheory.Ordinal.Rank",
+      "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Ordinal/Rank.html",
+      "version": "live official docs; local dependency separately pinned",
+      "locator": "Acc.rank, Acc.rank_lt_of_rel, WellFounded.rank",
+      "access": "official docs inspected",
+      "supports": [
+        "generic rank machinery directly used"
+      ],
+      "limits": [
+        "live documentation is not an exact pinned dependency build"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "TAYLOR",
+      "title": "Practical Foundations of Mathematics Section6.7",
+      "url": "https://www.paultaylor.eu/~pt/prafm/html/s67.html",
+      "locator": "Definition6.7.5 search excerpt",
+      "access": "search excerpt; direct open internal error",
+      "supports": [],
+      "limits": [
+        "not decisive evidence"
+      ],
+      "quotedWordCount": 0
+    },
+    {
+      "id": "VIBE-CLASSIFICATION",
+      "title": "Which sequences are biologically unavoidable?",
+      "url": "https://vibemathed.com/problem/classification-of-biologically-unavoidable-sequences",
+      "access": "public editorial record read",
+      "supports": [
+        "classification entry excludes universal-object and ordinal directions"
+      ],
+      "limits": [
+        "not proof or priority evidence"
+      ],
+      "quotedWordCount": 0
+    }
+  ],
+  "verification": {
+    "compilerRerunThisAudit": false,
+    "hostedRun": 36631876391,
+    "status": "completed",
+    "conclusion": "success",
+    "headSha": "1592b89731d10fc49019ff22cf2f93c7bc799118",
+    "updatedAt": "2026-09-29T21:18:45Z",
+    "runURL": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36631876391",
+    "inspectedMain": "ea70e6ce8f9476b5cabe275f7ce5fc0670adc1e3",
+    "sourceContinuityCommand": "git diff --name-only 1592b89731d10fc49019ff22cf2f93c7bc799118 HEAD -- real research/open-questions/embedding research/open-questions/ordinal research/open-questions/continuation-2026-09-29",
+    "changedPaths": [],
+    "files": [
+      {
+        "path": "research/open-questions/embedding/GenericUniversalAvoiders.lean",
+        "sha256": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4"
+      },
+      {
+        "path": "research/open-questions/ordinal/GenericCertificate.lean",
+        "sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581"
+      },
+      {
+        "path": "research/open-questions/ordinal/GenericOrdinalCertificate.lean",
+        "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510"
+      },
+      {
+        "path": "research/open-questions/continuation-2026-09-29/embedding/TerminalCloneAvoiders.lean",
+        "sha256": "f074f86ed6a678ba011175eb2d17be3a2d95d7ee69c2de2a7e5ddc7d8947a783"
+      },
+      {
+        "path": "research/open-questions/continuation-2026-09-29/formal/GenericPruning.lean",
+        "sha256": "46425ee10a089dd24529631c531b04f36ad1cdc7b72e4c8380c0afa62fe6fee4"
+      },
+      {
+        "path": "research/open-questions/continuation-2026-09-29/formal/GenericMortalRank.lean",
+        "sha256": "227b2cfcd452a5f75674ff0f835f9814818f70f3401dd440fa220a3f0c822f9b"
+      },
+      {
+        "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.lean",
+        "sha256": "82324d012e1572abb33255e8b30616faeae1b2033fe3da47173ada6f58024171"
+      },
+      {
+        "path": "real/FounderWindow.lean",
+        "sha256": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3"
+      },
+      {
+        "path": "real/DirectedIAP.lean",
+        "sha256": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0"
+      },
+      {
+        "path": "real/SeedIntersections.lean",
+        "sha256": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e"
+      },
+      {
+        "path": "real/SpeciesSeed.lean",
+        "sha256": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb"
+      },
+      {
+        "path": "real/RealFounderWindow.lean",
+        "sha256": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9"
+      },
+      {
+        "path": "real/FounderMaximal.lean",
+        "sha256": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4"
+      },
+      {
+        "path": "real/SpeciesReindex.lean",
+        "sha256": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd"
+      },
+      {
+        "path": "real/RealSpeciesTheorem.lean",
+        "sha256": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540"
+      }
+    ]
+  },
+  "accessFailures": [
+    {
+      "url": "https://www.florian-lehner.net/pdf/universal-locally-finite.pdf",
+      "result": "restricted URL; successful arXiv fallback"
+    },
+    {
+      "url": "https://sites.math.rutgers.edu/~cherlin/Paper/2007ForbiddenTree.pdf",
+      "result": "restricted URL; successful arXiv fallback"
+    },
+    {
+      "url": "https://www.paultaylor.eu/~pt/prafm/html/s67.html",
+      "result": "internal error; not decisive evidence"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s00285-026-02361-x",
+      "result": "metadata accessible; full text subscription-gated; accepted arXiv text read"
+    }
+  ],
+  "limits": [
+    "No worldwide priority finding; no negative completeness inference.",
+    "Source interpretation and plausibility are not certified by Lean.",
+    "Founder strictness witness written; no new endpoint.",
+    "Halin/Schmidt and Rado originals not read in full in this pass.",
+    "Publisher2026 exact text gated; accepted arXiv used.",
+    "Automatic summaries, unrelated lexical hits and hidden/truncated output excluded as decisive evidence."
+  ],
+  "verdicts": {
+    "universal-avoider": "source-posed interpretation answered; population-preservation increment over classical obstruction",
+    "ordinal-realization": "exact criterion and refinements; classical-application editorial risk remains",
+    "founder-window": "mathematical non-CA direction answered in fixed-duration class; plausibility unestablished"
+  }
+}

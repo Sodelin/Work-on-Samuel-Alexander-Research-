@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-29",
+  "entry_key": "finite-epigenetic",
+  "action": "proposed substantive revision to existing pending entry; not a new submission",
+  "fields": {
+    "submit-name": "An exact finite-population reversal of genetic and epigenetic barriers",
+    "submit-statement": "Can finite offspring sampling reverse the ordering of genetic and epigenetic neutral-marker barriers in a matched extension of Planidin et al. (2025)? Their Section 5 proposes finite-population extensions; this project formulates and resolves an exact special case. Two demes each contain one diploid adult, with migration m=1/4, additive selection s=1/2 and recombination r=1/2. Both comparisons start from locally adapted selected states and use one preselection migrant-marker pulse, followed by continuing migration. Mutation-free genetic inheritance is compared with complete environmental induction after mating. Offspring are sampled independently from normalized reproductive pools, permitting selfing. The target is the sign of the fixation-based epigenetic-minus-genetic barrier and its relation to the matched deterministic sequence, using the common preselection dose B0=1/8.",
+    "submit-resultNote": "Finite sampling changes the ordering: p_gen=323808055/4466354606 and p_epi=1/14, so RI_gen=937945083/2233177303 < RI_epi=3/7, with RI=1-p/(1/8). The advantage is exactly 19130904/2233177303. Harmonic certificates identify the finite-model limits with error <=(99/100)^n. In the matched deterministic recurrence, the genetic barrier is above 3/7 at every biological generation from four onward, while pure induction gives 3/7. Thus the checked comparison combines a finite stochastic limit with a uniform deterministic finite-time ordering. Its useful increment is a fully specified, exact comparison with a controlled tail. Finite epigenetic models, population-size-dependent advantages and normalized fixation measures have prior literature; the particular matched ordering is the candidate contribution.",
+    "submit-verificationNote": "Lean 4.33.1 and pinned Mathlib; 34 selected declarations across four modules, including supporting lemmas. The finite kernel proof checks normalization, boundary closure, rational harmonic identities, pulse values and the geometric limit bound. DeterministicEpigenetic certifies the ordering at every biological generation >=4; RankingReversal combines the two comparisons. All four source hashes matched the existing receipt on 29 September 2026. Hosted Verify run 36173386580 succeeded at submitted commit a2644182b147eb40816abb278e00c3c6d4709eb8. The old local receipt retains its recovered-exit caveat; no new Lean compilation was run for this literature update. Allowed axioms are propext, Classical.choice and Quot.sound. The phased-to-count and full-to-reduced correspondences have written derivations and exact rational checks. Deterministic common-limit existence has a written internally audited proof, outside these Lean modules. This audit reconciles publication-only manifest differences and leaves all theorem sources unchanged. Internal review is distinct from independent human statement review. Requested status: Partial result; Lean-checked, statement unaudited.",
+    "submit-submitterNote": "The contribution is an exact ordering reversal under a declared model change, with a finite fixation proof and a matched deterministic comparison. This update closes the earlier Smithson access gap: the author's WSU dissertation Chapter 1 supplies full model and stochastic-analysis text, with a publisher-version caveat. Smithson already studies drift-dependent adaptation benefits; Greenspoon already studies finite stochastic epigenetic speciation; Muirhead and Presgraves already normalize neutral-marker fixation. Our source map distinguishes their observables and life cycles from the exact fixation-barrier question here. Planidin's Section 5 is the published research direction; the specific parameter question is project-formulated. Please assess the exact increment on this evidence. Worldwide priority and independent human review remain unestablished."
+  },
+  "character_counts": {
+    "submit-name": 70,
+    "submit-statement": 887,
+    "submit-resultNote": 805,
+    "submit-verificationNote": 1180,
+    "submit-submitterNote": 863
+  },
+  "limits": {
+    "submit-name": 200,
+    "submit-statement": 1200,
+    "submit-resultNote": 1000,
+    "submit-verificationNote": 1500,
+    "submit-submitterNote": 1000
+  },
+  "preserve_existing_fields": [
+    "AI role and credit",
+    "submission date",
+    "verification tier",
+    "source URL",
+    "supporting proof links"
+  ],
+  "recommended_additional_links": [
+    {
+      "label": "Prior-art audit with full Smithson chapter comparison",
+      "repository_path": "research/publication-audit-2026-09-29/finite-barrier/AUDIT.md"
+    },
+    {
+      "label": "Smithson author-deposited dissertation chapter",
+      "url": "https://rex.libraries.wsu.edu/esploro/outputs/doctoral/Investigating-the-role-of-epigenetic-variation/99900581612201842"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-09-29",
+  "review_type": "Bounded directed two-source comparison, not a broad priority survey.",
+  "questions": [
+    "What exactly do the formal recovery and repeated-block endpoints assert?",
+    "Which part of KMRT Section 1.6 Question 1 is addressed, and which remains outside scope?",
+    "Does Mossel-Vulakh already use pairwise comparisons, and is the project comparator the same algorithm?"
+  ],
+  "queries": [],
+  "query_explanation": "The task specified both primary sources; directly retrieved their abstract, HTML and PDF pages. No additional discovery search or citation-network census was performed.",
+  "retrievals": [
+    {
+      "url": "https://arxiv.org/abs/2005.03810",
+      "result": "Success; version v1 dated 8 May 2020 confirmed."
+    },
+    {
+      "url": "https://arxiv.org/html/2005.03810",
+      "result": "Success; model, Questions 1-2 and pair/triple discussion inspected."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2005.03810",
+      "result": "Success; 41 pages; Question 1 p. 6, Theorem 6.1 p. 33 confirmed."
+    },
+    {
+      "url": "https://arxiv.org/abs/2204.04573v2",
+      "result": "Success; v2 dated 25 September 2022; proceedings DOI confirmed."
+    },
+    {
+      "url": "https://arxiv.org/html/2204.04573",
+      "result": "Success; model, pairwise screening and Discussion passages inspected."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2204.04573",
+      "result": "Success; 12 pages; Section 3.2 on PDF p. 3 confirmed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "KMRT2020",
+      "authors": "Younhun Kim, Elchanan Mossel, Govind Ramnarayan, Paxton Turner",
+      "title": "Efficient Reconstruction of Stochastic Pedigrees",
+      "version": "arXiv:2005.03810v1, 8 May 2020",
+      "url": "https://arxiv.org/pdf/2005.03810v1",
+      "locators": [
+        "Section 1.4, pp. 4-5: model and main-result overview",
+        "Section 1.6, Question 1, p. 6",
+        "Section 2.3, pp. 10-11: pairwise recursive difficulties",
+        "Theorem 6.1, p. 33: multigeneration guarantee"
+      ],
+      "reading_boundary": "Relevant model/open-question/algorithm passages and main theorem statement; no independent verification of the full proof.",
+      "quote_policy": "One 16-word dependence-clause excerpt in AUDIT.md; no additional verbatim quotation."
+    },
+    {
+      "id": "MV2022",
+      "authors": "Elchanan Mossel, David Vulakh",
+      "title": "Efficient Reconstruction of Stochastic Pedigrees: Some Steps From Theory to Practice",
+      "version": "arXiv:2204.04573v2, 25 September 2022",
+      "url": "https://arxiv.org/pdf/2204.04573v2",
+      "published_reference": "PSB 2023 proceedings, pp. 133-144",
+      "doi": "10.1142/9789811270611_0013",
+      "locators": [
+        "Section 2: model",
+        "Section 3.2, PDF p. 3: candidate pairs using shared-block threshold before triples",
+        "Sections 5-8: finite simulations, inbreeding and belief propagation"
+      ],
+      "reading_boundary": "Relevant model, pairwise screening, simulation interpretation and Discussion passages. No source code or simulations executed.",
+      "quote_policy": "No verbatim quotation."
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "SF1",
+      "claim": "The existing source has a broader open question than the project finite target.",
+      "source_id": "KMRT2020",
+      "locator": "Section 1.6 Question 1, p. 6",
+      "relation": "Direct source-question support; application to this project is comparative inference."
+    },
+    {
+      "claim_id": "SF2",
+      "claim": "The current formal theorem retains parent-symbol injectivity, despite accepting a finite alphabet type.",
+      "source_path": "real/PedigreeBlockRecovery.lean",
+      "locator": "output_recovery_probability; parameter hinj",
+      "relation": "Direct formal-statement inspection."
+    },
+    {
+      "claim_id": "SF3",
+      "claim": "The repeated-block example has correct entire single-block marginals and unchanged one-family component success.",
+      "source_path": "real/PedigreeBlockDependence.lean",
+      "locator": "repeatedLaw_block_marginal; repeatedLaw_connected_probability",
+      "relation": "Direct formal-statement inspection; does not assert an all-estimator lower bound."
+    },
+    {
+      "claim_id": "SF4",
+      "claim": "Pairwise candidate screening is already in the follow-up algorithm.",
+      "source_id": "MV2022",
+      "locator": "Section 3.2, PDF p. 3",
+      "relation": "Direct support; project 13/16 versus 7/16 comparison uses different restricted procedures."
+    },
+    {
+      "claim_id": "SF5",
+      "claim": "The exact question was formulated within the project, and novelty is explicitly unclaimed.",
+      "source_path": "research/pedigree-block/LEDGER.json",
+      "locator": "result_kind; novelty; claims GRAPH, COUNT, RECOVERY, DEPENDENCE",
+      "relation": "Direct provenance/status evidence."
+    },
+    {
+      "claim_id": "SF6",
+      "claim": "This packet has completed local formal verification, with current saved-evidence integrity checked.",
+      "source_path": "research/pedigree-block/verification/RESULT.json",
+      "locator": "PASS_LOCAL_EXACT_COMMIT; proof_commit; selected_new_declarations; remaining_boundaries",
+      "relation": "Existing compiler receipt plus fresh read-only verifier pass."
+    }
+  ],
+  "fresh_integrity_result": {
+    "command": "python -X utf8 research/pedigree-block/verify_packet.py",
+    "exit_code": 0,
+    "status": "PASS_SAVED_EVIDENCE_INTEGRITY_NOT_A_NEW_LEAN_RUN",
+    "proof_commit": "ae0beee8d04e32c45f28d2f465b924d6816c82a5",
+    "modules": 7,
+    "selected_declarations": 31,
+    "artifacts": 49,
+    "prior_arg_audit": "Preserved; not rerun or combined with this closure."
+  },
+  "coverage_verdict": {
+    "mathematical_statement": "Scoped statement agrees with formal endpoints and saved evidence.",
+    "full_source_open_question_closed": false,
+    "exact_finite_question_previously_open_established": false,
+    "worldwide_priority_established": false,
+    "external_expert_statement_review": false,
+    "catalog_eligibility": "Editorial assessment remains open; precise source mapping supports transparency rather than a stronger novelty assertion."
+  },
+  "remaining_boundaries": [
+    "Conditional one-generation sample, rather than multigeneration fertility analysis.",
+    "Distinct parent symbols, rather than a collision-allowing alphabet model.",
+    "Independent positive formula and a one-family repeated-block example, rather than general dependent-inheritance recovery theory.",
+    "No formal continuous-ARG coupling or infinite specieslike transfer.",
+    "No verified executable refinement or complexity theorem.",
+    "No broad priority investigation."
+  ]
+}

@@ -1,5 +1,7 @@
 # Checked mathematics for ancestry, observation and biological modeling
 
+**Source and prior-art update:** the [publication audit](research/publication-audit-2026-09-29/README.md) supplies revised candidate statements, exact source-question locators, recovered close predecessors, and a complete theorem-by-theorem account of the related 85-declaration social-science package.
+
 Publication guide, 29 September 2026. Prepared by the human-directed Codex research project. This guide identifies the results, their mathematical value, their proof evidence and their relation to existing biological questions. It is an editorial reading route through the linked proof sources, not a substitute for them.
 
 ## What deserves attention

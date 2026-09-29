@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "errors": [],
+  "relativeLinksChecked": true,
+  "proofHashesMatched": 15,
+  "limitedFieldCounts": {
+    "universal-avoider": {
+      "submit-name": 84,
+      "submit-statement": 788,
+      "submit-resultNote": 947,
+      "submit-verificationNote": 870,
+      "submit-submitterNote": 812
+    },
+    "ordinal-realization": {
+      "submit-name": 72,
+      "submit-statement": 754,
+      "submit-resultNote": 961,
+      "submit-verificationNote": 967,
+      "submit-submitterNote": 788
+    },
+    "founder-window": {
+      "submit-name": 85,
+      "submit-statement": 867,
+      "submit-resultNote": 831,
+      "submit-verificationNote": 974,
+      "submit-submitterNote": 793
+    }
+  },
+  "artifacts": [
+    {
+      "path": "CLAIM-EVIDENCE.md",
+      "sha256": "ac8ee52fd33505319735cbbb9ecce17f628a746f1704ddf1aaef3b25276031fa",
+      "pre_publication_working_copy_sha256": "9754e6c1fb1d2ec0de67db805241f2f7112a03ec19bd2100c603bea44bdc7f2c"
+    },
+    {
+      "path": "DRAFTS.md",
+      "sha256": "b9b7bc6958f0828268f75ac9341f8b85ad1329154b71d7752ce0e220f9893e9c",
+      "pre_publication_working_copy_sha256": "03c924505028b817d7da6dc2c9c4019dc3e0b6be672408dac8ab4286efedde31"
+    },
+    {
+      "path": "SEARCH-EVIDENCE.json",
+      "sha256": "ea5695dd3b5e806416e96700be7706c8325ed126febc4f217aa714f77b9835f7",
+      "pre_publication_working_copy_sha256": "bd565c4678d1a37e90427f067cd5d3fba06bf8c4232a63a272f576ed566f77ea"
+    },
+    {
+      "path": "VIBEMATHED-REVISIONS.json",
+      "sha256": "674e98491220bcb4d3564b769747371fb51493040e4d88dca0c3b13b7e42394d",
+      "pre_publication_working_copy_sha256": "0d90e594892ed8d6ecb3d860cb7e7704fbe9b49d12aa2a36220df54299959297"
+    }
+  ],
+  "publication_normalization": "Coordinator normalized only these new audit documents to the repository LF policy and removed one extra final blank line from DRAFTS.md. Original working-copy hashes are retained where different; sha256 now identifies the published bytes. Proof-source hashes and checking conclusions are unchanged."
+}

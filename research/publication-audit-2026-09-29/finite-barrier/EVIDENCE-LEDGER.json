@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-09-29",
+  "recorded_at_utc": "2026-09-29T22:03:41Z",
+  "review_type": "Bounded rapid update of a specific prior-art comparison; not a systematic review or proof of priority.",
+  "scope": {
+    "included": "Primary model definitions, observables, closest earlier results and explicit future direction for the finite barrier submission. English sources, through 29 September 2026.",
+    "excluded": "A citation-network census, empirical biological validation, new proof construction, exhaustive supplements/code audit.",
+    "search_caps": "Eight focused web queries; targeted primary-source opens, sections and PDF pages; one institutional-browser fallback after publisher access failures. No broad expansion."
+  },
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "\"The adaptive value of epigenetic mutation\" Smithson pdf",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q2",
+      "query": "\"Epigenetic induction may speed up or slow down speciation with gene flow\" pdf",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q3",
+      "query": "\"Hybrid Incompatibilities, Local Adaptation\" Muirhead pdf",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q4",
+      "query": "\"Smithson\" \"13535\" pdf",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q5",
+      "query": "\"INVESTIGATING THE ROLE OF EPIGENETIC VARIATION IN ADAPTIVE RESPONSES\"",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q6",
+      "query": "\"The adaptive value of epigenetic mutation\" -site:researchgate.net -site:semanticscholar.org -site:pubmed.ncbi.nlm.nih.gov",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q7",
+      "query": "\"Diss_6_12.pdf\" Smithson",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    },
+    {
+      "id": "Q8",
+      "query": "\"jeb.13535\" site:academic.oup.com",
+      "date_utc": "2026-09-29",
+      "engine": "web search",
+      "filters": "No recency restriction. Domain exclusions/restrictions only when written in query.",
+      "disposition": "Followed primary article/author/institution routes; unrelated and secondary hits not used for substantive claims."
+    }
+  ],
+  "sources": [
+    {
+      "id": "P2025",
+      "title": "Adaptive epigenetic divergence can facilitate ecological speciation",
+      "authors": "Planidin et al.",
+      "year": 2025,
+      "doi": "10.1098/rspb.2025.1217",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12440623/",
+      "version": "Published article",
+      "read_scope": "Methods 2(a) and 2(b); Section 5 first paragraph; focused passages in full text.",
+      "locator": "Section 5 first paragraph; Methods 2(a)-2(b), Eq. (1.1)",
+      "contribution_relation": "Explicit finite-population direction and source life cycle/marker statistic.",
+      "quote_policy": "One 17-word excerpt only, in AUDIT.md.",
+      "limits": "A research direction, not the project parameter question stated as a prior conjecture."
+    },
+    {
+      "id": "P2025S",
+      "title": "Planidin et al. 2025 electronic supplement",
+      "url": "https://ndownloader.figshare.com/files/57066856",
+      "version": "Official associated supplement",
+      "pages": 58,
+      "bytes": 791404,
+      "sha256": "f41f63afd06df2004894b2fbf0b9aba94eed2e3705987a63089bff9356a86b89",
+      "access": "HTTP 200, read in memory with pypdf",
+      "read_scope": "PDF pp. 3-5 and 29-30",
+      "locator": "Section 1.1; Section 2.2.1 Eq. (20)",
+      "contribution_relation": "Phased life cycle and pre-existing pure-induction formula.",
+      "limits": "No audit of all 58 pages; no source copy republished."
+    },
+    {
+      "id": "G2022",
+      "title": "Epigenetic induction may speed up or slow down speciation with gene flow",
+      "authors": "Greenspoon, Spencer and M'Gonigle",
+      "year": 2022,
+      "doi": "10.1111/evo.14494",
+      "url": "https://www.sfu.ca/biology/faculty/M%27Gonigle/pdfs/greenspoon-2022-1170.pdf",
+      "version": "Author-hosted article PDF",
+      "read_scope": "Methods/Analysis and relevant Results/Discussion",
+      "locator": "pp. 1171-1174, 1175-1176, 1178-1179; Table 1",
+      "contribution_relation": "Prior finite stochastic epigenetic speciation and timing sensitivity; different outcome.",
+      "limits": "Supplement and source code not comprehensively audited."
+    },
+    {
+      "id": "M2016",
+      "title": "Hybrid Incompatibilities, Local Adaptation, and the Genomic Distribution of Natural Introgression between Species",
+      "authors": "Muirhead and Presgraves",
+      "year": 2016,
+      "doi": "10.1086/684583",
+      "url": "https://www.zoology.ubc.ca/let/pdfs/Muirhead2015.pdf",
+      "version": "Author-hosted published article PDF; 2015 filename, 2016 issue",
+      "read_scope": "Simulations, relevant Results and limitations",
+      "locator": "pp. 253-254 and 259",
+      "contribution_relation": "Prior finite fixation normalization and finite/deterministic discrepancies; different selected mechanism.",
+      "limits": "Online appendix not comprehensively audited."
+    },
+    {
+      "id": "S2019",
+      "title": "The adaptive value of epigenetic mutation: Limited in large but high in small peripheral populations",
+      "authors": "Smithson, Dybdahl and Nuismer",
+      "year": 2019,
+      "doi": "10.1111/jeb.13535",
+      "url": "https://doi.org/10.1111/jeb.13535",
+      "version": "Publisher version access failed; chapter version separately identified below",
+      "read_scope": "Publisher identity/metadata; technical comparison uses S2020CH1",
+      "limits": "No byte-for-byte comparison against publisher full text."
+    },
+    {
+      "id": "S2020CH1",
+      "title": "Investigating the role of epigenetic variation in adaptive responses, Chapter 1",
+      "authors": "Mark Smithson; Chapter 1 coauthors Dybdahl and Nuismer",
+      "year": 2020,
+      "institutional_identifier": "99900581612201842",
+      "handle": "https://hdl.handle.net/2376/117322",
+      "url": "https://rex.libraries.wsu.edu/esploro/outputs/doctoral/Investigating-the-role-of-epigenetic-variation/99900581612201842",
+      "download_url": "https://rex.libraries.wsu.edu/view/pdfCoverPage?instCode=01ALLIANCE_WSU&filePid=13350042230001842&download=true",
+      "version": "Author-deposited dissertation chapter, explicitly identified as published in JEB on printed p. 14; title/authors/copyright on p. 15",
+      "pages": 170,
+      "bytes": 3875437,
+      "sha256": "ff0e325c630877bc9d576fb82d72eed8c08567166080b455435bae02f51261c9",
+      "access": "Institutional open-access UI download link; HTTP 200; PDF read in memory with pypdf",
+      "read_scope": "Printed pp. 14-16, 17-40, focusing model pp. 20-24, outcome pp. 25-26, stochastic analysis pp. 31-33; supplemental figures/appendices not fully audited.",
+      "locator": "Printed p. 20: haploid model; pp. 21-24: stages; pp. 25-26 Eqs. (8a)-(9): adaptation; p. 32: binomial sampling; pp. 32-33: small-population result. PDF page = printed page + 11.",
+      "contribution_relation": "Replaces abstract-only technical coverage with the deposited chapter; confirms different model and outcome.",
+      "limits": "Author version rather than byte-verified publisher PDF; no full-text copy republished."
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim_id": "C1",
+      "claim": "The published finite-population research direction is explicit.",
+      "source_ids": [
+        "P2025"
+      ],
+      "locator": "Section 5, first paragraph",
+      "relation": "direct support",
+      "inference": "The project chooses and resolves an exact special case, rather than reproducing an independently posed parameter conjecture."
+    },
+    {
+      "claim_id": "C2",
+      "claim": "The pure-induction closed expression is prior art.",
+      "source_ids": [
+        "P2025S"
+      ],
+      "locator": "p. 30, Eq. (20), phi=1 specialization",
+      "relation": "direct support",
+      "inference": "The new mathematical comparison depends on the genetic finite calculation and matched sign reversal."
+    },
+    {
+      "claim_id": "C3",
+      "claim": "Finite stochastic epigenetic modeling and timing sensitivity predate this project.",
+      "source_ids": [
+        "G2022"
+      ],
+      "locator": "Methods/Analysis pp. 1171-1174; timing discussion pp. 1176,1178",
+      "relation": "direct support",
+      "inference": "Do not claim first finite epigenetic model."
+    },
+    {
+      "claim_id": "C4",
+      "claim": "Normalizing finite marker fixation by its neutral baseline is established.",
+      "source_ids": [
+        "M2016"
+      ],
+      "locator": "Simulations pp. 253-254",
+      "relation": "direct support",
+      "inference": "Attribute the outcome construction; assess novelty of the exact matched result separately."
+    },
+    {
+      "claim_id": "C5",
+      "claim": "Smithson already studies population-size-dependent epigenetic adaptive benefits.",
+      "source_ids": [
+        "S2020CH1"
+      ],
+      "locator": "Printed pp. 31-33, especially p. 32",
+      "relation": "direct support",
+      "inference": "Broad finite-size advantage priority is unavailable; the exact marker-fixation question remains distinct in the inspected model."
+    },
+    {
+      "claim_id": "C6",
+      "claim": "The inspected prior results do not themselves provide this exact comparison.",
+      "source_ids": [
+        "P2025",
+        "P2025S",
+        "G2022",
+        "M2016",
+        "S2020CH1"
+      ],
+      "locator": "Model and observable locators above",
+      "relation": "bounded comparative inference",
+      "inference": "Not proof that no other publication contains the result."
+    }
+  ],
+  "access_failures": [
+    {
+      "route": "PMC9321097",
+      "result": "Browser/reCAPTCHA page in web tool",
+      "fallback": "G2022 author PDF succeeded"
+    },
+    {
+      "route": "PMC12440623 fresh find route",
+      "result": "Intermittent challenge",
+      "fallback": "Existing article reference/full-text source succeeded"
+    },
+    {
+      "route": "doi.org/10.1086/684583",
+      "result": "Web internal fetch error",
+      "fallback": "M2016 author PDF succeeded"
+    },
+    {
+      "route": "doi.org/10.1111/jeb.13535; onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jeb.13535; academic.oup.com/jeb/article-pdf/32/12/1391/54140439/jevbio1391.pdf",
+      "result": "Web failures; ordinary HTTP checks on the two PDF routes returned 403",
+      "fallback": "S2020CH1 institutional open-access chapter succeeded"
+    },
+    {
+      "route": "WSU record download/view links via web tool; search-indexed expiring S3 URL",
+      "result": "Web internal fetch errors; ordinary HTML showed only JS shell",
+      "fallback": "Public institutional page in authorized background browser exposed ordinary Download href; no restriction bypass"
+    },
+    {
+      "route": "academic.oup.com/jeb/article/32/12/1391/7326316",
+      "result": "Unconfirmed guessed route failed; not used as evidence",
+      "fallback": "Located exact publisher PDF URL through focused search; used institutional chapter after 403"
+    },
+    {
+      "route": "Local Python fitz import",
+      "result": "Package unavailable in system and bundled Python",
+      "fallback": "Bundled pypdf succeeded; no installation"
+    }
+  ],
+  "verification_scope": {
+    "new_lean_run": false,
+    "proof_source_hashes": "All four sources match combined-receipt.json",
+    "selected_declarations": 34,
+    "upstream_manifest": "29/33 raw matches; four publication changes reconciled in integrity-reconciliation.json",
+    "external_expert_review": false,
+    "worldwide_priority_established": false
+  },
+  "remaining_gaps": [
+    "Worldwide-priority investigation is incomplete.",
+    "External statement review is unestablished.",
+    "Full phased-to-count and source-to-reduced correspondence is outside Lean.",
+    "Deterministic common-limit existence is a written internally reviewed proof, outside Lean.",
+    "Dissertation/publisher version equivalence is not byte-verified."
+  ]
+}

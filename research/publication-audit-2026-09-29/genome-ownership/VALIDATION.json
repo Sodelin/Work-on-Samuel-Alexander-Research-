@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-09-29T22:07:18.627320+00:00",
+  "status": "PASS_SAVED_RECEIPTS_AND_DRAFT_LIMITS",
+  "new_lean_compilation": false,
+  "new_hosted_run": false,
+  "source_hashes_sha256": {
+    "research/genome-pedigree/PairingCore.lean": "f8723988f843354641a66e7cb71b021721864132d9f46b269efab2697c66db94",
+    "research/genome-pedigree/PairingBridge.lean": "7137a1a7ab729bb395fb1e73a56c2fcfdcc94e3cc3fb4a7119bf8ec09597d40c",
+    "research/genome-pedigree/PairingGARG.lean": "1dc127444928e95eb19945b31087a79125567097a41d664f5c708b89bde40b15",
+    "real/PairingCore.lean": "f8723988f843354641a66e7cb71b021721864132d9f46b269efab2697c66db94",
+    "real/PairingObservation.lean": "2f4d97740f1cb835e258e5b4a675a5c24e9373051b0e66a7cbebc6ccf8610734",
+    "real/PairingObservationAudit.lean": "40c802b67d1161886029fb64ee8622c3049f5ac0e1b3211f4b94211e03edc582",
+    "lean/SamuelAlexanderResearch/SpeciesBridge.lean": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+    "research/genome-pedigree/verification/PROOF-RECEIPT.json": "49aee3776b19c24b1053e9f6dd13b3db6ac5d9c4b2419cdfa84dcafbd24b48c1",
+    "research/owner-observations/verification/RESULT.json": "cc296554b8f97bcce29493a67ddc1e8bd927bea8bcc14d4f9ff9930a901d5aab",
+    "research/wong/continuation-2026-09-27/source-audit/PMC11373519-fullText.xml": "2b77c349f39d2885b3e36d3bcab639a7ef3b9c6217263031aa4bc8f1c2a0d05e"
+  },
+  "checks": [
+    {
+      "command": "python -X utf8 research/genome-pedigree/check_packet.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "source_modules": 31,
+        "public_theorems": 77,
+        "local_links": 20
+      }
+    },
+    {
+      "command": "python -X utf8 research/owner-observations/verify_packet.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS_SAVED_EVIDENCE_INTEGRITY_NOT_A_NEW_LEAN_RUN",
+        "proof_commit": "c071d4b895b8fe979211b68ac30240f8833e707d",
+        "modules": 5,
+        "selected_declarations": 20,
+        "artifacts": 22,
+        "scope": "15 new observation endpoints and five selected reused Q1 endpoints"
+      }
+    }
+  ],
+  "draft_field_lengths": {
+    "genome-ownership": {
+      "submit-name": {
+        "characters": 99,
+        "limit": 200
+      },
+      "submit-statement": {
+        "characters": 932,
+        "limit": 1200
+      },
+      "submit-resultNote": {
+        "characters": 948,
+        "limit": 1000
+      },
+      "submit-verificationNote": {
+        "characters": 1064,
+        "limit": 1500
+      },
+      "submit-submitterNote": {
+        "characters": 807,
+        "limit": 1000
+      }
+    },
+    "ownership-sampling": {
+      "submit-name": {
+        "characters": 94,
+        "limit": 200
+      },
+      "submit-statement": {
+        "characters": 725,
+        "limit": 1200
+      },
+      "submit-resultNote": {
+        "characters": 892,
+        "limit": 1000
+      },
+      "submit-verificationNote": {
+        "characters": 1018,
+        "limit": 1500
+      },
+      "submit-submitterNote": {
+        "characters": 793,
+        "limit": 1000
+      }
+    }
+  },
+  "limitations": [
+    "Source hashes and saved kernel evidence checked, no fresh compilation",
+    "Internal source review is not independent human statement review",
+    "Source-model correspondence and novelty remain separate from kernel correctness"
+  ],
+  "document_validation": {
+    "json_files_parsed": 3,
+    "local_markdown_links": "PASS",
+    "draft_field_lengths": "PASS"
+  }
+}

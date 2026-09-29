@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-29",
+  "recorded_at_utc": "2026-09-29T22:07:18.627320+00:00",
+  "audit_type": "bounded rapid primary-source and formal-statement comparison",
+  "scope": [
+    "genome-ownership",
+    "ownership-sampling"
+  ],
+  "reviewed_repository_main": "ea70e6ce8f9476b5cabe275f7ce5fc0670adc1e3",
+  "proof_sources_changed": false,
+  "external_writes": false,
+  "independent_human_review": false,
+  "finding": "Candidate constrained ownership construction and exact model-specific recovery criterion. No matching external open conjecture or worldwide priority established.",
+  "search_policy": {
+    "date": "2026-09-29",
+    "language": "English primary literature and official documentation",
+    "date_filter": null,
+    "domain_filter": null,
+    "query_count": 11,
+    "pagination": "No explicit follow-on pagination; inspected returned result pages only.",
+    "per_query_count": "The tool returned grouped query results; exact per-query result counts were not recorded.",
+    "citation_chaining": "One decisive additional predecessor: Alexander section 3.1 to Gravel-Steel 2015.",
+    "stop_rule": "Read decisive named sources, check formal quantifiers, record access failures; no new proof research or exhaustive survey.",
+    "excluded": [
+      "Secondary pages as evidentiary sources",
+      "Empirical data collection",
+      "Full phylogenetic-network identifiability survey",
+      "Noisy/adaptive or stochastic extension proofs"
+    ],
+    "limits": [
+      "No exhaustive citation network or multilingual search",
+      "No systematic correction/retraction audit",
+      "Exact phrase searches contain substantial irrelevant ownership/IAP results"
+    ]
+  },
+  "searches": [
+    {
+      "id": "Q01",
+      "query": "\"Reconstructing pedigrees: A combinatorial perspective\" pdf",
+      "date": "2026-09-29",
+      "outcome": "Publisher abstract/theorem snippet found; author full-text attempts failed."
+    },
+    {
+      "id": "Q02",
+      "query": "\"ancestral recombination\" \"ownership\" pairing IAP",
+      "date": "2026-09-29",
+      "outcome": "Broad mixed results; no exact theorem identified in inspected results."
+    },
+    {
+      "id": "Q03",
+      "query": "\"pedigree\" \"pairing\" \"realized\" identifiability",
+      "date": "2026-09-29",
+      "outcome": "Broad mixed results; identified reconstruction literature, not an exact equivalent."
+    },
+    {
+      "id": "Q04",
+      "query": "\"A general and efficient representation of ancestral recombination graphs\" pdf",
+      "date": "2026-09-29",
+      "outcome": "Identified institutional preprint and PMC routes; used existing primary published XML."
+    },
+    {
+      "id": "Q05",
+      "query": "\"ownership\" \"identical ancestor\" pedigree",
+      "date": "2026-09-29",
+      "outcome": "No exact candidate theorem identified in inspected results."
+    },
+    {
+      "id": "Q06",
+      "query": "\"co-ownership\" \"pedigree\" sampling",
+      "date": "2026-09-29",
+      "outcome": "Substantial irrelevant legal/animal-registration results; weak novelty evidence."
+    },
+    {
+      "id": "Q07",
+      "query": "\"Monitorability of omega-regular languages\" Bauer 1006.3638",
+      "date": "2026-09-29",
+      "outcome": "Located known monitorability work; fetched primary arXiv directly."
+    },
+    {
+      "id": "Q08",
+      "query": "\"genome\" \"ownership\" \"IAP\" ancestry",
+      "date": "2026-09-29",
+      "outcome": "Mixed results, including irrelevant IAP acronym usages; weak novelty evidence."
+    },
+    {
+      "id": "Q09",
+      "query": "\"pedigree\" \"sampling\" \"identifiability\" \"delayed\"",
+      "date": "2026-09-29",
+      "outcome": "Broad results; no exact sampling-mask result identified in inspected results."
+    },
+    {
+      "id": "Q10",
+      "query": "\"identical ancestor property\" genome pairing",
+      "date": "2026-09-29",
+      "outcome": "Alexander source found and checked."
+    },
+    {
+      "id": "Q11",
+      "query": "Gravel Steel 2015 genealogical genetic ancestry universal ancestors ghost ancestors",
+      "date": "2026-09-29",
+      "outcome": "Found publisher, PubMed and arXiv primary-source routes; read Proposition 2.1."
+    }
+  ],
+  "sources": [
+    {
+      "id": "A2026",
+      "citation": "Samuel A. Alexander (2026), Specieslike clusters based on identical ancestor points, arXiv:2602.05274v1",
+      "url": "https://arxiv.org/html/2602.05274v1",
+      "locator": "Definitions 1-4; final paragraph of section 3.1",
+      "access": "Primary HTML read live.",
+      "role": "Predicate and model definitions; explicit prior distinction between genetic and genealogical ancestry."
+    },
+    {
+      "id": "T2013",
+      "citation": "Bhalchandra D. Thatte (2013), Reconstructing pedigrees: some identifiability questions for a recombination-mutation model, J. Math. Biol. 66:37-74",
+      "doi": "10.1007/s00285-011-0503-8",
+      "url": "https://arxiv.org/pdf/1008.0153v3",
+      "locator": "Definitions 2.1-2.2, PDF p.6; section 6, p.35",
+      "access": "Primary PDF and arXiv version metadata read live; arXiv v3 is 6 September 2011.",
+      "role": "Potential-parent pairing rule and historical distributional reconstruction agenda."
+    },
+    {
+      "id": "K2016",
+      "citation": "B. Kirkpatrick (2016 expanded preprint), Non-Identifiable Pedigrees and a Bayesian Solution",
+      "url": "https://arxiv.org/pdf/1602.08183",
+      "locator": "Section 2, PDF pp.3-5; Theorem 1 p.7; section 4 pp.10-12",
+      "access": "Primary PDF read live.",
+      "role": "Different pedigrees can induce equal genotype likelihoods under its stochastic model."
+    },
+    {
+      "id": "SH2006",
+      "citation": "Mike Steel and Jotun Hein (2006), Reconstructing pedigrees: A combinatorial perspective, J. Theor. Biol. 240:360-367",
+      "doi": "10.1016/j.jtbi.2005.09.026",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022519305004224",
+      "locator": "Abstract; publisher snippet of Theorem 2.1, journal pp.362-363",
+      "access": "Publisher search-rendered abstract and theorem snippet read; primary author PDF failed through web tool and direct urllib HTTP 403. Historical project review reported full-text reading; not treated as fresh full-text access.",
+      "role": "Reconstruction depends on supplied sex-preserving subpedigree information."
+    },
+    {
+      "id": "T2008",
+      "citation": "Bhalchandra D. Thatte (2008), Combinatorics of Pedigrees I: Counterexamples to a Reconstruction Question, SIAM J. Discrete Math. 22:961-970",
+      "doi": "10.1137/060675964",
+      "url": "https://arxiv.org/pdf/math/0609264",
+      "locator": "Author preprint Problem 1 p.2; Theorem 1 p.3",
+      "access": "Primary preprint read live; publisher metadata corroborated publication.",
+      "role": "Already answers the fixed-size-subpedigree question negatively."
+    },
+    {
+      "id": "ME2008",
+      "citation": "Frederick A. Matsen and Steven N. Evans (2008), To what extent does genealogical ancestry imply genetic ancestry?",
+      "doi": "10.1016/j.tpb.2008.06.003",
+      "url": "https://arxiv.org/pdf/0805.0634",
+      "locator": "Introduction, PDF pp.2-3; Proposition 1 p.6",
+      "access": "Primary arXiv PDF read live; direct Fred Hutch author URL failed in web tool.",
+      "role": "Established separation of genealogical descendant counts and inherited allele counts."
+    },
+    {
+      "id": "GS2015",
+      "citation": "Simon Gravel and Mike Steel (2015), The existence and abundance of ghost ancestors in biparental populations, Theor. Popul. Biol. 101:47-53",
+      "doi": "10.1016/j.tpb.2015.02.002",
+      "url": "https://arxiv.org/pdf/1401.3668v2",
+      "locator": "Section 2.2, Proposition 2.1, PDF p.4",
+      "access": "Primary arXiv PDF read live after following Alexander section 3.1 citation.",
+      "role": "Universal genealogical ancestors can leave no extant genetic material under the specified stochastic law.",
+      "new_in_this_publication_audit": true
+    },
+    {
+      "id": "W2024",
+      "citation": "Yan Wong et al. (2024), A general and efficient representation of ancestral recombination graphs",
+      "doi": "10.1093/genetics/iyae100",
+      "url": "https://doi.org/10.1093/genetics/iyae100",
+      "locator": "Genome ARGs, XML section iyae100-s1; formal definition and Figure 1 discussion",
+      "access": "Read archived primary PMC XML; live PMC recaptcha and DOI/publisher failures logged.",
+      "local_source": "research/wong/continuation-2026-09-27/source-audit/PMC11373519-fullText.xml",
+      "role": "Finite gARG interface; node metadata may retain additional information."
+    },
+    {
+      "id": "TSKIT",
+      "citation": "Official tskit stable data model documentation, accessed 29 September 2026",
+      "url": "https://tskit.dev/tskit/docs/stable/data-model.html#node-table",
+      "locator": "Node Table; Individual Table",
+      "access": "Official documentation read live after first base-URL attempt returned internal error.",
+      "role": "Optional individual associations and parent records preserve information omitted by the candidate."
+    },
+    {
+      "id": "B2010",
+      "citation": "Andreas Bauer (2010), Monitorability of omega-regular languages, arXiv:1006.3638v1",
+      "url": "https://arxiv.org/pdf/1006.3638v1",
+      "locator": "Section 1, PDF pp.1-2; Definitions 1-2, pp.4-5",
+      "access": "Primary full-text PDF and arXiv metadata read live; earlier project comparison used abstract only.",
+      "role": "Established finite-witness monitoring concepts; distinct quantifiers from uniform termination.",
+      "new_full_text_comparison": true
+    },
+    {
+      "id": "AL2026",
+      "citation": "Abramsky et al. (2026), Open questions about time and self-reference in living systems",
+      "doi": "10.1098/rsos.261059",
+      "url": "https://doi.org/10.1098/rsos.261059",
+      "locator": "Existing project ledger Q04: section 4.2, PDF p.11",
+      "access": "Current DOI retrieval failed; inherited project correspondence explicitly labelled, not treated as freshly verified full text.",
+      "local_source": "research/open-problems/time-self-reference/problem-ledger.json",
+      "role": "Motivating projection/model-adequacy agenda; not a solved external author question."
+    }
+  ],
+  "claim_source_relations": [
+    {
+      "claim": "IAP is the exact external target, not an invented predicate.",
+      "source": "A2026",
+      "relation": "supports_definition",
+      "local_evidence": "lean/SamuelAlexanderResearch/SpeciesBridge.lean:177"
+    },
+    {
+      "claim": "General genetic versus genealogical ancestry distinction predates this project.",
+      "source": "A2026",
+      "relation": "prior_art"
+    },
+    {
+      "claim": "Pairing can be determined from richer potential-parent representations.",
+      "source": "T2013",
+      "relation": "scope_constraint"
+    },
+    {
+      "claim": "The ownership theorem does not answer the source stochastic-identifiability questions.",
+      "source": "T2013",
+      "relation": "different_observation_map"
+    },
+    {
+      "claim": "A shared realized history does not itself prove equality of likelihoods.",
+      "source": "K2016",
+      "relation": "different_quantifiers"
+    },
+    {
+      "claim": "Per-copy sex labels are weaker data than whole sex-labelled subpedigrees.",
+      "source": "SH2006",
+      "relation": "different_input"
+    },
+    {
+      "claim": "The historical fixed-size-subpedigree reconstruction question was already answered.",
+      "source": "T2008",
+      "relation": "prior_resolution_not_our_claim"
+    },
+    {
+      "claim": "The broad ancestry distinction is established under stochastic models.",
+      "source": "ME2008",
+      "relation": "prior_art"
+    },
+    {
+      "claim": "Extant DNA need not preserve every universal genealogical ancestor.",
+      "source": "GS2015",
+      "relation": "prior_art"
+    },
+    {
+      "claim": "Finite truncations map to the gARG interface; infinite history is not itself finite.",
+      "source": "W2024",
+      "relation": "source_model_bridge",
+      "local_evidence": "research/genome-pedigree/PairingGARG.lean:90; PairingBridge.lean:32"
+    },
+    {
+      "claim": "Fully supplied organism associations remove the omitted-ownership ambiguity under exact edge images.",
+      "source": "TSKIT",
+      "relation": "scope_constraint"
+    },
+    {
+      "claim": "Finite witnesses and infinite-record certification are established principles.",
+      "source": "B2010",
+      "relation": "prior_art"
+    },
+    {
+      "claim": "Bauer monitorability is existential over finite extensions, not guaranteed termination on every record.",
+      "source": "B2010",
+      "relation": "terminology_constraint"
+    },
+    {
+      "claim": "The broader biology paper remains motivation, with full author questions open.",
+      "source": "AL2026",
+      "relation": "related_agenda_not_solution"
+    }
+  ],
+  "proof_claims": [
+    {
+      "id": "G1",
+      "claim": "Arbitrary finite-prefix ownership agreement with opposite whole-population IAP and stated reproduction/connectivity constraints.",
+      "endpoints": [
+        "PairingCore.constrained_counterexample",
+        "PairingCore.no_iap_decoder"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "G2",
+      "claim": "Exact two-copy fibres and exact owner-image organism edges.",
+      "endpoints": [
+        "PairingCore.owner_exactly_two",
+        "PairingCore.edge_exact_image"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "G3",
+      "claim": "Exactly four founders and shared per-copy binary sex annotations with opposite-sex parents.",
+      "endpoints": [
+        "PairingCore.founders_exactly_four",
+        "PairingCore.parents_opposite_sex",
+        "PairingCore.same_copy_sex"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "G4",
+      "claim": "Exact edge images fail ancestry-path lifting in an explicit two-edge example.",
+      "endpoints": [
+        "PairingCore.exact_edges_do_not_lift_paths"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "G5",
+      "claim": "Finite gARG realization and real-date biosphere interface.",
+      "endpoints": [
+        "PairingGARG.finiteARG",
+        "PairingBridge.finite_pedigree_exact_image",
+        "PairingBridge.generation_dated_biosphere"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "S1",
+      "claim": "Static observation mask identifies IAP in Family iff odd sampled times are unbounded.",
+      "endpoints": [
+        "PairingObservation.identifies_iap_iff"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "S2",
+      "claim": "Even the entire ownership record at all even generations fails.",
+      "endpoints": [
+        "PairingObservation.no_even_ownership_decoder"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "S3",
+      "claim": "Positive observed co-ownership certifies the split branch within Family.",
+      "endpoints": [
+        "PairingObservation.observed_positive_not_iap"
+      ],
+      "status": "Checked source and saved receipt"
+    },
+    {
+      "id": "S4",
+      "claim": "With known even B>=2, sampled odd time after B is necessary and sufficient; B+1 suffices.",
+      "endpoints": [
+        "PairingObservation.bounded_identifies_iap_iff",
+        "PairingObservation.bounded_iap_iff_one_query"
+      ],
+      "status": "Checked source and saved receipt"
+    }
+  ],
+  "open_question_classification": {
+    "exact_project_questions": "Resolved under stated observation and family assumptions.",
+    "externally_posed_question_closure": "Not established.",
+    "historical_question_to_avoid_reclaiming": "Steel-Hein fixed-size-subpedigree reconstruction, already answered negatively by Thatte.",
+    "unresolved_in_candidate_scope": [
+      "Probability/support of prescribed infinite histories under a specified population model",
+      "Equality or separation of genotype likelihood laws",
+      "Recovery under noisy ownership or unknown persistent lane matching",
+      "Applicability beyond the fixed delayed-split family"
+    ]
+  },
+  "quotations": {
+    "verbatim_words_from_external_sources_in_this_audit": 0
+  },
+  "publication_recommendation": "Update and link the two existing submissions, with curator consolidation optional. Do not duplicate pending entries or email researchers before catalog publication."
+}

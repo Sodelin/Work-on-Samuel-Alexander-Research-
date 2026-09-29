@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-29",
+  "status": "PASS_PUBLICATION_ARTIFACT_CHECKS",
+  "entry_keys_match_existing_pending_manifest": true,
+  "entry_count": 7,
+  "all_35_revised_fields_within_utf16_limits": true,
+  "json_files_parsed": 12,
+  "local_markdown_file_links_checked": 71,
+  "all_revision_source_hashes_match": true,
+  "original_submission_fields_preserved_in_manifest": true,
+  "new_compiler_run": false,
+  "scope": "Publication artifact checks, in addition to the specialist statement/source and saved-evidence audits. This does not certify novelty or editorial acceptance.",
+  "new_audit_files_follow_repository_lf_policy": true,
+  "revision_hashes_identify_publication_bytes": true
+}

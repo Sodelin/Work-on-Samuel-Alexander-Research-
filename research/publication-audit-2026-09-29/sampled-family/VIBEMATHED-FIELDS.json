@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-29",
+  "entry_key": "sampled-family-recovery",
+  "action": "Substantive source-question/comparator clarification for existing pending entry; not a new submission.",
+  "editorial_disposition": "Exact formal finite benchmark and dependence control. Prior open status, novelty and catalog eligibility are unestablished.",
+  "fields": {
+    "submit-name": "Exact family-recovery probabilities and the role of independent inheritance blocks",
+    "submit-statement": "For a fixed one-generation sample, what is the exact chance that observed symbol-sharing components recover every true family? Families have disjoint parental pairs and nonempty sizes m_i. At each block all parents have distinct symbols; children copy either parent fairly and independently across children, blocks and families. Observations are exact. Join children if they match at any of B>=1 corresponding blocks, then take components. Also ask whether preserving every single-block joint distribution, without independence between blocks, preserves the gain from extra blocks. This is a project-formulated finite benchmark motivated by Kim, Mossel, Ramnarayan and Turner's reconstruction model. Its dependence example is relevant to their Section 1.6 Question 1, which remains broader than this target.",
+    "submit-resultNote": "The exact success probability is product_i[1-(2^(m_i-1)-1)/2^(B*(m_i-1))]. Recovery is proved directly for the observed-symbol output law. A family disconnects exactly when its inheritance vectors occupy one complementary pair, both present; an explicit bijection counts the failure event. For three siblings and two blocks, success is 13/16, versus 7/16 for the project's restricted all-three-sharing rule. Repeating one fair parental choice per child across all blocks preserves every block's full joint law, yet this family's component-recovery probability stays 1/4 for every B>=1. Extra observations preserve existing paths, but correct marginals alone do not guarantee an independence-based probability gain. The result supplies an exact finite control and a one-family dependence example; it makes no all-estimator impossibility or REC-GEN improvement claim.",
+    "submit-verificationNote": "Lean 4.33.1, pinned Mathlib, exact clean proof commit ae0beee8d04e32c45f28d2f465b924d6816c82a5. Seven modules and 31 selected declarations cover the graph characterization, explicit finite probability law, observed-output recovery and repeated-block counterexample. On 29 September 2026 the saved-evidence verifier passed: source and compiler-log hashes, 49 artifact hashes, and selected axiom reports. This was an integrity replay, not a new compiler run. Allowed axioms: propext, Classical.choice, Quot.sound. The output-law endpoint requires a finite measurable alphabet with measurable singletons and injective parent symbols at each block. The repeated-law success endpoint is for one family. Distribution identifiability, observation-error coupling, parent-couple construction and an executable refinement are outside these endpoints. Internal statement review is recorded separately. No full REC-GEN formalization or coupling from Wong's continuous ARG law is claimed. Requested tier: Lean-checked, statement unaudited.",
+    "submit-submitterNote": "Please assess the exact finite benchmark and dependence construction on their stated merits. The source-question audit now maps all three directions of KMRT Section 1.6 Question 1. The positive theorem retains symbol injectivity and block independence; its repeated-block law gives a boundary example for this estimator, not closure of the general non-i.i.d. question. A finite symbol type does not solve the collision-allowing finite-alphabet problem. Mossel-Vulakh Section 3.2 already uses pairwise candidate screening; our 13/16 versus 7/16 compares two project-restricted procedures. The accepted packet explicitly makes no novelty claim, and prior open status of this exact finite question has not been established. This source mapping clarifies the existing submission; catalog eligibility remains for editorial assessment."
+  },
+  "character_counts": {
+    "submit-name": 82,
+    "submit-statement": 807,
+    "submit-resultNote": 865,
+    "submit-verificationNote": 1026,
+    "submit-submitterNote": 829
+  },
+  "limits": {
+    "submit-name": 200,
+    "submit-statement": 1200,
+    "submit-resultNote": 1000,
+    "submit-verificationNote": 1500,
+    "submit-submitterNote": 1000
+  },
+  "do_not_infer": [
+    "Closure of KMRT Question 1",
+    "Recovery for finite alphabets allowing parent-symbol collisions",
+    "A theorem improving full REC-GEN",
+    "An impossibility bound applying to all estimators",
+    "First use of pairwise screening",
+    "Worldwide novelty from AI attribution or a proof-assistant check"
+  ],
+  "source_links": [
+    {
+      "label": "KMRT open directions, Question 1",
+      "url": "https://arxiv.org/pdf/2005.03810v1#page=6"
+    },
+    {
+      "label": "Mossel-Vulakh pairwise screening, Section 3.2",
+      "url": "https://arxiv.org/pdf/2204.04573v2#page=3"
+    }
+  ]
+}

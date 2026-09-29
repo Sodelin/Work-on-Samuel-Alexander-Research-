@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "DRAFT_FOR_ROOT_REVIEW_NOT_SUBMITTED",
+  "date": "2026-09-29",
+  "purpose": "Substantive update to two existing pending entries; no duplicate submission.",
+  "unchanged_fields": "Keep original dates, immutable proof links, AI attribution and other metadata unless root verifies a reason to amend them.",
+  "drafts": {
+    "genome-ownership": {
+      "submit-name": "One complete genome-copy history, two diploid pedigrees with opposite identical-ancestor properties",
+      "submit-statement": "Does retaining every realized genome-copy transmission determine Alexander's whole-population identical-ancestor property (IAP) when organism ownership is known through any prescribed finite generation? IAP means that each organism has finitely many descendants or finitely many non-descendants within the population. The candidate class has four diploid organisms per generation, exactly four founders, two distinct parents per nonfounder, exactly two children per organism, weak connectivity and real generation birthdates. Every pedigree edge must be witnessed by a recorded transmission. Ownership groups each generation's eight labelled copies into four pairs. This exact inverse-observation question was formulated in this project; Alexander supplies the ancestry predicate, while Wong supplies the finite genome-ARG interface. The fixed observation omits later ownership and includes one unrecombined abstract genomic region.",
+      "submit-resultNote": "A constrained counterexample answers no. For every N, two ownership schedules agree through N on the same complete eight-lane copy history. Both satisfy all listed degree and diploidy conditions; even per-copy binary sex labels agree and each nonfounder has opposite-sex parents. One whole pedigree has IAP and is maximal specieslike; the other's permanently separated tail violates IAP although the whole graph remains weakly connected. Hence no exact decoder, even noncomputable, works on this family. An explicit two-edge witness explains the obstruction: exact transmission images preserve pedigree edges without lifting organism ancestry paths. Finite truncations are checked against the Wong gARG structure. The contribution is this conjunction and its infinite-IAP consequence. Established pedigree ambiguity is credited. This realized-history theorem supplies no equality of genotype likelihoods or probability claim for infinite schedules.",
+      "submit-verificationNote": "Lean-checked; statement not independently audited by a human expert. Lean 4.33.1 freshly compiled 31 project modules and audited all 77 public theorem declarations of the three new construction/bridge modules at proof commit 1ba951e4417c930e76ef0f5ace747c9ccb681338. Public evidence head 4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2 has successful hosted runs 36298049178 and 36298049071 in the existing record. On 29 September 2026 this publication audit reran check_packet.py: all saved source/log hashes and the 77-theorem inventory passed. That integrity check is not a new Lean compilation. The main endpoints are constrained_counterexample, no_iap_decoder, owner_exactly_two, edge_exact_image, parents_opposite_sex, same_copy_sex and generation_dated_biosphere. Recorded axioms are limited to propext, Classical.choice and Quot.sound. A fresh bounded primary-source comparison confirms the need to distinguish Thatte's potential-parent graph, Kirkpatrick's likelihood framework and optional individual metadata in tskit. Worldwide priority remains unestablished.",
+      "submit-submitterNote": "Please assess this as an explicit information-loss construction applying Alexander's IAP to realized copy-transmission records. Its force comes from simultaneously retaining every transmission, exact witnessed organism edges, diploidy, two parents/two children, weak connectivity, shared sex annotations and arbitrarily long ownership agreement. The exact constrained question is project-posed: no source author is credited with posing it, and no named general pedigree-reconstruction question is declared closed. The companion sampling theorem gives a precise recovery boundary for the same family. The prior-art audit supports a candidate incremental contribution, not a claim that genomes cannot reveal ancestry. Consider the two entries as one coordinated result pair if that better fits catalog policy."
+    },
+    "ownership-sampling": {
+      "submit-name": "Exactly which ownership samples recover identical ancestry in a delayed-split pedigree family?",
+      "submit-statement": "For the checked diploid family consisting of perpetual mixing or a single permanent split after an even generation S >= 2, which static sets T of co-ownership observation times identify whole-population IAP? The complete realized copy-transmission graph is known. A noiseless observation at t asks whether named lanes 0 and 3 belong to the same organism; unsampled times are distinct from negative answers. The target is identification from the entire masked record. Also consider the additional prior assumption that any switch occurs by a known even B >= 2. This question is a project continuation of the ownership counterexample, using Alexander's IAP definition. It is not an externally posed general sampling conjecture.",
+      "submit-resultNote": "The criterion is exact: the complete record identifies IAP if and only if sampled odd generations are unbounded. This separates timing from volume: even the entire ownership assignment at every even generation fails, while arbitrarily sparse unbounded odd samples suffice. A positive observation certifies the split branch; finitely many negative observations permit a later split. Under the supplied even switch bound B >= 2, identification holds exactly when T contains an odd time after B, so one query at B+1 suffices. The proof follows from the explicit query law: always false under mixing, and true exactly at odd times beyond the split. This sharp recovery boundary belongs to the stated family. The infinite-record decoder is a proposition-valued mathematical function, not a uniformly terminating algorithm. Finite/infinite monitoring distinctions are established prior mathematics.",
+      "submit-verificationNote": "Lean-checked; statement not independently audited by a human expert. Exact-clean-commit Lean 4.33.1 audit at c071d4b895b8fe979211b68ac30240f8833e707d covers five project modules and 20 selected axiom reports: 15 new observation endpoints plus five reused construction endpoints. Public checkpoint 35a8f86b5f0e555eab25d003353c0c8772578db5 preserves the source and evidence. On 29 September 2026 this audit reran verify_packet.py successfully, validating source/commit correspondence, compiler logs, 22 artifact hashes and the allowed axioms propext, Classical.choice and Quot.sound. This was saved-receipt verification, not a new compiler or hosted run. Core endpoints are identifies_iap_iff, no_even_ownership_decoder, bounded_identifies_iap_iff and bounded_iap_iff_one_query. The iff with a bounded switch requires B even and B >= 2. The observation mask is static and the lane identities and specimen ownership are exact. The theorem does not derive those inputs, the family assumption or the switch bound from data.",
+      "submit-submitterNote": "This is the sharp observation-recovery half of the ownership result pair: a complete classification of static masks for IAP within its explicit delayed-split family, strengthened by failure of all even-generation ownership and a conditional one-query threshold. Its proof is a short exact deduction once the constrained construction is established; the main mathematical burden lies in that construction and source bridge. Bauer's finite-witness monitorability framework is credited for the general finite/infinite distinction; our theorem has different quantifiers and classifies observation masks for this fixed family. No general monitoring, likelihood, biological applicability or worldwide priority claim is made. Please link with the ownership entry or assess them together if preferred."
+    }
+  },
+  "field_lengths": {
+    "genome-ownership": {
+      "submit-name": {
+        "characters": 99,
+        "limit": 200
+      },
+      "submit-statement": {
+        "characters": 932,
+        "limit": 1200
+      },
+      "submit-resultNote": {
+        "characters": 948,
+        "limit": 1000
+      },
+      "submit-verificationNote": {
+        "characters": 1064,
+        "limit": 1500
+      },
+      "submit-submitterNote": {
+        "characters": 807,
+        "limit": 1000
+      }
+    },
+    "ownership-sampling": {
+      "submit-name": {
+        "characters": 94,
+        "limit": 200
+      },
+      "submit-statement": {
+        "characters": 725,
+        "limit": 1200
+      },
+      "submit-resultNote": {
+        "characters": 892,
+        "limit": 1000
+      },
+      "submit-verificationNote": {
+        "characters": 1018,
+        "limit": 1500
+      },
+      "submit-submitterNote": {
+        "characters": 793,
+        "limit": 1000
+      }
+    }
+  }
+}
