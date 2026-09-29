@@ -586,7 +586,7 @@
   ],
   "broader_author_questions_closed_scope": "Royal Society time and self-reference agenda; separately listed Alexander answers retain their explicit scopes",
   "publication_audit_2026_09_29": {
-    "status": "prepared-for-curator-delivery",
+    "status": "curator-revisions-delivered-readback-confirmed; seven entries under review",
     "index": "research/publication-audit-2026-09-29/README.md",
     "revisions": "research/publication-audit-2026-09-29/REVISIONS.json",
     "existing_pending_entry_keys": [
@@ -605,6 +605,11 @@
     "social_hosted_verification_run": 36638142382,
     "proof_sources_changed": false,
     "catalog_acceptance_claimed": false,
-    "researcher_emails_sent": false
+    "researcher_emails_sent": false,
+    "published_dossier_commit": "48cd997b719373615ac7793fae9795136d910622",
+    "delivery_receipt": "research/publication-audit-2026-09-29/DELIVERY-RECEIPT.json",
+    "sent_at_utc": "2026-09-29T22:31:11.080Z",
+    "queue_observed_at_utc": "2026-09-29T22:29:22.133Z",
+    "pending_form_fields_confirmed_changed": false
   }
 }

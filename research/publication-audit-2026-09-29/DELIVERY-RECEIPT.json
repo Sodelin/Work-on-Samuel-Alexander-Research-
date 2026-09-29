@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "DELIVERED_FULL_MESSAGE_READBACK_CONFIRMED",
+  "sent_at_utc": "2026-09-29T22:31:11.080Z",
+  "readback_at_utc": "2026-09-29T22:31:14.899Z",
+  "destination": "Existing VibeMathed curator conversation about the published Thue-Morse entry",
+  "recipient": "Rasmus Lindahl",
+  "site": "https://vibemathed.com",
+  "http_status": 200,
+  "full_message_readback_verified": true,
+  "message_utf16_length": 1977,
+  "message_sha256_utf8": "915df2e40c310c15978d73183df04ddf53aed512ae29b7e86edaec5a0ed37e84",
+  "message_body": "Source-audited revisions for all seven pending entries are now on main. The dossier gives the exact contribution, proof obstacle, source-question locator, closest predecessors and proposed replacement fields for each existing entry:\n\nhttps://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/48cd997b719373615ac7793fae9795136d910622/research/publication-audit-2026-09-29/README.md\n\nUpdates:\n\n- Alexander: source-specific nonuniversality with exact incoming-parent counts and finite stretch; maximal extension in a fixed real founding window without common ancestry; and exact realization/pruning. Classical graph-growth, rank and compactness methods are credited.\n- Finite barrier: we recovered Smithson's full dissertation chapter and now compare its observable and life cycle directly. The exact fixation reversal remains the candidate increment. The existing written deterministic common-limit proof is retained and distinguished from the Lean endpoints.\n- Ownership pair: Gravel-Steel's ghost-ancestor result and Thatte's richer observation model are explicit predecessors. The contribution is the constrained same-record/opposite-IAP construction and its exact sampling boundary, not a general claim that genomes reveal no ancestry.\n- Sampled families: all three parts of KMRT Question 1 are mapped. The exact finite benchmark and dependence example retain their scope; Mossel-Vulakh already uses pairwise screening.\n\nThe social repository adds a one-by-one audit of all 85 declarations and the recovered article/monograph PDF and EPUB editions. It preserves their formalization value without claiming a newly established field-level open-problem closure.\n\nREVISIONS.md and REVISIONS.json collect all seven proposed field sets. Please assess/apply these to the existing entries; no duplicate submissions are requested. Original proof links, solve dates and AI attribution are preserved. Internal AI review remains distinct from independent human statement review.",
+  "published_dossier_commit": "48cd997b719373615ac7793fae9795136d910622",
+  "revised_entry_keys": [
+    "finite-epigenetic",
+    "genome-ownership",
+    "ownership-sampling",
+    "sampled-family-recovery",
+    "universal-avoider",
+    "ordinal-realization",
+    "founder-window"
+  ],
+  "queue_observed_at_utc": "2026-09-29T22:29:22.133Z",
+  "all_seven_entries_confirmed_under_review": true,
+  "pending_form_fields_confirmed_changed": false,
+  "catalog_acceptance_claimed": false,
+  "researcher_emails_sent": false,
+  "privacy": "Only this project's outgoing message and delivery metadata are included. The private inbox and other conversation messages are excluded.",
+  "interpretation": "One substantive linked revision package was delivered for seven existing entries. This receipt proves delivery, not editorial acceptance, live form editing or independent statement review."
+}
