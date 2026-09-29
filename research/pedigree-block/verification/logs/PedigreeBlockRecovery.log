@@ -1,0 +1,4 @@
+'PedigreeBlock.connected_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.recovered_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.observationLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.output_recovery_probability' depends on axioms: [propext, Classical.choice, Quot.sound]

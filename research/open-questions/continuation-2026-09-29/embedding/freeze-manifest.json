@@ -1,0 +1,274 @@
+{
+  "frozenAt": "2026-09-29T20:29:16.7939097Z",
+  "compilerVersion": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "sourceReceiptMatches": true,
+  "endpointCount": 26,
+  "endpoints": [
+    {
+      "name": "GenericUniversalAvoiders.binaryCover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.exists_ray",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.no_countable_bounded_stretch_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.rootsEquiv",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.blowUp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.blowUp_language",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.no_countable_host_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.no_countable_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericUniversalAvoiders.avoiding_no_countable_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.terminalClone",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.noncanonical_has_no_children",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.terminalClone_language",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.incomingParentEquiv",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.terminalClone_preserves_unique_parents",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.rootsEquiv",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.no_countable_host_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.no_countable_bounded_stretch_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.avoiding_no_countable_exact_parent_bounded_stretch_population_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.selectParents",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.selectParents_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.selectParents_realizes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.selectParents_rootsEquiv",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.selectedClone_rootsEquiv",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.selectParents_root_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TerminalCloneAvoiders.avoiding_no_countable_exact_parent_family_from_any_population",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "audit.md",
+      "bytes": 14946,
+      "sha256": "9CFB46B663E359FB9806276106011A9078B94AF8B53FF4082747F61CEB55A9B0"
+    },
+    {
+      "name": "check-lean.ps1",
+      "bytes": 1420,
+      "sha256": "B49140C71A57BE238F5795F205AC9691777FF407D6A3046450C7F8CD1273B973"
+    },
+    {
+      "name": "GenericUniversalAvoiders.check.json",
+      "bytes": 1932,
+      "sha256": "E0DAF7291707997E9F9A59763329BF69E1C9BC267EA0E6F456420A8858878BE1"
+    },
+    {
+      "name": "GenericUniversalAvoiders.compile.log",
+      "bytes": 1232,
+      "sha256": "D9A6F6F15CEB70CC40C5989B73D9AC73DF94226AB316D1F1461F3D214E639C20"
+    },
+    {
+      "name": "GenericUniversalAvoiders.lean",
+      "bytes": 21037,
+      "sha256": "7C96183BD1CEA8A694B59A12DEF6EBEDB2B6F238044A6C6FB24610E49A37EAC4"
+    },
+    {
+      "name": "GenericUniversalAvoiders.olean",
+      "bytes": 653592,
+      "sha256": "8AFAF629C6B3C394B9129E219BC37BE9D348805E035DA205B9AA1F8C86E0F295"
+    },
+    {
+      "name": "source-hashes.json",
+      "bytes": 1022,
+      "sha256": "F682D1849F2EDDC0A4BBCD11161FB6AF8EF07DDBB5E5823B3C4823B7FD6FBA8A"
+    },
+    {
+      "name": "TerminalCloneAvoiders.check.json",
+      "bytes": 1926,
+      "sha256": "2BE0631805EEA4CE4B4DC38A4B1B3D5AD16CC1E5DC9D94E1A7B8BEFBA4BCA962"
+    },
+    {
+      "name": "TerminalCloneAvoiders.compile.log",
+      "bytes": 1919,
+      "sha256": "EDC35142FFA0B9C0851B7C49C7ACE18F58E630CE6F54BD955BEC08129EA606A3"
+    },
+    {
+      "name": "TerminalCloneAvoiders.lean",
+      "bytes": 17057,
+      "sha256": "F074F86ED6A678BA011175EB2D17BE3A2D95D7EE69C2DE2A7E5DDC7D8947A783"
+    },
+    {
+      "name": "TerminalCloneAvoiders.olean",
+      "bytes": 477368,
+      "sha256": "0E838412EBF0C39DB910C5D92C95B1D9AC4EEB0E1C23E63C86A0E2901A8DD11B"
+    }
+  ]
+}

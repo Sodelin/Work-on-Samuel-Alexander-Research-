@@ -1,0 +1,41 @@
+{
+  "exit_code": 0,
+  "checked_at_utc": "2026-09-25T10:48:51.849274+00:00",
+  "compiler": "C:/Users/Owner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean.exe",
+  "file": "GenericOrdinalCertificate.lean",
+  "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510",
+  "frozen_import": "GenericCertificate.lean",
+  "frozen_import_sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581",
+  "status": "PASS",
+  "scope": "Avoidance iff ordinal-valued strictly decreasing rank on reachable states, for arbitrary vertex and label types and no finite-branching hypothesis.",
+  "printed_endpoints": [
+    {
+      "name": "GenericOrdinalCertificate.ordinal_certificate_excludes_realization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericOrdinalCertificate.avoidance_has_ordinal_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GenericOrdinalCertificate.avoids_iff_ordinal_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "source_checkout_modified": false,
+  "compiler_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "dependencies_downloaded_by_this_proof_task": false,
+  "local_import_build": "generic-import-build.txt"
+}

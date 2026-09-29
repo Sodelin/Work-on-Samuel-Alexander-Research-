@@ -1,0 +1,53 @@
+{
+  "inferred_alexander_specieslike_result": false,
+  "finite_probability_assignments": 117642,
+  "inferred_biological_species_classification": false,
+  "source_origin": "C:/Users/Owner/Documents/Codex/2026-09-26/yeah-so-we-have-two-separate/outputs/PEDIGREE-EVIDENCE.md",
+  "recorded_at_utc": "2026-09-27T04:34:09.2692411Z",
+  "new_lean_declarations": 0,
+  "independent_review": "REVIEW.md",
+  "frozen_arg_checkout_clean": true,
+  "contained_in_arg_git_bundle": false,
+  "after_review_change": "Explicit same labeled children and same true family partition in the coupled-error corollary; no other mathematical change.",
+  "status": "REVIEWED_GENERAL_WRITTEN_PROOF_WITH_FINITE_CONTROLS_NOT_LEAN",
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "RECOVERY-THEOREM.md",
+      "sha256": "eed2dd0de4c42869e2dc56d8017f7439ce9b67f606b764a8862d73a74514076e",
+      "bytes": 10489
+    },
+    {
+      "path": "SOURCE-HANDOFF.md",
+      "sha256": "0641535ff8b169a30e0e5eb72f33e55ea5c02fa09c7240e43bfd5c1edd46dde9",
+      "bytes": 6131
+    },
+    {
+      "path": "LEDGER.json",
+      "sha256": "253d4d902001c4b0b5b7d2f8f1a703bb517c231cb73c32bbbd8a399142cf3414",
+      "bytes": 3595
+    },
+    {
+      "path": "check_recovery.py",
+      "sha256": "bd5156244e3c8aa85975b010ddde620f2dbbabc0ba878585a57b67a6867938cb",
+      "bytes": 5288
+    },
+    {
+      "path": "CHECK-RESULT.json",
+      "sha256": "45643d297ba9da5789f23996aebbcfba34a83e5ca4d0e7c9e471c6e80d301523",
+      "bytes": 4795
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "fc2e819a2dd74ed0fce71597b5556ad3f84176faf18ccd55e372a4b5e3a11f8a",
+      "bytes": 1316
+    }
+  ],
+  "reviewed_note_sha256": "46f207c11d50c7b46caf2d863b098d27e58f41567150c600c893dd9a438eb906",
+  "inferred_wong_arg_observation_law": false,
+  "source_chat": "01a0e107-93d0-7271-8157-a1eb15ad90c4",
+  "append_block_controls": 5020,
+  "frozen_arg_checkout_head": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "final_note_sha256": "eed2dd0de4c42869e2dc56d8017f7439ce9b67f606b764a8862d73a74514076e",
+  "finite_control_command": "python -X utf8 check_recovery.py"
+}

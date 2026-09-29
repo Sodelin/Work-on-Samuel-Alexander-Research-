@@ -1,0 +1,70 @@
+{
+  "claims": [
+    {
+      "locator": "Section 4.1, PDF pages 16-17; Theorem 6.1, PDF page 33",
+      "source": "https://arxiv.org/pdf/2005.03810v1",
+      "claim": "REC-GEN asymptotic induced coupled-subpedigree guarantee",
+      "id": "S1",
+      "status": "PRIMARY_SOURCE_STATEMENT_CHECKED_NOT_FORMALIZED",
+      "scope": "Model and theorem statement checked; full proof not independently audited; not a claim of this packet."
+    },
+    {
+      "locator": "Sections 5-8",
+      "source": "https://arxiv.org/pdf/2204.04573v2",
+      "claim": "Finite simulation limitations and improved heuristics",
+      "id": "S2",
+      "status": "PRIMARY_SOURCE_REPORT_CHECKED_NOT_REPRODUCED",
+      "scope": "No simulation or author code rerun."
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "claim": "Disconnection iff exactly two complementary inheritance vectors occur",
+      "scope": "B >= 1; nonempty finite families; distinct parental symbols at each block.",
+      "id": "D1",
+      "endpoint": "RECOVERY-THEOREM.md, Theorem 1"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "claim": "Exact component-estimator recovery probability is product_i (1-(2^(m_i-1)-1)*2^(-B*(m_i-1)))",
+      "scope": "Independent fair bits for all children and blocks; fixed disjoint parental pairs; labeled sampled children.",
+      "id": "P1",
+      "endpoint": "RECOVERY-THEOREM.md, Theorem 2"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "claim": "Labeled family partition is identifiable from the distribution of the observed sharing graph for every B >= 1",
+      "scope": "Pair-sharing probabilities separate distinct partitions; no individual-parent naming or estimator-optimality conclusion.",
+      "id": "I1",
+      "endpoint": "RECOVERY-THEOREM.md, Theorem 3"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "claim": "Adding observed blocks merges components only within true families",
+      "scope": "Exact observations and disjoint parental symbols; no independence needed.",
+      "id": "D2",
+      "endpoint": "RECOVERY-THEOREM.md, Theorem 4"
+    },
+    {
+      "status": "GENERAL_WRITTEN_COUNTEREXAMPLE_NOT_LEAN",
+      "claim": "Correct one-block marginals with perfectly dependent blocks do not yield the independent-block recovery rate",
+      "scope": "One fair bit per child reused in every block; per-family success remains 2^(1-m).",
+      "id": "C1",
+      "endpoint": "RECOVERY-THEOREM.md, Theorem 4"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "claim": "A coupling with probability at most epsilon of differing observed graphs loses at most epsilon in recovery probability",
+      "scope": "The coupling and error bound are explicit additional assumptions, not inferred from biology or the ARG law.",
+      "id": "E1",
+      "endpoint": "RECOVERY-THEOREM.md, Observation-error corollary"
+    }
+  ],
+  "new_lean_declarations": 0,
+  "source_handoff_sha256": "0641535ff8b169a30e0e5eb72f33e55ea5c02fa09c7240e43bfd5c1edd46dde9",
+  "checked_arg_evidence_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "source_handoff": "SOURCE-HANDOFF.md",
+  "new_derivation_attribution": "Independent elementary derivations in this packet, motivated by the handoff model; no novelty claim and no attribution of these formulas to the paper.",
+  "recorded_at_utc": "2026-09-27T04:33:13.2702602Z",
+  "checked_arg_proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb",
+  "frozen_repository_coverage_promoted": false
+}

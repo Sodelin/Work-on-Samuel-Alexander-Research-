@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "checked_at_utc": "2026-09-25T10:48:51.849274+00:00",
+  "compiler": "C:/Users/Owner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean.exe",
+  "file": "GenericOrdinalCertificate.lean",
+  "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510",
+  "frozen_import": "GenericCertificate.lean",
+  "frozen_import_sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581"
+}

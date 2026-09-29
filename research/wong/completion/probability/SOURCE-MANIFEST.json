@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-09-25T16:01:06.974926+00:00",
+  "status": "SOURCE_AND_LOG_MATCH_REPORTED_LOCAL_PASS",
+  "modules": [
+    {
+      "module": "WongBigARGDrift",
+      "selected_endpoint_count": 2,
+      "source_sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+      "log": "drift-validation.txt",
+      "log_sha256": "c1ef4802d8e79f54e0c26687ee4aa9414375c16aeeb9f86d3c66506e5299155e",
+      "endpoints": [
+        "WongBigARGDrift.weighted_gap",
+        "WongBigARGDrift.potential_drift"
+      ],
+      "endpoint_axioms": {
+        "WongBigARGDrift.weighted_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGDrift.potential_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "warning_count": 2
+    },
+    {
+      "module": "WongCountChain",
+      "selected_endpoint_count": 10,
+      "source_sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+      "log": "WongCountChain.compile.log",
+      "log_sha256": "7666a3e5d45d58a5f4ad09ab66b972addf1bda9316ce012401a6085aa91aeddd",
+      "endpoints": [
+        "WongCountChain.one_absorbing",
+        "WongCountChain.jump_up_mass",
+        "WongCountChain.jump_down_mass",
+        "WongCountChain.initial_lintegral",
+        "WongCountChain.step_lintegral",
+        "WongCountChain.ae_positive_counts",
+        "WongCountChain.sum_transient_le",
+        "WongCountChain.ae_finite_absorption_of_drift",
+        "WongCountChain.literal_rate_ratio",
+        "WongCountChain.literal_merger_ratio"
+      ],
+      "endpoint_axioms": {
+        "WongCountChain.one_absorbing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.jump_up_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.jump_down_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.initial_lintegral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.step_lintegral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.ae_positive_counts": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.sum_transient_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.ae_finite_absorption_of_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.literal_rate_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongCountChain.literal_merger_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "warning_count": 5
+    },
+    {
+      "module": "WongBigARGAbsorption",
+      "selected_endpoint_count": 7,
+      "source_sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+      "log": "WongBigARGAbsorption.compile.log",
+      "log_sha256": "76381e63971cf68d2d473c9de9974703f4b47be0d0397a0984a2fb440b7fc3f1",
+      "endpoints": [
+        "WongBigARGAbsorption.countPotential_drift",
+        "WongBigARGAbsorption.ae_eventually_one",
+        "WongBigARGAbsorption.ae_finite_jump_absorption",
+        "WongBigARGAbsorption.normalizedRatio_value",
+        "WongBigARGAbsorption.literal_up_kernel_mass",
+        "WongBigARGAbsorption.literal_down_kernel_mass",
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+      ],
+      "endpoint_axioms": {
+        "WongBigARGAbsorption.countPotential_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGAbsorption.ae_eventually_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGAbsorption.ae_finite_jump_absorption": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGAbsorption.normalizedRatio_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGAbsorption.literal_up_kernel_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGAbsorption.literal_down_kernel_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "warning_count": 2
+    }
+  ],
+  "selected_endpoint_count": 19,
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "worker_handoff_sha256": "40c21f5861049f3c3d77d79aeb6fc485d98415c860a9fc9f330164280d758ade",
+  "scope": "Lead verified exact source and log hashes, endpoint identities and allowed axiom sets. Compiler exit 0 is reported in the worker handoff and root dispatch. This is not a new compiler run, combined registration audit or hosted CI."
+}

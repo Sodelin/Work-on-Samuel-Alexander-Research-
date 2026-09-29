@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-09-25T16:29:09.618284+00:00",
+  "modules": [
+    {
+      "module": "WongBigARGDrift",
+      "source_sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+      "olean_sha256": "3c6bef021dd4f7b9e1f0abbb8f7f9ec49b0202c82210eec34b470469c17d211f",
+      "log_sha256": "a4223cd388fbb79adaafe5f49523be91be03839e8fdabb30584d7297e274757a",
+      "exit_code": 0,
+      "warnings": 2,
+      "elapsed_seconds": 81.891,
+      "endpoints": [
+        "WongBigARGDrift.weighted_gap",
+        "WongBigARGDrift.potential_drift"
+      ],
+      "endpoint_axioms": {
+        "WongBigARGDrift.weighted_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WongBigARGDrift.potential_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "command": [
+        "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+        "--root=C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\wong-completion\\integration\\resumption\\staging\\probability-cycle\\publish\\real",
+        "-j1",
+        "-M4096",
+        "-o",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\wong-completion\\integration\\resumption\\staging\\probability-cycle\\.lake\\build\\lib\\lean\\WongBigARGDrift.olean",
+        "C:\\Users\\Owner\\Documents\\Codex\\2026-09-25\\wong-completion\\integration\\resumption\\staging\\probability-cycle\\publish\\real\\WongBigARGDrift.lean"
+      ]
+    }
+  ]
+}

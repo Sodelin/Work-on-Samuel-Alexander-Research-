@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LOCAL_EXACT_COMMIT",
+  "checked_at_utc": "2026-09-27T05:50:33.874472+00:00",
+  "proof_commit": "c071d4b895b8fe979211b68ac30240f8833e707d",
+  "base_commit": "5c38a01483395afc44caa90d0833a75fb128c58b",
+  "branch": "codex/owner-observations-2026-09-27",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "command": "python -X utf8 research/wong/continuation-2026-09-27/check.py PairingObservationAudit --require-clean --recheck-targets",
+  "project_import_closure_modules": 5,
+  "selected_new_declarations": 15,
+  "selected_reused_declarations": 5,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "endpoint_axioms": {
+    "PairingObservation.query_coownership": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PairingObservation.local_query": [
+      "propext"
+    ],
+    "PairingObservation.query_formula": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PairingObservation.query_mixing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PairingObservation.query_splitting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PairingObservation.observe_eq_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.split_observation_eq_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.identifies_iap_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.no_bounded_sampling_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.observed_positive_not_iap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.even_owner_agreement": [
+      "propext"
+    ],
+    "PairingObservation.even_owners_equal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PairingObservation.no_even_ownership_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.bounded_identifies_iap_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingObservation.bounded_iap_iff_one_query": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingCore.constrained_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingCore.mixing_iap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingCore.splitting_not_iap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PairingCore.edge_exact_image": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PairingCore.owner_exactly_two": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "clean_at_start_and_finish": true,
+  "combined_receipt_sha256": "e54b237b5f567a2e60d8759d83cce69252b97ac6f35039bb1ffb26a19c99c30f",
+  "build_policy": "The combined audit was freshly compiled at the clean proof commit. All four project dependency objects were built in this isolated checkout; reuse required matching source, direct dependency object, compiler, pinned package revision, object and log hashes. No Q1 project object was borrowed. New proof imports use the standard-library Q1/Alexander closure.",
+  "q1_dependency_proof_commit": "1ba951e4417c930e76ef0f5ace747c9ccb681338",
+  "q1_dependency_evidence_commit": "4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2",
+  "independent_review": "INDEPENDENT-REVIEW.md",
+  "research_label": "MODEL_SPECIFIC_DEDUCTION_FORMALIZED_NO_PRIORITY_CLAIM",
+  "new_hosted_verification": false,
+  "publication_or_submission": false,
+  "scope": "Exact static co-ownership sampling criterion for IAP in the given delayed-splitting family; stronger all-even ownership obstruction; conditional finite-data criterion with a supplied even upper bound on all switch times.",
+  "remaining_boundaries": [
+    "Persistent labelled-copy matching and correct specimen ownership are extra observations, not inferred from phasing or equal sequences.",
+    "Infinite-record identification is not a uniformly terminating finite-time decision procedure.",
+    "The bounded corollary assumes BoundedFamily and the known bound; finite data does not validate those prior assumptions.",
+    "No arbitrary-pedigree, noisy, adaptive, probabilistic-likelihood, twin-model or biological species theorem.",
+    "Full Q1 GARG/real-birthdate proof closure, original ARG audit and finite-family audit have their own receipts; this smaller audit is not a combined replay of them."
+  ],
+  "artifacts_sha256": {
+    ".gitignore": "15c4437080db4ec4be5ef2b2dde82e82749b1bb6379ee7f82d0fa7c87feba804",
+    "CHECKPOINT.md": "ac84eec59e995df561a6c56a5b8eb1370eedcbe311f69bf58f0102ab57d01660",
+    "declarations.json": "94449082fd9e6c50addd169604aa2b6fbabfd9d4260383abe4eac617cb3c5fd1",
+    "dependency-evidence/Q1-CHECKPOINT.original.txt": "bda99be531607ba04b0237203dbb8d3d05d819248270e8fb6a340e1bfeeb9237",
+    "dependency-evidence/Q1-PROOF-RECEIPT.json": "49aee3776b19c24b1053e9f6dd13b3db6ac5d9c4b2419cdfa84dcafbd24b48c1",
+    "DEPENDENCY.json": "599bebc57ac33c1cf80f947786b48c00b221e5ae3989a98bdb25c4cea6251f1e",
+    "development/attempt-1.json": "12ce2a7c1da76f4f74d90fc89c90db5db4d522844a732bf6793bd49ff3d6da21",
+    "development/attempt-1.log": "ccb4540e75aacbcbd9314e9252d693ca4efdbd1ca1aeb658f72716eb0886db67",
+    "development/attempt-2.json": "6e75263c82bf81fb9e0145a8e1e569a30416d838c877fcfbfa3d58265939319f",
+    "development/attempt-2.log": "02635e51b6a878eca51fd036d81434dfc257dbeebeeeaf12bc150d5e4caaf2b5",
+    "INDEPENDENT-REVIEW.md": "6e5de026cce37d1a70a0c6da64d6f1f6607e01907df48bfbcaa9395449bf7f10",
+    "LEDGER.json": "ffc19e45b2070dbf2ab3cae16f671eb13f47906e9a6de21d2aa85b861b75dd7f",
+    "PRIOR-WORK.md": "f242a1ae555070c8a0613d0c319c8363e2ce38cd1ba7ddfb0a78244942f19b91",
+    "README.md": "df2eddf564354276e793598a7509ebee16ac0f3b8830e6861172a59e164f4cf5",
+    "verification/combined-receipt.json": "e54b237b5f567a2e60d8759d83cce69252b97ac6f35039bb1ffb26a19c99c30f",
+    "verification/logs/PairingCore.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification/logs/PairingObservation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification/logs/PairingObservationAudit.log": "c20bb4097befec3fa8fbf80a8fa5ee73368a80d7ef7cf6fe7fe675c479c4d74c",
+    "verification/logs/SamuelAlexanderResearch.SpeciesBridge.log": "50da5d9051744a50c9223e5a18cc1d4960c2760c5457309efdb0bf878539d46f",
+    "verification/logs/SamuelAlexanderResearch.SpeciesGlobalIAP.log": "55e685fac5e9e67def016ac29b09d52a9f3a8afeed193a144c28d0fa76910c8f",
+    "verification/math-format.json": "5ef88a0f26c18ad157b407bff92a2c24c1c8f6653de96c2aa19f7df0aaec93fb",
+    "verify_packet.py": "0e8d35c1b045762aca2e1e2aaa46d9e1a516d1c5b7d6ff121ceed48404bd1ee3"
+  }
+}

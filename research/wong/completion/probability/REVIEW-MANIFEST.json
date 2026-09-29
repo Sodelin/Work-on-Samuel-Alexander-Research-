@@ -1,0 +1,36 @@
+{
+  "status": "REVIEW_COMPLETE_NO_NEW_COMPILER_OR_PUBLIC_INTEGRATION",
+  "created_utc": "2026-09-25T16:21:36.936864+00:00",
+  "selected_endpoint_count": 19,
+  "source_correspondence": "Appropriate partial formalization of Appendix B: stopped embedded count law with almost-sure finite jump absorption. B04 and B05 partial; calendar time, marks, Big/Little projection and expected asymptotics remain open.",
+  "independent_review": "PASS WITH SCOPED LIMITS",
+  "files": [
+    {
+      "path": "PROBABILITY-STATEMENT-BRIEF.md",
+      "sha256": "756d9b60b68ab049d51c112e1c00e711977b89a028846dc73e181eef72f78749"
+    },
+    {
+      "path": "selected-statements.txt",
+      "sha256": "8d55846d84a31ef8b57b6aef1118fa90a0b394be9a176004a99ed0636acf9e4c"
+    },
+    {
+      "path": "SOURCE-MANIFEST.json",
+      "sha256": "c99b8403e198a51e29b20ef3af671cfef49fcedd94fec929d20f55c4e741cdf4"
+    },
+    {
+      "path": "SOURCE-CORRESPONDENCE.md",
+      "sha256": "4730c3aa5de07af517ffe8c81ad2d6e3647d25b67a6f81bc549d486f0442fc37"
+    },
+    {
+      "path": "ADVERSARIAL-REVIEW.md",
+      "sha256": "e391e364d5ad4b7747bb381e5d1a951cdd3b0f5d8af306a74017f5d5f2771742"
+    },
+    {
+      "path": "RESULT.md",
+      "sha256": "bed24797aa68a893f2407944187d19179a75fc362de1fda25692739ac9ca3b9f"
+    }
+  ],
+  "deterministic_public_commit": "c169e5f19a4233182f29d54c3e2e0e3d65abe897",
+  "deterministic_hosted_status": "First hosted run failed formatting before real-library steps; auditor owns separate documentation transform.",
+  "next_gate": "Sole publisher decides separate admission/registration, then exact combined axiom inventory and hosted checks. A 293 total is only arithmetic until verified."
+}

@@ -1,0 +1,23 @@
+Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+'TerminalCloneAvoiders.terminalClone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.noncanonical_has_no_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.terminalClone_language' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.incomingParentEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.terminalClone_preserves_unique_parents' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TerminalCloneAvoiders.rootsEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.no_countable_host_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.no_countable_bounded_stretch_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.avoiding_no_countable_exact_parent_bounded_stretch_population_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TerminalCloneAvoiders.selectParents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.selectParents_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.selectParents_realizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.selectParents_rootsEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.selectedClone_rootsEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.selectParents_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TerminalCloneAvoiders.avoiding_no_countable_exact_parent_family_from_any_population' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

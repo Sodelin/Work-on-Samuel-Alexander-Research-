@@ -1,0 +1,18 @@
+{
+  "module": "WongPedigreeBridge",
+  "source": "real\\WongPedigreeBridge.lean",
+  "signature": {
+    "source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+    "dependencies": {
+      "FiniteGenomeIdentifiability": "5d44a6546bcc44c4adae478791dd1755606e6cdd97748585670a8ac5927e7f62",
+      "SamuelAlexanderResearch.ObservationPrediction": "34b16bce1e63242b93ccb19e22fc7c420047001efc7e1606acca38e363d4f9a4",
+      "SamuelAlexanderResearch.ProductiveCore": "f1a5632720b6119801d3c575b0a937274a9d0bba72901ae241e838b5f19e8fb8"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 16.783,
+  "log_sha256": "598954f8d3246701da2a5f61d63b309ce6e0c13eb8adec7bba3201310d2c0282",
+  "object_sha256": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+}

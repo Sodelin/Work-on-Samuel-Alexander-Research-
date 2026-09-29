@@ -1,0 +1,30 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongPedigreeBridge.lean:149:4: error: Type mismatch: After simplification, term
+  not_congr (finite_descendants_iff owner onto fibres faithful Whole a)
+ has type
+  Iff (¬FiniteSupport fun b => Descendant R a b) ¬FiniteSupport fun v => Descendant E (owner a) v
+but is expected to have type
+  Iff (InfiniteSupport (Descendant R a)) (InfiniteSupport (Descendant E (owner a)))
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongPedigreeBridge.lean:285:54: error: Application type mismatch: The argument
+  edge
+has type
+  E (owner a) (owner b)
+but is expected to have type
+  E (owner a) (owner a)
+in the application
+  Descendant.edge edge
+'WongPedigreeBridge.finiteSupport_preimage_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.infiniteSupport_preimage_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.iap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.reflection_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'WongPedigreeBridge.commonAncestor_descends' does not depend on any axioms
+'WongPedigreeBridge.convex_pullback' does not depend on any axioms
+'WongPedigreeBridge.convex_iff' does not depend on any axioms
+'WongPedigreeBridge.specieslike_descends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.specieslike_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'WongPedigreeBridge.maximal_saturated_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'WongPedigreeBridge.maximalSpecieslike_descends' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'WongPedigreeBridge.iap_iff_of_finite_ancestry_errors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.sound_projection_does_not_determine_iap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongPedigreeBridge.no_specieslike_recovery_from_garg_coarsening' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

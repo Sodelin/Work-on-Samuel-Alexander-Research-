@@ -1,0 +1,253 @@
+{
+  "recorded_utc": "2026-09-27T04:38:12.512350+00:00",
+  "status": "COORDINATED_SOURCE_AND_DESIGN_AUDIT_ADOPTED",
+  "empirical_fit": "NOT_RUN",
+  "causal_identification": "OPEN",
+  "primary_source": {
+    "stentor_pmid": "42025171",
+    "stentor_pmcid": "PMC13192338",
+    "stentor_doi": "10.1016/j.cub.2026.03.080",
+    "stentor_github_commit": "6411b40e31dfce250445d7b1ff4c26e32823dd4e"
+  },
+  "handoff_and_retrieval_hashes": [
+    {
+      "path": "outputs/STENTOR-EVIDENCE.md",
+      "bytes": 6948,
+      "sha256": "70b50215f19e62c4d2d4b13d5a0e6e26f1f441b74adb8deb390aebb96e699676"
+    },
+    {
+      "path": "work/evidence/pubmed-stentor-metadata.json",
+      "bytes": 3945,
+      "sha256": "91eeec878a33701940fccdecd1bbabf410f0c3d481a7ddf106d8c1262d924939"
+    },
+    {
+      "path": "work/evidence/stentor-fulltext-part-0.json",
+      "bytes": 48283,
+      "sha256": "3383dc67b25f7dcf50d6b88847983f64c36bb90d941c0133c1146e3794295244"
+    },
+    {
+      "path": "work/evidence/stentor-fulltext-part-45000.json",
+      "bytes": 48327,
+      "sha256": "ef0b6cdfb1b2355c4d4f442de0b17d894375136f33375e56ec766557ba3e42f3"
+    }
+  ],
+  "hash_scope": "Hashes identify evidence-lane handoff/retrieval files verified locally; those full-text files are not republished in this packet.",
+  "retrieval_limits": {
+    "stentor_body_characters_retrieved": 90000,
+    "stentor_body_characters_total": 95891,
+    "stentor_github": "Complete non-truncated tree; selected small files inspected.",
+    "dryad": "Landing page, README and file inventory only; no raw download.",
+    "missing_behavioral_data": "Checked sources do not establish a public individual parent-daughter behavioral table; not a global absence claim."
+  },
+  "author_file_receipts": [
+    {
+      "file": "stentor-README.md",
+      "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/README.md",
+      "bytes": 1164,
+      "sha256": "0f4dcdc7ba0729450a199ab619268c7117959d0dcb9f5ce20417c63cafd0a401"
+    },
+    {
+      "file": "stentor-exp1-exp1_sleuth_batch_quant.R",
+      "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp1/exp1_sleuth_batch_quant.R",
+      "bytes": 3944,
+      "sha256": "743e261b09e85753206d66175ac7a928d528414ea62dea7dfe89924d2b8b6f5a"
+    },
+    {
+      "file": "stentor-exp2-exp2_sleuth_quant.R",
+      "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_sleuth_quant.R",
+      "bytes": 3376,
+      "sha256": "f92d25a949cbce674dae155e79ac695f3607e2b733632d359bb0206daaf3550a"
+    },
+    {
+      "file": "stentor-exp1-exp1_sleuth_4_wald_sig_v2.csv",
+      "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp1/exp1_sleuth_4_wald_sig_v2.csv",
+      "bytes": 102646,
+      "sha256": "8bb28c476038502ac3bc91c1f96ed13d5988262782a6fd8a410c419c717a8313"
+    },
+    {
+      "file": "stentor-exp1-exp1_sleuth_19_wald_sig_v2.csv",
+      "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp1/exp1_sleuth_19_wald_sig_v2.csv",
+      "bytes": 29094,
+      "sha256": "8c2a704d191c7fff902f371f02d4fe4a35c594cbd3861148fc0b5b688d4ca5c8"
+    },
+    {
+      "file": "stentor-tree.json",
+      "url": "https://api.github.com/repos/aralbright/2025_stentor_learning/git/trees/6411b40e31dfce250445d7b1ff4c26e32823dd4e?recursive=1",
+      "bytes": 6760,
+      "sha256": "1cba7b972bea799d449313e55995ec2f87a13315e780a4cabb31d4dd68b459f4"
+    }
+  ],
+  "processed_author_table_inspection": [
+    {
+      "file": "stentor-exp1-exp1_sleuth_4_wald_sig_v2.csv",
+      "rows": 489,
+      "columns": [
+        "",
+        "target_id",
+        "pval",
+        "qval",
+        "b",
+        "se_b",
+        "mean_obs",
+        "var_obs",
+        "tech_var",
+        "sigma_sq",
+        "smooth_sigma_sq",
+        "final_sigma_sq"
+      ],
+      "candidate_matches": [
+        {
+          "": "196",
+          "target_id": "SteCoe_6763",
+          "pval": "0.000356644759983925",
+          "qval": "0.0499681290195196",
+          "b": "-0.988801052904483",
+          "se_b": "0.27695592212216",
+          "mean_obs": "3.09997272522968",
+          "var_obs": "0.325921340436831",
+          "tech_var": "0.0464726156014761",
+          "sigma_sq": "-0.00300183724237335",
+          "smooth_sigma_sq": "0.0455728837567674",
+          "final_sigma_sq": "0.0455728837567674"
+        }
+      ]
+    },
+    {
+      "file": "stentor-exp1-exp1_sleuth_19_wald_sig_v2.csv",
+      "rows": 138,
+      "columns": [
+        "",
+        "target_id",
+        "pval",
+        "qval",
+        "b",
+        "se_b",
+        "mean_obs",
+        "var_obs",
+        "tech_var",
+        "sigma_sq",
+        "smooth_sigma_sq",
+        "final_sigma_sq"
+      ],
+      "candidate_matches": []
+    }
+  ],
+  "remaining_gates": [
+    "Complete record-level behavioral/lineage linkage and assignment metadata.",
+    "Justified causal sampling and selection contract.",
+    "Biological model correspondence for joint transition/measurement preservation."
+  ],
+  "scope": "The metadata follow-up remains in its evidence lane. This receipt does not certify a reproduced fit or identify a memory mechanism.",
+  "followup": {
+    "status": "PUBLIC_OUTPUT_AUDIT_COMPLETE; FULL_RNA_REFIT_NOT_RUN",
+    "handoff_hashes": [
+      {
+        "name": "STENTOR-FOLLOWUP.md",
+        "sha256": "579f33e883aef52660d16df5183b0af6cee5bb0c15220a41d8b3f516d8b35fef"
+      },
+      {
+        "name": "stentor-data-audit.json",
+        "sha256": "0d43f42d28f86753b5d5b651542ec79e84a2911e25da4f8511711940739c3837"
+      },
+      {
+        "name": "stentor_data_audit.py",
+        "sha256": "019864464867cc8ffec38a082439463bb66b109ffd8f0f03895838fa447c37c5"
+      }
+    ],
+    "input_receipts": [
+      {
+        "file": "exp1-exp1_sleuth_19_wald_v2.csv",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp1/exp1_sleuth_19_wald_v2.csv",
+        "bytes": 5738722,
+        "sha256": "405cdf1a1a1bc3cead4fcbd60ab5f32217162d48c6e049faad1541809b67b010"
+      },
+      {
+        "file": "exp1-exp1_sleuth_4_wald_v2.csv",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp1/exp1_sleuth_4_wald_v2.csv",
+        "bytes": 5686827,
+        "sha256": "9fdd49d9e4f2d38d7e396222d92116c99c735aeb7ba9f1cf9b1f0aef8159882e"
+      },
+      {
+        "file": "exp1-exp1_rna_sleuth_wald_volcano.ipynb",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp1/exp1_rna_sleuth_wald_volcano.ipynb",
+        "bytes": 568481,
+        "sha256": "9a9f59ec25779925d04a8e8070fc03247f0f598045391a917d0d466209d6c679"
+      },
+      {
+        "file": "exp2-exp2_rna_sleuth_obsnorm.csv",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_rna_sleuth_obsnorm.csv",
+        "bytes": 7902526,
+        "sha256": "92a2e7df801551b6f8addd4faf7b2d412079dcfc61cc0db39bd563fe6c649435"
+      },
+      {
+        "file": "exp2-exp2_rna_t19ut19_sleuth_wald_v2.csv",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_rna_t19ut19_sleuth_wald_v2.csv",
+        "bytes": 6072755,
+        "sha256": "12a0ead6eccd07be5bd4b32895382667ad461adf968a3fb67d56d1e134da7832"
+      },
+      {
+        "file": "exp2-exp2_rna_t19f90_sleuth_wald.csv",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_rna_t19f90_sleuth_wald.csv",
+        "bytes": 6051006,
+        "sha256": "1bf58b2d45bdc583cc377d72ea43beb2747cc2c7266a574bb69de8f3f77e32df"
+      },
+      {
+        "file": "exp2-exp2_rnaseq_sleuthfig.ipynb",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_rnaseq_sleuthfig.ipynb",
+        "bytes": 2231104,
+        "sha256": "266034490c9b83c24559217fb0a984a4a12deae911dab418125bd2e7656736c7"
+      },
+      {
+        "file": "exp2-exp2_RNA_control_removal.R",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_RNA_control_removal.R",
+        "bytes": 1170,
+        "sha256": "eb13bad39e401a4252ac9b6b5f7807c459e58bc6a8bcb42290de54d4b6628988"
+      },
+      {
+        "file": "exp2-exp2_RNA_controlremoval_res.csv",
+        "url": "https://raw.githubusercontent.com/aralbright/2025_stentor_learning/6411b40e31dfce250445d7b1ff4c26e32823dd4e/exp2/exp2_RNA_controlremoval_res.csv",
+        "bytes": 5588564,
+        "sha256": "e04cf7b6d82d05d77e2ffc5237a300b092cad98fac14a9f1392de63b2c24982b"
+      },
+      {
+        "file": "dryad-record.html",
+        "url": "https://datadryad.org/dataset/doi:10.5061/dryad.z34tmpgrm",
+        "bytes": 89664,
+        "sha256": "06f210a560b115460c8f2bd9b81caf82ff76c130577386f1fc58aa2bde61deb5"
+      }
+    ],
+    "scope": "Coordinated audit of processed author outputs, sample metadata and exact joins. No new RNA fit or individual behavioral identification.",
+    "findings": {
+      "exp2_condition_labels": 21,
+      "retained_matrix_samples": 15,
+      "later_controls_absent": 6,
+      "R3c": "Unresolved deposited-label/naming-pattern conflict, not silently corrected.",
+      "original_exp1_batch_map": "Not established.",
+      "duration_contrast": "Frequency and source culture also differ; no isolated duration inference.",
+      "no_control_discoveries": "Does not establish control equivalence."
+    },
+    "candidate_author_estimates": [
+      {
+        "comparison": "monoculture 4h trained/untrained",
+        "b_rounded": -0.9888,
+        "q_rounded": 0.04997
+      },
+      {
+        "comparison": "monoculture 19h trained/untrained",
+        "b_rounded": -0.051,
+        "q_rounded": 0.99953
+      },
+      {
+        "comparison": "polyculture 19h trained/untrained",
+        "b_rounded": -0.07428,
+        "q_rounded": 1.0
+      },
+      {
+        "comparison": "polyculture 19h trained/90min recovery",
+        "b_rounded": -0.01988,
+        "q_rounded": 0.99874
+      }
+    ],
+    "scale": "Author b scale retained; not relabeled log2 fold change. Rounded values here; exact values remain in the hashed evidence-lane audit."
+  }
+}

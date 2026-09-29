@@ -1,0 +1,63 @@
+{
+  "renderer": "MathJax 3.2.2",
+  "scope": "Local syntax check of specified exact bytes; pending documents have not been visually checked on GitHub",
+  "files": [
+    {
+      "file": "outputs/PROPOSAL3-FINITE-PORT-AUDIT.md",
+      "sha256": "7cec957aa0a21a0a4accbe26dfe9870aaa1249184171a4fc89717847ab9723cf",
+      "expressions": 114
+    },
+    {
+      "file": "outputs/PROPOSAL10-STATEFUL-CA-AUDIT.md",
+      "sha256": "826c64c2fbc243f24acbad18fdb4f947e863bf596ee133e7723c2a36495c8f04",
+      "expressions": 73
+    },
+    {
+      "file": "outputs/PROPOSALS3-10-SOURCE-AUDIT.md",
+      "sha256": "ccd6f6ce490a80fff3074e0964f34a50c993fdc4b34d899d717e7d7546f5f526",
+      "expressions": 5
+    },
+    {
+      "file": "outputs/LINE-GRAPH-PRIOR-ART-AUDIT.md",
+      "sha256": "3adce5b9c4a1edd5d48d1311d410ed196de94cb1b12e69ae176c26afa45bce1d",
+      "expressions": 42
+    },
+    {
+      "file": "outputs/MAXIMAL-SPECIESLIKE-SOURCE-AUDIT.md",
+      "sha256": "d9da132e9681b7bc5948cb07bd61380c0956971901e45d5f89fd476627ea52f9",
+      "expressions": 97
+    },
+    {
+      "file": "work/repo/notes/FINITE-PHASE-PATHS-FORMALIZATION.md",
+      "sha256": "e5b1550cff0a9748d8ce05a951b1625065dea3898ee58ed2a62a2eec8357a2cc",
+      "expressions": 5
+    },
+    {
+      "file": "work/repo/notes/PORT-DYNAMICS-FORMALIZATION.md",
+      "sha256": "ee2e9878033cbfac4c503b1845786bfc03d700bd2f264534ac2f627b67aafed2",
+      "expressions": 10
+    },
+    {
+      "file": "work/repo/notes/STATEFUL-CA-FORMALIZATION.md",
+      "sha256": "354781dc8602941dc743224cba0e981c406866fb49c21b5e288738c4ace4c177",
+      "expressions": 4
+    },
+    {
+      "file": "work/repo/notes/FINITE-EDIT-STABILITY-FORMALIZATION.md",
+      "sha256": "8793333355b469528e000df0243e9f5b9af7f6f6d2392ed78e0845045ba61454",
+      "expressions": 49
+    },
+    {
+      "file": "outputs/FINITE-STATE-PERIODICITY-RECEIPT.md",
+      "sha256": "485be677873bfd9e2379136e9617eaec09d3cf8c76bdef013f91b822cbec6f45",
+      "expressions": 5
+    },
+    {
+      "file": "outputs/FULL-HEIGHT-STATUS-UPDATE.md",
+      "sha256": "a8de4022a551d6cbdb478dc20045d1c710bb6add3673a4a31f9b1f336c35ccaa",
+      "expressions": 14
+    }
+  ],
+  "expressions": 418,
+  "errors": []
+}

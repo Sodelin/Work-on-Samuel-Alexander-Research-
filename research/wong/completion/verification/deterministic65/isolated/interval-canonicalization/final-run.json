@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-25T14:48:00.727779+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 14.096,
+  "actual_selected_reports": 31,
+  "reported_axioms": {
+    "WongIntervalCanonicalization.join_contains": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_covers": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_lo": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_hi": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_separated": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_of_separated": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_idempotent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.separated_semantic_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_semantic_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.separated_gap": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_breakpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.serialized_semantic_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.serialized_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_semantic_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_idempotent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.executable_touching_gap_example": [
+      "propext"
+    ]
+  },
+  "output_example": "[(0, 3), (5, 6)]",
+  "warnings": 1
+}

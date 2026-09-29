@@ -1,0 +1,56 @@
+{
+  "status": "INDEPENDENT_SEMANTIC_AND_ARTIFACT_AUDIT_PASS_BOUNDED_FINITE_SCOPE",
+  "date": "2026-09-25",
+  "independentCompilerRun": false,
+  "compilerExitCodeEvidence": "Worker receipt records 0; exact final source, log, object and hash evidence reviewed.",
+  "sourceSha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a",
+  "oleanSha256": "3516f055abea15f786e8f41918c0943e82f4f57bebc58df3b9b9841387c8f391",
+  "logSha256": "81646e705e6f1bb0386b584c997a11c9127e6d1ed0cbc9691a681917718aaa8b",
+  "workerReceiptSha256": "07325b3d81b928d74fc1981f71bf902a01501f6aa6d8f77483a2afffe5f002c1",
+  "checkScriptSha256": "4bd1a28278f4b7e41fed678fff42d0c87d12443a214989c93ab88ed9ac4801ca",
+  "selectedEndpoints": [
+    "PureInductionJoint.joint_total",
+    "PureInductionJoint.designated_probability",
+    "PureInductionJoint.ordinary_01_22_frozen_real",
+    "PureInductionJoint.pulse_00_01_frozen_real"
+  ],
+  "axiomsEach": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "frozenDependencies": [
+    {
+      "module": "FiniteFixation",
+      "sourceMatchesManifestAndReceipt": true,
+      "objectMatchesReceipt": true
+    },
+    {
+      "module": "FiniteEpigenetic",
+      "sourceMatchesManifestAndReceipt": true,
+      "objectMatchesReceipt": true
+    },
+    {
+      "module": "DeterministicEpigenetic",
+      "sourceMatchesManifestAndReceipt": true,
+      "objectMatchesReceipt": true
+    },
+    {
+      "module": "RankingReversal",
+      "sourceMatchesManifestAndReceipt": true,
+      "objectMatchesReceipt": true
+    }
+  ],
+  "semanticReview": {
+    "orderedTableMatchesModel": true,
+    "pulseSeparateFromOrdinaryInheritance": true,
+    "embeddingMatchesFrozenSelectedStates": true,
+    "realEqualitiesUseImportedKernelAndPulse": true,
+    "rawFourSlotPushforwardProved": false,
+    "allMarginalsProved": false,
+    "infiniteLawOrIAPProved": false,
+    "adaptiveGeneticRegimeProved": false
+  },
+  "remainingObligations": "CHECKPOINT-AND-REMAINING-OBLIGATIONS.md",
+  "sourceHeaderUncompiledCommentIsStale": true
+}

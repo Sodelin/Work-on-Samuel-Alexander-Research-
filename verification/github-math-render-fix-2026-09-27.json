@@ -355,5 +355,9 @@
       "rendered_blob_sha": "fa534853aab29d664149b8d7a20c0910b5cfc989",
       "operatorname_occurrences_replaced": 14
     }
-  ]
+  ],
+  "integration_2026_09_29": {
+    "preserved_historical_main_override": true,
+    "current_note": "Integration retains the draft branch fenced-math rendering for FINITE-EDIT-STABILITY-FORMALIZATION.md; the main_specific_overrides above describe the earlier main snapshot, not the integrated current file."
+  }
 }

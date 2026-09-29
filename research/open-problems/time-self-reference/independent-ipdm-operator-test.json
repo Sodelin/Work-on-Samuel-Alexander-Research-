@@ -1,0 +1,127 @@
+{
+  "status": "PASS_PINNED_OPERATOR_TEST_WITH_EXPLICIT_MOCKS",
+  "commit": "eca9b122480b8c654081d6a844176417aefbbcae",
+  "source_sha256": {
+    "core/helperfunctions.py": "edaacacbb6f09810c0acd9fcbf7642610695501952b04eb59fb0d6a7a2e7a5a4",
+    "core/env.py": "ecabd348002af771e7b07f6ba70aca281efd7f978e9643e33a896ad226cec886"
+  },
+  "executed_original_functions": [
+    "accumulate_neighbors",
+    "get_leaf",
+    "get_root",
+    "get_superAgentNeighbors",
+    "is_superAgent",
+    "merge",
+    "split",
+    "update_neighbors"
+  ],
+  "executed_original_board_methods": [
+    "_board2index",
+    "_getBoardPos",
+    "getNeighbors",
+    "getTurnOrder"
+  ],
+  "mocks": [
+    "Agent constructor and get_score",
+    "Tree constructor",
+    "np.argmax",
+    "np.round"
+  ],
+  "equal_visible_input": {
+    "partition": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "active": [
+      {
+        "id": 3,
+        "members": [
+          3
+        ],
+        "memory": "",
+        "memory_length": 1,
+        "score": 0.0,
+        "avg_score": 0.0,
+        "acts_played": 0,
+        "policy": {
+          "fixed-witness-policy": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "neighbors": [
+          5
+        ]
+      },
+      {
+        "id": 5,
+        "members": [
+          0,
+          1,
+          2
+        ],
+        "memory": "",
+        "memory_length": 1,
+        "score": 0.0,
+        "avg_score": 0.0,
+        "acts_played": 0,
+        "policy": {
+          "fixed-witness-policy": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "neighbors": [
+          3
+        ]
+      }
+    ],
+    "uuid_pointer": 6,
+    "tree_size": 6
+  },
+  "hidden_immediate_parents": {
+    "left": [
+      2,
+      4
+    ],
+    "right": [
+      0,
+      4
+    ]
+  },
+  "left_output_partition": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "right_output_partition": [
+    [
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "scope": "Admissible merge/split operator histories with actual 2x2 board adjacency; no policy scheduler, q-learning, probability reachability, paper version equivalence or full simulation claim."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "evidence_class": "Rerun of historical exact rational examples; the general probability theorem remains written, not Lean checked.",
+  "cases": 15,
+  "deterministic_rules_checked": 834,
+  "script_sha256": "459b105ddf96d22df89fcb80605baf2628b8a0e5034a1a93694d41ca6e469a10",
+  "result_sha256": "b404801e566c7647aa4cc8cd436841fe6b4129c25cba0c2b32e0f5b79eb0d5b1",
+  "result_path": "research/open-problems/time-self-reference/calibration-results.json"
+}

@@ -1,0 +1,29 @@
+{
+  "renderer": "MathJax 3.2.2, local syntax/render check",
+  "expressions": 2167,
+  "files": 56,
+  "errors": [],
+  "final_head": "e0ff308a10702d6f0f43c914f8260525f1ac820c",
+  "mathematical_content_sha256": "1d2439352d69a3c0e6063a519a3769a8acd282f0aeb915e8b9f818f2f1326901",
+  "github_visual_check": {
+    "status": "pass",
+    "inspected_commit": "c220b78639fc1565ab64d67cec830249864241cd",
+    "unchanged_on_final_head": [
+      "README.md",
+      "research/thue-morse/NEXT-INVARIANT.md"
+    ],
+    "covered": [
+      "inline math in tables",
+      "fractions and subscripts",
+      "math adjacent to hyphens",
+      "piecewise cases",
+      "aligned multiline equations"
+    ],
+    "method": "Screenshots of actual public GitHub previews through the Codex browser; representative pages, not every page."
+  },
+  "delimiter_correction": {
+    "forms": "GitHub protected dollar-backtick inline math and fenced math blocks",
+    "all_2166_preexisting_expressions_preserved": true,
+    "additional_expression": "Explicit positive-period condition p>0, already required by Lean."
+  }
+}

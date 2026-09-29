@@ -1,0 +1,107 @@
+# Exact recovery of sampled families in a restricted block model
+
+Status: a general written mathematical proof and finite exhaustive controls, not a Lean theorem. This additive handoff is outside the frozen research checkout and Git bundle. The checked ARG and Alexander proof commit remains `1ac3dd9446e7264336f0764040ff47ad684099cb`; its 415-declaration count does not include this note.
+
+The incoming [evidence handoff](SOURCE-HANDOFF.md) proposed detecting families through shared triples. Under its one-generation assumptions, pairwise sharing and connected components suffice, with an exact success probability. This is an elementary specialization and extension, with no novelty claim. It does not prove the multigeneration REC-GEN theorem or identify an Alexander specieslike cluster.
+
+## Model and observations
+
+Fix a finite set C of labeled sampled children and a partition into nonempty families F_i, of sizes m_i. Each family has its own pair of parents, disjoint from all other pairs. Fix B >= 1. At every block b, all parents' symbols are distinct. These symbols can be fixed: no probability law on an infinite symbol alphabet is needed.
+
+For every child c and block b choose X_(c,b) independently and uniformly from {0,1}. Child c displays the block symbol of parent X_(c,b) in its family's pair. Observe these symbols exactly, and compare symbols only at the same block. The family partition, parent names and choices X are hidden. There is no mutation, symbol collision, sequencing error, shared parent between families, or dependence between blocks.
+
+Construct an undirected graph on C: distinct children are adjacent when they share a symbol in at least one block. Output all connected components, including singleton components. Each returned component can be assigned one unnamed parental-couple vertex, but these vertices are reconstructed correctly only on the recovery event.
+
+```mermaid
+flowchart LR
+  A[Exact block symbols for sampled children] --> B[Join children who share a symbol at some block]
+  B --> C[Connected components]
+  C --> D[Sampled families on the recovery event]
+  D --> E[One unnamed parent couple per family]
+```
+
+## Theorem 1: deterministic structure
+
+No edge joins different true families, because their parents' symbols are disjoint at every block. Thus every reported component lies within one true family. Exact recovery occurs if and only if every family's induced graph is connected.
+
+For a fixed family of size m, write v_c in {0,1}^B for each child's choice vector and write bar(v) for its coordinatewise complement. Two distinct children fail to be adjacent precisely when their vectors are complements: with binary choices, disagreeing at every position means complementarity.
+
+The family's graph is disconnected if and only if the distinct vectors occurring among its children are exactly {v,bar(v)} for some v, with both values occurring.
+
+Proof of the forward implication: take children a,b in different connected components. They are nonadjacent, so v_b=bar(v_a). Any other child z has one of these two vectors. Otherwise z agrees with a at some coordinate and with b at some coordinate, giving the path a-z-b and a contradiction. Both values occur since a and b exist. For the reverse implication, children with vector v form a clique, children with vector bar(v) form a clique, and there are no edges between the two nonempty groups. This proves the characterization. For a singleton family the graph is connected and the exceptional event is empty.
+
+## Theorem 2: exact recovery probability
+
+Let
+
+$$
+d(m,B)=(2^{m-1}-1)2^{-B(m-1)}.
+$$
+
+For one family of size m >= 1 its disconnection probability is exactly d(m,B). Consequently,
+
+$$
+\Pr(\text{all sampled families recovered})
+ =\prod_i\bigl(1-d(m_i,B)\bigr)
+ \geq \max\left(0,1-\sum_i d(m_i,B)\right).
+$$
+
+Proof: each family's ordered list of m vectors is uniform on 2^(Bm) possibilities. There are 2^(B-1) unordered complementary pairs of B-bit vectors; B >= 1 ensures complement has no fixed point. For a fixed pair, 2^m-2 assignments to labeled children use both vectors. Different complementary pairs give disjoint exceptional assignments. Theorem 1 therefore gives the failure probability
+
+$$
+\frac{2^{B-1}(2^m-2)}{2^{Bm}}
+ =(2^{m-1}-1)2^{-B(m-1)}.
+$$
+
+The formula also gives zero for m=1. Choices in different families are independent, so the within-family connectedness events are independent and their probabilities multiply. The lower bound follows from the union bound and nonnegativity.
+
+For three siblings this is success probability 1-3/4^B. At B=2 it is 13/16. The handoff's single-triple agreement rule succeeds with 1-(3/4)^B, or 7/16 at B=2. Pairwise links can connect the siblings across different blocks without any one block shared by all three. This is an improvement for this restricted one-generation model, not a comparison with the full REC-GEN algorithm.
+
+There is no assertion that this connected-component estimator is statistically optimal. B=0 is excluded: with no blocks the algorithm returns only singletons, recovering the partition exactly if and only if every family is a singleton.
+
+## Theorem 3: distribution identifiability is a different statement
+
+For any two distinct labeled children a,b and B >= 1,
+
+$$
+\Pr(a,b\text{ share some block})=
+\begin{cases}
+1-2^{-B},&a,b\text{ belong to the same family},\\
+0,&a,b\text{ belong to different families}.
+\end{cases}
+$$
+
+Proof: in the same family the two independent bits agree with probability 1/2 at each block, independently across blocks. The probability of no agreement is 2^(-B). Disjoint parental symbols prove the other case.
+
+Distinct partitions of the same labeled child set disagree on whether some pair belongs together. Their distributions of the observable sharing graph therefore differ by this pair-event probability, regardless of parental-symbol naming. Thus the family partition is identifiable from the observation distribution, even with one block. This is a property of the distribution, not a certain-recovery guarantee for one observation. In particular, the explicit estimator in Theorem 2 still has nonzero failure probability for nonsingleton families at finite B; no claim of estimator optimality is made. Unknown individual parent names and unobserved relatives remain unrecovered.
+
+## Theorem 4: more positions versus independent inheritance information
+
+For a fixed history obeying symbol distinctness, adding observed blocks adds only edges within true families. The connected-component partition can only merge components within a family. Once all families have been recovered, further blocks cannot spoil recovery. This pathwise statement needs no independence.
+
+The exponential improvement in Theorem 2 does require independence. For a counterexample, draw one independent fair bit Z_c for each child, then set X_(c,b)=Z_c at every block. Each block separately has exactly the fair, independent-across-children marginal law of the model, but all blocks repeat the same parental choices. For a family of size m the graph is connected exactly when all Z_c agree, with probability 2^(1-m), for every B >= 1. For three children success stays 1/4 instead of tending to one. Hence correct one-block marginals cannot substitute for block independence.
+
+These are observation statements, not a theorem that increasing Wong's recombination parameter improves pedigree inference. Such a conclusion would require a coupling between that marked process and the independent-block observation law, or a replacement law accounting for linkage.
+
+## Observation-error corollary and Alexander boundary
+
+For the same labeled child set and the same true family partition, suppose ideal observations and actual observations are coupled so that their entire observed sharing graphs differ with probability at most epsilon. Applying the same estimator to both gives
+
+$$
+\Pr(\text{actual recovery})\geq
+\max\left(0,\prod_i(1-d(m_i,B))-\varepsilon\right).
+$$
+
+Indeed, ideal success together with graph agreement implies actual success; subtract the disagreement probability. The coupling and its epsilon are assumptions that still need justification for any proposed biological observation system.
+
+The target is a finite sampled-family partition and a one-generation parent-couple incidence graph. It does not establish infinite identical-ancestor behavior, ancestry convexity, maximality, specieslike status, or a biological species classification. The earlier owner-map theorems still require their own hypotheses; reconstructing a finite induced subpedigree does not supply ancestry reflection through omitted vertices or determine its infinite completion.
+
+## Source correspondence and proof checkpoint
+
+Kim, Mossel, Ramnarayan and Turner, [arXiv:2005.03810v1](https://arxiv.org/pdf/2005.03810v1), section 4.1 (PDF pp.16-17), specifies the monogamous block-copying model and distinct founder symbols. Theorem 6.1 (PDF p.33) establishes asymptotic induced coupled-subpedigree recovery at the stated population, fertility and depth parameters. The present note conditions on a fixed one-generation founder partition; it makes no claim to formalize that theorem.
+
+Mossel and Vulakh, [arXiv:2204.04573v2](https://arxiv.org/pdf/2204.04573v2), sections 5-8, distinguish finite simulation performance and improved heuristics from the earlier asymptotic guarantee. Those experiments and implementations were not rerun here.
+
+Theorem 1's graph characterization, Theorem 2's finite counting proof, Theorem 3's pair-event separation and Theorem 4's dependence counterexample are the new written derivations in this note. All are outside the checked Lean audit. The shortest formal route is: define vectors Fin B -> Bool and the finite sharing graph; prove complement-characterized nonadjacency and connectedness; count disjoint complementary-pair assignments under the uniform finite product; then derive the distribution-separation and coupled-error corollaries. No change to the continuous ARG law is needed for this isolated theorem, and no link to that law should be asserted before it is proved.
+
+`check_recovery.py` exhaustively checks finite controls using actual observed symbols, a connected-component implementation, and exact rational arithmetic. It is supporting verification, not the general proof above or a Lean result. Its receipt and this note's hash are in the adjacent manifest. No source-to-theorem ledger status in the frozen repository was promoted by this handoff.

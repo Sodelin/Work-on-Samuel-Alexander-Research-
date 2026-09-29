@@ -1,0 +1,72 @@
+{
+  "status": "CANDIDATE_PENDING_PINNED_HOSTED_293",
+  "created_utc": "2026-09-25T16:48:36.049971+00:00",
+  "baseline_commit": "46aac52e214311fb2c2230b1b4fe37c42ef9e1a9",
+  "baseline_hosted_run": 36158710859,
+  "baseline_hosted_conclusion": "success",
+  "baseline_verified_real_endpoints": 274,
+  "observed_public_head": "024ef6f25ed168e36a26d2a8c855d8bd7825b336",
+  "new_selected_endpoints": 19,
+  "proposed_real_endpoint_count": 293,
+  "verified_new_combined_endpoint_count": null,
+  "toolchain_pin": "leanprover/lean4:v4.33.1",
+  "mathlib_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "new_sources": [
+    {
+      "module": "WongBigARGDrift",
+      "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+      "selected_endpoints": [
+        "WongBigARGDrift.weighted_gap",
+        "WongBigARGDrift.potential_drift"
+      ]
+    },
+    {
+      "module": "WongCountChain",
+      "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+      "selected_endpoints": [
+        "WongCountChain.one_absorbing",
+        "WongCountChain.jump_up_mass",
+        "WongCountChain.jump_down_mass",
+        "WongCountChain.initial_lintegral",
+        "WongCountChain.step_lintegral",
+        "WongCountChain.ae_positive_counts",
+        "WongCountChain.sum_transient_le",
+        "WongCountChain.ae_finite_absorption_of_drift",
+        "WongCountChain.literal_rate_ratio",
+        "WongCountChain.literal_merger_ratio"
+      ]
+    },
+    {
+      "module": "WongBigARGAbsorption",
+      "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+      "selected_endpoints": [
+        "WongBigARGAbsorption.countPotential_drift",
+        "WongBigARGAbsorption.ae_eventually_one",
+        "WongBigARGAbsorption.ae_finite_jump_absorption",
+        "WongBigARGAbsorption.normalizedRatio_value",
+        "WongBigARGAbsorption.literal_up_kernel_mass",
+        "WongBigARGAbsorption.literal_down_kernel_mass",
+        "WongBigARGAbsorption.literal_rates_ae_finite_absorption"
+      ]
+    }
+  ],
+  "source_review": "PASS WITH SCOPED LIMITS",
+  "independent_statement_review": "PASS WITH SCOPED LIMITS",
+  "historical_worker_status": "Exact sources and logs match reported local exit0; dependency artifacts from a donor cache lack an independently verified source-pin acquisition receipt. This historical evidence is not upgraded.",
+  "lead_local_attempt": "Scalar module passed; CountChain stopped at missing Traj.olean before proof checking; bridge and combined293 were not run.",
+  "root_receipt_policy": "Retain verification/real-audit.json as the previous274-endpoint receipt; this candidate supplies no replacement.",
+  "baseline_receipt_copy": "evidence/baseline-real-audit-274.json",
+  "baseline_receipt_sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821",
+  "public_scope": "Partial Appendix B stopped count chain with almost-sure finite jump-index absorption; no physical-time or marked spatial ARG result.",
+  "unchanged_controls": [
+    "checks/audit_lean.py",
+    "checks/audit_research_artifacts.py"
+  ],
+  "required_cache_imports": [
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+    "Mathlib.Probability.Kernel.IonescuTulcea.Traj",
+    "Mathlib.Topology.Algebra.InfiniteSum.ENNReal"
+  ],
+  "admission_condition": "Hosted run for the exact published candidate commit passes all existing checks, including exact293 unique real endpoints using the pinned Mathlib source-keyed cache. Record commit, run, conclusion and any resulting audit receipt separately."
+}

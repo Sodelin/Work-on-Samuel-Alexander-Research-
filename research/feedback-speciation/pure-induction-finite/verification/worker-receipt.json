@@ -1,0 +1,36 @@
+{
+  "status": "LEAN_CHECK_PASS_BOUNDED_FINITE_CHECKPOINT",
+  "date": "2026-09-25",
+  "compilerExitCode": 0,
+  "leanVersion": "4.33.1",
+  "sourceSha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a",
+  "oleanSha256": "3516f055abea15f786e8f41918c0943e82f4f57bebc58df3b9b9841387c8f391",
+  "logSha256": "81646e705e6f1bb0386b584c997a11c9127e6d1ed0cbc9691a681917718aaa8b",
+  "checkScriptSha256": "4bd1a28278f4b7e41fed678fff42d0c87d12443a214989c93ab88ed9ac4801ca",
+  "frozenRelease": "finite-epigenetic-v1",
+  "frozenEndpointCount": 34,
+  "verifiedFrozenSourceAndOleanHashes": true,
+  "selectedEndpoints": [
+    "PureInductionJoint.joint_total",
+    "PureInductionJoint.designated_probability",
+    "PureInductionJoint.ordinary_01_22_frozen_real",
+    "PureInductionJoint.pulse_00_01_frozen_real"
+  ],
+  "printedAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": [
+    "normalized finite weighted parent/homologue records",
+    "designated ordered parent table mass 36/2401",
+    "ordinary embedded count transition (0,1) to (2,2)",
+    "separate initial pulse transition (0,0) to (0,1)"
+  ],
+  "notYetProved": [
+    "all 81 ordinary and 9 pulse marginal entries",
+    "four-slot raw Fin14 pushforward to weighted records",
+    "infinite product law or IAP",
+    "adaptive genetic law"
+  ]
+}

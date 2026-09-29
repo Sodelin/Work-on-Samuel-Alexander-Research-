@@ -1,0 +1,41 @@
+{
+  "proof_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "working_tree_status": "M research/wong/continuation-2026-09-27/check.py\n?? real/PedigreeBlockGraph.lean\n?? real/PedigreeBlockModel.lean\n?? real/PedigreeBlockObservation.lean\n?? real/PedigreeBlockProbability.lean\n?? research/pedigree-block/",
+  "exact_clean_commit": false,
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    {
+      "module": "PedigreeBlockModel",
+      "source": "real\\PedigreeBlockModel.lean",
+      "signature": {
+        "source_sha256": "e43fe3ab0c243e7f121077d5a12dae99120ee9c1762bc576b5e487f6631ebf83",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 14.581,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+    },
+    {
+      "module": "PedigreeBlockGraph",
+      "source": "real\\PedigreeBlockGraph.lean",
+      "signature": {
+        "source_sha256": "7bb5462c855e74d9b38dfd76c31b504ed7414dc4630671f222a097b21771cc84",
+        "dependencies": {
+          "PedigreeBlockModel": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 13.411,
+      "log_sha256": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff",
+      "object_sha256": "0fee755a3639e44b3137288aa17c8f5c6298d507862520fcbbd87509b0bb2967"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Requested import closure only; source correspondence and full repository verification are separate."
+}

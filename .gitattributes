@@ -1,1 +1,44 @@
+# Normalize detected text and use the same checkout bytes on every platform.
+* text=auto eol=lf
+
+# Lean sources are always text, including files used by the proof hash audit.
 *.lean text eol=lf
+
+# Windows batch scripts require their conventional checkout line endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Preserve binary research artifacts without line-ending conversion.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.gz binary
+*.zip binary
+*.olean binary
+
+# Hash-pinned proof packets preserve their original bytes on every platform.
+/research/feedback-speciation/pure-induction-ancestry-v2/** -text
+/research/wong/completion/probability/holding-times/worker/** -text
+/research/wong/completion/probability/holding-times/INDEPENDENT-REVIEW.json -text
+
+# Preserve the exact bytes of the reviewed continuation packets and sources.
+/research/wong/continuation-2026-09-27/** -text
+/real/WongMarked*.lean -text
+/real/WongDatedSupport.lean -text
+/real/WongAdaptiveSelection.lean -text
+/real/WongPedigree*.lean -text
+
+# Exact finite-family proof and evidence bytes.
+/real/PedigreeBlock*.lean -text
+/research/pedigree-block/** -text
+
+# Preserve the exact pinned Q1 dependency and Q2 verification bytes.
+real/Pairing*.lean -text
+research/owner-observations/** -text
+
+# Original audit source and evidence bytes, including historical CRLF snapshots.
+/research/open-questions/continuation-2026-09-29/** -text
+/research/wong/completion/probability/inputs/WongBigARGDrift.lean -text
+/research/wong/completion/verification/deterministic65/isolated/mrca-truncation/WongMRCATruncation.lean -text

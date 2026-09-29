@@ -1,0 +1,81 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:143:29: warning: Variable name `hselected` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hselected
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:284:42: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [heq, splitIntervals, Interval.Contains] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:289:59: warning: Variable name `different` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _different
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:468:59: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:520:57: warning: This simp argument is unused:
+  and_or_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [interiorEndpoints, specRecords, singletonRecord, or_and_right, and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:520:84: warning: This simp argument is unused:
+  and_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [interiorEndpoints, specRecords, singletonRecord, and_or_left, or_and_right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:568:31: warning: Try `simp at hmem` instead of `simpa using hmem`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:577:31: warning: Try `simp at hmem` instead of `simpa using hmem`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:646:60: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:647:17: warning: Variable name `hfirst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hfirst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:647:41: warning: Variable name `hsecond` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hsecond
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:647:66: warning: Variable name `different` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _different
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:777:71: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:800:6: warning: Unused tactic linter: `all_goals simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongMarkedRecorder.lean:800:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`

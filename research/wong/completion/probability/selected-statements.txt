@@ -1,0 +1,153 @@
+# Exact selected probability statements, without proof bodies
+
+Read PROBABILITY-STATEMENT-BRIEF.md first. Names below are qualified; source declarations retain their original namespace scope.
+
+## WongBigARGDrift.weighted_gap
+
+```lean
+lemma weighted_gap (θ : ℝ) (hθ : 0 ≤ θ) (N : ℕ) (hN : θ ≤ N)
+    (j : ℕ) (hj : 1 ≤ j) :
+    θ + j ≤ base N * ((j : ℝ) * weight N j - θ * weight N (j + 1))
+```
+
+## WongBigARGDrift.potential_drift
+
+```lean
+theorem potential_drift (θ : ℝ) (hθ : 0 ≤ θ) (N : ℕ) (hN : θ ≤ N)
+    (j : ℕ) (hj : 1 ≤ j) :
+    (θ / (θ + j)) * potential N (j + 1) +
+      ((j : ℝ) / (θ + j)) * potential N (j - 1) + 1 ≤ potential N j
+```
+
+## WongCountChain.one_absorbing
+
+```lean
+@[simp] theorem one_absorbing (θ : ℝ≥0) : jumpKernel θ 1 = Measure.dirac 1
+```
+
+## WongCountChain.jump_up_mass
+
+```lean
+theorem jump_up_mass (θ : ℝ≥0) (j : ℕ) :
+    jumpKernel θ (j + 2) {j + 3} = upProbability θ j
+```
+
+## WongCountChain.jump_down_mass
+
+```lean
+theorem jump_down_mass (θ : ℝ≥0) (j : ℕ) :
+    jumpKernel θ (j + 2) {j + 1} = downProbability θ j
+```
+
+## WongCountChain.initial_lintegral
+
+```lean
+lemma initial_lintegral (θ : ℝ≥0) (n : ℕ) (f : ℕ → ℝ≥0∞) :
+    ∫⁻ ω, f (ω 0) ∂pathLaw θ n = f n
+```
+
+## WongCountChain.step_lintegral
+
+```lean
+theorem step_lintegral (θ : ℝ≥0) (n t : ℕ) (f : ℕ → ℝ≥0∞) :
+    ∫⁻ ω, f (ω (t + 1)) ∂pathLaw θ n =
+      ∫⁻ ω, ∫⁻ k, f k ∂jumpKernel θ (ω t) ∂pathLaw θ n
+```
+
+## WongCountChain.ae_positive_counts
+
+```lean
+theorem ae_positive_counts (θ : ℝ≥0) (n : ℕ) (hn : n ≠ 0) :
+    ∀ᵐ ω ∂pathLaw θ n, ∀ t, 0 < ω t
+```
+
+## WongCountChain.sum_transient_le
+
+```lean
+theorem sum_transient_le (θ : ℝ≥0) (n : ℕ) (V : ℕ → ℝ≥0∞)
+    (drift : ∀ k, (∫⁻ j, V j ∂jumpKernel θ k) +
+      (if k = 1 then 0 else 1) ≤ V k) :
+    (∑' t, pathLaw θ n {ω | ω t ≠ 1}) ≤ V n
+```
+
+## WongCountChain.ae_finite_absorption_of_drift
+
+```lean
+theorem ae_finite_absorption_of_drift (θ : ℝ≥0) (n : ℕ) (V : ℕ → ℝ≥0∞)
+    (finite : V n ≠ ∞)
+    (drift : ∀ k, (∫⁻ j, V j ∂jumpKernel θ k) +
+      (if k = 1 then 0 else 1) ≤ V k) :
+    ∀ᵐ ω ∂pathLaw θ n, ∃ T : ℕ, ∀ t ≥ T, ω t = 1
+```
+
+## WongCountChain.literal_rate_ratio
+
+```lean
+theorem literal_rate_ratio (a b : ℝ) (ha : 0 < a) (hb : 0 ≤ b)
+    (k : ℕ) (hk : 2 ≤ k) :
+    (b * k) / (b * k + a * k * ((k : ℝ) - 1) / 2) =
+      (2 * b / a) / (2 * b / a + (k : ℝ) - 1)
+```
+
+## WongCountChain.literal_merger_ratio
+
+```lean
+theorem literal_merger_ratio (a b : ℝ) (ha : 0 < a) (hb : 0 ≤ b)
+    (k : ℕ) (hk : 2 ≤ k) :
+    (a * k * ((k : ℝ) - 1) / 2) / (b * k + a * k * ((k : ℝ) - 1) / 2) =
+      ((k : ℝ) - 1) / (2 * b / a + (k : ℝ) - 1)
+```
+
+## WongBigARGAbsorption.countPotential_drift
+
+```lean
+theorem countPotential_drift (θ : ℝ≥0) (N : ℕ) (hN : (θ : ℝ) ≤ N) (k : ℕ) :
+    (∫⁻ j, (countPotential N j : ℝ≥0∞) ∂jumpKernel θ k) +
+      (if k = 1 then 0 else 1) ≤ countPotential N k
+```
+
+## WongBigARGAbsorption.ae_eventually_one
+
+```lean
+theorem ae_eventually_one (θ : ℝ≥0) (n : ℕ) :
+    ∀ᵐ ω ∂pathLaw θ n, ∃ T : ℕ, ∀ t ≥ T, ω t = 1
+```
+
+## WongBigARGAbsorption.ae_finite_jump_absorption
+
+```lean
+theorem ae_finite_jump_absorption (θ : ℝ≥0) (n : ℕ) :
+    ∀ᵐ ω ∂pathLaw θ n, ∃ T : ℕ, ω T = 1
+```
+
+## WongBigARGAbsorption.normalizedRatio_value
+
+```lean
+@[simp] theorem normalizedRatio_value (a b : ℝ) (ha : 0 < a) (hb : 0 ≤ b) :
+    (normalizedRatio a b ha hb : ℝ) = 2 * b / a
+```
+
+## WongBigARGAbsorption.literal_up_kernel_mass
+
+```lean
+theorem literal_up_kernel_mass (a b : ℝ) (ha : 0 < a) (hb : 0 ≤ b) (j : ℕ) :
+    (jumpKernel (normalizedRatio a b ha hb) (j + 2) {j + 3}).toReal =
+      (b * (j + 2)) / (b * (j + 2) + a * (j + 2) * ((j + 2 : ℝ) - 1) / 2)
+```
+
+## WongBigARGAbsorption.literal_down_kernel_mass
+
+```lean
+theorem literal_down_kernel_mass (a b : ℝ) (ha : 0 < a) (hb : 0 ≤ b) (j : ℕ) :
+    (jumpKernel (normalizedRatio a b ha hb) (j + 2) {j + 1}).toReal =
+      (a * (j + 2) * ((j + 2 : ℝ) - 1) / 2) /
+        (b * (j + 2) + a * (j + 2) * ((j + 2 : ℝ) - 1) / 2)
+```
+
+## WongBigARGAbsorption.literal_rates_ae_finite_absorption
+
+```lean
+theorem literal_rates_ae_finite_absorption (a b : ℝ) (ha : 0 < a) (hb : 0 ≤ b)
+    (n : ℕ) :
+    ∀ᵐ ω ∂pathLaw (normalizedRatio a b ha hb) (n + 2), ∃ T : ℕ, ω T = 1
+```

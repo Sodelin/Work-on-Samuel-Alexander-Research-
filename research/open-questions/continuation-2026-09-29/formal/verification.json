@@ -1,0 +1,65 @@
+{
+  "verified_utc": "2026-09-29T20:26:55.0772741Z",
+  "compiler": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compiler_path": "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "dependency_cache": "C:/Users/Owner/Documents/Codex/2026-09-24/alexander-formalization",
+  "dependency_note": "Installed compiler and existing pinned dependency artifacts. No fresh source rebuild of Mathlib. Four listed files were compiled in this task, in import order. Frozen two prior generic modules were copied unchanged from the 2026-09-27 wong-alexander archive.",
+  "source_archive": "C:/Users/Owner/Documents/Codex/2026-09-27/wong-alexander/research/open-questions/ordinal",
+  "files": [
+    {
+      "file": "GenericCertificate.lean",
+      "sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581",
+      "log": "GenericCertificate.log",
+      "log_sha256": "ed74539be133492a67828c5df546e48e1cc843ea3f1ba177a196ab8984141b97",
+      "fresh_compile_exit_code": 0,
+      "printed_endpoints": 8,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "GenericOrdinalCertificate.lean",
+      "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510",
+      "log": "GenericOrdinalCertificate.log",
+      "log_sha256": "e643123429bde40620ffb9a426e929cc25529fab6d66f364b957a40f16a7405a",
+      "fresh_compile_exit_code": 0,
+      "printed_endpoints": 3,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "GenericPruning.lean",
+      "sha256": "46425ee10a089dd24529631c531b04f36ad1cdc7b72e4c8380c0afa62fe6fee4",
+      "log": "GenericPruning.log",
+      "log_sha256": "153885fc1d833678149e29c1c565f7dcfd202e318da29c2226fab0f2ff37c3f0",
+      "fresh_compile_exit_code": 0,
+      "printed_endpoints": 10,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "GenericMortalRank.lean",
+      "sha256": "227b2cfcd452a5f75674ff0f835f9814818f70f3401dd440fa220a3f0c822f9b",
+      "log": "GenericMortalRank.log",
+      "log_sha256": "ecb25587c8e0d27aa5c770947344603d00417d9a59c862bd5cb312423de5bfe6",
+      "fresh_compile_exit_code": 0,
+      "printed_endpoints": 9,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "new_endpoint_total": 19,
+  "rechecked_prior_endpoint_total": 11
+}

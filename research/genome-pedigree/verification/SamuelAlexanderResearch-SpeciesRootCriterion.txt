@@ -1,0 +1,12 @@
+'SpeciesRootCriterion.cone_ps_eq' does not depend on any axioms
+'SpeciesRootCriterion.maximalFourAxioms_ps_iff' does not depend on any axioms
+'SpeciesRootCriterion.cone_weaklyConnected' does not depend on any axioms
+'SpeciesRootCriterion.rootCovered_of_strict_birth_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpeciesRootCriterion.root_cone_maximal' does not depend on any axioms
+'SpeciesRootCriterion.maximalFourAxioms_iff_root_cone' depends on axioms: [propext, Quot.sound]
+'SpeciesRootCriterion.root_cone_criterion' depends on axioms: [propext, Quot.sound]
+'SpeciesRootCriterion.root_cone_criterion_of_strict_birth_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SpeciesRootCriterion.maximalFourAxioms_specieslike' depends on axioms: [propext, Quot.sound]
+'SpeciesRootCriterion.every_vertex_in_maximal_four_cluster' does not depend on any axioms

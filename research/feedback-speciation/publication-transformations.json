@@ -1,0 +1,152 @@
+[
+  {
+    "path": "FOGARTY-GLOBAL-RATE.html",
+    "archive_sha256": "1f84b1009d7f67d38d130f38a0912cd8228b7c0c48079caf8cf95910cbe56bf4",
+    "published_sha256": "1194413faf6516c9bf9e596d4b9680c6b9cb77779a2d5ef2d70e592f2c76b0c3",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "HANDOFFS.md",
+    "archive_sha256": "2153ebb18c05c0ad6eddf2b93b1dc7c646e9cce190561657326ed5e84424368a",
+    "published_sha256": "ef62910bce064778e87caf8188da86ee538f10d7e1af466d4d708957201cea58",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "MANUSCRIPT.html",
+    "archive_sha256": "37154bd1288aeebcccd1819668931ffdde5d710a550c1d8859201276106b7a90",
+    "published_sha256": "6f44df25d2d117b55f7023150eadb908b13bebe7ef2d4edc7147b70d418e2a44",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "MANUSCRIPT.md",
+    "archive_sha256": "c4e8c30239f7a424c032c5dedc618d51a95060d147dc4c2df5ba98af10678d43",
+    "published_sha256": "400ab9a75cb6dbca276fe16f76a2337a2eef23a5f9d15ebd177f2b190cf55385",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "OPEN-PROBLEMS.md",
+    "archive_sha256": "5a0a65d0b1b89a460da5edb2c9a7f4d65626d0acc028d2c67bd692f91af30942",
+    "published_sha256": "23ee1f75c5d9530b53da029353a7bc65796e59f6bcad9e6e46446428de7bca5f",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "PRIOR-WORK-AUDIT.md",
+    "archive_sha256": "8aff7ce68a2585c967bed2e2e4985ae130d6c1b5b21cb06a4ab316425399304f",
+    "published_sha256": "399046054c62a9dfe20280bb84e5959b83b298536e4a6278cde09a2465aad972",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present; obsolete manuscript link repaired"
+  },
+  {
+    "path": "RATE-PRIOR-ART-CHECK.md",
+    "archive_sha256": "66686964efb825c2b601af671b1a3189c7630ae4ec03fe6c7811d32beba23c3b",
+    "published_sha256": "dc5bc388ac4061e44528bd68b2c0e3c190117cfc9459a426ce0c7db92dec921a",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "rate-statement-review.md",
+    "archive_sha256": "b5d5643021d18944b9ea70cfbf22bdb2e718de00b8076a610daa6a57538e8480",
+    "published_sha256": "1b9326bfc0ca6f34f3d618e35c15ed1597096e96e1bc744a4520ac8870129cad",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "README.md",
+    "archive_sha256": "80c89cac36a91df048696f3d716f57582ee8ff821ee371ee50f4668c7f64151d",
+    "published_sha256": "75e8b67f7f6d39fb613dad71495c6137e996d0abb3eec03c2ae09122a4f301c4",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present; public integration and exact-byte verification boundary added"
+  },
+  {
+    "path": "REVIEW-START.html",
+    "archive_sha256": "32acd8cddc3517ea5904af286b4c4ca6843be267f2702b0773a0ea7b06905bc7",
+    "published_sha256": "034809169f21e516723b13b862dfba1e46eeb4327596cd6e9b9c54620dcd2c66",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "SOURCE-AUDIT.md",
+    "archive_sha256": "711c611dbabede362b436581c8e723744a8b54b25ca4fae04e2ce72bbd3df1ca",
+    "published_sha256": "2f025d063cc97c7ee68563ede5842d0cceeda73df33a3d66ba146455ca9a8679",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/Check-All.ps1",
+    "archive_sha256": "853db9cfada242bf351c8b6c0031c8b1570fae1dab721ca4ce24382827886aa0",
+    "published_sha256": "2296efc5f19fef92d1ad9d5ab9c50700dfa9721219d1c564ae8963a058052ced",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/FeedbackDynamics.lean",
+    "archive_sha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a",
+    "published_sha256": "dd14dcaf5da5e89ff4aa9a2afb0693bb95a40642c6030287860a14f982f2d570",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/FogartyAffinity.lean",
+    "archive_sha256": "c9e406c2273b3374bbcf08b7144e0bb83c156462aa22319f09f8d74328b2fdf3",
+    "published_sha256": "1ac434b5b0814a7eaba1f34df224bbf320dbe044eb6ba88dddf9b3d57b8d7f91",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/FogartyAffinityFixation.lean",
+    "archive_sha256": "ca38bdf620cb37b7df466e403f903a7c3a0e3905ebb2356fc1099398ffe661f7",
+    "published_sha256": "1e39b773dea9fd0b902327ec8918d63b147dddbd1ce5458fe85a18ea3e0883a4",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/lake-manifest.json",
+    "archive_sha256": "ee3fcee5a7830ef2e56f06e072545a4eecee60f52561b876ede640bbe0734ab2",
+    "published_sha256": "900c58fc1651f59c7c3a19c59f8660397727f3f3ea0721883e54272d1437d0fd",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/lean-toolchain",
+    "archive_sha256": "a0ada3782cd088719516bbfdf37b9e7032230e211bf424b85d952ee650c51091",
+    "published_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/AncestryExamples.log",
+    "archive_sha256": "e329132a0801f1ae356a0d9b5c9ca8e95129b3b6c6ec06bf2442256fda07b36b",
+    "published_sha256": "ae8f01fa50ef9e1b5c808cb217fa29b6a122c7c921d8ad948404c8f2912e287d",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/AncestryMixing.log",
+    "archive_sha256": "8201f06a7824d749d31f120f23975ca177be1ba4a5689e70729f9dc83581a471",
+    "published_sha256": "d890b41dbd8d8dd86c04b9e18eab0286386df8a8f2c9c913653af9c760812a87",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/FeedbackDynamics.log",
+    "archive_sha256": "0a21bec8e2045879ec1684a7904607279f8b8362c4e749568f68087684112748",
+    "published_sha256": "d4508e19522a7362312a8790d1d4776d0afca0454b9552caf4b5351fa05170ed",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/FogartyAffinity.log",
+    "archive_sha256": "8a9989affedcd17d737fde19f28eabfc1a5f0d67f8be76dfdbdc586678d62f9f",
+    "published_sha256": "3940c1a23f1a2f1a6e00ec52234e1a486856a78e9984e9517544a56e1f774389",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/FogartyAffinityFixation.log",
+    "archive_sha256": "4d4b5c8eb9d1599785b7139a342d9c4479523aa658622cb98593c831334a9b5d",
+    "published_sha256": "08a727314af978fed32dca45aae927d424e8227d484b5f0cc59701039d8f2a2f",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/receipt.json",
+    "archive_sha256": "3a0fdf70eddf452cd2f789bfc2e9d17f387c85bdd09e2e2101795b32f725f0fc",
+    "published_sha256": "89dfc85c78d22359bfa9798985abc57771cace627f8cba43158db3af643670d2",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/SamuelAlexanderResearch-SpeciesBridge.log",
+    "archive_sha256": "50da5d9051744a50c9223e5a18cc1d4960c2760c5457309efdb0bf878539d46f",
+    "published_sha256": "9d7ac66690854b22ca0a34240c79f4aded769a2d40eb6ac4aa653090c50e5278",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  },
+  {
+    "path": "package/verification/SamuelAlexanderResearch-SpeciesGlobalIAP.log",
+    "archive_sha256": "55e685fac5e9e67def016ac29b09d52a9f3a8afeed193a144c28d0fa76910c8f",
+    "published_sha256": "56e51a59081dc89ed2c65356a7785fe1b63e583620c8e7a74b9ca209560e6e99",
+    "transformation": "LF normalization and GitHub-protected math delimiters for Markdown; UTF-8 BOM removal if present"
+  }
+]

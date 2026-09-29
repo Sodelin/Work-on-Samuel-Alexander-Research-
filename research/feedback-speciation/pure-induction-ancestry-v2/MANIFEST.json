@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "packet": "pure-induction-ancestry-v2",
+  "status": "LOCAL_CHECKED_REVIEW_CANDIDATE",
+  "selectedNewEndpointCount": 36,
+  "customSourceModules": 13,
+  "frozenPredecessorsModified": false,
+  "files": [
+    {
+      "path": "Check.ps1",
+      "bytes": 3971,
+      "sha256": "68f888bf91545336ad95e5671d7b9a4920e9dc8095e7c4012c05215636462f00"
+    },
+    {
+      "path": "COMBINED-RECEIPT.json",
+      "bytes": 10002,
+      "sha256": "8b43649d21a41038ed496dcef2ebd43e29429ef1e2f790c2a83d5dd4f5ce7353"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 2265,
+      "sha256": "a446f4afbc425a99dd4d81ec03101c61b5642fe855435bccd1b9777849c58c5e"
+    },
+    {
+      "path": "ExtinctionPedigree.lean",
+      "bytes": 9861,
+      "sha256": "ddb618e00f758546176eaedfbfc86d7457767133bc784b2990972c07a8fe63fb"
+    },
+    {
+      "path": "FeedbackDynamics.lean",
+      "bytes": 20392,
+      "sha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a"
+    },
+    {
+      "path": "FiniteEpigenetic.lean",
+      "bytes": 12917,
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822"
+    },
+    {
+      "path": "FiniteFixation.lean",
+      "bytes": 15133,
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9"
+    },
+    {
+      "path": "INDEPENDENT-REVIEW.json",
+      "bytes": 1072,
+      "sha256": "6df53bcba915047be3a65cd85320724acbf754afbbf3d78a29d3102efa2367b2"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3672,
+      "sha256": "1d8ad8bea18f7fc799b5213fcc98ee319e80ffee4a2b97b1c1f9051e0c01f32b"
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 680,
+      "sha256": "6f7408bd5c2abb45173b7b2d5e0a0993136aadb70daafaf8f6c75dff13f32228"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "ParentSchedules.lean",
+      "bytes": 3061,
+      "sha256": "a35bc0c6e774cba93c2eebabe0f29530cceb12079d115e4ae28f2a6540aafdc7"
+    },
+    {
+      "path": "provenance/cache-acquisition.json",
+      "bytes": 1928,
+      "sha256": "666b140f62287cad0214c7aabaa92586ab1c90511a6fe654afdfb0c6328d067d"
+    },
+    {
+      "path": "provenance/Original-R1R2-Check.ps1",
+      "bytes": 4210,
+      "sha256": "5961a04df4899b6ac953396f4dcaa9f0a9842501466ad0253bbd7508e116fae4"
+    },
+    {
+      "path": "provenance/Original-R3R6-Check.ps1",
+      "bytes": 5122,
+      "sha256": "ad80b282b3b19fe3bd68bcf93f49ef51c46d1bf03236057b58183f8e9c912dc9"
+    },
+    {
+      "path": "provenance/PureInductionAncestry-receipt.json",
+      "bytes": 4093,
+      "sha256": "bf8d3b80993d3300d2a1184ce82dde259370b7f0ad6328c760f7de950e18512d"
+    },
+    {
+      "path": "provenance/PureInductionNoise-receipt.json",
+      "bytes": 3559,
+      "sha256": "75707c59ccfd7fd03bd24f4292b0c9d26654e4cf4063277826daafe9e9690861"
+    },
+    {
+      "path": "provenance/PureInductionPaths-receipt.json",
+      "bytes": 3374,
+      "sha256": "54bf5d3a586c7030558e19ef4e3db716450a4b356ca37328c913be8d111e8410"
+    },
+    {
+      "path": "PureInductionAncestry.lean",
+      "bytes": 6384,
+      "sha256": "cc58fed43614564e0bdfaa6fb2527b035cf789c45b3096d15ddb8693a64c855d"
+    },
+    {
+      "path": "PureInductionJoint.lean",
+      "bytes": 6224,
+      "sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a"
+    },
+    {
+      "path": "PureInductionNoise.lean",
+      "bytes": 6978,
+      "sha256": "53e77f062c0dfd23b274e9ddc801f8b8136f7783786600a407f6b657584018a0"
+    },
+    {
+      "path": "PureInductionPaths.lean",
+      "bytes": 7129,
+      "sha256": "f30a50c742c6348973711fbd73c2139a33efe9185e2218a74874d42a1aaeb4d3"
+    },
+    {
+      "path": "PureInductionR1R2.lean",
+      "bytes": 13687,
+      "sha256": "633afd20f24da1c9cb86c5db7dda2bc1596b09cd634fe93ad0a70de0c5a8b85d"
+    },
+    {
+      "path": "REPRODUCTION.md",
+      "bytes": 2981,
+      "sha256": "7ab5a8afaeba272a51f395e35c1836966f16c41f2b62f281b67f756d807d82e6"
+    },
+    {
+      "path": "RESULT-AND-SCOPE.md",
+      "bytes": 7441,
+      "sha256": "dbc83d5952ceee6c3407522786da972bbd05875c9be3bef48174b0730e8c5dbe"
+    },
+    {
+      "path": "SamuelAlexanderResearch/SpeciesBridge.lean",
+      "bytes": 12372,
+      "sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037"
+    },
+    {
+      "path": "SOURCE-PROVENANCE.json",
+      "bytes": 4913,
+      "sha256": "8a67de979e8176d6fd0350995b591a361eb119934a3d79ec3f8da79ad8aee8ae"
+    },
+    {
+      "path": "UniformParentCounting.lean",
+      "bytes": 6589,
+      "sha256": "3fbb09bbdfa0ffb78cf9e88488bceb3e831fd4f014dfdf3db6fe70370d75bea2"
+    },
+    {
+      "path": "UniformParentProcess.lean",
+      "bytes": 7320,
+      "sha256": "1cce9f8d1738255cd59e2553ea75dbe3b2078ed4b50d261c28e6b833c8a55325"
+    },
+    {
+      "path": "verification/PureInductionAncestry.log",
+      "bytes": 1342,
+      "sha256": "4049c721c6f2162a2a59906916720be47d3f95aa9ecc208beaeb8e01fd19f00b"
+    },
+    {
+      "path": "verification/PureInductionNoise.log",
+      "bytes": 834,
+      "sha256": "519354f6ea83c0c08ebc79825a602c9fffc9561b40874977d9445105a6f59ebe"
+    },
+    {
+      "path": "verification/PureInductionPaths.log",
+      "bytes": 726,
+      "sha256": "5e90a3eb33addae9af6b845f182fb405ee419133741d4e16707d4a31f6a30604"
+    },
+    {
+      "path": "verification/PureInductionR1R2.log",
+      "bytes": 1964,
+      "sha256": "dc4d310a753b43db26509618107d25dc94da8342b5b89a809d8279d0f3429ee4"
+    },
+    {
+      "path": "verify_packet.py",
+      "bytes": 3577,
+      "sha256": "cbdea2714b9b1f2b7d35cf93a44d7184140edb216f1ddf771757a39c0280105b"
+    }
+  ]
+}

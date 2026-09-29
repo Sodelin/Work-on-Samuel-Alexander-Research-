@@ -1,0 +1,22 @@
+[
+  {
+    "Path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-27\\wong-alexander\\research\\open-questions\\embedding\\UNIVERSAL-AVOIDER-NONEXISTENCE.md",
+    "Hash": "75DC49CF0AF65EEFFE23C008B009B63529E463BE76DD64E73C92517378761C76",
+    "Algorithm": "SHA256"
+  },
+  {
+    "Path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-27\\wong-alexander\\research\\open-questions\\embedding\\GenericUniversalAvoiders.lean",
+    "Hash": "7C96183BD1CEA8A694B59A12DEF6EBEDB2B6F238044A6C6FB24610E49A37EAC4",
+    "Algorithm": "SHA256"
+  },
+  {
+    "Path": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\embedding\\GenericUniversalAvoiders.lean",
+    "Hash": "7C96183BD1CEA8A694B59A12DEF6EBEDB2B6F238044A6C6FB24610E49A37EAC4",
+    "Algorithm": "SHA256"
+  },
+  {
+    "Path": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\embedding\\TerminalCloneAvoiders.lean",
+    "Hash": "F074F86ED6A678BA011175EB2D17BE3A2D95D7EE69C2DE2A7E5DDC7D8947A783",
+    "Algorithm": "SHA256"
+  }
+]

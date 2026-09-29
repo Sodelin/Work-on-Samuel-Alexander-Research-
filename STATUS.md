@@ -1,5 +1,8 @@
 # Verification status
 
+**29 September integration update:** see the [complete result-family ledger](research/publication-2026-09-29/COVERAGE.md), [full publication guide](PUBLICATION-GUIDE-2026-09-29.md), and [new checked embedding/pruning/rank package](research/open-questions/continuation-2026-09-29/RESULTS.md). The dated snapshots below preserve their original evidence and delivery state. The new generic realizing-state and mortal-rank results supersede earlier descriptions of those particular obligations as written-only.
+
+
 **Current public reading copy, 26 September 2026 Pacific.** Linked proof sources use draft-PR snapshot `022df5fc`; the exact hosted proof checkpoint remains [`a2644182`](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/commit/a2644182b147eb40816abb278e00c3c6d4709eb8). See the [full report](MATH-RESEARCH-REPORT.md).
 
 ## Wong graph mathematics and scope

@@ -1,0 +1,9 @@
+'FiniteHistoryCompletion.old_reachability_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteHistoryCompletion.join_biosphere' depends on axioms: [propext, Quot.sound]
+'FiniteHistoryCompletion.fork_biosphere' depends on axioms: [propext, Quot.sound]
+'FiniteHistoryCompletion.join_inspecies' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteHistoryCompletion.join_maximal_specieslike' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteHistoryCompletion.fork_not_iap' depends on axioms: [propext, Quot.sound]
+'FiniteHistoryCompletion.finite_history_does_not_determine_species' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

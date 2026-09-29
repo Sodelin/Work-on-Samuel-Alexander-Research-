@@ -1,0 +1,11 @@
+'BirthOrder.exists_least' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.enumerate_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.enumerate_nondecreasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.enumerate_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.orderedEnumeration_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.OrderedEnumeration.index_toFun' depends on axioms: [Classical.choice]
+'BirthOrder.OrderedEnumeration.finiteCover_pullback_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.OrderedEnumeration.finiteCover_pullback_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.OrderedEnumeration.index_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.OrderedEnumeration.edges_increase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BirthOrder.finiteSublevels_of_strict' does not depend on any axioms

@@ -1,0 +1,7 @@
+'PureInductionPaths.countPath_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionPaths.countPath_depends_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionPaths.pathEvent_eq_noise_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionPaths.path_probability_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionPaths.coupled_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionPaths.joint_parent_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionPaths.unresolved_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]

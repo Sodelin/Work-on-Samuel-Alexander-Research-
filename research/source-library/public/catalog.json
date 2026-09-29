@@ -1,0 +1,1530 @@
+{
+  "schema_version": 1,
+  "exported_at": "2026-09-25T14:01:16.917665+00:00",
+  "sources": [
+    {
+      "source_id": "src_05b563c0047445ca",
+      "created_at": "2026-09-25T13:56:16.176621+00:00",
+      "kind": "transcript",
+      "title": null,
+      "title_provenance": {},
+      "authors": [],
+      "rights": "unconfirmed",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "[Title unconfirmed]",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_ee0bbc3773c541c1",
+          "source_sha256": "c899ab08a3cd8f120b556eda7654818950791ea0d036dfea70513455aa0e382e",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-c899ab08a3cd"
+          ],
+          "text_unit_count": 582,
+          "text_variant_count": 582,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_96bbdce7cb1544a7",
+      "created_at": "2026-09-25T13:56:16.184621+00:00",
+      "kind": "pdf",
+      "title": null,
+      "title_provenance": {},
+      "authors": [],
+      "rights": "unconfirmed",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "[Title unconfirmed]",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_d7d7f9e336f2436f",
+          "source_sha256": "1cdb831fe6c9c46531f27b8aa661f9507b2a14664350ea5e3105311775e84526",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-1cdb831fe6c9"
+          ],
+          "text_unit_count": 168,
+          "text_variant_count": 168,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_5ac3b1aa54874078",
+      "created_at": "2026-09-25T13:56:16.190632+00:00",
+      "kind": "pdf",
+      "title": "Lean Pool: An AI-Maintained Archive of Formalized Mathematics",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "Vasily Ilin"
+      ],
+      "rights": "http://creativecommons.org/licenses/by/4.0/",
+      "authoritative_urls": [
+        "https://doi.org/10.48550/arxiv.2609.25199",
+        "https://arxiv.org/abs/2609.25199v1"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": "v1",
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Lean Pool: An AI-Maintained Archive of Formalized Mathematics",
+      "identifiers": [
+        {
+          "kind": "arxiv",
+          "value": "2609.25199v1",
+          "version_key": "v1"
+        },
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2609.25199",
+          "version_key": "v1"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_cdb5eb66dcb24f48",
+          "source_sha256": "0b1ab9f651645ec7724c342b7f8559a8179ae03b02743b6bf62f02a726922920",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-0b1ab9f65164"
+          ],
+          "text_unit_count": 52,
+          "text_variant_count": 52,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_74fd478d570c4aa4",
+      "created_at": "2026-09-25T13:56:16.192634+00:00",
+      "kind": "pdf",
+      "title": "Inferential planning in the frontal cortex",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "Francesco Donnarumma"
+      ],
+      "rights": "unconfirmed",
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.celrep.2026.117905"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Inferential planning in the frontal cortex",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1016/j.celrep.2026.117905",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_162d54a53fa64db5",
+          "source_sha256": "44661c255a8bc8a72f5c0e2d9a0ada276c42a0c47768cc2c0978091e5f5f7f74",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-44661c255a8b"
+          ],
+          "text_unit_count": 23,
+          "text_variant_count": 23,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_58e4446915714685",
+      "created_at": "2026-09-25T13:56:16.194636+00:00",
+      "kind": "pdf",
+      "title": "The key dimensions of human action: Content and form",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "G. Rizzolatti"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.neubiorev.2026.106967"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "The key dimensions of human action: Content and form",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1016/j.neubiorev.2026.106967",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_b0a7571488e042a0",
+          "source_sha256": "6532ab739eb1d2fc0be708d40af0fd658e905613ed71e46e1bc5676865bb21b6",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-6532ab739eb1"
+          ],
+          "text_unit_count": 9,
+          "text_variant_count": 9,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_20e1d360e71c4467",
+      "created_at": "2026-09-25T13:56:16.195632+00:00",
+      "kind": "title_entry",
+      "title": "To be or not to be? A question of mortality",
+      "title_provenance": {
+        "kind": "publisher_metadata_via_coordinator",
+        "status": "coordinator_checked"
+      },
+      "authors": [
+        "Karl John Friston"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/to-be-or-not-to-be-a-question-of-mortality/DCC392FA8E674B0D74C20A925B9B8351"
+      ],
+      "observed_publication": {
+        "date": "2026-09-17",
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Publisher metadata, abstract and references inspected with web tool; matching user screenshot",
+          "source_url": "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/to-be-or-not-to-be-a-question-of-mortality/DCC392FA8E674B0D74C20A925B9B8351",
+          "observed_at": "2026-09-25T13:48:31.007124+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "title_only",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "To be or not to be? A question of mortality",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1017/s0140525x25103439",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_c03d46a8b45d4674",
+          "source_sha256": "39d364a22994d677b2ceafc59a109da5b9066e8e7c589fa79c64caaf5848833c",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-39d364a22994"
+          ],
+          "text_unit_count": 0,
+          "text_variant_count": 0,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": false,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_4f60aaf88c9347b9",
+      "created_at": "2026-09-25T13:56:16.195632+00:00",
+      "kind": "pdf",
+      "title": null,
+      "title_provenance": {},
+      "authors": [],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "[Title unconfirmed]",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_33964b4596f4408f",
+          "source_sha256": "594b441b79842cd259faaf5c53052a78d5c6aa618016d8b997f2ee0db38ebfbb",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-594b441b7984"
+          ],
+          "text_unit_count": 28,
+          "text_variant_count": 28,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_6bbe68a5085640f2",
+      "created_at": "2026-09-25T13:56:16.195632+00:00",
+      "kind": "pdf",
+      "title": "Active inference and artificial reasoning",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "Karl Friston"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1038/s41467-026-77209-5"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Active inference and artificial reasoning",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1038/s41467-026-77209-5",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_d35bd293468e4753",
+          "source_sha256": "467f57c8de72ae8f81c368ad55d8e5bb020af057bafdf595d51dd481bfc008fa",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-467f57c8de72"
+          ],
+          "text_unit_count": 20,
+          "text_variant_count": 20,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_4a9b6b7ef15a4f40",
+      "created_at": "2026-09-25T13:56:16.196632+00:00",
+      "kind": "pdf",
+      "title": "The Free Energy Principle and Free Markets",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "Karl Friston, Johan Medrano and Tim Verbelen"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "The Free Energy Principle and Free Markets",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_cd165191000a4224",
+          "source_sha256": "afb168871a2b95fe662c126665c36b662b1b432f158b8ca9288f74fdc91c9460",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-afb168871a2b"
+          ],
+          "text_unit_count": 34,
+          "text_variant_count": 34,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_8b72f8f07ec3414e",
+      "created_at": "2026-09-25T13:56:16.204144+00:00",
+      "kind": "pdf",
+      "title": null,
+      "title_provenance": {},
+      "authors": [
+        "Choong-wan Woo"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "[Title unconfirmed]",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_38689e9480fa4580",
+          "source_sha256": "0befa3f68a5d580d8d1d1d2eafbcb5e69fe4cc82b09d7b0751be8605b4e8c0f6",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-0befa3f68a5d"
+          ],
+          "text_unit_count": 31,
+          "text_variant_count": 31,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_787f3d39ee7145be",
+      "created_at": "2026-09-25T13:56:16.205142+00:00",
+      "kind": "pdf",
+      "title": "Integrated information and predictive processing theories of consciousness: An adversarial collaborative review",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "TWCF: INTREPID Consortium"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.neubiorev.2026.106742"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Integrated information and predictive processing theories of consciousness: An adversarial collaborative review",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1016/j.neubiorev.2026.106742",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_48f7e0aaa9bf462d",
+          "source_sha256": "f52aaac35d19dafbb47779b1533f595b80ab10afdd602fbb7920b7a662e26a44",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-f52aaac35d19"
+          ],
+          "text_unit_count": 18,
+          "text_variant_count": 18,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_dc042ba37d9f490d",
+      "created_at": "2026-09-25T13:56:16.207144+00:00",
+      "kind": "pdf",
+      "title": "Self-orthogonalizing attractor neural networks emerging from the free energy principle",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "Tamas Spisak; Karl Friston"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.48550/arxiv.2505.22749",
+        "https://arxiv.org/abs/2505.22749v2"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": "v2",
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Self-orthogonalizing attractor neural networks emerging from the free energy principle",
+      "identifiers": [
+        {
+          "kind": "arxiv",
+          "value": "2505.22749v2",
+          "version_key": "v2"
+        },
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2505.22749",
+          "version_key": "v2"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_c08a8b8ccc1944f5",
+          "source_sha256": "ce3c27ff8ed441b058858b299f4cabad65e34bc91a06b257f17a19ce6e880517",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-ce3c27ff8ed4"
+          ],
+          "text_unit_count": 35,
+          "text_variant_count": 35,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_d6bd9d329de543e7",
+      "created_at": "2026-09-25T13:56:16.209144+00:00",
+      "kind": "pdf",
+      "title": "The Complex Brain Hypothesis april 28",
+      "title_provenance": {
+        "kind": "pdf_metadata",
+        "status": "unconfirmed"
+      },
+      "authors": [
+        "Canada Home Doctors"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "The Complex Brain Hypothesis april 28",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_97c8d9bd5b7d4f9b",
+          "source_sha256": "2dfe5dc159d560abab06506a5bffe8d11bb55e3cea66193fbc69b81fbc6d2054",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-2dfe5dc159d5"
+          ],
+          "text_unit_count": 33,
+          "text_variant_count": 33,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_ce0abd1370cb4057",
+      "created_at": "2026-09-25T13:56:16.210144+00:00",
+      "kind": "pdf",
+      "title": null,
+      "title_provenance": {},
+      "authors": [],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1007/s11023-026-09787-8"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "[Title unconfirmed]",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1007/s11023-026-09787-8",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_de42f0b28deb47ad",
+          "source_sha256": "902da7cdec9a9ec15ee524a48ac68b550b936e1811297d92af45691591189dd6",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-902da7cdec9a"
+          ],
+          "text_unit_count": 32,
+          "text_variant_count": 32,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_aceb15c217f84ab0",
+      "created_at": "2026-09-25T13:56:16.212147+00:00",
+      "kind": "pdf",
+      "title": "Top-down perspectives on cell membrane potential and protein transcription",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1038/s41598-025-31696-6"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Top-down perspectives on cell membrane potential and protein transcription",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1038/s41598-025-31696-6",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_05a3ecdeca1b496e",
+          "source_sha256": "877feb0732f4b205561357e286af575cde95a23dca257f852d3ffa6625200fda",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-877feb0732f4"
+          ],
+          "text_unit_count": 11,
+          "text_variant_count": 11,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_d1173cafc9dd4180",
+      "created_at": "2026-09-25T13:56:16.213142+00:00",
+      "kind": "pdf",
+      "title": "Lifetime imaging reveals long-distance non-neural bioelectric patterns on timescales from seconds to hours",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [
+        "P. McMillen"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.ydbio.2026.08.001"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Lifetime imaging reveals long-distance non-neural bioelectric patterns on timescales from seconds to hours",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1016/j.ydbio.2026.08.001",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_d502c3b086104638",
+          "source_sha256": "04475c01f9cccc81c5cdf2e7dd0249752b7bbe52df251a771d597c60ce255a16",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-04475c01f9cc"
+          ],
+          "text_unit_count": 17,
+          "text_variant_count": 17,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_8329a508d3844940",
+      "created_at": "2026-09-25T13:56:16.214143+00:00",
+      "kind": "pdf",
+      "title": "The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [
+        "Marko Cvjetko; Benedikt Hartl; Michael Levin; Clément Moulin-Frier; Pierre-Yves Oudeyer"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.48550/arxiv.2608.26116",
+        "https://arxiv.org/abs/2608.26116v2"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": "v2",
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning",
+      "identifiers": [
+        {
+          "kind": "arxiv",
+          "value": "2608.26116v2",
+          "version_key": "v2"
+        },
+        {
+          "kind": "doi",
+          "value": "10.48550/arxiv.2608.26116",
+          "version_key": "v2"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_7314542e666942a4",
+          "source_sha256": "ea45287f58766569a2d0e27280eadfb8cfc83fd7ab088cb5c64ac8e9ca5662bf",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-ea45287f5876"
+          ],
+          "text_unit_count": 11,
+          "text_variant_count": 11,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_feb84e4b3caa4487",
+      "created_at": "2026-09-25T13:56:16.215143+00:00",
+      "kind": "pdf",
+      "title": "Open questions about time and self-reference in living systems",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1098/rsos.261059"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Open questions about time and self-reference in living systems",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1098/rsos.261059",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_8a4157ee38c24e88",
+          "source_sha256": "8b3940d8ac53c7145584c38c1a95a27c87f9c8173323112865c5439862bf43ce",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-8b3940d8ac53"
+          ],
+          "text_unit_count": 29,
+          "text_variant_count": 29,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_e8dd65c7cde94f2b",
+      "created_at": "2026-09-25T13:56:16.217142+00:00",
+      "kind": "pdf",
+      "title": "Theories of Aging: From Damage and Programmed Theories to Goal-Directedness",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": "v1",
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Theories of Aging: From Damage and Programmed Theories to Goal-Directedness",
+      "identifiers": [
+        {
+          "kind": "preprints",
+          "value": "202608.1219.v1",
+          "version_key": "v1"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_f3de8de7b397412d",
+          "source_sha256": "e18b52e11a50d7cf98f1a417e350d913cb16a2cd8eca2cf5b7504773b23a50fa",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-e18b52e11a50"
+          ],
+          "text_unit_count": 54,
+          "text_variant_count": 54,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_234044a328464df6",
+      "created_at": "2026-09-25T13:56:16.220142+00:00",
+      "kind": "pdf",
+      "title": "Ingressing Minds: Causal, Non-physical Patterns In-form Natural, Synthetic, and Hybrid Embodiments",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [
+        "Michael Levin"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "version_conflict_unresolved"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        },
+        {
+          "method": "Version unresolved: filename labels v4; PDF metadata labels v33. Neither treated as a verified publication version."
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Ingressing Minds: Causal, Non-physical Patterns In-form Natural, Synthetic, and Hybrid Embodiments",
+      "identifiers": [],
+      "artifacts": [
+        {
+          "artifact_id": "art_1017ae36e9194b38",
+          "source_sha256": "58887288549ff0ac42d3e8a2c3e749badd89b9bb4e3706799deb76c6123e22bd",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-58887288549f"
+          ],
+          "text_unit_count": 67,
+          "text_variant_count": 67,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_6ede129ce1384c31",
+      "created_at": "2026-09-25T13:56:16.223143+00:00",
+      "kind": "pdf",
+      "title": "Cognitive Offloading Is a Cognitive Universal",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": "v1",
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Cognitive Offloading Is a Cognitive Universal",
+      "identifiers": [
+        {
+          "kind": "preprints",
+          "value": "202607.0507.v1",
+          "version_key": "v1"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_7d40669a30db4836",
+          "source_sha256": "81dc8bf9244db75576f2faeb7e30e19a3a86ef4f84274c458c1432d7729d584e",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-81dc8bf9244d"
+          ],
+          "text_unit_count": 28,
+          "text_variant_count": 28,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_38b81ba300e44e9d",
+      "created_at": "2026-09-25T13:56:16.224142+00:00",
+      "kind": "pdf",
+      "title": "Manipulation of biological systems by self-defecting and foreign agents",
+      "title_provenance": {
+        "kind": "first_page_text_extraction",
+        "locator": "PDF page 1",
+        "status": "publisher_unconfirmed"
+      },
+      "authors": [
+        "Evgeniya V. Shmeleva"
+      ],
+      "rights": "user-provided local copy; license/access terms not yet verified",
+      "authoritative_urls": [
+        "https://doi.org/10.1016/j.semcdb.2026.103691"
+      ],
+      "observed_publication": {
+        "date": null,
+        "year": null,
+        "version": null,
+        "observed_at": "2026-09-25T13:56:15.056729+00:00",
+        "status": "publication_date_unconfirmed"
+      },
+      "provenance": [
+        {
+          "method": "preserved user-source intake",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "page/line sidecar; extraction unverified",
+          "observed_at": "2026-09-25T13:56:15.056729+00:00"
+        },
+        {
+          "method": "Reading owner supplied first-page text extraction; publisher unconfirmed; PDF page 1",
+          "observed_at": "2026-09-25T14:01:16.901916+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "full_text_available",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "scope": "No proof verification imported by this intake adapter",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Manipulation of biological systems by self-defecting and foreign agents",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1016/j.semcdb.2026.103691",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_de007006164c4db3",
+          "source_sha256": "c0f6779b1171b4180e5e7e9577552e2917ec37f7061be96c924f92f244b5a826",
+          "hash_status": "verified_local_bytes",
+          "intake_ids": [
+            "doc-c0f6779b1171"
+          ],
+          "text_unit_count": 10,
+          "text_variant_count": 10,
+          "original_file_status": "present"
+        }
+      ],
+      "has_searchable_text": true,
+      "verification_is_imported_metadata": true
+    },
+    {
+      "source_id": "src_ae7c2288dd064c41",
+      "created_at": "2026-09-25T13:57:20.384858+00:00",
+      "kind": "title_entry",
+      "title": "Diverse intelligence: An essential field for questions of AI and consciousness",
+      "title_provenance": {
+        "kind": "publisher_metadata_via_coordinator",
+        "status": "coordinator_checked"
+      },
+      "authors": [
+        "Michael Levin"
+      ],
+      "rights": "unconfirmed",
+      "authoritative_urls": [
+        "https://doi.org/10.1017/S0140525X25103828"
+      ],
+      "observed_publication": {
+        "date": "2026-09-17",
+        "version": null,
+        "observed_at": "2026-09-25T13:48:31.007124+00:00"
+      },
+      "provenance": [
+        {
+          "method": "User-supplied publisher screenshot and document text including metadata, abstract and references",
+          "source_url": "https://doi.org/10.1017/S0140525X25103828",
+          "observed_at": "2026-09-25T13:48:31.007124+00:00"
+        }
+      ],
+      "read_status": "full_text_unread",
+      "availability": "title_only",
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "evidence": [],
+        "local_evidence_count": 0
+      },
+      "public_notes": [],
+      "title_display": "Diverse intelligence: An essential field for questions of AI and consciousness",
+      "identifiers": [
+        {
+          "kind": "doi",
+          "value": "10.1017/s0140525x25103828",
+          "version_key": "unknown"
+        }
+      ],
+      "artifacts": [
+        {
+          "artifact_id": "art_4137aa2914d74441",
+          "source_sha256": null,
+          "hash_status": "not_available",
+          "intake_ids": [
+            "discovery-10.1017/S0140525X25103828"
+          ],
+          "text_unit_count": 0,
+          "text_variant_count": 0,
+          "original_file_status": "not_specified"
+        }
+      ],
+      "has_searchable_text": false,
+      "verification_is_imported_metadata": true
+    }
+  ],
+  "discovery_anchors": [
+    {
+      "url": "https://profiles.ucl.ac.uk/2747-karl-friston/publications",
+      "status": "Public JavaScript shell retrieved; full bibliography not enumerated; browser initialization failed before control"
+    },
+    {
+      "url": "https://www.fil.ion.ucl.ac.uk/~karl/",
+      "status": "Author-selected institutional bibliography accessible; historical/selected coverage, not a complete current corpus"
+    },
+    {
+      "url": "https://discovery.ucl.ac.uk/",
+      "status": "Institutional repository; individual source records available"
+    }
+  ],
+  "notice": "Metadata catalog only. Full corpus stays local. Reading/proof statuses are intake declarations, not independently verified by this CLI."
+}

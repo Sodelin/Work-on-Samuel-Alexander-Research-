@@ -1,0 +1,5 @@
+'GenericOrdinalCertificate.ordinal_certificate_excludes_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GenericOrdinalCertificate.avoidance_has_ordinal_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericOrdinalCertificate.avoids_iff_ordinal_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]

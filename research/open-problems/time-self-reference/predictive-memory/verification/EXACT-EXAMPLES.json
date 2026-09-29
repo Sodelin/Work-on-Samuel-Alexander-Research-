@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "evidence_class": "invented mathematical inputs, exact rational enumeration",
+  "script_sha256": "6f06ae374f58d7c1eceddaeae55e0a03a0652b054dfb8ac6a8aefdfc88147031",
+  "full_interventions": {
+    "stable_depth": 1,
+    "partition_sizes": [
+      2,
+      4,
+      4
+    ],
+    "codes": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        3
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        3
+      ]
+    ]
+  },
+  "passive_interventions": {
+    "stable_depth": 0,
+    "partition_sizes": [
+      2,
+      2
+    ],
+    "codes": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        1
+      ]
+    ]
+  },
+  "all_ordered_cell_pairs_checked": 64,
+  "shortest_memory_witness": [
+    "probe"
+  ],
+  "randomized_history_selection_counterexample": {
+    "rows_H_type_V_Y_mass": [
+      [
+        0,
+        0,
+        0,
+        0,
+        "1/4"
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        "1/4"
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        "1/4"
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        "1/4"
+      ]
+    ],
+    "marginal_response_probability": {
+      "0": "1/2",
+      "1": "1/2"
+    },
+    "response_probability_given_V_zero": {
+      "0": "0",
+      "1": "1"
+    }
+  },
+  "stable_timed_type_predictions": [
+    "7/10",
+    "3/10"
+  ],
+  "biological_observations_used": 0,
+  "fitted_models": 0
+}

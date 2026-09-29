@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LOCAL_EXACT_COMMIT",
+  "checked_at_utc": "2026-09-27T05:23:06.127917+00:00",
+  "proof_commit": "ae0beee8d04e32c45f28d2f465b924d6816c82a5",
+  "base_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "branch": "codex/pedigree-block-recovery-2026-09-27",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "command": "python -X utf8 research/wong/continuation-2026-09-27/check.py PedigreeBlockAudit --require-clean --recheck-targets",
+  "project_import_closure_modules": 7,
+  "selected_new_declarations": 31,
+  "earlier_arg_declarations": 415,
+  "earlier_arg_proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb",
+  "earlier_arg_audit_rerun": false,
+  "combined_arg_and_block_audit_claimed": false,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "endpoint_axioms": {
+    "PedigreeBlock.complement_ne": [
+      "propext"
+    ],
+    "PedigreeBlock.not_share_iff_complement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.not_connected_iff_bad": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.reachable_of_restrict": [],
+    "PedigreeBlock.connected_of_restrict": [],
+    "PedigreeBlock.badEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.bad_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.configLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.configPMF_mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.bad_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.uniform_pi_event": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.config_bit_cylinder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.fair_bit_singleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.good_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.familyLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.family_event_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.families_good_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.observedShare_iff": [],
+    "PedigreeBlock.observed_path_preserves_family": [],
+    "PedigreeBlock.family_path_iff": [
+      "propext"
+    ],
+    "PedigreeBlock.recovered_iff_connected": [
+      "propext"
+    ],
+    "PedigreeBlock.connected_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.recovered_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.observationLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.output_recovery_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.repeatBlock_share_iff": [
+      "propext"
+    ],
+    "PedigreeBlock.repeatBlock_connected_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.repeatedLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.repeatedLaw_block_marginal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.repeatedLaw_connected_eq_one_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PedigreeBlock.repeatedLaw_connected_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "clean_at_start_and_finish": true,
+  "combined_receipt_sha256": "19ec62bfcef55e66ca2439bd54b8100e52e77e2631efe5477523de351e872998",
+  "build_policy": "Final audit target freshly compiled at the clean proof commit. All six project dependencies were built in this isolated checkout and accepted only after source, direct dependency object, Lean, Mathlib, object and raw-log hashes matched. No borrowed project objects. Official pinned package cache used.",
+  "statement_review": "STATEMENT-REVIEW.md",
+  "novelty_claimed": false,
+  "full_recgen_theorem_formalized": false,
+  "wong_to_block_law_coupling_proved": false,
+  "new_infinite_alexander_transfer": false,
+  "biological_species_classification": false,
+  "new_hosted_verification": false,
+  "scope": "Exact observed-symbol component recovery in the explicitly defined independent finite-family founder model, plus a one-family correlated-block law with unchanged one-block marginals. Source correspondence and semantic review remain distinct from kernel acceptance.",
+  "remaining_boundaries": [
+    "Positive number of observed blocks; disjoint parental pairs; distinct symbols per block; exact observation; independent fair copying.",
+    "Observed-output law theorem specializes to a finite measurable symbol alphabet with measurable singletons.",
+    "Repeated-block endpoint is for one family; no additional multi-family observed-output theorem claimed.",
+    "Written distribution identifiability, union bound, observation-error coupling bound and explicit couple-vertex incidence construction are not Lean endpoints here.",
+    "No multigeneration REC-GEN proof, derivation from the continuous ARG law, or infinite-cluster classification.",
+    "The estimator is a mathematical reachability relation; Python finite controls are not a certified executable refinement."
+  ],
+  "artifacts_sha256": {
+    ".gitignore": "bc0e27de1da04a9fcb6adea3561af4e36e78ae3ade2d8d38f9ec99921ad7536f",
+    "check_recovery.py": "bd5156244e3c8aa85975b010ddde620f2dbbabc0ba878585a57b67a6867938cb",
+    "CHECKPOINT.md": "11cb57cdea9143fa8c57dacfe80e170983e47279b16bc28c246fc603c41ffe54",
+    "declarations.json": "17299b898ae7b0f69c28f8b5fb60b608202b18785eec5da080eaaac0db952b0a",
+    "dependence/dependency-attempt-1.json": "d72b2613ba944d5e58403ce349462efeabef727076e3bf7d50b49ceff6195be1",
+    "dependence/dependency-attempt-1.log": "954a18725cd569918137eb5469e6a1374b6515cc5a62df7ee9469b338b63d1f6",
+    "dependence/import-closure-receipt.json": "fbbf6eb240b96322bb71c03c927e93d211578620fdcd66b193604468af22cb82",
+    "dependence/PedigreeBlockDependence.json": "aa551522e08173d3ceb1436dea0155f0c06dbbacbf3e4930f0f8d754bb3caf3c",
+    "dependence/PedigreeBlockDependence.log": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2",
+    "dependence/README.md": "5e2a41736f2c2ed2b2540cd080c6d713dd544c722510f87f3022145ee5e8d4ea",
+    "FINITE-CONTROLS.json": "45643d297ba9da5789f23996aebbcfba34a83e5ca4d0e7c9e471c6e80d301523",
+    "graph/attempt-1.json": "6d97d65f1bab9e63f052d9ea32d878da4f994a9ff9484b8fa037ffdae7e6202b",
+    "graph/attempt-1.log": "af591877e9b3e7cec5be285133fdaab0dd91a1b003112ac89905158ca373dff6",
+    "graph/import-closure-receipt.json": "29ba4770d18008ea157a2346e31b1ddc8de04352c73ee413da76bf5dcbd73dd5",
+    "graph/PedigreeBlockGraph.json": "49006cc06ca5c05350487ea5487ca06f0c02bd0c0ade5bd166619f2f7dec3a75",
+    "graph/PedigreeBlockGraph.log": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff",
+    "graph/README.md": "d611021eb895ed61313aa81e695cbfba3b938dc68dfe2bf40137b138805afeb7",
+    "LEDGER.json": "ada695aa745006cf486952479d0b624ffa42c81229daf6f001efbd9cf37005c2",
+    "probability/closure-receipt.json": "ddbd8d3606a9848effa1dcea789c0ba21cd2c1f67e3e4cd7c123294c86079e1b",
+    "probability/compiler.log": "ac98d556ce102e8cf3c32724b690ee2700f3322a57aa772a89b52b05a5d27399",
+    "probability/module-receipt.json": "7de753797aae8e071306e2998faaa1509e5eb4eb95f8684ae0d3364d32e06b2a",
+    "probability/PROOF-NOTES.md": "979d8f6a23743a609b5603657c274e2cf9e3db87ba8e3c676d733ae39f32eb89",
+    "README.md": "ca4f87d8bce1a465e7d36021dfee459aa6642c6fee110cbb6ba297874f1ff7ee",
+    "source/PEDIGREE-EVIDENCE.md": "0641535ff8b169a30e0e5eb72f33e55ea5c02fa09c7240e43bfd5c1edd46dde9",
+    "source/PRIOR-FORMALIZATION-CHECK.md": "cdca60bd8adc50a813f3f230bc4d33e0b5b50e87e2c33f9e7f1211e4939aabeb",
+    "source/PRIOR-FORMALIZATION-CHECK.original.txt": "1cb71c83853979256feb3ff7e74ccf6a7ea6a1356b2612bb20d4998fd367aeed",
+    "source/PROVENANCE.md": "e0410e3b4bbc979f263227cf3d4546d3b99b3dc77ffc33319e18489333e66c2c",
+    "source/written-precursor/CHECK-RESULT.json": "45643d297ba9da5789f23996aebbcfba34a83e5ca4d0e7c9e471c6e80d301523",
+    "source/written-precursor/check_recovery.py": "bd5156244e3c8aa85975b010ddde620f2dbbabc0ba878585a57b67a6867938cb",
+    "source/written-precursor/LEDGER.json": "253d4d902001c4b0b5b7d2f8f1a703bb517c231cb73c32bbbd8a399142cf3414",
+    "source/written-precursor/MANIFEST.json": "3df49713e15ba9bf60a7de1cf5e1e90f913bd8a540b181ced023872728a8e0b1",
+    "source/written-precursor/MANIFEST.original.json": "edb56884ca6f88943d0a525a0257b8af0c4d4c2952bea4cd713d13085f20d079",
+    "source/written-precursor/RECOVERY-THEOREM.md": "b2dd33ceba79273855063f7f956012da070a67c58133ba3f5313dbf3b60b5b3c",
+    "source/written-precursor/RECOVERY-THEOREM.original.txt": "eed2dd0de4c42869e2dc56d8017f7439ce9b67f606b764a8862d73a74514076e",
+    "source/written-precursor/REVIEW.md": "fc2e819a2dd74ed0fce71597b5556ad3f84176faf18ccd55e372a4b5e3a11f8a",
+    "source/written-precursor/SOURCE-HANDOFF.md": "0641535ff8b169a30e0e5eb72f33e55ea5c02fa09c7240e43bfd5c1edd46dde9",
+    "STATEMENT-REVIEW.md": "bd04a6f691214b5ad4536d61dbb945bf202d148edbeddb764e1b65cb04ba1de8",
+    "verification/combined-receipt.json": "19ec62bfcef55e66ca2439bd54b8100e52e77e2631efe5477523de351e872998",
+    "verification/logs/PedigreeBlockAudit.log": "e73142350d4e548c6ac34a66a46ef8f136a0abc61e9d6917a9dd17b70d9f01cb",
+    "verification/logs/PedigreeBlockDependence.log": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2",
+    "verification/logs/PedigreeBlockGraph.log": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff",
+    "verification/logs/PedigreeBlockModel.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification/logs/PedigreeBlockObservation.log": "6a0374e37f7de450481d5c70bdadc1f2e6f15548d95c8bb177267ac48568b8ac",
+    "verification/logs/PedigreeBlockProbability.log": "ac98d556ce102e8cf3c32724b690ee2700f3322a57aa772a89b52b05a5d27399",
+    "verification/logs/PedigreeBlockRecovery.log": "750cf5ab31a5ab7215ce70808fade43ae0993ca732cb3e5df11d268624a1667d",
+    "verification/math-format.json": "da4d5dc8a80ff3b70f185097095ef30fc931efca7e7efd7c5a6d3b07c4cbc299",
+    "verify_packet.py": "2ad4f163e0fe011deba84bea440d141b2ba8446e0c46d06f4f61278c40469d3f",
+    "dependence/RESULT.json": "00a8c949f276e97b554c84418b51370ab0cad5f417365275b8b7cfc499b4e62e",
+    "graph/RESULT.json": "9745e7d54fc4755df3c8a687d9c60d09e182139c3649e95bd1e63126ade71b8f"
+  }
+}

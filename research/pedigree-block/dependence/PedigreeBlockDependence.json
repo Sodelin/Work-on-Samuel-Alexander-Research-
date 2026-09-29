@@ -1,0 +1,17 @@
+{
+  "module": "PedigreeBlockDependence",
+  "source": "real\\PedigreeBlockDependence.lean",
+  "signature": {
+    "source_sha256": "ad35d3736ed31627a931342bace75e9b17941e752b9ae30264a3f076d45b2126",
+    "dependencies": {
+      "PedigreeBlockProbability": "21dadba8ebbc5f8882d0c4657fb19b8a91d19b78a64545f2dd6b07b20e69d653",
+      "PedigreeBlockGraph": "0fee755a3639e44b3137288aa17c8f5c6298d507862520fcbbd87509b0bb2967"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 25.252,
+  "log_sha256": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2",
+  "object_sha256": "7e8385c57d402629764ee369135a75773ef47ac86a55b459ae3fd6a8d2fe2cce"
+}

@@ -1,0 +1,35 @@
+{
+  "packageRoot": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages",
+  "repositoryFallbackWarning": "Cache could not infer origin via Git and used its documented default leanprover-community/mathlib4; pins were not changed",
+  "evidence": "Exit codes and acquisition counts observed in task tool results; this metadata is not a verbatim stdout capture",
+  "workerLimit": "LEAN_NUM_THREADS=1 for cache; Lean proof checks -j1 -M4096",
+  "commands": [
+    {
+      "exitCode": 0,
+      "alreadyDecompressed": 2985,
+      "downloadedLinkedFiles": 2092,
+      "arguments": "get Mathlib.Probability.Independence.InfinitePi"
+    },
+    {
+      "exitCode": 0,
+      "alreadyDecompressed": 2578,
+      "downloadedLinkedFiles": 9,
+      "arguments": "get Mathlib.Probability.Distributions.Uniform"
+    }
+  ],
+  "recordedUtc": "2026-09-25T17:43:34.0941193Z",
+  "sourcePathConfiguration": "LEAN_SRC_PATH consists of the immediate package directories under packageRoot; cache runs from packageRoot/mathlib",
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "cacheExecutable": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\mathlib\\.lake\\build\\bin\\cache.exe",
+  "objects": [
+    {
+      "sha256": "abcec58e1f0cf6db18b74b84d6be7a7a54b7e0da43633fac4ba46eb085414047",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Probability\\Independence\\InfinitePi.olean"
+    },
+    {
+      "sha256": "4aaf626e4e87326041b3c837179ed642ef893ba0a522a59bc5ff69d966481bf1",
+      "path": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Probability\\Distributions\\Uniform.olean"
+    }
+  ],
+  "status": "PASS"
+}

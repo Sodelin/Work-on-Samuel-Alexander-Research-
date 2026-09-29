@@ -1,9 +1,12 @@
-# A candidate formula for every Thue-Morse matching maximum
+# A formula for every Thue-Morse matching maximum
 
-**Status: conjecture.** The finite diagnostics below have not proved these
-identities for arbitrary indices. The accepted sharp bound and dyadic equality
-theorem are separate Lean results. This packet records a concrete next theorem,
-not a certified digit algorithm.
+**Status: proved.** [FullHeight](../../lean/SamuelAlexanderResearch/FullHeight.lean)
+now proves these identities for the actual attained maximum at every index.
+[DigitRecurrence](../../lean/SamuelAlexanderResearch/DigitRecurrence.lean) proves
+the ten-coordinate transitions and certifies the executable digit evaluator.
+See the [trajectory proof](../../notes/FULL-HEIGHT-PROOF.md) and
+[recurrence proof](../../notes/DIGIT-RECURRENCE.md). The finite diagnostics below
+are preserved as discovery history; they are not premises of the proofs.
 
 The target is binary digit parity $`t`$. In the manuscript's own graph $`P_t`$,
 the edge to $`w\ge 2`$ from $`w-1`$ carries $`t(w)`$, and the edge from $`w-2`$ carries

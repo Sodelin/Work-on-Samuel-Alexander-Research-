@@ -1,0 +1,21 @@
+{
+  "status": "local_lean_pass",
+  "lean_version": "4.33.1",
+  "exit_code": 0,
+  "source_sha256": "97eddf62044c37e6973873f987c49ea69e0f9f2081ccd955fd05dc27099c2cf6",
+  "printed_endpoints": [
+    "law_nonnegative",
+    "law_normalized",
+    "unique_maximizer",
+    "law_identifiable",
+    "boundary_uniform",
+    "no_boundary_decoder"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler_output": "validation.txt",
+  "scope": "Prescribed polynomial three-taxon law; not a derivation of MSC, the exponential bridge, species delimitation, or finite-sample inference."
+}

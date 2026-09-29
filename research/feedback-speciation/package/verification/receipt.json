@@ -1,0 +1,619 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "memoryLimitMb": 4096,
+  "status": "PASS",
+  "maximumWorkers": 1,
+  "mode": "Fresh compilation of all packaged custom source against pinned existing Mathlib compiled libraries",
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "cleanMachineDownloadTested": false,
+  "timestampUtc": "2026-09-25T13:01:44.1685040Z",
+  "modules": [
+    {
+      "path": "vendor/SamuelAlexanderResearch/SpeciesBridge.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "SpeciesBridge.finiteSupport_iff_bounded",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psDescendant_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psWhole_specieslike",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psWhole_maximalSpecieslike",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psWhole_not_commonAncestor",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psDescendants_infinite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psRoot_iff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psNaturalDateBiosphere",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psWhole_bridge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesBridge.psEvery_vertex_in_maximal_cluster",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "sha256": "0B4AFF371434BA647A84B7871734F679F94CB49F170781F97E18A284178D0037"
+    },
+    {
+      "path": "vendor/SamuelAlexanderResearch/SpeciesGlobalIAP.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "SpeciesGlobalIAP.all_infinite_subsets_reflection_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.all_subsets_iap_iff_all_infinite_subsets_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.whole_inspecies_iff_cofinite_descendants",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.whole_iap_iff_inspecies_of_infinite_descendants",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.reflection_iff_empty_or_infinite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.psWhole_inspecies",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.psReflection_iff_empty_or_infinite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.all_subsets_iap_iff",
+          "axioms": []
+        },
+        {
+          "declaration": "SpeciesGlobalIAP.whole_specieslike_iff",
+          "axioms": []
+        }
+      ],
+      "sha256": "E4DB0196A66604490FC5EAC367E0FC3A79D0274A6B14CB0F069143FD30C09377"
+    },
+    {
+      "path": "AncestryMixing.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "AncestryMixing.Pedigree.local_saturation_persists",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.saturation_crosses_recurrent_edge",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.exists_nonrecurrent_cutoff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.late_descendant_projects",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.eventual_descendant_iff_recurrent_reach",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.iap_iff_one_recurrent_component_mod_finite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.cofinite_descendants_of_recurrent_strongly_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.whole_iap_iff_recurrent_strongly_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.whole_inspecies_of_recurrent_strongly_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Pedigree.recurrent_component_tails_specieslike_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "sha256": "6A08F7B06840F7BD5EE2CFCC1E13F179698E1EABA4ADFB631CC88E628D59957D"
+    },
+    {
+      "path": "AncestryExamples.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "AncestryMixing.Pedigree.component_unique_mod_finite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Examples.twoDeme",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Examples.recurrent_twoDeme_iff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Examples.oneWay_not_iap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Examples.bidirectional_iap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AncestryMixing.Examples.explicit_pedigree_exists",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "sha256": "C9B916933B3A94DB4C0493E095AE01FC986A8D3393B0A7F29ED9BEFD02D300F7"
+    },
+    {
+      "path": "FeedbackDynamics.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "FeedbackDynamics.culture_mem_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.polarized_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.polarized_slope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.linearized_modes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.full_stability_range",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.restricted_stability_trap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.neutral_geometric_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.majority_local_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.polarized_local_geometric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.polarized_locally_asymptotically_stable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.explicit_stable_counterexample",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.neutral_epsilon_limit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.culture_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.rationalFlow_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.coupled_neutral_convergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.fixed_response_coupled_neutral_convergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.explicit_cultural_genetic_counterexample",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.fixed_response_nonconstant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FeedbackDynamics.neutral_frequency_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "sha256": "0E8AC4CE157B5C3D8A66EB5D9EBE6CED7C1ADBCCF10359F1894FE4E72FC0A15A"
+    },
+    {
+      "path": "FogartyAffinity.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "FogartyAffinity.transmit_simplex",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.normalizer_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.step_recursions",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.source_preserves_simplex",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.step_preserves_simplex",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.p_drift_mul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.p_drift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.no_polymorphic_fixed_point",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.step_not_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "sha256": "C9E406C2273B3374BBCF08B7144E0BB83C156462AA22319F09F8D74328B2FDF3"
+    },
+    {
+      "path": "FogartyAffinityFixation.lean",
+      "exitCode": 0,
+      "selectedEndpoints": [
+        {
+          "declaration": "FogartyAffinity.transmit_margin_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.transmit_margin_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.source_contracts_odds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.trajectory_odds_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.odds_deficit_sharp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.trajectory_deficit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.trajectory_fixates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.positive_backgrounds_fixation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FogartyAffinity.model_global_fixation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "sha256": "CA38BDF620CB37B7DF466E403F903A7C3A0E3905EBB2356FC1099398FFE661F7"
+    }
+  ]
+}

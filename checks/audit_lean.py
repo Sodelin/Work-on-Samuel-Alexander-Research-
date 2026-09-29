@@ -68,8 +68,18 @@ def audit(real: bool = False) -> dict:
         if pin != (ROOT / "lean-toolchain").read_text(encoding="utf-8").strip():
             raise RuntimeError("Real and core projects must use the same Lean version.")
         dependencies["mathlib"] = actual_mathlib
-        paths += [project / "RealBridges.lean", project / "lakefile.lean",
-                  project / "lake-manifest.json", project / "lean-toolchain"]
+        # Inventory the local modules actually imported by this audit. Draft
+        # files outside the imported graph are not certified source artifacts.
+        pending = re.findall(r"^import (\S+)$", manifest.read_text(encoding="utf-8"), re.M)
+        local_modules = set()
+        while pending:
+            module = pending.pop()
+            source = project / (module.replace(".", "/") + ".lean")
+            if source.is_file() and source not in local_modules:
+                local_modules.add(source)
+                pending.extend(re.findall(r"^import (\S+)$", source.read_text(encoding="utf-8"), re.M))
+        paths += sorted(local_modules)
+        paths += [project / "lakefile.lean", project / "lake-manifest.json", project / "lean-toolchain"]
     hashes = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
     return {
         "checked_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -81,6 +91,7 @@ def audit(real: bool = False) -> dict:
         "dependencies": dependencies,
         "project": "real" if real else "core",
         "scope": "Exported endpoint axiom audit; mathematical statement review is separate.",
+        "source_inventory_scope": "All core Lean sources; the real audit additionally hashes its imported local module closure and project configuration, not unrelated draft files.",
     }
 
 

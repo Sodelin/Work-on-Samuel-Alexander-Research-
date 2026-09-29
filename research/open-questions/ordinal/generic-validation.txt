@@ -1,0 +1,8 @@
+'GenericCertificate.realizes_iff_state_chain' depends on axioms: [propext, Quot.sound]
+'GenericCertificate.avoids_iff_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericCertificate.finiteHeight_decreases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericCertificate.finiteLabelChildren_of_finite_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericCertificate.avoids_iff_natural_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericCertificate.finiteHeight_least' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericCertificate.finiteHeight_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericCertificate.avoids_has_least_attained_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]

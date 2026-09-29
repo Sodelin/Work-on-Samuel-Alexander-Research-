@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source": "real/WongMarkedRecorder.lean",
+  "source_sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea",
+  "object_sha256": "4f527e28f5fa6f597b220e53d0ab6823c33d5ea88013b140f98ac45c2b4dc663",
+  "axiom_audit_exit_code": 0,
+  "axiom_log_sha256": "cac67b14b197f319895531b0907a15cd65edbc06abd9a3e2e62ae50cebe6c11a",
+  "compiler_log_sha256": "d3d9ffc66b570c3908bd1ff27fedd1ff5ea1017bde358270aa30909bae6726c9",
+  "scope": "Deterministic recorder and raw decoder only; stochastic assembly and exact final commit integration remain separate."
+}

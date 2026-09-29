@@ -1,0 +1,16 @@
+{
+  "module": "PedigreeBlockProbability",
+  "source": "real\\PedigreeBlockProbability.lean",
+  "signature": {
+    "source_sha256": "0ba98d4cc1c25f684f0808222370ffcc8b2dd85a8935fce6baeefa98b5a9a7b8",
+    "dependencies": {
+      "PedigreeBlockModel": "5ff5753b169f3e11f6e3929058ecc80f4c6fa0d55cbbebdb3c3b237d0d389b33"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 24.052,
+  "log_sha256": "ac98d556ce102e8cf3c32724b690ee2700f3322a57aa772a89b52b05a5d27399",
+  "object_sha256": "21dadba8ebbc5f8882d0c4657fb19b8a91d19b78a64545f2dd6b07b20e69d653"
+}

@@ -1,0 +1,12 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\feedback-speciation\pure-induction-ancestry\r3-r6\PureInductionAncestry.lean:24:13: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+'PureInductionAncestry.raw_record_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.ordinary_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.pulse_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.finite_path_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.shared_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.shared_avoidance_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.shared_history_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.shared_conditional_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.resolution_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.resolution_conditional_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PureInductionAncestry.marker_barrier_and_iap' depends on axioms: [propext, Classical.choice, Quot.sound]

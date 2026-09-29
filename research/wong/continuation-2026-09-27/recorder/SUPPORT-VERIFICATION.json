@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Borel validity of the full raw recorder and actual intrinsic dated-history-law almost-sure validity/chronology support; natural sigma algebras unchanged.",
+  "lean": "4.33.1",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": {
+    "WongMarkedSupport": {
+      "module": "WongMarkedSupport",
+      "source": "real\\WongMarkedSupport.lean",
+      "signature": {
+        "source_sha256": "57d485a53aa9ba32aa98f75c8812b55f1976c142f74fe7624ce819131669a5de",
+        "dependencies": {
+          "WongMarkedMeasurable": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.153,
+      "log_sha256": "0946ea471f5cb2a319681a58051d288ef0a1ad3ab7823fa75fb7e70f6a94f97f",
+      "object_sha256": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695"
+    },
+    "WongDatedSupport": {
+      "module": "WongDatedSupport",
+      "source": "real\\WongDatedSupport.lean",
+      "signature": {
+        "source_sha256": "162ffdb8b0b3409a9f65ff7b9403a85135be54a2995a7647a3f211c61b8cb993",
+        "dependencies": {
+          "WongMarkedSupport": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695",
+          "WongMarkedDated": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.719,
+      "log_sha256": "5dcd6f0dc83381a4a55446af546dfdb8fee5973155905f807cf72a06c94944e0",
+      "object_sha256": "cf9c1f198b14d456ba4a48ade946f3b3fecd6d3af8e9e88f5ec15fed41285693"
+    }
+  },
+  "closure_modules": 20,
+  "selected_axiom_audit": {
+    "WongMarkedSupport.rational_slot_pattern": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMarkedSupport.coverage_iff_rational": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongMarkedSupport.measurableSet_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDatedSupport.measurable_validDated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongDatedSupport.historyLaw_ae_validDated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "warnings": [
+    "WongDatedSupport.measurableEq_of_injective_code is a semireducible class-valued def and a proposition-valued def; two linter suggestions, no proof error."
+  ],
+  "independent_written_support": {
+    "path": "C:/Users/Owner/Documents/Codex/2026-09-27/wong-side-validity-01a0e0ef/PROOF-HANDOFF.md",
+    "sha256": "2ae6ffcb2ca8d8e8c99cd8b231ae31fb3c10faeeb5df514da6816489713fb081",
+    "status": "Written mathematical argument and finite sanity checks; not Lean checked.",
+    "relationship": "Independent finite data-dependent endpoint test; existing Lean proof uses countably many fixed rational tests."
+  },
+  "exact_commit_status": "Separate parent combined verification; these are source-hashed development receipts."
+}

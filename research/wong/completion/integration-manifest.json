@@ -1,0 +1,120 @@
+[
+  {
+    "module": "WongSampleTracing",
+    "source": "lean/WongSampleTracing.lean",
+    "source_sha256": "5bfd751cc0dfa0fe09a9211b95e93fbd24e3a9633c190cb195cb308cb5946148",
+    "promoted_path": "real/WongSampleTracing.lean",
+    "promoted_sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e",
+    "endpoints": [
+      "WongSampleTracing.trace_exact",
+      "WongSampleTracing.trace_length_le",
+      "WongSampleTracing.tracedNodes_exact",
+      "WongSampleTracing.extract_some_iff",
+      "WongSampleTracing.actual_garg_extraction",
+      "WongSampleTracing.actual_garg_reconstruction_iff"
+    ],
+    "transformation": "Removed local #print commands; registered qualified names in RealAudit; LF newline normalization."
+  },
+  {
+    "module": "WongRecordTracing",
+    "source": "lean/WongRecordTracing.lean",
+    "source_sha256": "7ac841e005257bc44a4271bb36a46b62e61a0c0ab89013ae23ba9ee9e0ec25fe",
+    "promoted_path": "real/WongRecordTracing.lean",
+    "promoted_sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8",
+    "endpoints": [
+      "WongRecordTracing.lookup_sound",
+      "WongRecordTracing.lookup_complete",
+      "WongRecordTracing.lookup_represents",
+      "WongRecordTracing.records_to_sample_array",
+      "WongRecordTracing.records_round_trip_iff"
+    ],
+    "transformation": "Removed local #print commands; registered qualified names in RealAudit; LF newline normalization."
+  },
+  {
+    "module": "WongEventDecoding",
+    "source": "events/WongEventDecoding.lean",
+    "source_sha256": "d518684b5e11b8a0b688ae4a92ac8606c66331743e280fd3b5dbd1165525ebf8",
+    "promoted_path": "real/WongEventDecoding.lean",
+    "promoted_sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86",
+    "endpoints": [
+      "WongEventDecoding.equal_parent_crossover_same_local",
+      "WongEventDecoding.crossover_left_identified",
+      "WongEventDecoding.crossover_right_identified",
+      "WongEventDecoding.normalized_same_local_iff",
+      "WongEventDecoding.same_local_of_records_eq",
+      "WongEventDecoding.normalized_records_injective",
+      "WongEventDecoding.encode_decode",
+      "WongEventDecoding.decode_encode",
+      "WongEventDecoding.Graph.parents_identified",
+      "WongEventDecoding.Graph.graph_identified",
+      "WongEventDecoding.Graph.encoded_canonical",
+      "WongEventDecoding.kind_signature_injective",
+      "WongEventDecoding.decode_kind_signature",
+      "WongEventDecoding.encoded_degrees",
+      "WongEventDecoding.encoded_kind_recovered",
+      "WongEventDecoding.classical_kind_unique",
+      "WongEventDecoding.classical_encoded_sample_iff"
+    ],
+    "transformation": "Removed local #print commands; registered qualified names in RealAudit; LF newline normalization."
+  },
+  {
+    "module": "WongLocalSimplification",
+    "source": "local-simplification/WongLocalSimplification.lean",
+    "source_sha256": "7304fd392bbc0df7ff6f1f6cfab5bd32e796cdd434e6b8d3b77580eb316b5429",
+    "promoted_path": "real/WongLocalSimplification.lean",
+    "promoted_sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff",
+    "endpoints": [
+      "WongLocalSimplification.contraction_congr_both",
+      "WongLocalSimplification.coordinatePresentation",
+      "WongLocalSimplification.coordinate_contraction_union_acyclic",
+      "WongLocalSimplification.automatic_reencoded_local_simplification",
+      "WongLocalSimplification.samples_and_branching_cellwise",
+      "WongLocalSimplification.suppressed_at_most_one_child",
+      "WongLocalSimplification.unretained_locally_isolated",
+      "WongLocalSimplification.samples_and_branching_representable"
+    ],
+    "transformation": "Removed local #print commands; registered qualified names in RealAudit; LF newline normalization."
+  },
+  {
+    "module": "WongMemoizedTracing",
+    "source": "memoized/WongMemoizedTracing.lean",
+    "source_sha256": "7e6fedce7b0485ffc7603a11744116a4bf1cb94f769ca43b9d1bbe00f481cf51",
+    "promoted_path": "real/WongMemoizedTracing.lean",
+    "promoted_sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb",
+    "endpoints": [
+      "WongMemoizedTracing.visit_complete",
+      "WongMemoizedTracing.visit_closed",
+      "WongMemoizedTracing.memoExtract_some_iff",
+      "WongMemoizedTracing.memoExtract_eq_reference",
+      "WongMemoizedTracing.run_write_accounting",
+      "WongMemoizedTracing.run_cost_bounds",
+      "WongMemoizedTracing.memoized_cost_bounds",
+      "WongMemoizedTracing.actual_memoized_extraction",
+      "WongMemoizedTracing.records_to_memoized_sample_array",
+      "WongMemoizedTracing.memoized_records_round_trip_iff"
+    ],
+    "transformation": "Removed local #print commands; registered qualified names in RealAudit; LF newline normalization. Qualified formerly namespace-local audit names."
+  },
+  {
+    "module": "WongTimedHistory",
+    "source": "timed-history/WongTimedHistory.lean",
+    "source_sha256": "cbe5f198ec5dd76e5bdceaee4194d9f2e3fe558ebab130d718b92ec4f2822cc1",
+    "promoted_path": "real/WongTimedHistory.lean",
+    "promoted_sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399",
+    "endpoints": [
+      "WongTimedHistory.raw_chronology",
+      "WongTimedHistory.raw_event_arities",
+      "WongTimedHistory.observed_represents_contraction",
+      "WongTimedHistory.observed_dates_independent",
+      "WongTimedHistory.observed_chronology",
+      "WongTimedHistory.observation_independent",
+      "WongTimedHistory.counted_edge_iff",
+      "WongTimedHistory.hidden_times_differ",
+      "WongTimedHistory.lineage_counts_differ",
+      "WongTimedHistory.sample_date_is_not_event_date",
+      "WongTimedHistory.no_exact_time_decoder",
+      "WongTimedHistory.no_exact_lineage_decoder"
+    ],
+    "transformation": "Removed local #print commands; registered qualified names in RealAudit; LF newline normalization."
+  }
+]

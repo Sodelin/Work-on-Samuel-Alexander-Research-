@@ -1,0 +1,17 @@
+{
+  "module": "WongDatedSupport",
+  "source": "real\\WongDatedSupport.lean",
+  "signature": {
+    "source_sha256": "162ffdb8b0b3409a9f65ff7b9403a85135be54a2995a7647a3f211c61b8cb993",
+    "dependencies": {
+      "WongMarkedSupport": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695",
+      "WongMarkedDated": "b21a6d62ff9aa0cff76078cf058b8d0d662e148d17f262d9e28f19467914f515"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 27.719,
+  "log_sha256": "5dcd6f0dc83381a4a55446af546dfdb8fee5973155905f807cf72a06c94944e0",
+  "object_sha256": "cf9c1f198b14d456ba4a48ade946f3b3fecd6d3af8e9e88f5ec15fed41285693"
+}

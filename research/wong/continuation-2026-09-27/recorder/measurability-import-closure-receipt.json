@@ -1,0 +1,103 @@
+{
+  "proof_commit": "01db8c4cbb82000950ff7d3e7252b5438416c7c3",
+  "working_tree_status": "?? real/WongAdaptiveSelection.lean\n?? real/WongMarkedDated.lean\n?? real/WongMarkedLaw.lean\n?? real/WongMarkedMeasurable.lean\n?? real/WongMarkedProcess.lean\n?? real/WongMarkedRecorder.lean\n?? real/WongPedigreeBridge.lean\n?? research/wong/continuation-2026-09-27/",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    {
+      "module": "WongCountChain",
+      "source": "real\\WongCountChain.lean",
+      "signature": {
+        "source_sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 210.621,
+      "log_sha256": "aa18f29a179287af8f5cdc121739a2b2f26728d846ab9f0acecc0296f9cce189",
+      "object_sha256": "ca4a3d17d7194ddf976bec71049becd8a421b514c7ac438b319932445ae755b3"
+    },
+    {
+      "module": "WongBigARGDrift",
+      "source": "real\\WongBigARGDrift.lean",
+      "signature": {
+        "source_sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 16.821,
+      "log_sha256": "b4f015fb5d99cb9bc50b705fcc03f2871f5fe5014ba4480616096cd58e7fa0d5",
+      "object_sha256": "c7f502652d43694088624ee7d23ec32cf00f03407e01b5b8072c7300b6c71d77"
+    },
+    {
+      "module": "WongBigARGAbsorption",
+      "source": "real\\WongBigARGAbsorption.lean",
+      "signature": {
+        "source_sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+        "dependencies": {
+          "WongCountChain": "ca4a3d17d7194ddf976bec71049becd8a421b514c7ac438b319932445ae755b3",
+          "WongBigARGDrift": "c7f502652d43694088624ee7d23ec32cf00f03407e01b5b8072c7300b6c71d77"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 26.305,
+      "log_sha256": "3a3cd7e1fff753d5d8f082026f6dc32de2b73d52af8560b392fef719b7133f0c",
+      "object_sha256": "e372f7fc3c96d4b830add9d714d025f572169dfc73abf59a074180ef415f0c89"
+    },
+    {
+      "module": "WongWaitingTimes",
+      "source": "real\\WongWaitingTimes.lean",
+      "signature": {
+        "source_sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
+        "dependencies": {
+          "WongBigARGAbsorption": "e372f7fc3c96d4b830add9d714d025f572169dfc73abf59a074180ef415f0c89"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 35.27,
+      "log_sha256": "12acec8c43ff63215de5368b5da5b89365519eeb00787fab96012ef25957cc52",
+      "object_sha256": "8a4842a646cb15e50b402e976fc9c3049d95dcaf9f3da9dc402c251692d8d24d"
+    },
+    {
+      "module": "WongMarkedLaw",
+      "source": "real\\WongMarkedLaw.lean",
+      "signature": {
+        "source_sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1",
+        "dependencies": {
+          "WongWaitingTimes": "8a4842a646cb15e50b402e976fc9c3049d95dcaf9f3da9dc402c251692d8d24d"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.828,
+      "log_sha256": "3e92846200f80e98c75ab76a54ad114b9df66a7fa75fdb214ec3f936dec1ab3d",
+      "object_sha256": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+    },
+    {
+      "module": "WongAdaptiveSelection",
+      "source": "real\\WongAdaptiveSelection.lean",
+      "signature": {
+        "source_sha256": "32cf452c7f766eae3852713ec5e30237a491af08e08b24667a9758d1c0e92609",
+        "dependencies": {
+          "WongMarkedLaw": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 27.29,
+      "log_sha256": "ff72488c5a1efc9905c5003306198b27e518916228296a98dfccd729c6a6ec33",
+      "object_sha256": "adfd0e32a1aa72b97aeb0981b1c677db2652c049ff5bdab95388390787209215"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Requested import closure only; source correspondence and full repository verification are separate."
+}

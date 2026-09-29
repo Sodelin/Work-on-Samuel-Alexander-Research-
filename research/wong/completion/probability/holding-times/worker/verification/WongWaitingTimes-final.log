@@ -1,0 +1,40 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\holding-times\worker\WongWaitingTimes.lean:117:38: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\holding-times\worker\WongWaitingTimes.lean:229:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\holding-times\worker\WongWaitingTimes.lean:279:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\holding-times\worker\WongWaitingTimes.lean:301:58: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\holding-times\worker\WongWaitingTimes.lean:567:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'WongWaitingTimes.unitClockLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.jointLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.joint_count_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.joint_clock_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.unit_clock_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.count_clock_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.unit_clocks_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.measurable_firstHit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.measurable_physicalAbsorptionTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.holdingLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.holdingLaw_survival_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.joint_holding_observation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.unitClocks_ae_all_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.jointClocks_ae_all_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.joint_ae_hitsOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.joint_ae_positive_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.physicalAbsorptionTime_eq_ofReal_eventTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.count_ae_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.joint_ae_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.literal_rates_ae_finite_physical_absorption' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongWaitingTimes.literal_rates_ae_start_one_zero_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.literal_rates_ae_positive_physical_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.rate_three_at_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongWaitingTimes.split_mass_two_thirds' depends on axioms: [propext, Classical.choice, Quot.sound]

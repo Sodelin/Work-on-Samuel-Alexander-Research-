@@ -1,0 +1,13 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\feedback-speciation\finite-epigenetic\FiniteEpigenetic.lean:227:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'FiniteEpigenetic.fixation_probability_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.fixation_probability_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.integer_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.certificate_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.boundary_absorbing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.uniform_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.pulse_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.pulse_certificate_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.epigenetic_advantage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteEpigenetic.epigenetic_strictly_greater' depends on axioms: [propext, Classical.choice, Quot.sound]

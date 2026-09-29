@@ -1,0 +1,39 @@
+{
+  "intended_repo_path": "research/wong/completion/verification/deterministic65/PUBLICATION-FORMAT-TRANSFORM.json",
+  "transformation_scope": "Only Markdown math delimiters changed. Math expression contents, code spans, and all non-math text are preserved; original line-ending conventions are preserved.",
+  "source_root_relative_to_task": "wong-completion/integration/resumption/staging/publish",
+  "files": [
+    {
+      "staged_sha256": "dafb4cf8f9f9774e1557004c9eaf48a1795fe59d23186a584a4f827a5b3e1b19",
+      "staged_relative_path": "research\\wong\\completion\\verification\\deterministic65\\isolated\\interval-canonicalization\\README.md",
+      "source_bytes": 7179,
+      "source_sha256": "7adc8f2ca6a4988cebbbb540be3311c36009b296aa40fa6bc4b6a666d33f54ec",
+      "source_relative_path": "research\\wong\\completion\\verification\\deterministic65\\isolated\\interval-canonicalization\\README.md",
+      "staged_bytes": 7197,
+      "math_content_changed": false,
+      "delimiter_transform": "Inline $...$ to $`...`$; standalone $$ display delimiters to fenced ```math blocks."
+    },
+    {
+      "staged_sha256": "31cef10a52dd077295acf37586ccebe7eed153550ae99a508ad4a1881b83a72e",
+      "staged_relative_path": "research\\wong\\completion\\verification\\deterministic65\\isolated\\mrca-truncation\\README.md",
+      "source_bytes": 9095,
+      "source_sha256": "09bbf5e6af39935357d72cd3fbf84722c863d7958f76b417c60af7a824efdc57",
+      "source_relative_path": "research\\wong\\completion\\verification\\deterministic65\\isolated\\mrca-truncation\\README.md",
+      "staged_bytes": 9155,
+      "math_content_changed": false,
+      "delimiter_transform": "Inline $...$ to $`...`$; standalone $$ display delimiters to fenced ```math blocks."
+    }
+  ],
+  "checker_receipt": {
+    "files": 2,
+    "error_count": 0,
+    "checker": "research-coordination/publication/check_math_format.py (read only; unchanged)",
+    "errors": [],
+    "exit_code": 0,
+    "inline_spans": 15,
+    "display_math_fences": 8
+  },
+  "staging_root_relative_to_task": "research-coordination/publication/wong-format-fix",
+  "schema_version": 1,
+  "source_commit": "c169e5f19a4233182f29d54c3e2e0e3d65abe897"
+}

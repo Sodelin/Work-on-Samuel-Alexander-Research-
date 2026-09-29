@@ -1,0 +1,285 @@
+{
+  "name": "Complete real founder-window theorem",
+  "base_public_commit": "beca7b814d7751de0cb2329b13fad41786473c25",
+  "created_at_utc": "2026-09-25T10:48:27.875393+00:00",
+  "source_workspace": "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization",
+  "integration_status": "Registered library; aggregate audit passed; publication and hosted CI owned by coordinator",
+  "file_count": 12,
+  "files": {
+    "real/FounderWindow.lean": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3",
+    "real/DirectedIAP.lean": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0",
+    "real/SeedIntersections.lean": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e",
+    "real/RealFounderWindow.lean": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9",
+    "real/FounderMaximal.lean": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4",
+    "real/SpeciesReindex.lean": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd",
+    "real/SpeciesSeed.lean": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb",
+    "real/RealSpeciesTheorem.lean": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540",
+    "real/lakefile.lean": "035886258d76b8d11671b86822086fd192eda2e6a048adebcb70d361f082e838",
+    "real/RealAudit.lean": "e195ca982226136dd630a0175585a25904b97b4272e94139e3e22972317cbaaf",
+    "verification/real-audit.json": "45e7122e419b4a70354c139031a51558d3873058cfcbf58cca40a8b3b8fc7bbb",
+    "notes/REAL-FOUNDER-WINDOW-THEOREM.md": "4dc60ca31034bb7b94bb9db97d520c3901567c44b87013dabf5ac45e209bce42"
+  },
+  "new_endpoint_count": 50,
+  "new_endpoint_axioms": {
+    "FounderWindowResearch.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.commonAncestor_window": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderWindowResearch.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.bad_founder_productive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.productive_descendants_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.capture_productive_descendant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedIAPResearch.iap_directed_union_of_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.convex_intersection": [],
+    "SeedIntersections.finite_persistent_member": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.persistent_productive_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SeedIntersections.reflection_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.nonempty_has_earliest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.earliest_is_founder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.founder_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.commonAncestor_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.window_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealFounderWindow.directed_union_finite_founders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.directed_union_connected": [],
+    "FounderMaximal.union_reflection": [],
+    "FounderMaximal.windowSpecies_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.maximal_extension_of_directed_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FounderMaximal.maximal_window_extension_ordered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.descendant_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.finiteSupport_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.infiniteSupport_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.iap_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.convex_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.reflection_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.weakReach_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.weaklyConnected_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.commonAncestor_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.founder_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.finite_founders_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.window_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.specieslike_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesReindex.actual_presentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.anchored_minimal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.productivePart_convex": [],
+    "SpeciesSeed.productivePart_internal_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.minimal_anchored_iap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.exists_anchored_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SpeciesSeed.exists_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.windowSpecies_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.push_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.maximal_window_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.every_vertex_has_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RealSpeciesTheorem.every_vertex_in_maximal_real_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "real_aggregate_count": 151,
+  "real_audit_checked_at_utc": "2026-09-25T10:46:04.818931+00:00",
+  "unchanged_core_endpoint_count": 405,
+  "unchanged_core_receipt_sha256": "ffea6b749ca15ef571c3a348f007ba13248ab3910ba21e0884cb8f89dd0e5249",
+  "all_core_receipt_hashes_current": true,
+  "all_real_receipt_hashes_current": true,
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "dependencies": {
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "strongest_endpoint": "RealSpeciesTheorem.every_vertex_in_maximal_real_window",
+  "scope": "Original graph on Nat organism identifiers; literal real birthdates with ties; strict finite real sublevels; chronological edges; finite children; every nonnegative real duration; constrained maximality with identical duration and REF for every competitor.",
+  "no_overwrite": [
+    "README.md",
+    "QUESTION-LEDGER.md",
+    "PUBLICATION-STATUS.md",
+    ".github/workflows/verify.yml",
+    "research/open-questions/README.md"
+  ],
+  "exclusions": [
+    "scratch artifacts",
+    ".lake",
+    "new optional counterexample endpoint",
+    "arbitrary vertex type theorem",
+    "biological plausibility or novelty claim"
+  ],
+  "counterexample_status": "Rigorous explanatory example in note, not a separately registered Lean endpoint"
+}

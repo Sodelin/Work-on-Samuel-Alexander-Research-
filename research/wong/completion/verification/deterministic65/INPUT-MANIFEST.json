@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "138dd529643ae5706a9df6a750bd6344ab967a8a",
+  "inputs": [
+    {
+      "role": "public baseline",
+      "path": "real/lakefile.lean",
+      "sha256": "d7f0f9ff2853e292b012c799b15f5e6291d438373881e9bbb8f7b50546e99d31",
+      "bytes": 1439
+    },
+    {
+      "role": "public baseline",
+      "path": "real/RealAudit.lean",
+      "sha256": "0c44192d4cda4752ac8032214217746814d2b65badba7e7da287f9c743c71716",
+      "bytes": 12347
+    },
+    {
+      "role": "public baseline",
+      "path": "research/wong/completion/coverage.json",
+      "sha256": "960ff8a9571b0bbcf96fd75e8870698faedebb10befed98909f86e0206053b05",
+      "bytes": 121679
+    },
+    {
+      "role": "public baseline",
+      "path": "research/wong/completion/COVERAGE.md",
+      "sha256": "59d4726f259242fdbf648f17bbb79195973fe36b8ff41c24e215f347f1721d1c",
+      "bytes": 79053
+    },
+    {
+      "role": "public baseline",
+      "path": "research/wong/completion/README.md",
+      "sha256": "b579edac53131737e6ef0cbbe9f3d8d78b79c89e70b4e4ae515b31f342f12c72",
+      "bytes": 3066
+    },
+    {
+      "role": "public baseline",
+      "path": "README.md",
+      "sha256": "9034ba0a43cd9f05aae439f9d7f41e04d94116602d8d70ac661b9422a96d4e29",
+      "bytes": 9710
+    },
+    {
+      "role": "public baseline",
+      "path": "COMPLETION-MAP.md",
+      "sha256": "136d4c7038a731d1ad11b5a93c94ea67a0bfdbba62b4ab5ab3fd1d34195039f9",
+      "bytes": 10965
+    },
+    {
+      "role": "public baseline",
+      "path": ".github/workflows/verify.yml",
+      "sha256": "ab14278ac018c7a7657b5dcb1ff39af2113592a8c591c276b034cf6aebd80bcb",
+      "bytes": 2561
+    },
+    {
+      "role": "public baseline",
+      "path": "verification/real-audit.json",
+      "sha256": "daeccb93b0c97d46d862b16af2e04a6fd57dc3a7efaa4182d4b8940d45fc9c24",
+      "bytes": 35012
+    },
+    {
+      "role": "new module local evidence",
+      "path": "mrca-truncation/WongMRCATruncation.lean",
+      "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+      "bytes": 18014
+    },
+    {
+      "role": "new module local evidence",
+      "path": "mrca-truncation/README.md",
+      "sha256": "09bbf5e6af39935357d72cd3fbf84722c863d7958f76b417c60af7a824efdc57",
+      "bytes": 9095
+    },
+    {
+      "role": "new module local evidence",
+      "path": "mrca-truncation/verification.json",
+      "sha256": "f5db2e7fb2bad3ef30119fa0d4a4ab1131368f2b879793a65a723cdc51b2bb15",
+      "bytes": 2918
+    },
+    {
+      "role": "new module local evidence",
+      "path": "mrca-truncation/validation.txt",
+      "sha256": "93653cbd03f4c7af1c288c7629a3320c2279b55e26828438a6648ae457764ab4",
+      "bytes": 2471
+    },
+    {
+      "role": "new module local evidence",
+      "path": "interval-canonicalization/WongIntervalCanonicalization.lean",
+      "sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+      "bytes": 29572
+    },
+    {
+      "role": "new module local evidence",
+      "path": "interval-canonicalization/README.md",
+      "sha256": "7adc8f2ca6a4988cebbbb540be3311c36009b296aa40fa6bc4b6a666d33f54ec",
+      "bytes": 7179
+    },
+    {
+      "role": "new module local evidence",
+      "path": "interval-canonicalization/verification.json",
+      "sha256": "78760f6300da83fd181c2ccc8159cda4288d405f71c0ca00e44802e51be2ed04",
+      "bytes": 9590
+    },
+    {
+      "role": "new module local evidence",
+      "path": "interval-canonicalization/final-run.json",
+      "sha256": "8b0f7f238dafdb1e3dae03f0a89ccff40cf58f967dd57d3cde16fea733a634e8",
+      "bytes": 3968
+    },
+    {
+      "role": "new module local evidence",
+      "path": "interval-canonicalization/validation.txt",
+      "sha256": "170ec5da0d7c93a9e44d4ceb4c5947abf6e4b65d8d6f365b7eb4354dd9a392f8",
+      "bytes": 3808
+    },
+    {
+      "role": "new module local evidence",
+      "path": "interval-canonicalization/selected-endpoints.json",
+      "sha256": "03d6ff9cd56fbbfa229a7260fd651ab7820e29e7ed8185a04a8161c6bb929363",
+      "bytes": 1874
+    },
+    {
+      "role": "new module local evidence",
+      "path": "normal-form/WongSimplificationNormalForm.lean",
+      "sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
+      "bytes": 14101
+    },
+    {
+      "role": "new module local evidence",
+      "path": "normal-form/final-run.json",
+      "sha256": "9a0401ea536a6e3285b4406f96c9ee7d079a118bfa7161261c5af0ffdf29cfe0",
+      "bytes": 329
+    },
+    {
+      "role": "new module local evidence",
+      "path": "normal-form/validation.txt",
+      "sha256": "daad4316918268d590615e3276278c112e63304088ce07d6d16f1e24b6e06981",
+      "bytes": 1127
+    },
+    {
+      "role": "primary source",
+      "path": "source/PMC11373519-fullText.xml",
+      "sha256": "2b77c349f39d2885b3e36d3bcab639a7ef3b9c6217263031aa4bc8f1c2a0d05e",
+      "bytes": 275110
+    }
+  ],
+  "modules": [
+    {
+      "module": "WongMRCATruncation",
+      "lane": "mrca-truncation",
+      "path": "../../../real/WongMRCATruncation.lean",
+      "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac",
+      "endpoints": [
+        "WongMRCATruncation.exists_unique_mrca",
+        "WongMRCATruncation.mrca_unique",
+        "WongMRCATruncation.common_iff_ancestor_mrca",
+        "WongMRCATruncation.truncation_iff_cut_above",
+        "WongMRCATruncation.truncation_iff_below_mrca",
+        "WongMRCATruncation.sample_paths_preserved",
+        "WongMRCATruncation.mrca_sample_paths_preserved",
+        "WongMRCATruncation.mrca_reaches_every_sample",
+        "WongMRCATruncation.no_incoming_mrca",
+        "WongMRCATruncation.truncated_support",
+        "WongMRCATruncation.no_common_no_extra_truncation",
+        "WongMRCATruncation.ancestral_sample_is_mrca",
+        "WongMRCATruncation.singleton_sample_is_mrca",
+        "WongMRCATruncation.singleton_has_no_edges",
+        "WongMRCATruncation.empty_samples_no_edges",
+        "WongMRCATruncation.distinct_sample_roots_no_common",
+        "WongMRCATruncation.truncate_at_iff",
+        "WongMRCATruncation.truncate_unique_parent",
+        "WongMRCATruncation.truncate_sample_supported",
+        "WongMRCATruncation.truncate_breakpoints",
+        "WongMRCATruncation.truncate_sample_paths",
+        "WongMRCATruncation.truncate_mrca_paths",
+        "WongMRCATruncation.finite_mrca_truncation",
+        "WongMRCATruncation.supported_but_removed"
+      ],
+      "endpoint_count": 24,
+      "scope": "local isolated pass; combined audit and hosted CI tracked separately"
+    },
+    {
+      "module": "WongIntervalCanonicalization",
+      "lane": "interval-canonicalization",
+      "path": "../../../real/WongIntervalCanonicalization.lean",
+      "sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+      "endpoints": [
+        "WongIntervalCanonicalization.join_contains",
+        "WongIntervalCanonicalization.mergeAdjacent_covers",
+        "WongIntervalCanonicalization.mergeAdjacent_lo",
+        "WongIntervalCanonicalization.mergeAdjacent_hi",
+        "WongIntervalCanonicalization.mergeAdjacent_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+        "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+        "WongIntervalCanonicalization.separated_semantic_unique",
+        "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+        "WongIntervalCanonicalization.separated_gap",
+        "WongIntervalCanonicalization.canonicalRegions_covers",
+        "WongIntervalCanonicalization.canonicalRegions_separated",
+        "WongIntervalCanonicalization.canonicalRegions_endpoints",
+        "WongIntervalCanonicalization.canonicalRegions_unique",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+        "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+        "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+        "WongIntervalCanonicalization.canonicalize_at",
+        "WongIntervalCanonicalization.canonicalize_breakpoints",
+        "WongIntervalCanonicalization.canonicalize_nonempty",
+        "WongIntervalCanonicalization.canonicalize_canonical",
+        "WongIntervalCanonicalization.canonicalize_maximal",
+        "WongIntervalCanonicalization.serialized_semantic_unique",
+        "WongIntervalCanonicalization.serialized_empty",
+        "WongIntervalCanonicalization.canonicalize_semantic_unique",
+        "WongIntervalCanonicalization.canonicalize_idempotent",
+        "WongIntervalCanonicalization.canonicalize_topology",
+        "WongIntervalCanonicalization.executable_touching_gap_example"
+      ],
+      "endpoint_count": 31,
+      "scope": "local isolated pass; combined audit and hosted CI tracked separately"
+    },
+    {
+      "module": "WongSimplificationNormalForm",
+      "lane": "normal-form",
+      "path": "../../../real/WongSimplificationNormalForm.lean",
+      "sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed",
+      "endpoints": [
+        "WongSimplificationNormalForm.first_kept_child",
+        "WongSimplificationNormalForm.siblings_disjoint",
+        "WongSimplificationNormalForm.retained_nonsample_branches",
+        "WongSimplificationNormalForm.represented_contraction_normal",
+        "WongSimplificationNormalForm.finite_local_normal_form",
+        "WongSimplificationNormalForm.finite_resolved_normal_form",
+        "WongSimplificationNormalForm.mrca_kept",
+        "WongSimplificationNormalForm.truncated_mrca_kept",
+        "WongSimplificationNormalForm.canonicalize_paths",
+        "WongSimplificationNormalForm.canonical_resolved_normal_form"
+      ],
+      "endpoint_count": 10,
+      "scope": "local isolated pass; combined audit and hosted CI tracked separately"
+    }
+  ],
+  "expected_combined_endpoints": 274,
+  "classification": "attributed formalization and representation infrastructure; no new mathematics claim"
+}

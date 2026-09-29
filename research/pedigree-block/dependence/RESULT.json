@@ -1,0 +1,44 @@
+{
+  "status": "PASS_SOURCE_SNAPSHOT_PENDING_INTEGRATED_COMMIT",
+  "base_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "source_sha256": "ad35d3736ed31627a931342bace75e9b17941e752b9ae30264a3f076d45b2126",
+  "log_sha256": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2",
+  "project_import_closure_modules": 4,
+  "acceptance_endpoints": {
+    "PedigreeBlock.repeatBlock_share_iff": [
+      "propext"
+    ],
+    "PedigreeBlock.repeatBlock_connected_iff": [
+      "Quot.sound",
+      "propext"
+    ],
+    "PedigreeBlock.repeatedLaw_probability": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PedigreeBlock.repeatedLaw_block_marginal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PedigreeBlock.repeatedLaw_connected_eq_one_block": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PedigreeBlock.repeatedLaw_connected_probability": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "seconds": 25.252,
+  "verifier_attempts": 2,
+  "target_compilation_attempts": 1,
+  "prior_dependency_failure": "The first verifier run stopped at the Probability owner's config_bit_cylinder elaboration timeout before reaching this module. That owner repaired and froze the shared dependency; the diagnostic is preserved as dependency-attempt-1.",
+  "scope": "General repeated-block law, full individual-block joint marginals and constant connectedness probability. No coupling to Wong's continuous ARG. Root owns registration and final combined clean-commit audit.",
+  "source_frozen": true
+}

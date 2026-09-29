@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "release": "finite-epigenetic-v1",
+  "createdUtc": "2026-09-25T15:24:56.696469+00:00",
+  "checkedEndpointCount": 34,
+  "proofReceipt": "verification/combined-receipt.json",
+  "status": "PASS_WITH_RECOVERED_EXIT_EVIDENCE",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5710,
+      "sha256": "be85430f9c6c0cfc194090d93c95c2b791a11092b146daebdd393d547f31e328"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "bytes": 4459,
+      "sha256": "7451183f23d1e683c00e93a996352325fb5796b6f4c42aab6eff06fb876667fd"
+    },
+    {
+      "path": "FINITE-RESULT.md",
+      "bytes": 8048,
+      "sha256": "be3d7a88610e750f1709d4082cf19b0796935416e20d4bd5a28733074ea7bd1a"
+    },
+    {
+      "path": "DETERMINISTIC-COMPARISON.md",
+      "bytes": 13311,
+      "sha256": "ce90c736f3f5877681bfa541ae1074e444e5348cbcfcd93faa4c492f1215c076"
+    },
+    {
+      "path": "SOURCE-MODEL-CONTRACT.md",
+      "bytes": 16481,
+      "sha256": "d0705e105a4eca313a9b034a466f6f85261ca5df519e20799d17d7a29abc3cd8"
+    },
+    {
+      "path": "RESEARCH-QUESTIONS-AND-HANDOFF.md",
+      "bytes": 8297,
+      "sha256": "9f025b49a8f023b7c0c6026d03390eb361a7815514cd24f4289d474acb30ee33"
+    },
+    {
+      "path": "PRIOR-WORK.md",
+      "bytes": 15097,
+      "sha256": "96b962a928429dc1115d07a97d82f2e92a3e665c08e0c3264a61f44668631aa2"
+    },
+    {
+      "path": "INDEPENDENT-MODEL-AUDIT.md",
+      "bytes": 14099,
+      "sha256": "cccb4260daa42520c3c0cde7ac45f6e8839c1d7ed4a04e7c7c66bde71d78d43e"
+    },
+    {
+      "path": "DETERMINISTIC-INDEPENDENT-AUDIT.md",
+      "bytes": 14745,
+      "sha256": "379fc755b8f7c1001565c09266b8658dd13f8f3ea18a787314596acf6950cd57"
+    },
+    {
+      "path": "FINITE-FIXATION-NOTE.md",
+      "bytes": 5244,
+      "sha256": "8cfcef2595a039015b3a91da034307c71d6251e4cfe0b02e0e596d5de1cafe36"
+    },
+    {
+      "path": "FiniteFixation.lean",
+      "bytes": 15133,
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9"
+    },
+    {
+      "path": "FiniteEpigenetic.lean",
+      "bytes": 12917,
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822"
+    },
+    {
+      "path": "DeterministicEpigenetic.lean",
+      "bytes": 10445,
+      "sha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f"
+    },
+    {
+      "path": "RankingReversal.lean",
+      "bytes": 1705,
+      "sha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894"
+    },
+    {
+      "path": "finite_life_cycle.py",
+      "bytes": 6234,
+      "sha256": "1b852d6dedd1775eb4733943c9f85af8cad09068838bc41120919f7fb6771a78"
+    },
+    {
+      "path": "count_model.py",
+      "bytes": 3599,
+      "sha256": "0673ba5e48782d353fb4af2bc7607a18d36279d9486e5b3a7707d777fc25cc04"
+    },
+    {
+      "path": "count-certificates.json",
+      "bytes": 7380,
+      "sha256": "ec7a8876c02a49a97d9f0ccdecd6ff73c300ada5e07affe90d6da380d74cf54b"
+    },
+    {
+      "path": "genetic-exact.json",
+      "bytes": 160004,
+      "sha256": "e8141b99a56dc541fb7de29e61368c7b4a8175f863a611032411ba306be96d6e"
+    },
+    {
+      "path": "epigenetic-exact.json",
+      "bytes": 128313,
+      "sha256": "4f8dcb6c5db29aab052eb5fca29bd4522b5a78197972306e41f42068737a0088"
+    },
+    {
+      "path": "deterministic_comparison.py",
+      "bytes": 7386,
+      "sha256": "53302a86d2bb5074421a3c11742508be3cf7176f1cf3030969c7a22688043dbd"
+    },
+    {
+      "path": "generate_lean.py",
+      "bytes": 12234,
+      "sha256": "4ce879e63c60a8540e41542eda32a73433f7b259ed608fd360886c380b2b8893"
+    },
+    {
+      "path": "Check.ps1",
+      "bytes": 1041,
+      "sha256": "b9bb951ef2ac559f8d615751fa42d63ce9cbc39e2745a0be7a208c7a4c39d3a6"
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 386,
+      "sha256": "2072ecbdfad3d5e142f382178dedb739e5611ddfb985827ef233664cd3e514b4"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "make_receipt.py",
+      "bytes": 2538,
+      "sha256": "64777cae3a687fcdacc123238eb4033827c589129b39b79d5339ce50eab636de"
+    },
+    {
+      "path": "make_combined_receipt.py",
+      "bytes": 3894,
+      "sha256": "48b505ac4e5be1661b48d854a23f7475f3e26d427c17a607af3c2016b98e2765"
+    },
+    {
+      "path": "verify_packet.py",
+      "bytes": 420,
+      "sha256": "d274f64953f19efa23857e2a4d769a49566ad0e91107599fc3e856f5a7b8ddf0"
+    },
+    {
+      "path": "verification/finite-receipt.json",
+      "bytes": 3046,
+      "sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0"
+    },
+    {
+      "path": "verification/combined-receipt.json",
+      "bytes": 5485,
+      "sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb"
+    },
+    {
+      "path": "verification/FiniteFixation.log",
+      "bytes": 1579,
+      "sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1"
+    },
+    {
+      "path": "verification/FiniteEpigenetic.log",
+      "bytes": 1261,
+      "sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621"
+    },
+    {
+      "path": "verification/DeterministicEpigenetic.log",
+      "bytes": 1361,
+      "sha256": "3f6fe7dc138c1af22dcfd65cb12a9bf763ce61ffcb5356baf621267453d6a9b0"
+    },
+    {
+      "path": "verification/RankingReversal.log",
+      "bytes": 310,
+      "sha256": "2cf2a1acdcbb57fef8e805ce0f3dfbf75576da9e0a7ff93171b9647cdcbad750"
+    }
+  ]
+}

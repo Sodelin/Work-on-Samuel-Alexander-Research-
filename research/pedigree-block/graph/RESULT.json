@@ -1,0 +1,27 @@
+{
+  "status": "PASS_SOURCE_SNAPSHOT_PENDING_INTEGRATED_COMMIT",
+  "base_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "source_sha256": "7bb5462c855e74d9b38dfd76c31b504ed7414dc4630671f222a097b21771cc84",
+  "log_sha256": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff",
+  "project_import_closure_modules": 2,
+  "acceptance_endpoints": {
+    "PedigreeBlock.not_share_iff_complement": [
+      "Quot.sound",
+      "propext"
+    ],
+    "PedigreeBlock.not_connected_iff_bad": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PedigreeBlock.reachable_of_restrict": [],
+    "PedigreeBlock.connected_of_restrict": []
+  },
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "seconds": 13.411,
+  "attempts": 2,
+  "first_attempt": "Three elaboration errors; preserved as attempt-1.log and attempt-1.json. No unproved declaration remains in successful source.",
+  "scope": "Deterministic complement characterization and block-prefix path monotonicity only. Root owns registration, observation and probability integration, and final clean-commit audit.",
+  "source_frozen": true
+}

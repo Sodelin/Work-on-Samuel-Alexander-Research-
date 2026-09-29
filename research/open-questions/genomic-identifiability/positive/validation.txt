@@ -1,0 +1,6 @@
+'ThreeTaxonIdentifiability.law_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeTaxonIdentifiability.law_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeTaxonIdentifiability.unique_maximizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeTaxonIdentifiability.law_identifiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeTaxonIdentifiability.boundary_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ThreeTaxonIdentifiability.no_boundary_decoder' depends on axioms: [propext, Classical.choice, Quot.sound]

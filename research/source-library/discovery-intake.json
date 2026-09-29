@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "intake_id": "doc-39d364a22994",
+      "kind": "title_entry",
+      "title": "To be or not to be? A question of mortality",
+      "title_provenance": {
+        "kind": "publisher_metadata_via_coordinator",
+        "status": "coordinator_checked"
+      },
+      "authors": [
+        "Karl John Friston"
+      ],
+      "identifiers": {
+        "doi": "10.1017/S0140525X25103439"
+      },
+      "authoritative_urls": [
+        "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/to-be-or-not-to-be-a-question-of-mortality/DCC392FA8E674B0D74C20A925B9B8351"
+      ],
+      "observed_publication": {
+        "date": "2026-09-17",
+        "version": null,
+        "observed_at": "2026-09-25T13:48:31.007124+00:00"
+      },
+      "read_status": "full_text_unread",
+      "availability": "title_only",
+      "provenance": [
+        {
+          "method": "Publisher metadata, abstract and references inspected with web tool; matching user screenshot",
+          "source_url": "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/to-be-or-not-to-be-a-question-of-mortality/DCC392FA8E674B0D74C20A925B9B8351",
+          "observed_at": "2026-09-25T13:48:31.007124+00:00"
+        }
+      ],
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "evidence": []
+      }
+    },
+    {
+      "intake_id": "discovery-10.1017/S0140525X25103828",
+      "kind": "title_entry",
+      "title": "Diverse intelligence: An essential field for questions of AI and consciousness",
+      "title_provenance": {
+        "kind": "publisher_metadata_via_coordinator",
+        "status": "coordinator_checked"
+      },
+      "authors": [
+        "Michael Levin"
+      ],
+      "identifiers": {
+        "doi": "10.1017/S0140525X25103828"
+      },
+      "authoritative_urls": [
+        "https://doi.org/10.1017/S0140525X25103828"
+      ],
+      "observed_publication": {
+        "date": "2026-09-17",
+        "version": null,
+        "observed_at": "2026-09-25T13:48:31.007124+00:00"
+      },
+      "read_status": "full_text_unread",
+      "availability": "title_only",
+      "provenance": [
+        {
+          "method": "User-supplied publisher screenshot and document text including metadata, abstract and references",
+          "source_url": "https://doi.org/10.1017/S0140525X25103828",
+          "observed_at": "2026-09-25T13:48:31.007124+00:00"
+        }
+      ],
+      "verification": {
+        "claim_status": "unreviewed",
+        "proof_status": "unreviewed",
+        "evidence": []
+      }
+    }
+  ],
+  "discovery_anchors": [
+    {
+      "url": "https://profiles.ucl.ac.uk/2747-karl-friston/publications",
+      "status": "Public JavaScript shell retrieved; full bibliography not enumerated; browser initialization failed before control"
+    },
+    {
+      "url": "https://www.fil.ion.ucl.ac.uk/~karl/",
+      "status": "Author-selected institutional bibliography accessible; historical/selected coverage, not a complete current corpus"
+    },
+    {
+      "url": "https://discovery.ucl.ac.uk/",
+      "status": "Institutional repository; individual source records available"
+    }
+  ]
+}

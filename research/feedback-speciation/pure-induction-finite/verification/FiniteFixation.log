@@ -1,0 +1,17 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\feedback-speciation\finite-epigenetic\FiniteFixation.lean:128:0: warning: automatically included section variable(s) unused in theorem `FiniteFixation.indicator_bounds`:
+  [Fintype S]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype S] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'FiniteFixation.marginal_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.marginal_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.harmonic_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.transient_mass_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.certificate_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.win_probability_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.certificate_identifies_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.transient_mass_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.certificate_mixture_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.win_probability_from_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteFixation.certificate_identifies_mixture_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

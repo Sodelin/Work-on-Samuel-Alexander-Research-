@@ -1,0 +1,16 @@
+{
+  "module": "WongMarkedSupport",
+  "source": "real\\WongMarkedSupport.lean",
+  "signature": {
+    "source_sha256": "57d485a53aa9ba32aa98f75c8812b55f1976c142f74fe7624ce819131669a5de",
+    "dependencies": {
+      "WongMarkedMeasurable": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 27.153,
+  "log_sha256": "0946ea471f5cb2a319681a58051d288ef0a1ad3ab7823fa75fb7e70f6a94f97f",
+  "object_sha256": "f326b1a054b968c80b300c05c65ca0770d4e3062189eab5366c01edd5de80695"
+}

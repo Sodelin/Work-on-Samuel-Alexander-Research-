@@ -1,0 +1,89 @@
+{
+  "proof_commit": "c071d4b895b8fe979211b68ac30240f8833e707d",
+  "working_tree_status": "",
+  "exact_clean_commit": true,
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    {
+      "module": "SamuelAlexanderResearch.SpeciesBridge",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesBridge.lean",
+      "signature": {
+        "source_sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037",
+        "dependencies": {},
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.168,
+      "log_sha256": "50da5d9051744a50c9223e5a18cc1d4960c2760c5457309efdb0bf878539d46f",
+      "object_sha256": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+    },
+    {
+      "module": "SamuelAlexanderResearch.SpeciesGlobalIAP",
+      "source": "lean\\SamuelAlexanderResearch\\SpeciesGlobalIAP.lean",
+      "signature": {
+        "source_sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesBridge": "97492d43ce1f98cc6d2435915e79359c0d49be75e19ce1bf97f19b5fe5a6fc3b"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.897,
+      "log_sha256": "55e685fac5e9e67def016ac29b09d52a9f3a8afeed193a144c28d0fa76910c8f",
+      "object_sha256": "c5457bc857037a00c16cbffb35592db959c7b7d7ae71433cc2fa0b9286422f0d"
+    },
+    {
+      "module": "PairingCore",
+      "source": "real\\PairingCore.lean",
+      "signature": {
+        "source_sha256": "f8723988f843354641a66e7cb71b021721864132d9f46b269efab2697c66db94",
+        "dependencies": {
+          "SamuelAlexanderResearch.SpeciesGlobalIAP": "c5457bc857037a00c16cbffb35592db959c7b7d7ae71433cc2fa0b9286422f0d"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 9.452,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "f16b84adb305de3ca4dcb8418d5250f8e347abadef224363478a7933bf55c3c1"
+    },
+    {
+      "module": "PairingObservation",
+      "source": "real\\PairingObservation.lean",
+      "signature": {
+        "source_sha256": "2f4d97740f1cb835e258e5b4a675a5c24e9373051b0e66a7cbebc6ccf8610734",
+        "dependencies": {
+          "PairingCore": "f16b84adb305de3ca4dcb8418d5250f8e347abadef224363478a7933bf55c3c1"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 4.191,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "bb0f40efeba06591333f86330edb65d50cb423d0cbdbaa736ce261c350cc5203"
+    },
+    {
+      "module": "PairingObservationAudit",
+      "source": "real\\PairingObservationAudit.lean",
+      "signature": {
+        "source_sha256": "40c802b67d1161886029fb64ee8622c3049f5ac0e1b3211f4b94211e03edc582",
+        "dependencies": {
+          "PairingObservation": "bb0f40efeba06591333f86330edb65d50cb423d0cbdbaa736ce261c350cc5203"
+        },
+        "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      },
+      "exit_code": 0,
+      "seconds": 3.271,
+      "log_sha256": "c20bb4097befec3fa8fbf80a8fa5ee73368a80d7ef7cf6fe7fe675c479c4d74c",
+      "object_sha256": "de8658cd8b911ade45accab7cc51decb4a8bc6954d3d1263243d6dbaea0be1c5"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Requested import closure only; source correspondence and full repository verification are separate."
+}

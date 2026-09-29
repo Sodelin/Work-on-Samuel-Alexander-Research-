@@ -1,0 +1,13 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongBigARGAbsorption.lean:83:12: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\probability\absorption\WongBigARGAbsorption.lean:83:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'WongBigARGAbsorption.countPotential_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGAbsorption.ae_eventually_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGAbsorption.ae_finite_jump_absorption' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGAbsorption.normalizedRatio_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGAbsorption.literal_up_kernel_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGAbsorption.literal_down_kernel_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongBigARGAbsorption.literal_rates_ae_finite_absorption' depends on axioms: [propext, Classical.choice, Quot.sound]

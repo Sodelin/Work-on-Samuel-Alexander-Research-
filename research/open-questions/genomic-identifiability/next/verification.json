@@ -1,0 +1,29 @@
+{
+  "status": "local_lean_pass",
+  "verified_utc": "2026-09-25T11:16:46.5925867Z",
+  "lean_version": "4.33.1",
+  "exit_code": 0,
+  "source_file": "ThreeTaxonFiniteEvidence.lean",
+  "source_sha256": "01f53ac6176f612beda29475805d5c27293db7a35d10907a2db3ad8a96ae18f5",
+  "mathlib_revision_declared": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "printed_endpoints": [
+    "sampleMass_positive",
+    "sampleMass_lower_bound",
+    "finite_sample_support_overlap",
+    "no_uniform_certain_decoder",
+    "quantitative_error_witness",
+    "robust_strict_mode",
+    "robust_maximizer_recovers",
+    "half_gap_tie"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compiler_output": "validation.txt",
+  "compiler_output_capture": "Transcribed verbatim from the successful exec result; no warnings or errors in that run.",
+  "reproduce": ".\\Check.ps1",
+  "scope": "Prescribed three-taxon law; iid finite-sample support and deterministic robust mode. No coalescent derivation, species delimitation, aggregate error measure or probability-tail proof.",
+  "owner_repository_modified": false
+}

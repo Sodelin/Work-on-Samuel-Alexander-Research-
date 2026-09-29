@@ -1,0 +1,50 @@
+C:\Users\Owner\Documents\Codex\2026-09-25\wong-completion\integration\resumption\staging\audit-project\real\WongIntervalCanonicalization.lean:361:0: warning: automatically included section variable(s) unused in theorem `WongIntervalCanonicalization.CellPresentation.serializedRegions_separated`:
+  [Fintype Node]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Node] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+[(0, 3), (5, 6)]
+'WongIntervalCanonicalization.join_contains' depends on axioms: [propext]
+'WongIntervalCanonicalization.mergeAdjacent_covers' depends on axioms: [propext, Quot.sound]
+'WongIntervalCanonicalization.mergeAdjacent_lo' depends on axioms: [propext]
+'WongIntervalCanonicalization.mergeAdjacent_hi' depends on axioms: [propext]
+'WongIntervalCanonicalization.mergeAdjacent_separated' depends on axioms: [propext, Quot.sound]
+'WongIntervalCanonicalization.mergeAdjacent_of_separated' depends on axioms: [propext]
+'WongIntervalCanonicalization.mergeAdjacent_idempotent' depends on axioms: [propext, Quot.sound]
+'WongIntervalCanonicalization.separated_semantic_unique' depends on axioms: [propext, Quot.sound]
+'WongIntervalCanonicalization.mergeAdjacent_semantic_unique' depends on axioms: [propext, Quot.sound]
+'WongIntervalCanonicalization.separated_gap' depends on axioms: [propext]
+'WongIntervalCanonicalization.canonicalRegions_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalRegions_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalRegions_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalRegions_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.CellPresentation.serializedRegions_separated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongIntervalCanonicalization.CellPresentation.serializedRegions_covers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongIntervalCanonicalization.CellPresentation.canonicalGARG_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongIntervalCanonicalization.canonicalize_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_breakpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_canonical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.serialized_semantic_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.serialized_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_semantic_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.canonicalize_topology' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongIntervalCanonicalization.executable_touching_gap_example' depends on axioms: [propext]

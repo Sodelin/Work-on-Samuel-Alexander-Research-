@@ -1,0 +1,157 @@
+{
+  "earlier_arg_selected_declarations": 415,
+  "novelty": "No novelty or first-formalization claim. Bounded prior-formalization search found none in inspected sources only.",
+  "checked_proof_commit": "ae0beee8d04e32c45f28d2f465b924d6816c82a5",
+  "selected_new_declarations": 31,
+  "schema_version": 1,
+  "base_commit": "a096e498045a07d867f1a2201870596fbfaad68a",
+  "stopping_condition": "Finish this exact audit and preserve the result. Do not automatically expand this control-model scope. Further work needs a concrete research or formalization purpose; maintain a deliberate discovery track alongside valuable known-result formalization.",
+  "research_value": "A positive finite-observation control and an explicit failure of substituting block marginals for independence; it identifies assumptions still missing in a genomic-to-organism inference bridge.",
+  "earlier_arg_audit_preserved": true,
+  "claims": [
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "id": "MODEL",
+      "claim": "Independent fair child/block bits and independent family law are derived from a finite uniform PMF.",
+      "endpoints": [
+        "configPMF_mass",
+        "config_bit_cylinder",
+        "fair_bit_singleton",
+        "family_event_product"
+      ],
+      "source": "KMRT section 4.1, first-generation specialization conditional on fixed founder families"
+    },
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "id": "GRAPH",
+      "claim": "Exact disconnection characterization for every positive block count and every nonempty family.",
+      "endpoints": [
+        "not_share_iff_complement",
+        "not_connected_iff_bad"
+      ],
+      "source": "Independent elementary derivation under the stated model; no novelty claim"
+    },
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "id": "COUNT",
+      "claim": "Exact exceptional probability (2^n-1)/2^(B*n) for n+1 children.",
+      "endpoints": [
+        "badEquiv",
+        "bad_card",
+        "bad_probability"
+      ],
+      "source": "Independent elementary finite counting proof"
+    },
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "id": "OBSERVATION",
+      "claim": "Observed sharing-component relation recovers true sampled families iff all local graphs are connected; no hidden labels used by adjacency.",
+      "endpoints": [
+        "observedShare_iff",
+        "observed_path_preserves_family",
+        "family_path_iff",
+        "recovered_iff_connected"
+      ],
+      "source": "Independent model-to-observation proof with explicit injective parent symbols"
+    },
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "endpoints": [
+        "recovered_probability",
+        "output_recovery_probability",
+        "observationLaw_probability"
+      ],
+      "claim": "Exact product recovery formula, directly also under the observed-symbol output law.",
+      "source": "Deduction from graph, observation and actual finite probability constructions",
+      "restriction": "Output-law endpoint assumes a finite measurable alphabet with measurable singletons; hidden-variable endpoint allows arbitrary Symbol.",
+      "id": "RECOVERY"
+    },
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "id": "MORE_BLOCKS",
+      "claim": "Adding blocks preserves each one-family sharing path and connectivity, without independence.",
+      "endpoints": [
+        "reachable_of_restrict",
+        "connected_of_restrict"
+      ],
+      "source": "Independent deterministic graph observation"
+    },
+    {
+      "status": "FORMAL_SCOPED_PASS",
+      "endpoints": [
+        "repeatBlock_share_iff",
+        "repeatBlock_connected_iff",
+        "repeatedLaw_probability",
+        "repeatedLaw_block_marginal",
+        "repeatedLaw_connected_eq_one_block",
+        "repeatedLaw_connected_probability"
+      ],
+      "claim": "One-family repeated-block law has correct full single-block marginals but connectivity success remains at the one-block value.",
+      "source": "Independent explicit correlated-law counterexample",
+      "restriction": "No separately checked multi-family repeated-law output-recovery formula.",
+      "id": "DEPENDENCE"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "id": "DISTRIBUTION_IDENTIFIABILITY",
+      "claim": "Pair-sharing probabilities distinguish different finite family partitions in the restricted model.",
+      "endpoints": [],
+      "source": "source/written-precursor/RECOVERY-THEOREM.md Theorem 3"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "id": "UNION_BOUND",
+      "claim": "A union-bound lower bound follows from the exact product theorem; no dedicated Lean endpoint here.",
+      "endpoints": [],
+      "source": "source/written-precursor/RECOVERY-THEOREM.md Theorem 2"
+    },
+    {
+      "status": "GENERAL_WRITTEN_PROOF_NOT_LEAN",
+      "id": "OBSERVATION_ERROR",
+      "claim": "A same-target graph coupling loses at most its disagreement probability; the coupling is an additional assumption.",
+      "endpoints": [],
+      "source": "source/written-precursor/RECOVERY-THEOREM.md observation-error corollary"
+    },
+    {
+      "status": "WRITTEN_CONSTRUCTION_NOT_LEAN",
+      "id": "COUPLE_VERTICES",
+      "claim": "Attach one unnamed parent-couple vertex to each recovered family; no formal incidence-graph construction in this packet.",
+      "endpoints": [],
+      "source": "Source handoff and written precursor"
+    },
+    {
+      "status": "SOURCE_THEOREM_NOT_FORMALIZED_HERE",
+      "id": "RECGEN_FULL",
+      "claim": "The multigeneration asymptotic theorem is outside this finite specialization.",
+      "endpoints": [],
+      "source": "https://arxiv.org/pdf/2005.03810v1, Theorem 6.1"
+    },
+    {
+      "status": "SOURCE_REPORT_NOT_REPRODUCED",
+      "id": "SIMULATIONS",
+      "claim": "Finite simulation behavior and heuristic improvements are reported by the source, not rerun.",
+      "endpoints": [],
+      "source": "https://arxiv.org/pdf/2204.04573v2, sections 5-8"
+    },
+    {
+      "status": "UNPROVED_ADDITIONAL_MODEL_REQUIRED",
+      "id": "ARG_COUPLING",
+      "claim": "No derivation of this independent-block law from the continuous marked ARG law.",
+      "endpoints": [],
+      "source": "Prior ARG checkpoint and this packet CHECKPOINT.md"
+    },
+    {
+      "status": "NO_NEW_INFINITE_CLUSTER_TRANSFER",
+      "id": "ALEXANDER_TRANSFER",
+      "claim": "Finite family recovery does not supply the assumptions for infinite IAP, convexity, maximality or specieslike transfer.",
+      "endpoints": [],
+      "source": "Prior owner-map theorems at 1ac3dd9446e7264336f0764040ff47ad684099cb"
+    }
+  ],
+  "result_kind": "EXPLICIT_MODEL_FORMALIZATION_NO_NOVELTY_CLAIM",
+  "research_labels": [
+    "Known result or explicit model formalized",
+    "New theorem or counterexample only after prior-work review",
+    "Speculative idea or conjecture, clearly marked"
+  ]
+}

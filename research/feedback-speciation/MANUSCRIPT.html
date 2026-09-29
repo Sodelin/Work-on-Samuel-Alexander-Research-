@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2026-09-25" />
+  <title>Recurrent parenthood and finite/cofinite ancestry</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Recurrent parenthood and finite/cofinite ancestry</h1>
+<p class="subtitle">A conditional bridge to specieslike clusters, with a
+cultural-persistence counterexample</p>
+<p class="date">25 September 2026</p>
+</header>
+<p><strong>Research draft.</strong> Complete written arguments are given
+below. Formal verification status is recorded separately in the claim
+ledger and build receipt; an unverified extension must not inherit the
+status of a checked lemma. Originality and empirical applicability have
+not been established. This draft is intended for mathematical review,
+not as an accepted publication.</p>
+<h2 id="abstract">Abstract</h2>
+<p>We study a discrete-generation pedigree partitioned into finitely
+many reproductive communities. Under finite generation prefixes,
+persistent occupancy, same-community parent coverage and finite-window
+dissemination of every lineage, we characterize Alexander’s identical
+ancestor point axiom using the strongly connected components of the
+graph of recurring cross-community parenthood. An infinite organism set
+satisfies the axiom exactly when all but finitely many of its members
+occupy one such component. Sufficiently late component tails are
+connected, ancestrally convex and reflecting. A standard conditional
+Borel–Cantelli corollary permits history-dependent reproductive
+feedback, subject to the same strong structural assumptions. A separate
+elementary model illustrates why stable cultural differences do not by
+themselves force neutral genetic separation. The contribution
+investigated is the precise conditional connection between reproductive
+dynamics and the ancestry predicate, rather than a universal definition
+or empirical theory of speciation.</p>
+<h2 id="question-and-prior-work">1. Question and prior work</h2>
+<p>DNA sequences, regulatory states and learned behaviour may influence
+reproduction. A genealogy records the resulting parenthood
+relationships. To connect a mechanistic model to a specieslike-cluster
+framework, one must prove something about that genealogy rather than
+identify phenotypic difference with species membership.</p>
+<p>Alexander’s IAP axiom requires each member of a set to have either
+finitely many descendants or finitely many non-descendants within that
+set. Connectivity and ancestry convexity are additional requirements for
+a specieslike cluster [1]. We ask which recurring reproductive contacts
+enforce this axiom under a declared local mixing hypothesis.</p>
+<p>The motivating question is newly posed here as an application
+question. We do not attribute an unsolved conjecture with this exact
+formulation to Alexander. Structured random-pedigree work already shows
+that rare migration can connect ancestry [2,3]. In temporal-network
+theory, recurring edges support time-respecting reachability when
+information can be retained while waiting [4]. Those mechanisms are
+prior art. Our candidate contribution is the subset classification below
+and its faithful formal interface. A full novelty determination remains
+to be made.</p>
+<p>The theorem excludes local lineage extinction. It therefore does not
+subsume the more realistic extinction-or-spread alternatives in
+random-pedigree models. It also does not derive biological species
+labels from DNA or identify the maximal clusters in Alexander’s general
+framework.</p>
+<h2 id="model-and-definitions">2. Model and definitions</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+be a nonempty finite set of demes, meaning assigned reproductive
+communities. Demes are not assumed species. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be the set of organisms, with generation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>V</mi><mo>→</mo><mi mathvariant="double-struck">ℕ</mi></mrow><annotation encoding="application/x-tex">g:V\to\mathbb N</annotation></semantics></math>,
+deme map
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>:</mo><mi>V</mi><mo>→</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">d:V\to D</annotation></semantics></math>,
+and parenthood relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Strict ancestry
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>≺</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u\prec v</annotation></semantics></math>
+means a nonempty directed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>-path
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.</p>
+<p>Assume:</p>
+<ol type="1">
+<li><strong>Finite past.</strong> For every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+the set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>v</mi><mo>:</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{v:g(v)&lt;n\}</annotation></semantics></math>
+is finite.</li>
+<li><strong>Continued occupancy.</strong> Every cohort
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>n</mi><mo>,</mo><mi>a</mi></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>v</mi><mo>:</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>n</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">V_{n,a}=\{v:g(v)=n,\ d(v)=a\}</annotation></semantics></math>
+is nonempty.</li>
+<li><strong>Generation step.</strong> If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(u,v)</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">g(v)=g(u)+1</annotation></semantics></math>.</li>
+<li><strong>Local parent coverage.</strong> Every organism of positive
+generation has a parent in its own deme.</li>
+<li><strong>Local dissemination.</strong> There is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">L\geq1</annotation></semantics></math>
+such that every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><msub><mi>V</mi><mrow><mi>n</mi><mo>,</mo><mi>a</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u\in V_{n,a}</annotation></semantics></math>
+is an ancestor of every member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mrow><mi>n</mi><mo>+</mo><mi>L</mi><mo>,</mo><mi>a</mi></mrow></msub><annotation encoding="application/x-tex">V_{n+L,a}</annotation></semantics></math>
+through a path entirely in deme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.</li>
+</ol>
+<p>The cohorts are finite. Every organism has finitely many children,
+and only generation-zero organisms can be parentless. These assumptions
+thus supply the elementary finiteness conditions of the pedigree
+model.</p>
+<p>Assumption 5 is particularly restrictive. It ensures every organism’s
+lineage persists and spreads locally. It rules out childlessness and
+local lineage extinction. It is stated as a condition on actual finite
+pedigree windows, not assumed IAP, but satisfying a finite list of
+observed windows cannot establish that it holds forever.</p>
+<p>The restriction is severe even in a simple random model. In a fixed
+deme of N&gt;=2 organisms, if each of N children independently selects
+two parents uniformly, a specified parent has probability
+r=(1-1/N)^(2N)&gt;0 of having no child. Applying this to one specified
+organism in each generation with fresh independent draws gives
+probability (1-r)^k that all k selected organisms avoid childlessness.
+This tends to zero. Hence universal all-time dissemination has
+probability zero in that model. The stochastic corollary below cannot be
+presented as a direct application to ordinary Wright-Fisher
+reproduction.</p>
+<p>For distinct
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">a,b\in D</annotation></semantics></math>,
+define the recurrent-parenthood relation
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mo>⇔</mo><mspace width="1.0em"></mspace><mo>∀</mo><mi>t</mi><mspace width="0.222em"></mspace><mo>∃</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>:</mo><mspace width="1.0em"></mspace><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi>t</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="0.222em"></mspace><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>b</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+R(a,b)\quad\Longleftrightarrow\quad
+\forall t\ \exists u,v:\quad
+g(u)\geq t,\ d(u)=a,\ E(u,v),\ d(v)=b.
+</annotation></semantics></math> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>*</mo></msup><annotation encoding="application/x-tex">R^*</annotation></semantics></math>
+denote reflexive transitive reachability. Demes belong to the same
+strongly connected component when each is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>*</mo></msup><annotation encoding="application/x-tex">R^*</annotation></semantics></math>-reachable
+from the other.</p>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊆</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">S\subseteq V</annotation></semantics></math>,
+write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">IAP</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{IAP}(S)</annotation></semantics></math>
+when every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">v\in S</annotation></semantics></math>
+satisfies
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>∈</mo><mi>S</mi><mo>:</mo><mi>v</mi><mo>≺</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">|</mo><mo>&lt;</mo><mi>∞</mi><mspace width="1.0em"></mspace><mtext mathvariant="normal">or</mtext><mspace width="1.0em"></mspace><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>∈</mo><mi>S</mi><mo>:</mo><mi>v</mi><mo>⊀</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">|</mo><mo>&lt;</mo><mi>∞</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\bigl|\{w\in S:v\prec w\}\bigr|&lt;\infty
+\quad\text{or}\quad
+\bigl|\{w\in S:v\not\prec w\}\bigr|&lt;\infty.
+</annotation></semantics></math> This is Alexander’s strict-ancestry
+convention. An organism is not automatically its own strict
+descendant.</p>
+<h2 id="eventual-ancestry-and-the-classification-theorem">3. Eventual
+ancestry and the classification theorem</h2>
+<p><strong>Theorem 1.</strong> Under assumptions 1–5, the following
+hold.</p>
+<ol type="a">
+<li><p>There is a generation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+such that for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+born at or after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>,
+there is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N(v)</annotation></semantics></math>
+with
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mo>⇒</mo><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>≺</mo><mi>w</mi><mspace width="0.222em"></mspace><mo>⇔</mo><mspace width="0.222em"></mspace><msup><mi>R</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+g(w)\geq N(v)\quad\Longrightarrow\quad
+\left(v\prec w\ \Longleftrightarrow\ R^*(d(v),d(w))\right).
+</annotation></semantics></math></p></li>
+<li><p>For every infinite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊆</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">S\subseteq V</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">IAP</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mo>⇔</mo><mspace width="1.0em"></mspace><mo>∃</mo><mi>C</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> an </mtext><mspace width="0.333em"></mspace></mrow><mi>R</mi><mtext mathvariant="normal">-component</mtext><mo>:</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">{</mo><mi>v</mi><mo>∈</mo><mi>S</mi><mo>:</mo><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∉</mo><mi>C</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><mi>∞</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\operatorname{IAP}(S)
+\quad\Longleftrightarrow\quad
+\exists C\text{ an }R\text{-component}:
+\left|\{v\in S:d(v)\notin C\}\right|&lt;\infty.
+</annotation></semantics></math> The component in (b) is
+unique.</p></li>
+<li><p>The entire pedigree satisfies IAP if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is strongly connected.</p></li>
+<li><p>For each component
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>,
+the tail
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>C</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>v</mi><mo>:</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi>T</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∈</mo><mi>C</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">
+S_C=\{v:g(v)\geq T,\ d(v)\in C\}
+</annotation></semantics></math> is infinite, connected in the
+underlying undirected induced pedigree, ancestrally convex, IAP and
+reflecting. Every member has infinitely many descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>C</mi></msub><annotation encoding="application/x-tex">S_C</annotation></semantics></math>.
+No maximality claim is made.</p></li>
+</ol>
+<h3 id="proof">Proof</h3>
+<p><strong>Persistence of local dissemination.</strong> Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><msub><mi>V</mi><mrow><mi>n</mi><mo>,</mo><mi>a</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u\in V_{n,a}</annotation></semantics></math>.
+Assumption 5 gives ancestry to all of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mrow><mi>n</mi><mo>+</mo><mi>L</mi><mo>,</mo><mi>a</mi></mrow></msub><annotation encoding="application/x-tex">V_{n+L,a}</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+is an ancestor of an entire later
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-cohort,
+every member of the next cohort has a same-deme parent in it by
+assumptions 3 and 4. Appending that parenthood edge extends ancestry.
+Induction shows that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+is an ancestor of every member of every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-cohort
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">n+L</annotation></semantics></math>
+onward. Say that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+saturates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.</p>
+<p><strong>Propagation through recurrent links.</strong> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+saturates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+after time
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R(a,b)</annotation></semantics></math>.
+Choose an actual edge
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\to y</annotation></semantics></math>
+of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\to b</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">g(x)\geq h</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>≺</mo><mi>x</mi><mo>≺</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">u\prec x\prec y</annotation></semantics></math>.
+Local dissemination from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+implies that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+eventually saturates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>.
+Repeating this argument along a finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-path
+proves eventual saturation of any reachable deme. Since there are
+finitely many demes, there is one time beyond which all reachable demes
+are saturated. The proof can wait for links in the required order
+because saturated ancestry persists.</p>
+<p><strong>Removal of transient edge types.</strong> For each distinct
+ordered pair for which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R(a,b)</annotation></semantics></math>
+fails, there is a time after which no edge of that type occurs. Take the
+maximum of these finitely many cutoffs, or zero when there are none, and
+call it
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.
+An ancestry path starting at or after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+then projects to an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>*</mo></msup><annotation encoding="application/x-tex">R^*</annotation></semantics></math>-path:
+each edge either remains in its deme or follows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Combining this with eventual saturation proves (a).</p>
+<p><strong>Sufficiency in (b).</strong> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+has only finitely many members outside a component
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>.
+Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">v\in S</annotation></semantics></math>,
+possibly born before
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+or outside
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+has no strict descendant in the tail of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>,
+its descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+are confined to the finite
+outside-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+exception and the finite
+pre-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+prefix. Otherwise choose a strict descendant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+in the tail. From
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>,
+recurring reachability and local dissemination saturate every deme of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>.
+Consequently
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+has only finitely many non-descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+This proves the required alternative, including early exceptional
+vertices.</p>
+<p><strong>Necessity in (b).</strong> Partition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+by its finitely many components. If no one component contains
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+modulo a finite set, two distinct components
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>,</mo><msup><mi>C</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">C,C&#39;</annotation></semantics></math>
+have infinite intersections with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+They cannot reach each other in both directions; relabel them so that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+cannot reach
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mo>′</mo></msup><annotation encoding="application/x-tex">C&#39;</annotation></semantics></math>.
+Choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">v\in S</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>,
+possible because the past is finite. It eventually reaches every
+organism of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>,
+so has infinitely many descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>∩</mo><msup><mi>d</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">S\cap d^{-1}(C)</annotation></semantics></math>.
+It reaches no organism of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mo>′</mo></msup><annotation encoding="application/x-tex">C&#39;</annotation></semantics></math>,
+so has infinitely many non-descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>∩</mo><msup><mi>d</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><msup><mi>C</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">S\cap d^{-1}(C&#39;)</annotation></semantics></math>.
+This contradicts IAP. Uniqueness follows because distinct components are
+disjoint and an infinite set cannot be contained modulo finite in
+both.</p>
+<p><strong>Parts (c) and (d).</strong> Continued occupancy gives
+infinitely many organisms in each component. Thus (b), applied to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>,
+gives (c). If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is strongly connected, the saturation argument actually gives cofinite
+descendants for every organism, including those before
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.</p>
+<p>For a component tail, saturation proves cofinite descendants, IAP and
+reflection. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">u,w</annotation></semantics></math>
+lie in the tail and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>≺</mo><mi>v</mi><mo>≺</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">u\prec v\prec w</annotation></semantics></math>,
+generation increases and the projected component path cannot leave
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+and return to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+without placing the intermediate deme in that same component. Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+lies in the tail, proving convexity. For connectivity, two organisms in
+the tail have a sufficiently late common descendant in it. Convexity
+keeps both directed paths inside the tail; reversing one gives an
+undirected path between the organisms. Continued occupancy proves
+infinitude. This completes the proof.</p>
+<h2 id="a-stochastic-interpretation-with-feedback">4. A stochastic
+interpretation with feedback</h2>
+<p>This section is a written corollary using a standard probability
+theorem. It must not be described as Lean checked unless the probability
+adapter has a separate receipt.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="script">ℱ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mathcal F_n</annotation></semantics></math>
+contain the history before reproduction from generation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A_n(a,b)</annotation></semantics></math>
+be the event that at least one actual parenthood edge of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\to b</annotation></semantics></math>
+occurs, and set
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Pr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><msub><mi mathvariant="script">ℱ</mi><mi>n</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+q_n(a,b)=\Pr(A_n(a,b)\mid\mathcal F_n).
+</annotation></semantics></math> The
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">q_n</annotation></semantics></math>
+may depend on inherited traits, regulatory states, learned preferences
+and prior history. No independence of reproductive events is assumed.
+Assume the structural conditions of Theorem 1 hold almost surely.</p>
+<p><strong>Corollary 2.</strong> Almost surely, Theorem 1 holds with the
+graph
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mo>⇔</mo><mspace width="1.0em"></mspace><mi>a</mi><mo>≠</mo><mi>b</mi><mspace width="0.222em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mspace width="0.222em"></mspace><munder><mo>∑</mo><mi>n</mi></munder><msub><mi>q</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">
+Q(a,b)\quad\Longleftrightarrow\quad
+a\neq b\ \text{ and }\ \sum_n q_n(a,b)=\infty
+</annotation></semantics></math> in place of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> The conditional Borel–Cantelli theorem [5]
+identifies infinitely many occurrences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A_n(a,b)</annotation></semantics></math>
+with divergence of the corresponding conditional-probability sum, up to
+a null set. There are finitely many deme pairs. Outside the union of
+their null sets and the structural-model null set,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">Q=R</annotation></semantics></math>
+and the deterministic theorem applies. Its statement is then pathwise
+for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>;
+no uncountable intersection over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is taken.</p>
+<p>For two demes, divergence in both directions implies whole-population
+IAP under these assumptions. Divergence in only one direction need not.
+If all cross-deme sums are finite, only finitely many cross-deme events
+occur and sufficiently late deme tails separate.</p>
+<p>A positive probability at every time is not enough:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>n</mi></msub><mo>=</mo><msup><mn>2</mn><mrow><mi>−</mi><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">q_n=2^{-n-2}</annotation></semantics></math>
+is summable. A probability tending to zero need not be enough for
+separation:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">q_n=1/(n+2)</annotation></semantics></math>
+has a divergent sum. These are conditional probabilities of actual
+parenthood, not uncalibrated gene-frequency migration parameters.</p>
+<h2 id="why-the-assumptions-matter">5. Why the assumptions matter</h2>
+<p><strong>One-way reproduction.</strong> Place one organism in each of
+two demes per generation. Include both vertical chains and every edge
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>→</mo><msub><mi>B</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">A_n\to B_{n+1}</annotation></semantics></math>.
+Assumptions 1–5 hold with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">L=1</annotation></semantics></math>.
+Every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>n</mi></msub><annotation encoding="application/x-tex">B_n</annotation></semantics></math>
+has infinitely many descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+and infinitely many non-descendants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+so global IAP fails. The underlying undirected graph is connected, but
+the recurrent graph has two components.</p>
+<p><strong>Unmixed clans.</strong> Place two persistent clans in each of
+two demes. Preserve each clan’s vertical chain and allow reciprocal
+cross-deme edges only for clan zero. The recurrent deme graph is
+strongly connected. A clan-one individual nevertheless has infinitely
+many descendants only along its own chain and infinitely many
+non-descendants elsewhere. Assumption 5 fails. The contact graph cannot
+recover information that deme aggregation has discarded.</p>
+<p><strong>Finite observation.</strong> The recurring graph concerns
+arbitrarily late reproduction. A finite pedigree, genetic sample or
+observed mating frequency cannot establish the infinite-future premises
+without a model. This theorem is a model implication, not a finite-data
+species classifier.</p>
+<h2 id="cultural-persistence-with-neutral-mixing">6. Cultural
+persistence with neutral mixing</h2>
+<p>The following model is a separate boundary example, not an
+instantiation of the finite-pedigree assumptions above. It contains
+cultural frequency dynamics and neutral genetic exchange; it does not
+contain an epigenetic state or a complete reciprocal gene–culture
+feedback loop.</p>
+<p>Let
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><msup><mi>p</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>p</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+F(p)=3p^2-2p^3
+</annotation></semantics></math> be the probability that a majority of
+three independent cultural models have a trait when its frequency is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Define
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>m</mi><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><msup><mi>y</mi><mo>′</mo></msup><mo>=</mo><mi>m</mi><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+x&#39;=(1-m)F(x)+mF(y),\qquad
+y&#39;=mF(x)+(1-m)F(y).
+</annotation></semantics></math> The unit square is invariant. On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">y=1-x</annotation></semantics></math>,
+put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d=2x-1</annotation></semantics></math>;
+then
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>d</mi><mo>′</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>m</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mi>d</mi><mo>−</mo><msup><mi>d</mi><mn>3</mn></msup><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+d&#39;=(1-2m)(3d-d^3)/2.
+</annotation></semantics></math> A polarized fixed point has
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mn>6</mn><mi>m</mi></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mi>m</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>x</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>y</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+d^2=\frac{1-6m}{1-2m},\qquad x=(1+d)/2,\qquad y=(1-d)/2.
+</annotation></semantics></math></p>
+<p>At such a point the two Jacobian eigenvalues are
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>m</mi><mo>,</mo><mspace width="2.0em"></mspace><mfrac><mrow><mn>6</mn><mi>m</mi></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mi>m</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+6m,\qquad \frac{6m}{1-2m}.
+</annotation></semantics></math> Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>m</mi><mo>&lt;</mo><mn>1</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">0&lt;m&lt;1/8</annotation></semantics></math>
+gives strict contraction in both linearized modes;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><mn>1</mn><mi>/</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">m&lt;1/6</annotation></semantics></math>
+alone is insufficient for full two-dimensional stability. A direct local
+estimate supplies more than a linearized calculation. At either
+equilibrium coordinate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>6</mn><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn><mi>m</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A=6p(1-p)=6m/(1-2m)</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mi>r</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|e|\leq r\leq1</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>+</mo><mi>e</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>A</mi><mi>e</mi><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>−</mo><mn>6</mn><mi>p</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>e</mi><mn>3</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">|</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>+</mo><mi>e</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>+</mo><mn>5</mn><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo stretchy="false" form="prefix">|</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F(p+e)-F(p)=Ae+(3-6p)e^2-2e^3,
+\qquad |F(p+e)-F(p)|\leq(A+5r)|e|.
+</annotation></semantics></math> Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mn>3</mn><mo>−</mo><mn>6</mn><mi>p</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">|3-6p|\leq3</annotation></semantics></math>.
+Choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">r=(1-A)/10</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q=(1+A)/2&lt;1</annotation></semantics></math>.
+Nonnegative mixing weights sum to one, so the supremum-norm distance to
+the polarized equilibrium contracts by at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+throughout this radius. Induction keeps every iterate within the radius
+and bounds its distance by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>q</mi><mi>t</mi></msup><annotation encoding="application/x-tex">q^t</annotation></semantics></math>
+times the initial distance. Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mi>t</mi></msup><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q^t\to0</annotation></semantics></math>,
+this proves local attraction and Lyapunov stability in the full
+two-dimensional neighbourhood.</p>
+<p>For an exact rational example, take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>7</mn><mi>/</mi><mn>78</mn></mrow><annotation encoding="application/x-tex">m=7/78</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">d=3/4</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>7</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">x=7/8</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">y=1/8</annotation></semantics></math>.
+The fixed point is polarized and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>21</mn><mi>/</mi><mn>32</mn><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">A=21/32&lt;1</annotation></semantics></math>.</p>
+<p>To make exchange depend on the actual cultural difference, choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>g</mi><mo>≤</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">0&lt;g\leq1/2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k\geq0</annotation></semantics></math>
+and
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>t</mi></msub><mo>=</mo><mfrac><mi>g</mi><mrow><mn>1</mn><mo>+</mo><mi>k</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>t</mi></msub><mo>−</mo><msub><mi>y</mi><mi>t</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>u</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>ρ</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><msub><mi>u</mi><mi>t</mi></msub><mo>+</mo><msub><mi>ρ</mi><mi>t</mi></msub><msub><mi>v</mi><mi>t</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>v</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>ρ</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><msub><mi>v</mi><mi>t</mi></msub><mo>+</mo><msub><mi>ρ</mi><mi>t</mi></msub><msub><mi>u</mi><mi>t</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\rho_t=\frac{g}{1+k(x_t-y_t)^2},
+\qquad
+u_{t+1}=(1-\rho_t)u_t+\rho_t v_t,\qquad
+v_{t+1}=(1-\rho_t)v_t+\rho_t u_t.
+</annotation></semantics></math> The unit-square invariance ensures
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>:=</mo><mfrac><mi>g</mi><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow></mfrac><mo>≤</mo><msub><mi>ρ</mi><mi>t</mi></msub><mo>≤</mo><mi>g</mi><mo>≤</mo><mn>1</mn><mi>/</mi><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+0&lt;a:=\frac{g}{1+k}\leq\rho_t\leq g\leq1/2.
+</annotation></semantics></math> Subtracting the two genetic recursions
+gives
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>u</mi><mi>t</mi></msub><mo>−</mo><msub><mi>v</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>a</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup><mo stretchy="false" form="prefix">|</mo><msub><mi>u</mi><mn>0</mn></msub><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">|</mo><mo>→</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+|u_t-v_t|
+\leq(1-2a)^t |u_0-v_0|\longrightarrow0.
+</annotation></semantics></math> Thus cultural difference can suppress
+exchange while a positive residual exchange still homogenizes this
+neutral marker. At the rational polarized equilibrium, culture remains
+distinct forever.</p>
+<p>The coupling is one-way from culture to exchange. It is not a
+reciprocal gene–culture model and contains no epigenetic mechanism.
+Persistent cultural difference alone therefore does not imply zero
+exchange or separation of neutral allele frequencies. Whether a
+particular species concept permits gene flow is a further definitional
+question; this example does not classify real species.</p>
+<h2 id="remaining-questions-with-identifiable-sources">7. Remaining
+questions with identifiable sources</h2>
+<p>The current result addresses the last part of the user’s proposed
+chain: a specified reproduction process to an ancestry property. Three
+further questions would make that connection less restrictive.</p>
+<ol type="1">
+<li><strong>Allow local lineage extinction.</strong> Derive a
+replacement for local dissemination from a stated random reproduction
+rule, tracking successful lineage transmission rather than raw crossing
+counts. Compare with Chang and Rohde–Olson–Chang rather than presenting
+extinction-or-spread as a new general idea.</li>
+<li><strong>Finite-population epigenetic barriers.</strong> Planidin et
+al. propose studying finite populations [6]. Specify their finite life
+cycle and a neutral migrant-marker outcome before asking whether
+population size amplifies the barrier. A proof must compare matched
+models and cannot interchange fixation probability with finite-horizon
+transmission.</li>
+<li><strong>Nonvertical cultural learning.</strong> Fogarty et al. leave
+the effect dependent on the transmission scheme [7]. Specify who learns
+from whom and at what life-cycle stage, then characterize its equilibria
+or association. This is a source-proposed direction, not a precise
+pre-existing conjecture already solved here.</li>
+</ol>
+<p>The companion FOGARTY-GLOBAL-RATE.md proves a full-range equilibrium
+refinement and quantitative cultural fixation in Fogarty et al.’s
+affinity-bias model, permitting arbitrary admissible changes in the
+affinity parameters between generations. It is kept separate because it
+uses the published phenogenotype recursions rather than the pedigree
+model of Theorem 1. Both the recurrence-based convergence and an actual
+recursively defined evolution are Lean checked.</p>
+<h2 id="reproducibility-and-status">8. Reproducibility and status</h2>
+<p>The formal package uses Lean 4.33.1 and Mathlib commit
+0df444a360eaa60ab8c11dca51a86af692955474. Its declaration mapping, build
+commands and precise verification coverage are in CLAIM-LEDGER.md and
+the verification receipt. Do not infer that every paragraph in this
+manuscript is formalized from a successful module build.</p>
+<p>This research note and its proofs were developed with AI assistance,
+including parallel proof drafting and internal adversarial review. No
+independent external mathematical review or biological validation has
+yet been obtained. The intended next recipient is a reviewer who can
+assess statement faithfulness, interest and prior art. A proof
+assistant’s acceptance establishes the encoded implication, not those
+other claims.</p>
+<h2 id="references">References</h2>
+<ol type="1">
+<li>Samuel Allen Alexander. <em>Specieslike clusters based on identical
+ancestor points</em>. 2026. <a
+href="https://arxiv.org/html/2602.05274v1">arXiv:2602.05274v1</a>; <a
+href="https://doi.org/10.1007/s00285-026-02361-x">journal DOI</a>.</li>
+<li>Joseph T. Chang. <em>Recent common ancestors of all present-day
+individuals</em>. Advances in Applied Probability 31, 1002–1026 (1999).
+<a href="https://doi.org/10.1239/aap/1029955256">DOI</a>.</li>
+<li>Douglas L. T. Rohde, Steve Olson and Joseph T. Chang. <em>Modelling
+the recent common ancestry of all living humans</em>. Nature 431,
+562–566 (2004). <a
+href="https://doi.org/10.1038/nature02842">DOI</a>.</li>
+<li>Arnaud Casteigts, Paola Flocchini, Walter Quattrociocchi and Nicola
+Santoro. <em>Time-Varying Graphs and Dynamic Networks</em>. <a
+href="https://arnaudcasteigts.net/files/CFQS11.pdf">Author
+manuscript</a>.</li>
+<li>Conditional Borel–Cantelli theorem. <a
+href="https://www.stat.berkeley.edu/~aldous/205A/sinho_chewi_notes.pdf">Berkeley
+STAT205A notes, Lemma 21.2</a>; <a
+href="https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Martingale/BorelCantelli.html">Mathlib
+declaration and source</a>.</li>
+<li>Planidin et al. <em>Adaptive epigenetic divergence can facilitate
+ecological speciation</em>. Proceedings of the Royal Society B 292,
+20251217 (2025). <a
+href="https://doi.org/10.1098/rspb.2025.1217">DOI</a>.</li>
+<li>Laurel Fogarty, Stephen Zhang and Marcus W. Feldman.
+<em>Gene-culture association and coevolution</em>. Theoretical
+Population Biology 165, 62–71 (2025). <a
+href="https://doi.org/10.1016/j.tpb.2025.08.003">DOI</a>.</li>
+</ol>
+</body>
+</html>

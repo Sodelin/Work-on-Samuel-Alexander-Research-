@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "module": "WongIntervalCanonicalization",
+  "date_utc": "2026-09-25T14:48:00.727779+00:00",
+  "source": "WongIntervalCanonicalization.lean",
+  "validation_log": "validation.txt",
+  "toolchain": {
+    "lean": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "reproduction": "Run Check.ps1 with the pinned existing dependency caches; it writes only the isolated local cache. No downloads or installations are performed.",
+  "final_exit_code": 0,
+  "final_elapsed_seconds": 14.096,
+  "compiler_invocations_this_resumption": 3,
+  "batch_note": "Initial diagnostic failed at five local elaboration/API sites. A targeted correction passed; a final identical-theorem LF-source run captured this receipt. No theorem statement was weakened.",
+  "required_selected_endpoint_count": 31,
+  "actual_selected_endpoint_count": 31,
+  "selected_endpoints": [
+    "WongIntervalCanonicalization.join_contains",
+    "WongIntervalCanonicalization.mergeAdjacent_covers",
+    "WongIntervalCanonicalization.mergeAdjacent_lo",
+    "WongIntervalCanonicalization.mergeAdjacent_hi",
+    "WongIntervalCanonicalization.mergeAdjacent_separated",
+    "WongIntervalCanonicalization.mergeAdjacent_of_separated",
+    "WongIntervalCanonicalization.mergeAdjacent_idempotent",
+    "WongIntervalCanonicalization.separated_semantic_unique",
+    "WongIntervalCanonicalization.mergeAdjacent_semantic_unique",
+    "WongIntervalCanonicalization.separated_gap",
+    "WongIntervalCanonicalization.canonicalRegions_covers",
+    "WongIntervalCanonicalization.canonicalRegions_separated",
+    "WongIntervalCanonicalization.canonicalRegions_endpoints",
+    "WongIntervalCanonicalization.canonicalRegions_unique",
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers",
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at",
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical",
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal",
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints",
+    "WongIntervalCanonicalization.canonicalize_at",
+    "WongIntervalCanonicalization.canonicalize_breakpoints",
+    "WongIntervalCanonicalization.canonicalize_nonempty",
+    "WongIntervalCanonicalization.canonicalize_canonical",
+    "WongIntervalCanonicalization.canonicalize_maximal",
+    "WongIntervalCanonicalization.serialized_semantic_unique",
+    "WongIntervalCanonicalization.serialized_empty",
+    "WongIntervalCanonicalization.canonicalize_semantic_unique",
+    "WongIntervalCanonicalization.canonicalize_idempotent",
+    "WongIntervalCanonicalization.canonicalize_topology",
+    "WongIntervalCanonicalization.executable_touching_gap_example"
+  ],
+  "actual_axiom_reports": {
+    "WongIntervalCanonicalization.join_contains": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_covers": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_lo": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_hi": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_separated": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_of_separated": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_idempotent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.separated_semantic_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.mergeAdjacent_semantic_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.separated_gap": [
+      "propext"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalRegions_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.serializedRegions_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.CellPresentation.canonicalGARG_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_breakpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.serialized_semantic_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.serialized_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_semantic_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_idempotent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.canonicalize_topology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WongIntervalCanonicalization.executable_touching_gap_example": [
+      "propext"
+    ]
+  },
+  "allowed_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "no_placeholders": true,
+  "source_placeholder_scan": "No sorry, admit, or axiom token; no selected report uses sorryAx.",
+  "example_output": "[(0, 3), (5, 6)]",
+  "warnings": [
+    {
+      "kind": "linter.unusedSectionVars",
+      "endpoint": "WongIntervalCanonicalization.CellPresentation.serializedRegions_separated",
+      "detail": "Unused section-level Fintype Node instance; no proof failure."
+    }
+  ],
+  "source_reference": {
+    "doi": "10.1093/genetics/iyae100",
+    "section": "Appendix E",
+    "printed_pages": "14-15",
+    "relationship": "Canonical finite interval representation for the existing indexed-relation reconstruction argument; not a novelty claim."
+  },
+  "verified_contract": [
+    "Executable list merge preserves union membership.",
+    "Ordered disjoint proper half-open intervals become strictly separated.",
+    "Output lower and upper endpoints are reused from corresponding input endpoints.",
+    "Separated lists are fixed points; ordered-input normalization is idempotent.",
+    "Strictly separated list representations are uniquely determined by membership at every coordinate, without a density assumption.",
+    "Actual finite GARG output has exactly the supplied AtLocus relation, one nonempty record per active endpoint pair, and maximal separated annotations.",
+    "Canonicalization introduces no new graph breakpoints.",
+    "Equal sample sets and local edge relations yield equal canonical graphs; canonicalization is idempotent."
+  ],
+  "boundaries": [
+    "The executable component is the finite list merge; the arbitrary finite-set and GARG preparation is explicitly noncomputable.",
+    "No byte-level serializer, parser, tskit compatibility, or end-to-end executable GARG exporter is claimed.",
+    "Canonicalization uses full AtLocus relations. Reconstruction from sample traces needs a sample-support hypothesis to equal the entire original graph.",
+    "Empty topology-only annotations are omitted; output topology is the union of the original coordinate relations.",
+    "No recovery of omitted event metadata, inference from DNA, or solution of a new biological open problem is claimed."
+  ],
+  "encoding": "UTF-8, LF",
+  "sha256": {
+    "WongIntervalCanonicalization.lean": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411",
+    "README.md": "7adc8f2ca6a4988cebbbb540be3311c36009b296aa40fa6bc4b6a666d33f54ec",
+    "Check.ps1": "5d33ea741ff966c8aab19c984318f449d65a0e263de7e331f64a6c92cfea540a",
+    "selected-endpoints.json": "03d6ff9cd56fbbfa229a7260fd651ab7820e29e7ed8185a04a8161c6bb929363",
+    "validation.txt": "170ec5da0d7c93a9e44d4ceb4c5947abf6e4b65d8d6f365b7eb4354dd9a392f8",
+    "final-run.json": "8b0f7f238dafdb1e3dae03f0a89ccff40cf58f967dd57d3cde16fea733a634e8",
+    "CHECKPOINT.json": "3ef2b527150e1f7ce8660cfe7dd539fe6ec56cc1c4e77e36e57346eb32be642c"
+  }
+}

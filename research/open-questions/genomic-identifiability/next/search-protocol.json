@@ -1,0 +1,54 @@
+{
+  "mode": "Rapid evidence map",
+  "question": "Which genomic observations identify which species-related targets, under which assumptions, and what is a useful formal bridge to Alexander genealogical specieslike clusters?",
+  "date": "2026-09-25",
+  "domains": [
+    "mathematical phylogenetics",
+    "genomic species delimitation",
+    "pedigree identifiability"
+  ],
+  "observations": [
+    "finite marker sequences",
+    "finite genomes or loci",
+    "exact data laws",
+    "asymptotically long sequences"
+  ],
+  "targets": [
+    "assignment to named taxa",
+    "species delimitation",
+    "species tree topology",
+    "pedigree reconstruction",
+    "Alexander specieslike predicate"
+  ],
+  "sources": [
+    "direct research papers via arXiv, PMC, publisher, author repositories",
+    "PubMed bibliographic metadata"
+  ],
+  "exclusions": [
+    "clinical inference",
+    "general psychology formalization",
+    "claim of exhaustive worldwide priority search",
+    "treating coalescent taxa as proved biological species"
+  ],
+  "searches_root": [
+    {
+      "source": "web search",
+      "queries": [
+        "\"species delimitation\" \"identifiability\" genomic data multispecies coalescent",
+        "\"DNA barcoding\" biological identifications Hebert 2003 species boundaries",
+        "\"Species Delimitation and Inference of Species Trees\" identifiability sequence data 2024 2025"
+      ],
+      "limit": "ranked results; not exhaustive"
+    },
+    {
+      "source": "web search",
+      "queries": [
+        "\"Identifiability of speciation times under the multispecies coalescent\" authors 111927 pdf",
+        "\"Identifiability of speciation times\" arxiv",
+        "\"Identifiability\" \"species delimitation\" \"2025\" \"2026\""
+      ],
+      "limit": "ranked results; not exhaustive"
+    }
+  ],
+  "stopping_condition": "Enough primary evidence to distinguish known conditional results, concrete limitations and a bounded next formal theorem; no all-literature absence claim."
+}

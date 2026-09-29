@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "MATCH_EXCEPT_TIMESTAMP",
+  "all_results_match_except_recorded_utc": true,
+  "checker": "unchanged check_models.py",
+  "checker_sha256": "696a08f6882dcf6361b418e95add86347507e8d2b181d06835e8783db683456c",
+  "checker_exit_code": 0,
+  "frozen_finite_checks_sha256": "6f52b7eceb2a42b38ed35326de134ed3af2c18e02a129ed5196f92147dc1fa9c",
+  "disposable_replay_finite_checks_sha256": "b27c1af60098750ff45fe00c1858abf3a1d8146bee24db908f6a26f2af0544cb",
+  "comparison": "JSON objects equal after removing recorded_utc only",
+  "disposable_layout": "proposed public packet layout, including source-snapshots/",
+  "source_snapshot_sha256": {
+    "ExactAbstraction.lean": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e",
+    "MergeHistoryProjection.lean": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554",
+    "PUBLIC-VERIFICATION.json": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696"
+  },
+  "new_lean_invocations": 0,
+  "stdout_summary": "{\n  \"status\": \"PASS\",\n  \"commuting_checks\": {\n    \"cell\": 32,\n    \"decision_bounded_initial_histories\": 120\n  },\n  \"trajectory_cases\": 20460,\n  \"prefix_comparisons\": 95580,\n  \"partitions_tested\": 225,\n  \"minimum_blocks_base_all\": [\n    2,\n    4\n  ],\n  \"compatible_partition_counts\": {\n    \"base_actions\": 14,\n    \"all_actions\": 2\n  },\n  \"mutation_controls\": \"both rejected\",\n  \"pinned_sources_match_prior_receipt\": true,\n  \"new_lean_invocations\": 0\n}"
+}

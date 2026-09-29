@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "status": "HOSTED_ADMISSION_PASS",
+  "source_sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
+  "canonical_source": "real/WongWaitingTimes.lean",
+  "canonical_and_worker_source_byte_identical": true,
+  "selected_new_endpoints": 24,
+  "expected_audit_counts": {
+    "core": 405,
+    "real": 317,
+    "standalone": 234
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "artifacts": [
+    {
+      "path": "research/wong/completion/probability/holding-times/worker/WongWaitingTimes.lean",
+      "sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/worker/verification/WongWaitingTimes-receipt.json",
+      "sha256": "3b960969dca365928b07c0a324945e73541ece58420fb515731a7debbe5b2577"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/worker/verification/WongWaitingTimes-final.log",
+      "sha256": "585cac5b038a8671df521795c9074c3d90f9a4f28d348fcec8a0a074f88e1eee"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/INDEPENDENT-REVIEW.json",
+      "sha256": "2a76055e996849bab515bd04725ad366b3162880a0ba014779ab767e921764cc"
+    },
+    {
+      "path": "real/WongWaitingTimes.lean",
+      "sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0"
+    }
+  ],
+  "frozen_dependencies": [
+    {
+      "path": "real/WongBigARGDrift.lean",
+      "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43"
+    },
+    {
+      "path": "real/WongCountChain.lean",
+      "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae"
+    },
+    {
+      "path": "real/WongBigARGAbsorption.lean",
+      "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518"
+    }
+  ],
+  "verification_layers": {
+    "local_compiler": "PASS24 reported and hashes checked",
+    "independent_statement_review": "PASS_FOR_BOUNDED_TIMED_COUNT_HISTORY; internal agent review",
+    "hosted_integration": "PASS at exact proof_commit",
+    "external_peer_review": "not established",
+    "worldwide_priority": "not established"
+  },
+  "scope": "Product of actual stopped count-path law and independent exponential innovations; conditional waiting-path law, almost-sure finite physical absorption for n>=1 and positive time for n>=2",
+  "excludes": [
+    "Full real-time Markov-state process",
+    "Spatial ARG choices and count projection",
+    "Exact expected-event formulas and asymptotics",
+    "Uniform deterministic time bound",
+    "Full-paper completion"
+  ],
+  "historical_relative_paths": "Review and worker receipts retain original local workspace locators; frozen dependency mappings above identify the canonical public sources.",
+  "proof_commit": "a2644182b147eb40816abb278e00c3c6d4709eb8",
+  "hosted_admission": {
+    "run": 36173386580,
+    "job": 108198082988,
+    "conclusion": "success",
+    "counts": {
+      "core": 405,
+      "real": 317,
+      "standalone": 234
+    },
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "frozen_ancestry_packet_integrity": "PASS35"
+  }
+}

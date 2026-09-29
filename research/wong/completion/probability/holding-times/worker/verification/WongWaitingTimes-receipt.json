@@ -1,0 +1,243 @@
+{
+  "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "compilerExitCode": 0,
+  "logSha256": "585cac5b038a8671df521795c9074c3d90f9a4f28d348fcec8a0a074f88e1eee",
+  "timestampUtc": "2026-09-25T18:10:33.8367768Z",
+  "status": "PASS",
+  "objectSha256": "7ed238df7b68107979118cc3548f33950a1a59d0ae1a46c0406506bb9372e3a6",
+  "selectedEndpoints": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.unitClockLaw_probability"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.jointLaw_probability"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.joint_count_marginal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.joint_clock_marginal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.unit_clock_marginal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.count_clock_independent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.unit_clocks_independent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.measurable_firstHit"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.measurable_physicalAbsorptionTime"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.holdingLaw_probability"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.holdingLaw_survival_cylinder"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.joint_holding_observation"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.unitClocks_ae_all_positive"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.jointClocks_ae_all_positive"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.joint_ae_hitsOne"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.joint_ae_positive_counts"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.physicalAbsorptionTime_eq_ofReal_eventTime"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.count_ae_initial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.joint_ae_initial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.literal_rates_ae_finite_physical_absorption"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.literal_rates_ae_start_one_zero_time"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.literal_rates_ae_positive_physical_time"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.rate_three_at_two"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "WongWaitingTimes.split_mass_two_thirds"
+    }
+  ],
+  "sourceSha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0",
+  "dependencyMode": "Source authenticated official Mathlib cache and isolated frozen Wong dependencies",
+  "officialCacheRoots": [
+    {
+      "exitCode": 0,
+      "module": "Mathlib.Probability.Distributions.Exponential",
+      "alreadyDecompressed": 2751,
+      "downloaded": 94
+    },
+    {
+      "exitCode": 0,
+      "module": "Mathlib.Probability.CDF",
+      "alreadyDecompressed": 2549,
+      "downloaded": 0
+    }
+  ],
+  "maximumWorkers": 1,
+  "memoryLimitMb": 4096,
+  "selectedEndpointCount": 24,
+  "dependencies": [
+    {
+      "sourceSha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43",
+      "logSha256": "fa49c897e6df7bbbdaeb24d08dd38660c3217043bad5a253383af6b024152c61",
+      "module": "WongBigARGDrift",
+      "objectSha256": "3c6bef021dd4f7b9e1f0abbb8f7f9ec49b0202c82210eec34b470469c17d211f"
+    },
+    {
+      "sourceSha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae",
+      "logSha256": "5a66d3a622e35db9f58331b9f50bec5298b3a113b03028d9f0a5d68d55d12a82",
+      "module": "WongCountChain",
+      "objectSha256": "ddc2449033221c2264760180c663b8306a6fd1d5c3399d945105d4cb091fbdd2"
+    },
+    {
+      "sourceSha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518",
+      "logSha256": "905353033a7fb1bf729b96d90a604e3ee4559f7360133824b93bc7d289931d78",
+      "module": "WongBigARGAbsorption",
+      "objectSha256": "b53d6f550a322badb02a9a31338e497880da9f34a1778d97f52f0d823de8343a"
+    }
+  ],
+  "lean": "4.33.1",
+  "scope": "Timed stopped embedded count path only; no spatial ARG projection or full CTMC claim"
+}
