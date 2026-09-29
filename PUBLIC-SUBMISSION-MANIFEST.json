@@ -1,0 +1,364 @@
+{
+  "as_of": "2026-09-29",
+  "site": "https://vibemathed.com",
+  "frozen_public_checkpoint": "35a8f86b5f0e555eab25d003353c0c8772578db5",
+  "broader_author_questions_closed": 0,
+  "thue_update": {
+    "status": "published-comment-readback-confirmed",
+    "url": "https://vibemathed.com/problem/exact-thue-morse-matching-heights-in-an-avoiding-population"
+  },
+  "entries": [
+    {
+      "key": "finite-epigenetic",
+      "title": "Finite offspring sampling reverses a genetic-epigenetic barrier ordering",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/research/feedback-speciation/finite-epigenetic/FINITE-RESULT.md",
+      "requestedVerification": "lean-checked, statement unaudited",
+      "requestedResolution": "partial",
+      "fields": {
+        "submit-name": "Finite offspring sampling reverses a genetic-epigenetic barrier ordering",
+        "submit-shortName": "Finite-population barrier reversal",
+        "submit-solveType": "proved",
+        "submit-statement": "Planidin et al. (2025) study a deterministic model of adaptive epigenetic divergence and identify finite-population extensions as future work. In an explicitly specified finite offspring-sampling extension, can pure environmental induction yield a larger neutral-marker fixation barrier than the matched genetic model? The narrow target here fixes one diploid adult per deme, two demes, migration m=1/4, selection s=1/2, recombination r=1/2, matched secondary-contact initialization and a single preselection migrant-marker pulse. It is a project-formulated special case of that research direction, not a conjecture stated verbatim by the authors.",
+        "submit-solveDate": "2026-09-25",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/research/feedback-speciation/finite-epigenetic/FINITE-RESULT.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Lean 4.33.1 with pinned Mathlib. The combined packet records 34 selected declarations across four modules, including the finite comparison and separate deterministic/joint comparison; declaration totals include supporting lemmas. The finite probability certificate uses kernel-checked integer identities, without sorryAx, custom axioms or native_decide. The combined local receipt preserves recovered exit evidence, and the later hosted Verify run 36173386580 succeeded at the submitted commit a2644182b147eb40816abb278e00c3c6d4709eb8. Its standalone audit includes this packet. Only propext, Classical.choice and Quot.sound are allowed. Source/statement review was internal to the project. Independent human review and priority remain unestablished; requested status is Partial result and Lean-checked, statement unaudited.",
+        "submit-fieldGroup": "Probability & statistics",
+        "submit-field": "Mathematical biology; state, ancestry and observation models",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Project finite special case of Planidin et al., Adaptive epigenetic divergence can facilitate ecological speciation (2025), finite-population research direction.",
+        "submit-yearPosed": "2026",
+        "submit-resolutionMethod": "construction",
+        "submit-resultNote": "Finite sampling reverses the ordering in this matched model. Exact fixation probabilities are p_gen=323808055/4466354606 and p_epi=1/14. With RI=1-p/(1/8), RI_gen=937945083/2233177303 and RI_epi=3/7. Kernel-checked harmonic certificates identify the actual limits with error <=(99/100)^n; this is stronger than a numerical simulation. The matched deterministic genetic barrier exceeds 3/7 from generation four onward. This compares a finite-model limit with a deterministic finite-generation sequence, not an unproved ordering of both limits. The contribution is the exact comparison in the declared offspring-sampling model. Finite epigenetic models, normalized fixation and timing effects have prior literature. The phased-to-count reduction has rational checks and written review; Lean starts from the 81-state count model. No universal population-size law, observed species formation or full source-question closure is claimed."
+      },
+      "links": [
+        {
+          "label": "Source biology paper and finite-population direction",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12440623/",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Exact count-kernel Lean proof",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Finite fixation theorem",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/research/feedback-speciation/finite-epigenetic/FiniteFixation.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Matched deterministic/finite ranking theorem",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/research/feedback-speciation/finite-epigenetic/RankingReversal.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Successful hosted verification",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36173386580",
+          "kind": "other"
+        },
+        {
+          "label": "Prior-work and attribution boundaries",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/a2644182b147eb40816abb278e00c3c6d4709eb8/research/feedback-speciation/PRIOR-ART-UPDATE-2026-09-25.md",
+          "kind": "other"
+        },
+        {
+          "label": "Related open-questions agenda; a methodological connection",
+          "url": "https://doi.org/10.1098/rsos.261059",
+          "kind": "discussion"
+        }
+      ],
+      "queueReadback": {
+        "at": "2026-09-29T20:36:52.300Z",
+        "key": "finite-epigenetic",
+        "title": "Finite offspring sampling reverses a genetic-epigenetic barrier ordering",
+        "url": "https://vibemathed.com/queue",
+        "found": true,
+        "excerpt": "'s conjecture for the Liouville function\n\nNumber theory · Additive number theory · submitted 6 hours ago by nufrogcaca\n\nFinite offspring sampling reverses a genetic-epigenetic barrier ordering\n\nProbability & statistics · Mathematical biology; state, ancestry and observation models · submitted 2 minutes ago by ZestyDingo473\n\nIdentical genome-copy transmission histories with opposite organism-level IAP\n\nCombinatorics · Mathematical biology; state, ancestry and observati"
+      }
+    },
+    {
+      "key": "genome-ownership",
+      "title": "Identical genome-copy transmission histories with opposite organism-level IAP",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2/research/genome-pedigree/README.md",
+      "requestedVerification": "lean-checked, statement unaudited",
+      "requestedResolution": "partial",
+      "fields": {
+        "submit-name": "Identical genome-copy transmission histories with opposite organism-level IAP",
+        "submit-shortName": "Genome ownership and IAP",
+        "submit-solveType": "disproved",
+        "submit-statement": "In Alexander's specieslike-cluster framework, does a complete realized genome-copy transmission graph, together with any bounded prefix of organism ownership, determine the whole-population identical-ancestor property (IAP)? Consider the explicit class with four diploid organisms per generation, two distinct parents and two children per nonfounder/organism, witnessed parent-child edges and real generation birthdates. This inverse-observation question is a project-formulated follow-up; Alexander's source defines IAP and specieslike clusters but does not state this exact constrained question. Here IAP means that each organism has either finitely many descendants or finitely many non-descendants within the population.",
+        "submit-solveDate": "2026-09-27",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2/research/genome-pedigree/README.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Fresh Lean 4.33.1 build of 31 project modules and axiom audit of all 77 new public theorem declarations at proof-source commit 1ba951e4417c930e76ef0f5ace747c9ccb681338. Published evidence head is 4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2. Hosted Genome pedigree proofs run 36298049178 and Verify run 36298049071 both succeeded at that head. The 31 pinned source hashes were compared with the saved proof receipt on 29 September 2026 and all match; that comparison was not a new compiler run. No proof placeholders or nonstandard axioms; allowed axioms are propext, Classical.choice and Quot.sound. Internal mathematical/source reviews are not independent human review. The bounded prior-work search found no exact matching conjunction, but priority remains unestablished.",
+        "submit-fieldGroup": "Combinatorics",
+        "submit-field": "Mathematical biology; state, ancestry and observation models",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Project follow-up to S. A. Alexander, Specieslike clusters based on identical ancestor points (2026); the constrained inverse-observation question is formulated in this project.",
+        "submit-yearPosed": "2026",
+        "submit-resolutionMethod": "construction",
+        "submit-resultNote": "No: even complete realized copy-transmission data can miss decisive organism structure. For any finite N, two ownership schedules agree through N on one fixed eight-lane genomic history. Both pedigrees retain four diploid organisms per generation, two distinct parents per nonfounder, two children per organism, connectivity, real birthdates and exactly witnessed edges. One whole population satisfies IAP and is maximal specieslike; the other fails IAP after a permanent split. Thus no exact IAP decoder exists for this observation on the constructed family. This strengthens the example beyond an unconstrained missing-data argument. Finite truncations map to the Wong gARG structure, but edge preservation does not imply ancestry path lifting. This is deterministic ambiguity, not equal genotype likelihoods, positive probability of the infinite schedules or species classification. Prior pedigree ambiguity is credited; novelty concerns the precise conjunction, subject to external review."
+      },
+      "links": [
+        {
+          "label": "Alexander's IAP and specieslike-cluster definitions",
+          "url": "https://arxiv.org/html/2602.05274v1",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Constrained construction in Lean",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2/research/genome-pedigree/PairingCore.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Source-model bridges",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2/research/genome-pedigree/PairingBridge.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Hosted proof replay",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36298049178",
+          "kind": "other"
+        },
+        {
+          "label": "Prior-art and observation-model comparison",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2/research/genome-pedigree/PAIRING-PRIOR-ART.md",
+          "kind": "other"
+        },
+        {
+          "label": "Open questions about time and self-reference: related projection/adequacy agenda",
+          "url": "https://doi.org/10.1098/rsos.261059",
+          "kind": "discussion"
+        }
+      ],
+      "queueReadback": {
+        "at": "2026-09-29T20:39:43.018Z",
+        "key": "genome-ownership",
+        "title": "Identical genome-copy transmission histories with opposite organism-level IAP",
+        "url": "https://vibemathed.com/queue",
+        "found": true,
+        "excerpt": "& statistics · Mathematical biology; state, ancestry and observation models · submitted 5 minutes ago by ZestyDingo473\n\nIdentical genome-copy transmission histories with opposite organism-level IAP\n\nCombinatorics · Mathematical biology; state, ancestry and observation models · submitted 3 minutes ago by ZestyDingo473\n\nAn exact ownership-sampling criterion for delayed-split identical ancestry\n\nCombinatorics · Mathematical biology; state, ancestry and observation models · su"
+      }
+    },
+    {
+      "key": "ownership-sampling",
+      "title": "An exact ownership-sampling criterion for delayed-split identical ancestry",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/owner-observations/README.md",
+      "requestedVerification": "lean-checked, statement unaudited",
+      "requestedResolution": "partial",
+      "fields": {
+        "submit-name": "An exact ownership-sampling criterion for delayed-split identical ancestry",
+        "submit-shortName": "Ownership sampling and IAP",
+        "submit-solveType": "proved",
+        "submit-statement": "Within the checked mixing-versus-delayed-splitting diploid family, which static sets of co-ownership observation times determine whole-population IAP from the complete observation record? At time t the query asks whether copy lanes 0 and 3 belong to the same organism. This is a project follow-up to the same-genome/opposite-IAP construction, motivated by Alexander's ancestry definitions and the open biology agenda's model-adequacy questions.",
+        "submit-solveDate": "2026-09-27",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/owner-observations/README.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Local exact-clean-commit Lean 4.33.1 audit at c071d4b895b8fe979211b68ac30240f8833e707d: five project modules and 20 selected axiom reports, comprising 15 new observation endpoints and five reused construction endpoints. Evidence checkpoint is 35a8f86b5f0e555eab25d003353c0c8772578db5. The saved-evidence checker passed on 29 September 2026, confirming committed source hashes, compiler logs, 22 artifact hashes and the permitted standard axioms propext, Classical.choice and Quot.sound. This was receipt verification, not a new compiler run or a new hosted replay. Internal review and bounded prior-work comparison are recorded; independent human review and worldwide novelty are not claimed.",
+        "submit-fieldGroup": "Combinatorics",
+        "submit-field": "Mathematical biology; state, ancestry and observation models",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Project observation-recovery follow-up to the constrained diploid IAP construction (2026), using Alexander's specieslike-cluster framework.",
+        "submit-yearPosed": "2026",
+        "submit-resolutionMethod": "argument",
+        "submit-resultNote": "Within the mixing/delayed-split family, the complete co-ownership record determines IAP exactly when sampled odd generations are unbounded. Even observing the full ownership assignment at every even generation fails. The result separates informative timing from sheer observation volume. A positive query certifies splitting in this family; finitely many negative answers permit a later split. If a prior even bound B>=2 guarantees that any split occurs by B, a sampling set identifies IAP exactly when it contains an odd generation after B; one query at B+1 suffices. The infinite-record decoder is not a uniformly terminating algorithm. The sharp mask criterion is a model-specific deduction; pedigree ambiguity and finite/infinite monitoring distinctions have prior literature. Neither the observations nor this theorem establish the switch bound or biological applicability."
+      },
+      "links": [
+        {
+          "label": "Exact sampling criterion in Lean",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/real/PairingObservation.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Exact proof receipt",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/owner-observations/verification/RESULT.json",
+          "kind": "other"
+        },
+        {
+          "label": "Prior-work comparison",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/owner-observations/PRIOR-WORK.md",
+          "kind": "other"
+        },
+        {
+          "label": "Base constrained construction",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/4ab00a2932f3efdb7091c9a526af4bcd25cc8cd2/research/genome-pedigree/README.md",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Alexander specieslike-cluster source",
+          "url": "https://arxiv.org/html/2602.05274v1",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Related open-questions agenda; model adequacy",
+          "url": "https://doi.org/10.1098/rsos.261059",
+          "kind": "discussion"
+        }
+      ],
+      "queueReadback": {
+        "at": "2026-09-29T20:39:44.091Z",
+        "key": "ownership-sampling",
+        "title": "An exact ownership-sampling criterion for delayed-split identical ancestry",
+        "url": "https://vibemathed.com/queue",
+        "found": true,
+        "excerpt": "ombinatorics · Mathematical biology; state, ancestry and observation models · submitted 3 minutes ago by ZestyDingo473\n\nAn exact ownership-sampling criterion for delayed-split identical ancestry\n\nCombinatorics · Mathematical biology; state, ancestry and observation models · submitted 1 minute ago by ZestyDingo473\n\nExact sampled-family recovery from independent binary inheritance blocks\n\nProbability & statistics · Mathematical biology; state, ancestry and observation mod"
+      }
+    },
+    {
+      "key": "sampled-family-recovery",
+      "title": "Exact sampled-family recovery from independent binary inheritance blocks",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/pedigree-block/README.md",
+      "requestedVerification": "lean-checked, statement unaudited",
+      "requestedResolution": "partial",
+      "fields": {
+        "submit-name": "Exact sampled-family recovery from independent binary inheritance blocks",
+        "submit-shortName": "Exact family recovery probability",
+        "submit-solveType": "proved",
+        "submit-statement": "In a one-generation specialization motivated by Kim, Mossel, Ramnarayan and Turner's pedigree-reconstruction work, children belong to disjoint parental pairs, parental symbols at each block are all distinct, and every child copies either parent independently and fairly across children and blocks. Join sampled children when they share a symbol at any of B>=1 observed blocks, then take connected components. What is the exact probability that this observed graph recovers all sampled families, and is independence essential to the gain from additional blocks?",
+        "submit-solveDate": "2026-09-27",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/pedigree-block/README.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Lean 4.33.1 exact-clean-commit audit at ae0beee8d04e32c45f28d2f465b924d6816c82a5: seven project modules and 31 selected declarations covering graph recovery, probability, observed-output law and dependence counterexample. Saved evidence at checkpoint 35a8f86b5f0e555eab25d003353c0c8772578db5 passed its integrity verifier on 29 September 2026, including source/log hashes, 49 artifact hashes and all selected reports. Allowed axioms are propext, Classical.choice and Quot.sound. This is local compiler evidence plus a fresh integrity check, not a fresh hosted replay. The general finite proof is distinct from the supporting exact enumerations. The packet makes no worldwide novelty or first-formalization claim and does not claim a formal proof of the full source theorem.",
+        "submit-fieldGroup": "Probability & statistics",
+        "submit-field": "Mathematical biology; state, ancestry and observation models",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Project one-generation follow-up to Kim, Mossel, Ramnarayan and Turner, Efficient Reconstruction of Stochastic Pedigrees (arXiv:2005.03810).",
+        "submit-yearPosed": "2026",
+        "submit-resolutionMethod": "argument",
+        "submit-resultNote": "The exact success probability is $\\prod_i[1-(2^{m_i-1}-1)2^{-B(m_i-1)}]$. The proof connects actual observed-symbol components to a complete count of failure configurations: a family disconnects exactly when its inheritance vectors occupy one complementary pair, both present. For three siblings and two blocks, success is 13/16, versus 7/16 for the restricted all-three-sharing rule. Extra blocks cannot spoil recovery, but their probability benefit needs independence: repeating each child's choice across blocks preserves every block\\'s fair joint marginal while three-sibling success stays 1/4. This is an exact finite-sample guarantee with a dependence counterexample. It assumes distinct parental symbols, disjoint parental pairs, fair independent copying and exact observations. It does not prove full REC-GEN, statistical optimality, a Wong-law coupling or infinite specieslike recovery. Priority remains unestablished."
+      },
+      "links": [
+        {
+          "label": "Source pedigree reconstruction paper",
+          "url": "https://arxiv.org/abs/2005.03810",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Recovery and observed-output theorem",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/real/PedigreeBlockRecovery.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Independence counterexample",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/real/PedigreeBlockDependence.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Exact local proof receipt",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/pedigree-block/verification/RESULT.json",
+          "kind": "other"
+        },
+        {
+          "label": "Source correspondence and limits",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/35a8f86b5f0e555eab25d003353c0c8772578db5/research/pedigree-block/source/PRIOR-FORMALIZATION-CHECK.md",
+          "kind": "other"
+        },
+        {
+          "label": "Related calibration agenda; not the source of this exact theorem",
+          "url": "https://doi.org/10.1098/rsos.261059",
+          "kind": "discussion"
+        }
+      ],
+      "queueReadback": {
+        "at": "2026-09-29T20:39:45.146Z",
+        "key": "sampled-family-recovery",
+        "title": "Exact sampled-family recovery from independent binary inheritance blocks",
+        "url": "https://vibemathed.com/queue",
+        "found": true,
+        "excerpt": "Combinatorics · Mathematical biology; state, ancestry and observation models · submitted 1 minute ago by ZestyDingo473\n\nExact sampled-family recovery from independent binary inheritance blocks\n\nProbability & statistics · Mathematical biology; state, ancestry and observation models · submitted just now by ZestyDingo473\n\nWhat a review checks, and what each verification tier means, is on the methodology page. To add an entry, use submit.\n\nA community-curated record of ma"
+      }
+    },
+    {
+      "key": "merge-history",
+      "title": "Current player membership does not determine a predecessor-restoring split",
+      "status": "included-in-public-dossier-not-separately-submitted",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/da67b295530e175c8015a2151f30827ae2a5ad01/research/open-problems/time-self-reference/exact-abstraction/MERGE-HISTORY.md",
+      "requestedVerification": "lean-checked, statement unaudited",
+      "requestedResolution": "partial",
+      "fields": {
+        "submit-name": "Current player membership does not determine a predecessor-restoring split",
+        "submit-shortName": "Merge history is needed for splitting",
+        "submit-solveType": "disproved",
+        "submit-statement": "Abramsky et al., Open Questions about Time and Self-reference in Living Systems, section 6.4.3, ask how to model games whose actions merge or split the decision makers. For the precise predecessor-restoring operation motivated by the IPDm implementation, is the unordered partition of persistent sites into current players sufficient to determine the result of every admissible split of the same designated composite? This is one structural subproblem formulated by the project, not the complete changing-player game question.",
+        "submit-solveDate": "2026-09-25",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/da67b295530e175c8015a2151f30827ae2a5ad01/research/open-problems/time-self-reference/exact-abstraction/MERGE-HISTORY.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Lean 4.33.1: eight selected MergeHistoryProjection endpoints, plus eight reused ExactAbstraction endpoints in the original combined receipt. The later predictive-memory proof replay includes those same 16 historical endpoints among 108 reports over 37 project sources. Hosted run 36295740474 succeeded at the submitted source head da67b295530e175c8015a2151f30827ae2a5ad01; its Verify workflow also succeeded. Pinned source hashes match the saved receipt. Allowed axioms are propext, Classical.choice and Quot.sound; no sorryAx or custom axioms. The source-level IPDm operator test is separate evidence and is not certified by the Lean model. Project agent review is internal, not independent expert review. Requested status is a Partial result on the explicit structural subproblem, with statement fidelity and eligibility still open to external review.",
+        "submit-fieldGroup": "Theoretical computer science",
+        "submit-field": "Mathematical biology; state, ancestry and observation models",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Project specialization of Abramsky et al., Open Questions about Time and Self-reference in Living Systems, sec. 6.4.3 (2026), with predecessor-restoring IPDm operators.",
+        "submit-yearPosed": "2026",
+        "submit-resolutionMethod": "construction",
+        "submit-resultNote": "No. Two legal histories, merge(0,1) then merge({0,1},2), and merge(1,2) then merge(0,{1,2}), have the same unordered current partition {{0,1,2},{3}}. Splitting that same composite into its immediate predecessors yields different partitions. Lean proves legal histories, admissible splits, the fixed designated group and spectator, and no exact deterministic partition-only update even on admissible states. This identifies a concrete missing-state defect in the source-motivated operator model. A separate pinned IPDm operator test reproduces the collision with declared mocks. The quotient principle is established mathematics; no broad novelty is claimed. Full program refinement, stochastic reachability, controllers, payoffs and equilibrium theory remain open. The result is a structural partial advance, not closure of the authors' changing-player question."
+      },
+      "links": [
+        {
+          "label": "Published open-questions paper, section 6.4.3",
+          "url": "https://doi.org/10.1098/rsos.261059",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Accessible source-paper preprint",
+          "url": "https://arxiv.org/abs/2508.11423",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Admissible-split obstruction in Lean",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/da67b295530e175c8015a2151f30827ae2a5ad01/research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Pinned source implementation",
+          "url": "https://github.com/lksshw/IPDm/tree/eca9b122480b8c654081d6a844176417aefbbcae",
+          "kind": "other"
+        },
+        {
+          "label": "Successful proof replay including historical endpoints",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36295740474",
+          "kind": "other"
+        },
+        {
+          "label": "Source-to-result map and remaining questions",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/da67b295530e175c8015a2151f30827ae2a5ad01/research/open-problems/time-self-reference/PROOF-STRUCTURE.md",
+          "kind": "other"
+        }
+      ]
+    }
+  ]
+}
