@@ -1,0 +1,9 @@
+'GenericMortalRank.mortal_forward_closed' does not depend on any axioms
+'GenericMortalRank.mortal_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericMortalRank.chainLength_iff_survives' does not depend on any axioms
+'GenericMortalRank.height_decreases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericMortalRank.height_attained_and_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericMortalRank.height_least' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericMortalRank.survives_iff_le_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericMortalRank.live_or_finite_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericMortalRank.matching_state_dichotomy' depends on axioms: [propext, Classical.choice, Quot.sound]

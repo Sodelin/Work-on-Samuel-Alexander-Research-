@@ -1,0 +1,17 @@
+Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+'GenericUniversalAvoiders.binaryCover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.exists_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.no_countable_bounded_stretch_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GenericUniversalAvoiders.avoiding_no_countable_bounded_stretch_population_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GenericUniversalAvoiders.rootsEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.blowUp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.blowUp_language' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.no_countable_host_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.no_countable_population_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenericUniversalAvoiders.avoiding_no_countable_population_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
