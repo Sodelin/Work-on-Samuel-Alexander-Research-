@@ -81,7 +81,7 @@
         "title": "Finite offspring sampling reverses a genetic-epigenetic barrier ordering",
         "url": "https://vibemathed.com/queue",
         "found": true,
-        "excerpt": "'s conjecture for the Liouville function\n\nNumber theory · Additive number theory · submitted 6 hours ago by nufrogcaca\n\nFinite offspring sampling reverses a genetic-epigenetic barrier ordering\n\nProbability & statistics · Mathematical biology; state, ancestry and observation models · submitted 2 minutes ago by ZestyDingo473\n\nIdentical genome-copy transmission histories with opposite organism-level IAP\n\nCombinatorics · Mathematical biology; state, ancestry and observati"
+        "excerpt": "'s conjecture for the Liouville function\n\nNumber theory \u00c2\u00b7 Additive number theory \u00c2\u00b7 submitted 6 hours ago by nufrogcaca\n\nFinite offspring sampling reverses a genetic-epigenetic barrier ordering\n\nProbability & statistics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted 2 minutes ago by ZestyDingo473\n\nIdentical genome-copy transmission histories with opposite organism-level IAP\n\nCombinatorics \u00c2\u00b7 Mathematical biology; state, ancestry and observati"
       }
     },
     {
@@ -152,7 +152,7 @@
         "title": "Identical genome-copy transmission histories with opposite organism-level IAP",
         "url": "https://vibemathed.com/queue",
         "found": true,
-        "excerpt": "& statistics · Mathematical biology; state, ancestry and observation models · submitted 5 minutes ago by ZestyDingo473\n\nIdentical genome-copy transmission histories with opposite organism-level IAP\n\nCombinatorics · Mathematical biology; state, ancestry and observation models · submitted 3 minutes ago by ZestyDingo473\n\nAn exact ownership-sampling criterion for delayed-split identical ancestry\n\nCombinatorics · Mathematical biology; state, ancestry and observation models · su"
+        "excerpt": "& statistics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted 5 minutes ago by ZestyDingo473\n\nIdentical genome-copy transmission histories with opposite organism-level IAP\n\nCombinatorics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted 3 minutes ago by ZestyDingo473\n\nAn exact ownership-sampling criterion for delayed-split identical ancestry\n\nCombinatorics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 su"
       }
     },
     {
@@ -223,7 +223,7 @@
         "title": "An exact ownership-sampling criterion for delayed-split identical ancestry",
         "url": "https://vibemathed.com/queue",
         "found": true,
-        "excerpt": "ombinatorics · Mathematical biology; state, ancestry and observation models · submitted 3 minutes ago by ZestyDingo473\n\nAn exact ownership-sampling criterion for delayed-split identical ancestry\n\nCombinatorics · Mathematical biology; state, ancestry and observation models · submitted 1 minute ago by ZestyDingo473\n\nExact sampled-family recovery from independent binary inheritance blocks\n\nProbability & statistics · Mathematical biology; state, ancestry and observation mod"
+        "excerpt": "ombinatorics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted 3 minutes ago by ZestyDingo473\n\nAn exact ownership-sampling criterion for delayed-split identical ancestry\n\nCombinatorics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted 1 minute ago by ZestyDingo473\n\nExact sampled-family recovery from independent binary inheritance blocks\n\nProbability & statistics \u00c2\u00b7 Mathematical biology; state, ancestry and observation mod"
       }
     },
     {
@@ -294,7 +294,7 @@
         "title": "Exact sampled-family recovery from independent binary inheritance blocks",
         "url": "https://vibemathed.com/queue",
         "found": true,
-        "excerpt": "Combinatorics · Mathematical biology; state, ancestry and observation models · submitted 1 minute ago by ZestyDingo473\n\nExact sampled-family recovery from independent binary inheritance blocks\n\nProbability & statistics · Mathematical biology; state, ancestry and observation models · submitted just now by ZestyDingo473\n\nWhat a review checks, and what each verification tier means, is on the methodology page. To add an entry, use submit.\n\nA community-curated record of ma"
+        "excerpt": "Combinatorics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted 1 minute ago by ZestyDingo473\n\nExact sampled-family recovery from independent binary inheritance blocks\n\nProbability & statistics \u00c2\u00b7 Mathematical biology; state, ancestry and observation models \u00c2\u00b7 submitted just now by ZestyDingo473\n\nWhat a review checks, and what each verification tier means, is on the methodology page. To add an entry, use submit.\n\nA community-curated record of ma"
       }
     },
     {
@@ -359,6 +359,230 @@
           "kind": "other"
         }
       ]
+    },
+    {
+      "key": "universal-avoider",
+      "title": "No countable universal family of avoiding populations, even with exact parent counts",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/RESULTS.md",
+      "fields": {
+        "submit-name": "No countable universal family of avoiding populations, even with exact parent counts",
+        "submit-shortName": "Nonuniversality with exact parent counts",
+        "submit-solveType": "disproved",
+        "submit-statement": "Alexander (2013), Section 6, asks to what extent populations avoiding a sequence can be universal among all such populations, by analogy with universal-graph theory. Interpret embedding as an injective adjacency-preserving map. In the source population class (infinite, finitely many roots, finite children, real chronological birthdates with finite earlier sublevels, and an incoming parent of each label at every nonroot), can one host, or a countable host family, contain every population avoiding a fixed avoidable word? The result also asks whether the obstruction survives exactly one incoming parent of each label. The source does not prescribe a unique embedding category; this is the explicit ordinary-embedding interpretation.",
+        "submit-solveDate": "2026-09-29",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/RESULTS.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Lean 4.33.1 and pinned Mathlib 0df444a360eaa60ab8c11dca51a86af692955474. The September 29 owner manifest records fresh local checks of four new modules (42 selected endpoints) and three reused modules (21 earlier endpoints), with only propext, Classical.choice and Quot.sound. Publication intake verified every source/log hash and preserved all original logs and review documents. All four new sources are registered in the integrated hosted audit. These counts are proof coverage, not discoveries. Internal separate-agent scope reviews are not independent human expert review; no worldwide priority is claimed. The source pins below contain the exact checked bytes. Requested label: Lean-checked, statement unaudited. Integrated hosted Verify run 36631876391 passed at source commit 1592b89731d10fc49019ff22cf2f93c7bc799118.",
+        "submit-fieldGroup": "Combinatorics",
+        "submit-field": "Infinite labelled graphs; mathematical ancestry",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Samuel A. Alexander, Biologically Unavoidable Sequences (2013), Section 6, published p.12; ordinary injective-embedding interpretation.",
+        "submit-yearPosed": "2013",
+        "submit-resolutionMethod": "construction",
+        "submit-resultNote": "No. From any population avoiding s and any countable family of source-population hosts, construct an avoider with the same roots and exactly one incoming parent per label, admitting no injective map to any host with any finite global edge-stretch bound. Thus even adjacency embeddings fail. Parent selection preserves avoidance; terminal cloning preserves the selected infinite-word language exactly. The proof makes fibre sizes exceed enumerated finite host balls while preserving the actual population axioms. This strengthens the earlier complete-fibre obstruction by retaining exact parent counts. Separately, complete blow-ups preserve every corresponding least matching height, linking the obstruction to the rank question. Classical locally finite graph diagonalization is credited. Terminal vertices are permitted; fixed child caps, noninjective maps and arbitrarily unbounded stretch are outside the theorem. It answers the stated embedding interpretation, not every possible category.",
+        "submit-submitterNote": "This is distinct from the existing exact Thue-Morse height entry. The earlier scoped nonuniversality theorem was public on PR #6; September 29 adds exact-parent preservation and checked links to the rank invariant. The source asks the universality direction; the submission states its chosen category explicitly. The graph-growth method is classical, not claimed invented here. Please assess the population-specific answer and stronger constraint preservation. The supporting rank-transport result is included here and with the ordinal submission rather than represented as a separately posed historical question."
+      },
+      "links": [
+        {
+          "label": "Original universal-avoider question, section 6",
+          "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i1p31/pdf/",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Exact-parent construction and obstruction",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/embedding/TerminalCloneAvoiders.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Earlier generic complete-fibre obstruction",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/embedding/GenericUniversalAvoiders.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Exact matching-height transport",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Frozen owner proof manifest",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/verification-manifest.json",
+          "kind": "other"
+        },
+        {
+          "label": "Primary-source and prior-work map",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/literature/evidence-map.md",
+          "kind": "other"
+        },
+        {
+          "label": "Full result-family publication ledger",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/publication-2026-09-29/COVERAGE.md",
+          "kind": "other"
+        },
+        {
+          "label": "Successful integrated hosted proof audit",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36631876391",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "key": "ordinal-realization",
+      "title": "Ordinal certificates and exact pruning characterize sequence realization",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/RESULTS.md",
+      "fields": {
+        "submit-name": "Ordinal certificates and exact pruning characterize sequence realization",
+        "submit-shortName": "Ordinal certificates and realizing cores",
+        "submit-solveType": "proved",
+        "submit-statement": "Alexander (2013), Section 6, asks whether the infinite gendered populations realizing a possibly avoidable sequence can be characterized, particularly using ordinal numbers. For a target s, use reachable vertex/phase states (v,k), witnessed by a path spelling the first k letters, with successors consuming s(k). Can avoidance be characterized by a decreasing ordinal certificate, and can finite-branching realization be characterized exactly by iterative removal of states without continuing children? This addresses ordinal membership and exact matching continuation, not a requirement that different avoiders receive different transfinite ranks.",
+        "submit-solveDate": "2026-09-29",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/RESULTS.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Lean 4.33.1 and pinned Mathlib 0df444a360eaa60ab8c11dca51a86af692955474. The September 29 owner manifest records fresh local checks of four new modules (42 selected endpoints) and three reused modules (21 earlier endpoints), with only propext, Classical.choice and Quot.sound. Publication intake verified every source/log hash and preserved all original logs and review documents. All four new sources are registered in the integrated hosted audit. These counts are proof coverage, not discoveries. Internal separate-agent scope reviews are not independent human expert review; no worldwide priority is claimed. The source pins below contain the exact checked bytes. Requested label: Lean-checked, statement unaudited. Integrated hosted Verify run 36631876391 passed at source commit 1592b89731d10fc49019ff22cf2f93c7bc799118.",
+        "submit-fieldGroup": "Combinatorics",
+        "submit-field": "Infinite labelled graphs; mathematical ancestry",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Samuel A. Alexander, Biologically Unavoidable Sequences (2013), Section 6, published p.12; exact ordinal-membership and reachable-state interpretation.",
+        "submit-yearPosed": "2013",
+        "submit-resolutionMethod": "argument",
+        "submit-resultNote": "Avoidance is equivalent to a strictly decreasing ordinal certificate on the reachable states; arbitrary vertex/label types are allowed. Under finite per-label branching, natural certificates suffice. It also proves that states surviving every finite pruning round form the greatest successor fixed point and are exactly those with infinite continuations. A start realizes the full target iff its phase-zero state survives. Every other state has an attained finite maximum h, is removed at round h+1, and has a pointwise least natural certificate, even in populations realizing the target elsewhere. Complete finite-fibre blow-ups preserve corresponding least heights. Reachability prevents confusing an unrelated suffix with the original word. These are classical well-founded and finite-branching methods made exact in the source setting. This is not a deciding algorithm for arbitrary infinite inputs or a rank hierarchy separating avoiders; the artificial-root history tree is a different object.",
+        "submit-submitterNote": "The new part closes the realizing-state fixed-point and mixed-population finite-rank obligations; earlier certificate results remain credited to their existing public checkpoint. The ordinal technique and finite-branching compactness are established mathematics. This answers a precise interpretation of an actual source question; it does not claim every richer classification intended by the source. The older binary/natural-date history-root Lean result and written Schmidt-rank discussion are explicitly separated from these generic state proofs. Shared rank-transport material is supporting evidence, not a duplicate discovery count."
+      },
+      "links": [
+        {
+          "label": "Original ordinal-characterization question, section 6",
+          "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i1p31/pdf/",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Generic ordinal-certificate equivalence",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/ordinal/GenericOrdinalCertificate.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Exact surviving core and actual realization",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/formal/GenericPruning.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Least attained finite ranks in the complement",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/formal/GenericMortalRank.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "New statement/definition scope review",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/literature/new-proof-scope-review.md",
+          "kind": "other"
+        },
+        {
+          "label": "Frozen proof and log manifest",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/verification-manifest.json",
+          "kind": "other"
+        },
+        {
+          "label": "Exact height transport through complete blow-up",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Successful integrated hosted proof audit",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36631876391",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "key": "founder-window",
+      "title": "Maximal specieslike clusters with a fixed real founding window",
+      "status": "submitted-under-review",
+      "resultSource": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/notes/REAL-FOUNDER-WINDOW-THEOREM.md",
+      "fields": {
+        "submit-name": "Maximal specieslike clusters with a fixed real founding window",
+        "submit-shortName": "Maximal clusters with a real founder window",
+        "submit-solveType": "proved",
+        "submit-statement": "Alexander, Specieslike clusters based on identical ancestor points (2026), Section 6, asks for alternative constraints to common ancestry in maximal-cluster existence. Replace that condition by a fixed real founding duration: every internal founder of S is born no later than the earliest member birthdate plus Delta. On natural-number organism identifiers with real chronological birthdates, finite strict earlier sublevels and finite child sets, does every organism belong to a maximal connected, ancestry-convex, reflecting IAP set satisfying this same window, for each Delta>=0? Maximality is within the specified fixed-window class, not among unrestricted specieslike sets.",
+        "submit-solveDate": "2026-09-25",
+        "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/notes/REAL-FOUNDER-WINDOW-THEOREM.md",
+        "submit-sourceName": "Pinned public research note, Lean source and verification receipts",
+        "submit-aiContribution": "ai-discovered",
+        "submit-model": "OpenAI Codex (GPT-6 family)",
+        "submit-modelMaker": "OpenAI",
+        "submit-aiRole": "A human collaborator selected the research directions and requested source correspondence, explanations, proof checking and submission. Codex agents developed the concrete mathematical construction or deduction, Lean proofs and exposition. Other agents in the project reviewed the arguments and source correspondence. These are internal project checks, not independent human expert review. Model-led discovery of the submitted scoped result is claimed; independent human verification and worldwide priority are not claimed.",
+        "submit-verification": "lean-checked",
+        "submit-publication": "announcement",
+        "submit-verificationNote": "Lean 4.33.1 with pinned Mathlib. Eight modules contribute 50 selected endpoints for the real founder-window proof chain, with permitted axioms propext, Classical.choice and Quot.sound. The frozen founder packet and integrated real-library audit preserve source hashes, theorem names and proof evidence. Prior successful hosted research checkpoints include this theorem; the current integrated source pins retain it unchanged. The publication pass verifies provenance and registers the combined gate; a local receipt is not a new hosted run. The proof includes its seed, union and intersection obligations and preservation of literal real dates. Separate project-agent reviews are internal, not independent human expert endorsement. Requested status: Partial result, Lean-checked, statement unaudited. Integrated hosted Verify run 36631876391 passed at source commit 1592b89731d10fc49019ff22cf2f93c7bc799118.",
+        "submit-fieldGroup": "Combinatorics",
+        "submit-field": "Infinite labelled graphs; mathematical ancestry",
+        "submit-resolution": "partial",
+        "submit-posedBy": "Samuel A. Alexander, Specieslike clusters based on identical ancestor points (2026), Section 6; a proposed fixed-real-window replacement constraint.",
+        "submit-yearPosed": "2026",
+        "submit-resolutionMethod": "argument",
+        "submit-resultNote": "Yes. Every organism belongs to an inclusion-maximal member of the fixed-window class. The proof constructs an actual seed, proves reflection under appropriate intersections, proves IAP and the real window survive the required directed unions, and applies constrained maximal extension. Relabelling preserves original real birthdates, including ties, and the duration shared by every candidate and competitor. No finite-root premise is needed. This supplies a checked replacement-constraint theorem responding to the source direction, not merely a conditional result assuming the needed seed. The eight-module proof chain has 50 selected endpoints. It does not yield uniqueness, a partition, an effective classifier or empirical species validation. Maximality keeps connectivity, convexity, IAP, reflection and the same founding window. Biological plausibility, priority and whether the constraint matches the author's intended qualitative distinction remain for review.",
+        "submit-submitterNote": "This checked theorem was already in the public research branch and author handoff but did not have its own VibeMathed entry. It is submitted as a precise partial answer to the replacement-constraint direction. The whole class is fixed before maximality is asserted; unrestricted maximal specieslikeness is not claimed. Common-ancestor seeds are used in the proof, while the eventual competitors satisfy the stated window instead of a common-ancestor requirement. Source attribution, mathematical correctness, independent statement review and worldwide priority remain distinct."
+      },
+      "links": [
+        {
+          "label": "Source maximal-cluster question, section 6",
+          "url": "https://arxiv.org/html/2602.05274v1#S6",
+          "kind": "problem-record"
+        },
+        {
+          "label": "Actual original-graph maximal-window theorem",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/real/RealSpeciesTheorem.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Real window and union properties",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/real/RealFounderWindow.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Actual seed construction",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/real/SpeciesSeed.lean",
+          "kind": "lean-proof"
+        },
+        {
+          "label": "Frozen founder proof packet",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/verification/founder-window-packet.json",
+          "kind": "other"
+        },
+        {
+          "label": "Source/question provenance ledger",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/QUESTION-LEDGER.md",
+          "kind": "other"
+        },
+        {
+          "label": "Integrated publication coverage",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/1592b89731d10fc49019ff22cf2f93c7bc799118/research/publication-2026-09-29/COVERAGE.md",
+          "kind": "other"
+        },
+        {
+          "label": "Successful integrated hosted proof audit",
+          "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36631876391",
+          "kind": "other"
+        }
+      ]
     }
-  ]
+  ],
+  "main_integration_commit": "ed87525b7737f9fd5d2f5c753578702f280b3ed8",
+  "verified_proof_commit": "1592b89731d10fc49019ff22cf2f93c7bc799118",
+  "hosted_verification_runs": [
+    36631876391,
+    36631876394,
+    36631876393
+  ],
+  "broader_author_questions_closed_scope": "Royal Society time and self-reference agenda; separately listed Alexander answers retain their explicit scopes"
 }
