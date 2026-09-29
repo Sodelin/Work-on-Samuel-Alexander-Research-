@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FINITE_SANITY_CHECK_ONLY",
+  "exhaustiveFamilies": 11111,
+  "additionalBoundaryCases": 6,
+  "totalFamilies": 11117,
+  "slotMembershipComparisons": 310264,
+  "genome": "[0,8)",
+  "enumeration": "All ordered lists of at most four intervals from the ten proper intervals on {0,2,4,6,8}; repeated intervals retain distinct slot identities.",
+  "canary": "Testing only left endpoints misses the gap in [0,2), [6,8).",
+  "scope": "Independent endpoint/cell and membership sanity checks. Not Lean verification; not a check of the main repository.",
+  "execution": "Executed from the exact saved JavaScript source in functions.exec; Node CLI was not separately invoked.",
+  "leanStatus": "NOT_CHECKED",
+  "repositoryFilesModified": false
+}
+

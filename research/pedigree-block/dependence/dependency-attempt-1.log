@@ -1,0 +1,18 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockProbability.lean:168:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockProbability.lean:186:14: warning: `Set.compl_setOf` has been deprecated: Use `Set.compl_ofPred` instead
+'PedigreeBlock.badEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.bad_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.configLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.configPMF_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.bad_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.uniform_pi_event' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.config_bit_cylinder' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'PedigreeBlock.fair_bit_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.good_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.familyLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.family_event_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.families_good_probability' depends on axioms: [propext, Classical.choice, Quot.sound]

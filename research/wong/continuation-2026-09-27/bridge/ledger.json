@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "scope": "Owner projection, Alexander predicate transport, and identifiability extensions",
+  "starting_commit": "01db8c4cbb82000950ff7d3e7252b5438416c7c3",
+  "new_module": "real/WongPedigreeBridge.lean",
+  "verification_status": "PASS_LOCAL_EXACT_COMMIT",
+  "proof_commit": "1ac3dd9446e7264336f0764040ff47ad684099cb",
+  "verified_source_sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b",
+  "verification_receipt": "research/wong/continuation-2026-09-27/bridge/verification/RESULT.json",
+  "source_checks_utc_date": "2026-09-27",
+  "sources": [
+    {
+      "id": "WONG24",
+      "title": "A general and efficient representation of ancestral recombination graphs",
+      "url": "https://doi.org/10.1093/genetics/iyae100",
+      "locator": "Genome ARGs paragraphs 1/3/4/5; Figure 1; Appendix D paragraph 1; genomic nodes and interval-labelled inheritance",
+      "role": "Motivation for supplied ownership and possibly compressed pedigree paths"
+    },
+    {
+      "id": "SPEC26",
+      "title": "Specieslike clusters based on identical ancestor points",
+      "url": "https://arxiv.org/html/2602.05274v1",
+      "locator": "Definitions 1-4, 8-9; section 3.1 genetic/genealogical distinction; section 6",
+      "role": "Exact source definitions, not a source claim of the new projection theorem"
+    },
+    {
+      "id": "GRAVEL_STEEL15",
+      "title": "The existence and abundance of ghost ancestors in biparental populations",
+      "url": "https://www.math.canterbury.ac.nz/~m.steel/Non_UC/files/research/ghosts.pdf",
+      "doi": "10.1016/j.tpb.2015.02.002",
+      "locator": "Section 2 and Proposition 2.1, journal page 48",
+      "role": "Prior probabilistic work on genealogical ancestors without genetic contribution; not re-formalized"
+    },
+    {
+      "id": "THATTE13",
+      "title": "Reconstructing pedigrees: some identifiability questions for a recombination-mutation model",
+      "url": "https://arxiv.org/pdf/1008.0153",
+      "doi": "10.1007/s00285-011-0503-8",
+      "locator": "Proposition 4.6, Theorem 5.13, and section 6",
+      "role": "Prior model-dependent statistical identifiability; distinguishes distributional recovery from exact finite-data decoding"
+    }
+  ],
+  "claims": [
+    {
+      "id": "BRIDGE-SOUND",
+      "classification": "existing_checked_interface_reused",
+      "source_ids": [
+        "WONG24"
+      ],
+      "endpoints": [
+        "HistoryProjection.path_projects",
+        "WongGARG.GARG.locus_path_projects"
+      ],
+      "statement": "A supplied edge-sound owner map takes each genomic path to equality or pedigree ancestry.",
+      "assumptions": [
+        "owner map supplied independently",
+        "every represented edge is biologically sound for the chosen pedigree"
+      ],
+      "not_claimed": [
+        "owner map inferred from a bare gARG",
+        "converse ancestry",
+        "pedigree reconstruction"
+      ]
+    },
+    {
+      "id": "BRIDGE-FINITE",
+      "classification": "new_elementary_extension",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.finiteSupport_preimage_iff",
+        "WongPedigreeBridge.infiniteSupport_preimage_iff"
+      ],
+      "statement": "An onto map with finite fibres preserves and reflects finiteness of saturated sets.",
+      "assumptions": [
+        "surjective owner map",
+        "each owner fibre finite; no uniform bound required"
+      ]
+    },
+    {
+      "id": "BRIDGE-IAP-REF",
+      "classification": "new_conditional_extension_of_source_definitions",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.iap_iff",
+        "WongPedigreeBridge.reflection_iff"
+      ],
+      "statement": "IAP and REF agree between an organism candidate S and the saturated rich candidate owner^-1(S).",
+      "assumptions": [
+        "surjective owner map",
+        "finite fibres",
+        "strict ancestry equivalence for every pair of representatives with different owners"
+      ],
+      "not_claimed": [
+        "sampled finite ARGs satisfy these assumptions",
+        "equivalence for arbitrary nonsaturated rich sets",
+        "biological species classification"
+      ]
+    },
+    {
+      "id": "BRIDGE-CONVEX",
+      "classification": "new_conditional_extension",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.convex_pullback",
+        "WongPedigreeBridge.convex_iff"
+      ],
+      "statement": "Convexity pulls back under sound paths; it is equivalent under surjectivity, target acyclicity, and ancestry equivalence away from fibres.",
+      "assumptions": [
+        "soundness for pullback",
+        "surjectivity, target acyclicity and ancestry reflection for descent"
+      ]
+    },
+    {
+      "id": "BRIDGE-CLUSTERS",
+      "classification": "new_conditional_extension",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.specieslike_descends",
+        "WongPedigreeBridge.specieslike_iff"
+      ],
+      "statement": "Specieslike status descends, and becomes equivalent on saturated sets if each owner fibre is weakly connected internally.",
+      "assumptions": [
+        "IAP transfer assumptions",
+        "target acyclicity",
+        "connected owner fibres for reverse direction"
+      ]
+    },
+    {
+      "id": "BRIDGE-MAXIMAL",
+      "classification": "new_conditional_extension",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.maximal_saturated_iff",
+        "WongPedigreeBridge.maximalSpecieslike_descends"
+      ],
+      "statement": "Pedigree maximality is equivalent to maximality among saturated rich candidates; unrestricted rich maximality of a saturated set descends.",
+      "assumptions": [
+        "specieslike equivalence assumptions",
+        "all comparison sets included in the explicitly stated candidate family"
+      ],
+      "not_claimed": [
+        "target maximality implies unrestricted rich maximality"
+      ]
+    },
+    {
+      "id": "BRIDGE-CA",
+      "classification": "new_conditional_extension",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.commonAncestor_descends"
+      ],
+      "statement": "A common ancestor in a saturated rich candidate projects to a pedigree common ancestor.",
+      "assumptions": [
+        "surjective owner map",
+        "sound paths"
+      ],
+      "not_claimed": [
+        "converse without a within-fibre ancestor condition"
+      ]
+    },
+    {
+      "id": "BRIDGE-ROBUST-IAP",
+      "classification": "new_elementary_extension",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.iap_iff_of_finite_ancestry_errors"
+      ],
+      "statement": "IAP is unchanged when every source member has only finitely many discrepant descendant answers inside the candidate.",
+      "assumptions": [
+        "row-wise finite symmetric differences of ancestry-path predicates"
+      ],
+      "not_claimed": [
+        "finitely many changed edges suffice",
+        "these error bounds hold in empirical ARG inference"
+      ]
+    },
+    {
+      "id": "BRIDGE-INFINITE-COUNTEREXAMPLE",
+      "classification": "new_composition_of_existing_checked_countermodels",
+      "source_ids": [
+        "SPEC26"
+      ],
+      "endpoints": [
+        "WongPedigreeBridge.sound_projection_does_not_determine_iap"
+      ],
+      "reused_endpoints": [
+        "FiniteHistoryCompletion.fork_biosphere",
+        "FiniteHistoryCompletion.fork_not_iap",
+        "FiniteHistoryCompletion.join_specieslike"
+      ],
+      "statement": "The same infinite connected rich history and fixed identity owner map have two sound biosphere interpretations with opposite IAP.",
+      "assumptions": [
+        "abstract ancestry graphs with natural birthdates"
+      ],
+      "not_claimed": [
+        "same observation distribution in a specified diploid inheritance law"
+      ]
+    },
+    {
+      "id": "BRIDGE-OBSERVATION-FIBRES",
+      "classification": "new_composition_of_existing_checked_results",
+      "source_ids": [],
+      "endpoints": [
+        "WongPedigreeBridge.no_specieslike_recovery_from_garg_coarsening"
+      ],
+      "reused_endpoints": [
+        "ObservationPrediction.recoverable_iff_constant_on_fibres",
+        "ObservationPrediction.collision_obstructs_recovery",
+        "FiniteGenomeIdentifiability.opposite_compatible_completions"
+      ],
+      "statement": "No deterministic summary of finite gARG data permits an exact universal whole-specieslike decoder over the abstract completion class.",
+      "assumptions": [
+        "topology-compatible abstract completions as already defined in the repository"
+      ],
+      "not_claimed": [
+        "DNA likelihood non-identifiability",
+        "impossibility of probabilistic inference under demographic assumptions"
+      ]
+    },
+    {
+      "id": "PRIOR-GHOSTS",
+      "classification": "prior_work_checked_not_formalized_here",
+      "source_ids": [
+        "GRAVEL_STEEL15"
+      ],
+      "endpoints": [],
+      "statement": "A specified biparental/recombination law admits ancestors of all present organisms that leave no present genetic material."
+    },
+    {
+      "id": "PRIOR-STATISTICAL-IDENTIFIABILITY",
+      "classification": "prior_work_checked_not_formalized_here",
+      "source_ids": [
+        "THATTE13"
+      ],
+      "endpoints": [],
+      "statement": "Under explicit recombination/mutation models and parameter restrictions, dependence across sites identifies some pedigree invariants."
+    }
+  ],
+  "combined_verification": "research/wong/continuation-2026-09-27/verification/RESULT.json"
+}

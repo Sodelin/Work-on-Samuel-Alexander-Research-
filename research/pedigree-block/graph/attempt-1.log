@@ -1,0 +1,36 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockGraph.lean:26:23: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockGraph.lean:38:2: error: Type mismatch
+  Iff.symm (eq_complement_iff_no_agreement (x a) (x b))
+has type
+  (¬∃ j, x a j = x b j) ↔ x b = complement (x a)
+but is expected to have type
+  ¬(a ≠ b ∧ ∃ j, x a j = x b j) ↔ x b = complement (x a)
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockGraph.lean:37:19: warning: This simp argument is unused:
+  different
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Share, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockGraph.lean:37:29: warning: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Share, different]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Codex\2026-09-27\pedigree-block-recovery\real\PedigreeBlockGraph.lean:118:49: error: Application type mismatch: The argument
+  ih
+has type
+  x b = complement (x 0) → x b = x 0
+but is expected to have type
+  x b = x 0
+in the application
+  preserves b c ih
+'PedigreeBlock.not_share_iff_complement' depends on axioms: [sorryAx]
+'PedigreeBlock.not_connected_iff_bad' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'PedigreeBlock.reachable_of_restrict' does not depend on any axioms
+'PedigreeBlock.connected_of_restrict' does not depend on any axioms

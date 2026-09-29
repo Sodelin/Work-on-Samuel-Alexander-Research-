@@ -1,0 +1,16 @@
+{
+  "module": "PairingObservation",
+  "source": "real\\PairingObservation.lean",
+  "signature": {
+    "source_sha256": "360ad00fdb5be110a74cb5651df0fc5ff4e75d7930c5f6ee9da496a7777a424b",
+    "dependencies": {
+      "PairingCore": "f16b84adb305de3ca4dcb8418d5250f8e347abadef224363478a7933bf55c3c1"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 1,
+  "seconds": 4.017,
+  "log_sha256": "ccb4540e75aacbcbd9314e9252d693ca4efdbd1ca1aeb658f72716eb0886db67",
+  "object_sha256": null
+}

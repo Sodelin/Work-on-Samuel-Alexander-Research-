@@ -1,0 +1,34 @@
+{
+  "count": 20,
+  "new_count": 15,
+  "reused_count": 5,
+  "selected_declarations": [
+    "PairingObservation.query_coownership",
+    "PairingObservation.local_query",
+    "PairingObservation.query_formula",
+    "PairingObservation.query_mixing",
+    "PairingObservation.query_splitting",
+    "PairingObservation.observe_eq_iff",
+    "PairingObservation.split_observation_eq_iff",
+    "PairingObservation.identifies_iap_iff",
+    "PairingObservation.no_bounded_sampling_decoder",
+    "PairingObservation.observed_positive_not_iap",
+    "PairingObservation.even_owner_agreement",
+    "PairingObservation.even_owners_equal",
+    "PairingObservation.no_even_ownership_decoder",
+    "PairingObservation.bounded_identifies_iap_iff",
+    "PairingObservation.bounded_iap_iff_one_query",
+    "PairingCore.constrained_counterexample",
+    "PairingCore.mixing_iap",
+    "PairingCore.splitting_not_iap",
+    "PairingCore.edge_exact_image",
+    "PairingCore.owner_exactly_two"
+  ],
+  "modules": [
+    "SamuelAlexanderResearch.SpeciesBridge",
+    "SamuelAlexanderResearch.SpeciesGlobalIAP",
+    "PairingCore",
+    "PairingObservation",
+    "PairingObservationAudit"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source": "real/WongMarkedMeasurable.lean",
+  "source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+  "object_sha256": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05",
+  "compiler_log_sha256": "3a553e26d71632b9a308aff08eba8d2e4a3a07e09b9c872030b16b63abe84534",
+  "lean": "4.33.1",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "closure_modules": 17,
+  "compile_seconds": 29.585,
+  "scope": "Full actual raw-state, prefix, and stopped-record Borel measurability; actual pushforward probability measure. Adaptive conditional law and combined exact-commit audit are separate."
+}

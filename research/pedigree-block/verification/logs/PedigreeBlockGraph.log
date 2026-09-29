@@ -1,0 +1,4 @@
+'PedigreeBlock.not_share_iff_complement' depends on axioms: [propext, Quot.sound]
+'PedigreeBlock.not_connected_iff_bad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PedigreeBlock.reachable_of_restrict' does not depend on any axioms
+'PedigreeBlock.connected_of_restrict' does not depend on any axioms

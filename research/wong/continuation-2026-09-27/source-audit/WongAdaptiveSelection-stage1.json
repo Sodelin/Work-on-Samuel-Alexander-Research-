@@ -1,0 +1,16 @@
+{
+  "module": "WongAdaptiveSelection",
+  "source": "real\\WongAdaptiveSelection.lean",
+  "signature": {
+    "source_sha256": "53b18292ba303113e810e5784647a24edd57e3ba5ce1d33d8415bdaab3e70a4c",
+    "dependencies": {
+      "WongMarkedLaw": "b56c4111abdeb3e00e2e9f3bf2fd1b5ee2d75e01ed0b1f120c92484888050932"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 26.501,
+  "log_sha256": "29cbf83e15c9443bd8c8ad1ed996178708c00d1c6975a9799852700b09604356",
+  "object_sha256": "502b2e9443e11d590d93eee171628e5a75dd33bd0f0640d3bb5868c14aeb8c87"
+}

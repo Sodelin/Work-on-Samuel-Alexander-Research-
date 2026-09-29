@@ -1,0 +1,22 @@
+import PairingObservation
+
+#print axioms PairingObservation.query_coownership
+#print axioms PairingObservation.local_query
+#print axioms PairingObservation.query_formula
+#print axioms PairingObservation.query_mixing
+#print axioms PairingObservation.query_splitting
+#print axioms PairingObservation.observe_eq_iff
+#print axioms PairingObservation.split_observation_eq_iff
+#print axioms PairingObservation.identifies_iap_iff
+#print axioms PairingObservation.no_bounded_sampling_decoder
+#print axioms PairingObservation.observed_positive_not_iap
+#print axioms PairingObservation.even_owner_agreement
+#print axioms PairingObservation.even_owners_equal
+#print axioms PairingObservation.no_even_ownership_decoder
+#print axioms PairingObservation.bounded_identifies_iap_iff
+#print axioms PairingObservation.bounded_iap_iff_one_query
+#print axioms PairingCore.constrained_counterexample
+#print axioms PairingCore.mixing_iap
+#print axioms PairingCore.splitting_not_iap
+#print axioms PairingCore.edge_exact_image
+#print axioms PairingCore.owner_exactly_two

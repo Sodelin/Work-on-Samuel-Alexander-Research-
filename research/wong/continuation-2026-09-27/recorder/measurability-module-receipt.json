@@ -1,0 +1,16 @@
+{
+  "module": "WongMarkedMeasurable",
+  "source": "real\\WongMarkedMeasurable.lean",
+  "signature": {
+    "source_sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582",
+    "dependencies": {
+      "WongMarkedProcess": "144ae4fa562b5219b9c7906336f9f6e5318390a72777092fff6d9eb016e7a590"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 29.585,
+  "log_sha256": "3a553e26d71632b9a308aff08eba8d2e4a3a07e09b9c872030b16b63abe84534",
+  "object_sha256": "08d89785b479c75ee43603edab7b7242f8186280b4b9220280ba9ad95ff32c05"
+}

@@ -1,0 +1,16 @@
+{
+  "module": "WongPedigreeRobust",
+  "source": "real\\WongPedigreeRobust.lean",
+  "signature": {
+    "source_sha256": "a2ed87e4162f3e6f0c127805bfe9619e9ba8b3649aaeade3cc8b8ef554b16c30",
+    "dependencies": {
+      "WongPedigreeBridge": "3e73c46e15b2c237a0f8b93aa54bb4af3f141e320141a294ca36490259c6e0db"
+    },
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "exit_code": 0,
+  "seconds": 19.047,
+  "log_sha256": "eccc25f86878aef94365e1de6fd87a100c93eeda8629e33e3939057b422bfabd",
+  "object_sha256": "38f3eb8bbaf81f7ac785d2df399b5119c2ccc4f4492ba02a3630be94768f33f4"
+}

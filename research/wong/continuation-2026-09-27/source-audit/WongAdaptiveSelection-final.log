@@ -1,0 +1,36 @@
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongAdaptiveSelection.lean:91:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongAdaptiveSelection.lean:103:0: warning: Definition `WongAdaptiveSelection.coordinateSigma` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongAdaptiveSelection.lean:107:0: warning: Definition `WongAdaptiveSelection.pastSigma` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+C:\Users\Owner\Documents\Codex\2026-09-27\wong-alexander\real\WongAdaptiveSelection.lean:250:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'WongAdaptiveSelection.measurable_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.selector_cylinder_of_fibre_independence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WongAdaptiveSelection.selector_cylinder_of_past' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.measurable_past_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.past_independent_current' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.adaptive_mark_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.measurable_adaptive_mark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.law_mark_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.product_past_indepSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.product_adaptive_mark_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.measurable_recordPrefix_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.measurable_recorderFrontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.measurable_recorderFrontier_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WongAdaptiveSelection.recorder_mark_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]

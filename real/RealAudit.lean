@@ -1,3 +1,13 @@
+import WongDatedSupport
+import WongMarkedSupport
+import WongPedigreeRobust
+import WongMarkedRecorder
+import WongMarkedLaw
+import WongMarkedProcess
+import WongMarkedMeasurable
+import WongAdaptiveSelection
+import WongMarkedDated
+import WongPedigreeBridge
 import WongWaitingTimes
 import WongBigARGDrift
 import WongCountChain
@@ -390,3 +400,103 @@ import StatefulCAReal
 #print axioms WongWaitingTimes.literal_rates_ae_positive_physical_time
 #print axioms WongWaitingTimes.rate_three_at_two
 #print axioms WongWaitingTimes.split_mass_two_thirds
+
+/-! Marked ARG and pedigree continuation, 27 September 2026. -/
+#print axioms WongMarkedLaw.path_ae_legal
+#print axioms WongMarkedLaw.finiteChoiceLaw_singleton
+#print axioms WongMarkedLaw.cutLaw_probability
+#print axioms WongMarkedLaw.cutLaw_apply
+#print axioms WongMarkedLaw.unordered_pair_mass
+#print axioms WongMarkedLaw.markLaw_ae_valid
+#print axioms WongMarkedLaw.innovations_independent
+#print axioms WongMarkedLaw.innovations_ae_all_valid
+#print axioms WongMarkedLaw.timed_count_marginal
+#print axioms WongMarkedLaw.timed_count_independent_marks
+#print axioms WongMarkedLaw.law_ae_all_marks_valid
+#print axioms WongMarkedLaw.law_ae_legal
+#print axioms WongMarkedProcess.step_valid_count
+#print axioms WongMarkedProcess.recordPrefix_causal
+#print axioms WongMarkedProcess.prefix_valid_count
+#print axioms WongMarkedProcess.stoppedRecord_spec
+#print axioms WongMarkedProcess.law_ae_good
+#print axioms WongMarkedProcess.law_ae_stoppedRecord
+#print axioms WongMarkedProcess.law_ae_finite_physical_graph
+#print axioms WongMarkedProcess.recorded_count_time_projection
+#print axioms WongMarkedProcess.recordObservation_aemeasurable
+#print axioms WongMarkedMeasurable.stateCode_injective
+#print axioms WongMarkedMeasurable.eventListCode_injective
+#print axioms WongMarkedMeasurable.measurable_advance
+#print axioms WongMarkedMeasurable.measurable_step
+#print axioms WongMarkedMeasurable.measurable_recordPrefix_of_coordinates
+#print axioms WongMarkedMeasurable.measurable_stoppedRecord
+#print axioms WongMarkedMeasurable.stoppedRecordLaw_probability
+#print axioms WongAdaptiveSelection.measurable_selected
+#print axioms WongAdaptiveSelection.selector_cylinder_of_fibre_independence
+#print axioms WongAdaptiveSelection.selector_cylinder_of_past
+#print axioms WongAdaptiveSelection.measurable_past_coordinate
+#print axioms WongAdaptiveSelection.past_independent_current
+#print axioms WongAdaptiveSelection.adaptive_mark_cylinder
+#print axioms WongAdaptiveSelection.measurable_adaptive_mark
+#print axioms WongAdaptiveSelection.law_mark_marginal
+#print axioms WongAdaptiveSelection.product_past_indepSet
+#print axioms WongAdaptiveSelection.product_adaptive_mark_cylinder
+#print axioms WongAdaptiveSelection.measurable_recordPrefix_section
+#print axioms WongAdaptiveSelection.measurable_recorderFrontier
+#print axioms WongAdaptiveSelection.measurable_recorderFrontier_section
+#print axioms WongAdaptiveSelection.recorder_mark_cylinder
+#print axioms WongMarkedDated.historyCode_injective
+#print axioms WongMarkedDated.measurable_realize
+#print axioms WongMarkedDated.measurable_project
+#print axioms WongMarkedDated.historyLaw_probability
+#print axioms WongMarkedDated.history_count_time_projection
+#print axioms WongMarkedDated.realize_constant_tail
+#print axioms WongMarkedDated.realized_edge_chronology
+#print axioms WongMarkedDated.law_ae_realize_validDated
+#print axioms WongPedigreeBridge.finiteSupport_preimage_iff
+#print axioms WongPedigreeBridge.infiniteSupport_preimage_iff
+#print axioms WongPedigreeBridge.iap_iff
+#print axioms WongPedigreeBridge.reflection_iff
+#print axioms WongPedigreeBridge.commonAncestor_descends
+#print axioms WongPedigreeBridge.convex_pullback
+#print axioms WongPedigreeBridge.convex_iff
+#print axioms WongPedigreeBridge.specieslike_descends
+#print axioms WongPedigreeBridge.specieslike_iff
+#print axioms WongPedigreeBridge.maximal_saturated_iff
+#print axioms WongPedigreeBridge.maximalSpecieslike_descends
+#print axioms WongPedigreeBridge.iap_iff_of_finite_ancestry_errors
+#print axioms WongPedigreeBridge.sound_projection_does_not_determine_iap
+#print axioms WongPedigreeBridge.no_specieslike_recovery_from_garg_coarsening
+#print axioms WongMarkedRecorder.initial_valid
+#print axioms WongMarkedRecorder.advance_valid
+#print axioms WongMarkedRecorder.split_preserves_valid
+#print axioms WongMarkedRecorder.merge_preserves_valid
+#print axioms WongMarkedRecorder.split_frontier_count
+#print axioms WongMarkedRecorder.merge_frontier_count
+#print axioms WongMarkedRecorder.completed_frontier_exact_slot
+#print axioms WongMarkedRecorder.finite_prefix_valid
+#print axioms WongMarkedRecorder.trace_event_vertices
+#print axioms WongMarkedRecorder.recorded_prefix_toGARG
+#print axioms WongMarkedRecorder.projected_topology_iff
+#print axioms WongMarkedRecorder.projected_atLocus_iff
+#print axioms WongMarkedRecorder.projected_unique_parent_at
+#print axioms WongMarkedRecorder.projected_nonempty_annotations
+#print axioms WongMarkedRecorder.completedRecord_injective
+#print axioms WongMarkedRecorder.dated_prefix_chronology_bounded
+#print axioms WongMarkedRecorder.raw_records_injective
+#print axioms WongMarkedRecorder.rawEncodingEquiv
+#print axioms WongMarkedRecorder.reunion_valid
+#print axioms WongMarkedRecorder.reunion_counts
+#print axioms WongMarkedRecorder.reunion_shared_endpoints
+#print axioms WongMarkedRecorder.reunion_encoded_records
+#print axioms WongMarkedRecorder.reunion_raw_decode
+#print axioms WongMarkedRecorder.reunion_cut_retained
+#print axioms WongMarkedRecorder.reunion_local_cut_forgotten
+#print axioms WongMarkedRecorder.split_outside_inherited_interval
+#print axioms WongMarkedRecorder.merge_terminal_root
+#print axioms WongMarkedRecorder.selected_record_completed
+#print axioms WongPedigreeRobust.iap_iff_of_finite_projection_errors
+#print axioms WongMarkedSupport.rational_slot_pattern
+#print axioms WongMarkedSupport.coverage_iff_rational
+#print axioms WongMarkedSupport.measurableSet_valid
+#print axioms WongDatedSupport.measurable_validDated
+#print axioms WongDatedSupport.historyLaw_ae_validDated

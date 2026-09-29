@@ -1,0 +1,4 @@
+'PedigreeBlock.observedShare_iff' does not depend on any axioms
+'PedigreeBlock.observed_path_preserves_family' does not depend on any axioms
+'PedigreeBlock.family_path_iff' depends on axioms: [propext]
+'PedigreeBlock.recovered_iff_connected' depends on axioms: [propext]
