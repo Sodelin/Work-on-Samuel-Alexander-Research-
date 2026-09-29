@@ -1,5 +1,8 @@
 # Working on Samuel Alexander's research
 
+**29 September integration update:** see the [complete result-family ledger](research/publication-2026-09-29/COVERAGE.md), [full publication guide](PUBLICATION-GUIDE-2026-09-29.md), and [new checked embedding/pruning/rank package](research/open-questions/continuation-2026-09-29/RESULTS.md). The dated snapshots below preserve their original evidence and delivery state. The new generic realizing-state and mortal-rank results supersede earlier descriptions of those particular obligations as written-only.
+
+
 A public, AI-assisted mathematics notebook on labelled ancestry graphs, sequence avoidance, specieslike clusters, inheritance models, and related questions. The repository contains precise theorems, computations, proposed extensions, source comparisons, and verification records. They have different evidence levels.
 
 **Start here: [Complete plain-language mathematics report](MATH-RESEARCH-REPORT.md).** It explains what was proved, what remains open, and how the work relates to Alexander's source questions. For current status by topic, read [Ten solutions](TEN-SOLUTIONS.md) and [three-track research progress](RESEARCH-PROGRESS.md).

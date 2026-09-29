@@ -1,0 +1,301 @@
+# Universal avoiders and ordinal characterization: results and checked extensions
+
+29 September 2026. This report combines three parallel audits with new Lean
+proofs. Research mode: a bounded primary-source evidence map and mathematical
+development, not an exhaustive literature review or a priority claim.
+
+## Result
+
+Both questions have precise mathematical answers in the standard interpretations:
+
+1. **For an avoidable word, there is no universal avoiding population under
+   injective graph embeddings, and no countable universal family.** The negative
+   result survives fixing exactly one incoming parent of every label at every
+   nonroot. That restriction is a newly checked extension in this task.
+2. **Avoidance is exactly the existence of a decreasing ordinal certificate on
+   reachable vertex/phase states.** For Alexander populations a natural-valued
+   certificate suffices. The new proof characterizes realizing populations as
+   well: the states surviving all finite pruning rounds are precisely the states
+   with infinite continuations, and every remaining state has an exact finite
+   continuation rank.
+
+These statements answer an ordinary-embedding interpretation and an exact
+ordinal-membership interpretation. They do not establish a new structural
+taxonomy assigning different transfinite ranks to different avoiders.
+
+## Question, model and prior work
+
+The source is Samuel A. Alexander, *Biologically Unavoidable Sequences*,
+Electronic Journal of Combinatorics 20(1), P31 (2013),
+[Section 6, published page 12](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v20i1p31/pdf/).
+It asks about universal avoiding populations and ordinal characterizations of
+sequence realization. It specifies no embedding category or required rank
+spectrum. The cited [Cherlin–Shelah paper](https://sites.math.rutgers.edu/~cherlin/Paper/2007ForbiddenTree.pdf)
+uses ordinary subgraph embeddings for weak universality and induced embeddings
+for strong universality.
+
+An Alexander population is an infinite directed graph with functional edge
+labels and real birthdates. It has finitely many roots, finitely many children
+per vertex, finite birthdate sublevel sets, strictly increasing dates along
+edges, and a parent of each label at every nonroot. Matching paths may start at
+any vertex. Chronology ensures that a directed walk cannot repeat a vertex.
+
+Substantial answers were already present in the public, unmerged
+[research PR #6](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6).
+Live inspection found head `01db8c4cbb82000950ff7d3e7252b5438416c7c3`, while main
+was `3bbd85d64e253ff797542aa3fe620b0de2fac54c`. Main lacks the 29 relevant research
+files present on the branch. All nine earlier embedding/ordinal Lean source
+blobs are unchanged from the successful hosted checkpoint
+`8fd86430e78fed06fffe35df2fa85f28bdff48d9`. The
+[successful historical run](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36127053780)
+and current source continuity are separate evidence from the fresh compilations
+performed here. No hosted run was returned for the current PR head itself.
+
+The public source statements are the
+[embedding theorem](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/01db8c4cbb82000950ff7d3e7252b5438416c7c3/research/open-questions/embedding/UNIVERSAL-AVOIDER-NONEXISTENCE.md)
+and the
+[ordinal characterization](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/01db8c4cbb82000950ff7d3e7252b5438416c7c3/research/open-questions/ordinal/ORDINAL-CHARACTERIZATION.md).
+The earlier Thue–Morse catalog entry has a narrower scope; it does not describe
+all of this later work.
+
+## A. Nonuniversality with exact incoming parent counts
+
+**Theorem.** Let P be any Alexander population avoiding a fixed word s, and let
+(U_j) be any countable family of Alexander populations. There is an Alexander
+population Q such that:
+
+- Q avoids s;
+- its actual roots are canonically in bijection with those of P;
+- each nonroot has exactly one incoming parent of each label;
+- every infinite word realized by Q is realized by P;
+- Q has no injective map into any U_j that takes each edge to two vertices at
+  distance at most L, for any finite global bound L.
+
+The last condition ignores orientations and labels in the host, so the theorem
+also rules out directed, labelled, root-preserving and induced embeddings.
+Taking L=1 gives the usual adjacency embedding. Hosts need not avoid s.
+
+The main checked endpoint is
+`TerminalCloneAvoiders.avoiding_no_countable_exact_parent_family_from_any_population`
+in [TerminalCloneAvoiders.lean](embedding/TerminalCloneAvoiders.lean).
+The separate `selectedClone_rootsEquiv` endpoint gives the composed actual-root
+equivalence.
+
+### Construction and proof
+
+First select one existing parent of each label at every nonroot, deleting the
+other incoming edges. Vertices, dates and roots are unchanged. The finite-child
+condition survives deletion, and label coverage remains. This step can shrink
+the realized language, so it preserves avoidance of s.
+
+Next replace every vertex v by a positive finite set of copies F_v. Retain a
+canonical copy (v,0). For each retained edge v -> w, give every copy of w the
+same labelled incoming edge from (v,0). Only canonical copies have children.
+Consequently every copy has exactly the original incoming parent set for each
+label. The noncanonical copies are terminal individuals, which the original
+population axioms permit.
+
+Give all copies of v its original birthdate. All axioms are preserved: a birth
+sublevel and each child set become finite unions of finite sets, dates still
+increase along edges, and the canonical section preserves infinitude. Keeping
+root fibres singleton preserves the actual root set. Projection and the
+canonical section preserve the entire infinite-word language of the selected
+population. This exact language equality is a property of the cloning step;
+the preceding parent-selection step has only language inclusion relative to P.
+
+There is an infinite directed ray v_0 -> v_1 -> ... in the selected population.
+Enumerate all triples (j,u,L), consisting of a host, a possible image u of its
+initial canonical vertex, and a finite stretch bound. At the k-th ray position,
+choose its fibre larger than the finite host ball B_(U_j)(u,Lk). Every copy in
+that fibre is reachable from (v_0,0) by a path of k edges. An injective map with
+stretch L would put all those copies into that smaller finite ball, which is
+impossible. One choice of multiplicities handles the countably many triples.
+
+Before parent selection, the same terminal-clone construction also preserves
+an arbitrary original number of incoming parents, separately for every label,
+and preserves the complete original infinite-word language. The checked
+`incomingParentEquiv` proves a bijection of those incoming parent sets.
+
+This extension closes the earlier exact-parent-count limitation. It does not
+preserve a prescribed uniform bound on children. It also uses permission for
+terminal individuals and does not settle maps with arbitrarily unbounded edge
+stretch or noninjective maps.
+
+## B. Exact ordinal certificates and a characterization of realizers
+
+For a target s, let R_s consist of the reachable pairs (v,k): a finite path
+spelling the first k letters of s ends at v. All pairs (v,0) are included. The
+successor relation is
+```math
+ (v,k)\longrightarrow(w,k+1)\quad\Longleftrightarrow\quad
+ v\xrightarrow{s(k)}w.
+```
+An infinite chain beginning at any state in R_s combines with its reaching
+prefix to give a realization of the original s. This prefix concatenation is
+explicit in the reused Lean proof. Using all of V x N would be wrong: an
+unreachable phase can start an infinite matching tail without realizing s.
+
+The previously established generic theorem, freshly recompiled here, is
+```math
+ P\text{ avoids }s
+ \quad\Longleftrightarrow\quad
+ \exists r:R_s\to\mathrm{Ord},\quad x\to y\Rightarrow r(y)<r(x).
+```
+It does not require finite branching. With finitely many possible children for
+each vertex and fixed label, natural values suffice, and a least attained
+certificate exists. The source population's total finite-child axiom is
+stronger than this hypothesis.
+
+### New generic pruning theorem
+
+Set S_0=R_s and repeatedly remove states without a surviving child:
+```math
+ S_{n+1}=\{x\in S_n:\exists y\in S_n,
+ x\to y\},\qquad C=\bigcap_{n<\omega}S_n.
+```
+For arbitrary vertex and label types, under finite per-label branching:
+
+1. A state belongs to C exactly when it begins an infinite continuation.
+2. C is the greatest fixed point of the successor operator. Equivalently, it
+   is the largest set in which every state has a successor in the set.
+3. A vertex v begins an actual full s-realizing path exactly when (v,0) belongs
+   to C. Thus P realizes s iff at least one such initial state survives.
+4. Avoidance holds iff C is empty, equivalently iff every reachable state is
+   removed at some finite round.
+
+The proof of the key compactness step is finite: if none of a state's finitely
+many children survives every round, take the maximum of their failure rounds.
+Then the parent fails at the next round. Hence a state in C has a child in C,
+and classical choice builds an infinite continuation. Conversely any infinite
+continuation survives every finite round. An induction shows that every
+postfixed set is contained in every S_n, establishing greatestness.
+
+This is implemented in [GenericPruning.lean](formal/GenericPruning.lean).
+`start_core_iff_realizes_from` explicitly identifies a given starting vertex
+with an actual infinite labelled path, and
+`realizes_iff_surviving_start` gives the population-wide equivalence.
+`survives_successor_iff` checks that the implementation's successor formula
+equals the displayed deletion rule including retention in S_n.
+
+### New finite-rank decomposition, without global avoidance
+
+Let M=R_s\C. This region is closed under all forward successors: an edge to C
+would supply an infinite continuation from its parent. Each x in M has an
+attained finite maximum h(x) of continuation lengths. It satisfies
+```math
+ h(y)<h(x)\quad(x\to y),\qquad
+ x\in S_n\Longleftrightarrow n\le h(x).
+```
+In particular x disappears at round h(x)+1. This h is pointwise least among
+all decreasing natural certificates on M. The definition is well-founded
+recursion using the finite maximum of child ranks plus one; attainment and
+leastness are checked against actual finite chains.
+
+The result applies to mixed populations, where some states have infinite
+continuations and other states have finite maximum continuation lengths. It
+does not assume that the population as a whole avoids s.
+
+See [GenericMortalRank.lean](formal/GenericMortalRank.lean), especially
+`height_attained_and_bounds`, `height_least`, `survives_iff_le_height` and
+`matching_state_dichotomy`.
+
+These are classical finite-branching and well-founded-relation methods made
+precise in the existing interfaces. They do not provide an algorithm deciding
+the property from an arbitrary infinite graph description.
+
+### Keep the two pruning objects distinct
+
+The reachable-state construction has C=empty under avoidance. The older
+matching-history tree adds an artificial root above all possible starts. That
+root has infinitely many children, so the theorem for finitely branching
+states cannot be applied to it unchanged.
+
+For Alexander avoiders every fixed-start matching tree is finite, but finite
+matching lengths across all starts are unbounded. Every finite word occurs:
+choose a vertex beyond the finite root neighborhood of the required depth and
+trace the required labels backwards. Consequently the artificial history root
+has ordinary ordinal rank omega, survives to stage omega, and disappears at
+omega+1. The undirected history tree has Schmidt rank 1, because deleting its
+artificial root leaves finite components.
+
+Those rank values do not distinguish different avoiders. The historical Lean
+history-root calculation covers the binary natural-date population interface;
+its general source-model proof and Schmidt calculation were independently
+checked in writing here. This task's generic state theorems do not silently
+broaden the older history-tree Lean endpoints or formalize Schmidt rank.
+
+## C. A checked connection between the two questions
+
+The original **complete** finite-fibre enlargement replaces every edge by all
+edges between its two fibres. Unlike terminal cloning, every copy can continue
+along the original children. Under its projection pi, the following are exact:
+
+- reachability at every individual copy;
+- every finite matching continuation length;
+- pullback of natural certificates;
+- the least attained continuation height in an avoider.
+
+In particular,
+```math
+ h_Q((v,a),k)=h_P(v,k).
+```
+[BlowUpRankInvariance.lean](ordinal-audit/BlowUpRankInvariance.lean) proves this
+using the existing population, edge, state and rank definitions. The endpoint
+`avoider_has_exact_rank_transport` derives the requisite ranks directly from
+actual population avoidance; it does not assume an external height bound.
+
+This links the two questions: the finite-fibre constructions can defeat any
+specified countable collection of embedding hosts while leaving every
+projected continuation height unchanged. The heights alone, after forgetting
+fibre multiplicity and adjacency information, cannot capture that embedding
+obstruction. This is a limitation of the invariant, not a claim that full
+rank-labelled graphs are identical.
+
+## Verification, originality and delivery
+
+New proof files were checked with installed Lean 4.33.1 and cached Mathlib at
+revision `0df444a360eaa60ab8c11dca51a86af692955474`. Earlier generic certificate
+and embedding modules were frozen as local dependencies and recompiled.
+This is a fresh check of the listed modules using existing dependencies, not
+a fresh source rebuild of all Mathlib or the entire research repository.
+
+The four new modules contribute **42 audited endpoints**: 16 for terminal
+cloning and parent selection, 10 for the surviving core, 9 for finite ranks in
+its complement, and 7 for rank transport. Recompiling the three reused modules
+checks **21 earlier endpoints**, for **63 printed reports** in this pass.
+
+All final printed proof dependencies are subsets of `propext`,
+`Classical.choice`, and `Quot.sound`, or empty. There are no admitted proofs
+in the new sources. Exact source hashes and compiler logs accompany the files:
+
+| Artifact | Role | Evidence |
+|---|---|---|
+| `embedding/TerminalCloneAvoiders.lean` | Exact parent preservation, parent selection, root equivalence, countable-host obstruction | [Compilation receipt](embedding/TerminalCloneAvoiders.check.json) and [log](embedding/TerminalCloneAvoiders.compile.log) |
+| `formal/GenericPruning.lean` | Exact surviving core and actual starting-vertex realization | [Verification receipt](formal/verification.json) and [log](formal/GenericPruning.log) |
+| `formal/GenericMortalRank.lean` | Least attained finite ranks outside the live core | [Verification receipt](formal/verification.json) and [log](formal/GenericMortalRank.log) |
+| `ordinal-audit/BlowUpRankInvariance.lean` | Exact rank transport through complete finite-fibre enlargement | [Compilation receipt](ordinal-audit/BlowUpRankInvariance.check.json) and [log](ordinal-audit/BlowUpRankInvariance.log) |
+
+The independent audits are [embedding](embedding/audit.md),
+[ordinal](ordinal-audit/audit.md), and the
+[primary-source evidence map](literature/evidence-map.md), with a separate
+[review of the new state theorems](literature/new-proof-scope-review.md).
+They are separate AI reviews, not independent human expert endorsement.
+
+The classical precedents matter. [Lehner's full text](https://www.florian-lehner.net/pdf/universal-locally-finite.pdf)
+discusses locally finite graph nonuniversality and credits de Bruijn through
+Rado. [Bonato, Bruhn, Diestel and Spruessel](https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.081/Henning/raylesstwins.pdf)
+give the Schmidt rank definition. The present work does not claim those
+methods as new. This bounded search found no independently verified earlier
+statement of all the exact population-specific refinements, but that is not
+proof of priority.
+
+The main remaining mathematical categories are populations with a fixed child
+cap, embeddings allowing arbitrarily unbounded edge stretch, and genuinely
+structure-sensitive classifications of avoiders. Exact parent counts are now
+covered. A biologically motivated change from immediate-parent edges to
+ancestry through unobserved generations changes the embedding question and
+must be specified separately.
+
+All new work is local to this task folder. Existing research checkouts and the
+public branch were preserved. No new submission, message to an author, merge,
+or archival action was performed by this task.

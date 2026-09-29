@@ -1,0 +1,109 @@
+{
+  "created_utc": "2026-09-29T20:32:05.5421532Z",
+  "compiler": "Lean 4.33.1",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "new_endpoints": 42,
+  "rechecked_prior_endpoints": 21,
+  "total_printed_reports": 63,
+  "scope": "Fresh local checks of seven listed modules using installed pinned dependency artifacts; not a complete repository or Mathlib source rebuild.",
+  "source_checks": "No admitted proofs or new axiom declarations in listed sources; final compiler logs contain no errors or sorryAx.",
+  "proof_modules": [
+    {
+      "source": "formal/GenericCertificate.lean",
+      "sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581",
+      "log": "formal/GenericCertificate.log",
+      "log_sha256": "ed74539be133492a67828c5df546e48e1cc843ea3f1ba177a196ab8984141b97",
+      "status": "prior",
+      "printed_endpoints": 8,
+      "fresh_compile_exit_code": 0
+    },
+    {
+      "source": "formal/GenericOrdinalCertificate.lean",
+      "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510",
+      "log": "formal/GenericOrdinalCertificate.log",
+      "log_sha256": "e643123429bde40620ffb9a426e929cc25529fab6d66f364b957a40f16a7405a",
+      "status": "prior",
+      "printed_endpoints": 3,
+      "fresh_compile_exit_code": 0
+    },
+    {
+      "source": "embedding/GenericUniversalAvoiders.lean",
+      "sha256": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4",
+      "log": "embedding/GenericUniversalAvoiders.compile.log",
+      "log_sha256": "d9a6f6f15ceb70cc40c5989b73d9ac73df94226ab316d1f1461f3d214e639c20",
+      "status": "prior",
+      "printed_endpoints": 10,
+      "fresh_compile_exit_code": 0
+    },
+    {
+      "source": "formal/GenericPruning.lean",
+      "sha256": "46425ee10a089dd24529631c531b04f36ad1cdc7b72e4c8380c0afa62fe6fee4",
+      "log": "formal/GenericPruning.log",
+      "log_sha256": "153885fc1d833678149e29c1c565f7dcfd202e318da29c2226fab0f2ff37c3f0",
+      "status": "new",
+      "printed_endpoints": 10,
+      "fresh_compile_exit_code": 0
+    },
+    {
+      "source": "formal/GenericMortalRank.lean",
+      "sha256": "227b2cfcd452a5f75674ff0f835f9814818f70f3401dd440fa220a3f0c822f9b",
+      "log": "formal/GenericMortalRank.log",
+      "log_sha256": "ecb25587c8e0d27aa5c770947344603d00417d9a59c862bd5cb312423de5bfe6",
+      "status": "new",
+      "printed_endpoints": 9,
+      "fresh_compile_exit_code": 0
+    },
+    {
+      "source": "embedding/TerminalCloneAvoiders.lean",
+      "sha256": "f074f86ed6a678ba011175eb2d17be3a2d95d7ee69c2de2a7e5ddc7d8947a783",
+      "log": "embedding/TerminalCloneAvoiders.compile.log",
+      "log_sha256": "edc35142ffa0b9c0851b7c49c7ace18f58e630ce6f54bd955bec08129ea606a3",
+      "status": "new",
+      "printed_endpoints": 16,
+      "fresh_compile_exit_code": 0
+    },
+    {
+      "source": "ordinal-audit/BlowUpRankInvariance.lean",
+      "sha256": "82324d012e1572abb33255e8b30616faeae1b2033fe3da47173ada6f58024171",
+      "log": "ordinal-audit/BlowUpRankInvariance.log",
+      "log_sha256": "736df402ffc8ed6eb454ee0173a689f7993b8134bacb812e72f0dac696d6405e",
+      "status": "new",
+      "printed_endpoints": 7,
+      "fresh_compile_exit_code": 0
+    }
+  ],
+  "review_artifacts": [
+    {
+      "file": "README.md",
+      "sha256": "3635cef0d0af70ba23d42bac8c4e78f2fab03b73063a687857ef6830bcf1ca6b"
+    },
+    {
+      "file": "RESULTS.md",
+      "sha256": "1ac1aab46ad5caae8c082bd2437ac81eb7c055d26c2878709f21f8505054e89c"
+    },
+    {
+      "file": "embedding/audit.md",
+      "sha256": "9cfb46b663e359fb9806276106011a9078b94af8b53ff4082747f61ceb55a9b0"
+    },
+    {
+      "file": "ordinal-audit/audit.md",
+      "sha256": "b82549d8e2127b584043c8deb475b576b24e624d225b0a2e9ee1a7d3107cde1c"
+    },
+    {
+      "file": "literature/evidence-map.md",
+      "sha256": "510330abe9b87daa2c920661d8806e2e0536a5875b40a9f64833ff0ca3e2f8d2"
+    },
+    {
+      "file": "literature/search-log.md",
+      "sha256": "aab6638b23eb725ebe740f4a95b060307fec2703c82c07438b697cc63700df88"
+    },
+    {
+      "file": "literature/new-proof-scope-review.md",
+      "sha256": "bebe768a3c260ade95d0470e445098b1d8c35c59cc1b619ad83803bda7347fc4"
+    },
+    {
+      "file": "HANDOFF.md",
+      "sha256": "8a13e22cc73eac54f3ad995b2719924973bc869e991c23f4c35cacaedddff578"
+    }
+  ]
+}

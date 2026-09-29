@@ -1,5 +1,8 @@
 # Open questions and genomic identifiability
 
+**29 September integration update:** see the [complete result-family ledger](../../research/publication-2026-09-29/COVERAGE.md), [full publication guide](../../PUBLICATION-GUIDE-2026-09-29.md), and [new checked embedding/pruning/rank package](../../research/open-questions/continuation-2026-09-29/RESULTS.md). The dated snapshots below preserve their original evidence and delivery state. The new generic realizing-state and mortal-rank results supersede earlier descriptions of those particular obligations as written-only.
+
+
 This is the 25 September 2026 research notebook for three directions explicitly raised by Samuel Allen Alexander and a related genomic-identification question. **The principal theorem chains now have complete local Lean checks at the scopes below.** Written extensions, historical receipts, integrated library checks, and the current publication gate remain separately identified.
 
 For an accessible orientation, start with the [completion map](../../COMPLETION-MAP.md). This note records local completion before publication. The exact-commit hosted result is recorded in [PR #6 and its checks](https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/pull/6/checks). Earlier successful runs certify their own snapshots.

@@ -27,6 +27,11 @@ jobs:
         run: python3 checks/check_math_format.py
       - name: Check frozen ancestry packet integrity
         run: python3 research/feedback-speciation/pure-induction-ancestry-v2/verify_packet.py
+      - name: Check saved biology proof packet integrity
+        run: |
+          python3 research/owner-observations/verify_packet.py
+          python3 research/pedigree-block/verify_packet.py
+          python3 research/wong/continuation-2026-09-27/verify_evidence.py
       - name: Replay finite certificate example
         run: python3 checks/check_local_certificate.py
       - name: Check every neighborhood of the stateful CA rule

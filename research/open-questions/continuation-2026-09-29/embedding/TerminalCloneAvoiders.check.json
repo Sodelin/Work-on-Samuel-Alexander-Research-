@@ -1,0 +1,21 @@
+{
+  "source": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\embedding\\TerminalCloneAvoiders.lean",
+  "sha256": "F074F86ED6A678BA011175EB2D17BE3A2D95D7EE69C2DE2A7E5DDC7D8947A783",
+  "compiler": "C:\\Users\\Owner\\.elan\\toolchains\\leanprover--lean4---v4.33.1\\bin\\lean.exe",
+  "exitCode": 0,
+  "checkedAt": "2026-09-29T20:26:17.3729655Z",
+  "imports": [
+    "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\embedding",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean",
+    "C:\\Users\\Owner\\Documents\\Codex\\2026-09-24\\alexander-formalization\\real\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean"
+  ],
+  "log": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\embedding\\TerminalCloneAvoiders.compile.log"
+}

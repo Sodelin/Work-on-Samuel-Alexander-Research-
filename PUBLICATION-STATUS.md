@@ -1,5 +1,8 @@
 # Research follow-up publication status
 
+**29 September integration update:** see the [complete result-family ledger](research/publication-2026-09-29/COVERAGE.md), [full publication guide](PUBLICATION-GUIDE-2026-09-29.md), and [new checked embedding/pruning/rank package](research/open-questions/continuation-2026-09-29/RESULTS.md). The dated snapshots below preserve their original evidence and delivery state. The new generic realizing-state and mortal-rank results supersede earlier descriptions of those particular obligations as written-only.
+
+
 ## DNA-identification and delivery follow-up, 25 September 2026
 
 The [new evidence map](research/open-questions/genomic-identifiability/next/README.md) distinguishes DNA-based assignment, species delimitation, tree identification, pedigree identification and Alexander's specieslike target. It records positive and negative primary literature and a new formalization of finite-sample overlap and robust recovery for the prescribed three-taxon law. This is known conditional mathematics, not a theorem that DNA universally determines biological species.

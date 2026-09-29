@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-29T20:28:31.6429138Z",
+  "exit_code": 0,
+  "compiler": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "file": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\ordinal-audit\\BlowUpRankInvariance.lean",
+  "sha256": "82324D012E1572ABB33255E8B30616FAEAE1B2033FE3DA47173ADA6F58024171",
+  "printed_endpoints": [
+    {
+      "name": "BlowUpRankInvariance.reachable_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "BlowUpRankInvariance.chainLength_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "BlowUpRankInvariance.naturalCertificate_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "BlowUpRankInvariance.least_attained_certificate_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "BlowUpRankInvariance.finiteHeight_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "BlowUpRankInvariance.population_finiteLabelChildren",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "BlowUpRankInvariance.avoider_has_exact_rank_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "direct_dependencies": [
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\formal\\GenericCertificate.lean",
+      "sha256": "F3B1FBFB72D2E7E08B94FF88279432B809747321E0003EE687C04F6307ED5581"
+    },
+    {
+      "path": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\embedding\\GenericUniversalAvoiders.lean",
+      "sha256": "7C96183BD1CEA8A694B59A12DEF6EBEDB2B6F238044A6C6FB24610E49A37EAC4"
+    }
+  ],
+  "prohibited_axiom_found": false,
+  "source_has_admission": false,
+  "scope": "Actual finite-fibre blow-up preserves phase reachability, every finite reachable continuation length, pullback of natural certificates, leastness and attainment, and exact finiteHeight. Direct source-population endpoint derives rank existence from Population.children and actual avoidance.",
+  "limitations": [
+    "No historical novelty or independent human review claim.",
+    "No full repository rebuild or hosted CI run.",
+    "Live-core invariance and infinite-tail invariance are proved in writing from path lifting; this module exposes finite-chain and natural-rank endpoints."
+  ],
+  "source_checkout_modified": false,
+  "dependencies_downloaded": false
+}

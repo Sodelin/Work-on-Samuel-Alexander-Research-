@@ -1,0 +1,278 @@
+{
+  "date": "2026-09-29",
+  "scope": "Completed result families in the integrated project archives and the frozen September 29 handoff; ongoing next-problems lane pending",
+  "families": [
+    {
+      "id": "T01",
+      "title": "Exact all-start Thue-Morse heights",
+      "result": "Attained maximum, exact equality family and sharp coefficient 8/3; certified binary digit evaluator.",
+      "source": "notes/FULL-HEIGHT-PROOF.md",
+      "delivery": "Existing public VibeMathed entry",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T02",
+      "title": "Phase-dependent exact maxima",
+      "result": "Exact maximum algorithm for phase and start, with the stated phase assumptions and sharp coefficient results.",
+      "source": "notes/PHASE-HEIGHT-FORMALIZATION.md",
+      "delivery": "Posted in the Thue-Morse continuation",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T03",
+      "title": "Finite target edits and individual optimum",
+      "result": "Sharp universal allowance and attained individual optimal allowance via a finite search.",
+      "source": "notes/REFINEMENT-INDIVIDUAL-FINITE-EDIT.md",
+      "delivery": "Posted in the Thue-Morse continuation",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T04",
+      "title": "Fixed-source-gender cap threshold",
+      "result": "Cap two attained using a classical directed line graph; lower caps impossible under the stated requirements.",
+      "source": "notes/CAP-TWO-THRESHOLD.md",
+      "delivery": "Complete dossier; classical construction credited",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T05",
+      "title": "Minimum-crossing rigidity",
+      "result": "Minimum eventual width forces the specified kth power of a ray for every finite k.",
+      "source": "notes/GENERAL-RIGIDITY-THEOREM.md",
+      "delivery": "Complete dossier",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T06",
+      "title": "Finite port encoding and periodic schedules",
+      "result": "Exact fair encoding; eventual periodicity of the full schedule forces realization of every word.",
+      "source": "notes/PORT-ENCODING.md",
+      "delivery": "Complete dossier; standard finite-state methods credited",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T07",
+      "title": "Quantitative avoidance modulus and slow examples",
+      "result": "Explicit iterated-clock upper bound; aperiodicity alone admits arbitrarily slow finite avoidance.",
+      "source": "notes/QUANTITATIVE-MODULUS-THEOREM.md",
+      "delivery": "Complete dossier",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T08",
+      "title": "Productive pruning and maximality distinctions",
+      "result": "Full infinite-word language preservation and exact scope of inspecies/cluster consequences.",
+      "source": "notes/PRODUCTIVE-CORE-THEOREM.md",
+      "delivery": "Complete dossier",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T09",
+      "title": "Deletion-only boundary repair",
+      "result": "Finite parent-label deficiency characterizes repair on a fixed retained set; canonical edge/root optimality.",
+      "source": "notes/BOUNDARY-REPAIR-THEOREM.md",
+      "delivery": "Complete dossier",
+      "evidence": "Lean"
+    },
+    {
+      "id": "T10",
+      "title": "Stateful cellular automaton certificate separation",
+      "result": "Synthetic three-state example separates a static support bound from a no-horizontal-motion state potential.",
+      "source": "notes/STATEFUL-CA-REAL.md",
+      "delivery": "Complete dossier; synthetic-rule scope retained",
+      "evidence": "Lean"
+    },
+    {
+      "id": "A01",
+      "title": "Universal-avoider obstruction and exact parents",
+      "result": "One avoider defeats every prescribed countable host family, even with exactly one incoming parent per label and any finite global stretch bound.",
+      "source": "research/open-questions/continuation-2026-09-29/RESULTS.md",
+      "delivery": "New source-linked entry being prepared",
+      "evidence": "Lean"
+    },
+    {
+      "id": "A02",
+      "title": "Ordinal certificates, surviving core and finite ranks",
+      "result": "Avoidance certificate; exact realizing-state core; least attained finite ranks on its complement, without global avoidance.",
+      "source": "research/open-questions/continuation-2026-09-29/RESULTS.md",
+      "delivery": "New source-linked entry being prepared",
+      "evidence": "Lean"
+    },
+    {
+      "id": "A03",
+      "title": "Matching heights preserved through complete enlargement",
+      "result": "Exact rank transport through complete finite-fibre blow-ups; relates height information to the embedding obstruction.",
+      "source": "research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.lean",
+      "delivery": "Included with A01/A02, not lost as a supporting theorem",
+      "evidence": "Lean"
+    },
+    {
+      "id": "A04",
+      "title": "Maximal specieslike clusters with a real founder window",
+      "result": "Every organism belongs to a maximal member of the fixed nonnegative real-window class, with an actual seed and original real birthdates.",
+      "source": "notes/REAL-FOUNDER-WINDOW-THEOREM.md",
+      "delivery": "New source-linked partial-result entry being prepared",
+      "evidence": "Lean"
+    },
+    {
+      "id": "G01",
+      "title": "Finite gARG completion ambiguity",
+      "result": "The same finite ancestry graph extends to admissible infinite populations with opposite global IAP; old edges and paths are preserved.",
+      "source": "research/open-questions/genomic-identifiability/README.md",
+      "delivery": "Complete dossier; precursor to genome-ownership entry",
+      "evidence": "Lean"
+    },
+    {
+      "id": "G02",
+      "title": "Known three-taxon identification and finite evidence",
+      "result": "Exact-law identification, finite-support overlap and sharp robust-recovery boundary in the specified three-taxon model.",
+      "source": "research/open-questions/genomic-identifiability/next/README.md",
+      "delivery": "Complete dossier; known conditional theory credited",
+      "evidence": "Lean plus separately identified written tail bound"
+    },
+    {
+      "id": "G03",
+      "title": "Same genomic transmissions, opposite organism ancestry",
+      "result": "Constrained diploid ownership schedules agree for any prescribed finite prefix but disagree on whole-population IAP.",
+      "source": "research/genome-pedigree/README.md",
+      "delivery": "VibeMathed queue confirmed",
+      "evidence": "Lean"
+    },
+    {
+      "id": "G04",
+      "title": "Exact ownership-sampling mask",
+      "result": "Unbounded odd samples identify the complete-record target in the declared family; one late query suffices under a known switch bound.",
+      "source": "research/owner-observations/README.md",
+      "delivery": "VibeMathed queue confirmed",
+      "evidence": "Lean"
+    },
+    {
+      "id": "G05",
+      "title": "Observed sampled-family recovery and dependence",
+      "result": "Exact component-estimator probability; same block marginals without independence can destroy the extra-block gain.",
+      "source": "research/pedigree-block/README.md",
+      "delivery": "VibeMathed queue confirmed",
+      "evidence": "Lean"
+    },
+    {
+      "id": "B01",
+      "title": "Recurrent reproductive components and IAP",
+      "result": "Infinite subsets satisfy IAP exactly when contained modulo finite in one recurrent component, under explicit local dissemination assumptions.",
+      "source": "research/feedback-speciation/CLAIM-LEDGER.md",
+      "delivery": "Complete dossier for editorial assessment",
+      "evidence": "Lean; stochastic adapter separately written-only"
+    },
+    {
+      "id": "B02",
+      "title": "Stable culture with neutral-marker homogenization",
+      "result": "Full local stability of a polarized cultural equilibrium coexists with convergence of the coupled neutral frequencies.",
+      "source": "research/feedback-speciation/MANUSCRIPT.md",
+      "delivery": "Complete dossier for editorial assessment",
+      "evidence": "Lean at the stated supplied-point/rational-witness scope"
+    },
+    {
+      "id": "B03",
+      "title": "Source affinity-model global fixation rate",
+      "result": "Arbitrarily varying admissible copying probabilities obey the explicit geometric cultural-deficit bound under constant positive selection.",
+      "source": "research/feedback-speciation/FOGARTY-GLOBAL-RATE.md",
+      "delivery": "Complete dossier for editorial assessment; no author-designated conjecture claimed",
+      "evidence": "Lean"
+    },
+    {
+      "id": "B04",
+      "title": "Finite epigenetic/genetic barrier comparison",
+      "result": "Exact limiting marker-fixation certificates and matched deterministic comparison under the specified finite life cycle.",
+      "source": "research/feedback-speciation/finite-epigenetic/FINITE-RESULT.md",
+      "delivery": "VibeMathed queue confirmed",
+      "evidence": "Lean; phase-to-count interpretation separately rationally checked"
+    },
+    {
+      "id": "B05",
+      "title": "Finite joint parent/marker precursor",
+      "result": "Four exact finite statements retain parent identity; later B06 completes the stated R1-R6 connection.",
+      "source": "research/feedback-speciation/pure-induction-finite/README.md",
+      "delivery": "Preserved precursor with explicit supersession by B06",
+      "evidence": "Lean"
+    },
+    {
+      "id": "B06",
+      "title": "Positive marker barrier with actual-law IAP",
+      "result": "Same raw draws realize every finite frozen-kernel count path and an almost-sure IAP parent graph; conditional non-resolution bound (2365/2401)^k.",
+      "source": "research/feedback-speciation/pure-induction-ancestry-v2/RESULT-AND-SCOPE.md",
+      "delivery": "Complete dossier and substantive context for B04",
+      "evidence": "Lean; no extra eventual-fixation-event transfer claim"
+    },
+    {
+      "id": "M01",
+      "title": "Exact deterministic abstraction criterion",
+      "result": "Fibre compatibility, uniqueness and preservation under identical controls, with a rule-hiding counterexample.",
+      "source": "research/open-problems/time-self-reference/PROOF-STRUCTURE.md",
+      "delivery": "Complete dossier; established quotient theory credited",
+      "evidence": "Lean"
+    },
+    {
+      "id": "M02",
+      "title": "Merge/split predecessor memory",
+      "result": "Equal current membership and fixed selected group can require different admissible predecessor-restoring splits.",
+      "source": "research/open-problems/time-self-reference/exact-abstraction/MERGE-HISTORY.md",
+      "delivery": "Complete dossier; modest source-specific application",
+      "evidence": "Lean plus separately scoped operator test"
+    },
+    {
+      "id": "M03",
+      "title": "Predictive state and intervention-relative memory",
+      "result": "Coarsest exact state; four-state parity/history model, feedback contract, no finite suffix decoder and global depth certificate.",
+      "source": "research/open-problems/time-self-reference/predictive-memory/RESULTS.md",
+      "delivery": "Complete dossier; established behavioral theory credited",
+      "evidence": "Lean"
+    },
+    {
+      "id": "M04",
+      "title": "Stochastic preservation and trace limitations",
+      "result": "Unique reduced PMF kernel and joint adaptive history laws; joint-marginal and all-horizon trace counterexamples.",
+      "source": "research/open-problems/time-self-reference/predictive-memory/STOCHASTIC.md",
+      "delivery": "Complete dossier; established lumpability and trace/bisimulation ideas credited",
+      "evidence": "Lean"
+    },
+    {
+      "id": "M05",
+      "title": "Rare versus impossible observations",
+      "result": "Sharp sum-error and minimax-error formulas for the stated independent binary-trial model.",
+      "source": "research/open-problems/time-self-reference/CALIBRATION-BOUND.md",
+      "delivery": "Complete dossier with written-proof label",
+      "evidence": "Written general proof plus exact finite checks"
+    },
+    {
+      "id": "W01",
+      "title": "Wong representation and stochastic construction",
+      "result": "Graph/extraction/contraction results, count-and-time law, marked recorder, measurable dated output and scoped absorption results.",
+      "source": "research/wong/completion/COVERAGE.md",
+      "delivery": "Complete dossier; all 52 source claim families retain individual status",
+      "evidence": "Mixed: each source claim has its own status"
+    },
+    {
+      "id": "W02",
+      "title": "Conditional owner-map transfer and robust IAP",
+      "result": "Precise path-lifting/owner conditions, transfer counterexamples and IAP invariance under stated finite ancestry disagreements.",
+      "source": "research/wong/continuation-2026-09-27/bridge/EXPLANATION.md",
+      "delivery": "Complete dossier; theorem contracts preserved",
+      "evidence": "Lean"
+    }
+  ],
+  "canonical_ledgers": [
+    "TEN-SOLUTIONS.md",
+    "REFINEMENT-LEDGER.md",
+    "QUESTION-LEDGER.md",
+    "COMPLETION-MAP.md",
+    "PUBLICATION-STATUS.md",
+    "research/feedback-speciation/CLAIM-LEDGER.md",
+    "research/feedback-speciation/OPEN-PROBLEMS.md",
+    "research/open-problems/time-self-reference/problem-ledger.json",
+    "research/open-problems/time-self-reference/predictive-memory/AUDIT.md",
+    "research/wong/completion/coverage.json",
+    "research/owner-observations/LEDGER.json",
+    "research/pedigree-block/LEDGER.json",
+    "research/open-questions/continuation-2026-09-29/verification-manifest.json"
+  ],
+  "royal_society_full_author_questions_closed": 0
+}

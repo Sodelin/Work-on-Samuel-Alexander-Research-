@@ -37,3 +37,8 @@
 # Preserve the exact pinned Q1 dependency and Q2 verification bytes.
 real/Pairing*.lean -text
 research/owner-observations/** -text
+
+# Original audit source and evidence bytes, including historical CRLF snapshots.
+/research/open-questions/continuation-2026-09-29/** -text
+/research/wong/completion/probability/inputs/WongBigARGDrift.lean -text
+/research/wong/completion/verification/deterministic65/isolated/mrca-truncation/WongMRCATruncation.lean -text

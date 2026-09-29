@@ -30,6 +30,10 @@ ARTIFACTS = {
     "research/open-questions/ordinal/GenericCertificate.lean": 8,
     "research/open-questions/ordinal/GenericOrdinalCertificate.lean": 3,
     "research/open-questions/embedding/GenericUniversalAvoiders.lean": 10,
+    "research/open-questions/continuation-2026-09-29/formal/GenericPruning.lean": 10,
+    "research/open-questions/continuation-2026-09-29/formal/GenericMortalRank.lean": 9,
+    "research/open-questions/continuation-2026-09-29/embedding/TerminalCloneAvoiders.lean": 16,
+    "research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.lean": 7,
     "research/open-questions/species/FounderWindow.lean": 4,
     "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean": 6,
     "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean": 8,
@@ -55,6 +59,9 @@ ARTIFACTS = {
     "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionAncestry.lean": 11,
 }
 REUSED_SOURCES = [
+    ["research/open-questions/continuation-2026-09-29/formal/GenericCertificate.lean", "research/open-questions/ordinal/GenericCertificate.lean", False],
+    ["research/open-questions/continuation-2026-09-29/formal/GenericOrdinalCertificate.lean", "research/open-questions/ordinal/GenericOrdinalCertificate.lean", False],
+    ["research/open-questions/continuation-2026-09-29/embedding/GenericUniversalAvoiders.lean", "research/open-questions/embedding/GenericUniversalAvoiders.lean", False],
     [
         "research/feedback-speciation/pure-induction-ancestry-v2/FiniteFixation.lean",
         "research/feedback-speciation/finite-epigenetic/FiniteFixation.lean",

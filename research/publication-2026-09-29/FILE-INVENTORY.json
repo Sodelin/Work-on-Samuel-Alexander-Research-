@@ -1,0 +1,4195 @@
+{
+  "scope": "Tracked scientific artifacts and the admitted continuation; no caches, browser/session data or ongoing next-problems files; generated coverage index outputs are outside their own inventory.",
+  "files": [
+    {
+      "path": "lean/SamuelAlexanderResearch.lean",
+      "bytes": 2616,
+      "sha256": "aaedee5ee7389ed19ae17b204cc107ffba4c715a549f77ab6c056654561f28d1"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/AncestralRestriction.lean",
+      "bytes": 11998,
+      "sha256": "9a8c8f611ccac15ddd737188bf8f5a65057d01befa52c597f2c3c7508fdd8ac1"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/AncestryContraction.lean",
+      "bytes": 4775,
+      "sha256": "06a094722d166aabaa1d4cfd3a4bf38480a1e05b590b14b3bd2bcd7f72a06068"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/AncestryViews.lean",
+      "bytes": 5279,
+      "sha256": "46413ab262cf9d7cd01d6051cc7a34d0e4cf1038846b94600cf850d8818812ce"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/BinaryAvoidance.lean",
+      "bytes": 5075,
+      "sha256": "cec0b9d6229a50ec7c4cae25b121c31b6caf1af82ae595bce0f9a28c01c84f8a"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/BinaryPopulation.lean",
+      "bytes": 9612,
+      "sha256": "87d7476e8b4c7532612763eb4ba9ea027bec1b377b2512946c37a68c7e7df667"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/BirthOrder.lean",
+      "bytes": 13508,
+      "sha256": "9774f28a08f43cceab51cc2225b6c572036209c5fe7553f8de08e834c74b34db"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/BoundaryRepair.lean",
+      "bytes": 16952,
+      "sha256": "9f6a704b5c4c7dd2e5b4fc8ad9f38485ae48986aa73773bde8430312a08a1f31"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/CapTwo.lean",
+      "bytes": 13456,
+      "sha256": "6814ad3fc4ed84182dca5f663d5180d967af056bd636ebaeb918037b3d61c5e8"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/CapTwoSpecies.lean",
+      "bytes": 4329,
+      "sha256": "96c98375797623b2877e8ac96dbe8ee3ab1872474f152ce53944bc1cf1904267"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/DegreeBounds.lean",
+      "bytes": 1443,
+      "sha256": "fe099a1b8ead2142434bb8b45c9f91faa823b320560d92c70ee7ba206ddad748"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/DigitRecurrence.lean",
+      "bytes": 17701,
+      "sha256": "73ca15003264178d04284508c61d6eba358b397e57830acb798c9f1186114637"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteAvoidance.lean",
+      "bytes": 4245,
+      "sha256": "e2ac08fef95b8ceb6779cb2a656ba9e02c6fcfadaf0e5b81ea57a1a4cc211541"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditAlgorithm.lean",
+      "bytes": 3959,
+      "sha256": "8910f8924f4612cfbb71fb1bb10e73e9f1e6a6da952c9400c5ef8d208632ca37"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditBranch.lean",
+      "bytes": 12869,
+      "sha256": "36518f13a8f7880e5dfe2a3dacd2a453c7cdc2bcd97ba0513a5747e93c5932f6"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditExact.lean",
+      "bytes": 13883,
+      "sha256": "3d6fe12589b1a4e13b2337bb34cf7fc7ee2a08b960ebf9063ffb73fe6b84afdf"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditGap.lean",
+      "bytes": 2944,
+      "sha256": "c1ad9e647e539002893921f27d1fc62d4d0105958519aac6e7f7844e4dc2b9b2"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditOptimum.lean",
+      "bytes": 8968,
+      "sha256": "d278498a4bd7c6c48930c359f9e4936cb0ef286b3476409eecb0a5a1bce15a1e"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteEditStability.lean",
+      "bytes": 12846,
+      "sha256": "dbcd4a3ea5f624f807d0fe7998a0d1a2d8be79ba23ac4946bf05137491f4d998"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteHistoryCompletion.lean",
+      "bytes": 11620,
+      "sha256": "df0dfb1ad924fc8dd71d1ae067a7f74fbf68d51e2bd9926e44e09fb0dd63bb1b"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FinitePhasePaths.lean",
+      "bytes": 6099,
+      "sha256": "1d44c3afeb9158f4f7bd8a128f75b033aae77a3c7a438ed63ca28ed669d16aaf"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FiniteStatePeriodicity.lean",
+      "bytes": 4012,
+      "sha256": "783886827f5a819bee91b87392f697ddf96901f320cf5b3b9ee5d29f77a0642d"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FixedGenderLift.lean",
+      "bytes": 25881,
+      "sha256": "2805ab8ef85a018b2276aa137118f0e64990a6358349e7a1b59006d24a50ba7a"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FixedGenderReindex.lean",
+      "bytes": 10573,
+      "sha256": "93953e4e77f092692bc254b52e4d3082459b700eec5a4259c1560ac0daddd3e9"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/FullHeight.lean",
+      "bytes": 37692,
+      "sha256": "b120919c7861603401be5d88c29c184068c971cf7e98f8f2fc339312f224a464"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/GeneralRigidity.lean",
+      "bytes": 5482,
+      "sha256": "9ffe47416b38fdab945ab93054e8dbc3c67ff4ca25abd30a5d1cc694cfba918f"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/GeneralRootObstruction.lean",
+      "bytes": 7348,
+      "sha256": "e759c8494d27cfc55656f6e902ff094fbd6dd1e33246c8e84d5689eb8a1a3170"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/HistoryProjection.lean",
+      "bytes": 4697,
+      "sha256": "f3aaff065d85491c6262e2135c42671ae4f03cb92cab2f84ba540a978f2110e7"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/InfiniteConservation.lean",
+      "bytes": 20460,
+      "sha256": "55b11eaa840f25500428fb41652ca91994019e8d1300c8df15c978ac46698ee5"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/LayeredUnavoidability.lean",
+      "bytes": 3400,
+      "sha256": "3201e19d00bdca2577acd488cb5a925d888b18514b6ef6a8ed72a1a17badb83c"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/MinimalCrossing.lean",
+      "bytes": 14966,
+      "sha256": "ac9ec8a7775262efaa52d191aec2b793a3a01d45c1167c3ca7ec435131f63f37"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/ObservationPrediction.lean",
+      "bytes": 6407,
+      "sha256": "2b62f0d1da7c22b43dcc741e24916b5218d3ae5fd7bf09c62e97928321e0fd0f"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PhaseExtremal.lean",
+      "bytes": 24771,
+      "sha256": "f5afa259bc027747fd13d286499585898cedc5fa8f0797d2d6828013fb1e0b41"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PhaseHeight.lean",
+      "bytes": 6212,
+      "sha256": "c76bd894e39f771c94c71bbbc12fbeff375e0d76b66eb6baa8684203dff4ca6d"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PhaseShift.lean",
+      "bytes": 7856,
+      "sha256": "504c71e130463ef9f2dcac11c77917aa204f42995ee23b722a7db439c7ea8be7"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PopulationCounting.lean",
+      "bytes": 27144,
+      "sha256": "5545bc9fb9ae97f48cd1075a7df2e12087fe53aafd35f5b141cdea55540ad627"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PopulationReindex.lean",
+      "bytes": 10509,
+      "sha256": "815951d97e90f9da0aa83cb0acd8683ffb1aa3460930b7eca7fb522e986ae666"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PortDynamics.lean",
+      "bytes": 30805,
+      "sha256": "445c6ac224b99c66199a157b8895161892954d1584053d2d3440b6f7e4fecd7d"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/PositiveUnavoidability.lean",
+      "bytes": 14489,
+      "sha256": "dd4d241c2752639015fd98b4fb07b044e533b0c21dadb49b6c90ee9edb925c71"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/ProductiveCore.lean",
+      "bytes": 32959,
+      "sha256": "0e83a9bc0c2d870553a1243558a580f49dfc6def79af03afcc8c3b6d4b9568a1"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/QuantitativeAvoidance.lean",
+      "bytes": 1664,
+      "sha256": "d7483dafa920f71e78eabf6199bd5a50862b8d6b6f8abb3a30f900f43bf71bae"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/QuantitativeModulus.lean",
+      "bytes": 8729,
+      "sha256": "832030816daca613fee7ee74189fb208d78bf4d304ba528dc3676bb72efe09af"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/RootObstruction.lean",
+      "bytes": 3177,
+      "sha256": "5a119136ab69b4df58019cf850d17c2c0d837b2644afe900837a894fa4e4f62d"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SharpCorollaries.lean",
+      "bytes": 4501,
+      "sha256": "22bc1409177624df85d5fac7303790bb544b99519a967e4be7c7e6a7d7e6b2c6"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SharpThueMorse.lean",
+      "bytes": 19814,
+      "sha256": "a2f29f779a19191630d118c5d851fa475e3d0151d55793a0867feab50d4ba0ee"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SlowAvoidance.lean",
+      "bytes": 7444,
+      "sha256": "d6e8e593e81be4a642c0c2d4bf8266e2ad1a1ceb9abfd2559c0559b650f5a520"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SpeciesAdapter.lean",
+      "bytes": 1742,
+      "sha256": "f04521f21ef2724a48a7cd9712632617dd729e12f6650c55efedf79b686c15b0"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SpeciesBridge.lean",
+      "bytes": 12372,
+      "sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SpeciesCones.lean",
+      "bytes": 6295,
+      "sha256": "0bf0fb9bc742b1b1260e08fd58adc17d3dab65d778bc1578736f1548a7c37df4"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SpeciesGlobalIAP.lean",
+      "bytes": 8800,
+      "sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/SpeciesRootCriterion.lean",
+      "bytes": 8919,
+      "sha256": "c6a151b5909bbf0238dc4ac7879fc518d91dd14b4fb3847952dec0fb65b3f26f"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/StatefulCA.lean",
+      "bytes": 19678,
+      "sha256": "f02f2b808a0c15d85b26c55559b54621599e89a04c44957679612f24bd4c9bba"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/StaticMixing.lean",
+      "bytes": 3828,
+      "sha256": "5dc98213607d991388021a76a21dd7c24196e7effc66ef260c77771be48848c1"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/ThueMorseBits.lean",
+      "bytes": 5716,
+      "sha256": "923b159560e08a002f6644e22b0fe921771c0fbef089e1ad58399793163797d1"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/ThueMorseBound.lean",
+      "bytes": 6187,
+      "sha256": "202498aabf53d1bbbddac8a02612ef077366fda34f90e53e59d286380048d0f9"
+    },
+    {
+      "path": "lean/SamuelAlexanderResearch/ThueMorseWindow.lean",
+      "bytes": 2352,
+      "sha256": "15d2a962b1b267ef636b12c5822d40c5232927e8840b9c209f7166902a8f354f"
+    },
+    {
+      "path": "notes/ADDITIONAL-SOURCE-CHECKS.md",
+      "bytes": 6160,
+      "sha256": "c1b26d7b39714316ecbb60a3f5bd2849ad5b96782ea2d04af856f86d02d01524"
+    },
+    {
+      "path": "notes/ANCESTRAL-RESTRICTION.md",
+      "bytes": 8574,
+      "sha256": "b051dd26556eaf6c3db8ffd7ba5ee46f55e7da19248b8d8448d2aefb65171743"
+    },
+    {
+      "path": "notes/ANCESTRY-CONTRACTION.md",
+      "bytes": 4802,
+      "sha256": "9616a996a492ca3044cf2f9c1fa078f7026090075abd83a649bf317dc2e86e28"
+    },
+    {
+      "path": "notes/ANCESTRY-OBSERVATION-INTERFACE.md",
+      "bytes": 14697,
+      "sha256": "326b90eca0df240b1b2a81162dba24f3c7d53b7e9cdc20df604d6606e5cb0b4d"
+    },
+    {
+      "path": "notes/AUTOMATIC-SEQUENCES.md",
+      "bytes": 1485,
+      "sha256": "1cd47a6f09f514febd4f8b00781d1b59335feef8e29cebe55ad890a34c897e79"
+    },
+    {
+      "path": "notes/BINARY-AVOIDANCE-FORMALIZATION.md",
+      "bytes": 2620,
+      "sha256": "bc0400612fa764083b29fd2cf4a7d79b95caa271318245ecd7fd5a2a239e1f03"
+    },
+    {
+      "path": "notes/BIRTH-ORDER-FORMALIZATION.md",
+      "bytes": 7427,
+      "sha256": "b2ff3ea2073b2840116ae04a5adf44857fcd09abd9837e0ca3d9780fa5ca7025"
+    },
+    {
+      "path": "notes/BOUNDARY-REPAIR-THEOREM.md",
+      "bytes": 7636,
+      "sha256": "990b665db2a1cf7cf6bd3abefd05012e9711de0b82d7ecac12798c2b910006be"
+    },
+    {
+      "path": "notes/CAP-TWO-SPECIES.md",
+      "bytes": 2745,
+      "sha256": "cdb121df0a4ec27047e7ed9bf625e30349309e0fba4169fd743c52c30e3370e3"
+    },
+    {
+      "path": "notes/CAP-TWO-THRESHOLD.md",
+      "bytes": 7169,
+      "sha256": "c3fa8f99abacdbd156d29eaad842f7f237352e7dc7878f4dc32d3e9a78e5970d"
+    },
+    {
+      "path": "notes/DEGREE-BOUNDARY.md",
+      "bytes": 4563,
+      "sha256": "48091bf2912bb39a86751353c7849c8c3dce561047becd0184116528f69b1bc9"
+    },
+    {
+      "path": "notes/DIGIT-RECURRENCE.md",
+      "bytes": 4903,
+      "sha256": "6033f049fdb4c628d094a9b3ec42040804df7d6ef37dccdd9ce108362923fb4b"
+    },
+    {
+      "path": "notes/FINITE-AVOIDANCE-FORMALIZATION.md",
+      "bytes": 5120,
+      "sha256": "6339b14a70b713de0c9f4bbb84fb28f79ba1d375e5be021281ea98b29ddbcd64"
+    },
+    {
+      "path": "notes/FINITE-EDIT-AND-CAP-THREE-AUDIT.md",
+      "bytes": 33048,
+      "sha256": "57ff9027e5f7a9003f081bea2f5fb6145e9194fd263fc979bb71cb7cfdb49660"
+    },
+    {
+      "path": "notes/FINITE-EDIT-EXACT-FORMALIZATION.md",
+      "bytes": 5899,
+      "sha256": "ff58d6bd2562f63dc565559e6ecea43646c1771df3d69c29a26bbfa2f897576d"
+    },
+    {
+      "path": "notes/FINITE-EDIT-STABILITY-FORMALIZATION.md",
+      "bytes": 7010,
+      "sha256": "88405687b3bcd805fa8455f0c281ac52a175ebba21617c65e9b0365df8133d7a"
+    },
+    {
+      "path": "notes/FINITE-HISTORY-COMPLETION.md",
+      "bytes": 2964,
+      "sha256": "12747d05a57a95cca56d961783777be61f8c2589dd89933633b0e614f4e5f9bd"
+    },
+    {
+      "path": "notes/FINITE-PHASE-PATHS-FORMALIZATION.md",
+      "bytes": 2346,
+      "sha256": "06faa64c2f575d94821a99023aed54bf18b721dca207f923bbda2ab537b600f4"
+    },
+    {
+      "path": "notes/FIXED-GENDER-LIFT-FORMALIZATION.md",
+      "bytes": 10242,
+      "sha256": "359219cc710a649ee2c84b7532bbd8f0dbeee6df673fac30569478c2b1025ad2"
+    },
+    {
+      "path": "notes/FIXED-GENDER-REINDEX-FORMALIZATION.md",
+      "bytes": 6132,
+      "sha256": "ef1bc3fdcead164593b83dfe1ad6a25b6a72f2e3d19cabd62fced52650222bc9"
+    },
+    {
+      "path": "notes/FIXED-GENDER-SPECIESLIKE.md",
+      "bytes": 6184,
+      "sha256": "627e5b578534a1579da4ceb6e376a95dfce1af717965bea7293abc069b2f30a5"
+    },
+    {
+      "path": "notes/FORMALIZATION-SCOPE.md",
+      "bytes": 1686,
+      "sha256": "334e2a7f436721e2ea33ba12bb6847b7189bdd2ed04254a12b5fcd4882ec102a"
+    },
+    {
+      "path": "notes/FULL-HEIGHT-PROOF.md",
+      "bytes": 12207,
+      "sha256": "61465496222981f885b529e022fcdb442d4a045b82ff51828331a436fc0b3675"
+    },
+    {
+      "path": "notes/GENERAL-RIGIDITY-THEOREM.md",
+      "bytes": 2620,
+      "sha256": "2435e07a6d3201e21213b9acf2d1a9aa7dbe57ca484e0aed1bb8450bab86f623"
+    },
+    {
+      "path": "notes/GENERAL-ROOT-OBSTRUCTION-FORMALIZATION.md",
+      "bytes": 5692,
+      "sha256": "5f246327cf3f50854cf0866ba84306cefe61bf8959045e368eb4f218c197ff25"
+    },
+    {
+      "path": "notes/INFINITE-CONSERVATION-FORMALIZATION.md",
+      "bytes": 10270,
+      "sha256": "615ecd304b27d38c172dcde700e3a69f99d284f728dab7d454afcfc35893e9e2"
+    },
+    {
+      "path": "notes/LAYERED-UNAVOIDABILITY-FORMALIZATION.md",
+      "bytes": 1701,
+      "sha256": "3ed5799723fd29a2b031aa97e159481d034c9911c82ab0362f3ccc4ad9d0a8b3"
+    },
+    {
+      "path": "notes/LEAN-FEEDBACK.md",
+      "bytes": 1803,
+      "sha256": "ab393dd399bd3e3210c338240fd544fe23f414c4746ffaff1a80f08be84b296c"
+    },
+    {
+      "path": "notes/LINE-ENDINGS.md",
+      "bytes": 2647,
+      "sha256": "18dfb32386bd13c4b5a098687ca91308a0e74cb8d3a019cf0ccf05a643c3f185"
+    },
+    {
+      "path": "notes/MINIMAL-CROSSING-FORMALIZATION.md",
+      "bytes": 6814,
+      "sha256": "0726a5ff829beb03319134a115c8081608987cb4119b090cad5dcaf0cd1e4b01"
+    },
+    {
+      "path": "notes/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md",
+      "bytes": 10608,
+      "sha256": "b627537790aec6ed924b9505feff507adafe27297d8e2562c936ea90e97a8e53"
+    },
+    {
+      "path": "notes/PERIODIC-LIFELINE.md",
+      "bytes": 8985,
+      "sha256": "84732bccade90d8d4cf2496749d000cec5f81057a247f8aba29fae69098764bf"
+    },
+    {
+      "path": "notes/PHASE-EXTREMAL-FORMALIZATION.md",
+      "bytes": 10070,
+      "sha256": "8fc539bd64d2c2c1190c31bea4f0b85bad565363beddc2081e62ecbf9c599f13"
+    },
+    {
+      "path": "notes/PHASE-HEIGHT-FORMALIZATION.md",
+      "bytes": 2953,
+      "sha256": "9cc8c58976122ee69b55406f68e5222e55a4382ac932be806c025e14025a4784"
+    },
+    {
+      "path": "notes/PHASE-SHIFT-FORMALIZATION.md",
+      "bytes": 5181,
+      "sha256": "0bb8aebeab0859695014e0dec027fb57397aeb07b0ce5aeca3a2e11a3baa6202"
+    },
+    {
+      "path": "notes/POPULATION-COUNTING-FORMALIZATION.md",
+      "bytes": 10885,
+      "sha256": "fecb9b5fe9ecd6c5903a1e1d40decf8e19d92465bf56506a631fe361f69e64a9"
+    },
+    {
+      "path": "notes/POPULATION-REINDEX-FORMALIZATION.md",
+      "bytes": 7595,
+      "sha256": "743935122dec7ce6e1fd8b17b5e1cc0644c0f020de74d7aa4b360abbffbe2371"
+    },
+    {
+      "path": "notes/PORT-DYNAMICS-FORMALIZATION.md",
+      "bytes": 8600,
+      "sha256": "b18c5399e199766352d784742fa67ff4d8aad22409b05593ad10c7addf101be7"
+    },
+    {
+      "path": "notes/PORT-ENCODING.md",
+      "bytes": 5673,
+      "sha256": "b737072465a27124ef0f11c1230109e4d8e1c0f14c06561e3bc9c08f9c48f3b2"
+    },
+    {
+      "path": "notes/POSITIVE-UNAVOIDABILITY-FORMALIZATION.md",
+      "bytes": 7357,
+      "sha256": "161c813b8dbc599af08186993fc9c9ef7284e634c371d9f2e454e44df33bace4"
+    },
+    {
+      "path": "notes/PRODUCTIVE-CORE-THEOREM.md",
+      "bytes": 8442,
+      "sha256": "1d77f2015393d145b4ca6583bfc1ce4ca279efd184ace4a9f57d2ac7263ebe13"
+    },
+    {
+      "path": "notes/QUANTITATIVE-MODULUS-THEOREM.md",
+      "bytes": 3477,
+      "sha256": "409239731645215d8e65f7d2c08529ffa8294be3f49013256088df449cd3a39b"
+    },
+    {
+      "path": "notes/REAL-BRIDGES-FORMALIZATION.md",
+      "bytes": 4924,
+      "sha256": "df07f68850565944ae7b3340e1449cb947179471060ab0718b0a3de143672bce"
+    },
+    {
+      "path": "notes/REAL-FOUNDER-WINDOW-THEOREM.md",
+      "bytes": 9936,
+      "sha256": "9be3ca97103a415b73394c16791892c807000ad713538796f2708a45b09da3e2"
+    },
+    {
+      "path": "notes/REFINEMENT-INDIVIDUAL-FINITE-EDIT.md",
+      "bytes": 10475,
+      "sha256": "d0657218828e6ab43b72bba97124da8731818712fd00145f13c12c924f7a912b"
+    },
+    {
+      "path": "notes/SELF-SIMILARITY-SCOPE.md",
+      "bytes": 7237,
+      "sha256": "46728de748b8881f5ba381d15aebbe96a31236814492db8e65db0e7ccc654d86"
+    },
+    {
+      "path": "notes/SHARP-COROLLARIES-FORMALIZATION.md",
+      "bytes": 2142,
+      "sha256": "f1a2b5a871f1bbd7f079e47d431342a214a746a7f740b3383b92b256b76bd3d0"
+    },
+    {
+      "path": "notes/SLOW-AVOIDANCE-FORMALIZATION.md",
+      "bytes": 6357,
+      "sha256": "742dfc6668bdd62a4651427b636ef92ad94367481cf37792052f5ed05d1900f3"
+    },
+    {
+      "path": "notes/SPECIES-BRIDGE-FORMALIZATION.md",
+      "bytes": 12494,
+      "sha256": "e4d8dfa402a10ef2e2bb1f67f03a7bb7e755fdb11a5216e4479dd52aa4888621"
+    },
+    {
+      "path": "notes/SPECIES-GLOBAL-IAP-FORMALIZATION.md",
+      "bytes": 6066,
+      "sha256": "e17ff4fef99c4b93cdf93b410802747338eac293581b07d4bff0e3b4b5b2c984"
+    },
+    {
+      "path": "notes/SPECIES-ROOT-CRITERION-FORMALIZATION.md",
+      "bytes": 5597,
+      "sha256": "6bec96756d33d911e78de62229e39c0a9c6f6184bf96e0a10f9bf59158e04499"
+    },
+    {
+      "path": "notes/SPECIESLIKE-BRIDGE.md",
+      "bytes": 7911,
+      "sha256": "4305468adc26e87ca228ff9f64c32fd04fd6c84a138f0b4a9ef554ad7b71a441"
+    },
+    {
+      "path": "notes/SPECIESLIKE-GENERALIZATION.md",
+      "bytes": 16540,
+      "sha256": "5a896cb90bdfb6ee521c486f652165b0e0d40a364d07a9c714f563686e95dd1e"
+    },
+    {
+      "path": "notes/STATEFUL-CA-FORMALIZATION.md",
+      "bytes": 5277,
+      "sha256": "354781dc8602941dc743224cba0e981c406866fb49c21b5e288738c4ace4c177"
+    },
+    {
+      "path": "notes/STATEFUL-CA-REAL.md",
+      "bytes": 4924,
+      "sha256": "a5bc9509e24b0b78b999082ee0b77ec419f2ce37221e380d591f9a36de3c21a1"
+    },
+    {
+      "path": "notes/STATIC-MIXING-FORMALIZATION.md",
+      "bytes": 2940,
+      "sha256": "e04586b665cbfdd391f7a598375ccd8b4665a50a2191fcee770562c382cd9565"
+    },
+    {
+      "path": "notes/THUE-MORSE-PATHS.md",
+      "bytes": 8907,
+      "sha256": "83da78ab30144ac0e370a29f8aa074373d2f434f861d5a281496bcaeb03d7cc7"
+    },
+    {
+      "path": "notes/WONG-ALEXANDER-BRIDGE-STATUS.md",
+      "bytes": 27631,
+      "sha256": "c8f3c9d9599e9ed14d5b42a4564fd869c192da6829a7a3de6bc503b21f463751"
+    },
+    {
+      "path": "notes/WONG-DIAMOND.md",
+      "bytes": 10503,
+      "sha256": "46fbde7679027d37906308054fd7b14c2b15df519ddbbca4caca947cd7d0aa4c"
+    },
+    {
+      "path": "notes/WONG-EVENT-DECODING.md",
+      "bytes": 8850,
+      "sha256": "d7c629ce459930cbfac55469b843da154dbbc6c1e7e2d28382878fad64b168d5"
+    },
+    {
+      "path": "notes/WONG-EVENT-ENCODING.md",
+      "bytes": 6710,
+      "sha256": "2f3deeadc7fa35ded48e28ba6233522fe717970c945899f4d5e7d79d49788aec"
+    },
+    {
+      "path": "notes/WONG-EXAMPLES.md",
+      "bytes": 3634,
+      "sha256": "60e35af13fe8e124884577c77c9c7fa561e5752683977b388cec661c8c49fb27"
+    },
+    {
+      "path": "notes/WONG-FINITE-COMPLETION.md",
+      "bytes": 7637,
+      "sha256": "fdcb6f1028099f432c920f918fb2d7900dc8016217309a31a2e8b1d937aba8a3"
+    },
+    {
+      "path": "notes/WONG-FINITE-IDENTIFIABILITY.md",
+      "bytes": 2511,
+      "sha256": "4408de75e10010f61b8f3ba255ac056cff259fe2da87b38c9db9cb4f9e4de165"
+    },
+    {
+      "path": "notes/WONG-GARG-FOUNDATION.md",
+      "bytes": 8472,
+      "sha256": "0c60b2c46ed6c493491f31ebc725d2a61baa6b9cb3d1c42fbc573327da82a32e"
+    },
+    {
+      "path": "notes/WONG-INTERVAL-NORMALIZATION.md",
+      "bytes": 4554,
+      "sha256": "dd033f602b77fc46b6d4b69c629bdae0f173991ec47729bdbb86fdeb4df68c9c"
+    },
+    {
+      "path": "notes/WONG-LOCAL-SIMPLIFICATION.md",
+      "bytes": 5265,
+      "sha256": "c6cd1e69abfa9356b09b53ec8339bf6d641437c4dd34bb18f53dade98b2dc0dd"
+    },
+    {
+      "path": "notes/WONG-MEMOIZED-TRACING.md",
+      "bytes": 7123,
+      "sha256": "658eb132e8004270997dd97d2bbf81274d539113c128b9d80b741c2069d3a155"
+    },
+    {
+      "path": "notes/WONG-SAMPLE-TRACING.md",
+      "bytes": 4584,
+      "sha256": "8ffd63942a32d6281bc094f01c3496f6a1adfa3b8ed96f9b4ee0727fa699fd33"
+    },
+    {
+      "path": "notes/WONG-SIMPLIFICATION.md",
+      "bytes": 5018,
+      "sha256": "6ba89dc5052d6206d87ed51b92da3707bd63b7cb3b9a0f72ca6ad59f57c08c8e"
+    },
+    {
+      "path": "notes/WONG-TIMED-HISTORY.md",
+      "bytes": 9356,
+      "sha256": "d54b8d154e3d92a9b8e7979a772bc2ad3671e3552dc47c3fc2cc09eef7d9281b"
+    },
+    {
+      "path": "notes/source-audits/FINITE-PHASE-LEAN-RECEIPT.md",
+      "bytes": 2517,
+      "sha256": "b247a216e34d1cbf3403b37802284bb516e74e5cee6d91dedf6ee891829a4a75"
+    },
+    {
+      "path": "notes/source-audits/FINITE-STATE-PERIODICITY-RECEIPT.md",
+      "bytes": 2683,
+      "sha256": "485be677873bfd9e2379136e9617eaec09d3cf8c76bdef013f91b822cbec6f45"
+    },
+    {
+      "path": "notes/source-audits/LINE-GRAPH-PRIOR-ART-AUDIT.md",
+      "bytes": 6601,
+      "sha256": "266b4377aba22aeeba4ee500c71270de32c385ff5d47dffa2934d713f47de496"
+    },
+    {
+      "path": "notes/source-audits/MAXIMAL-SPECIESLIKE-SOURCE-AUDIT.md",
+      "bytes": 11770,
+      "sha256": "62f3dfc1cd5fbfddfcd09d5aef152deb6fe8fbf004f4e404f777956f81920933"
+    },
+    {
+      "path": "notes/source-audits/PROPOSAL10-STATEFUL-CA-AUDIT.md",
+      "bytes": 8572,
+      "sha256": "e3f1a351627a1116b8e18466c67d327010b91849a920af74996f996716d5fc5c"
+    },
+    {
+      "path": "notes/source-audits/PROPOSAL3-FINITE-PORT-AUDIT.md",
+      "bytes": 22595,
+      "sha256": "1598aee537283ce24d411b4547ddbed3f24b0e08c6d8d379efdd3b79ba9e616f"
+    },
+    {
+      "path": "notes/source-audits/PROPOSALS3-10-SOURCE-AUDIT.md",
+      "bytes": 12266,
+      "sha256": "ccd6f6ce490a80fff3074e0964f34a50c993fdc4b34d899d717e7d7546f5f526"
+    },
+    {
+      "path": "notes/source-audits/STATEFUL-CA-LEAN-RECEIPT.md",
+      "bytes": 3290,
+      "sha256": "470fbeb0018d808992bb5873a02e750a1330cfbcb174ab520a5283ba36524810"
+    },
+    {
+      "path": "real/DirectedIAP.lean",
+      "bytes": 8354,
+      "sha256": "0b6b7e7178e9682ef9417b5a17ddef0bfe6f2241f9bbf1a14290dda1a78784f0"
+    },
+    {
+      "path": "real/FiniteGenomeIdentifiability.lean",
+      "bytes": 3016,
+      "sha256": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5"
+    },
+    {
+      "path": "real/FounderMaximal.lean",
+      "bytes": 5383,
+      "sha256": "61bf7e78cdef3abe2361d19c24e3ffca8d2336a3f73a7707be47a18071ec90b4"
+    },
+    {
+      "path": "real/FounderWindow.lean",
+      "bytes": 5042,
+      "sha256": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3"
+    },
+    {
+      "path": "real/PairingCore.lean",
+      "bytes": 22488,
+      "sha256": "f8723988f843354641a66e7cb71b021721864132d9f46b269efab2697c66db94"
+    },
+    {
+      "path": "real/PairingObservation.lean",
+      "bytes": 7783,
+      "sha256": "2f4d97740f1cb835e258e5b4a675a5c24e9373051b0e66a7cbebc6ccf8610734"
+    },
+    {
+      "path": "real/PairingObservationAudit.lean",
+      "bytes": 1047,
+      "sha256": "40c802b67d1161886029fb64ee8622c3049f5ac0e1b3211f4b94211e03edc582"
+    },
+    {
+      "path": "real/PedigreeBlockAudit.lean",
+      "bytes": 1690,
+      "sha256": "fd0e8c47fab2c0ae85491b9b0d7bad07e109c7a2451330a55ce4612a2cb1c36f"
+    },
+    {
+      "path": "real/PedigreeBlockDependence.lean",
+      "bytes": 4242,
+      "sha256": "ad35d3736ed31627a931342bace75e9b17941e752b9ae30264a3f076d45b2126"
+    },
+    {
+      "path": "real/PedigreeBlockGraph.lean",
+      "bytes": 6530,
+      "sha256": "7bb5462c855e74d9b38dfd76c31b504ed7414dc4630671f222a097b21771cc84"
+    },
+    {
+      "path": "real/PedigreeBlockModel.lean",
+      "bytes": 1847,
+      "sha256": "e43fe3ab0c243e7f121077d5a12dae99120ee9c1762bc576b5e487f6631ebf83"
+    },
+    {
+      "path": "real/PedigreeBlockObservation.lean",
+      "bytes": 6231,
+      "sha256": "292e19d568c280c741c82214e9dde68272a5165e8699aa8cbfa30cbd532db949"
+    },
+    {
+      "path": "real/PedigreeBlockProbability.lean",
+      "bytes": 9991,
+      "sha256": "0ba98d4cc1c25f684f0808222370ffcc8b2dd85a8935fce6baeefa98b5a9a7b8"
+    },
+    {
+      "path": "real/PedigreeBlockRecovery.lean",
+      "bytes": 4257,
+      "sha256": "a1736c0d033ed87e385d9d2a23a4f8362d2ebc41999f2e7c73a7c35d2d57230b"
+    },
+    {
+      "path": "real/PortEncoding.lean",
+      "bytes": 21666,
+      "sha256": "66d01c74951475d8fb5d960fb5c21244545c7984d9fae8022f8a9f7bd131b2f4"
+    },
+    {
+      "path": "real/RealAudit.lean",
+      "bytes": 24838,
+      "sha256": "a3fdcc9e804a51524032791e3bccb3954209e773e5fc581a17987b4bbe1eabc0"
+    },
+    {
+      "path": "real/RealBridges.lean",
+      "bytes": 13523,
+      "sha256": "bdf46750b494b863b0536cd131e4837964800144439b5a4e67926566aec9ee9a"
+    },
+    {
+      "path": "real/RealFounderWindow.lean",
+      "bytes": 7285,
+      "sha256": "0887f04d62e5b2bb0f20e6608831c949ebb0394a24a7df9c1d7771c1b5cbbec9"
+    },
+    {
+      "path": "real/RealSpeciesTheorem.lean",
+      "bytes": 4622,
+      "sha256": "59f2e2d45f11350f4979e31a42ed73d009a62d65e71c73c6b50f64c20a62d540"
+    },
+    {
+      "path": "real/SeedIntersections.lean",
+      "bytes": 5413,
+      "sha256": "2179d8e41bb8e10946b04632e5468ec2cfaf78fd4f4cca233fda3a093fb4048e"
+    },
+    {
+      "path": "real/SpeciesReindex.lean",
+      "bytes": 13036,
+      "sha256": "96ebb6ffde0db94fd371b2a05a63fdb8a74b6294980f2ef7761b0ef538a4f1fd"
+    },
+    {
+      "path": "real/SpeciesSeed.lean",
+      "bytes": 8893,
+      "sha256": "774dbfe530762a9e252a6f27f8a5bb8ea9e18f61e14715fe3e0e646f8d6202cb"
+    },
+    {
+      "path": "real/StatefulCAReal.lean",
+      "bytes": 4099,
+      "sha256": "1b3c8a9ff3434266358ffc2bfc1029963f5ffa4301ea87a35bde9652696ea5f7"
+    },
+    {
+      "path": "real/WongAdaptiveSelection.lean",
+      "bytes": 15187,
+      "sha256": "ac8ec96239575413b57d731742d126047d7d69725aa180b27a875d161fbb0163"
+    },
+    {
+      "path": "real/WongAlexander.lean",
+      "bytes": 8140,
+      "sha256": "1ec04c06714f359d791cde0b4892443404f887c486bb59e35f4f24a35c1cb666"
+    },
+    {
+      "path": "real/WongBigARGAbsorption.lean",
+      "bytes": 6090,
+      "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518"
+    },
+    {
+      "path": "real/WongBigARGDrift.lean",
+      "bytes": 4767,
+      "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43"
+    },
+    {
+      "path": "real/WongBreakpointCells.lean",
+      "bytes": 4447,
+      "sha256": "e706db5593d49fcb5e51815be130c70e69071dd5f7dc9f495805c40a23afba1d"
+    },
+    {
+      "path": "real/WongCountChain.lean",
+      "bytes": 12247,
+      "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae"
+    },
+    {
+      "path": "real/WongDatedSupport.lean",
+      "bytes": 7410,
+      "sha256": "162ffdb8b0b3409a9f65ff7b9403a85135be54a2995a7647a3f211c61b8cb993"
+    },
+    {
+      "path": "real/WongDiamond.lean",
+      "bytes": 15405,
+      "sha256": "0d86b05e7ac7ceb947026a9caea55285f9fdc88aab01ecc7acaf27ee1a8e17fd"
+    },
+    {
+      "path": "real/WongEventDecoding.lean",
+      "bytes": 13464,
+      "sha256": "19a3aa27c6a74f7249272b3ab85a436cd60375cef1c830a2caf787e787315c86"
+    },
+    {
+      "path": "real/WongEventEncoding.lean",
+      "bytes": 14371,
+      "sha256": "6fdde306bbdab6f5e349127d634251988cd81e977b0eca63f114f187ce7ecb87"
+    },
+    {
+      "path": "real/WongExamples.lean",
+      "bytes": 10658,
+      "sha256": "c0ba71964c11125aecc5e8425d2c1188a6d09086afd1e941c07a538fd78b7d59"
+    },
+    {
+      "path": "real/WongGARG.lean",
+      "bytes": 17398,
+      "sha256": "d025493eab6e22742da87d1f36fd48335198b8bbc0718eb8e20ef13651655016"
+    },
+    {
+      "path": "real/WongIntervalCanonicalization.lean",
+      "bytes": 29572,
+      "sha256": "25f60d54b9c70e2029364b54807aeaddc514a3bcda8b7e01edb8b21462031411"
+    },
+    {
+      "path": "real/WongIntervalNormalization.lean",
+      "bytes": 13441,
+      "sha256": "c0a354f7a8f999d820c300a490279a7e6fb8499bb1f116eb5f3d3983da728a8f"
+    },
+    {
+      "path": "real/WongLocalArity.lean",
+      "bytes": 4158,
+      "sha256": "035762a33d5b5c352293b3741393b37c627fdeaa765a8535954caa5105252b55"
+    },
+    {
+      "path": "real/WongLocalSimplification.lean",
+      "bytes": 9058,
+      "sha256": "cfcb2a222c81df13566b81da72e673afa7fedef583b3d2e1955b6aae53ee55ff"
+    },
+    {
+      "path": "real/WongMRCATruncation.lean",
+      "bytes": 18014,
+      "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac"
+    },
+    {
+      "path": "real/WongMarkedDated.lean",
+      "bytes": 9303,
+      "sha256": "0d89ff9656e5def0b6583b2ddffb71c73206ccb1b56e7b74b133d3219e509974"
+    },
+    {
+      "path": "real/WongMarkedLaw.lean",
+      "bytes": 12049,
+      "sha256": "42e61509f5ce72ed978999af1207afab8fb87488aa4729be111b95fddfe6dca1"
+    },
+    {
+      "path": "real/WongMarkedMeasurable.lean",
+      "bytes": 20660,
+      "sha256": "830f39d52700f44f21b7464c5262a2d36cf93155cb9832bec42209a1be33a582"
+    },
+    {
+      "path": "real/WongMarkedProcess.lean",
+      "bytes": 13516,
+      "sha256": "6033dea1876cbe75dff6c0f29b528092cbdf23d58382cd288f48b2fced554555"
+    },
+    {
+      "path": "real/WongMarkedRecorder.lean",
+      "bytes": 41362,
+      "sha256": "1dcec9e5522f03adf21a308bd31a64a5f10a445b567bc72701916009972bdfea"
+    },
+    {
+      "path": "real/WongMarkedSupport.lean",
+      "bytes": 9014,
+      "sha256": "57d485a53aa9ba32aa98f75c8812b55f1976c142f74fe7624ce819131669a5de"
+    },
+    {
+      "path": "real/WongMemoizedTracing.lean",
+      "bytes": 22000,
+      "sha256": "cd8e682800b48219f434930a98c2a1f6d6b47f8145364e8b981708b6e1379dfb"
+    },
+    {
+      "path": "real/WongPedigreeBridge.lean",
+      "bytes": 23042,
+      "sha256": "a50265e3c458bac5577116ee8fc30bea5f7b881ebd4216040543ce4adb5f921b"
+    },
+    {
+      "path": "real/WongPedigreeRobust.lean",
+      "bytes": 3266,
+      "sha256": "a2ed87e4162f3e6f0c127805bfe9619e9ba8b3649aaeade3cc8b8ef554b16c30"
+    },
+    {
+      "path": "real/WongRecordTracing.lean",
+      "bytes": 5377,
+      "sha256": "1c461e31d17b7fbea796ec711378d7dc93f4312b3438d535e1c9ab05822390e8"
+    },
+    {
+      "path": "real/WongSampleTracing.lean",
+      "bytes": 8257,
+      "sha256": "bb5c869a30fbe1db22560bf983c60c1aff410041ed53a63131294ca2c002532e"
+    },
+    {
+      "path": "real/WongSimplification.lean",
+      "bytes": 7343,
+      "sha256": "2a2fa47dd84cd3206717eae87be5a5c3c8bb89d72b2691ffb424c84ef96398ab"
+    },
+    {
+      "path": "real/WongSimplificationNormalForm.lean",
+      "bytes": 14101,
+      "sha256": "73a779860fdf9f726ec617cfb3346d5109aca2753ad71e19c603a6c0c91c09ed"
+    },
+    {
+      "path": "real/WongTimedHistory.lean",
+      "bytes": 10851,
+      "sha256": "2974b948f8d9c784868186b645073184020720784b166a34f8b1d46ac001d399"
+    },
+    {
+      "path": "real/WongWaitingTimes.lean",
+      "bytes": 25547,
+      "sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0"
+    },
+    {
+      "path": "real/fetch_cache_windows.py",
+      "bytes": 5625,
+      "sha256": "62ea81fa4e40bbe2b67831b62c3778f5aaaf9d2f72a08366017cb5d53454c799"
+    },
+    {
+      "path": "real/lake-manifest.json",
+      "bytes": 3362,
+      "sha256": "24c900a45c3f706d5e3a0336f3808fcc9b03bb3407e7b5ae23eeb8c283726d33"
+    },
+    {
+      "path": "real/lakefile.lean",
+      "bytes": 2733,
+      "sha256": "b353cb9c526f1fa46dd56fae3c8518923e4eb50fa9bd939309efc94c2f244d2d"
+    },
+    {
+      "path": "real/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "research/PRIOR-WORK-SEARCH-2026-09-24.md",
+      "bytes": 16328,
+      "sha256": "d5b74ce8727a20146cb15d9c4bb6eb471f62f0bdab72f760f8afd41cb0ddd5c0"
+    },
+    {
+      "path": "research/feedback-speciation/CLAIM-LEDGER.md",
+      "bytes": 6293,
+      "sha256": "6998be71466db3138f64308192ebfe20e681d0b73f21f7c87684878e74f54988"
+    },
+    {
+      "path": "research/feedback-speciation/FOGARTY-GLOBAL-RATE.html",
+      "bytes": 10995,
+      "sha256": "1194413faf6516c9bf9e596d4b9680c6b9cb77779a2d5ef2d70e592f2c76b0c3"
+    },
+    {
+      "path": "research/feedback-speciation/FOGARTY-GLOBAL-RATE.md",
+      "bytes": 6252,
+      "sha256": "e9310e6fa3a02f956f7496b233f28c96aaf6220876dfa9355aedfa409910bc46"
+    },
+    {
+      "path": "research/feedback-speciation/HANDOFFS.md",
+      "bytes": 7331,
+      "sha256": "ef62910bce064778e87caf8188da86ee538f10d7e1af466d4d708957201cea58"
+    },
+    {
+      "path": "research/feedback-speciation/MANUSCRIPT.html",
+      "bytes": 64971,
+      "sha256": "6f44df25d2d117b55f7023150eadb908b13bebe7ef2d4edc7147b70d418e2a44"
+    },
+    {
+      "path": "research/feedback-speciation/MANUSCRIPT.md",
+      "bytes": 20244,
+      "sha256": "6364dde1284bf767793a9e023603ec34c7a5fbc02180ea19502fd2038b371cf5"
+    },
+    {
+      "path": "research/feedback-speciation/OPEN-PROBLEMS.md",
+      "bytes": 4944,
+      "sha256": "23ee1f75c5d9530b53da029353a7bc65796e59f6bcad9e6e46446428de7bca5f"
+    },
+    {
+      "path": "research/feedback-speciation/PRIOR-ART-UPDATE-2026-09-25.json",
+      "bytes": 1400,
+      "sha256": "62c00047841bded14d45a9e6dfb946181a9030db2f2af3c89871d3b1477a51d2"
+    },
+    {
+      "path": "research/feedback-speciation/PRIOR-ART-UPDATE-2026-09-25.md",
+      "bytes": 4522,
+      "sha256": "34cbf2728a70a11ddfa6be1f3b9d6c163bcbbd0e86bda1cb39138ad209d74ac5"
+    },
+    {
+      "path": "research/feedback-speciation/PRIOR-WORK-AUDIT.md",
+      "bytes": 4991,
+      "sha256": "399046054c62a9dfe20280bb84e5959b83b298536e4a6278cde09a2465aad972"
+    },
+    {
+      "path": "research/feedback-speciation/PUBLIC-INTEGRATION.md",
+      "bytes": 2157,
+      "sha256": "922de913de83bdd4e41e922da4ab384d9dde285d3f0257860e7cd79028fb932a"
+    },
+    {
+      "path": "research/feedback-speciation/PURE-INDUCTION-ANCESTRY.md",
+      "bytes": 4557,
+      "sha256": "728c0a79e71c5af9bd9fd45d6c52d6ebebf575747e6939180ce49d471354070c"
+    },
+    {
+      "path": "research/feedback-speciation/RATE-PRIOR-ART-CHECK.md",
+      "bytes": 7606,
+      "sha256": "dc5bc388ac4061e44528bd68b2c0e3c190117cfc9459a426ce0c7db92dec921a"
+    },
+    {
+      "path": "research/feedback-speciation/README.md",
+      "bytes": 6679,
+      "sha256": "75e8b67f7f6d39fb613dad71495c6137e996d0abb3eec03c2ae09122a4f301c4"
+    },
+    {
+      "path": "research/feedback-speciation/RESEARCH-CONTRACT.md",
+      "bytes": 4795,
+      "sha256": "6131621c2260b2edbe2d0f50c084e5abdeb647bb017c20da065602dff2cfeb5c"
+    },
+    {
+      "path": "research/feedback-speciation/REVIEW-NOTES.md",
+      "bytes": 3668,
+      "sha256": "560233adbac72636ecfae941aaa72e0b2efc17f8a4551c28ac0e163e1496a347"
+    },
+    {
+      "path": "research/feedback-speciation/REVIEW-START.html",
+      "bytes": 11031,
+      "sha256": "034809169f21e516723b13b862dfba1e46eeb4327596cd6e9b9c54620dcd2c66"
+    },
+    {
+      "path": "research/feedback-speciation/SHA256SUMS.txt",
+      "bytes": 4043,
+      "sha256": "0d99f3b888b676c8c98676a719d0c79cbb2e82889a5d3cb6864ecc39e6f96cff"
+    },
+    {
+      "path": "research/feedback-speciation/SOURCE-ARCHIVE-SHA256SUMS.txt",
+      "bytes": 3718,
+      "sha256": "a0c7b1af24ebe385c074f4e8ae4a088f775705462dd004716e5cb314b0ebebe8"
+    },
+    {
+      "path": "research/feedback-speciation/SOURCE-AUDIT.md",
+      "bytes": 13123,
+      "sha256": "2f025d063cc97c7ee68563ede5842d0cceeda73df33a3d66ba146455ca9a8679"
+    },
+    {
+      "path": "research/feedback-speciation/SOURCE-ORIGINS.md",
+      "bytes": 2103,
+      "sha256": "8c4a3d42bc011d0d8db47dda8de0d3a0a60a059a7cfeb07c5c2ab0d619ff1a8d"
+    },
+    {
+      "path": "research/feedback-speciation/VERIFICATION.md",
+      "bytes": 1899,
+      "sha256": "61840836169cee9817ff80612b058967a33447259dc25e7dcd6b1e87e0fb4e7c"
+    },
+    {
+      "path": "research/feedback-speciation/WONG-REMAINING-WORK.md",
+      "bytes": 1805,
+      "sha256": "136cd29359e678961f4b81566319a04421e71771b3a5598fb1d7d490f9d49afd"
+    },
+    {
+      "path": "research/feedback-speciation/build_review_archive.py",
+      "bytes": 3158,
+      "sha256": "1911e52ea7d2854bd18d298280b1f47e8dbe268c249d6ee9407711404e938cb5"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/Check.ps1",
+      "bytes": 1648,
+      "sha256": "5963e92162b2cf4089dedec636d9a6422894fcdb3725581b9e5f23db0fdc6a64"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/DETERMINISTIC-COMPARISON.md",
+      "bytes": 13212,
+      "sha256": "d109d66509b246d8a148a9137d55c4c18394b33b6cf56e028078f19db0defb63"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/DETERMINISTIC-INDEPENDENT-AUDIT.md",
+      "bytes": 14745,
+      "sha256": "379fc755b8f7c1001565c09266b8658dd13f8f3ea18a787314596acf6950cd57"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/DeterministicEpigenetic.lean",
+      "bytes": 10445,
+      "sha256": "ece655b0af42fbd580ca86b3f8176a8b4323fe3fd716da9429f13f6366f3117f"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/FINITE-FIXATION-NOTE.md",
+      "bytes": 5244,
+      "sha256": "8cfcef2595a039015b3a91da034307c71d6251e4cfe0b02e0e596d5de1cafe36"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/FINITE-RESULT.md",
+      "bytes": 7966,
+      "sha256": "d64298be046af420b073a60e42e799d6b3aa1c391447bff680c806c4eb016c3e"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/FiniteEpigenetic.lean",
+      "bytes": 12917,
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/FiniteFixation.lean",
+      "bytes": 15133,
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/INDEPENDENT-MODEL-AUDIT.md",
+      "bytes": 14099,
+      "sha256": "cccb4260daa42520c3c0cde7ac45f6e8839c1d7ed4a04e7c7c66bde71d78d43e"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/MANIFEST.json",
+      "bytes": 5645,
+      "sha256": "d65904d4929bec23c16424bf0ca66f780a8860a6eba0b54936ad178919997650"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/PRIOR-WORK.md",
+      "bytes": 15097,
+      "sha256": "96b962a928429dc1115d07a97d82f2e92a3e665c08e0c3264a61f44668631aa2"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/PUBLICATION-MANIFEST.json",
+      "bytes": 12716,
+      "sha256": "3a641b0c66340151cf994871a740805ba19eb8c31cce22b3e54486d342a56634"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/README.md",
+      "bytes": 6550,
+      "sha256": "defd55f19e48abcc0f01897d0f20b6d295f9f864e31e467195a6d6d962df4cee"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/RELEASE-NOTES.md",
+      "bytes": 4459,
+      "sha256": "7451183f23d1e683c00e93a996352325fb5796b6f4c42aab6eff06fb876667fd"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/RESEARCH-QUESTIONS-AND-HANDOFF.md",
+      "bytes": 8297,
+      "sha256": "9f025b49a8f023b7c0c6026d03390eb361a7815514cd24f4289d474acb30ee33"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/RankingReversal.lean",
+      "bytes": 1705,
+      "sha256": "a1dcf86c7214e92ee8f319a46ea955c97c4d70aa83822a888573b41ad60a3894"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/SOURCE-MODEL-CONTRACT.md",
+      "bytes": 16481,
+      "sha256": "d0705e105a4eca313a9b034a466f6f85261ca5df519e20799d17d7a29abc3cd8"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/count-certificates.json",
+      "bytes": 7380,
+      "sha256": "ec7a8876c02a49a97d9f0ccdecd6ff73c300ada5e07affe90d6da380d74cf54b"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/count_model.py",
+      "bytes": 3599,
+      "sha256": "0673ba5e48782d353fb4af2bc7607a18d36279d9486e5b3a7707d777fc25cc04"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/deterministic_comparison.py",
+      "bytes": 7386,
+      "sha256": "53302a86d2bb5074421a3c11742508be3cf7176f1cf3030969c7a22688043dbd"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/epigenetic-exact.json",
+      "bytes": 128313,
+      "sha256": "4f8dcb6c5db29aab052eb5fca29bd4522b5a78197972306e41f42068737a0088"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/finite_life_cycle.py",
+      "bytes": 6234,
+      "sha256": "1b852d6dedd1775eb4733943c9f85af8cad09068838bc41120919f7fb6771a78"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/generate_lean.py",
+      "bytes": 12234,
+      "sha256": "4ce879e63c60a8540e41542eda32a73433f7b259ed608fd360886c380b2b8893"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/genetic-exact.json",
+      "bytes": 160004,
+      "sha256": "e8141b99a56dc541fb7de29e61368c7b4a8175f863a611032411ba306be96d6e"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/lakefile.lean",
+      "bytes": 386,
+      "sha256": "2072ecbdfad3d5e142f382178dedb739e5611ddfb985827ef233664cd3e514b4"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/make_combined_receipt.py",
+      "bytes": 3894,
+      "sha256": "48b505ac4e5be1661b48d854a23f7475f3e26d427c17a607af3c2016b98e2765"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/make_receipt.py",
+      "bytes": 2538,
+      "sha256": "64777cae3a687fcdacc123238eb4033827c589129b39b79d5339ce50eab636de"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verification/DeterministicEpigenetic.log",
+      "bytes": 1361,
+      "sha256": "3f6fe7dc138c1af22dcfd65cb12a9bf763ce61ffcb5356baf621267453d6a9b0"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verification/FiniteEpigenetic.log",
+      "bytes": 1261,
+      "sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verification/FiniteFixation.log",
+      "bytes": 1579,
+      "sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verification/RankingReversal.log",
+      "bytes": 310,
+      "sha256": "2cf2a1acdcbb57fef8e805ce0f3dfbf75576da9e0a7ff93171b9647cdcbad750"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verification/combined-receipt.json",
+      "bytes": 5485,
+      "sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verification/finite-receipt.json",
+      "bytes": 3046,
+      "sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0"
+    },
+    {
+      "path": "research/feedback-speciation/finite-epigenetic/verify_packet.py",
+      "bytes": 420,
+      "sha256": "d274f64953f19efa23857e2a4d769a49566ad0e91107599fc3e856f5a7b8ddf0"
+    },
+    {
+      "path": "research/feedback-speciation/package/AncestryExamples.lean",
+      "bytes": 5384,
+      "sha256": "c9b916933b3a94db4c0493e095ae01fc986a8d3393b0a7f29ed9befd02d300f7"
+    },
+    {
+      "path": "research/feedback-speciation/package/AncestryMixing.lean",
+      "bytes": 19573,
+      "sha256": "6a08f7b06840f7bd5ee2cfcc1e13f179698e1eaba4adfb631cc88e628d59957d"
+    },
+    {
+      "path": "research/feedback-speciation/package/Check-All.ps1",
+      "bytes": 4431,
+      "sha256": "2296efc5f19fef92d1ad9d5ab9c50700dfa9721219d1c564ae8963a058052ced"
+    },
+    {
+      "path": "research/feedback-speciation/package/FeedbackDynamics.lean",
+      "bytes": 20385,
+      "sha256": "dd14dcaf5da5e89ff4aa9a2afb0693bb95a40642c6030287860a14f982f2d570"
+    },
+    {
+      "path": "research/feedback-speciation/package/FogartyAffinity.lean",
+      "bytes": 11992,
+      "sha256": "1ac434b5b0814a7eaba1f34df224bbf320dbe044eb6ba88dddf9b3d57b8d7f91"
+    },
+    {
+      "path": "research/feedback-speciation/package/FogartyAffinityFixation.lean",
+      "bytes": 10984,
+      "sha256": "1e39b773dea9fd0b902327ec8918d63b147dddbd1ce5458fe85a18ea3e0883a4"
+    },
+    {
+      "path": "research/feedback-speciation/package/lake-manifest.json",
+      "bytes": 3553,
+      "sha256": "900c58fc1651f59c7c3a19c59f8660397727f3f3ea0721883e54272d1437d0fd"
+    },
+    {
+      "path": "research/feedback-speciation/package/lakefile.lean",
+      "bytes": 527,
+      "sha256": "a6c90017ca537347cffaf802208a50be44f9867865a3b9545823f4e661187a80"
+    },
+    {
+      "path": "research/feedback-speciation/package/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "research/feedback-speciation/package/vendor/SamuelAlexanderResearch/SpeciesBridge.lean",
+      "bytes": 12372,
+      "sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037"
+    },
+    {
+      "path": "research/feedback-speciation/package/vendor/SamuelAlexanderResearch/SpeciesGlobalIAP.lean",
+      "bytes": 8800,
+      "sha256": "e4db0196a66604490fc5eac367e0fc3a79d0274a6b14cb0f069143fd30c09377"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/AncestryExamples.log",
+      "bytes": 572,
+      "sha256": "ae8f01fa50ef9e1b5c808cb217fa29b6a122c7c921d8ad948404c8f2912e287d"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/AncestryMixing.log",
+      "bytes": 1196,
+      "sha256": "d890b41dbd8d8dd86c04b9e18eab0286386df8a8f2c9c913653af9c760812a87"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/FeedbackDynamics.log",
+      "bytes": 1966,
+      "sha256": "d4508e19522a7362312a8790d1d4776d0afca0454b9552caf4b5351fa05170ed"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/FogartyAffinity.log",
+      "bytes": 851,
+      "sha256": "3940c1a23f1a2f1a6e00ec52234e1a486856a78e9984e9517544a56e1f774389"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/FogartyAffinityFixation.log",
+      "bytes": 886,
+      "sha256": "08a727314af978fed32dca45aae927d424e8227d484b5f0cc59701039d8f2a2f"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/SamuelAlexanderResearch-SpeciesBridge.log",
+      "bytes": 901,
+      "sha256": "9d7ac66690854b22ca0a34240c79f4aded769a2d40eb6ac4aa653090c50e5278"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/SamuelAlexanderResearch-SpeciesGlobalIAP.log",
+      "bytes": 953,
+      "sha256": "56e51a59081dc89ed2c65356a7785fe1b63e583620c8e7a74b9ca209560e6e99"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/lakefile.translated.toml",
+      "bytes": 613,
+      "sha256": "22c64fed694fc1ffb1fd04e42e388854ba82793c89c049abbab00e8adc0288f2"
+    },
+    {
+      "path": "research/feedback-speciation/package/verification/receipt.json",
+      "bytes": 16276,
+      "sha256": "89dfc85c78d22359bfa9798985abc57771cace627f8cba43158db3af643670d2"
+    },
+    {
+      "path": "research/feedback-speciation/publication-transformations.json",
+      "bytes": 9170,
+      "sha256": "dbd65b64d0a38fb2d683a4df011636fe2f8fb2ebd03729862f7fc7575d604c30"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2-publication.json",
+      "bytes": 2953,
+      "sha256": "4474ec3b4104c3a1e974ee8a986727f259536915f852ef0cce8e6797d83006b6"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/COMBINED-RECEIPT.json",
+      "bytes": 10002,
+      "sha256": "8b43649d21a41038ed496dcef2ebd43e29429ef1e2f790c2a83d5dd4f5ce7353"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/Check.ps1",
+      "bytes": 3971,
+      "sha256": "68f888bf91545336ad95e5671d7b9a4920e9dc8095e7c4012c05215636462f00"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/DEPENDENCIES.json",
+      "bytes": 2265,
+      "sha256": "a446f4afbc425a99dd4d81ec03101c61b5642fe855435bccd1b9777849c58c5e"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/ExtinctionPedigree.lean",
+      "bytes": 9861,
+      "sha256": "ddb618e00f758546176eaedfbfc86d7457767133bc784b2990972c07a8fe63fb"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/FeedbackDynamics.lean",
+      "bytes": 20392,
+      "sha256": "0e8ac4ce157b5c3d8a66eb5d9ebe6ced7c1adbccf10359f1894fe4e72fc0a15a"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/FiniteEpigenetic.lean",
+      "bytes": 12917,
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/FiniteFixation.lean",
+      "bytes": 15133,
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/INDEPENDENT-REVIEW.json",
+      "bytes": 1072,
+      "sha256": "6df53bcba915047be3a65cd85320724acbf754afbbf3d78a29d3102efa2367b2"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/MANIFEST.json",
+      "bytes": 5876,
+      "sha256": "7a319b9c72b40a14260faf3698501dcaf8254ab2f47d279ab2b65817d541fbda"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/ParentSchedules.lean",
+      "bytes": 3061,
+      "sha256": "a35bc0c6e774cba93c2eebabe0f29530cceb12079d115e4ae28f2a6540aafdc7"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionAncestry.lean",
+      "bytes": 6384,
+      "sha256": "cc58fed43614564e0bdfaa6fb2527b035cf789c45b3096d15ddb8693a64c855d"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionJoint.lean",
+      "bytes": 6224,
+      "sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionNoise.lean",
+      "bytes": 6978,
+      "sha256": "53e77f062c0dfd23b274e9ddc801f8b8136f7783786600a407f6b657584018a0"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionPaths.lean",
+      "bytes": 7129,
+      "sha256": "f30a50c742c6348973711fbd73c2139a33efe9185e2218a74874d42a1aaeb4d3"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/PureInductionR1R2.lean",
+      "bytes": 13687,
+      "sha256": "633afd20f24da1c9cb86c5db7dda2bc1596b09cd634fe93ad0a70de0c5a8b85d"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/REPRODUCTION.md",
+      "bytes": 2981,
+      "sha256": "7ab5a8afaeba272a51f395e35c1836966f16c41f2b62f281b67f756d807d82e6"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/RESULT-AND-SCOPE.md",
+      "bytes": 7441,
+      "sha256": "dbc83d5952ceee6c3407522786da972bbd05875c9be3bef48174b0730e8c5dbe"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/SOURCE-PROVENANCE.json",
+      "bytes": 4913,
+      "sha256": "8a67de979e8176d6fd0350995b591a361eb119934a3d79ec3f8da79ad8aee8ae"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/SamuelAlexanderResearch/SpeciesBridge.lean",
+      "bytes": 12372,
+      "sha256": "0b4aff371434ba647a84b7871734f679f94cb49f170781f97e18a284178d0037"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/UniformParentCounting.lean",
+      "bytes": 6589,
+      "sha256": "3fbb09bbdfa0ffb78cf9e88488bceb3e831fd4f014dfdf3db6fe70370d75bea2"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/UniformParentProcess.lean",
+      "bytes": 7320,
+      "sha256": "1cce9f8d1738255cd59e2553ea75dbe3b2078ed4b50d261c28e6b833c8a55325"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/lake-manifest.json",
+      "bytes": 3672,
+      "sha256": "1d8ad8bea18f7fc799b5213fcc98ee319e80ffee4a2b97b1c1f9051e0c01f32b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/lakefile.lean",
+      "bytes": 680,
+      "sha256": "6f7408bd5c2abb45173b7b2d5e0a0993136aadb70daafaf8f6c75dff13f32228"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/provenance/Original-R1R2-Check.ps1",
+      "bytes": 4210,
+      "sha256": "5961a04df4899b6ac953396f4dcaa9f0a9842501466ad0253bbd7508e116fae4"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/provenance/Original-R3R6-Check.ps1",
+      "bytes": 5122,
+      "sha256": "ad80b282b3b19fe3bd68bcf93f49ef51c46d1bf03236057b58183f8e9c912dc9"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/provenance/PureInductionAncestry-receipt.json",
+      "bytes": 4093,
+      "sha256": "bf8d3b80993d3300d2a1184ce82dde259370b7f0ad6328c760f7de950e18512d"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/provenance/PureInductionNoise-receipt.json",
+      "bytes": 3559,
+      "sha256": "75707c59ccfd7fd03bd24f4292b0c9d26654e4cf4063277826daafe9e9690861"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/provenance/PureInductionPaths-receipt.json",
+      "bytes": 3374,
+      "sha256": "54bf5d3a586c7030558e19ef4e3db716450a4b356ca37328c913be8d111e8410"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/provenance/cache-acquisition.json",
+      "bytes": 1928,
+      "sha256": "666b140f62287cad0214c7aabaa92586ab1c90511a6fe654afdfb0c6328d067d"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/verification/PureInductionAncestry.log",
+      "bytes": 1342,
+      "sha256": "4049c721c6f2162a2a59906916720be47d3f95aa9ecc208beaeb8e01fd19f00b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/verification/PureInductionNoise.log",
+      "bytes": 834,
+      "sha256": "519354f6ea83c0c08ebc79825a602c9fffc9561b40874977d9445105a6f59ebe"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/verification/PureInductionPaths.log",
+      "bytes": 726,
+      "sha256": "5e90a3eb33addae9af6b845f182fb405ee419133741d4e16707d4a31f6a30604"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/verification/PureInductionR1R2.log",
+      "bytes": 1964,
+      "sha256": "dc4d310a753b43db26509618107d25dc94da8342b5b89a809d8279d0f3429ee4"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-ancestry-v2/verify_packet.py",
+      "bytes": 3577,
+      "sha256": "cbdea2714b9b1f2b7d35cf93a44d7184140edb216f1ddf771757a39c0280105b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite-audit.patch",
+      "bytes": 267,
+      "sha256": "2ae0af043307900a3e13ca494a3b9c455915b0ea1f42d83a8d67b2c69c69d2f6"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite-publication.json",
+      "bytes": 8519,
+      "sha256": "37dd0372abdd119556f3ebed081d70284905493c3501b4ecb3b9aff61ea3941e"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/.gitignore",
+      "bytes": 32,
+      "sha256": "d384127941d5278e6ce124e52e158f548868bafe2b72a29a8bb95858b891ede7"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/CHECKPOINT-AND-REMAINING-OBLIGATIONS.md",
+      "bytes": 5409,
+      "sha256": "c8825fbd9116f1b4421d39ac983fb44e84bbfb712d652edae393f9ea1152833c"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/Check.ps1",
+      "bytes": 4941,
+      "sha256": "882f88fb980d28fb3c64cc8050781acace2f3f7124cb7712126d0426128d693e"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/DEPENDENCIES.json",
+      "bytes": 1955,
+      "sha256": "8d855130f073d65a69aea90244aaf8b5df0153661e02f4eeeecd7de8f938ef7b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/FiniteEpigenetic.lean",
+      "bytes": 12917,
+      "sha256": "1a79a7a8ee8eca0950bbf97d17ae3e495a2c0268267041ee26b5be4b0031d822"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/FiniteFixation.lean",
+      "bytes": 15133,
+      "sha256": "bcc30acb045721d4832c4a0da51ced7e825bc2ec0c7050e1d2a81327fb3676f9"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/MANIFEST.json",
+      "bytes": 4139,
+      "sha256": "02c3cc1ff7fa3a252a385dc94ffb1fe159820a672cf4514169fcf4aaedc7b622"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/PROVENANCE.json",
+      "bytes": 5419,
+      "sha256": "ad46c62226236301e0461c7425c5fd29f27fff72dfb010ee0660310837780a2e"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/PureInductionJoint.lean",
+      "bytes": 6224,
+      "sha256": "eaace6cf46a5e827c08fb7241d663e6c8e3290c5cabf58763cda7d1cbe99fd8a"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/README.md",
+      "bytes": 6169,
+      "sha256": "d470c697ed7b3e9f5f8a65cf8801ce8b15adb2106fdde4ea267ff98ad4ec3564"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/REPRODUCTION.md",
+      "bytes": 4829,
+      "sha256": "b2da17a760320ea5c0d3a626b2970cf85983d2c2a170ce9d20d636a567f0eda0"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/lake-manifest.json",
+      "bytes": 3670,
+      "sha256": "7bd41668c5869e680f14925b76c5624e0d044f9e7a18e3f218795b78b3436a4b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/lakefile.lean",
+      "bytes": 337,
+      "sha256": "bbdb84d85d0e64aa1cec344dabded09877dd3486119d9613b0f2562e0a896e59"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/provenance/Original-Check.ps1",
+      "bytes": 3439,
+      "sha256": "4bd1a28278f4b7e41fed678fff42d0c87d12443a214989c93ab88ed9ac4801ca"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/provenance/frozen-combined-receipt.json",
+      "bytes": 5485,
+      "sha256": "fc291b42441d316fe079a65fbab21f0c5ece5211dac7bbddc21957dc580798eb"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verification/FiniteEpigenetic.log",
+      "bytes": 1261,
+      "sha256": "266c6b6bc8faeecea6554c45a746c0c5b3ad7a7e20d23d527a882f9c0a94f621"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verification/FiniteFixation.log",
+      "bytes": 1579,
+      "sha256": "b80561418e69952137a27c1b4ea8ce21f49c121de37917b6d5a1be1c8d0e22b1"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verification/PureInductionJoint.log",
+      "bytes": 822,
+      "sha256": "81646e705e6f1bb0386b584c997a11c9127e6d1ed0cbc9691a681917718aaa8b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verification/finite-dependency-receipt.json",
+      "bytes": 3046,
+      "sha256": "049f238c43f215110a90b769ffc2008d3b18f6b1c92fc2e0799ec811c706c6f0"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verification/independent-scope-audit.json",
+      "bytes": 2045,
+      "sha256": "1cbe1feae4d27121977a3d300b29b93609a88e258ba13f1ab683a48a7ed5b81b"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verification/worker-receipt.json",
+      "bytes": 1375,
+      "sha256": "07325b3d81b928d74fc1981f71bf902a01501f6aa6d8f77483a2afffe5f002c1"
+    },
+    {
+      "path": "research/feedback-speciation/pure-induction-finite/verify_packet.py",
+      "bytes": 4761,
+      "sha256": "4992cb5d9c9d1b1d88b0b741fe11e5b8609a51390cc7c6f7b3de87eb60f4fc5e"
+    },
+    {
+      "path": "research/feedback-speciation/rate-statement-review.md",
+      "bytes": 4468,
+      "sha256": "1b9326bfc0ca6f34f3d618e35c15ed1597096e96e1bc744a4520ac8870129cad"
+    },
+    {
+      "path": "research/genome-pedigree/CHECKPOINT.md",
+      "bytes": 3609,
+      "sha256": "bda99be531607ba04b0237203dbb8d3d05d819248270e8fb6a340e1bfeeb9237"
+    },
+    {
+      "path": "research/genome-pedigree/PAIRING-FALSIFICATION.md",
+      "bytes": 13128,
+      "sha256": "35346e4fe097c12548a330560a75e55b8f1d278f153dbe8fac72d5ba535b6b3b"
+    },
+    {
+      "path": "research/genome-pedigree/PAIRING-PRIOR-ART.md",
+      "bytes": 12843,
+      "sha256": "1359ee4f5654f5be2029139a2f9ed8da32c780d1a01fabade41d1d19ef55ba59"
+    },
+    {
+      "path": "research/genome-pedigree/PairingBridge.lean",
+      "bytes": 2936,
+      "sha256": "7137a1a7ab729bb395fb1e73a56c2fcfdcc94e3cc3fb4a7119bf8ec09597d40c"
+    },
+    {
+      "path": "research/genome-pedigree/PairingCore.lean",
+      "bytes": 22488,
+      "sha256": "f8723988f843354641a66e7cb71b021721864132d9f46b269efab2697c66db94"
+    },
+    {
+      "path": "research/genome-pedigree/PairingGARG.lean",
+      "bytes": 6169,
+      "sha256": "1dc127444928e95eb19945b31087a79125567097a41d664f5c708b89bde40b15"
+    },
+    {
+      "path": "research/genome-pedigree/README.md",
+      "bytes": 13923,
+      "sha256": "d1918a8e332ad3d3b8b15e3433427cf4814c60997df703b46234157ffba39c9f"
+    },
+    {
+      "path": "research/genome-pedigree/SCOPE-REVIEW.md",
+      "bytes": 8425,
+      "sha256": "355208d5216ea27cdd8e783acd36c14b90307106750c9e8658029fef3414df3e"
+    },
+    {
+      "path": "research/genome-pedigree/check_packet.py",
+      "bytes": 2218,
+      "sha256": "82ee9ab01fa074d0e815e12f55b4263cbba6dde38594be163a9c8c9881f6aa72"
+    },
+    {
+      "path": "research/genome-pedigree/verification/PROOF-RECEIPT.json",
+      "bytes": 20604,
+      "sha256": "49aee3776b19c24b1053e9f6dd13b3db6ac5d9c4b2419cdfa84dcafbd24b48c1"
+    },
+    {
+      "path": "research/genome-pedigree/verification/PairingBridge.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/PairingCore.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/PairingGARG.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/RealBridges.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-AncestralRestriction.txt",
+      "bytes": 885,
+      "sha256": "94481b329393da3fbe67dae8b2aa84672f7fb30176e95db275a860e1ca2badfd"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-AncestryContraction.txt",
+      "bytes": 496,
+      "sha256": "b470f0b865bdda2b435fc77161b43d10184104735f8cc9b9614c5ac3e2baf1d9"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-AncestryViews.txt",
+      "bytes": 459,
+      "sha256": "122cd242417a4429ce515faf0d66c1a858cea89805ad2c143e608d8460e6100f"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-BinaryAvoidance.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-BinaryPopulation.txt",
+      "bytes": 633,
+      "sha256": "a07f8ef3e255f7e0f6ae33bff5558943f5b8acb498df8ab0747b96263796011f"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-BirthOrder.txt",
+      "bytes": 1059,
+      "sha256": "916c968b345b46090e8ecfc58ccd6ffd99cc8bd084376746358ff83a944b482c"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-FiniteEditStability.txt",
+      "bytes": 965,
+      "sha256": "3ea72085983e4fab005546d7b36567d74037abaafef44553b196fd8f6aa38d26"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-FiniteHistoryCompletion.txt",
+      "bytes": 691,
+      "sha256": "dd26a09dca18c1e1a385c3a138fbfa32ef908894129a17e5414ff0c77b80f187"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-GeneralRootObstruction.txt",
+      "bytes": 812,
+      "sha256": "88b9b101c8e0622155ac073393d5dcec1c741fea402d973406b86ba4f1253c13"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-HistoryProjection.txt",
+      "bytes": 448,
+      "sha256": "bedfc7b0a42c075bc9f1b43c020c62de586ea1f04cb917ff10d6fba1951aa71d"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-InfiniteConservation.txt",
+      "bytes": 1846,
+      "sha256": "b57f3d219e3f928c611bf85fcc72fc1a1396122c16ff728fe299c0f5d0e0160e"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-PhaseShift.txt",
+      "bytes": 668,
+      "sha256": "663fdeeec77fcf05e78e59b44d907a3f9de097779d541190f140ba40970aed91"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-PopulationCounting.txt",
+      "bytes": 1809,
+      "sha256": "8845180194381846ee6818a7213158ec03a71b9bf35aa54d4d8d559bd35227f9"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-PopulationReindex.txt",
+      "bytes": 915,
+      "sha256": "efcd9ca0b5430ae370a5649f0371db6538a446e1548797e4c6772196e8d7f127"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-PositiveUnavoidability.txt",
+      "bytes": 811,
+      "sha256": "cf2ee7cb962414260fa592e5526d735d3487810163599fd48222a599fa2ae37f"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-QuantitativeAvoidance.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SharpCorollaries.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SharpThueMorse.txt",
+      "bytes": 1590,
+      "sha256": "6c52fa36e53380073c11650a68b39e2346410175cf392123a7f53ff6e324216d"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SpeciesAdapter.txt",
+      "bytes": 328,
+      "sha256": "caadc149c8b611be0b62539927873103f87a513bf175533fb3f6a9e0f4a4d146"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SpeciesBridge.txt",
+      "bytes": 901,
+      "sha256": "9d7ac66690854b22ca0a34240c79f4aded769a2d40eb6ac4aa653090c50e5278"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SpeciesCones.txt",
+      "bytes": 492,
+      "sha256": "1e2022cebb5dbef85ffbc521a8c6077bf984db13b5fea2380b9ebed430ba96fd"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SpeciesGlobalIAP.txt",
+      "bytes": 953,
+      "sha256": "56e51a59081dc89ed2c65356a7785fe1b63e583620c8e7a74b9ca209560e6e99"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-SpeciesRootCriterion.txt",
+      "bytes": 893,
+      "sha256": "4c7fe11381f0cc77e446b9e1bc4d4d5419a37f08421aa82cf123c0e666c29026"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-ThueMorseBits.txt",
+      "bytes": 579,
+      "sha256": "9a9eb685d8ba7254c74ffb0e0899623fd817b441f417e71a55288c30ca77e3e9"
+    },
+    {
+      "path": "research/genome-pedigree/verification/SamuelAlexanderResearch-ThueMorseBound.txt",
+      "bytes": 450,
+      "sha256": "390314ee9dea1f33d629127d2c2613a2bf63563272ef58f137b351a579976144"
+    },
+    {
+      "path": "research/genome-pedigree/verification/WongAlexander.txt",
+      "bytes": 831,
+      "sha256": "66798d707d273006ca7f84f10702deabc0d7bce3adbb7f6ffbf3c492d777016b"
+    },
+    {
+      "path": "research/genome-pedigree/verification/WongGARG.txt",
+      "bytes": 1012,
+      "sha256": "262167cf4f148f3b00a2dec5392a24baf1e49544de64924246e879f874b75b0d"
+    },
+    {
+      "path": "research/genome-pedigree/verification/axioms.txt",
+      "bytes": 6077,
+      "sha256": "952faf1caa79c90238aa357de7555beda50402b8433e8cd8397502b3e754ba71"
+    },
+    {
+      "path": "research/genome-pedigree/verify.py",
+      "bytes": 9797,
+      "sha256": "6adf46ef676282a7456d98875c659201ff572cedfa44ea6a24e6ac6420704315"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/CALIBRATION-BOUND.md",
+      "bytes": 4624,
+      "sha256": "1811bd4d72437666562e2ec95c005f55ac0527e4ed92a633d6a06271de049624"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/OTHER-PAPERS.md",
+      "bytes": 5383,
+      "sha256": "939b491b4d1a21856038ad67ae14b199861e2732ddfed6cfa3dee49e73492a9c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/PROOF-STRUCTURE.md",
+      "bytes": 19125,
+      "sha256": "167f5285b52b575abaa1ecfa1a8ae5e38aa20124c252d3641e965ff7327f7399"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/README.md",
+      "bytes": 12070,
+      "sha256": "96795e2aad4cd4e3422e2b5fc3760ac58528301940796751d7abf6adfea871f1"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/calibration-results.json",
+      "bytes": 3645,
+      "sha256": "b404801e566c7647aa4cc8cd436841fe6b4129c25cba0c2b32e0f5b79eb0d5b1"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/calibration_demo.py",
+      "bytes": 1725,
+      "sha256": "459b105ddf96d22df89fcb80605baf2628b8a0e5034a1a93694d41ca6e469a10"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/BRIDGE.md",
+      "bytes": 17355,
+      "sha256": "4d1ad176e2e3eedb5c2df63c3925287d8b239299a739d262e3a54ca1344a2af3"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/FINITE-CHECKS.json",
+      "bytes": 7399,
+      "sha256": "6f52b7eceb2a42b38ed35326de134ed3af2c18e02a129ed5196f92147dc1fa9c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/PUBLICATION-MANIFEST.json",
+      "bytes": 12507,
+      "sha256": "39046e13e55b43a71e9c5e0d59f09dd8ea6e2fbf5f165b55994f61ff270744aa"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/README.md",
+      "bytes": 2956,
+      "sha256": "be5da0efc8bbeee580b261d610a63c032bf0383f0f3100303fde6fdf2d86ced6"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/REPLAY-RECEIPT.json",
+      "bytes": 1546,
+      "sha256": "a86d3f555f2c99ef3a1dd8181e9315cea48d363427743067ff71a28677b883b4"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOL2-REVIEW.md",
+      "bytes": 6021,
+      "sha256": "2a141a40593f444dc3f9222619b700ee6c3a24c325be433dab95ed9dd04c964a"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCE-MANIFEST.json",
+      "bytes": 6920,
+      "sha256": "56ba71b9e59ae7af69e651494667b60035bb1a95743c1ada873e3527e6962cad"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/SOURCES.md",
+      "bytes": 8163,
+      "sha256": "5efc0aeeb375ee36625344f494cbcc82f2e39c3718606439563fccfd7c5c992e"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/check_models.py",
+      "bytes": 9580,
+      "sha256": "696a08f6882dcf6361b418e95add86347507e8d2b181d06835e8783db683456c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/ExactAbstraction.lean",
+      "bytes": 6308,
+      "sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/MergeHistoryProjection.lean",
+      "bytes": 6644,
+      "sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/controlled-abstraction-bridge/source-snapshots/PUBLIC-VERIFICATION.json",
+      "bytes": 6789,
+      "sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/ExactAbstraction.lean",
+      "bytes": 6308,
+      "sha256": "a5c8c5113532bfabb84e5259be91c551ab4210ce4301afc7a6fc233cab40c42e"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/MERGE-HISTORY.md",
+      "bytes": 5845,
+      "sha256": "e34c9303e17b9986004ad8afaadf4019cb1e216b264469e3ba4561eb106d475f"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/MergeHistoryProjection.lean",
+      "bytes": 6644,
+      "sha256": "c040d1e74335ad2c86b050503df81b16eecce429ab8a063b6ea2f42af2971554"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/PUBLIC-VERIFICATION.json",
+      "bytes": 6789,
+      "sha256": "879fb76679d4a733404736ca63267d428ce34e0e521d18ef8265107c7a0ed696"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/README.md",
+      "bytes": 5294,
+      "sha256": "fdb6de4893ad82903f8904e59efd606e3c78cac820249b919fc8a6d0189508d0"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/merge-validation.txt",
+      "bytes": 850,
+      "sha256": "c764b47ea4627bbd2d07132d258e07c8c211e867a29188fa33c4e6d0ae1511bf"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/exact-abstraction/validation.txt",
+      "bytes": 792,
+      "sha256": "559d60266add2d3d618fa92c54625cfe943668f36d4dc772e8ff68b148bbac82"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/independent-ipdm-operator-test.json",
+      "bytes": 2285,
+      "sha256": "d6cb6f4655684dcec307e4f871befe4c08d8b745109f69f8308a2516b8d86723"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/independent-ipdm-operator-test.py",
+      "bytes": 7277,
+      "sha256": "500f3c7d7f1811305c59fac56ab524439865881c61f2a114867d713f86b1f918"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/independent-rsos-review.md",
+      "bytes": 17377,
+      "sha256": "d36e8c2dbe92553482c7ff9c59e5acca2d0f32fa8613b9819abc4d967ceb4a16"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/AUDIT.md",
+      "bytes": 16203,
+      "sha256": "1288edb1e400073cdb3230bdb14aed9a743685168b4f611302cb23fe043594a8"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/AncestryObservation.lean",
+      "bytes": 3546,
+      "sha256": "9790ddc196ce3ff30b6abd03a940f7cb0f1543dfb86f954f85ffe9fc87890f50"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/BIOLOGY.md",
+      "bytes": 7671,
+      "sha256": "5a6162854207a2dc4b728e9a0c7006f83624e8bfd92ddebe6d321d15d106a7c7"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/CHECKPOINT.md",
+      "bytes": 5490,
+      "sha256": "7a67318a4ed0e3a3fbc2a4ca152af0cbdc3ad25d9920d2186e0d1813bcfae10f"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/ControlledMemory.lean",
+      "bytes": 8227,
+      "sha256": "5d4ffca3a645e350ca42540f2b77181a3a8625b2177442ed28d501cd241b02e1"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/HistoryObservation.lean",
+      "bytes": 3404,
+      "sha256": "2a4e6f6bc7c8fc008cff1c4563747842d8d2882d83e692637dd6657b3e777d89"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/INDEPENDENT-SCOPE-REVIEW.md",
+      "bytes": 29385,
+      "sha256": "48704c9579a770381f7e6c9cbccc8574a2690b84b153334cfd60a45169be8ed2"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/PredictiveState.lean",
+      "bytes": 9505,
+      "sha256": "4738c91ecdac1be616ab0716c09b80aa6c40e691bcac0ef2e4298410656f6f94"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/RESULTS.md",
+      "bytes": 10802,
+      "sha256": "18642a07a48f8bbba399ae704a252596d793a1ed908c588acec08807dc1024fd"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/STENTOR-EVIDENCE.md",
+      "bytes": 6909,
+      "sha256": "a82e31c8b5f08aedbe6cce8840fd86e3588e4c232f380808a6e643be2481801c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/STOCHASTIC-SCOPE-REVIEW.md",
+      "bytes": 26667,
+      "sha256": "6912489212c206c404ec30b571d03f0afb245623431e519267f1c71bfd75dfa9"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/STOCHASTIC.md",
+      "bytes": 11063,
+      "sha256": "d4fb87f5eea1651375318c74c0f72bcdda95133d5b0d21fe86bab5773dc1ddd0"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/StochasticAbstraction.lean",
+      "bytes": 10726,
+      "sha256": "943a395e85d3df0fbd8e4570fa205f3a2748cfdaa744ce1add9380b8d41453ce"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/StochasticExamples.lean",
+      "bytes": 6230,
+      "sha256": "78c2f7ea2a59e2d3f3446b22df575353e527d067117863c9a0b3568f38ac1f2c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/WongPredictiveBridge.lean",
+      "bytes": 3147,
+      "sha256": "636070e36c8a874613d652ddcd59f352874030e9e66b1a32a2edced10d96943a"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/check_examples.py",
+      "bytes": 5351,
+      "sha256": "6f06ae374f58d7c1eceddaeae55e0a03a0652b054dfb8ac6a8aefdfc88147031"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/check_packet.py",
+      "bytes": 3119,
+      "sha256": "2e5deda3a3d84c4a1a88dcb9bad93a9ecbcb2d870fd1ac48ad503bcb8fd8b198"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/AncestryObservation.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/CALIBRATION-REPLAY.json",
+      "bytes": 473,
+      "sha256": "dc48c210b370bc5ce1af0de72bbe6c19f3038248b04f0131e493bd309dc188d0"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/CONTROLLED-REPLAY.json",
+      "bytes": 8064,
+      "sha256": "dde39549b643163e8acadbe159061c28d242d412fe8a3a108387f1588f6ab59c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/ControlledMemory.txt",
+      "bytes": 270,
+      "sha256": "abadae0c13d2be3f8956989612ad407d3559c8784d9b81bf240b3431ef8a3c0e"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/EXACT-EXAMPLES.json",
+      "bytes": 2589,
+      "sha256": "ff32e3fbb7608b81b3290132cb56996b5ba4f57f17087b40a184064dc94d08cf"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/ExactAbstraction.txt",
+      "bytes": 792,
+      "sha256": "559d60266add2d3d618fa92c54625cfe943668f36d4dc772e8ff68b148bbac82"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/HistoryObservation.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/MergeHistoryProjection.txt",
+      "bytes": 850,
+      "sha256": "c764b47ea4627bbd2d07132d258e07c8c211e867a29188fa33c4e6d0ae1511bf"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/PROOF-RECEIPT.json",
+      "bytes": 25839,
+      "sha256": "c9532b9e93718f1b3f3e1dc02712781a09cc547b7ead7e3995bfb2116e8ff1bd"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/PredictiveState.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/RealBridges.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/STENTOR-SOURCE-RECEIPT.json",
+      "bytes": 10601,
+      "sha256": "6be6c6cfffdb8cff909f4bbba77add304f5b0411473e71462c26f3eee98f7d4f"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-AncestralRestriction.txt",
+      "bytes": 885,
+      "sha256": "94481b329393da3fbe67dae8b2aa84672f7fb30176e95db275a860e1ca2badfd"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-AncestryContraction.txt",
+      "bytes": 496,
+      "sha256": "b470f0b865bdda2b435fc77161b43d10184104735f8cc9b9614c5ac3e2baf1d9"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-AncestryViews.txt",
+      "bytes": 459,
+      "sha256": "122cd242417a4429ce515faf0d66c1a858cea89805ad2c143e608d8460e6100f"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-BinaryAvoidance.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-BinaryPopulation.txt",
+      "bytes": 633,
+      "sha256": "a07f8ef3e255f7e0f6ae33bff5558943f5b8acb498df8ab0747b96263796011f"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-BirthOrder.txt",
+      "bytes": 1059,
+      "sha256": "916c968b345b46090e8ecfc58ccd6ffd99cc8bd084376746358ff83a944b482c"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-FiniteEditStability.txt",
+      "bytes": 965,
+      "sha256": "3ea72085983e4fab005546d7b36567d74037abaafef44553b196fd8f6aa38d26"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-FiniteHistoryCompletion.txt",
+      "bytes": 691,
+      "sha256": "dd26a09dca18c1e1a385c3a138fbfa32ef908894129a17e5414ff0c77b80f187"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-GeneralRootObstruction.txt",
+      "bytes": 812,
+      "sha256": "88b9b101c8e0622155ac073393d5dcec1c741fea402d973406b86ba4f1253c13"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-HistoryProjection.txt",
+      "bytes": 448,
+      "sha256": "bedfc7b0a42c075bc9f1b43c020c62de586ea1f04cb917ff10d6fba1951aa71d"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-InfiniteConservation.txt",
+      "bytes": 1846,
+      "sha256": "b57f3d219e3f928c611bf85fcc72fc1a1396122c16ff728fe299c0f5d0e0160e"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-PhaseShift.txt",
+      "bytes": 668,
+      "sha256": "663fdeeec77fcf05e78e59b44d907a3f9de097779d541190f140ba40970aed91"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-PopulationCounting.txt",
+      "bytes": 1809,
+      "sha256": "8845180194381846ee6818a7213158ec03a71b9bf35aa54d4d8d559bd35227f9"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-PopulationReindex.txt",
+      "bytes": 915,
+      "sha256": "efcd9ca0b5430ae370a5649f0371db6538a446e1548797e4c6772196e8d7f127"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-PositiveUnavoidability.txt",
+      "bytes": 811,
+      "sha256": "cf2ee7cb962414260fa592e5526d735d3487810163599fd48222a599fa2ae37f"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-QuantitativeAvoidance.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SharpCorollaries.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SharpThueMorse.txt",
+      "bytes": 1590,
+      "sha256": "6c52fa36e53380073c11650a68b39e2346410175cf392123a7f53ff6e324216d"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SpeciesAdapter.txt",
+      "bytes": 328,
+      "sha256": "caadc149c8b611be0b62539927873103f87a513bf175533fb3f6a9e0f4a4d146"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SpeciesBridge.txt",
+      "bytes": 901,
+      "sha256": "9d7ac66690854b22ca0a34240c79f4aded769a2d40eb6ac4aa653090c50e5278"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SpeciesCones.txt",
+      "bytes": 492,
+      "sha256": "1e2022cebb5dbef85ffbc521a8c6077bf984db13b5fea2380b9ebed430ba96fd"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SpeciesGlobalIAP.txt",
+      "bytes": 953,
+      "sha256": "56e51a59081dc89ed2c65356a7785fe1b63e583620c8e7a74b9ca209560e6e99"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-SpeciesRootCriterion.txt",
+      "bytes": 893,
+      "sha256": "4c7fe11381f0cc77e446b9e1bc4d4d5419a37f08421aa82cf123c0e666c29026"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-ThueMorseBits.txt",
+      "bytes": 579,
+      "sha256": "9a9eb685d8ba7254c74ffb0e0899623fd817b441f417e71a55288c30ca77e3e9"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/SamuelAlexanderResearch-ThueMorseBound.txt",
+      "bytes": 450,
+      "sha256": "390314ee9dea1f33d629127d2c2613a2bf63563272ef58f137b351a579976144"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/StochasticAbstraction.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/StochasticExamples.txt",
+      "bytes": 503,
+      "sha256": "8e05435565254f9476cc9a4a64eb31c493ba823087b572472b5440f25fc12de6"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/WongAlexander.txt",
+      "bytes": 831,
+      "sha256": "66798d707d273006ca7f84f10702deabc0d7bce3adbb7f6ffbf3c492d777016b"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/WongGARG.txt",
+      "bytes": 1012,
+      "sha256": "262167cf4f148f3b00a2dec5392a24baf1e49544de64924246e879f874b75b0d"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/WongPredictiveBridge.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verification/axioms.txt",
+      "bytes": 9261,
+      "sha256": "eabfb12b3e9d8c090c727ce2d3529dcbed7eb8421e659d0f4b4d7abe1ee17ab7"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/predictive-memory/verify.py",
+      "bytes": 9896,
+      "sha256": "f7c72d4c7a6395d7a0fe710539b43127c543b4a452c6d2bc3efeadc2b18d2e88"
+    },
+    {
+      "path": "research/open-problems/time-self-reference/problem-ledger.json",
+      "bytes": 52713,
+      "sha256": "ad65da3d57cc310508c262748d4dd012e6e82b704fb417920d9f6d4a196d4fd3"
+    },
+    {
+      "path": "research/open-questions/README.md",
+      "bytes": 8358,
+      "sha256": "0622d23bd0ef2fd6a7a76558b202747d217629d529086d38fa9c2ac4fc0b721e"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/HANDOFF.md",
+      "bytes": 3614,
+      "sha256": "8a13e22cc73eac54f3ad995b2719924973bc869e991c23f4c35cacaedddff578"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/HANDOFF.original.txt",
+      "bytes": 3614,
+      "sha256": "8a13e22cc73eac54f3ad995b2719924973bc869e991c23f4c35cacaedddff578"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/PUBLICATION-INTAKE.json",
+      "bytes": 8881,
+      "sha256": "d18fdad599a995ce40cfa1e81d03a176cd751f4b54f1c08b9294f280ba6d129c"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/README.md",
+      "bytes": 1999,
+      "sha256": "ba7d9e77dc0a23751ea91fa6ad97ff1db6ace955819c3082d71621452a7a98a1"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/README.original.txt",
+      "bytes": 1289,
+      "sha256": "3635cef0d0af70ba23d42bac8c4e78f2fab03b73063a687857ef6830bcf1ca6b"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/RESULTS.md",
+      "bytes": 16902,
+      "sha256": "b027ad8b9bec0bae55db098e7ed38c093e6c7aa39549f0c8d74620968f496fcc"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/RESULTS.original.txt",
+      "bytes": 16882,
+      "sha256": "1ac1aab46ad5caae8c082bd2437ac81eb7c055d26c2878709f21f8505054e89c"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/GenericUniversalAvoiders.check.json",
+      "bytes": 1932,
+      "sha256": "e0daf7291707997e9f9a59763329bf69e1c9bc267ea0e6f456420a8858878be1"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/GenericUniversalAvoiders.compile.log",
+      "bytes": 1232,
+      "sha256": "d9a6f6f15ceb70cc40c5989b73d9ac73df94226ab316d1f1461f3d214e639c20"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/GenericUniversalAvoiders.lean",
+      "bytes": 21037,
+      "sha256": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/TerminalCloneAvoiders.check.json",
+      "bytes": 1926,
+      "sha256": "2be0631805eea4ce4b4dc38a4b1b3d5ad16cc1e5dc9d94e1a7b8befba4bca962"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/TerminalCloneAvoiders.compile.log",
+      "bytes": 1919,
+      "sha256": "edc35142ffa0b9c0851b7c49c7ace18f58e630ce6f54bd955bec08129ea606a3"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/TerminalCloneAvoiders.lean",
+      "bytes": 17057,
+      "sha256": "f074f86ed6a678ba011175eb2d17be3a2d95d7ee69c2de2a7e5ddc7d8947a783"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/audit.md",
+      "bytes": 14945,
+      "sha256": "a3f4beced198b3696830f94070177415e4a87c70bac08f4d856fbf318a1f7973"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/audit.original.txt",
+      "bytes": 14946,
+      "sha256": "9cfb46b663e359fb9806276106011a9078b94af8b53ff4082747f61ceb55a9b0"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/check-lean.ps1",
+      "bytes": 1420,
+      "sha256": "b49140c71a57be238f5795f205ac9691777ff407d6a3046450c7f8cd1273b973"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/freeze-manifest.json",
+      "bytes": 6918,
+      "sha256": "271e3678d1991d89309012cf67047cb8fe3285fab55e88ff4259fec44dd40a9f"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/embedding/source-hashes.json",
+      "bytes": 1022,
+      "sha256": "f682d1849f2eddc0a4bbcd11161fb6af8ef07ddbb5e5823b3c4823b7fd6fba8a"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/Check.ps1",
+      "bytes": 1052,
+      "sha256": "b617db2a74b0c73f2e574365ecee11950e8bcea5da14221496da7883f2176faf"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericCertificate.lean",
+      "bytes": 10316,
+      "sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericCertificate.log",
+      "bytes": 850,
+      "sha256": "ed74539be133492a67828c5df546e48e1cc843ea3f1ba177a196ab8984141b97"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericMortalRank.lean",
+      "bytes": 4748,
+      "sha256": "227b2cfcd452a5f75674ff0f835f9814818f70f3401dd440fa220a3f0c822f9b"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericMortalRank.log",
+      "bytes": 856,
+      "sha256": "ecb25587c8e0d27aa5c770947344603d00417d9a59c862bd5cb312423de5bfe6"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericOrdinalCertificate.lean",
+      "bytes": 2358,
+      "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericOrdinalCertificate.log",
+      "bytes": 374,
+      "sha256": "e643123429bde40620ffb9a426e929cc25529fab6d66f364b957a40f16a7405a"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericPruning.lean",
+      "bytes": 8501,
+      "sha256": "46425ee10a089dd24529631c531b04f36ad1cdc7b72e4c8380c0afa62fe6fee4"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/GenericPruning.log",
+      "bytes": 1023,
+      "sha256": "153885fc1d833678149e29c1c565f7dcfd202e318da29c2226fab0f2ff37c3f0"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/formal/verification.json",
+      "bytes": 2715,
+      "sha256": "7df995dddc11e2c6d83156ea1592f1aaf941bc0dad623fc6abd1e5b634fc913e"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/literature/evidence-map.md",
+      "bytes": 16308,
+      "sha256": "510330abe9b87daa2c920661d8806e2e0536a5875b40a9f64833ff0ca3e2f8d2"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/literature/evidence-map.original.txt",
+      "bytes": 16308,
+      "sha256": "510330abe9b87daa2c920661d8806e2e0536a5875b40a9f64833ff0ca3e2f8d2"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/literature/new-proof-scope-review.md",
+      "bytes": 6561,
+      "sha256": "bebe768a3c260ade95d0470e445098b1d8c35c59cc1b619ad83803bda7347fc4"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/literature/new-proof-scope-review.original.txt",
+      "bytes": 6561,
+      "sha256": "bebe768a3c260ade95d0470e445098b1d8c35c59cc1b619ad83803bda7347fc4"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/literature/search-log.md",
+      "bytes": 11249,
+      "sha256": "aab6638b23eb725ebe740f4a95b060307fec2703c82c07438b697cc63700df88"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/literature/search-log.original.txt",
+      "bytes": 11249,
+      "sha256": "aab6638b23eb725ebe740f4a95b060307fec2703c82c07438b697cc63700df88"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.check.json",
+      "bytes": 2923,
+      "sha256": "ac04f4f621699ec9b82066f69e1aa98aef731221c0ecaae2d569c6b083864468"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.lean",
+      "bytes": 8870,
+      "sha256": "82324d012e1572abb33255e8b30616faeae1b2033fe3da47173ada6f58024171"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/BlowUpRankInvariance.log",
+      "bytes": 755,
+      "sha256": "736df402ffc8ed6eb454ee0173a689f7993b8134bacb812e72f0dac696d6405e"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/Check-Bridge.ps1",
+      "bytes": 1068,
+      "sha256": "3da829f3b3f234c64f88d9c53c2c9028ba620267cc6fc23122c5f402aaaa48dd"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/audit.md",
+      "bytes": 21134,
+      "sha256": "d207e628f844f7b0be01c0970ee0c8adeccf3e3a50ae12cd745e87cffc76e1ff"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/ordinal-audit/audit.original.txt",
+      "bytes": 21133,
+      "sha256": "b82549d8e2127b584043c8deb475b576b24e624d225b0a2e9ee1a7d3107cde1c"
+    },
+    {
+      "path": "research/open-questions/continuation-2026-09-29/verification-manifest.json",
+      "bytes": 4416,
+      "sha256": "0d77493cb4056dd07cec7b618681d1fa4fc442f296b729c3f90ffd2ba4ddcae5"
+    },
+    {
+      "path": "research/open-questions/embedding/Check.ps1",
+      "bytes": 747,
+      "sha256": "bdb425d66afd435c8f7e0f6f21129a6b402cba116e3648d0f637f02a38cba270"
+    },
+    {
+      "path": "research/open-questions/embedding/FORMALIZATION-RECEIPT.md",
+      "bytes": 5615,
+      "sha256": "42adcdc9e11dc0f635d313e5a936833149d106854b36d85c3e9b92b8c9a1cc2b"
+    },
+    {
+      "path": "research/open-questions/embedding/GenericUniversalAvoiders.lean",
+      "bytes": 21037,
+      "sha256": "7c96183bd1cea8a694b59a12def6ebedb2b6f238044a6c6fb24610e49a37eac4"
+    },
+    {
+      "path": "research/open-questions/embedding/INDEPENDENT-CHECK.md",
+      "bytes": 7389,
+      "sha256": "1f98f712ae493df4f112b17354a6279ce06a389f8ca395070d8950a40d485561"
+    },
+    {
+      "path": "research/open-questions/embedding/UNIVERSAL-AVOIDER-NONEXISTENCE.md",
+      "bytes": 22678,
+      "sha256": "75dc49cf0af65eeffe23c008b009b63529e463be76dd64e73c92517378761c76"
+    },
+    {
+      "path": "research/open-questions/embedding/dependency-sources.json",
+      "bytes": 5432,
+      "sha256": "8668d601aabdc00a63a11fca65c1ef61df34bb821c8ed62abc8732e5472e4ed6"
+    },
+    {
+      "path": "research/open-questions/embedding/generic-lean-check.log",
+      "bytes": 1127,
+      "sha256": "6875ac325c19039bdc574195716bdabf9f6a63703c48e989b9336d2774254e8d"
+    },
+    {
+      "path": "research/open-questions/embedding/verification-receipt.json",
+      "bytes": 2987,
+      "sha256": "68ded8be6aaf29c6f379894fc9faed20b974981a777174797e2a95019abe57ce"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/FiniteGenomeIdentifiability.lean",
+      "bytes": 3016,
+      "sha256": "369699a545f1b0f535de2ca1fc1f1e45591cc91eaca4b33c1f23316cfcf431c5"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/README.md",
+      "bytes": 8450,
+      "sha256": "caebd719f49b4f1650242ad4d414e92bf00f5f4ad115caca70e4894e22f67861"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/Check.ps1",
+      "bytes": 646,
+      "sha256": "ff6dfee61b56e0ec13394c045c11276cf70084cbbedaa657b6763ab663ea74b3"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/FORMAL-SCOPE.md",
+      "bytes": 7001,
+      "sha256": "0844e5dfb4ed787fa5e5a9b5b6b9cb2d38311eb219e718e26a64e28f843e0fcf"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/README.md",
+      "bytes": 8658,
+      "sha256": "9500d3437323c51443b2c6ae591516a96e7b3e47f35f32a040325988f3c55643"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/ThreeTaxonFiniteEvidence.lean",
+      "bytes": 6812,
+      "sha256": "01f53ac6176f612beda29475805d5c27293db7a35d10907a2db3ad8a96ae18f5"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/dna_species_evidence_ledger.md",
+      "bytes": 12689,
+      "sha256": "c6bce847ca1213af3d1015e741f759ab04654d52c3ddeedda1df2740b7094601"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/dna_species_search_log.md",
+      "bytes": 4673,
+      "sha256": "f8f3f6f59b891c3d59647040c6d009203fdc785954af680f1d361485757548bb"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/search-protocol.json",
+      "bytes": 2049,
+      "sha256": "1a3c6f79067f42b2780d76be1eef9914ad02a067ad8c7b71b676bbb6e8274ad1"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/validation.txt",
+      "bytes": 874,
+      "sha256": "3d0ebb0051e6a93d50b634ab816fb83c6a1193a16d17e71fd67d9303946d5732"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/next/verification.json",
+      "bytes": 1143,
+      "sha256": "39a515edbd5d9269716cf05bf42d76348c6d0168f6d8548e4e3cd2f2766ae69a"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/positive/README.md",
+      "bytes": 3286,
+      "sha256": "be7bd64d69616fee813b28bae64b4994fa4abd72eb3095cd0f8e80c4b23a6046"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/positive/ThreeTaxonIdentifiability.lean",
+      "bytes": 4996,
+      "sha256": "97eddf62044c37e6973873f987c49ea69e0f9f2081ccd955fd05dc27099c2cf6"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/positive/validation.txt",
+      "bytes": 630,
+      "sha256": "69021a0aec76b930e8143a7b7bc2eee4038e8ce35b81c487ed23560889baad00"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/positive/verification.json",
+      "bytes": 606,
+      "sha256": "dd04918c82a76a681a73b01d605de49f54401189cc6dc4588b0f58bcdbc519cd"
+    },
+    {
+      "path": "research/open-questions/genomic-identifiability/verification.json",
+      "bytes": 719,
+      "sha256": "b6d67e3415058a7bd027090fe52ffff141551aaab1700eb33f0ca684313e2cb4"
+    },
+    {
+      "path": "research/open-questions/manifest.json",
+      "bytes": 5830,
+      "sha256": "c8f80a895950414a3cb64fb40500c2adb077a9d04235960119bfa5fd8694fc23"
+    },
+    {
+      "path": "research/open-questions/ordinal/COMPLETION-RECEIPT.md",
+      "bytes": 7850,
+      "sha256": "c1efd5e6646f38a1302c8a8ea238714a14fcfff66c72d082b0ffe901959184ae"
+    },
+    {
+      "path": "research/open-questions/ordinal/GENERIC-CERTIFICATE.md",
+      "bytes": 3851,
+      "sha256": "7516e589c42dd97e7543a75b1dc108c3dde01f3c677a831c64080650dfc04f56"
+    },
+    {
+      "path": "research/open-questions/ordinal/GenericCertificate.lean",
+      "bytes": 10316,
+      "sha256": "f3b1fbfb72d2e7e08b94ff88279432b809747321e0003ee687c04f6307ed5581"
+    },
+    {
+      "path": "research/open-questions/ordinal/GenericOrdinalCertificate.lean",
+      "bytes": 2358,
+      "sha256": "17c0fbbdd5f904aafd85bca42ec0e8836d03a38ebc5389bb6207abd9a8079510"
+    },
+    {
+      "path": "research/open-questions/ordinal/HistoryConverse.lean",
+      "bytes": 1590,
+      "sha256": "da301f530d3f41b7ce7a1d1dc9917011be7c508b747d252b32c4f62836b09d62"
+    },
+    {
+      "path": "research/open-questions/ordinal/HistoryPruning.lean",
+      "bytes": 3452,
+      "sha256": "7441b97fd379513dcc4ef852bf3ee8eae2a2a297ebed2110fe850e2f339e4a3b"
+    },
+    {
+      "path": "research/open-questions/ordinal/HistoryWellFounded.lean",
+      "bytes": 5682,
+      "sha256": "e3efce200eac78dd6ec306b3087f5cd0ec87cf8e3f0db939284c62553133ce96"
+    },
+    {
+      "path": "research/open-questions/ordinal/NECESSITY-FORMALIZATION.md",
+      "bytes": 5907,
+      "sha256": "9d865f5f37d6bbb623ee6d5f44b1a65df642de5cda9f2c89536652108d2f7af0"
+    },
+    {
+      "path": "research/open-questions/ordinal/NECESSITY-SHA256SUMS.txt",
+      "bytes": 187,
+      "sha256": "5905d753cdb5e867d4711131911c4d0d0fbf3e08b6bbc40b7897c4ace96ddd41"
+    },
+    {
+      "path": "research/open-questions/ordinal/ORDINAL-CERTIFICATE.md",
+      "bytes": 3574,
+      "sha256": "2a958edc656bf71b01039cf5a79eb62fa3f937e1639137870f4553bdff5b5cf0"
+    },
+    {
+      "path": "research/open-questions/ordinal/ORDINAL-CHARACTERIZATION.md",
+      "bytes": 18598,
+      "sha256": "d59c82884b7b0b4782f92a45222ae03fe9be6cdabe580ba99c1c5d58e4a85ad2"
+    },
+    {
+      "path": "research/open-questions/ordinal/OrdinalCertificates.lean",
+      "bytes": 3676,
+      "sha256": "712cc36d5e75c18f6060439591c392a97af80f9b3a23a92c70198c4deac4d2af"
+    },
+    {
+      "path": "research/open-questions/ordinal/OrdinalHistoryRank.lean",
+      "bytes": 5155,
+      "sha256": "67b018434e820175aff7af2d9fa615d7cd4a42844600380b81259f4925198d74"
+    },
+    {
+      "path": "research/open-questions/ordinal/ReachableRankNecessity.lean",
+      "bytes": 8099,
+      "sha256": "da2be4d009966196e4b160789e968677b913385e2f7d4f037ed50281fed7fa50"
+    },
+    {
+      "path": "research/open-questions/ordinal/SHA256SUMS.txt",
+      "bytes": 537,
+      "sha256": "e67925278ddecc57448eeee824dcad7d44d56a2e7f16954277c738ef0103d836"
+    },
+    {
+      "path": "research/open-questions/ordinal/VERIFICATION.md",
+      "bytes": 1690,
+      "sha256": "651df082aedc4077fde79a743be1f907f0e30af6cdf0b8d6aed11c85fe84790c"
+    },
+    {
+      "path": "research/open-questions/ordinal/generic-validation.txt",
+      "bytes": 850,
+      "sha256": "ed74539be133492a67828c5df546e48e1cc843ea3f1ba177a196ab8984141b97"
+    },
+    {
+      "path": "research/open-questions/ordinal/generic-verification.json",
+      "bytes": 2501,
+      "sha256": "fc877f0844fef19132589f221d4879418acf1e7295f2464b4b47aab711ba4f1e"
+    },
+    {
+      "path": "research/open-questions/ordinal/ordinal-run.json",
+      "bytes": 440,
+      "sha256": "87e3ea9682ac77c9d3dbef0692778900bbe40fb1dd1c8aa79fa5448f4a98c4d4"
+    },
+    {
+      "path": "research/open-questions/ordinal/ordinal-validation.txt",
+      "bytes": 374,
+      "sha256": "e643123429bde40620ffb9a426e929cc25529fab6d66f364b957a40f16a7405a"
+    },
+    {
+      "path": "research/open-questions/ordinal/ordinal-verification.json",
+      "bytes": 1512,
+      "sha256": "482a2a88bff6481a63f8532b2e5fbc66b2cffb40f6b851c06ca9028ea8719c53"
+    },
+    {
+      "path": "research/open-questions/species/FOUNDER-WINDOW-THEOREM.md",
+      "bytes": 19289,
+      "sha256": "13c33846073dfce6b60afe130f997380606624eb376cad34781645d47fc33e8a"
+    },
+    {
+      "path": "research/open-questions/species/FounderWindow.lean",
+      "bytes": 5042,
+      "sha256": "75ef5ebd9b1feb0751b047f5fe30cb2532da30be96dcf4dee3941408ae4d4ae3"
+    },
+    {
+      "path": "research/open-questions/species/VERIFICATION.md",
+      "bytes": 3497,
+      "sha256": "44e3dbc718dc454a9cb0767472bf8b989ea089c51b9cbee3a4151c8229e0e2d7"
+    },
+    {
+      "path": "research/owner-observations/.gitignore",
+      "bytes": 8,
+      "sha256": "15c4437080db4ec4be5ef2b2dde82e82749b1bb6379ee7f82d0fa7c87feba804"
+    },
+    {
+      "path": "research/owner-observations/CHECKPOINT.md",
+      "bytes": 3796,
+      "sha256": "ac84eec59e995df561a6c56a5b8eb1370eedcbe311f69bf58f0102ab57d01660"
+    },
+    {
+      "path": "research/owner-observations/DEPENDENCY.json",
+      "bytes": 1639,
+      "sha256": "599bebc57ac33c1cf80f947786b48c00b221e5ae3989a98bdb25c4cea6251f1e"
+    },
+    {
+      "path": "research/owner-observations/INDEPENDENT-REVIEW.md",
+      "bytes": 2565,
+      "sha256": "6e5de026cce37d1a70a0c6da64d6f1f6607e01907df48bfbcaa9395449bf7f10"
+    },
+    {
+      "path": "research/owner-observations/LEDGER.json",
+      "bytes": 3180,
+      "sha256": "ffc19e45b2070dbf2ab3cae16f671eb13f47906e9a6de21d2aa85b861b75dd7f"
+    },
+    {
+      "path": "research/owner-observations/PRIOR-WORK.md",
+      "bytes": 4148,
+      "sha256": "f242a1ae555070c8a0613d0c319c8363e2ce38cd1ba7ddfb0a78244942f19b91"
+    },
+    {
+      "path": "research/owner-observations/README.md",
+      "bytes": 6461,
+      "sha256": "df2eddf564354276e793598a7509ebee16ac0f3b8830e6861172a59e164f4cf5"
+    },
+    {
+      "path": "research/owner-observations/declarations.json",
+      "bytes": 1159,
+      "sha256": "94449082fd9e6c50addd169604aa2b6fbabfd9d4260383abe4eac617cb3c5fd1"
+    },
+    {
+      "path": "research/owner-observations/dependency-evidence/Q1-CHECKPOINT.original.txt",
+      "bytes": 3609,
+      "sha256": "bda99be531607ba04b0237203dbb8d3d05d819248270e8fb6a340e1bfeeb9237"
+    },
+    {
+      "path": "research/owner-observations/dependency-evidence/Q1-PROOF-RECEIPT.json",
+      "bytes": 20604,
+      "sha256": "49aee3776b19c24b1053e9f6dd13b3db6ac5d9c4b2419cdfa84dcafbd24b48c1"
+    },
+    {
+      "path": "research/owner-observations/development/attempt-1.json",
+      "bytes": 659,
+      "sha256": "12ce2a7c1da76f4f74d90fc89c90db5db4d522844a732bf6793bd49ff3d6da21"
+    },
+    {
+      "path": "research/owner-observations/development/attempt-1.log",
+      "bytes": 1700,
+      "sha256": "ccb4540e75aacbcbd9314e9252d693ca4efdbd1ca1aeb658f72716eb0886db67"
+    },
+    {
+      "path": "research/owner-observations/development/attempt-2.json",
+      "bytes": 658,
+      "sha256": "6e75263c82bf81fb9e0145a8e1e569a30416d838c877fcfbfa3d58265939319f"
+    },
+    {
+      "path": "research/owner-observations/development/attempt-2.log",
+      "bytes": 164,
+      "sha256": "02635e51b6a878eca51fd036d81434dfc257dbeebeeeaf12bc150d5e4caaf2b5"
+    },
+    {
+      "path": "research/owner-observations/verification/RESULT.json",
+      "bytes": 6967,
+      "sha256": "cc296554b8f97bcce29493a67ddc1e8bd927bea8bcc14d4f9ff9930a901d5aab"
+    },
+    {
+      "path": "research/owner-observations/verification/combined-receipt.json",
+      "bytes": 4440,
+      "sha256": "e54b237b5f567a2e60d8759d83cce69252b97ac6f35039bb1ffb26a19c99c30f"
+    },
+    {
+      "path": "research/owner-observations/verification/logs/PairingCore.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/owner-observations/verification/logs/PairingObservation.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/owner-observations/verification/logs/PairingObservationAudit.log",
+      "bytes": 1794,
+      "sha256": "c20bb4097befec3fa8fbf80a8fa5ee73368a80d7ef7cf6fe7fe675c479c4d74c"
+    },
+    {
+      "path": "research/owner-observations/verification/logs/SamuelAlexanderResearch.SpeciesBridge.log",
+      "bytes": 911,
+      "sha256": "50da5d9051744a50c9223e5a18cc1d4960c2760c5457309efdb0bf878539d46f"
+    },
+    {
+      "path": "research/owner-observations/verification/logs/SamuelAlexanderResearch.SpeciesGlobalIAP.log",
+      "bytes": 966,
+      "sha256": "55e685fac5e9e67def016ac29b09d52a9f3a8afeed193a144c28d0fa76910c8f"
+    },
+    {
+      "path": "research/owner-observations/verification/math-format.json",
+      "bytes": 119,
+      "sha256": "5ef88a0f26c18ad157b407bff92a2c24c1c8f6653de96c2aa19f7df0aaec93fb"
+    },
+    {
+      "path": "research/owner-observations/verify_packet.py",
+      "bytes": 6223,
+      "sha256": "0e8d35c1b045762aca2e1e2aaa46d9e1a516d1c5b7d6ff121ceed48404bd1ee3"
+    },
+    {
+      "path": "research/pedigree-block/.gitignore",
+      "bytes": 157,
+      "sha256": "bc0e27de1da04a9fcb6adea3561af4e36e78ae3ade2d8d38f9ec99921ad7536f"
+    },
+    {
+      "path": "research/pedigree-block/CHECKPOINT.md",
+      "bytes": 5471,
+      "sha256": "11cb57cdea9143fa8c57dacfe80e170983e47279b16bc28c246fc603c41ffe54"
+    },
+    {
+      "path": "research/pedigree-block/FINITE-CONTROLS.json",
+      "bytes": 4795,
+      "sha256": "45643d297ba9da5789f23996aebbcfba34a83e5ca4d0e7c9e471c6e80d301523"
+    },
+    {
+      "path": "research/pedigree-block/LEDGER.json",
+      "bytes": 6853,
+      "sha256": "ada695aa745006cf486952479d0b624ffa42c81229daf6f001efbd9cf37005c2"
+    },
+    {
+      "path": "research/pedigree-block/README.md",
+      "bytes": 7753,
+      "sha256": "ca4f87d8bce1a465e7d36021dfee459aa6642c6fee110cbb6ba297874f1ff7ee"
+    },
+    {
+      "path": "research/pedigree-block/STATEMENT-REVIEW.md",
+      "bytes": 2825,
+      "sha256": "bd04a6f691214b5ad4536d61dbb945bf202d148edbeddb764e1b65cb04ba1de8"
+    },
+    {
+      "path": "research/pedigree-block/check_recovery.py",
+      "bytes": 5288,
+      "sha256": "bd5156244e3c8aa85975b010ddde620f2dbbabc0ba878585a57b67a6867938cb"
+    },
+    {
+      "path": "research/pedigree-block/declarations.json",
+      "bytes": 1790,
+      "sha256": "17299b898ae7b0f69c28f8b5fb60b608202b18785eec5da080eaaac0db952b0a"
+    },
+    {
+      "path": "research/pedigree-block/dependence/PedigreeBlockDependence.json",
+      "bytes": 842,
+      "sha256": "aa551522e08173d3ceb1436dea0155f0c06dbbacbf3e4930f0f8d754bb3caf3c"
+    },
+    {
+      "path": "research/pedigree-block/dependence/PedigreeBlockDependence.log",
+      "bytes": 765,
+      "sha256": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2"
+    },
+    {
+      "path": "research/pedigree-block/dependence/README.md",
+      "bytes": 3879,
+      "sha256": "5e2a41736f2c2ed2b2540cd080c6d713dd544c722510f87f3022145ee5e8d4ea"
+    },
+    {
+      "path": "research/pedigree-block/dependence/RESULT.json",
+      "bytes": 1837,
+      "sha256": "00a8c949f276e97b554c84418b51370ab0cad5f417365275b8b7cfc499b4e62e"
+    },
+    {
+      "path": "research/pedigree-block/dependence/dependency-attempt-1.json",
+      "bytes": 678,
+      "sha256": "d72b2613ba944d5e58403ce349462efeabef727076e3bf7d50b49ceff6195be1"
+    },
+    {
+      "path": "research/pedigree-block/dependence/dependency-attempt-1.log",
+      "bytes": 1705,
+      "sha256": "954a18725cd569918137eb5469e6a1374b6515cc5a62df7ee9469b338b63d1f6"
+    },
+    {
+      "path": "research/pedigree-block/dependence/import-closure-receipt.json",
+      "bytes": 4004,
+      "sha256": "fbbf6eb240b96322bb71c03c927e93d211578620fdcd66b193604468af22cb82"
+    },
+    {
+      "path": "research/pedigree-block/graph/PedigreeBlockGraph.json",
+      "bytes": 729,
+      "sha256": "49006cc06ca5c05350487ea5487ca06f0c02bd0c0ade5bd166619f2f7dec3a75"
+    },
+    {
+      "path": "research/pedigree-block/graph/PedigreeBlockGraph.log",
+      "bytes": 319,
+      "sha256": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff"
+    },
+    {
+      "path": "research/pedigree-block/graph/README.md",
+      "bytes": 3646,
+      "sha256": "d611021eb895ed61313aa81e695cbfba3b938dc68dfe2bf40137b138805afeb7"
+    },
+    {
+      "path": "research/pedigree-block/graph/RESULT.json",
+      "bytes": 1281,
+      "sha256": "9745e7d54fc4755df3c8a687d9c60d09e182139c3649e95bd1e63126ade71b8f"
+    },
+    {
+      "path": "research/pedigree-block/graph/attempt-1.json",
+      "bytes": 667,
+      "sha256": "6d97d65f1bab9e63f052d9ea32d878da4f994a9ff9484b8fa037ffdae7e6202b"
+    },
+    {
+      "path": "research/pedigree-block/graph/attempt-1.log",
+      "bytes": 1907,
+      "sha256": "af591877e9b3e7cec5be285133fdaab0dd91a1b003112ac89905158ca373dff6"
+    },
+    {
+      "path": "research/pedigree-block/graph/import-closure-receipt.json",
+      "bytes": 2171,
+      "sha256": "29ba4770d18008ea157a2346e31b1ddc8de04352c73ee413da76bf5dcbd73dd5"
+    },
+    {
+      "path": "research/pedigree-block/probability/PROOF-NOTES.md",
+      "bytes": 5378,
+      "sha256": "979d8f6a23743a609b5603657c274e2cf9e3db87ba8e3c676d733ae39f32eb89"
+    },
+    {
+      "path": "research/pedigree-block/probability/closure-receipt.json",
+      "bytes": 2299,
+      "sha256": "ddbd8d3606a9848effa1dcea789c0ba21cd2c1f67e3e4cd7c123294c86079e1b"
+    },
+    {
+      "path": "research/pedigree-block/probability/compiler.log",
+      "bytes": 1125,
+      "sha256": "ac98d556ce102e8cf3c32724b690ee2700f3322a57aa772a89b52b05a5d27399"
+    },
+    {
+      "path": "research/pedigree-block/probability/module-receipt.json",
+      "bytes": 741,
+      "sha256": "7de753797aae8e071306e2998faaa1509e5eb4eb95f8684ae0d3364d32e06b2a"
+    },
+    {
+      "path": "research/pedigree-block/source/PEDIGREE-EVIDENCE.md",
+      "bytes": 6131,
+      "sha256": "0641535ff8b169a30e0e5eb72f33e55ea5c02fa09c7240e43bfd5c1edd46dde9"
+    },
+    {
+      "path": "research/pedigree-block/source/PRIOR-FORMALIZATION-CHECK.md",
+      "bytes": 7787,
+      "sha256": "cdca60bd8adc50a813f3f230bc4d33e0b5b50e87e2c33f9e7f1211e4939aabeb"
+    },
+    {
+      "path": "research/pedigree-block/source/PRIOR-FORMALIZATION-CHECK.original.txt",
+      "bytes": 7781,
+      "sha256": "1cb71c83853979256feb3ff7e74ccf6a7ea6a1356b2612bb20d4998fd367aeed"
+    },
+    {
+      "path": "research/pedigree-block/source/PROVENANCE.md",
+      "bytes": 818,
+      "sha256": "e0410e3b4bbc979f263227cf3d4546d3b99b3dc77ffc33319e18489333e66c2c"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/CHECK-RESULT.json",
+      "bytes": 4795,
+      "sha256": "45643d297ba9da5789f23996aebbcfba34a83e5ca4d0e7c9e471c6e80d301523"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/LEDGER.json",
+      "bytes": 3595,
+      "sha256": "253d4d902001c4b0b5b7d2f8f1a703bb517c231cb73c32bbbd8a399142cf3414"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/MANIFEST.json",
+      "bytes": 2426,
+      "sha256": "3df49713e15ba9bf60a7de1cf5e1e90f913bd8a540b181ced023872728a8e0b1"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/MANIFEST.original.json",
+      "bytes": 2156,
+      "sha256": "edb56884ca6f88943d0a525a0257b8af0c4d4c2952bea4cd713d13085f20d079"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/RECOVERY-THEOREM.md",
+      "bytes": 10518,
+      "sha256": "b2dd33ceba79273855063f7f956012da070a67c58133ba3f5313dbf3b60b5b3c"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/RECOVERY-THEOREM.original.txt",
+      "bytes": 10489,
+      "sha256": "eed2dd0de4c42869e2dc56d8017f7439ce9b67f606b764a8862d73a74514076e"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/REVIEW.md",
+      "bytes": 1316,
+      "sha256": "fc2e819a2dd74ed0fce71597b5556ad3f84176faf18ccd55e372a4b5e3a11f8a"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/SOURCE-HANDOFF.md",
+      "bytes": 6131,
+      "sha256": "0641535ff8b169a30e0e5eb72f33e55ea5c02fa09c7240e43bfd5c1edd46dde9"
+    },
+    {
+      "path": "research/pedigree-block/source/written-precursor/check_recovery.py",
+      "bytes": 5288,
+      "sha256": "bd5156244e3c8aa85975b010ddde620f2dbbabc0ba878585a57b67a6867938cb"
+    },
+    {
+      "path": "research/pedigree-block/verification/RESULT.json",
+      "bytes": 11105,
+      "sha256": "c79d650336f872b4c04530374748e0ece1baa55fa730d12d9162999da4d67ebf"
+    },
+    {
+      "path": "research/pedigree-block/verification/combined-receipt.json",
+      "bytes": 6389,
+      "sha256": "19ec62bfcef55e66ca2439bd54b8100e52e77e2631efe5477523de351e872998"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockAudit.log",
+      "bytes": 2758,
+      "sha256": "e73142350d4e548c6ac34a66a46ef8f136a0abc61e9d6917a9dd17b70d9f01cb"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockDependence.log",
+      "bytes": 765,
+      "sha256": "84a22d8e737485484e91d4ef741a408198533ed44778cb3bd65d643695b033b2"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockGraph.log",
+      "bytes": 319,
+      "sha256": "38431760ad3832811370eec829a31a815e997f7eff3e8c2649bc4c5ed8b0f2ff"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockModel.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockObservation.log",
+      "bytes": 275,
+      "sha256": "6a0374e37f7de450481d5c70bdadc1f2e6f15548d95c8bb177267ac48568b8ac"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockProbability.log",
+      "bytes": 1125,
+      "sha256": "ac98d556ce102e8cf3c32724b690ee2700f3322a57aa772a89b52b05a5d27399"
+    },
+    {
+      "path": "research/pedigree-block/verification/logs/PedigreeBlockRecovery.log",
+      "bytes": 403,
+      "sha256": "750cf5ab31a5ab7215ce70808fade43ae0993ca732cb3e5df11d268624a1667d"
+    },
+    {
+      "path": "research/pedigree-block/verification/math-format.json",
+      "bytes": 119,
+      "sha256": "da4d5dc8a80ff3b70f185097095ef30fc931efca7e7efd7c5a6d3b07c4cbc299"
+    },
+    {
+      "path": "research/pedigree-block/verify_packet.py",
+      "bytes": 5858,
+      "sha256": "2ad4f163e0fe011deba84bea440d141b2ba8446e0c46d06f4f61278c40469d3f"
+    },
+    {
+      "path": "research/research-packet/ADDITIONAL-SOURCE-CHECKS.md",
+      "bytes": 6150,
+      "sha256": "59093f972801262d3a39b2adc7449b5a636c12ba1eb6c83826dd936f022f7be1"
+    },
+    {
+      "path": "research/research-packet/FINAL-RELEASE-RECEIPT.json",
+      "bytes": 1565,
+      "sha256": "14109e7f15b255b504592757b266db37d3f7549d248e51099ed3c5cd5e1d661b"
+    },
+    {
+      "path": "research/research-packet/FINAL-RELEASE-RECEIPT.md",
+      "bytes": 3842,
+      "sha256": "76f3ef64abb69881c96b09b74f98e64b9906c63592b239b685da7001d173f40d"
+    },
+    {
+      "path": "research/research-packet/FINITE-EDIT-AND-CAP-THREE-AUDIT.md",
+      "bytes": 32199,
+      "sha256": "a55a6db6eccdce27e2614554d37e9090e30b22e8a89ce8c33885fadfb62010a9"
+    },
+    {
+      "path": "research/research-packet/FINITE-PHASE-LEAN-RECEIPT.md",
+      "bytes": 2485,
+      "sha256": "47f9c9cdfe431ac1087920cd527b0a6d5c48cac8d41c4525ebe2d9646707890a"
+    },
+    {
+      "path": "research/research-packet/FINITE-STATE-PERIODICITY-RECEIPT.md",
+      "bytes": 2683,
+      "sha256": "485be677873bfd9e2379136e9617eaec09d3cf8c76bdef013f91b822cbec6f45"
+    },
+    {
+      "path": "research/research-packet/FULL-HEIGHT-STATUS-UPDATE.md",
+      "bytes": 7677,
+      "sha256": "a8de4022a551d6cbdb478dc20045d1c710bb6add3673a4a31f9b1f336c35ccaa"
+    },
+    {
+      "path": "research/research-packet/LATEX-RENDER-CHECK.json",
+      "bytes": 1083,
+      "sha256": "d50b03107b3231373cc7a6c6278f3a47c0b33d3183d92caca7dbc9d506ec31c1"
+    },
+    {
+      "path": "research/research-packet/LINE-ENDING-FIX.md",
+      "bytes": 2636,
+      "sha256": "cdfad2d32f67a1c9062f6ce0a8cab42542675aad1f1ac5d613af9957f4f299a9"
+    },
+    {
+      "path": "research/research-packet/LINE-GRAPH-PRIOR-ART-AUDIT.md",
+      "bytes": 6601,
+      "sha256": "266b4377aba22aeeba4ee500c71270de32c385ff5d47dffa2934d713f47de496"
+    },
+    {
+      "path": "research/research-packet/MAXIMAL-SPECIESLIKE-SOURCE-AUDIT.md",
+      "bytes": 11770,
+      "sha256": "62f3dfc1cd5fbfddfcd09d5aef152deb6fe8fbf004f4e404f777956f81920933"
+    },
+    {
+      "path": "research/research-packet/OLDER-CONSTRUCTIONS-AND-RANK-AUDIT.md",
+      "bytes": 10426,
+      "sha256": "b84ba306ece86f1def41dca5aa4ebcdd90a44f1d03e3e47b906f5192c29e0a46"
+    },
+    {
+      "path": "research/research-packet/OPEN-PROBLEM-STATUS.md",
+      "bytes": 13555,
+      "sha256": "de558154201ce433e7e84027e50f63740b8336e7671d623be94988aa2b1e849b"
+    },
+    {
+      "path": "research/research-packet/PENDING-MATH-RENDER-CHECK.json",
+      "bytes": 2201,
+      "sha256": "788d52c010cd9e021bf0c3e48d963c1080716c32c184c3d928cfd9e85bfe1e58"
+    },
+    {
+      "path": "research/research-packet/PR5-INTEGRATION-CHECK.json",
+      "bytes": 1163,
+      "sha256": "f7fd18747917387d4d1d3f71e74c535f026181964c0a7f7f037678e9cb45339e"
+    },
+    {
+      "path": "research/research-packet/PROPOSAL10-STATEFUL-CA-AUDIT.md",
+      "bytes": 8572,
+      "sha256": "e3f1a351627a1116b8e18466c67d327010b91849a920af74996f996716d5fc5c"
+    },
+    {
+      "path": "research/research-packet/PROPOSAL3-FINITE-PORT-AUDIT.md",
+      "bytes": 22595,
+      "sha256": "1598aee537283ce24d411b4547ddbed3f24b0e08c6d8d379efdd3b79ba9e616f"
+    },
+    {
+      "path": "research/research-packet/PROPOSALS3-10-SOURCE-AUDIT.md",
+      "bytes": 12266,
+      "sha256": "ccd6f6ce490a80fff3074e0964f34a50c993fdc4b34d899d717e7d7546f5f526"
+    },
+    {
+      "path": "research/research-packet/REAL-BRIDGES-STATEMENT-REVIEW.md",
+      "bytes": 13863,
+      "sha256": "be2c25e641765ce6e3fe90c95df21a2c7c4c956237daa66c3e508e0a7bdc03f8"
+    },
+    {
+      "path": "research/research-packet/RESEARCH-FOLLOWUP-INDEX.md",
+      "bytes": 4078,
+      "sha256": "57c8ea35844f817ac4f5c8825ce940de3b4fd413bb14395cbd1c62416ee7b912"
+    },
+    {
+      "path": "research/research-packet/STATEFUL-CA-LEAN-RECEIPT.md",
+      "bytes": 3290,
+      "sha256": "470fbeb0018d808992bb5873a02e750a1330cfbcb174ab520a5283ba36524810"
+    },
+    {
+      "path": "research/research-packet/VIBE-MATH-ELIGIBILITY.md",
+      "bytes": 10089,
+      "sha256": "b9c81bff780df9adb5e73717c29102e21eec3631002a7c5d3d1ee54c48408197"
+    },
+    {
+      "path": "research/research-packet/VIBEMATH-SUBMISSION-DRAFT.md",
+      "bytes": 5074,
+      "sha256": "7dfe13d244e9e3205030bd70b02bb32e7ac31380fbbcb37dc82e6f9556857e69"
+    },
+    {
+      "path": "research/research-packet/line-ending-fix.patch",
+      "bytes": 871,
+      "sha256": "db76c0370bac464ef3813df6b6f3e919016a53cda05874ee611c04ef69ea7285"
+    },
+    {
+      "path": "research/source-library/.gitignore",
+      "bytes": 66,
+      "sha256": "27381faeada97f94d8f46e93b7663b73bc9b47fe36c31bba0ab0021cef6ea686"
+    },
+    {
+      "path": "research/source-library/README.md",
+      "bytes": 8303,
+      "sha256": "dd01d881fd2306c23a0f33b2378b4e06c78e2b5c9532458bf8225a7db49c806e"
+    },
+    {
+      "path": "research/source-library/VERIFICATION.json",
+      "bytes": 2749,
+      "sha256": "b8db81e06c28da8f7d1d642c3555b3745415f86e13ecf96a8cf0b24984f78f3c"
+    },
+    {
+      "path": "research/source-library/discovery-intake.json",
+      "bytes": 3224,
+      "sha256": "00db8b9baa144507470b362e70574893e299e98307ad0848bda085d41a45e384"
+    },
+    {
+      "path": "research/source-library/intake_adapter.py",
+      "bytes": 7072,
+      "sha256": "82e28ba88bd22fb8546102568e08027ccd952ac3cfce6a42fced6a06c6cc74db"
+    },
+    {
+      "path": "research/source-library/public/CATALOG.md",
+      "bytes": 10334,
+      "sha256": "8badb03f9f245519503dc30f4c0d762dba93df7eea1c31655ba62dd9c36efce7"
+    },
+    {
+      "path": "research/source-library/public/catalog.json",
+      "bytes": 51424,
+      "sha256": "31429fc50d4190e9b40b4becc304bf0bf6e353dd6d8af6ce736c88212978fbd4"
+    },
+    {
+      "path": "research/source-library/reader-metadata-intake.json",
+      "bytes": 5692,
+      "sha256": "e3b137b15ab36ca78bff47c321c1ca6a853ac162d064375d939305eda2cb8a1d"
+    },
+    {
+      "path": "research/source-library/source_library.py",
+      "bytes": 26327,
+      "sha256": "931be9b49f0459a6acca713d016ed5ed1f07f6940e9929520f36c709f5feb54f"
+    },
+    {
+      "path": "research/source-library/test_source_library.py",
+      "bytes": 5935,
+      "sha256": "f2b0b6882981d80bfb4a71f61c5bda72c653839a1f17cabfed859a6e3380ffe1"
+    },
+    {
+      "path": "research/thue-morse/FULL-HEIGHT-CONJECTURE.md",
+      "bytes": 4227,
+      "sha256": "e08416a17ff77c43198ea4e1aa786fdae24b08237b6532b01bc1cacb7f380b09"
+    },
+    {
+      "path": "research/thue-morse/INTERVAL-REDUCTION.md",
+      "bytes": 9732,
+      "sha256": "46b54fec9ae5e6c9ef4e9355e0c0b3e7e93d41283e225afb5edac47d3d8ad251"
+    },
+    {
+      "path": "research/thue-morse/NEXT-INVARIANT.md",
+      "bytes": 13873,
+      "sha256": "bb39953a7077f73f968e96031688c104e51cd3275e003fd5f6dabc6d677d0084"
+    },
+    {
+      "path": "research/thue-morse/VERIFICATION.md",
+      "bytes": 3924,
+      "sha256": "fd31b281d147b5172ac5daff95f99da6cf14b24e3ec07fbc0b92d4bbaf845c72"
+    },
+    {
+      "path": "research/thue-morse/check-results.json",
+      "bytes": 476,
+      "sha256": "873938644994891f645ede8102709ecc7f5260314141903f58d68ff746953fa3"
+    },
+    {
+      "path": "research/thue-morse/full-height-structure.py",
+      "bytes": 1043,
+      "sha256": "5a796e3957b16f9fd39770c58c9198ad678b09cf04c0cc0f2f26228c76696062"
+    },
+    {
+      "path": "research/thue-morse/interval_check.py",
+      "bytes": 3629,
+      "sha256": "606a5265f56fa16a6a78d32d348172f2b0b5461249611426149a6643f44985d7"
+    },
+    {
+      "path": "research/thue-morse/kernel-conjecture-results.json",
+      "bytes": 749,
+      "sha256": "464bbf96bf5f8e7f6b9662e22a58ae395861517671f0c68ac8da6af16073c6a4"
+    },
+    {
+      "path": "research/thue-morse/kernel_conjecture_check.py",
+      "bytes": 4999,
+      "sha256": "d74c0df40f52023a51ae57b76eda55dc9107425c521a40e3fe696df3ccdfb6e3"
+    },
+    {
+      "path": "research/thue-morse/sharp-check-results.json",
+      "bytes": 1337,
+      "sha256": "2cb5eeea6ef80a4a3b4891fabd6b781ff041b9a811c58965a55ee4652eacd7a6"
+    },
+    {
+      "path": "research/thue-morse/sharp_check.py",
+      "bytes": 6571,
+      "sha256": "0b7d1844c685122d4b1e959a021fd5a97bf20a977549c7064334c81f081767ee"
+    },
+    {
+      "path": "research/wong/completion/COVERAGE.md",
+      "bytes": 13753,
+      "sha256": "fbd8b4c9f656969438fbc4802d695f7b2f7271a6f361716bbbde5e941d3e9112"
+    },
+    {
+      "path": "research/wong/completion/CURRENT.md",
+      "bytes": 7957,
+      "sha256": "98cfaff5dc4b483462cd9a0387a995a593fa0810879c3cbed5110ffd1ede3c52"
+    },
+    {
+      "path": "research/wong/completion/INITIAL-RATE-AUDIT.md",
+      "bytes": 16304,
+      "sha256": "87eee2229bcbae2758e1549ad1bfd2bd96bbfc361e6ac0934dce0053f4d901be"
+    },
+    {
+      "path": "research/wong/completion/README.md",
+      "bytes": 1722,
+      "sha256": "a2a675dbf3980ec0e2096c6050b5942e5594c906a676138b3c2ae88615441af0"
+    },
+    {
+      "path": "research/wong/completion/coverage.json",
+      "bytes": 276972,
+      "sha256": "486681085a542d5fb290c9103f20cc60cf554fd0841441bd71bd58e8e1a65470"
+    },
+    {
+      "path": "research/wong/completion/history/COVERAGE-public-209.md",
+      "bytes": 81875,
+      "sha256": "b5bee2aaa7a4216358d78e8eb2c05f87d50c18b73a1344dc7a574f189198a8a5"
+    },
+    {
+      "path": "research/wong/completion/integration-manifest.json",
+      "bytes": 5892,
+      "sha256": "f16b89a515258b492ea8f98a434e58547ebb0cf6805dc7c047c17d31c6efb9df"
+    },
+    {
+      "path": "research/wong/completion/probability/ADVERSARIAL-REVIEW.md",
+      "bytes": 5974,
+      "sha256": "e391e364d5ad4b7747bb381e5d1a951cdd3b0f5d8af306a74017f5d5f2771742"
+    },
+    {
+      "path": "research/wong/completion/probability/CANDIDATE-STATUS.json",
+      "bytes": 3610,
+      "sha256": "dc1d1ef80e442c2b715e82e9858489a5e953d72ea940237f4b84f22dc6b22792"
+    },
+    {
+      "path": "research/wong/completion/probability/CANDIDATE-STATUS.md",
+      "bytes": 3879,
+      "sha256": "60de18088b4d8164d3a6fe3519921d51b465cb77ae27cff0ac6d21584025887e"
+    },
+    {
+      "path": "research/wong/completion/probability/HOSTED-ADMISSION.json",
+      "bytes": 4528,
+      "sha256": "c0e1479335faad71a6dc0495e845350b92908ab8c9a71a4fedb86e64741a0d36"
+    },
+    {
+      "path": "research/wong/completion/probability/PROBABILITY-STATEMENT-BRIEF.md",
+      "bytes": 5041,
+      "sha256": "756d9b60b68ab049d51c112e1c00e711977b89a028846dc73e181eef72f78749"
+    },
+    {
+      "path": "research/wong/completion/probability/PUBLICATION-MANIFEST.json",
+      "bytes": 8957,
+      "sha256": "3fa1f799fc0f776f50e97e66c8455beed069c969940d1ba47cbbe222d7176e7b"
+    },
+    {
+      "path": "research/wong/completion/probability/README.md",
+      "bytes": 1894,
+      "sha256": "2f477023e516167b506f19f9bfaa2bc26ef5cc8698a6af223578d737b8e2af3d"
+    },
+    {
+      "path": "research/wong/completion/probability/REPRODUCE.md",
+      "bytes": 4337,
+      "sha256": "5c9cfca9f07c650bd86f078f7567fc9aebf5f083d3a2fd1d7909918501aa3f99"
+    },
+    {
+      "path": "research/wong/completion/probability/REQUIRED-CACHE-IMPORTS.json",
+      "bytes": 879,
+      "sha256": "ba2466b6d9e4ae9767ff7db5a8cf581ad36b1039635492c2f797f037242cb0e8"
+    },
+    {
+      "path": "research/wong/completion/probability/RESULT.md",
+      "bytes": 3383,
+      "sha256": "bed24797aa68a893f2407944187d19179a75fc362de1fda25692739ac9ca3b9f"
+    },
+    {
+      "path": "research/wong/completion/probability/REVIEW-MANIFEST.json",
+      "bytes": 1721,
+      "sha256": "7a200082f5cebd89b49eaaa49b754e9c02ed47931a3fa8ec1fa14e6e59f2fc80"
+    },
+    {
+      "path": "research/wong/completion/probability/SOURCE-CORRESPONDENCE.md",
+      "bytes": 8388,
+      "sha256": "4730c3aa5de07af517ffe8c81ad2d6e3647d25b67a6f81bc549d486f0442fc37"
+    },
+    {
+      "path": "research/wong/completion/probability/SOURCE-MANIFEST.json",
+      "bytes": 5443,
+      "sha256": "c99b8403e198a51e29b20ef3af671cfef49fcedd94fec929d20f55c4e741cdf4"
+    },
+    {
+      "path": "research/wong/completion/probability/evidence/baseline-real-audit-274.json",
+      "bytes": 68555,
+      "sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/INDEPENDENT-REVIEW.json",
+      "bytes": 4273,
+      "sha256": "2a76055e996849bab515bd04725ad366b3162880a0ba014779ab767e921764cc"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/PUBLICATION.json",
+      "bytes": 3237,
+      "sha256": "d73bd8f5e5a3af7b6b528d45a3ba3e3c1308bee5b888d3119d9f7cf8408f3905"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/README.md",
+      "bytes": 4169,
+      "sha256": "66ca2789aece1980d867698efde9f8f0910f11eed6d53b0276ea1d6864e50f18"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/REPRODUCE.md",
+      "bytes": 2105,
+      "sha256": "6c3d9c0ce75864796966c914ab1d8a1283d657d4e5ac7d7c5eb1c10883641b4a"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/worker/WongWaitingTimes.lean",
+      "bytes": 25547,
+      "sha256": "10fc0a43ccdee74c55dc73d8e43bd2818837ea1034080ea2f4a9a9628bb996f0"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/worker/verification/WongWaitingTimes-final.log",
+      "bytes": 3874,
+      "sha256": "585cac5b038a8671df521795c9074c3d90f9a4f28d348fcec8a0a074f88e1eee"
+    },
+    {
+      "path": "research/wong/completion/probability/holding-times/worker/verification/WongWaitingTimes-receipt.json",
+      "bytes": 6457,
+      "sha256": "3b960969dca365928b07c0a324945e73541ece58420fb515731a7debbe5b2577"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/COMPILER-HANDOFF.md",
+      "bytes": 3140,
+      "sha256": "40c21f5861049f3c3d77d79aeb6fc485d98415c860a9fc9f330164280d758ade"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/WongBigARGAbsorption.compile.log",
+      "bytes": 1287,
+      "sha256": "76381e63971cf68d2d473c9de9974703f4b47be0d0397a0984a2fb440b7fc3f1"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/WongBigARGAbsorption.lean",
+      "bytes": 6090,
+      "sha256": "50b18cf23019c05c477c35ca38025d2516b662788d65e7c4cb6f98fecb3ff518"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/WongBigARGDrift.lean",
+      "bytes": 4767,
+      "sha256": "167d448eb3e0c016e24a0590b2263f7685b244f21999b2b6303d105e09dfcb43"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/WongCountChain.compile.log",
+      "bytes": 2316,
+      "sha256": "7666a3e5d45d58a5f4ad09ab66b972addf1bda9316ce012401a6085aa91aeddd"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/WongCountChain.lean",
+      "bytes": 12247,
+      "sha256": "5f7629af4619220f77dd0c6344df4d3d096e3ca089e9f439c9cbf8808d6c59ae"
+    },
+    {
+      "path": "research/wong/completion/probability/inputs/drift-validation.txt",
+      "bytes": 664,
+      "sha256": "c1ef4802d8e79f54e0c26687ee4aa9414375c16aeeb9f86d3c66506e5299155e"
+    },
+    {
+      "path": "research/wong/completion/probability/local-attempt/ATTEMPT-STATUS.json",
+      "bytes": 2654,
+      "sha256": "b16cfb31b7f7f797cc6ccd9c0c8084129a065512fb86c4defbb5bb5ce4126768"
+    },
+    {
+      "path": "research/wong/completion/probability/local-attempt/audit_293.py",
+      "bytes": 6730,
+      "sha256": "f83759a57f3c053bfa76b6830b0e23b1bdc4ea853306e71b72cf6936561863d8"
+    },
+    {
+      "path": "research/wong/completion/probability/local-attempt/build-progress.json",
+      "bytes": 1527,
+      "sha256": "b5a8f12f01b37945c739f8dfab3dcecb68dcd70f644a92fa522b2cd920f72075"
+    },
+    {
+      "path": "research/wong/completion/probability/local-attempt/logs/WongBigARGDrift.txt",
+      "bytes": 734,
+      "sha256": "a4223cd388fbb79adaafe5f49523be91be03839e8fdabb30584d7297e274757a"
+    },
+    {
+      "path": "research/wong/completion/probability/local-attempt/logs/WongCountChain.txt",
+      "bytes": 404,
+      "sha256": "2abd0f8c79647af14fb127a2c7fa9887856630a4e189ff270bbb24c9fbbfc731"
+    },
+    {
+      "path": "research/wong/completion/probability/local-attempt/shared-cache-availability.json",
+      "bytes": 1216,
+      "sha256": "b17e1ab4ca4689ef726f70630798f51f65c2a371a5375879de8dd0c096c0dd31"
+    },
+    {
+      "path": "research/wong/completion/probability/selected-statements.txt",
+      "bytes": 4542,
+      "sha256": "8d55846d84a31ef8b57b6aef1118fa90a0b394be9a176004a99ed0636acf9e4c"
+    },
+    {
+      "path": "research/wong/completion/source-manifest.json",
+      "bytes": 2139,
+      "sha256": "d2d27014cb890fbf027fa478513c0beb434d4ed842074b59cd1734327a26fece"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/INPUT-MANIFEST.json",
+      "bytes": 10123,
+      "sha256": "bdd3a31bcb2488c104bd4a00b85f724bb8a2e51e2aaad4e8faaef9318c3be6df"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/PUBLICATION-FORMAT-TRANSFORM.json",
+      "bytes": 2226,
+      "sha256": "ad33b2af604fc69394050c77566bb0b24f1733f1b850754e804cdfb37f90cc74"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/README.md",
+      "bytes": 2471,
+      "sha256": "209b275aca93116129600ee6aadaa2f35afc603d7c3c6382ceb629850d8eb4bb"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/REVIEW-BRIEF.md",
+      "bytes": 5398,
+      "sha256": "a641201391ed31fafc22e8b586fec78ad81fdc04ba147219a924de5eca2616c3"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/RealAudit.txt",
+      "bytes": 27935,
+      "sha256": "1187e26d2f67f032e7e838d8d2e227267ccc801df2bb2956a21732ca445139fd"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/SOL2-REVIEW.md",
+      "bytes": 7516,
+      "sha256": "e8ef0eb926b79782fa170b630a5b1f20f944b99c423e99db7214a1457e40e898"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/SOURCE-CORRESPONDENCE.md",
+      "bytes": 5880,
+      "sha256": "f4fd560e913975bb3fb91e5efd2a703a4f0d1ca0ed60d539f38ef1c8c846a43c"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/combined-logs/WongIntervalCanonicalization.txt",
+      "bytes": 3916,
+      "sha256": "c7e902f7ce3bba1136fcb18444a90b9dea6bfd542ff970e7b35b640511cd0f32"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/combined-logs/WongMRCATruncation.txt",
+      "bytes": 2470,
+      "sha256": "25f50aecb920633efc6ff794b188b2c8db8919f4379a9df4fac4ba939a8ae6bc"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/combined-logs/WongSimplificationNormalForm.txt",
+      "bytes": 1127,
+      "sha256": "daad4316918268d590615e3276278c112e63304088ce07d6d16f1e24b6e06981"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/combined-real-audit.json",
+      "bytes": 68555,
+      "sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/controls.py",
+      "bytes": 4925,
+      "sha256": "4fa77ce7421315724e7740d205ccbc69d8eec97f836871a3b82a24513f1c847e"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/evidence/finite-controls.json",
+      "bytes": 3616,
+      "sha256": "78d37f6b732830a6dc2bdc5c057d26244cf9e31a3f4b32709d42a55aacc95722"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/interval-canonicalization/README.md",
+      "bytes": 7197,
+      "sha256": "dafb4cf8f9f9774e1557004c9eaf48a1795fe59d23186a584a4f827a5b3e1b19"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/interval-canonicalization/final-run.json",
+      "bytes": 3968,
+      "sha256": "8b0f7f238dafdb1e3dae03f0a89ccff40cf58f967dd57d3cde16fea733a634e8"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/interval-canonicalization/selected-endpoints.json",
+      "bytes": 1874,
+      "sha256": "03d6ff9cd56fbbfa229a7260fd651ab7820e29e7ed8185a04a8161c6bb929363"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/interval-canonicalization/validation.txt",
+      "bytes": 3808,
+      "sha256": "170ec5da0d7c93a9e44d4ceb4c5947abf6e4b65d8d6f365b7eb4354dd9a392f8"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/interval-canonicalization/verification.json",
+      "bytes": 9590,
+      "sha256": "78760f6300da83fd181c2ccc8159cda4288d405f71c0ca00e44802e51be2ed04"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/mrca-truncation/Check.ps1",
+      "bytes": 851,
+      "sha256": "0a7c45891194908c1fa20ec454dcc168df3bcb492651b43c5cd67122f4468200"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/mrca-truncation/README.md",
+      "bytes": 9149,
+      "sha256": "a2d8ef3eb9c08b875c0a67101264d323d5783e493fcd0b745a8ccc19e40e6815"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/mrca-truncation/WongMRCATruncation.lean",
+      "bytes": 18014,
+      "sha256": "b4c756e0b6a10f0b2466a4e57047a0048ec1d501f4c433683dc49875001798ac"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/mrca-truncation/validation.txt",
+      "bytes": 2471,
+      "sha256": "93653cbd03f4c7af1c288c7629a3320c2279b55e26828438a6648ae457764ab4"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/mrca-truncation/verification.json",
+      "bytes": 2918,
+      "sha256": "f5db2e7fb2bad3ef30119fa0d4a4ab1131368f2b879793a65a723cdc51b2bb15"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/normal-form/final-run.json",
+      "bytes": 329,
+      "sha256": "9a0401ea536a6e3285b4406f96c9ee7d079a118bfa7161261c5af0ffdf29cfe0"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/isolated/normal-form/validation.txt",
+      "bytes": 1127,
+      "sha256": "daad4316918268d590615e3276278c112e63304088ce07d6d16f1e24b6e06981"
+    },
+    {
+      "path": "research/wong/completion/verification/deterministic65/selected-statements.txt",
+      "bytes": 17133,
+      "sha256": "3b2767fd4de6c08e630d7e2a6b4afd13e8f8ec8e9a914298dd11282767439219"
+    },
+    {
+      "path": "research/wong/connection-map.json",
+      "bytes": 71202,
+      "sha256": "bc1f7edbfa07eb56a5ccb2171f1fb8d79523b62468ffb359d855fd06d90cd4a0"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/CHECKPOINT.md",
+      "bytes": 7187,
+      "sha256": "ad81c20502441462ee884b54ee83537eacb593f89cfe981c6fc248196c0ae2c1"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/README.md",
+      "bytes": 9333,
+      "sha256": "0db47edf1e9571c9de754df9572765b24aaffb52a022292bc6499d0606aea736"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/CHECKPOINT.md",
+      "bytes": 3338,
+      "sha256": "f301a4677099a30b8337b928300868e58ecbb4a73d091cc21dac09fa28dbb9da"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/EXPLANATION.md",
+      "bytes": 12537,
+      "sha256": "19ad612f54e3f8e4164b8cc92e94dacf4af1ee98cc85d8f52cc38575544f4a65"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/REPRODUCE.md",
+      "bytes": 2292,
+      "sha256": "bdd60c15a7c0b6b8181c69bb536ae2130529981734649740409694329f9ac045"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/ROBUST-IAP.md",
+      "bytes": 5327,
+      "sha256": "1d30fb425bd71c49dbc3fcca765f9f0f99eee1c52e6244525ec14c54aebab9be"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/SOURCE-REVIEW.md",
+      "bytes": 1157,
+      "sha256": "b3d5bf8cdbb07a57d859bb8ce401eff982d5e944eeaccc0c473e78d008453a87"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/check_evidence.py",
+      "bytes": 2518,
+      "sha256": "87dfcbfab8bc654f259d65eca4ed4693456fe2f1d557dd9ac56e1872f513f7fb"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/ledger.json",
+      "bytes": 9718,
+      "sha256": "052abcd6e66959a03c7a99b52921aa2b2bb3086a04a0e394e7c6748e992fb2a3"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/robust-ledger.json",
+      "bytes": 1862,
+      "sha256": "86c2546accda78ffb24e543e3c0384da695dc7e1f0315f7feb734186a40d9b0d"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/COMBINED-STATEMENT-REVIEW.md",
+      "bytes": 21082,
+      "sha256": "c7d7226e338fc82cb246325f10d8c20d221d39a11b7d0de9fdec7dd3b0e443ae"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/RESULT.json",
+      "bytes": 2248,
+      "sha256": "824b014d06227361751f4aa3563361cd55078ebf5083d830bd46744c88dcdeed"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/ROBUST-RESULT.json",
+      "bytes": 963,
+      "sha256": "6a24c595ec2ef386d577b807b6eb27a81a76e8a06afc3cdbe975cf98de396bde"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/WongPedigreeBridge.json",
+      "bytes": 979,
+      "sha256": "05dff660424592cbe91c033c85610d8a24674d3df9c7b9512d89fa5793a9496a"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/WongPedigreeBridge.log",
+      "bytes": 1387,
+      "sha256": "598954f8d3246701da2a5f61d63b309ce6e0c13eb8adec7bba3201310d2c0282"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/WongPedigreeRobust.json",
+      "bytes": 729,
+      "sha256": "c2129f9244a2413ea04192e4e8105364b93e42f396b1443118eb2fbe89d7bd17"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/WongPedigreeRobust.log",
+      "bytes": 117,
+      "sha256": "eccc25f86878aef94365e1de6fd87a100c93eeda8629e33e3939057b422bfabd"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/attempt-1.json",
+      "bytes": 917,
+      "sha256": "5a26d182ee037bd53bc4676f2958b219837a0401dbc4104f0b064dcc39690194"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/attempt-1.log",
+      "bytes": 2150,
+      "sha256": "a5cc987f6b2b3e5ec797dffc6dddf49569d60d285672d8e4e85241f0eca68eb4"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/import-closure-receipt.json",
+      "bytes": 31844,
+      "sha256": "c7a54833bb481f0666f9d60c6ae56d61933605556f11ae3f98794c1d36718c42"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/bridge/verification/robust-import-closure-receipt.json",
+      "bytes": 32995,
+      "sha256": "4883a11690b0e834589b84ad253eaf812af83c145c3685c3fd13340b5bfa6fae"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/check.py",
+      "bytes": 9204,
+      "sha256": "9ae79936a86649b5b263b07e9c8dac345804c41540633ed897e0c61e8bab4f37"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/declarations.json",
+      "bytes": 5334,
+      "sha256": "d82683215bcbabd984b8730aaa0514d845254e16f51ed79f3da83ce0c3cb61a9"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/AxiomAudit.lean",
+      "bytes": 1584,
+      "sha256": "3299043992dcafe86ad96f22abbe94844b022e9c0506eb860aed9e112f8f058c"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/EXPLAINER.md",
+      "bytes": 2886,
+      "sha256": "8e7438fe422fe1bc0526768458fdf7e0dd09e54d23c6b03b7d9d282834797218"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/MEASURABILITY-VERIFICATION.json",
+      "bytes": 684,
+      "sha256": "db089468743c1dd7cc05c0d0541ed12a41fc9b72a8b798f1959df1281ebe9ad4"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/MEASURABILITY.md",
+      "bytes": 3332,
+      "sha256": "be955c5b96fc1095a50ec22aa492199f6cb38144e9db1c7166eb3019bbccc6f8"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/README.md",
+      "bytes": 6264,
+      "sha256": "b59e57fb8e25455a30183c52162faa0fcd35e9067ef2d1fe6c4f9c76677edb9f"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/SUPPORT-VERIFICATION.json",
+      "bytes": 3452,
+      "sha256": "6871c339d752de95fa5f7c58f97a99c2181eeb90365618e965991952adb63ab2"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/SUPPORT.md",
+      "bytes": 5345,
+      "sha256": "b898fb6f4b65c37d10a3b24602185383b3a5292dc0731186f3a830e47a4adc95"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/VERIFICATION.json",
+      "bytes": 595,
+      "sha256": "406e4b8f2f2152e5e27e95aeb0999befadd9a5ef9e2ea1a3b41b54a82bec87b3"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/axioms.log",
+      "bytes": 2901,
+      "sha256": "cac67b14b197f319895531b0907a15cd65edbc06abd9a3e2e62ae50cebe6c11a"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/compiler.log",
+      "bytes": 5274,
+      "sha256": "d3d9ffc66b570c3908bd1ff27fedd1ff5ea1017bde358270aa30909bae6726c9"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/dated-support-compiler.log",
+      "bytes": 908,
+      "sha256": "5dcd6f0dc83381a4a55446af546dfdb8fee5973155905f807cf72a06c94944e0"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/dated-support-import-closure-receipt.json",
+      "bytes": 17147,
+      "sha256": "3475fb783b95eb304f62f5e0e70e7ec3e497efa016b03691f4a74171b653bcb9"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/dated-support-module-receipt.json",
+      "bytes": 818,
+      "sha256": "eb9ea93a17dcdcc5a744be6a508f1fda04264e438514359af60ecde0269330e4"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/import-closure-receipt.json",
+      "bytes": 8753,
+      "sha256": "60a0ac4df352666bdec0b6fec3d114a7fae2bf677aabfe1599c3a238b2fe736a"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/measurability-compiler.log",
+      "bytes": 2015,
+      "sha256": "3a553e26d71632b9a308aff08eba8d2e4a3a07e09b9c872030b16b63abe84534"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/measurability-import-closure-receipt.json",
+      "bytes": 5322,
+      "sha256": "b7d5bd85189f5c0ed00d5195b3d724fec4d14f86f1dfaba15c4b1a2f9dfee771"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/measurability-module-receipt.json",
+      "bytes": 732,
+      "sha256": "5c8b3b9a5fdec80ca638d21f684f109b5c26b61292a541b300a648c4818e42df"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/module-receipt.json",
+      "bytes": 728,
+      "sha256": "7719021eac7ad041e4e8867850d110d9dfc0754ceccd169f0edad4d7e5af2472"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/support-compiler.log",
+      "bytes": 304,
+      "sha256": "0946ea471f5cb2a319681a58051d288ef0a1ad3ab7823fa75fb7e70f6a94f97f"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/support-import-closure-receipt.json",
+      "bytes": 15470,
+      "sha256": "abd27b7f3f4c18f0d76ff6260b62ea6e4847ad277d82e63d45a905d329556803"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/recorder/support-module-receipt.json",
+      "bytes": 729,
+      "sha256": "a6374aaab736a528bee98c0179111a7fb0cd5173d58ac0980523f88d5ae9b915"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/side-validity/FINITE-CHECK-RECEIPT.json",
+      "bytes": 753,
+      "sha256": "1c0c5c1bb81e44cf9d0fcee6cbc442824b299f974e07f2c1bb805e94c7b881b4"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/side-validity/PROOF-HANDOFF.md",
+      "bytes": 8936,
+      "sha256": "2ae6ffcb2ca8d8e8c99cd8b231ae31fb3c10faeeb5df514da6816489713fb081"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/side-validity/endpoint-coverage-check.js",
+      "bytes": 3093,
+      "sha256": "a7f94c954b5d0c815447fba3cec43e1015f1d44abed9018714b61956d6e480cb"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/ADAPTIVE-LAW-CHECKPOINT.md",
+      "bytes": 3310,
+      "sha256": "33b3508b5c2bb84a22420617d6f13bfeabdadb6a10bf9b8655b07d93a4702fbe"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/APPENDIX-B-CONTRACT.md",
+      "bytes": 11817,
+      "sha256": "16ceee57c4e781aa206e8ea42086e4521184db0a98ce0aa01fdd145c6ab3e48e"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/BASELINE-AUDIT.md",
+      "bytes": 27097,
+      "sha256": "cd9b9b11580f33c6fb169ae79a784dc5c59fba56b5c2191a4dea5ee41ca5652d"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/FINAL-COVERAGE-DELTA.md",
+      "bytes": 28794,
+      "sha256": "f71cbefc4b0a3a873312037d1f188d3f1f5f8ec26753876b77efde8b88e93ce0"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/MARKED-LAW-REVIEW.md",
+      "bytes": 13415,
+      "sha256": "f573dfc827f95b8486adc2399d5c2d7d733c62c0b7f5766f56bf95b5f25149ed"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/PMC11373519-fullText.xml",
+      "bytes": 275110,
+      "sha256": "2b77c349f39d2885b3e36d3bcab639a7ef3b9c6217263031aa4bc8f1c2a0d05e"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/SOURCE-LICENSE.md",
+      "bytes": 1078,
+      "sha256": "3b82e4e8bf713ce879d3c6d4a486839292d164a0a02bf1f9424eef64595a60f6"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/WongAdaptiveSelection-final.json",
+      "bytes": 829,
+      "sha256": "a786d57e163da4d1437dea87fb940de9b763a27ffbf9d4bb48725525116ed1a7"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/WongAdaptiveSelection-final.log",
+      "bytes": 3245,
+      "sha256": "ead1a82fd981978b60fcef894cbe9072bd2fae39fc6fa016a5dd21dea1042be9"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/WongAdaptiveSelection-stage1.json",
+      "bytes": 730,
+      "sha256": "b54813d0014940aa84db7ba7feef3ddab37fffd8b6ee54c3a793a971501d639d"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/WongAdaptiveSelection-stage1.log",
+      "bytes": 2049,
+      "sha256": "29cbf83e15c9443bd8c8ad1ed996178708c00d1c6975a9799852700b09604356"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/WongAdaptiveSelection-stage2.json",
+      "bytes": 729,
+      "sha256": "9bd96bd4857555be68e12208ba2646141b7a2802b4c90ddfa541f3e480848e73"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/WongAdaptiveSelection-stage2.log",
+      "bytes": 2372,
+      "sha256": "ff72488c5a1efc9905c5003306198b27e518916228296a98dfccd729c6a6ec33"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/audit_baseline.py",
+      "bytes": 21733,
+      "sha256": "c84d95b5c5034c9aa94e3a6b49be3a566878a9a6f8e587a3821ceb4ed4ec4f90"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/baseline-claim-audit.json",
+      "bytes": 237714,
+      "sha256": "d6bd9a1d14ccff72f6c5db72ee8f6d64f6fccb2904c2f627e5f613180626429b"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/final-coverage-delta.json",
+      "bytes": 89804,
+      "sha256": "4c3fe6cca82e563a45480874db023afb926db0508048fc27667914cb8e96adf1"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/shared-dated-closure-receipt.json",
+      "bytes": 15181,
+      "sha256": "6d95f94f43c66d846f2c0a4482d2c970a1a4d0dc7e0f87febb08a8cefb24fe0a"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/source-audit/write_delta.py",
+      "bytes": 15895,
+      "sha256": "29350dc4ac3c706305fbbad3e6edb9f57f2661ce2cbe9896f3713437cc74bc85"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/verification/RESULT.json",
+      "bytes": 51657,
+      "sha256": "0ff4c0ee91030a5befd80b3c7cead05f12f6a6bd19846b81a406bf82e392cef2"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/verification/RealAudit.log",
+      "bytes": 42750,
+      "sha256": "1918c103c9023cee037c61bf89fbf536175870f3985cfb1120c6b04ed6df3a11"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/verification/combined-receipt.json",
+      "bytes": 71393,
+      "sha256": "a38f33df07dd63f5cab277b9e8212792c1e84bd28db6b0bacd88d1be153dcb76"
+    },
+    {
+      "path": "research/wong/continuation-2026-09-27/verify_evidence.py",
+      "bytes": 2980,
+      "sha256": "8252094f409d28dc2340dcaca2f0e14322913f268b8be8413eb9d58b37366c49"
+    },
+    {
+      "path": "verification/CI-RECEIPT.md",
+      "bytes": 821,
+      "sha256": "64bab065176ad2a4535687c5f04993d1d3f9d9078d51cad6c2387ec84ed90e33"
+    },
+    {
+      "path": "verification/FORMALIZATION-RECEIPT.md",
+      "bytes": 3151,
+      "sha256": "a2c3aaff101c44b81b774542cf386ff3c189f057f4819bfa33c919e638dc3a67"
+    },
+    {
+      "path": "verification/FormalAudit.lean",
+      "bytes": 22480,
+      "sha256": "4ffa187f91d47048b3b4e4b455b69a3ad34d4b5b49479ecf9bcb94728ab83852"
+    },
+    {
+      "path": "verification/GAP-CLOSURE-REVIEW.md",
+      "bytes": 5981,
+      "sha256": "d53d1b6d22f1ea53c6b0b8f80c66c76a9e664388058591fafa53951cb78ef0a5"
+    },
+    {
+      "path": "verification/LOCAL-RECEIPT.md",
+      "bytes": 2330,
+      "sha256": "0dfe7e4588f0fe055715a772b9fc0256f892fc5792f5ff9f9d0f52b9c7c0cbaa"
+    },
+    {
+      "path": "verification/REAL-BRIDGES-STATEMENT-REVIEW.md",
+      "bytes": 14021,
+      "sha256": "965fbe4dfdf4eab75ebecf204921efc374ec555093cbe133d852fb4e30ee5b64"
+    },
+    {
+      "path": "verification/STATEMENT-REVIEW.md",
+      "bytes": 4576,
+      "sha256": "c2ae4fad2b97f87956fa86e0b5d9c1c86fd613a1f8f7c99458d66705bc077d07"
+    },
+    {
+      "path": "verification/completion-math-format.json",
+      "bytes": 180,
+      "sha256": "0380421d911b79e01014635876216c1db095c3f290d0b9ede1df5c5bc9561c3c"
+    },
+    {
+      "path": "verification/completion-packet.json",
+      "bytes": 8121,
+      "sha256": "1c4914c8b39b20250ef4c97dc75536386cf799e96840561c1e248a3cbd0528f1"
+    },
+    {
+      "path": "verification/formal-audit.json",
+      "bytes": 51545,
+      "sha256": "ffea6b749ca15ef571c3a348f007ba13248ab3910ba21e0884cb8f89dd0e5249"
+    },
+    {
+      "path": "verification/founder-window-packet.json",
+      "bytes": 8589,
+      "sha256": "6177290f3abf853ed77be5f3f5151d98c6b49555f143fab3f3bab8a43c4fa072"
+    },
+    {
+      "path": "verification/genomic-finite-evidence-audit-local.json",
+      "bytes": 41677,
+      "sha256": "e56378794fefec91060a0e958770cb95c3e7a948bbaba41f1c2787e7c32f8877"
+    },
+    {
+      "path": "verification/genomic-finite-evidence-format.json",
+      "bytes": 71,
+      "sha256": "74d13c27a0373fa7fb551a6a5d7db46eabd66e80484811addbd796d4985496e4"
+    },
+    {
+      "path": "verification/genomic-finite-evidence-packet.json",
+      "bytes": 2764,
+      "sha256": "395d4e3b84597bfbb67b6288e9b55a020d66df5e30a7b0bdef00d7498cd062ba"
+    },
+    {
+      "path": "verification/github-math-render-fix-2026-09-27.json",
+      "bytes": 16099,
+      "sha256": "9ad8fac405e806af52f17d9c106b4ccaf4fe89225787fc7a6fe8cf3ca766806e"
+    },
+    {
+      "path": "verification/open-problem-packet.json",
+      "bytes": 9237,
+      "sha256": "e992f692ea7ac016a0c11f4113af4b51489da91bc94c834ecfc1f63d11c7cf75"
+    },
+    {
+      "path": "verification/real-audit.json",
+      "bytes": 68555,
+      "sha256": "de5c3866cdee9bfd0f32a4df0032a63b187db270f6a04d991f2921951a9f1821"
+    },
+    {
+      "path": "verification/research-artifacts-local.json",
+      "bytes": 37390,
+      "sha256": "b84dff6edb4d791221c3e54fbd49566c14558671de7f3509f808eb4ece946df4"
+    },
+    {
+      "path": "verification/research-closure-packet.json",
+      "bytes": 5834,
+      "sha256": "490c76f558f075e7ff7fd69fc9f882788d6401379c0676c5f34a2a861960a529"
+    },
+    {
+      "path": "verification/wong-packet.json",
+      "bytes": 4060,
+      "sha256": "6dbf3404b8c9861b729cf75bfcab47517041f87b3af252fcd3735d1939ee88d8"
+    }
+  ]
+}

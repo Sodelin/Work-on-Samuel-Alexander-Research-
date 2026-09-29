@@ -1,5 +1,8 @@
 # Completion map: what is finished and what remains
 
+**29 September integration update:** see the [complete result-family ledger](research/publication-2026-09-29/COVERAGE.md), [full publication guide](PUBLICATION-GUIDE-2026-09-29.md), and [new checked embedding/pruning/rank package](research/open-questions/continuation-2026-09-29/RESULTS.md). The dated snapshots below preserve their original evidence and delivery state. The new generic realizing-state and mortal-rank results supersede earlier descriptions of those particular obligations as written-only.
+
+
 ## Current focus: the authors' open problems
 
 The [proof structure and obligation ledger](research/open-problems/time-self-reference/PROOF-STRUCTURE.md) is the detailed entry point for the current program.
