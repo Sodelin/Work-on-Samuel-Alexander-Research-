@@ -346,5 +346,18 @@
       "rendered_blob_sha": "8331b7bad271a7fc800b29e8cddafafedb278f02",
       "operatorname_occurrences_replaced": 0
     }
-  ]
+  ],
+  "main_branch_note": "The file list records the full draft-branch transformation. The main branch contains only its published subset; see main_specific_overrides for the one file whose pre-fix Markdown differed from the draft branch.",
+  "main_specific_overrides": [
+    {
+      "path": "notes/FINITE-EDIT-STABILITY-FORMALIZATION.md",
+      "original_blob_sha": "00a37209957d05a31338e4478097135d8967e2cd",
+      "rendered_blob_sha": "fa534853aab29d664149b8d7a20c0910b5cfc989",
+      "operatorname_occurrences_replaced": 14
+    }
+  ],
+  "integration_2026_09_29": {
+    "preserved_historical_main_override": true,
+    "current_note": "Integration retains the draft branch fenced-math rendering for FINITE-EDIT-STABILITY-FORMALIZATION.md; the main_specific_overrides above describe the earlier main snapshot, not the integrated current file."
+  }
 }
