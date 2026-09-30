@@ -1,0 +1,137 @@
+{
+  "status": "PASS_SINGLE_REPLAY_AND_SHARP_NOISE_AUDIT",
+  "provenance": "User-authorized side package supplied at NANUQ-Theorem-Audit-2026-09-29; source and saved results preserved without edits.",
+  "source_folder": "C:\\Users\\Owner\\Documents\\NANUQ-Theorem-Audit-2026-09-29",
+  "execution": {
+    "node_executable": "C:\\Program Files\\nodejs\\node.EXE",
+    "verifier_runs": 1,
+    "started_utc": "2026-09-30T00:16:21.333312+00:00",
+    "elapsed_seconds": 0.719,
+    "exit_code": 0
+  },
+  "hashes": {
+    "verify_nanuq.js": "3ef651e7101aab274fd0b0adc4bab5f1b88981c47f5db1bc23f04536eabfd0ad",
+    "verification-results.json": "7a6a7ba1947fc55d04dcf4b9b6e988212cd9b4e7a31bc84e1880f8eab91f9134",
+    "PROOF-REFINEMENTS.md": "00046fcd7b6d35947c5d43f3cba9d91d7d8eccc8b95933bd33472c7ca68e36d2",
+    "node_executable_sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237",
+    "stdout_sha256": "7a6a7ba1947fc55d04dcf4b9b6e988212cd9b4e7a31bc84e1880f8eab91f9134",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_files_unchanged": true,
+  "comparison": "Parsed JSON structural equality with saved verification-results.json.",
+  "parsed_json_matches_saved": true,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"verification\": \"Exact finite JavaScript execution, not Lean\",\n  \"support\": [\n    {\n      \"n\": 3,\n      \"treeCases\": 36,\n      \"selectedTrees\": 185,\n      \"quartetSystems\": 1,\n      \"splitSystems\": 1,\n      \"anchorSplitChecks\": 9,\n      \"negative\": 0,\n      \"supportMismatches\": 0,\n      \"boundaryFailures\": 0,\n      \"minSingletonAlpha\": 2,\n      \"minNontrivialAlpha\": null,\n      \"symbolicRows\": [\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"0\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        }\n      ]\n    },\n    {\n      \"n\": 4,\n      \"treeCases\": 406,\n      \"selectedTrees\": 3834,\n      \"quartetSystems\": 3,\n      \"splitSystems\": 3,\n      \"anchorSplitChecks\": 108,\n      \"negative\": 0,\n      \"supportMismatches\": 0,\n      \"boundaryFailures\": 0,\n      \"minSingletonAlpha\": 4,\n      \"minNontrivialAlpha\": 2,\n      \"symbolicRows\": [\n        {\n          \"row\": [\n            -1,\n            0,\n            0,\n            0,\n            1\n          ],\n          \"quartetPattern\": \"5\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            -1,\n            0,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"1\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            0,\n            1,\n            0\n          ],\n          \"quartetPattern\": \"5\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"1\",\n          \"anchors\": [\n            0,\n            3\n          ],\n          \"gaps\": [\n            0,\n            1\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            1,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"1\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            -1,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"1\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            3\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            -1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"1\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            3\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            -1,\n            0\n          ],\n          \"quartetPattern\": \"5\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            3\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            -1\n          ],\n          \"quartetPattern\": \"5\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            3\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"1\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            1\n          ]\n        }\n      ]\n    },\n    {\n      \"n\": 5,\n      \"treeCases\": 5390,\n      \"selectedTrees\": 92465,\n      \"quartetSystems\": 16,\n      \"splitSystems\": 16,\n      \"anchorSplitChecks\": 1600,\n      \"negative\": 0,\n      \"supportMismatches\": 0,\n      \"boundaryFailures\": 0,\n      \"minSingletonAlpha\": 6,\n      \"minNontrivialAlpha\": 2,\n      \"symbolicRows\": [\n        {\n          \"row\": [\n            -1,\n            0,\n            0,\n            0,\n            1\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            -1,\n            0,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            -1,\n            0,\n            1,\n            0\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            2,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            -1,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            1,\n            2\n          ],\n          \"gaps\": [\n            2,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            -1,\n            0,\n            1\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"gaps\": [\n            1,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            -1,\n            2,\n            0\n          ],\n          \"quartetPattern\": \"7021\",\n          \"anchors\": [\n            2,\n            3\n          ],\n          \"gaps\": [\n            0,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            0,\n            1,\n            0\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            -1,\n            0\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            0,\n            4\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            0,\n            -1\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"gaps\": [\n            2,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            0,\n            3\n          ],\n          \"gaps\": [\n            0,\n            1\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            1,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            -1,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            -1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            -1,\n            0\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            -1\n          ],\n          \"quartetPattern\": \"4717\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            4\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"4681\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            1\n          ]\n        }\n      ]\n    },\n    {\n      \"n\": 6,\n      \"treeCases\": 78244,\n      \"selectedTrees\": 2428726,\n      \"quartetSystems\": 102,\n      \"splitSystems\": 102,\n      \"anchorSplitChecks\": 22950,\n      \"negative\": 0,\n      \"supportMismatches\": 0,\n      \"boundaryFailures\": 0,\n      \"minSingletonAlpha\": 8,\n      \"minNontrivialAlpha\": 2,\n      \"symbolicRows\": [\n        {\n          \"row\": [\n            -1,\n            0,\n            0,\n            0,\n            1\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            -1,\n            0,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            -1,\n            0,\n            1,\n            0\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            2,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            -1,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            1,\n            2\n          ],\n          \"gaps\": [\n            2,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            -1,\n            0,\n            1\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"gaps\": [\n            1,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            -1,\n            2,\n            0\n          ],\n          \"quartetPattern\": \"5026348325741\",\n          \"anchors\": [\n            2,\n            3\n          ],\n          \"gaps\": [\n            0,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            0,\n            1,\n            0\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            -1,\n            0\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            0,\n            4\n          ],\n          \"gaps\": [\n            0,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            0,\n            -1\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"gaps\": [\n            2,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            0,\n            1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            0,\n            3\n          ],\n          \"gaps\": [\n            0,\n            1\n          ]\n        },\n        {\n          \"row\": [\n            0,\n            1,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            2\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            -1,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            -1,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            -1,\n            0\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"gaps\": [\n            1,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            -1\n          ],\n          \"quartetPattern\": \"5026338870125\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            5\n          ]\n        },\n        {\n          \"row\": [\n            1,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"quartetPattern\": \"5026338869833\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"gaps\": [\n            0,\n            1\n          ]\n        }\n      ]\n    }\n  ],\n  \"refinements\": {\n    \"boundaryAnchorIdentities\": {\n      \"passed\": true,\n      \"cases\": [\n        {\n          \"case\": \"absent\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"absent\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"absent\",\n          \"anchors\": [\n            0,\n            3\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"absent\",\n          \"anchors\": [\n            1,\n            2\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"absent\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"absent\",\n          \"anchors\": [\n            2,\n            3\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"unique\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"unique\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"unique\",\n          \"anchors\": [\n            0,\n            3\n          ],\n          \"alpha\": 2\n        },\n        {\n          \"case\": \"unique\",\n          \"anchors\": [\n            1,\n            2\n          ],\n          \"alpha\": 2\n        },\n        {\n          \"case\": \"unique\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"unique\",\n          \"anchors\": [\n            2,\n            3\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"both\",\n          \"anchors\": [\n            0,\n            1\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"both\",\n          \"anchors\": [\n            0,\n            2\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"both\",\n          \"anchors\": [\n            0,\n            3\n          ],\n          \"alpha\": 1\n        },\n        {\n          \"case\": \"both\",\n          \"anchors\": [\n            1,\n            2\n          ],\n          \"alpha\": 1\n        },\n        {\n          \"case\": \"both\",\n          \"anchors\": [\n            1,\n            3\n          ],\n          \"alpha\": 0\n        },\n        {\n          \"case\": \"both\",\n          \"anchors\": [\n            2,\n            3\n          ],\n          \"alpha\": 0\n        }\n      ]\n    },\n    \"symbolicCatalogue\": {\n      \"fiveEqualsSix\": true,\n      \"minimumLabelsForThisCatalogue\": 5,\n      \"structuralFiveLabelReduction\": \"OPEN\",\n      \"newRowsAtFive\": [\n        \"0,-1,0,1,0\",\n        \"0,-1,1,0,0\",\n        \"0,0,-1,0,1\",\n        \"0,0,-1,2,0\",\n        \"0,0,1,-1,0\",\n        \"0,0,1,0,-1\"\n      ],\n      \"parameterCounterexample\": {\n        \"coordinates\": [\n          \"constant\",\n          \"c\",\n          \"s\",\n          \"a\",\n          \"o\"\n        ],\n        \"values\": [\n          1,\n          0,\n          1,\n          0.25,\n          1\n        ],\n        \"passesEveryFourLabelRow\": true,\n        \"negativeFiveLabelRows\": [\n          {\n            \"row\": [\n              0,\n              0,\n              -1,\n              2,\n              0\n            ],\n            \"quartetPattern\": \"7021\",\n            \"anchors\": [\n              2,\n              3\n            ],\n            \"gaps\": [\n              0,\n              4\n            ]\n          }\n        ]\n      }\n    },\n    \"sharpNoiseRadius\": {\n      \"radiusNumerator\": 1,\n      \"radiusDenominator\": 2,\n      \"strictInequalityRequired\": true,\n      \"treeMatrix\": [\n        [\n          0,\n          4,\n          6,\n          6\n        ],\n        [\n          4,\n          0,\n          6,\n          6\n        ],\n        [\n          6,\n          6,\n          0,\n          4\n        ],\n        [\n          6,\n          6,\n          4,\n          0\n        ]\n      ],\n      \"cycleMatrix\": [\n        [\n          0,\n          5,\n          6,\n          5\n        ],\n        [\n          5,\n          0,\n          5,\n          6\n        ],\n        [\n          6,\n          5,\n          0,\n          5\n        ],\n        [\n          5,\n          6,\n          5,\n          0\n        ]\n      ],\n      \"midpoint\": [\n        [\n          0,\n          4.5,\n          6,\n          5.5\n        ],\n        [\n          4.5,\n          0,\n          5.5,\n          6\n        ],\n        [\n          6,\n          5.5,\n          0,\n          4.5\n        ],\n        [\n          5.5,\n          6,\n          4.5,\n          0\n        ]\n      ],\n      \"supNormDifference\": 1,\n      \"status\": \"Analytic proof plus exact endpoint witness; applies to raw unnormalized original NANUQ, correct circular order supplied for support extraction.\"\n    },\n    \"nonOuterCounterexample\": {\n      \"selections\": [\n        {\n          \"cOccurrence\": 2,\n          \"dOccurrence\": 3,\n          \"topology\": \"ab|cd\"\n        },\n        {\n          \"cOccurrence\": 2,\n          \"dOccurrence\": 5,\n          \"topology\": \"ad|bc\"\n        },\n        {\n          \"cOccurrence\": 4,\n          \"dOccurrence\": 3,\n          \"topology\": \"ac|bd\"\n        },\n        {\n          \"cOccurrence\": 4,\n          \"dOccurrence\": 5,\n          \"topology\": \"ab|cd\"\n        }\n      ],\n      \"distinctTopologies\": [\n        \"ab|cd\",\n        \"ad|bc\",\n        \"ac|bd\"\n      ],\n      \"distanceTimes3\": [\n        [\n          0,\n          16,\n          16,\n          16\n        ],\n        [\n          16,\n          0,\n          16,\n          16\n        ],\n        [\n          16,\n          16,\n          0,\n          16\n        ],\n        [\n          16,\n          16,\n          16,\n          0\n        ]\n      ],\n      \"nontrivialSplitCoefficientsTimes3\": 0,\n      \"status\": \"Graph-class admission is justified in PROOF-REFINEMENTS.md; this code verifies its occurrence selections and metric.\"\n    }\n  }\n}\n",
+  "stderr": "",
+  "support_replay_totals": {
+    "treeCases": 84076,
+    "selectedTrees": 2525210,
+    "quartetSystems": 122,
+    "splitSystems": 122,
+    "anchorSplitChecks": 24667,
+    "negative": 0,
+    "supportMismatches": 0,
+    "boundaryFailures": 0
+  },
+  "independent_sharp_noise_checks": {
+    "tree_matrix_matches_definition": true,
+    "cycle_matrix_matches_definition": true,
+    "all_true_entries_integer": true,
+    "sup_norm_difference_exactly_1": true,
+    "tree_boundary_coefficient_0": true,
+    "cycle_boundary_coefficient_2": true,
+    "midpoint_distance_tree_exactly_half": true,
+    "midpoint_distance_cycle_exactly_half": true,
+    "reported_radius_is_strict_half": true
+  },
+  "independent_witness": {
+    "tree_matrix": [
+      [
+        0,
+        4,
+        6,
+        6
+      ],
+      [
+        4,
+        0,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        0,
+        4
+      ],
+      [
+        6,
+        6,
+        4,
+        0
+      ]
+    ],
+    "cycle_matrix": [
+      [
+        0,
+        5,
+        6,
+        5
+      ],
+      [
+        5,
+        0,
+        5,
+        6
+      ],
+      [
+        6,
+        5,
+        0,
+        5
+      ],
+      [
+        5,
+        6,
+        5,
+        0
+      ]
+    ],
+    "midpoint_exact": [
+      [
+        "0",
+        "9/2",
+        "6",
+        "11/2"
+      ],
+      [
+        "9/2",
+        "0",
+        "11/2",
+        "6"
+      ],
+      [
+        "6",
+        "11/2",
+        "0",
+        "9/2"
+      ],
+      [
+        "11/2",
+        "6",
+        "9/2",
+        "0"
+      ]
+    ],
+    "tree_boundary_alpha": 0,
+    "cycle_boundary_alpha": 2
+  },
+  "mathematical_scope": {
+    "distance": "Original raw unnormalized NANUQ on the admitted outer-labeled planar source class.",
+    "sufficient_error_condition": "Entrywise sup norm strictly less than 1/2, with the source-matrix promise.",
+    "method": "Nearest-integer rounding recovers the exact matrix; the accepted support theorem and supplied correct circular order recover split support.",
+    "upper_bound": "An admitted four-taxon tree/cycle pair has differing support and distance 1; its common midpoint lies at error 1/2 from each.",
+    "claim_type": "Deterministic optimal universal radius; no sample-complexity or order-finding assertion.",
+    "analytic_not_finite_sampling": "Universal integrality and rounding proof are audited in EXTREMALITY-REPLAY.md; finite JavaScript rounding samples alone do not prove the theorem."
+  },
+  "failure": null
+}

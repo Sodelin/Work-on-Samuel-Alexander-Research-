@@ -1,0 +1,9 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\CircularThetaSupport.lean:28:44: warning: Variable name `hij` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hij
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Nanuq.Theta.pathRealizesGap_iff_boundary_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.displayedSplit_of_successor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.displayedSplit_iff_boundary_quartet' depends on axioms: [propext, Classical.choice, Quot.sound]

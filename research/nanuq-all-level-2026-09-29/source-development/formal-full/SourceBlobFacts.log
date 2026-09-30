@@ -1,0 +1,2 @@
+'Nanuq.Source.RootedBinary.raw_blob_foundations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.port_transport_between_blobs' depends on axioms: [propext, Classical.choice, Quot.sound]

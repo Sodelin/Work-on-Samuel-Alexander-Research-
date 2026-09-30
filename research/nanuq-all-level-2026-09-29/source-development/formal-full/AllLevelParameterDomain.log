@@ -1,0 +1,8 @@
+'Nanuq.AllLevelParameters.all_rows_iff_exact_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.AllLevelParameters.four_taxon_rows_iff_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.AllLevelParameters.four_taxon_certificate_insufficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Nanuq.AllLevelParameters.four_taxon_certificate_misses_adjacent_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,2 @@
+Nanuq.Theta.support_checked_2_0_0_0 : checkSupport { a1 := 2, b1 := 0, a2 := 0, b2 := 0 } = true
+'Nanuq.Theta.support_checked_2_0_0_0' depends on axioms: [propext, Classical.choice, Quot.sound]

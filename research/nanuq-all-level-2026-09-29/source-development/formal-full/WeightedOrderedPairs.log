@@ -1,0 +1,1 @@
+'Nanuq.Weighted.ordered_pair_sum_eq_twice_upperSum' depends on axioms: [propext, Classical.choice, Quot.sound]

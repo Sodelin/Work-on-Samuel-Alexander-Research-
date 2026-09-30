@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verify immutable sources and replay portable exact checks
-        run: python3 -B research/nanuq-all-level-2026-09-29/verify_publication.py --recompute
+        run: python3 -B research/nanuq-all-level-2026-09-29/verify_publication.py --require-git-tracked --recompute

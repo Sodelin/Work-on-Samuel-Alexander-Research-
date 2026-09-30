@@ -1,0 +1,10 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\CircularBasis.lean:34:27: warning: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all only [and_true, not_true_eq_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Nanuq.Reconstruction.alpha_gapSplit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.splitMixture_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.circular_decomposition_unique' depends on axioms: [propext, Classical.choice, Quot.sound]

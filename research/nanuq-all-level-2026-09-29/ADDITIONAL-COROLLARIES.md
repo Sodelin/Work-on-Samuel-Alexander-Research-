@@ -60,21 +60,39 @@ is itself a circular pseudometric in the source class. Its value is exactly
 the quartet-sum part of original NANUQ. It need not separate distinct taxa:
 in a four-leaf tree, cherry partners have q_N(x,y)=0.
 
-## 3. A qualified deterministic stability bound
+## 3. The optimal strict raw-noise radius is 1/2
 
-Suppose the correct circular order is supplied and an estimate in the
-original unnormalized distance scale satisfies
+In the planar source class each distinct quartet set has one or two
+topologies, so every original score rho is 0, 1/2 or 1. The raw distance
+is twice a sum of these scores plus the integer baseline 2n-4. Thus every
+entry of the original, unnormalized NANUQ matrix is an integer, at every
+finite size and level covered by the theorem.
 
-    max_{x,y} |dhat(x,y)-d_N(x,y)| < 1/4.
+If the entrywise error is strictly less than 1/2, nearest-integer rounding
+recovers the exact entire matrix. With the correct circular order supplied,
+the exact-support theorem then recovers the displayed-split support.
 
-A four-term coefficient then changes by less than 1. The true coefficients
-are zero for absent splits and at least 2 for displayed splits, so selecting
-estimated coefficients greater than 1 recovers the exact split support.
-Equivalently, threshold estimated split weights at 1/2.
+This universal bound is sharp. In order a,b,c,d, the tree displaying ab|cd
+has upper-triangular entries (4,6,6,6,6,4), while the admitted level-one
+cycle displaying ab|cd and ad|bc has (5,6,5,5,6,5), in pair order
+(ab,ac,ad,bc,bd,cd). Their sup-norm distance is 1, so the same midpoint
+lies exactly 1/2 from both, yet their supports differ. Even with the correct
+common circular order supplied, no decoder can guarantee support recovery
+at closed error radius 1/2, or at any larger strict radius.
 
-This is a sufficient deterministic statement. It does not find the circular
-order, prove a sample-complexity bound, specify how quartet categories should
-be estimated from genes, or claim the tolerance is optimal.
+The [independent replay and proof](EXTREMALITY-REPLAY.md) verifies both
+source models, including the cycle's rooted binary, galled, LSA and
+outer-labeled planar conditions. The uniform sharpness witness uses four
+taxa; no separate minimax claim for each larger fixed taxon count is made.
+
+The earlier error bound below 1/4 remains valid for direct noisy-coefficient
+thresholding: a four-term coefficient changes by less than 1, while true
+coefficients are either zero or at least 2, so thresholding at 1 recovers
+support. Rounding first improves the admissible error to below 1/2.
+
+These are deterministic guarantees under an exact source-model and error
+promise. They provide no sample complexity, estimator analysis or method
+for finding a circular order. Distance normalization rescales the radius.
 
 ## 4. Outer-labeled planarity cannot simply be removed
 

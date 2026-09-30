@@ -1,0 +1,3 @@
+'Nanuq.Theta.unbounded_support_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.unbounded_weighted_exact_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.unbounded_source_full_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]

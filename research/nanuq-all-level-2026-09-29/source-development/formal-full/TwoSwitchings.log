@@ -1,0 +1,2 @@
+'Nanuq.Quartet.sourceMean_bool_eq_switchingMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Quartet.bool_discrepancy_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

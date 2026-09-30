@@ -1,0 +1,17 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorComposition.lean:59:0: warning: automatically included section variable(s) unused in theorem `Nanuq.Composition.weightedPortMass_unit`:
+  [DecidableEq X]
+  [Fintype P]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq X] [Fintype P] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorComposition.lean:64:0: warning: automatically included section variable(s) unused in theorem `Nanuq.Composition.sum_weighted_by_ports`:
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Nanuq.Composition.weightedNanuq_eq_ordered_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.sum_weighted_pairs_by_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.weighted_composition_of_anchor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.source_composition_of_anchor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

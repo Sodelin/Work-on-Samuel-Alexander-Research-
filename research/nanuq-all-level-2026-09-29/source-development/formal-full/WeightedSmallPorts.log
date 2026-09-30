@@ -1,0 +1,3 @@
+'Nanuq.Weighted.weightedNanuq_two_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Weighted.weightedNanuq_three_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Weighted.threePortLength_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

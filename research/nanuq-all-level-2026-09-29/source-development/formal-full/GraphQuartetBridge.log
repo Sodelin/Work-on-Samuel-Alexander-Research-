@@ -1,0 +1,4 @@
+'Nanuq.Source.RootedBinary.two_branching_blobs_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.two_branching_blobs_force_resolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

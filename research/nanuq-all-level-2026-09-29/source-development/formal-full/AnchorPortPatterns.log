@@ -1,0 +1,2 @@
+'Nanuq.PortPatterns.tripleCount_by_portCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.PortPatterns.tripleCount_cases' depends on axioms: [propext, Classical.choice, Quot.sound]

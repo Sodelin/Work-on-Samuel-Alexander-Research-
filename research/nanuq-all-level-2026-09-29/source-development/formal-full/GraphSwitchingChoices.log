@@ -1,0 +1,7 @@
+'Nanuq.Source.RootedBinary.switchingSplitChoicesEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.switchingChoicesEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.restrictSwitchingChoices_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Nanuq.Source.RootedBinary.extended_switching_keep_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.extended_switching_keep_off' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'Nanuq.Reconstruction.gapSplit_eq_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.circular_reconstruction_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]

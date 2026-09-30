@@ -1,0 +1,3 @@
+'Nanuq.Source.RootedBinary.raw_graph_foundations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.raw_quartet_foundations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.rawQuartetMean_of_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]

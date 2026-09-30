@@ -1,0 +1,5 @@
+Nanuq.Theta.support_checked_0_2_0_2 : checkSupport { a1 := 0, b1 := 2, a2 := 0, b2 := 2 } = true
+Nanuq.Theta.support_checked_1_1_0_2 : checkSupport { a1 := 1, b1 := 1, a2 := 0, b2 := 2 } = true
+Nanuq.Theta.support_checked_2_1_1_0 : checkSupport { a1 := 2, b1 := 1, a2 := 1, b2 := 0 } = true
+Nanuq.Theta.support_checked_4_0_0_0 : checkSupport { a1 := 4, b1 := 0, a2 := 0, b2 := 0 } = true
+'Nanuq.Theta.support_checked_4_0_0_0' depends on axioms: [propext, Classical.choice, Quot.sound]

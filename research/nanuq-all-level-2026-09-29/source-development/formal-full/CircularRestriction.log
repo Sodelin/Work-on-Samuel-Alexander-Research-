@@ -1,0 +1,2 @@
+'Nanuq.Reconstruction.gapSplit_cyclic_four_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.circular_decomposable_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]

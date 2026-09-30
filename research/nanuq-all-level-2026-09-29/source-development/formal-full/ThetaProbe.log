@@ -1,0 +1,2 @@
+true
+'Nanuq.Theta.probe_six' depends on axioms: [propext, Classical.choice, Quot.sound]

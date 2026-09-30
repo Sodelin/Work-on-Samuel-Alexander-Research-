@@ -1,0 +1,2 @@
+'Nanuq.Theta.four_resolution_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.rho2_eq_sourceMean_of_resolves' depends on axioms: [propext, Classical.choice, Quot.sound]

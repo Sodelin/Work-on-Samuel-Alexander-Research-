@@ -1,0 +1,3 @@
+'Nanuq.Source.EdgeGraph.hybrid_has_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.EdgeGraph.galled_hybrid_edge_not_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.EdgeGraph.galled_bridge_not_hybrid_target' depends on axioms: [propext, Classical.choice, Quot.sound]

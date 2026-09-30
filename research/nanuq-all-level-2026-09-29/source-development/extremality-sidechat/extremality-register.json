@@ -1,0 +1,1273 @@
+{
+  "schemaVersion": 1,
+  "title": "NANUQ theorem extremality and formalization register",
+  "date": "2026-09-29",
+  "scope": "Original NANUQ on finite binary semidirected LSA outer-labeled planar galled networks, plus explicitly separated parameter and representation questions.",
+  "completeness": "Systematic finite audit of identified dimensions; not a claim to exhaust every conceivable mathematical generalization.",
+  "statusLegend": {
+    "ESTABLISHED_UPSTREAM": "Accepted in the main thread; not rebuilt end-to-end here.",
+    "PROVED_MATH": "Written mathematical proof supplied or explicit consequence; not Lean-verified here.",
+    "COMPUTER_CHECKED": "Exact finite computation passed.",
+    "COMPUTER_ASSISTED": "Unbounded transfer argument plus finite computation.",
+    "OPEN": "An unresolved target, not a proved claim.",
+    "SPECIFICATION": "Required distinction or workflow contract; not a new theorem."
+  },
+  "categories": [
+    {
+      "code": "S",
+      "title": "Source class and scope",
+      "items": [
+        {
+          "id": "S-01",
+          "target": "Reticulation level",
+          "current_result": "Every finite level is covered in the stated class.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "UNBOUNDED_WITHIN_SCOPE",
+          "next_obligation": "Port accepted structural and finite certificates into a source-level formal theorem.",
+          "acceptance_criterion": "No upper bound on level appears in the theorem hypotheses.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-02",
+          "target": "Number of blobs",
+          "current_result": "Arbitrarily many finite blobs are covered by original-NANUQ composition.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "UNBOUNDED_WITHIN_SCOPE",
+          "next_obligation": "Preserve the complete graph-to-composition proof, including small blobs.",
+          "acceptance_criterion": "Source theorem quantifies over every finite admitted network.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-03",
+          "target": "Number of taxa",
+          "current_result": "The source theorem covers every finite n>=4; auxiliary local cases use 2 and 3 ports.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "UNBOUNDED_WITHIN_SCOPE",
+          "next_obligation": "Separate source definition from auxiliary small-port conventions.",
+          "acceptance_criterion": "No finite-taxon ceiling or silent use of a four-taxon definition at n=3.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-04",
+          "target": "Outer-labeled planarity",
+          "current_result": "Dropping it universally breaks exact support, already at level 2.",
+          "status": "PROVED_MATH",
+          "bound_status": "COUNTEREXAMPLE",
+          "next_obligation": "Kernel-check the explicit six-internal-vertex counterexample and its admission.",
+          "acceptance_criterion": "Binary, galled, LSA, level-2 witness displays all three quartets but its distance is a star.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-05",
+          "target": "Galledness",
+          "current_result": "Used for leaf-hybrid occurrence representation and local capping.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Search a precisely defined nongalled outer-labeled subclass; prove coverage or find a counterexample.",
+          "acceptance_criterion": "A weaker explicit graph condition with proof, or an admitted failure witness.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-06",
+          "target": "Binarity",
+          "current_result": "Assumed for quartet resolutions, degree-three endpoint contributions, and occurrence trees.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Specify soft versus hard polytomies before testing nonbinary extensions.",
+          "acceptance_criterion": "One unambiguous nonbinary metric and a source-level theorem or obstruction.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-07",
+          "target": "Root-LSA condition",
+          "current_result": "Used to ensure both sides of every bridge contain taxa and to admit capped bloblets.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Prove LSA trimming preserves the metric and target split system under exact conventions.",
+          "acceptance_criterion": "A normalization theorem or a counterexample to removing the hypothesis.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-08",
+          "target": "Semidirected versus rooted input",
+          "current_result": "The theorem is stated for semidirected LSA networks admitting rooted partners.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Prove invariance across rooted partners and characterize needed orientations.",
+          "acceptance_criterion": "Root-choice independence and exact transfer maps.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-09",
+          "target": "Parallel edges and two-cycles",
+          "current_result": "Allowed source incidences need careful small-blob handling.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize parallel incidences instead of assuming a simple graph.",
+          "acceptance_criterion": "No unproved exclusion of admitted bigons.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-10",
+          "target": "Zero or one ordinary taxon",
+          "current_result": "The occurrence-tree proof need not assume tree-child or ordinary leaves exist.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Retain unlabeled skeleton leaves until occurrence stubs restore degree three.",
+          "acceptance_criterion": "Representation proof covers all-hybrid leaf configurations.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-11",
+          "target": "Tree-child condition",
+          "current_result": "Not required by the current representation argument.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Audit that no imported lemma silently adds tree-child.",
+          "acceptance_criterion": "Final theorem has no tree-child assumption.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "S-12",
+          "target": "Infinite networks",
+          "current_result": "Only finite networks and finite sums are covered.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Define an infinite object, topology, quartet measure, and convergent metric before extension.",
+          "acceptance_criterion": "A well-posed statement; no extrapolation from arbitrary finite level.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "R",
+      "title": "Representation and witness-size minima",
+      "items": [
+        {
+          "id": "R-01",
+          "target": "Six-label coefficient bound",
+          "current_result": "Two anchors and four boundary labels give a proved bound of at most six.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize restriction and equality of each queried coefficient.",
+          "acceptance_criterion": "A source-to-finite certificate theorem with no hidden coverage assumption.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-02",
+          "target": "Five-label structural reduction",
+          "current_result": "No proof that every six-label coefficient query reduces structurally to five is supplied.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Find a deletion, relabeling, or convex-combination reduction preserving the relevant sign/zero assertion.",
+          "acceptance_criterion": "Uniform constructive transfer, not merely equality of finite row lists.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-03",
+          "target": "Minimum symbolic row-catalogue size",
+          "current_result": "Four labels yield 10 rows; five and six yield the same 16 normalized rows.",
+          "status": "COMPUTER_CHECKED",
+          "bound_status": "SHARP",
+          "next_obligation": "Port exact row-set equality and a row absent at four into a finite formal certificate.",
+          "acceptance_criterion": "Minimum is five for this precisely defined catalogue, conditional on the six-label coverage theorem.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-04",
+          "target": "Four-label positivity tests",
+          "current_result": "They do not certify the full symbolic anchor-positivity domain.",
+          "status": "COMPUTER_CHECKED",
+          "bound_status": "COUNTEREXAMPLE",
+          "next_obligation": "Use (c,s,a,o)=(0,1,1/4,1) and saved five-label negative-row witness.",
+          "acceptance_criterion": "All four-label inequalities pass while a five-label coefficient is negative.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-05",
+          "target": "Minimum support-witness size",
+          "current_result": "Four boundary labels witness a displayed nontrivial circular split; three suffice for singleton positivity.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Distinguish support witnesses from complete coefficient queries.",
+          "acceptance_criterion": "Separate statements with their exact quantified roles.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-06",
+          "target": "Minimum doubled-tip count",
+          "current_result": "The general witness uses at most twelve occurrences for six labels.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Classify whether some repeated occurrences can be removed without changing the needed coefficient.",
+          "acceptance_criterion": "A smaller universal occurrence bound or minimal obstruction.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-07",
+          "target": "Adjacent-pair representation",
+          "current_result": "Every admitted bloblet has a paired-tip plane-tree representation.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Kernel-check tree skeleton, face count, contour order, and switching correspondence.",
+          "acceptance_criterion": "No drawing-based or level-bounded coverage argument.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-08",
+          "target": "More than two occurrences per label",
+          "current_result": "Current representation has one or two occurrences only.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Define independent occurrence selection for higher multiplicity and test support/positivity.",
+          "acceptance_criterion": "A theorem for a stated multiplicity class or a smallest counterexample.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-09",
+          "target": "Adjacency of repeated occurrences",
+          "current_result": "Required for common taxon order; nonadjacent pairs admit the support counterexample.",
+          "status": "PROVED_MATH",
+          "bound_status": "COUNTEREXAMPLE",
+          "next_obligation": "Determine the weakest noncrossing occurrence condition sufficient for the proof.",
+          "acceptance_criterion": "Precisely characterize any relaxation rather than dropping adjacency wholesale.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-10",
+          "target": "Pruning convention",
+          "current_result": "Restriction requires a minimal connecting subtree or recursive pruning before suppression.",
+          "status": "PROVED_MATH",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Formalize the operation and prove its idempotence and functoriality.",
+          "acceptance_criterion": "No dangling unlabeled tips survive restriction.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-11",
+          "target": "Smallest certificate state space",
+          "current_result": "122 quartet systems occur across sizes three through six in the larger representation class.",
+          "status": "COMPUTER_CHECKED",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Prove soundness of any further state quotient, including support information.",
+          "acceptance_criterion": "A reduced certificate with a coverage-preserving quotient map.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "R-12",
+          "target": "Source realizability of screened trees",
+          "current_result": "The finite screen intentionally covers a superset of source bloblets.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Classify realizability only if it reduces work or strengthens necessity claims.",
+          "acceptance_criterion": "Never infer a source counterexample solely from a nonrealizable representation.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Coefficients, weights, and exact extrema",
+      "items": [
+        {
+          "id": "C-01",
+          "target": "No lost nontrivial splits",
+          "current_result": "Two explicit boundary anchor pairs prove positivity analytically.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize alpha(M_ad)=alpha(M_bc)=tau in {0,1,2}.",
+          "acceptance_criterion": "Displayed boundary quartet implies a positive original coefficient.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-02",
+          "target": "No spurious splits",
+          "current_result": "At most six labels suffice for the finite vanishing test plus boundary lifting.",
+          "status": "COMPUTER_ASSISTED",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Kernel-check finite vanishing and its source transfer.",
+          "acceptance_criterion": "Absent boundary quartet forces every anchor coefficient to vanish.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-03",
+          "target": "Smallest positive global split weight",
+          "current_result": "For original raw NANUQ and integer port masses every positive weight is at least 1.",
+          "status": "PROVED_MATH",
+          "bound_status": "SHARP",
+          "next_obligation": "Formalize lower bound and four-cycle equality witness.",
+          "acceptance_criterion": "Universal lower bound 1 and an admitted example attaining it.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-04",
+          "target": "Smallest singleton split weight",
+          "current_result": "On n source taxa, every singleton weight is at least n-2.",
+          "status": "PROVED_MATH",
+          "bound_status": "SHARP",
+          "next_obligation": "Use paired neighbor-anchor identities and a tree with the target taxon in a cherry.",
+          "acceptance_criterion": "Universal n-2 bound and source examples for each n>=4.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-05",
+          "target": "Weighted nontrivial lower bound",
+          "current_result": "alpha_S>=tau*(m_a*m_d+m_b*m_c), where tau is 1 or 2 for a displayed split.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Characterize equality and whether other anchors force a stronger bound.",
+          "acceptance_criterion": "An exact minimum with fixed mass vector and specified boundary quartet.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-06",
+          "target": "Weighted singleton lower bound",
+          "current_result": "alpha_b>=2m_a m_d+2 min(m_a,m_d) sum_other m_t.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Optimize over admitted representations for a fixed positive mass vector.",
+          "acceptance_criterion": "A sharp formula or a proved gap to this lower bound.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-07",
+          "target": "Strictly positive real masses",
+          "current_result": "Local nonnegativity and support transfer hold for all positive real masses.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize ordered-semiring needs and positivity of products.",
+          "acceptance_criterion": "No accidental integer assumption in the local support theorem.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-08",
+          "target": "Nonnegative masses including zero",
+          "current_result": "Nonnegativity extends by polynomial evaluation; exact support may shrink.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Characterize support by surviving positive anchor products and delete zero-mass ports carefully.",
+          "acceptance_criterion": "Necessary and sufficient support condition, with degenerate-order conventions.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-09",
+          "target": "Negative masses",
+          "current_result": "The current positivity proof does not permit them.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Decide whether any scientifically meaningful signed variant is intended.",
+          "acceptance_criterion": "Either an explicit restricted cone or a deliberate scope exclusion.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-10",
+          "target": "Uniform positive margin for real masses",
+          "current_result": "No mass-independent positive margin exists under arbitrary positive scaling.",
+          "status": "PROVED_MATH",
+          "bound_status": "COUNTEREXAMPLE",
+          "next_obligation": "Record W(lambda m)=lambda^2 W(m).",
+          "acceptance_criterion": "A scaling counterexample; state any margin in terms of a mass lower bound.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-11",
+          "target": "Largest individual split weight",
+          "current_result": "No sharp general bound with fixed n is established in this package.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Optimize alpha subject to admitted quartet systems; give attaining networks.",
+          "acceptance_criterion": "Matching upper bound and admitted extremizers.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-12",
+          "target": "Largest singleton weight",
+          "current_result": "No sharp maximum with fixed n is proved here.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Compare tree product bounds with network mixtures and uniform-distinct corrections.",
+          "acceptance_criterion": "A complete n-dependent extremal theorem.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-13",
+          "target": "Maximum number of positive splits",
+          "current_result": "A circular order has at most n(n-1)/2 splits, including n singleton splits.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Determine which source networks attain the full circular set and minimum level needed.",
+          "acceptance_criterion": "Construction plus lower bounds on level or number of hybrids.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-14",
+          "target": "Minimum support size",
+          "current_result": "Every displayed binary n-leaf tree contributes 2n-3 distinct splits, so exact support has at least 2n-3; admitted trees attain equality.",
+          "status": "PROVED_MATH",
+          "bound_status": "SHARP",
+          "next_obligation": "Formalize displayed-tree existence and binary-tree edge count, then specialize exact support.",
+          "acceptance_criterion": "Minimum 2n-3 total splits, equivalently n-3 nontrivial splits, with admitted equality witnesses.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-15",
+          "target": "Coefficient lattice",
+          "current_result": "Raw distances and alpha are integers; split weights lie in half-integers.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Decide whether all positive weights are actually integers in this class.",
+          "acceptance_criterion": "Either an odd-alpha admitted witness or a parity theorem.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-16",
+          "target": "Residual quartet matrix",
+          "current_result": "Subtracting 2n-4 off diagonal leaves a circular pseudometric.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Characterize when the residual separates all taxa.",
+          "acceptance_criterion": "Necessary and sufficient criterion for residual metric versus pseudometric.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "C-17",
+          "target": "Baseline subtraction optimality",
+          "current_result": "Uniform pendant subtraction n-2 is largest valid for every n-taxon source network.",
+          "status": "PROVED_MATH",
+          "bound_status": "SHARP",
+          "next_obligation": "Formalize cherry singleton equality as obstruction to a larger universal baseline.",
+          "acceptance_criterion": "A larger subtraction creates a negative pendant coefficient in an admitted tree.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Split support and identifiability",
+      "items": [
+        {
+          "id": "D-01",
+          "target": "Full support equality",
+          "current_result": "Positive coefficients equal the union of displayed-tree splits at every finite level.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "UNBOUNDED_WITHIN_SCOPE",
+          "next_obligation": "Assemble source theorem without unproved graph premises.",
+          "acceptance_criterion": "End-to-end statement with explicit computational dependencies.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-02",
+          "target": "Boundary-split equivalence",
+          "current_result": "A nontrivial circular split is displayed exactly when its boundary quartet is displayed.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize the two-boundary-transition argument on a cyclic order.",
+          "acceptance_criterion": "No assumption that arbitrary restricted splits lift.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-03",
+          "target": "Known versus inferred circular order",
+          "current_result": "Current direct coefficient extraction uses a correct outer-face order.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Characterize all compatible orders or give a certified order-finding algorithm.",
+          "acceptance_criterion": "Verified recovery without assuming the answer order.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-04",
+          "target": "Uniqueness of circular order",
+          "current_result": "Several orders may represent the same split system, especially for trees.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Describe equivalence classes of valid orders and nonidentifiability.",
+          "acceptance_criterion": "Necessary and sufficient uniqueness conditions.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-05",
+          "target": "Network uniqueness from split union",
+          "current_result": "Exact split support alone does not establish unique network reconstruction.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Find same-support nonisomorphic source networks or prove uniqueness in a subclass.",
+          "acceptance_criterion": "An admitted witness or reconstruction theorem with explicit quotient.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-06",
+          "target": "Canonical forms at all levels",
+          "current_result": "No all-level canonical-form classification follows automatically.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Specify equivalence by quartet sets, splits, or distances separately.",
+          "acceptance_criterion": "Complete invariant and both directions of equivalence.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-07",
+          "target": "Quartet sets from split union",
+          "current_result": "Every quartet displayed by a tree has an edge witness, so union-of-tree splits determines quartet support.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize restriction of a split and existence of a displayed-tree witness.",
+          "acceptance_criterion": "Exact quartet-support reconstruction from the displayed split union.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-08",
+          "target": "Quartet equivalence versus distance equivalence",
+          "current_result": "For a fixed n and class, quartet sets determine d; exact-support recovery may give the converse.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Combine support recovery with the previous edge-witness lemma, handling unknown order.",
+          "acceptance_criterion": "Precise equivalence theorem without smuggling in network uniqueness.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-09",
+          "target": "Switching multiplicities",
+          "current_result": "Uniform-distinct d does not directly retain switching frequencies.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Construct networks with equal quartet sets but different switching distributions.",
+          "acceptance_criterion": "A loss-of-information witness or a recoverable subclass.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-10",
+          "target": "Hybrid directions",
+          "current_result": "Support theorem does not promise recovery of every hybrid orientation.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Test direction changes preserving displayed splits and quartet sets.",
+          "acceptance_criterion": "Exact orientation-identifiability criterion.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-11",
+          "target": "Reticulation count and level",
+          "current_result": "Metric recovery does not automatically identify hybrid count or level.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Seek different-level networks with equal d and distinguish minimal realization.",
+          "acceptance_criterion": "A counterexample or a minimum-level reconstruction theorem.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "D-12",
+          "target": "Tree of blobs recovery",
+          "current_result": "The source paper connects the support conjecture to recovering this structure.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Implement the exact split-to-blob-tree theorem with source hypotheses.",
+          "acceptance_criterion": "Certified structural recovery, not merely a visual split graph.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Composition, ports, and graph degeneracies",
+      "items": [
+        {
+          "id": "B-01",
+          "target": "Original-NANUQ composition",
+          "current_result": "The all-level exact identity has passed the main chat's written audit.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Derive hswitch and hlocalize from raw graph assumptions in Lean.",
+          "acceptance_criterion": "No unproved composition identities remain as final source hypotheses.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-02",
+          "target": "Positive port masses",
+          "current_result": "LSA and finiteness ensure taxa on both sides of every bridge.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize leaf existence and domination contradiction.",
+          "acceptance_criterion": "Every port block is nonempty and blocks partition all taxa.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-03",
+          "target": "Two-port blobs",
+          "current_result": "Their local W is zero, so exact local support must not be claimed for them.",
+          "status": "PROVED_MATH",
+          "bound_status": "COUNTEREXAMPLE",
+          "next_obligation": "Formalize bypass through a branching endpoint in a >=3-port blob.",
+          "acceptance_criterion": "All global edge splits accounted for despite zero two-port terms.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-04",
+          "target": "Three-port blobs",
+          "current_result": "Their matrix is a positive weighted star regardless of local reticulation presentation.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize explicit pendant lengths m_b*m_c.",
+          "acceptance_criterion": "No four-taxon formula invoked on three taxa.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-05",
+          "target": "Ordinary trivalent blobs",
+          "current_result": "They must be included in composition.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Prove every selected-tree branching vertex has one original-blob owner.",
+          "acceptance_criterion": "No missing tree-vertex endpoint contributions.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-06",
+          "target": "Global versus local switchings",
+          "current_result": "Choices factor by blobs; topology multiplicities may still be unequal.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Construct the finite product bijection and uniform marginal theorem.",
+          "acceptance_criterion": "No substitution of uniform topologies for uniform edge choices.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-07",
+          "target": "Distinct-quartet correction",
+          "current_result": "A nonzero discrepancy localizes to a unique central blob.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Prove resolved-bridge versus four-port-star cases exhaust the blob tree.",
+          "acceptance_criterion": "Exact identity using distinct supports and switching marginals separately.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-08",
+          "target": "Shared circular order",
+          "current_result": "Port blocks are consecutive in one global outer-face order.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize contour intervals and split pullback.",
+          "acceptance_criterion": "All local decompositions coexist in a common order.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-09",
+          "target": "Coincident lifted splits",
+          "current_result": "Their positive coefficients add; they do not cancel.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Describe how many blobs may contribute to a given split and recover local weights.",
+          "acceptance_criterion": "Exact multiplicity/weight decomposition or its nonuniqueness.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "B-10",
+          "target": "Parameter-family composition",
+          "current_result": "Original-d composition does not automatically apply to every modified quartet rule.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Derive normalization and correction identity for the general family.",
+          "acceptance_criterion": "A separate composition theorem or explicit obstruction.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "P",
+      "title": "Parameter domains and optimality",
+      "items": [
+        {
+          "id": "P-01",
+          "target": "Universal anchor-positivity domain",
+          "current_result": "Main audit gives s=o=1, 1/2<=a<=1, 0<=c<=a for the stated normalization.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SHARP",
+          "next_obligation": "Bind the 16-row certificate to source representation coverage.",
+          "acceptance_criterion": "Necessity and sufficiency for this criterion, not an overbroad source-distance claim.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-02",
+          "target": "Domain for unweighted source circularity",
+          "current_result": "May be larger than the universal anchor-positivity domain.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Find admitted unweighted failures outside the cone or prove cancellation-based extensions.",
+          "acceptance_criterion": "Sharp domain for the separately quantified source distance.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-03",
+          "target": "Exact-support parameter subdomain",
+          "current_result": "Nonnegative coefficients do not guarantee identical support at boundary parameters.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Classify zero patterns of the 16 rows jointly with split witnesses.",
+          "acceptance_criterion": "Necessary and sufficient support-preserving parameter conditions.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-04",
+          "target": "Parameter boundary faces",
+          "current_result": "Endpoints may lose splits or collapse the metric.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Produce explicit witnesses on each face and intersection.",
+          "acceptance_criterion": "Complete face-by-face degeneracy classification.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-05",
+          "target": "Different anchor-sharing normalization",
+          "current_result": "The catalogue currently fixes anchor-sharing entries to 1.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Introduce an independent normalization variable and recompute homogeneous inequalities.",
+          "acceptance_criterion": "Full cone modulo positive scale, with zero-scale cases separated.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-06",
+          "target": "Nonuniform topology probabilities",
+          "current_result": "Averaging with arbitrary positive weights changes source d.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Distinguish globally coherent switching weights from arbitrary per-quartet weights.",
+          "acceptance_criterion": "Maximum weight class preserving circularity/support.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-07",
+          "target": "Higher quartet-support cardinality",
+          "current_result": "Three-topology averaging can erase all nontrivial splits.",
+          "status": "PROVED_MATH",
+          "bound_status": "COUNTEREXAMPLE",
+          "next_obligation": "Use the non-outer level-2 witness rather than an abstract unsupported triple.",
+          "acceptance_criterion": "Admitted witness with explicit source distance.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "P-08",
+          "target": "Higher-order observations",
+          "current_result": "Quartets may be replaceable or augmented by quintets or other summaries.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "State a concrete statistic and an external target before further work.",
+          "acceptance_criterion": "An explicit information gain or smaller observation requirement.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "N",
+      "title": "Noise, sampling, and computation",
+      "items": [
+        {
+          "id": "N-01",
+          "target": "Raw-distance integrality",
+          "current_result": "All displayed quartet sets have one or two planar topologies, so d_N has integer entries.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Formalize rho in {0,1/2,1} and finite sums.",
+          "acceptance_criterion": "Integral source matrix for every admitted network.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-02",
+          "target": "Direct coefficient threshold radius",
+          "current_result": "Error <1/4 suffices without first using integrality.",
+          "status": "PROVED_MATH",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Keep it as a simple bound, superseded by rounding under the source promise.",
+          "acceptance_criterion": "Correct order and raw units remain explicit.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-03",
+          "target": "Best universal raw-matrix recovery radius",
+          "current_result": "Entrywise error <1/2 permits exact rounding recovery; ambiguity occurs at 1/2.",
+          "status": "PROVED_MATH",
+          "bound_status": "SHARP",
+          "next_obligation": "Kernel-check integer rounding and the tree/cycle midpoint witness.",
+          "acceptance_criterion": "Strict radius 1/2 with common-order support ambiguity at the endpoint.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-04",
+          "target": "Normalized distance noise radius",
+          "current_result": "Scaling the metric scales the lattice and recovery radius.",
+          "status": "PROVED_MATH",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "State normalization explicitly and transport the bound.",
+          "acceptance_criterion": "No use of raw 1/2 after normalization.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-05",
+          "target": "Unknown-order noisy recovery",
+          "current_result": "Rounding recovers d, but a certified order/split reconstruction algorithm still must be supplied.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Compose exact rounding with a verified circular-decomposition algorithm.",
+          "acceptance_criterion": "End-to-end guarantee without a supplied circular order.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-06",
+          "target": "Missing distances",
+          "current_result": "The theorem assumes a complete distance matrix.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Find minimum entry sets determining support in a stated class.",
+          "acceptance_criterion": "Recovery theorem and matching indistinguishable examples.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-07",
+          "target": "Missing quartets",
+          "current_result": "No minimum quartet sampling scheme has been proved here.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Specify adaptive or nonadaptive sampling and a source subclass.",
+          "acceptance_criterion": "Upper and lower query bounds tied to a stated external problem.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-08",
+          "target": "Statistical sample complexity",
+          "current_result": "A deterministic matrix-error radius is not a biological sampling guarantee.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Specify data model and concentration bound for the estimator.",
+          "acceptance_criterion": "Probability of correct support versus sample count under explicit assumptions.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-09",
+          "target": "Adversarial topology errors",
+          "current_result": "Mistaken quartet classification is different from additive matrix noise.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Bound the effect of a prescribed number or pattern of wrong quartets.",
+          "acceptance_criterion": "Sharp robustness theorem or minimal failure pattern.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-10",
+          "target": "Efficient evaluation",
+          "current_result": "Direct source sum uses all pairs of additional taxa.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Develop aggregation exploiting blobs, split support, or repeated quartet states.",
+          "acceptance_criterion": "Complexity upper bound plus a verified implementation.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-11",
+          "target": "Efficient certificate checking",
+          "current_result": "Finite exhaustive checking is small here but must be reproducible.",
+          "status": "COMPUTER_CHECKED",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Preserve source, exact results, failure conditions, and runtime assumptions.",
+          "acceptance_criterion": "A fresh independent run reproduces counts and witnesses.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-12",
+          "target": "Lean certificate size",
+          "current_result": "No minimal kernel certificate or efficient reflection scheme is supplied.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Choose finite reflection, generated tables, or algebraic certificates and measure cost.",
+          "acceptance_criterion": "Kernel checks coverage and evaluation, not only trusted external output.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "N-13",
+          "target": "Maximum useful parallelism",
+          "current_result": "The proof decomposition suggests independent audit tasks, not automatic expansion.",
+          "status": "SPECIFICATION",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Assign one bounded obligation per permitted research lane.",
+          "acceptance_criterion": "No duplicated enumeration or uncontrolled new problem spawning.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    },
+    {
+      "code": "F",
+      "title": "Formalization and scientific-claim obligations",
+      "items": [
+        {
+          "id": "F-01",
+          "target": "Source graph formalization",
+          "current_result": "The final source theorem requires the actual network class, not an abstract assumed decomposition.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Define finite multigraphs, directions, rooted partners, blobs, embedding, and LSA.",
+          "acceptance_criterion": "Definitions faithfully match the paper; final assumptions are graph hypotheses.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-02",
+          "target": "Circular split coefficient inversion",
+          "current_result": "Nonnegative alpha must reconstruct the whole distance with the right factor 1/2.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Reuse or prove the fixed-order circular basis theorem.",
+          "acceptance_criterion": "All diagonal, symmetry, and normalization hypotheses discharged.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-03",
+          "target": "Occurrence-tree coverage in Lean",
+          "current_result": "A finite table alone does not prove arbitrary-level coverage.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Formalize the accepted face/skeleton/restriction proofs.",
+          "acceptance_criterion": "The evaluator covers every source coefficient query.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-04",
+          "target": "Finite arithmetic in Lean",
+          "current_result": "This package executes JavaScript; it does not contain kernel-checked certificates.",
+          "status": "SPECIFICATION",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Port exact integer tables and evaluators through a checked reflection mechanism.",
+          "acceptance_criterion": "Successful Lean build with recorded version and no added axioms.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-05",
+          "target": "End-to-end support theorem in Lean",
+          "current_result": "Local certificate and source-composition assumptions must be discharged together.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Assemble the dependency graph and inspect final theorem signatures.",
+          "acceptance_criterion": "No assumed support equality, hlocalize, or hswitch in the final source theorem.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-06",
+          "target": "Counterexample admission in Lean",
+          "current_result": "Numeric failure alone does not show the witness belongs to the claimed class.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Check all graph degrees, acyclicity, rooting, galledness, level, and displayed trees.",
+          "acceptance_criterion": "An explicit witness object with proved predicates and failure.",
+          "priority": "P1",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-07",
+          "target": "Sharpness witnesses in Lean",
+          "current_result": "Universal lower bounds need actual admitted equality examples.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Formalize four-cycle and cherry-tree families.",
+          "acceptance_criterion": "Lower and upper/equality directions in one theorem.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-08",
+          "target": "Exact-support novelty",
+          "current_result": "Not established by a proof or by the absence of a known result in this chat.",
+          "status": "OPEN",
+          "bound_status": "UNKNOWN",
+          "next_obligation": "Run a targeted current primary-literature comparison before novelty claims.",
+          "acceptance_criterion": "Dated search and theorem-by-theorem comparison.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-09",
+          "target": "External open-problem mapping",
+          "current_result": "The source explicitly asks multiple-blob level-2 and level-3 bloblet extensions.",
+          "status": "ESTABLISHED_UPSTREAM",
+          "bound_status": "SUFFICIENT",
+          "next_obligation": "Quote exact source locators and show specialization of the final theorem.",
+          "acceptance_criterion": "Each claimed solved question has a direct statement-to-statement implication.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-10",
+          "target": "Unstated corollaries versus open problems",
+          "current_result": "Noise, margins, and catalogue minima here are derived/internal targets unless separately sourced.",
+          "status": "SPECIFICATION",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Keep external-problem provenance separate from mathematical validity.",
+          "acceptance_criterion": "No internal task is marketed as a published open problem without a source.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-11",
+          "target": "Verification labels",
+          "current_result": "Written proof, finite execution, independent audit, and Lean kernel check are distinct.",
+          "status": "SPECIFICATION",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Record all four separately for each claim.",
+          "acceptance_criterion": "No 'formally proved' label based only on JavaScript output.",
+          "priority": "P0",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        },
+        {
+          "id": "F-12",
+          "target": "Research scope termination",
+          "current_result": "This register is a bounded inventory, not authorization to solve every listed problem.",
+          "status": "SPECIFICATION",
+          "bound_status": "NOT_A_BOUND",
+          "next_obligation": "Choose externally motivated high-value targets and a stopping condition.",
+          "acceptance_criterion": "Resources remain focused; open rows remain honestly open.",
+          "priority": "P2",
+          "lean_status": "NOT_LEAN_VERIFIED_IN_THIS_PACKAGE"
+        }
+      ]
+    }
+  ],
+  "formalizationContracts": [
+    [
+      "L01",
+      "Source network predicates",
+      "Finite binary multigraph with taxon labels, hybrid directions, rooted LSA partner, galledness, and outer-labeled embedding.",
+      "Network/Definitions.lean"
+    ],
+    [
+      "L02",
+      "Displayed switchings",
+      "Independent incoming-edge choices, recursive pruning, degree-two suppression, and displayed-tree support.",
+      "Network/Switchings.lean"
+    ],
+    [
+      "L03",
+      "Circular split basis",
+      "Correct coefficient formula, inversion factor 1/2, uniqueness in a fixed circular order, and support.",
+      "Metrics/CircularSplits.lean"
+    ],
+    [
+      "L04",
+      "Quartet restrictions",
+      "Restriction commutes with displayed-tree selection and matches source induced-quarnet support.",
+      "Quartets/Restrictions.lean"
+    ],
+    [
+      "L05",
+      "Occurrence representation",
+      "Every admitted bloblet opens to an adjacent-copy plane binary tree, preserving original taxon order.",
+      "Representation/PairedTips.lean"
+    ],
+    [
+      "L06",
+      "Restriction functoriality",
+      "Minimal subtree construction, suppression invariance, and extension of partial occurrence selections.",
+      "Representation/Restriction.lean"
+    ],
+    [
+      "L07",
+      "Six-role locality",
+      "Each anchor coefficient depends on at most six retained labels and the same two boundary gaps.",
+      "Metrics/CoefficientLocality.lean"
+    ],
+    [
+      "L08",
+      "Enumeration coverage",
+      "Every reduced occurrence tree appears in the finite ordered-tree enumerator; state quotient preserves evaluation.",
+      "Certificates/Coverage.lean"
+    ],
+    [
+      "L09",
+      "Finite positivity and vanishing",
+      "Kernel-check nonnegativity and absence-boundary-topology implies zero for every finite anchor coefficient.",
+      "Certificates/AnchorFacts.lean"
+    ],
+    [
+      "L10",
+      "Weighted anchor identity",
+      "W(m)=sum m_p*m_q*M_pq including diagonal, overlapping anchors, and small-port conventions.",
+      "Metrics/WeightedAnchors.lean"
+    ],
+    [
+      "L11",
+      "Boundary-split lemma",
+      "For nontrivial circular S, displayed S iff its four adjacent boundary taxa display bc|ad.",
+      "Support/Boundary.lean"
+    ],
+    [
+      "L12",
+      "Analytic no-loss",
+      "Two explicit positive anchors for internal splits and one for singleton splits.",
+      "Support/NoLoss.lean"
+    ],
+    [
+      "L13",
+      "No-false transfer",
+      "Positive coefficient restricts to <=6 labels, finite vanishing excludes absent boundary quartet, and selection extends.",
+      "Support/NoFalseSplits.lean"
+    ],
+    [
+      "L14",
+      "Local source admission",
+      "Capping blobs preserves rooted LSA partner, galledness, binary degree, and outer-face ports.",
+      "Network/Capping.lean"
+    ],
+    [
+      "L15",
+      "Blob tree and masses",
+      "Port blocks partition all taxa, are nonempty, and occur consecutively in one global order.",
+      "Network/BlobTree.lean"
+    ],
+    [
+      "L16",
+      "Switching product and path identity",
+      "Choices factor by blob; every selected-tree branching contribution has unique local ownership.",
+      "Composition/SwitchingIdentity.lean"
+    ],
+    [
+      "L17",
+      "Uniform-distinct correction",
+      "A quartet is bridge-resolved or has a unique four-port central blob; compare both supports and marginals.",
+      "Composition/DistinctCorrection.lean"
+    ],
+    [
+      "L18",
+      "Exact original composition",
+      "Derive, rather than assume, the sum of local W pullbacks for the source d_N.",
+      "Composition/OriginalNANUQ.lean"
+    ],
+    [
+      "L19",
+      "Global support lift",
+      "Both inclusions, especially branching endpoints bypassing zero two-port matrices.",
+      "Support/Global.lean"
+    ],
+    [
+      "L20",
+      "Margins and optimal baseline",
+      "Positive weight>=1, singleton>=n-2, mass-sensitive bounds, and equality witnesses.",
+      "Extrema/Margins.lean"
+    ],
+    [
+      "L21",
+      "Integral source matrix",
+      "At most two displayed planar quartet topologies; 2rho integral; sum gives integral d_N.",
+      "Robustness/Integrality.lean"
+    ],
+    [
+      "L22",
+      "Sharp rounding recovery",
+      "Entrywise error<1/2 recovers integer d; tree/cycle midpoint proves endpoint impossibility.",
+      "Robustness/SharpRadius.lean"
+    ],
+    [
+      "L23",
+      "Explicit graph witnesses",
+      "Check cycle/tree and non-outer theta objects, source predicates, switchings, matrices, and support.",
+      "Witnesses/ExtremalNetworks.lean"
+    ],
+    [
+      "L24",
+      "Row-catalogue minimum",
+      "Check normalization by positive gcd, five/six equality, and a row first occurring at five.",
+      "Certificates/CatalogueMinimum.lean"
+    ],
+    [
+      "L25",
+      "Final theorem assembly",
+      "All dependencies discharged from source predicates; inspect axioms and theorem signatures.",
+      "Main.lean"
+    ]
+  ]
+}

@@ -1,0 +1,2 @@
+'Nanuq.Theta.switching_edge_child_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.exists_switching_edge_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

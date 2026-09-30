@@ -1,0 +1,5 @@
+'Nanuq.Source.EdgeGraph.not_bridge_of_parallel' does not depend on any axioms
+'Nanuq.Source.EdgeGraph.bridge_not_sameBlob' does not depend on any axioms
+'Nanuq.Source.EdgeGraph.bridge_blob_ne' depends on axioms: [propext]
+'Nanuq.Source.EdgeGraph.dreach_antisymm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.underlying_connected' depends on axioms: [propext, Classical.choice, Quot.sound]

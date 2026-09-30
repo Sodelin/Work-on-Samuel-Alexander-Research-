@@ -1,0 +1,18 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\QuartetComposition.lean:23:0: warning: automatically included section variable(s) unused in theorem `Nanuq.Composition.sum_by_ports`:
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\QuartetComposition.lean:34:0: warning: automatically included section variable(s) unused in theorem `Nanuq.Composition.portMass_pos_of_surjective`:
+  [Fintype P]
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype P] [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Nanuq.Composition.sum_pairs_by_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.portMass_pos_of_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.source_composition_of_switching_and_localization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

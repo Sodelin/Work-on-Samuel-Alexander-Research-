@@ -1,0 +1,3 @@
+'Nanuq.Theta.quartet_second_independent' depends on axioms: [propext]
+'Nanuq.Theta.rhoFin_two_switchings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.delete_c2_circular' depends on axioms: [propext, Quot.sound]

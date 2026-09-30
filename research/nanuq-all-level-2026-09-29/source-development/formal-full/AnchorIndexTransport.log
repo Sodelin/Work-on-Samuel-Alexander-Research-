@@ -1,0 +1,22 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorIndexTransport.lean:12:20: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorIndexTransport.lean:29:28: warning: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.getElem_eq_getD fallback, List.filter_append, List.filter_cons, hkeep, List.filter_nil,
+    ↓reduceIte, List.length_append, List.length_cons, List.length_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorIndexTransport.lean:58:58: warning: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.filter_append, List.filter_cons, hkeep, ↓reduceIte] at hf
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Nanuq.Theta.leafIndex_compressedIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.compressedIndex_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.compressedIndex_cyclicNext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.alpha_preserved_under_compression' depends on axioms: [propext, Classical.choice, Quot.sound]

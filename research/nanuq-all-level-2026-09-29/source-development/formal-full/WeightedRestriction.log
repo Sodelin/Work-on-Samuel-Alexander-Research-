@@ -1,0 +1,2 @@
+'Nanuq.Composition.weightedNanuq_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.weighted_circular_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]

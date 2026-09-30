@@ -1,0 +1,2 @@
+'Nanuq.Reconstruction.circular_decomposable_port_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.source_circular_of_anchor_composition' depends on axioms: [propext, Classical.choice, Quot.sound]

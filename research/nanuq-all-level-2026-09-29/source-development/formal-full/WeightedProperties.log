@@ -1,0 +1,2 @@
+'Nanuq.Weighted.weightedNanuq_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Weighted.sourceNanuq_pos_of_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]

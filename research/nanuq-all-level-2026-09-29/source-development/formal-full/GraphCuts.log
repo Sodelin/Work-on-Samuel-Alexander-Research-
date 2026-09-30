@@ -1,0 +1,3 @@
+'Nanuq.Source.EdgeGraph.edge_side_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.EdgeGraph.bridge_sides_disjoint' does not depend on any axioms
+'Nanuq.Source.RootedBinary.bridge_both_sides_contain_taxa' depends on axioms: [propext, Classical.choice, Quot.sound]

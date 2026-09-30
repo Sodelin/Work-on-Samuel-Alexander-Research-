@@ -1,0 +1,4 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\ThetaWitnessSymmetry.lean:10:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Nanuq.Theta.rhoFin_witness_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]

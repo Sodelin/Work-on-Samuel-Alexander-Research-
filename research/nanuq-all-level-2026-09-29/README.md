@@ -77,9 +77,12 @@ files, lemmas, or tested cases is a count of discoveries.
   need not be preserved.
 - [Margins, residual pseudometric and scope boundary](ADDITIONAL-COROLLARIES.md).
   Positive original-NANUQ split weights are at least 1 in the original scale;
-  with the correct circular order, entrywise distance error below 1/4 permits
-  exact support thresholding. A verified level-two counterexample shows why
-  outer-labeled planarity cannot simply be omitted from exact support.
+  integer rounding recovers the complete raw matrix from entrywise error
+  strictly below 1/2, and the supplied correct order then gives exact support.
+  A four-taxon ambiguity proves that radius is optimal uniformly over the
+  source class; see the [fresh replay and sharpness proof](EXTREMALITY-REPLAY.md).
+  A verified level-two counterexample shows why outer-labeled planarity
+  cannot simply be omitted from exact support.
 - [Beyond NANUQ](BEYOND-NANUQ-TARGETS.md). The natural neighboring framework is
   multi-labeled trees. The bounded source audit finds no additional externally
   posed conjecture already closed by these extensions. General ARGs and shared
@@ -91,6 +94,15 @@ For the formal lane's newest stable inventory and portable runner, use
 [PUBLICATION-HANDOFF.md](source-development/formal-full/PUBLICATION-HANDOFF.md).
 Its separate fresh 94-module rebuild was still in progress at capture; this
 package does not represent that pending rebuild as a successful fresh run.
+
+The [extremality register](source-development/extremality-sidechat/THEOREM-EXTREMALITY-REGISTER.md)
+preserves 96 audit items, with stable IDs and proposed Lean contracts, from
+the authorized side chat. This is a reference inventory: it is neither a
+list of 96 externally stated open problems nor a claim of 96 discoveries,
+and it does not authorize 96 new investigations. The fresh standalone Node
+replay exactly matches its saved JSON; the integration audit independently
+checks the new sharp-noise claim. Other status labels retain the side chat's
+scope and do not constitute a fresh register-wide review.
 
 ## Reproduce or continue
 
@@ -117,11 +129,17 @@ its historical local folder setting must be changed to this directory when
 reproducing it elsewhere. Older exploratory scripts with machine-specific
 paths are retained as history, not as the portable primary entry point.
 `SOURCE-INVENTORY.json` pins every captured source and documentary file from
-the two lanes. Generated compiled objects and dependency caches are excluded.
+the two main lanes and the supplemental extremality handoff. Generated
+compiled objects and dependency caches are excluded; documentary compiler
+logs are included explicitly despite the repository-wide log ignore rule.
 
 `python -B verify_publication.py` verifies the captured inventory. Add
 `--recompute` to run the portable finite programs in a temporary copy and
-check their key results without overwriting the committed receipts.
+check their key results without overwriting the committed receipts. Before
+publishing from a Git checkout, add `--require-git-tracked` to verify that
+every inventory item is in the Git index, including the compiler logs.
+The supplemental side verifier can be replayed separately with
+`node source-development/extremality-sidechat/verify_nanuq.js`.
 
 For a fresh chat, begin with [CONTINUE-RESEARCH.md](../../CONTINUE-RESEARCH.md).
 It names the live packet and the exact return format. For next mathematical

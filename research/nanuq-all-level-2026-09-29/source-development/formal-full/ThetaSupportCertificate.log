@@ -1,0 +1,2 @@
+'Nanuq.Theta.all_support_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.bounded_support_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

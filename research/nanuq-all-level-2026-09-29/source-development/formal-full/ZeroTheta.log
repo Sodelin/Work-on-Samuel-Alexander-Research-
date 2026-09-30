@@ -1,0 +1,2 @@
+'Nanuq.Theta.check_zero_template' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.anchor_nonnegative_upto_six' depends on axioms: [propext, Classical.choice, Quot.sound]

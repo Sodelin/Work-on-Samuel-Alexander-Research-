@@ -1,0 +1,3 @@
+'Nanuq.Reconstruction.circular_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.circular_decomposable_of_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.pseudometric_of_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]

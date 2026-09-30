@@ -1,0 +1,3 @@
+'Nanuq.Theta.mem_templates_of_bounds' depends on axioms: [propext, Quot.sound]
+'Nanuq.Theta.alpha_nonneg_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.templates_length' does not depend on any axioms

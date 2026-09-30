@@ -1,0 +1,3 @@
+'Nanuq.Theta.cyclicAdjacent_getD_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.retained_i_boundary_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.retained_j_boundary_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]

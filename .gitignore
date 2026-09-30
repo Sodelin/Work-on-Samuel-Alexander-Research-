@@ -7,3 +7,6 @@ __pycache__/
 *.log
 .venv/
 .local-build/
+
+# Published mathematical compiler receipts are documentary evidence.
+!research/nanuq-all-level-2026-09-29/source-development/**/*.log

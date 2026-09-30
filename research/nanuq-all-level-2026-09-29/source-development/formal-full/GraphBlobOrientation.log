@@ -1,0 +1,1 @@
+'Nanuq.Source.RootedBinary.blob_arborescence' depends on axioms: [propext, Classical.choice, Quot.sound]

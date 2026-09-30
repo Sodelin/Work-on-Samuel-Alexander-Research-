@@ -1,0 +1,2 @@
+'Nanuq.PortPatterns.portCount_le_card_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.PortPatterns.bridge_fiber_card_two' depends on axioms: [propext, Classical.choice, Quot.sound]

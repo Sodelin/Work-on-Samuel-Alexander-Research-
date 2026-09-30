@@ -1,0 +1,3 @@
+'Nanuq.Source.RootedBinary.blobProjection_eq_iff_target_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.blobProjection_eq_iff_source_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.port_transport_between_blobs' depends on axioms: [propext, Classical.choice, Quot.sound]

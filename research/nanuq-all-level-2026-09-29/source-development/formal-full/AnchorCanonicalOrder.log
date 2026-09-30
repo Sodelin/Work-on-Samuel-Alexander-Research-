@@ -1,0 +1,4 @@
+'Nanuq.Theta.armRanks_eq_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.selectedArm_rank_eq_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.compressed_circular_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.compressed_retained_circular_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

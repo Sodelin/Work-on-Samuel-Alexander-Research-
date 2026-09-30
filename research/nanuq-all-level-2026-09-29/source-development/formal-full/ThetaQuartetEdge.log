@@ -1,0 +1,9 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\ThetaQuartetEdge.lean:51:4: warning: Unused tactic linter: `change m - 1 < attachmentDepth t s a` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\ThetaQuartetEdge.lean:56:4: warning: Unused tactic linter: `change m - 1 < attachmentDepth t s b` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'Nanuq.Theta.min_position_le_depths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.edge_of_hPairCut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.edge_of_quartet' depends on axioms: [propext, Classical.choice, Quot.sound]

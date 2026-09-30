@@ -1,0 +1,1 @@
+'Nanuq.Theta.support_iff_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]

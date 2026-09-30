@@ -10,7 +10,8 @@
   "sharpenings": [
     "Five total labels are the sharp testing cutoff for the full parameterized anchor criterion; no pointwise five-label compression is claimed",
     "Arbitrary contiguous occurrence blocks reduce to their first and last copies while preserving quartet sets and displayed-split unions",
-    "Positive original-scale split weights have a uniform margin; a concrete non-outer-labeled level-two network disproves unrestricted exact-support extension"
+    "Positive original-scale split weights have a uniform margin; a concrete non-outer-labeled level-two network disproves unrestricted exact-support extension",
+    "Strict raw entrywise noise radius 1/2 is sufficient and uniformly sharp; integer rounding recovers the exact matrix and a supplied correct circular order then yields support"
   ],
   "evidence": "Computer-assisted proof, independent implementations, separate internal structural/composition/support audits; supporting Lean results have narrower scope",
   "full_all_level_source_theorem_lean_checked": false,
@@ -23,5 +24,7 @@
     "All-level canonical-form uniqueness and statistical input guarantees"
   ],
   "continuation_rule": "Read exact main commit, solve one bounded packet, return RESULT.md and EVIDENCE.json; unrun checks remain unverified",
-  "task_lifecycle": "Keep completed or handed-off chats visible and unarchived unless the user explicitly asks to archive that specific chat"
+  "task_lifecycle": "Keep completed or handed-off chats visible and unarchived unless the user explicitly asks to archive that specific chat",
+  "extremality_reference": "research/nanuq-all-level-2026-09-29/source-development/extremality-sidechat/THEOREM-EXTREMALITY-REGISTER.md",
+  "extremality_reference_scope": "96 audit items, not 96 solved or externally posed problems; do not replace the one active packet with a broad new investigation"
 }

@@ -1,0 +1,2 @@
+'Nanuq.Theta.restricted_theta_weighted_circular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.restricted_theta_source_circular' depends on axioms: [propext, Classical.choice, Quot.sound]

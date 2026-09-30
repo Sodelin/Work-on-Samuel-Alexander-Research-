@@ -1,0 +1,31 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\WeightedAnchor.lean:48:5: warning: Variable name `hxy` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hxy
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\WeightedAnchor.lean:98:15: warning: This simp argument is unused:
+  if_neg hpq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hpq, false_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\WeightedAnchor.lean:105:16: warning: This simp argument is unused:
+  anchorMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [outside]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\WeightedAnchor.lean:105:30: warning: This simp argument is unused:
+  outside
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [anchorMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\WeightedAnchor.lean:97:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Nanuq.Weighted.weightedNanuq_eq_anchor_sum' depends on axioms: [propext, Classical.choice, Quot.sound]

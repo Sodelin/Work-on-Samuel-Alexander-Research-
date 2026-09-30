@@ -1,0 +1,7 @@
+Finite.of_fintype.{u_4} (α : Type u_4) [Fintype α] : Finite α
+Fintype.equivFin.{u_4} (α : Type u_4) [Fintype α] : α ≃ Fin (Fintype.card α)
+Finite.of_injective.{u_4, u_5} {α : Sort u_4} {β : Sort u_5} [Finite β] (f : α → β) (H : Function.Injective f) :
+  Finite α
+Finite.intro.{u_3} {α : Sort u_3} {n : ℕ} : ∀ (a : α ≃ Fin n), Finite α
+Fintype.finite.{u_4} {α : Type u_4} (_inst : Fintype α) : Finite α
+Finite.of_fintype (Fin 3)

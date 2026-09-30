@@ -1,0 +1,2 @@
+'Nanuq.Composition.error_localization_dependent_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Composition.source_composition_dependent_ports' depends on axioms: [propext, Classical.choice, Quot.sound]

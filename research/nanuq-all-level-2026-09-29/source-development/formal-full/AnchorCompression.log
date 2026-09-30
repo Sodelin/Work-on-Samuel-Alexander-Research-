@@ -1,0 +1,18 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorCompression.lean:45:34: warning: This simp argument is unused:
+  and_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [armTag, armPosition, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorCompression.lean:108:31: warning: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [armTag]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Nanuq.Theta.armRank_lt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.armRank_lt_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.compressed_sixWitnesses_total_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.CyclicAdjacent.filter' depends on axioms: [propext]

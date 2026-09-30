@@ -1,0 +1,3 @@
+'Nanuq.Reconstruction.halfOpen_two_crossings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.interval_predicate_two_crossings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.interval_separation_identified' depends on axioms: [propext, Classical.choice, Quot.sound]

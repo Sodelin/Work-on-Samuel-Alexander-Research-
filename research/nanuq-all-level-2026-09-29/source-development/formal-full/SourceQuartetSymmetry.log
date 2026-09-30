@@ -1,0 +1,2 @@
+'Nanuq.Source.RootedBinary.rawQuartetMean_swap_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.rawQuartetMean_swap_last' depends on axioms: [propext, Classical.choice, Quot.sound]

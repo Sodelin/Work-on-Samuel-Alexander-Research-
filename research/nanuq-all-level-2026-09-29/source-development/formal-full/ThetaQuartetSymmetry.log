@@ -1,0 +1,3 @@
+'Nanuq.Theta.optionRho2_swapCross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.quartet_swap_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.rhoFin_endpoint_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]

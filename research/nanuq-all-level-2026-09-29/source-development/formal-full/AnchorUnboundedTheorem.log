@@ -1,0 +1,4 @@
+'Nanuq.Theta.unbounded_anchor_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.unbounded_weighted_circular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.unbounded_source_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.unbounded_weighted_support_matches_source' depends on axioms: [propext, Classical.choice, Quot.sound]

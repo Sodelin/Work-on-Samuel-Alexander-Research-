@@ -1,0 +1,5 @@
+'Nanuq.Quartet.displayed_comp_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Quartet.discrepancy_prod_fst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Quartet.distinct_average_differs_from_switching_average' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

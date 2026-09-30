@@ -57,6 +57,7 @@ session; a document never grants itself permission to contact people.
 | Canonical-theta Lean proof and graph foundations from the other research chat | [Captured development](research/nanuq-all-level-2026-09-29/source-development/formal-full/ALL-LEVEL-QUALITY.md) | Read exact endpoints, logs, dated checkpoint and remaining obligations; older status notes remain historical |
 | Alexander, ownership, finite sampling and earlier biology submissions | [Publication guide](PUBLICATION-GUIDE-2026-09-29.md), [coverage ledger](research/publication-2026-09-29/COVERAGE.md) | Follow pinned evidence and the submission manifest, not an old README's queue status |
 | Psychology/social-science inventory and external-question audit | [Publication audit](research/publication-audit-2026-09-29/README.md) | The inventory distinguishes formal declarations from demonstrated answers to externally stated open problems |
+| Extremal limits and side-chat refinements | [Register](research/nanuq-all-level-2026-09-29/source-development/extremality-sidechat/THEOREM-EXTREMALITY-REGISTER.md), [independent noise audit](research/nanuq-all-level-2026-09-29/EXTREMALITY-REPLAY.md) | 96 reference audit items; use the one active packet, not a new register-wide research queue |
 | VibeMathed delivery | [Project manifest](PUBLIC-SUBMISSION-MANIFEST.json), [new theorem status](research/nanuq-all-level-2026-09-29/SUBMISSION-STATUS.json) | Prepared, submitted, under review, and accepted are separate states |
 
 Prefer one bounded question and one integration owner. Independent audits

@@ -1,0 +1,8 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\ThetaBumpedMetric.lean:10:62: warning: This simp argument is unused:
+  Nat.add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hDistance, hkr, Ne.symm hkr, eq_comm, Nat.add_comm, Nat.add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Nanuq.Theta.metricPosition_distance' depends on axioms: [propext, Classical.choice, Quot.sound]

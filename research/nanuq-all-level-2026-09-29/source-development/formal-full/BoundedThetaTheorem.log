@@ -1,0 +1,4 @@
+'Nanuq.Theta.bounded_weighted_circular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.bounded_weighted_exact_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.bounded_source_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.bounded_source_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]

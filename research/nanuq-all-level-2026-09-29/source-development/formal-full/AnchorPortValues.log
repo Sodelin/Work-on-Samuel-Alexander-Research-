@@ -1,0 +1,2 @@
+'Nanuq.PortPatterns.orderedAnchor_by_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.PortPatterns.orderedAnchor_zero_of_two_ports' depends on axioms: [propext, Classical.choice, Quot.sound]

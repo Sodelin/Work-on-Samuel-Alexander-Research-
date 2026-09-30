@@ -1,0 +1,3 @@
+'Nanuq.TreePath.weighted_path_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.TreePath.vertex_endpoint_contributions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.TreePath.unit_source_path_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

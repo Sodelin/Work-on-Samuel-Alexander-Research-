@@ -16,9 +16,16 @@ def read(path):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--recompute',action='store_true')
+    parser.add_argument('--require-git-tracked',action='store_true')
     args=parser.parse_args()
     inventory=read(HERE/'SOURCE-INVENTORY.json')
     prefix='research/nanuq-all-level-2026-09-29/'
+    if args.require_git_tracked:
+        tracked=set(subprocess.check_output(
+            ['git','ls-files','-z'],cwd=HERE.parents[1]).decode('utf-8').split('\0'))
+        missing=[r['repository_path'] for r in inventory['records']
+                 if r['repository_path'] not in tracked]
+        assert not missing, f'Inventory files omitted from Git: {missing}'
     for record in inventory['records']:
         relative=record['repository_path']
         assert relative.startswith(prefix)

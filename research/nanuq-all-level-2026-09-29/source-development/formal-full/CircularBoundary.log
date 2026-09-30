@@ -1,0 +1,2 @@
+'Nanuq.Reconstruction.crossed_gap_is_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.gapSplit_identified_by_boundaries' depends on axioms: [propext, Classical.choice, Quot.sound]

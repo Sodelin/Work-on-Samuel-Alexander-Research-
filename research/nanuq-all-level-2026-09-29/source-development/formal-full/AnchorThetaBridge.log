@@ -1,0 +1,15 @@
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorThetaBridge.lean:32:12: warning: This simp argument is unused:
+  har
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ha, Leaf.arm.injEq, or_imp, forall_and, forall_exists_index, and_imp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Owner\Documents\Alexander-Open-Questions-2026-09-29\field-priorities\nanuq\formal-full\AnchorThetaBridge.lean:65:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Nanuq.Theta.circular_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.leafIndex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.weighted_anchor_eq_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.weighted_alpha_eq_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.weighted_anchor_nonneg_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+'Nanuq.Theta.all_templates_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.exact_coefficient_count' depends on axioms: [propext]
+'Nanuq.Theta.bounded_source_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.bounded_weighted_anchor_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.bounded_weighted_support_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

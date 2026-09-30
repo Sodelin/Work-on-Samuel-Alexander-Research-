@@ -1,0 +1,3 @@
+'Nanuq.Reconstruction.indexedSplitMixture_alpha_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.indexedSplitMixture_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Reconstruction.gapSplit_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]

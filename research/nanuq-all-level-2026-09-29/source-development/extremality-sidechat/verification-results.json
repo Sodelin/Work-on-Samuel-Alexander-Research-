@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": 1,
+  "verification": "Exact finite JavaScript execution, not Lean",
+  "support": [
+    {
+      "n": 3,
+      "treeCases": 36,
+      "selectedTrees": 185,
+      "quartetSystems": 1,
+      "splitSystems": 1,
+      "anchorSplitChecks": 9,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0,
+      "minSingletonAlpha": 2,
+      "minNontrivialAlpha": null,
+      "symbolicRows": [
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "0",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "treeCases": 406,
+      "selectedTrees": 3834,
+      "quartetSystems": 3,
+      "splitSystems": 3,
+      "anchorSplitChecks": 108,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0,
+      "minSingletonAlpha": 4,
+      "minNontrivialAlpha": 2,
+      "symbolicRows": [
+        {
+          "row": [
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "quartetPattern": "5",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "1",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "quartetPattern": "5",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "1",
+          "anchors": [
+            0,
+            3
+          ],
+          "gaps": [
+            0,
+            1
+          ]
+        },
+        {
+          "row": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "1",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        },
+        {
+          "row": [
+            1,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "1",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            3
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "quartetPattern": "1",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            3
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "quartetPattern": "5",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            3
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "quartetPattern": "5",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            3
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "1",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "treeCases": 5390,
+      "selectedTrees": 92465,
+      "quartetSystems": 16,
+      "splitSystems": 16,
+      "anchorSplitChecks": 1600,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0,
+      "minSingletonAlpha": 6,
+      "minNontrivialAlpha": 2,
+      "symbolicRows": [
+        {
+          "row": [
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            2,
+            4
+          ]
+        },
+        {
+          "row": [
+            0,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            1,
+            2
+          ],
+          "gaps": [
+            2,
+            4
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            1,
+            3
+          ],
+          "gaps": [
+            1,
+            4
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            -1,
+            2,
+            0
+          ],
+          "quartetPattern": "7021",
+          "anchors": [
+            2,
+            3
+          ],
+          "gaps": [
+            0,
+            4
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            0,
+            4
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            1,
+            3
+          ],
+          "gaps": [
+            2,
+            4
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            0,
+            3
+          ],
+          "gaps": [
+            0,
+            1
+          ]
+        },
+        {
+          "row": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        },
+        {
+          "row": [
+            1,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            4
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            4
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            4
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "quartetPattern": "4717",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            4
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "4681",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "treeCases": 78244,
+      "selectedTrees": 2428726,
+      "quartetSystems": 102,
+      "splitSystems": 102,
+      "anchorSplitChecks": 22950,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0,
+      "minSingletonAlpha": 8,
+      "minNontrivialAlpha": 2,
+      "symbolicRows": [
+        {
+          "row": [
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            2,
+            5
+          ]
+        },
+        {
+          "row": [
+            0,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            1,
+            2
+          ],
+          "gaps": [
+            2,
+            5
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            1,
+            3
+          ],
+          "gaps": [
+            1,
+            5
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            -1,
+            2,
+            0
+          ],
+          "quartetPattern": "5026348325741",
+          "anchors": [
+            2,
+            3
+          ],
+          "gaps": [
+            0,
+            5
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            0,
+            4
+          ],
+          "gaps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            1,
+            3
+          ],
+          "gaps": [
+            2,
+            5
+          ]
+        },
+        {
+          "row": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            0,
+            3
+          ],
+          "gaps": [
+            0,
+            1
+          ]
+        },
+        {
+          "row": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            2
+          ]
+        },
+        {
+          "row": [
+            1,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            5
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            5
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            0,
+            1
+          ],
+          "gaps": [
+            1,
+            5
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "quartetPattern": "5026338870125",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            5
+          ]
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quartetPattern": "5026338869833",
+          "anchors": [
+            0,
+            2
+          ],
+          "gaps": [
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refinements": {
+    "boundaryAnchorIdentities": {
+      "passed": true,
+      "cases": [
+        {
+          "case": "absent",
+          "anchors": [
+            0,
+            1
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "absent",
+          "anchors": [
+            0,
+            2
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "absent",
+          "anchors": [
+            0,
+            3
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "absent",
+          "anchors": [
+            1,
+            2
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "absent",
+          "anchors": [
+            1,
+            3
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "absent",
+          "anchors": [
+            2,
+            3
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "unique",
+          "anchors": [
+            0,
+            1
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "unique",
+          "anchors": [
+            0,
+            2
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "unique",
+          "anchors": [
+            0,
+            3
+          ],
+          "alpha": 2
+        },
+        {
+          "case": "unique",
+          "anchors": [
+            1,
+            2
+          ],
+          "alpha": 2
+        },
+        {
+          "case": "unique",
+          "anchors": [
+            1,
+            3
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "unique",
+          "anchors": [
+            2,
+            3
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "both",
+          "anchors": [
+            0,
+            1
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "both",
+          "anchors": [
+            0,
+            2
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "both",
+          "anchors": [
+            0,
+            3
+          ],
+          "alpha": 1
+        },
+        {
+          "case": "both",
+          "anchors": [
+            1,
+            2
+          ],
+          "alpha": 1
+        },
+        {
+          "case": "both",
+          "anchors": [
+            1,
+            3
+          ],
+          "alpha": 0
+        },
+        {
+          "case": "both",
+          "anchors": [
+            2,
+            3
+          ],
+          "alpha": 0
+        }
+      ]
+    },
+    "symbolicCatalogue": {
+      "fiveEqualsSix": true,
+      "minimumLabelsForThisCatalogue": 5,
+      "structuralFiveLabelReduction": "OPEN",
+      "newRowsAtFive": [
+        "0,-1,0,1,0",
+        "0,-1,1,0,0",
+        "0,0,-1,0,1",
+        "0,0,-1,2,0",
+        "0,0,1,-1,0",
+        "0,0,1,0,-1"
+      ],
+      "parameterCounterexample": {
+        "coordinates": [
+          "constant",
+          "c",
+          "s",
+          "a",
+          "o"
+        ],
+        "values": [
+          1,
+          0,
+          1,
+          0.25,
+          1
+        ],
+        "passesEveryFourLabelRow": true,
+        "negativeFiveLabelRows": [
+          {
+            "row": [
+              0,
+              0,
+              -1,
+              2,
+              0
+            ],
+            "quartetPattern": "7021",
+            "anchors": [
+              2,
+              3
+            ],
+            "gaps": [
+              0,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    "sharpNoiseRadius": {
+      "radiusNumerator": 1,
+      "radiusDenominator": 2,
+      "strictInequalityRequired": true,
+      "treeMatrix": [
+        [
+          0,
+          4,
+          6,
+          6
+        ],
+        [
+          4,
+          0,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          0,
+          4
+        ],
+        [
+          6,
+          6,
+          4,
+          0
+        ]
+      ],
+      "cycleMatrix": [
+        [
+          0,
+          5,
+          6,
+          5
+        ],
+        [
+          5,
+          0,
+          5,
+          6
+        ],
+        [
+          6,
+          5,
+          0,
+          5
+        ],
+        [
+          5,
+          6,
+          5,
+          0
+        ]
+      ],
+      "midpoint": [
+        [
+          0,
+          4.5,
+          6,
+          5.5
+        ],
+        [
+          4.5,
+          0,
+          5.5,
+          6
+        ],
+        [
+          6,
+          5.5,
+          0,
+          4.5
+        ],
+        [
+          5.5,
+          6,
+          4.5,
+          0
+        ]
+      ],
+      "supNormDifference": 1,
+      "status": "Analytic proof plus exact endpoint witness; applies to raw unnormalized original NANUQ, correct circular order supplied for support extraction."
+    },
+    "nonOuterCounterexample": {
+      "selections": [
+        {
+          "cOccurrence": 2,
+          "dOccurrence": 3,
+          "topology": "ab|cd"
+        },
+        {
+          "cOccurrence": 2,
+          "dOccurrence": 5,
+          "topology": "ad|bc"
+        },
+        {
+          "cOccurrence": 4,
+          "dOccurrence": 3,
+          "topology": "ac|bd"
+        },
+        {
+          "cOccurrence": 4,
+          "dOccurrence": 5,
+          "topology": "ab|cd"
+        }
+      ],
+      "distinctTopologies": [
+        "ab|cd",
+        "ad|bc",
+        "ac|bd"
+      ],
+      "distanceTimes3": [
+        [
+          0,
+          16,
+          16,
+          16
+        ],
+        [
+          16,
+          0,
+          16,
+          16
+        ],
+        [
+          16,
+          16,
+          0,
+          16
+        ],
+        [
+          16,
+          16,
+          16,
+          0
+        ]
+      ],
+      "nontrivialSplitCoefficientsTimes3": 0,
+      "status": "Graph-class admission is justified in PROOF-REFINEMENTS.md; this code verifies its occurrence selections and metric."
+    }
+  }
+}

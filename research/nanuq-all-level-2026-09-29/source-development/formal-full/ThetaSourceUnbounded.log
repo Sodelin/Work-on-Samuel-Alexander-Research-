@@ -1,0 +1,2 @@
+'Nanuq.Theta.quartet_resolves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Theta.rhoFin_source' depends on axioms: [propext, Classical.choice, Quot.sound]

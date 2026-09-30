@@ -1,0 +1,2 @@
+'Nanuq.Source.RootedBinary.blobLeaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nanuq.Source.RootedBinary.blob_leaf_degrees' depends on axioms: [propext, Classical.choice, Quot.sound]

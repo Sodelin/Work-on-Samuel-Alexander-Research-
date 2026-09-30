@@ -1,0 +1,1 @@
+'Nanuq.Theta.quartet_eq_orderQuartet' depends on axioms: [propext, Classical.choice, Quot.sound]

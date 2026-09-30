@@ -1,0 +1,1 @@
+'Nanuq.Source.EdgeGraph.bridge_splits_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]

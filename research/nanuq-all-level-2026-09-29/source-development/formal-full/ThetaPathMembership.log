@@ -1,0 +1,2 @@
+'Nanuq.Theta.arm_mem_terminalPath' depends on axioms: [propext, Quot.sound]
+'Nanuq.Theta.exists_switching_edge_of_path' depends on axioms: [propext, Classical.choice, Quot.sound]
