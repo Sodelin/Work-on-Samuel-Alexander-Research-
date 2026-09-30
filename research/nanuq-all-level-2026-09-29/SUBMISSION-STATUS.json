@@ -1,10 +1,16 @@
 {
-  "status": "PREPARED_NOT_YET_SUBMITTED",
+  "status": "SUBMITTED_UNDER_REVIEW",
   "site": "https://vibemathed.com",
   "result_family": "Original NANUQ circularity and exact displayed-split support at all finite levels; local parameter extension",
   "verification": "computer-assisted proof with internal audits; full source-class Lean formalization incomplete",
   "external_peer_review": false,
   "catalog_acceptance_confirmed": false,
   "researcher_emails_sent": false,
-  "receipt": null
+  "receipt": "DELIVERY-RECEIPT.json",
+  "proof_checkpoint": "cba23504ec7c63936ab60e5c3beb65d296c2e9c5",
+  "submitted_at_utc": "2026-09-30T00:29:12.008Z",
+  "queue_observed_at_utc": "2026-09-30T00:29:27.410Z",
+  "queue_url": "https://vibemathed.com/queue",
+  "title": "All-level NANUQ circularity and exact displayed-split support",
+  "public_payload": "SUBMISSION-PAYLOAD.json"
 }

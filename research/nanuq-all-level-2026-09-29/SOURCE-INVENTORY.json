@@ -78,6 +78,13 @@
       "source_sha256_before_presentation_normalization": "9678d42d5175cea6f32c8514032548e3caddc39685c9adec4087e54d232712cf"
     },
     {
+      "lane": "publication-delivery",
+      "source_relative_path": "DELIVERY-RECEIPT.json",
+      "repository_path": "research/nanuq-all-level-2026-09-29/DELIVERY-RECEIPT.json",
+      "bytes": 1723,
+      "sha256": "df396f96c2828730c0ff1b638747205306b27a1bcea4562629e0ce1f35297297"
+    },
+    {
       "lane": "all-level-integration",
       "source_relative_path": "EXPLICIT-EXTENSION-TARGETS.md",
       "repository_path": "research/nanuq-all-level-2026-09-29/EXPLICIT-EXTENSION-TARGETS.md",
@@ -102,8 +109,9 @@
       "lane": "all-level-integration",
       "source_relative_path": "FIVE-TAXON-THRESHOLD.md",
       "repository_path": "research/nanuq-all-level-2026-09-29/FIVE-TAXON-THRESHOLD.md",
-      "bytes": 8963,
-      "sha256": "9abab0a4f7993e32c085099f091e2a37e2107201e9b9042d0329f1c3b4225dad"
+      "bytes": 8703,
+      "sha256": "cd75870c5f7572e2a62952e101684d35de62c961071faf6e2984deabcc1a362b",
+      "captured_sha256_before_publication_update": "9abab0a4f7993e32c085099f091e2a37e2107201e9b9042d0329f1c3b4225dad"
     },
     {
       "lane": "all-level-integration",
@@ -131,8 +139,8 @@
       "lane": "all-level-integration",
       "source_relative_path": "README.md",
       "repository_path": "research/nanuq-all-level-2026-09-29/README.md",
-      "bytes": 8965,
-      "sha256": "e5f9f499d4cbeb17ce327b97018610e0a52c21c9ce167bfecf73274bd30499f0",
+      "bytes": 9355,
+      "sha256": "b1282e0c8952cfa126dd117895d54255b8edca585fdef14b39c977d3ccb30d97",
       "source_sha256_before_presentation_normalization": "9ecfdea19ca4b0d6e8a5fc46981f8f3923868fc1fe2808452f0c77cccd02c2e7",
       "captured_sha256_before_publication_update": "fc6f0c69b92b0fdf94b5e989cfb2d2d22ea06dcda0fdf78ca716b55b9477f90e"
     },
@@ -158,11 +166,19 @@
       "sha256": "0dbb8cb94a273d22cfd970a7d90212a0dfb04b29f9f072452b5917e505472d24"
     },
     {
+      "lane": "publication-delivery",
+      "source_relative_path": "SUBMISSION-PAYLOAD.json",
+      "repository_path": "research/nanuq-all-level-2026-09-29/SUBMISSION-PAYLOAD.json",
+      "bytes": 6582,
+      "sha256": "08e12a35a2385dbceddf9c7d29b153cf3e07d3a66e689506d4e5b4e727bf9f28"
+    },
+    {
       "lane": "all-level-integration",
       "source_relative_path": "SUBMISSION-STATUS.json",
       "repository_path": "research/nanuq-all-level-2026-09-29/SUBMISSION-STATUS.json",
-      "bytes": 455,
-      "sha256": "bcbe8a4afde6dbfa9c06d5ec67708fb6a276f6761d99f3fbcb25d2ed77dda97b"
+      "bytes": 811,
+      "sha256": "17d3a4e0afb9e9bba489754d0f0e20191c7415d2ab6ee347664ff94a7aa9a523",
+      "captured_sha256_before_publication_update": "bcbe8a4afde6dbfa9c06d5ec67708fb6a276f6761d99f3fbcb25d2ed77dda97b"
     },
     {
       "lane": "all-level-integration",
@@ -3823,5 +3839,5 @@
       "research/nanuq-all-level-2026-09-29/README.md"
     ]
   },
-  "updated_utc": "2026-09-30T00:23:40.454559+00:00"
+  "updated_utc": "2026-09-30T00:33:07.116858+00:00"
 }

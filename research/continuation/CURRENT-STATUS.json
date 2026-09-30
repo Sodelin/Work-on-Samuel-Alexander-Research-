@@ -26,5 +26,11 @@
   "continuation_rule": "Read exact main commit, solve one bounded packet, return RESULT.md and EVIDENCE.json; unrun checks remain unverified",
   "task_lifecycle": "Keep completed or handed-off chats visible and unarchived unless the user explicitly asks to archive that specific chat",
   "extremality_reference": "research/nanuq-all-level-2026-09-29/source-development/extremality-sidechat/THEOREM-EXTREMALITY-REGISTER.md",
-  "extremality_reference_scope": "96 audit items, not 96 solved or externally posed problems; do not replace the one active packet with a broad new investigation"
+  "extremality_reference_scope": "96 audit items, not 96 solved or externally posed problems; do not replace the one active packet with a broad new investigation",
+  "last_updated_utc": "2026-09-30T00:33:07.075089+00:00",
+  "submitted_proof_checkpoint": "cba23504ec7c63936ab60e5c3beb65d296c2e9c5",
+  "nanuq_submission_status": "SUBMITTED_UNDER_REVIEW",
+  "nanuq_queue_url": "https://vibemathed.com/queue",
+  "catalog_acceptance_confirmed": false,
+  "researcher_emails_sent": false
 }

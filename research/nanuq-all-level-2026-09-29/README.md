@@ -149,6 +149,12 @@ Those literature targets are not claimed solved by analogy.
 ## Publication status
 
 The GitHub checkpoint and the VibeMathed submission are separate events.
-The current version's delivery state is in [SUBMISSION-STATUS.json](SUBMISSION-STATUS.json).
+The entry **All-level NANUQ circularity and exact displayed-split support**
+was submitted and its exact title read back in the review queue on
+30 September 2026 UTC (29 September locally). The submitted proof is
+commit `cba23504ec7c63936ab60e5c3beb65d296c2e9c5`; both hosted checks
+passed there. See [the delivery receipt](DELIVERY-RECEIPT.json),
+[submitted public fields](SUBMISSION-PAYLOAD.json) and
+[current delivery state](SUBMISSION-STATUS.json). Curator acceptance is pending.
 No curator acceptance, external expert endorsement, historical priority, or
 author email is inferred from publishing these files.

@@ -57,7 +57,7 @@ This larger box contains the nonnegative score vector
 
 The saved focused receipt verifies that all 9 coefficients on the three-label system and all 108 coefficients on the three four-label systems are nonnegative at this point. Thus `P_<=4(theta_*)` holds.
 
-An actual five-label counterexample is recorded in the owner's [FOUR-TAXON-OBSTRUCTION.md](C:/Users/Owner/Documents/Alexander-Open-Questions-2026-09-29/field-priorities/nanuq/formal-full/FOUR-TAXON-OBSTRUCTION.md) and [exact receipt](C:/Users/Owner/Documents/Alexander-Open-Questions-2026-09-29/field-priorities/nanuq/formal-full/FOUR-TAXON-OBSTRUCTION.json):
+An actual five-label counterexample is recorded in the owner's [FOUR-TAXON-OBSTRUCTION.md](source-development/formal-full/FOUR-TAXON-OBSTRUCTION.md) and [exact receipt](source-development/formal-full/FOUR-TAXON-OBSTRUCTION.json):
 
 - Distinct labels: `0,1,2,3,4`; expanded tip labels: `[0,0,1,2,3,4]`.
 - Position-labelled plane tree: `[0, [[[1,2],3], [4,5]]]`, with physical tip 0 attached above the displayed subtree.
@@ -81,7 +81,7 @@ This is an attained coefficient on the representation, not merely a violated abs
 - **Complete rows and actual small witnesses:** [independent-parameter-domain-check.json](independent-parameter-domain-check.json), keys `rows_by_size`, `nonzero_normalized_rows`, `inequalities[*].row`, and `inequalities[*].witness.taxa`. Its 16 witnesses all have at most five labels. [parameter-domain.json](parameter-domain.json) provides the separately generated packed-pattern witnesses.
 - **Independent row extraction and exact domain proof:** [PARAMETER-DOMAIN-AUDIT.md](PARAMETER-DOMAIN-AUDIT.md), including the exact checker and nonnegative-generator certificates.
 - **Actual four-cutoff failure:** the owner's `FOUR-TAXON-OBSTRUCTION.md` and `.json`, especially `four_taxon_certificate_passes`, `rooted_plane_tree`, `independent_quartet_codes`, `terms`, and `coefficient`.
-- **Existing Lean algebra statements:** [AllLevelParameterDomain.lean](C:/Users/Owner/Documents/Alexander-Open-Questions-2026-09-29/field-priorities/nanuq/formal-full/AllLevelParameterDomain.lean), definitions `AllRows`, `FourTaxonRows`, `ExactDomain`, and theorems `all_rows_iff_exact_domain` (line 32), `four_taxon_rows_iff_box` (line 42), and `four_taxon_certificate_insufficient` (line 53). Its [saved log](C:/Users/Owner/Documents/Alexander-Open-Questions-2026-09-29/field-priorities/nanuq/formal-full/AllLevelParameterDomain.log) records the ordinary Lean axioms `propext`, `Classical.choice`, and `Quot.sound`. The source expressly separates this algebra from the external representation and enumeration proof.
+- **Existing Lean algebra statements:** [AllLevelParameterDomain.lean](source-development/formal-full/AllLevelParameterDomain.lean), definitions `AllRows`, `FourTaxonRows`, `ExactDomain`, and theorems `all_rows_iff_exact_domain` (line 32), `four_taxon_rows_iff_box` (line 42), and `four_taxon_certificate_insufficient` (line 53). Its [saved log](source-development/formal-full/AllLevelParameterDomain.log) records the ordinary Lean axioms `propext`, `Classical.choice`, and `Quot.sound`. The source expressly separates this algebra from the external representation and enumeration proof.
 
 This note is a deduction from the existing computer-assisted certificate and the actual focused obstruction. No tree family was re-enumerated, no prior checker was rerun, and no Lean build was performed. The unbounded five-cutoff theorem is not being claimed as a newly completed end-to-end Lean formalization.
 

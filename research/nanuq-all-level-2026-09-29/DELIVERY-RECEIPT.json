@@ -1,0 +1,35 @@
+{
+  "status": "SUBMITTED_UNDER_REVIEW",
+  "title": "All-level NANUQ circularity and exact displayed-split support",
+  "site": "https://vibemathed.com",
+  "queue_url": "https://vibemathed.com/queue",
+  "proof_checkpoint": "cba23504ec7c63936ab60e5c3beb65d296c2e9c5",
+  "submitted_at_utc": "2026-09-30T00:29:12.008Z",
+  "confirmation_text": "Thanks - your entry is in the queue.",
+  "queue_observed_at_utc": "2026-09-30T00:29:27.410Z",
+  "exact_title_observed_in_queue": true,
+  "prepared_packet_sha256": "9337ba3f8ecc220aa6619614eb822903e32d16c3746eec47db74afe819d20bca",
+  "public_payload_sha256": "08e12a35a2385dbceddf9c7d29b153cf3e07d3a66e689506d4e5b4e727bf9f28",
+  "successful_attempt": 2,
+  "prior_attempt": "Explicit form-length rejection; queue absence checked before retry. No duplicate accepted submission is claimed.",
+  "catalog_acceptance_confirmed": false,
+  "external_peer_review": false,
+  "full_all_level_source_theorem_lean_checked": false,
+  "researcher_emails_sent": false,
+  "hosted_checks_at_proof_checkpoint": [
+    {
+      "name": "NANUQ finite certificates",
+      "conclusion": "success",
+      "run_id": 36650177520,
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36650177520"
+    },
+    {
+      "name": "Verify",
+      "conclusion": "success",
+      "run_id": 36650177490,
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/actions/runs/36650177490"
+    }
+  ],
+  "evidence_boundary": "The checks verify the captured files and their defined checks, not external expert review or a full all-level Lean proof.",
+  "privacy": "Receipt contains only project publication facts; raw account/session/server response fields are omitted."
+}

@@ -1,0 +1,65 @@
+{
+  "title": "All-level NANUQ circularity and exact displayed-split support",
+  "proof_checkpoint": "cba23504ec7c63936ab60e5c3beb65d296c2e9c5",
+  "fields": {
+    "submit-name": "All-level NANUQ circularity and exact displayed-split support",
+    "submit-shortName": "All-level NANUQ split recovery",
+    "submit-solveType": "proved",
+    "submit-statement": "Holtgrefe et al. proved that the original NANUQ distance of a binary, semi-directed LSA, outer-labeled planar, galled level-two bloblet is circular decomposable, with support exactly the splits of its displayed trees. Their Section 6 asks whether this extends to multiple blobs at level two, conjectures circularity for level-three bloblets, and asks about a parametric distance-family extension. Does the circularity and exact-support statement persist at every finite level in the same structural class?",
+    "submit-solveDate": "2026-09-29",
+    "submit-sourceUrl": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/ALL-LEVEL-PROOF.md",
+    "submit-sourceName": "Pinned public computer-assisted proof, executable certificates and internal audits",
+    "submit-aiContribution": "ai-discovered",
+    "submit-model": "OpenAI Codex (GPT-6 family)",
+    "submit-modelMaker": "OpenAI",
+    "submit-aiRole": "The human collaborator selected the biological open-problem direction, pressed for an all-level theorem and stronger generalizations, and requested honest source correspondence and publication. Parallel Codex research chats developed the proofs, finite certificates, Lean components, counterexamples and exposition. Separate agents audited the structural reduction, composition, exact arithmetic, support transfer and parameter domain. These are internal project reviews, not independent human expert verification. Supporting software was executed, with a second implementation and a separate actual-tree-selection support checker.",
+    "submit-verification": "unreviewed",
+    "submit-publication": "preprint",
+    "submit-verificationNote": "The complete all-level theorem has a written computer-assisted proof and separate internal structural, finite, composition and support audits. Two implementations cover 84,076 plane-tree/duplication instances, 122 distinct quartet systems and 24,667 anchor coefficients. The distance-based verifier checks 11,848,859 physical-copy quartets; an additional verifier checks 2,525,210 globally consistent occurrence selections and actual split support. The portable programs were replayed successfully from a temporary publication copy. Lean checks the separate arbitrary-arm canonical-theta theorem, graph foundations and parameter-domain algebra; it does NOT yet check the complete all-level source theorem. A fresh 94-module canonical-checkpoint rebuild was pending at capture and is not claimed complete. Unreviewed is requested because no external human expert review or complete source-statement Lean verification is established. Historical priority is not certified by the bounded literature search.",
+    "submit-fieldGroup": "Combinatorics",
+    "submit-field": "Mathematical phylogenetics; circular split systems and quartet distances",
+    "submit-resolution": "resolved",
+    "submit-posedBy": "Holtgrefe et al., Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances (2025), Theorem 4.7 and Section 6; DOI 10.1007/s11538-025-01549-4.",
+    "submit-yearPosed": "2025",
+    "submit-resolutionMethod": "computation",
+    "submit-resultNote": "Original NANUQ is circular decomposable at every finite level and with any number of blobs in the binary semi-directed LSA, galled, outer-labeled planar class (at least four taxa). Its positive split support equals the union of displayed-tree splits. This answers the source's level-two multi-blob and level-three circularity questions. A six-label reduction, exact finite certificate and composition identity remove the level bound. The local four-score family has exact universal anchor-positivity domain s=o=1, 1/2<=a<=1, 0<=c<=a; five labels are the sharp testing cutoff. Contiguous multicopy trees admit an extreme-copy reduction. Raw-matrix error <1/2 is optimally correctable by rounding; exact support uses a supplied correct order. Planarity cannot be dropped for exact support. Full all-level Lean verification, network uniqueness, statistical inference and unrestricted ARGs are not claimed."
+  },
+  "links": [
+    {
+      "kind": "problem-record",
+      "label": "Original open questions: Theorem 4.7 and Section 6",
+      "url": "https://doi.org/10.1007/s11538-025-01549-4"
+    },
+    {
+      "kind": "other",
+      "label": "Exact source-to-result ledger",
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/SOURCE-RESULT-LEDGER.md"
+    },
+    {
+      "kind": "other",
+      "label": "Independent finite verifier and evidence boundary",
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/ALL-LEVEL-FINITE-AUDIT.md"
+    },
+    {
+      "kind": "other",
+      "label": "All-level exact support transfer",
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/ALL-LEVEL-SUPPORT-STRUCTURAL-AUDIT.md"
+    },
+    {
+      "kind": "other",
+      "label": "Parameter-domain theorem and independent symbolic audit",
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/PARAMETER-DOMAIN-AUDIT.md"
+    },
+    {
+      "kind": "other",
+      "label": "Preserved Lean handoff: precise endpoints and unfinished full theorem",
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/source-development/formal-full/PUBLICATION-HANDOFF.md"
+    },
+    {
+      "kind": "other",
+      "label": "Contiguous multicopy extension and sharp quantitative refinements",
+      "url": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-/blob/cba23504ec7c63936ab60e5c3beb65d296c2e9c5/research/nanuq-all-level-2026-09-29/README.md"
+    }
+  ],
+  "omitted_reviewer_note": "The reviewer-only note is retained privately; no account/session/server response data is published."
+}
