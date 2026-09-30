@@ -64,3 +64,9 @@ Prefer one bounded question and one integration owner. Independent audits
 should challenge the proof or reproduce a check, rather than duplicate the
 entire search. Save unsuccessful attempts only when they explain a real
 obstruction. Completion never archives a chat; preserve the task and its history.
+
+## New Wave review for future research
+
+Apply the [New Wave protocol](https://github.com/Sodelin/Formalizing-Soft-Sciences/blob/main/NEW-WAVE.md): register an external source problem, attempt the strongest useful target within the packet's declared domain and budget, and attach the checked mathematical and significance deltas to a concrete downstream use and eventual submission. The [cross-project retrospective](https://github.com/Sodelin/Formalizing-Soft-Sciences/blob/main/research/new-wave-2026-09-30/RETROSPECTIVE.md) records the initial critique.
+
+This supplements the current task contract. Preserve the active NANUQ packet and its stopping rules; do not replace it with an unrelated search. Record attempted strengthenings and unresolved limits even when the bounded packet ends with a partial result. Sol 6.1 at Max is the requested executor when available; report the actual executor honestly.
