@@ -1,0 +1,871 @@
+{
+  "status": "PASS_INDEPENDENT_SYMBOLIC_ROWS_AND_COMPACT_DOMAIN",
+  "scope": "Universal nonnegative anchor coefficients over the independently saved adjacent-copy systems on 3..6 labels; no necessity assertion for aggregated unweighted source distances.",
+  "input_sha256": {
+    "independent-all-level-check.json": "e2bd96517422aaa6841fc6b9cc879e8b0a6eaef7ca92fc9904125158195628ed",
+    "parameter-domain.json": "755af7b62b7081389046881973c37f5a2fb7c9f613301db007a84c96d9886bf5",
+    "parameter_domain.py": "e25b81149cb19eb67166214be02ab262d6988d00ccd48727dab7c23376b2fd7e"
+  },
+  "method": "Direct score classification from saved quartet systems, exact integer symbolic coefficients, positive-gcd normalization; no target imports and no tree enumeration.",
+  "variables": [
+    "constant_1",
+    "c",
+    "s",
+    "a",
+    "o"
+  ],
+  "rows_by_size": [
+    {
+      "taxa": 3,
+      "systems": 1,
+      "coefficients": 9,
+      "zero_coefficients": 6,
+      "distinct_nonzero_rows": 1
+    },
+    {
+      "taxa": 4,
+      "systems": 3,
+      "coefficients": 108,
+      "zero_coefficients": 36,
+      "distinct_nonzero_rows": 10
+    },
+    {
+      "taxa": 5,
+      "systems": 16,
+      "coefficients": 1600,
+      "zero_coefficients": 550,
+      "distinct_nonzero_rows": 16
+    },
+    {
+      "taxa": 6,
+      "systems": 102,
+      "coefficients": 22950,
+      "zero_coefficients": 9339,
+      "distinct_nonzero_rows": 16
+    }
+  ],
+  "total_systems": 122,
+  "total_coefficients": 24667,
+  "identically_zero_coefficients": 9931,
+  "nonzero_normalized_rows": 16,
+  "matches_reference_rows": true,
+  "reference_witness_coefficients_checked": 16,
+  "witness_scope": "Each referenced packed quartet system occurs in the independent system set, and its anchors/gaps yield the stated row. The source duplication-mask field was not separately checked.",
+  "compact_domain": {
+    "s": "1",
+    "o": "1",
+    "a": [
+      "1/2",
+      "1"
+    ],
+    "c": [
+      "0",
+      "a"
+    ]
+  },
+  "nonnegative_scores_needed_as_extra_assumption": false,
+  "necessity_row_subset": [
+    [
+      -1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      -1,
+      0
+    ]
+  ],
+  "sufficiency_generators_after_s_o_equal_1": [
+    "c",
+    "a-c",
+    "2a-1",
+    "1-a",
+    "1"
+  ],
+  "inequalities": [
+    {
+      "row": [
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "occurrences": 884,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          5
+        ],
+        "anchors": [
+          0,
+          2
+        ],
+        "gaps": [
+          0,
+          2
+        ],
+        "raw": [
+          -2,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "occurrences": 1124,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          1
+        ],
+        "anchors": [
+          0,
+          2
+        ],
+        "gaps": [
+          0,
+          2
+        ],
+        "raw": [
+          -2,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "occurrences": 464,
+      "witness": {
+        "taxa": 5,
+        "system": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "anchors": [
+          0,
+          4
+        ],
+        "gaps": [
+          0,
+          2
+        ],
+        "raw": [
+          0,
+          -2,
+          0,
+          2,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        -1,
+        1
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "occurrences": 160,
+      "witness": {
+        "taxa": 5,
+        "system": [
+          1,
+          4,
+          4,
+          4,
+          4
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          3
+        ],
+        "raw": [
+          0,
+          -2,
+          2,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        1,
+        -1,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "occurrences": 500,
+      "witness": {
+        "taxa": 5,
+        "system": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "anchors": [
+          0,
+          2
+        ],
+        "gaps": [
+          1,
+          3
+        ],
+        "raw": [
+          0,
+          0,
+          -2,
+          0,
+          2
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        0,
+        -1,
+        2,
+        0
+      ],
+      "occurrences": 125,
+      "witness": {
+        "taxa": 5,
+        "system": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          2,
+          3
+        ],
+        "raw": [
+          0,
+          0,
+          -2,
+          4,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        -1,
+        0,
+        2
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "occurrences": 2447,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          5
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          2
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        1
+      ],
+      "nonnegative_generator_weights": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "occurrences": 500,
+      "witness": {
+        "taxa": 5,
+        "system": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          3
+        ],
+        "raw": [
+          0,
+          0,
+          2,
+          -2,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        1,
+        0,
+        -1
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "occurrences": 449,
+      "witness": {
+        "taxa": 5,
+        "system": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "anchors": [
+          0,
+          2
+        ],
+        "gaps": [
+          0,
+          3
+        ],
+        "raw": [
+          0,
+          0,
+          2,
+          0,
+          -2
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "occurrences": 1183,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          1
+        ],
+        "anchors": [
+          0,
+          3
+        ],
+        "gaps": [
+          0,
+          1
+        ],
+        "raw": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        1,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "row": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "occurrences": 2177,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          1
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          2
+        ],
+        "raw": [
+          0,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        1,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "occurrences": 268,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          1
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          3
+        ],
+        "raw": [
+          2,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        1,
+        -1,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "row": [
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "occurrences": 1938,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          1
+        ],
+        "anchors": [
+          0,
+          2
+        ],
+        "gaps": [
+          0,
+          3
+        ],
+        "raw": [
+          2,
+          0,
+          -2,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "occurrences": 884,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          5
+        ],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          3
+        ],
+        "raw": [
+          2,
+          0,
+          0,
+          -2,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        1,
+        0,
+        -1
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "row": [
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "occurrences": 926,
+      "witness": {
+        "taxa": 4,
+        "system": [
+          5
+        ],
+        "anchors": [
+          0,
+          2
+        ],
+        "gaps": [
+          0,
+          3
+        ],
+        "raw": [
+          2,
+          0,
+          0,
+          0,
+          -2
+        ]
+      },
+      "after_s_o_equal_1": [
+        0,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occurrences": 707,
+      "witness": {
+        "taxa": 3,
+        "system": [],
+        "anchors": [
+          0,
+          1
+        ],
+        "gaps": [
+          1,
+          2
+        ],
+        "raw": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "after_s_o_equal_1": [
+        1,
+        0,
+        0
+      ],
+      "nonnegative_generator_weights": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "vertices_c_s_a_o": [
+    [
+      "0",
+      "1",
+      "1/2",
+      "1"
+    ],
+    [
+      "1/2",
+      "1",
+      "1/2",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "0",
+      "1",
+      "1",
+      "1"
+    ]
+  ],
+  "elapsed_seconds": 0.204
+}

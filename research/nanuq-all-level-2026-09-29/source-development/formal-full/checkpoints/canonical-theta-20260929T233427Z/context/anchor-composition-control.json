@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "scope": "Finite exploratory evidence only",
+  "identity": "M_N^(p,q)(x,y) = sum_B [pi_B(p) != pi_B(q)] M_B^(pi_B(p),pi_B(q))(pi_B(x),pi_B(y))",
+  "networks": 20,
+  "anchor_entry_equalities": 70913,
+  "results": [
+    {
+      "name": "theta(1, 1, 1, 1)",
+      "leaves": 6,
+      "blobs": 1,
+      "anchor_entry_equalities": 540
+    },
+    {
+      "name": "theta(1, 1, 1, 1)+cherry",
+      "leaves": 7,
+      "blobs": 2,
+      "anchor_entry_equalities": 1029
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)+graft+theta(1, 0, 0, 1)",
+      "leaves": 10,
+      "blobs": 3,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)+graft+theta(1, 0, 0, 1)",
+      "leaves": 10,
+      "blobs": 3,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "leaves": 10,
+      "blobs": 3,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "leaves": 10,
+      "blobs": 3,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)",
+      "leaves": 10,
+      "blobs": 2,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "leaves": 12,
+      "blobs": 3,
+      "anchor_entry_equalities": 9504
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)",
+      "leaves": 10,
+      "blobs": 2,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "leaves": 12,
+      "blobs": 3,
+      "anchor_entry_equalities": 9504
+    },
+    {
+      "name": "theta(1, 1, 1, 1)+graft+theta(3, 1, 0, 0)",
+      "leaves": 10,
+      "blobs": 2,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(1, 1, 1, 1)+graft+theta(3, 1, 0, 0)",
+      "leaves": 10,
+      "blobs": 2,
+      "anchor_entry_equalities": 4500
+    },
+    {
+      "name": "theta(0, 0, 1, 1)+graft+theta(0, 2, 0, 2)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(0, 0, 1, 1)+graft+theta(0, 2, 0, 2)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(1, 0, 1, 0)+graft+theta(2, 0, 1, 1)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    },
+    {
+      "name": "theta(1, 0, 1, 0)+graft+theta(2, 0, 1, 1)",
+      "leaves": 8,
+      "blobs": 2,
+      "anchor_entry_equalities": 1792
+    }
+  ]
+}

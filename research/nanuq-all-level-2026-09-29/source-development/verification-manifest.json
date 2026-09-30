@@ -1,0 +1,181 @@
+{
+  "created_utc": "2026-09-29T22:01:51.7612250Z",
+  "result": "Computer-assisted proof of the source B2-to-N2 NANUQ metric conjecture",
+  "scope": "Finite binary semi-directed LSA-rootable, outer-labeled planar, galled networks of level at most two, with at least four taxa; circular decomposability and exact displayed-split support",
+  "source": "https://doi.org/10.1007/s11538-025-01549-4",
+  "proof_sha256": "762204fb95e3aa31a44506d9c113dd6f9559f21eaabb7fc811a2f8d09d3daa08",
+  "internal_combined_review": "PASS",
+  "internal_source_review": "PASS",
+  "full_theorem_lean_formalized": false,
+  "external_peer_review": false,
+  "priority_certified": false,
+  "finite_certificate": {
+    "templates": 209,
+    "anchor_coefficients": 100823,
+    "negative_coefficients": 0,
+    "independent_full_table": true,
+    "additional_source_templates": 205,
+    "additional_source_coefficients": 100787
+  },
+  "whole_network_controls": {
+    "networks": 20,
+    "max_leaves": 12,
+    "max_hybrids": 6,
+    "direct_restrictions": 324
+  },
+  "lean": {
+    "version": "4.33.1",
+    "compiler_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "compiled_endpoints": 4,
+    "exit_code": 0,
+    "scope": "Generic finite-combination coefficient and support lemmas only",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "files": [
+    {
+      "path": "audit/circular_family_search.py",
+      "bytes": 5365,
+      "sha256": "b3c3dad85b38a28d1afab9e8238abb1f0cf6b99bff8b8c921aaa1b1374bae1f6"
+    },
+    {
+      "path": "audit/circular-family-search.json",
+      "bytes": 7883,
+      "sha256": "ca15a1999ccdfe682269a4025affb5710859cfafe395247f5c03be7bf4aa4771"
+    },
+    {
+      "path": "audit/COMBINED-REVIEW.md",
+      "bytes": 12208,
+      "sha256": "a392a93766edb13f4077047071d6dd102bdfc1896356fca8225c2098df85493b"
+    },
+    {
+      "path": "audit/independent_anchor_check.py",
+      "bytes": 5934,
+      "sha256": "5f663e6be7acacdb7183dfc89950302b6999ccc252d2ff19cb7a106ce05da225"
+    },
+    {
+      "path": "audit/independent-anchor-check.json",
+      "bytes": 53607,
+      "sha256": "08d3c44426bf95cc82077a992d6275b9007a6fdab6da1262b5f8aa475fd4e006"
+    },
+    {
+      "path": "audit/REVIEW.md",
+      "bytes": 12728,
+      "sha256": "4c36c04ae40a9f45759d9d9bce1229e44b557fb60e64efdebd1ecf3f8ef101ad"
+    },
+    {
+      "path": "composition_controls.py",
+      "bytes": 3712,
+      "sha256": "ae2b64be55a62e19b834a1d7ca33039f51baab23010bba9e2464c92cab8376d4"
+    },
+    {
+      "path": "composition-controls.json",
+      "bytes": 77006,
+      "sha256": "9c61dea3724a7271c6555d41c310e29cd30a32894a1e9f069dccd9e7a71a3ea6"
+    },
+    {
+      "path": "exact_networks.py",
+      "bytes": 17381,
+      "sha256": "308a8751202151642f9919ca93564a67c442ea94008ba406fe2a024874994c6e"
+    },
+    {
+      "path": "first-search.json",
+      "bytes": 57587,
+      "sha256": "45301b4f26510dec3f3d01fee7a3cecc588ee838fc258b4cc915cca993a21fab"
+    },
+    {
+      "path": "formal/Check.ps1",
+      "bytes": 1062,
+      "sha256": "d5bc86b6253cddc2bdaeed2160622230da3a64607dfc9d0943eab476426fd581"
+    },
+    {
+      "path": "formal/NanuqPositiveCombination.lean",
+      "bytes": 2834,
+      "sha256": "8c794d19f35a49db481d0361b6cce6958da25fea21d8da10ec53a548bbe6c813"
+    },
+    {
+      "path": "formal/NanuqPositiveCombination.log",
+      "bytes": 457,
+      "sha256": "8ad59ef2064e8247b6a598b70e896943100fc573dd9b4a7635bf5169d1160423"
+    },
+    {
+      "path": "formal/NanuqPositiveCombination.olean",
+      "bytes": 84096,
+      "sha256": "e385f283d4d69f47564e924338b9c201f35aff8ef83e1d6d4e06285cf4a3b533"
+    },
+    {
+      "path": "ordinal/ANCHOR-INTERVAL-SUPPLEMENT.md",
+      "bytes": 7186,
+      "sha256": "eb69509455162deb8c02c395c517dad23a6f6050aa83eec23dbcb1e66755a5a9"
+    },
+    {
+      "path": "ordinal/COMPOSITION-PROOF.md",
+      "bytes": 17718,
+      "sha256": "762204fb95e3aa31a44506d9c113dd6f9559f21eaabb7fc811a2f8d09d3daa08"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8606,
+      "sha256": "1d876a3d0f4f941c0fb2a8b3cf9923291bfc89158456cd5360fecaf565418507"
+    },
+    {
+      "path": "six-witness-search.json",
+      "bytes": 215830,
+      "sha256": "481a1c4da63fe8ba0ce11f7b221564178e9ac86f6c93f1ef353f06c34941755a"
+    },
+    {
+      "path": "source/anchor_audit.py",
+      "bytes": 4080,
+      "sha256": "a0e9b3bf388f65d017fddb3da587d6956967689dfe17dc6026a12c0e5a212e49"
+    },
+    {
+      "path": "source/anchor-audit.json",
+      "bytes": 74349,
+      "sha256": "97dad56d5a0952d86c04872426c5e2fa3cbcd178903b492ddae7f488e339465f"
+    },
+    {
+      "path": "source/cluster_bridge_check.py",
+      "bytes": 3855,
+      "sha256": "3ed9cbd90edc61e2c6636d667bf0a2925a17eec3e8bb83fdcf452663297d2bf8"
+    },
+    {
+      "path": "source/cluster-bridge-check.json",
+      "bytes": 2093,
+      "sha256": "8b528b9b069d8792d8daae439ba66f1b38f4ba8cd60edbb1470965fd745a4d65"
+    },
+    {
+      "path": "source/FINAL-SOURCE-REVIEW.md",
+      "bytes": 14104,
+      "sha256": "f608ce4297689fbf6043c680aebf8246b727f3e392e58e763521bb44dce286dd"
+    },
+    {
+      "path": "source/fixture.py",
+      "bytes": 8210,
+      "sha256": "882925e276c61260375bf0174128f7f218a1cfa74821871f4f5bd14d53ceef77"
+    },
+    {
+      "path": "source/query-log.md",
+      "bytes": 2999,
+      "sha256": "0047e6c4b57c4f14870aa4b1876c5b703cfedd6fb78fdfe5939dedf257098d3e"
+    },
+    {
+      "path": "source/six-leaf-fixture.json",
+      "bytes": 15181,
+      "sha256": "f4a9f106447ff26f0cc8a6682361d3ea5baa4634d5d7ec099f8c269b1738b91a"
+    },
+    {
+      "path": "source/six-leaf-fixture.md",
+      "bytes": 2531,
+      "sha256": "16a9e3cd0678d10ec82e4550d1d25084e9afe5c6d6552d8c916a7928d975801b"
+    },
+    {
+      "path": "source/source-audit.md",
+      "bytes": 11526,
+      "sha256": "0530e36d27c5df2114f226f6ecb2bce85d7eb93e895e4883bd0cdf51f4953378"
+    }
+  ]
+}

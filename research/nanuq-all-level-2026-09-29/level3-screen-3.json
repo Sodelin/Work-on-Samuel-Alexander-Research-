@@ -1,0 +1,72 @@
+{
+  "status": "bounded_candidate_family_screen",
+  "max_ordinary_leaves": 3,
+  "core_inventory": {
+    "vertex_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "nonisomorphic_bridgeless_cubic_cores": [
+      [
+        0,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "families": [
+    {
+      "kind": "k4",
+      "templates": 84,
+      "unit_coefficients": 1089,
+      "anchor_coefficients": 14925,
+      "unit_support_mismatches": 0,
+      "max_leaves": 6
+    },
+    {
+      "kind": "double_square",
+      "templates": 120,
+      "unit_coefficients": 1585,
+      "anchor_coefficients": 21961,
+      "unit_support_mismatches": 0,
+      "max_leaves": 6
+    }
+  ],
+  "unit_failure": null,
+  "anchor_failure": null,
+  "coverage_warning": "These two explicit families have not yet been proved to exhaust the source class.",
+  "backend_sha256": "32280242e96911f72ba3d98dac32a8fd42ec3409785c1147d61931d9f39a5821"
+}

@@ -1,0 +1,134 @@
+{
+  "status": "PASS_FOCUSED_FIVE_TAXON_OBSTRUCTION",
+  "parameters": {
+    "c": "1",
+    "s": "1",
+    "a": "1/2",
+    "o": "1"
+  },
+  "four_taxon_certificate_passes": [
+    {
+      "taxa": 3,
+      "systems": 1,
+      "coefficients": 9,
+      "minimum": "0",
+      "all_nonnegative": true
+    },
+    {
+      "taxa": 4,
+      "systems": 3,
+      "coefficients": 108,
+      "minimum": "0",
+      "all_nonnegative": true
+    }
+  ],
+  "witness": {
+    "taxa": 5,
+    "duplication_mask": 1,
+    "pattern": 4717,
+    "anchors": [
+      0,
+      1
+    ],
+    "gaps": [
+      2,
+      4
+    ]
+  },
+  "expanded_tip_labels": [
+    0,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rooted_plane_tree": [
+    0,
+    [
+      [
+        [
+          1,
+          2
+        ],
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ]
+  ],
+  "rooted_subtree": [
+    [
+      [
+        1,
+        2
+      ],
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "global_copy_choices_checked": 2,
+  "independent_quartet_codes": [
+    5,
+    5,
+    1,
+    1,
+    1
+  ],
+  "reconstructed_packed_pattern": 4717,
+  "terms": [
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "entry": "1",
+      "category": "a"
+    },
+    {
+      "pair": [
+        3,
+        0
+      ],
+      "entry": "1",
+      "category": "anchor_incidence"
+    },
+    {
+      "pair": [
+        2,
+        0
+      ],
+      "entry": "1",
+      "category": "anchor_incidence"
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "entry": "2",
+      "category": "c"
+    }
+  ],
+  "coefficient": "-1",
+  "raw_symbolic_coefficient": "2*a - 2*c",
+  "normalized_row": [
+    0,
+    -1,
+    0,
+    1,
+    0
+  ],
+  "scope": "Actual saved paired-tip representation. Counterexample to reducing universal anchor-positivity parameter checks to at most four total taxa. Not a counterexample at original NANUQ scores, nor a proof that six rather than five is minimal.",
+  "inputs": {
+    "all_level_screen.py": "354e94339306d01c176e68c022de85dad1f008abeade520096821568231a94d5",
+    "independent_all_level_check.py": "64a6c59e024b227e5957a84afd8b4c46683455ec85e4b21050f79a21497eb357",
+    "parameter-domain.json": "755af7b62b7081389046881973c37f5a2fb7c9f613301db007a84c96d9886bf5",
+    "independent-all-level-check.json": "e2bd96517422aaa6841fc6b9cc879e8b0a6eaef7ca92fc9904125158195628ed"
+  }
+}

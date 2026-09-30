@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "source_sha256": "73aeb74b88ad9e87aa0871dac1f9c630a0af7402f5718569522a3236af51477d",
+  "rooted_binary_DAG": true,
+  "root_is_LSA": true,
+  "hybrids": 2,
+  "switchings": [
+    {
+      "parents": [
+        "w",
+        "w"
+      ],
+      "quartet": "ab|cd",
+      "four_point_sums": [
+        8,
+        10,
+        10
+      ]
+    },
+    {
+      "parents": [
+        "w",
+        "z"
+      ],
+      "quartet": "ad|bc",
+      "four_point_sums": [
+        11,
+        11,
+        9
+      ]
+    },
+    {
+      "parents": [
+        "z",
+        "w"
+      ],
+      "quartet": "ac|bd",
+      "four_point_sums": [
+        11,
+        9,
+        11
+      ]
+    },
+    {
+      "parents": [
+        "z",
+        "z"
+      ],
+      "quartet": "ab|cd",
+      "four_point_sums": [
+        8,
+        10,
+        10
+      ]
+    }
+  ],
+  "distinct_topologies": 3,
+  "distances": {
+    "ab": "16/3",
+    "ac": "16/3",
+    "ad": "16/3",
+    "bc": "16/3",
+    "bd": "16/3",
+    "cd": "16/3"
+  },
+  "conclusion": "Exact displayed-split support fails when outer-labeled planarity is omitted; circularity itself is not falsified.",
+  "scope": "Direct finite graph and exact arithmetic check; no proof-assistant verification."
+}

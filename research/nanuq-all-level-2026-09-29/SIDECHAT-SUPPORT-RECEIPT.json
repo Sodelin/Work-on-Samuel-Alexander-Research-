@@ -1,0 +1,90 @@
+{
+  "status": "PASS_FRESH_SIDECHAT_VERIFIER_RUN",
+  "provenance": {
+    "source_thread_id": "01a0ef7c-7cdc-7f00-a827-8a43b8ae0ffa",
+    "received_from": "Parent agent supplied sidechat_support_check.cjs from the authorized handoff.",
+    "reported_transformations": [
+      "XML entity decoding",
+      "provenance header"
+    ],
+    "direct_thread_reader": "Unavailable: ephemeral threads do not support thread/turns/list.",
+    "independent_comparison_with_original_chat_code": "Not possible through the thread reader; supplied file preserved without edits."
+  },
+  "execution": {
+    "node_executable": "C:\\Program Files\\nodejs\\node.EXE",
+    "arguments": [
+      "C:\\Users\\Owner\\Documents\\Codex\\2026-09-29\\vibemathed-biology\\adjacent-nanuq\\sidechat_support_check.cjs"
+    ],
+    "verifier_runs": 1,
+    "started_utc": "2026-09-29T23:56:09.452663+00:00",
+    "elapsed_seconds": 0.938,
+    "exit_code": 0
+  },
+  "hashes": {
+    "script_sha256": "6cbf8660a369ef9231d2ebba55d7b9f7b930aa540bcf9379b0a190578f349dc1",
+    "script_unchanged_during_run": true,
+    "node_executable_sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237",
+    "stdout_sha256": "3d4458e5e019cc4f55b0fc166346c0e01e4005426076aebfb184a58b8533ec09",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": "{\"n\":3,\"treeCases\":36,\"selectedTrees\":185,\"quartetSystems\":1,\"splitSystems\":1,\"anchorSplitChecks\":9,\"negative\":0,\"supportMismatches\":0,\"boundaryFailures\":0}\n{\"n\":4,\"treeCases\":406,\"selectedTrees\":3834,\"quartetSystems\":3,\"splitSystems\":3,\"anchorSplitChecks\":108,\"negative\":0,\"supportMismatches\":0,\"boundaryFailures\":0}\n{\"n\":5,\"treeCases\":5390,\"selectedTrees\":92465,\"quartetSystems\":16,\"splitSystems\":16,\"anchorSplitChecks\":1600,\"negative\":0,\"supportMismatches\":0,\"boundaryFailures\":0}\n{\"n\":6,\"treeCases\":78244,\"selectedTrees\":2428726,\"quartetSystems\":102,\"splitSystems\":102,\"anchorSplitChecks\":22950,\"negative\":0,\"supportMismatches\":0,\"boundaryFailures\":0}\n",
+  "stderr": "",
+  "rows": [
+    {
+      "n": 3,
+      "treeCases": 36,
+      "selectedTrees": 185,
+      "quartetSystems": 1,
+      "splitSystems": 1,
+      "anchorSplitChecks": 9,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0
+    },
+    {
+      "n": 4,
+      "treeCases": 406,
+      "selectedTrees": 3834,
+      "quartetSystems": 3,
+      "splitSystems": 3,
+      "anchorSplitChecks": 108,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0
+    },
+    {
+      "n": 5,
+      "treeCases": 5390,
+      "selectedTrees": 92465,
+      "quartetSystems": 16,
+      "splitSystems": 16,
+      "anchorSplitChecks": 1600,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0
+    },
+    {
+      "n": 6,
+      "treeCases": 78244,
+      "selectedTrees": 2428726,
+      "quartetSystems": 102,
+      "splitSystems": 102,
+      "anchorSplitChecks": 22950,
+      "negative": 0,
+      "supportMismatches": 0,
+      "boundaryFailures": 0
+    }
+  ],
+  "totals": {
+    "treeCases": 84076,
+    "selectedTrees": 2525210,
+    "quartetSystems": 122,
+    "splitSystems": 122,
+    "anchorSplitChecks": 24667,
+    "negative": 0,
+    "supportMismatches": 0,
+    "boundaryFailures": 0
+  },
+  "failure": null,
+  "scope": "Exact finite support equality in the adjacent-copy tree representation for 3..6 labels. This fresh run does not independently establish the external source-network representation or structural lifting."
+}

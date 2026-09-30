@@ -1,0 +1,3 @@
+# Preserve hashes and original whitespace of source files and compiler receipts.
+# The dedicated integrity check governs these bytes; presentation has its own gate.
+* -text -whitespace

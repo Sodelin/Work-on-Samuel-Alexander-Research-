@@ -1,0 +1,59 @@
+{
+  "status": "bounded_parameter_screen",
+  "existing_checker_sha256": "308a8751202151642f9919ca93564a67c442ea94008ba406fe2a024874994c6e",
+  "parameter": [
+    "1/2",
+    "1",
+    "1/2",
+    "1"
+  ],
+  "templates_checked": 65,
+  "failures_of_network_order": [],
+  "no_circular_order_witness": null,
+  "scope": "A failure rules out a blanket circular-decomposition claim for this parameter under the stated quartet rule. It does not resolve the paper's broad parametric-family open problem.",
+  "modified_anchor_screen": {
+    "all_nonnegative": true,
+    "templates_checked": 209,
+    "coefficients_checked": 100823
+  },
+  "endpoint_anchor_screen": {
+    "all_nonnegative": false,
+    "templates_checked": 15,
+    "coefficients_checked": 405,
+    "witness": {
+      "arms": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "order": [
+        "nb2l0",
+        "nc1",
+        "nc2",
+        "nb2l2",
+        "nb2l1"
+      ],
+      "anchors": [
+        "nb2l0",
+        "nc1"
+      ],
+      "split": [
+        "nb2l0",
+        "nc1",
+        "nc2"
+      ],
+      "boundary_indices": [
+        2,
+        4
+      ],
+      "alpha": "-1"
+    }
+  },
+  "support_screen": {
+    "templates_checked": 205,
+    "first_extra_at_half": null,
+    "first_missing_at_half": null,
+    "templates_with_endpoint_support_loss": 174
+  }
+}

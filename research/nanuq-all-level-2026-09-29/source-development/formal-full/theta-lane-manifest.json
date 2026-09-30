@@ -1,0 +1,199 @@
+{
+  "scope": "canonical-theta-owned-sources",
+  "compiler": "Lean 4.33.1",
+  "generatedUtc": "2026-09-29T23:12:15.1709159Z",
+  "entries": [
+    {
+      "source": "ThetaArmMetric.lean",
+      "sha256": "7c9ef862f95dc589d5b5a417c45f48c3d92a92dbbbf7ed7c8f0179906021a108",
+      "log": "ThetaArmMetric.log",
+      "logSha256": "7766e68cc7ee4b64dd922a2a58f9321c014f3b95cb7188961ee6728b3c208a84"
+    },
+    {
+      "source": "ThetaArmOrder.lean",
+      "sha256": "e7262c7ad92f427c278fe923cad928515d716a5bb747b5169cf9476324f63715",
+      "log": "ThetaArmOrder.log",
+      "logSha256": "dabbe2692422add1daef058604a1fe2110e47dde2c0a5debd2f63a4eb7535c0a"
+    },
+    {
+      "source": "ThetaBumpedMetric.lean",
+      "sha256": "7fc0c20e700f7dfffd6cca5f117f70f6be43315fcb944e97ff4f3f8fd4a71457",
+      "log": "ThetaBumpedMetric.log",
+      "logSha256": "66a7c1d2bdf0eb56a3909081274e62b34e93eed668e62a10ef48346c0b0b1831"
+    },
+    {
+      "source": "ThetaCertificate.lean",
+      "sha256": "fc225443c4714bfcbf7d57aedb68e23d5d2d700e17a3cfb43923288e4243554c",
+      "log": "ThetaCertificate.log",
+      "logSha256": "08e85413602d27bc90a7070281cd0d269b345117a84093ef149fba753a8dc990"
+    },
+    {
+      "source": "ThetaCertificate1.lean",
+      "sha256": "ad95e06ac5646c4f6cca1ecb33aa29dba6d1bbb682737b43a54d0947b66f2d4d",
+      "log": "ThetaCertificate1.log",
+      "logSha256": "a17d3fc4022f29c2609872815cfca1fa5c9df8f8c8f20a16a207f8086d33c201"
+    },
+    {
+      "source": "ThetaCertificate2.lean",
+      "sha256": "c28935f2c1e57e813212cd3059efdf3855ab4ac029f066bb0d2e28b80d4a5aec",
+      "log": "ThetaCertificate2.log",
+      "logSha256": "8c867d20b6305d0295a48b24d2ca2dec9f6c0ff4fc22f1ef200265d989355c68"
+    },
+    {
+      "source": "ThetaCertificate3.lean",
+      "sha256": "04bd754258baf568833bbc86b8617fa6c87b9e168b76e982199ca1dde2b0c862",
+      "log": "ThetaCertificate3.log",
+      "logSha256": "4945e0d8804e607b74586f127aab12be7ca88514d8dd3c0ce81184724bf25f4d"
+    },
+    {
+      "source": "ThetaCertificate4.lean",
+      "sha256": "1fbbe003af250bde7ca67d5838195da099ec3499655d76d3fda32b70c940cdc4",
+      "log": "ThetaCertificate4.log",
+      "logSha256": "efc3d3d6257cbccc33282e8f0b55fc92e30a2044127df84e8c407525e4964b59"
+    },
+    {
+      "source": "ThetaCertificate5.lean",
+      "sha256": "e541af41b215cf473e63d4e968fdc42b31fe74f6384387f66de61f1ebbd7fbab",
+      "log": "ThetaCertificate5.log",
+      "logSha256": "06ce839a0de5191b6384b8c5820316d7ac09d3b27828a225d4a9c4555d7bc1c5"
+    },
+    {
+      "source": "ThetaCertificate6.lean",
+      "sha256": "dfad0f35a242cfd5f8626dd46a95024be0e6ca91aad3ee60d0e38cb49081c786",
+      "log": "ThetaCertificate6.log",
+      "logSha256": "fa3de125f388eac2693dcc956c938378b1a8e0e0793ac6534c4f804db200afa5"
+    },
+    {
+      "source": "ThetaCompression.lean",
+      "sha256": "71d55cdd4069f6c13ba4b490860f13b02231d70cf96fe5c5d2ebb6e4b13032b8",
+      "log": "ThetaCompression.log",
+      "logSha256": "8c2ac9e055e1b83a506ddaff3019f66ef54e723f8cfddb3c118023cf67a16316"
+    },
+    {
+      "source": "ThetaFinite.lean",
+      "sha256": "db376ff9cc79172e846396d74ef5592554e8992e307452033318d8696eb5c5a3",
+      "log": null,
+      "logSha256": null
+    },
+    {
+      "source": "ThetaFiniteEndpoint.lean",
+      "sha256": "7ec892b1b6a2447b2d4e5b1dab43ae9d6e7a8e22da0dba120b5ac5d0ef3519f7",
+      "log": "ThetaFiniteEndpoint.log",
+      "logSha256": "615d8accab52b3d69fa337753cf24174517f0021018cb189a64ba7e4219cc044"
+    },
+    {
+      "source": "ThetaFiniteSoundness.lean",
+      "sha256": "f2f7630faa5d2b9c9bf047a9f82f2209f391d1d85a4c0d074a67e79441b4fc92",
+      "log": "ThetaFiniteSoundness.log",
+      "logSha256": "11f788e71cd065c97b1e401f88d7651cba8e9c94982ec8d15f3338f5c1bcdf3b"
+    },
+    {
+      "source": "ThetaPathLengths.lean",
+      "sha256": "e891610537f2e4d578b65deb164e047cc218d270a196085e402c1ff710b58a6a",
+      "log": "ThetaPathLengths.log",
+      "logSha256": "fe610645702429e3bef0755ed3f9801ed635972f4228975da32293077790fe9d"
+    },
+    {
+      "source": "ThetaPathMembership.lean",
+      "sha256": "0006488cb7a9196258ad04d683dd5460dff6bf20be9e23844adc05a5e2dcd5d9",
+      "log": "ThetaPathMembership.log",
+      "logSha256": "f14d46a41e20223e35e03c6f20860275c86116157b805281be7adfe8d1905184"
+    },
+    {
+      "source": "ThetaProbe.lean",
+      "sha256": "8cc1aeb24d1b11485ecd39186cae6d4dd87f566ca4be3cf0d7953accdc3a353e",
+      "log": "ThetaProbe.log",
+      "logSha256": "98f69c32daa2113325fa3230af226bad7cdab1c554e1f0e61d8830647f9d6bf2"
+    },
+    {
+      "source": "ThetaQuartetOrder.lean",
+      "sha256": "07ca91915286248eccd839cc8a9e3f71e547db5aa9f12d963ac006c7167334d8",
+      "log": "ThetaQuartetOrder.log",
+      "logSha256": "9864b09d81f23b6fdf6747ce9ab416f1e8f907e474245cb5b227df530e3157e3"
+    },
+    {
+      "source": "ThetaQuartetSymmetry.lean",
+      "sha256": "7babb04c4af8993ee4488293f73b01bdde7624079e2de8ff4d8c4f87227ba8a5",
+      "log": "ThetaQuartetSymmetry.log",
+      "logSha256": "3e3e4c82122ff108d7d3c576a063a83707ed0229d68d16dd13d06926fd7ba938"
+    },
+    {
+      "source": "ThetaQuartetValidity.lean",
+      "sha256": "16cc7333fc829e3dc35824a10392342bada5b89ce91b6d69ab86d7341608c419",
+      "log": "ThetaQuartetValidity.log",
+      "logSha256": "19bd963cb32e01db31e39eb6e393527a2a4f6baab35244593235441f703203bd"
+    },
+    {
+      "source": "ThetaSemanticsBridge.lean",
+      "sha256": "66586550c7eb036fcfa4a3acd5bedb77f932a742a7efdc0686c2997300d827d7",
+      "log": "ThetaSemanticsBridge.log",
+      "logSha256": "8cd94c7bbf935ab76a7c119870205eb0b0e873619d168b9f22e1005f50af5db9"
+    },
+    {
+      "source": "ThetaSourceExact.lean",
+      "sha256": "098352bf2e44220881e40e80dff4024cb1b31e738d88bd890f72fa2118610b1a",
+      "log": "ThetaSourceExact.log",
+      "logSha256": "0c7db91695c1e76a7bf15ff13832b6ddb8fd1c3ccc197a309c9dc3f44d60d522"
+    },
+    {
+      "source": "ThetaSourceUnbounded.lean",
+      "sha256": "b9b34c841f950fdee3dd3c3c26fb734b81f22a36f01fe9fb3d23aa2be9563379",
+      "log": "ThetaSourceUnbounded.log",
+      "logSha256": "9445a5b0dc9703d2ba66dae5b953a02e10ad4e37db50f8c78a5d9172c964eb7e"
+    },
+    {
+      "source": "ThetaSupport.lean",
+      "sha256": "f4f3bc90940b3cce3dd14e28e8cccd9ac070f29ee5144e08c45995ffb7f57a0a",
+      "log": "ThetaSupport.log",
+      "logSha256": "0c088a4f1f86160ca734a03f80a012faf437e8bf0c0c1ee8313a97f85d29d2e5"
+    },
+    {
+      "source": "ThetaSupportCertificate.lean",
+      "sha256": "bf099a3feb4ebe2d0782a85d77fed47d108d70515f34770fbe63d2753c6602de",
+      "log": "ThetaSupportCertificate.log",
+      "logSha256": "5b0245640a9c92a2d10e0f65842f0379d47019869eaec9f236efa816a5fe66a9"
+    },
+    {
+      "source": "ThetaSupportCertificate1.lean",
+      "sha256": "2bf98276eca5c3cb9b74e38b5e6874dfe252a0e94aab28252cbc6625cf9f7c8e",
+      "log": "ThetaSupportCertificate1.log",
+      "logSha256": "7c4985c22ee897f99c94a2bcaf0b0f01c2fc41f6d8ad8a57f17b9d8897607e2c"
+    },
+    {
+      "source": "ThetaSupportCertificate2.lean",
+      "sha256": "a74a3f1b50115cb8d65384526f74a5eb191ffa4c220e1a85452c0a8ef0a1a09c",
+      "log": "ThetaSupportCertificate2.log",
+      "logSha256": "aac691bdf66c4cecc0d89e7664311a2db7ca2aa1d0b079f75684e4323fb7ee07"
+    },
+    {
+      "source": "ThetaSupportCertificate3.lean",
+      "sha256": "910616057def958596888f8cf293ef9d61ba85bbca90627bb9fb13fec1a82c8c",
+      "log": "ThetaSupportCertificate3.log",
+      "logSha256": "3fb84c89ac7e2c35bb50fff0c8a4769019a6d623de2f604f7ea1730e12d71787"
+    },
+    {
+      "source": "ThetaSupportCertificate4.lean",
+      "sha256": "3f003d6d5b1a8abfc67c4c2a180f819553df8b78b76c8afa404fe5d7cfeab792",
+      "log": "ThetaSupportCertificate4.log",
+      "logSha256": "db379b7cf1e1ce991a741b40ec16e059ee277b0632b3e729c5edb0f98729341b"
+    },
+    {
+      "source": "ThetaSupportCertificate5.lean",
+      "sha256": "272df678b8e23f96db4e6d599a50df6cebad0794e51cca1c7a0e1bfe4d44ba83",
+      "log": "ThetaSupportCertificate5.log",
+      "logSha256": "fec8ec723095ac3e0d8062324b39c2e216ab146efb343df0268393f96447414e"
+    },
+    {
+      "source": "ThetaSupportCertificate6.lean",
+      "sha256": "b9ef3fbb549a9b2e09d4c76a85d1a00698509b60ff4e26a1d4f10b6d54b0dc1e",
+      "log": "ThetaSupportCertificate6.log",
+      "logSha256": "3c88a292f90ea986bb0e4f3e27a8970ba9f8bdb29363001cb9e837454ebad7ff"
+    },
+    {
+      "source": "ThetaSwitchingEdges.lean",
+      "sha256": "0b6cef00c1212b6e9249f692bb5222d7fcf27543408a82d4295ef85be7e6dac0",
+      "log": "ThetaSwitchingEdges.log",
+      "logSha256": "64f12d48fe34c9b28b5dd43384958f6f8d6fa72921aafbc676425f505c222207"
+    }
+  ]
+}

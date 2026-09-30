@@ -1,5 +1,7 @@
 # Working on Samuel Alexander's research
 
+**Portable continuation and new NANUQ result:** [Start a fresh chat here](CONTINUE-RESEARCH.md). The [all-level NANUQ package](research/nanuq-all-level-2026-09-29/README.md) consolidates both research lanes, exact split support, the parameter extension and their verification boundaries. Its submission state is tracked separately from the historical snapshots below.
+
 **29 September integration update:** see the [complete result-family ledger](research/publication-2026-09-29/COVERAGE.md), [full publication guide](PUBLICATION-GUIDE-2026-09-29.md), and [new checked embedding/pruning/rank package](research/open-questions/continuation-2026-09-29/RESULTS.md). The dated snapshots below preserve their original evidence and delivery state. The new generic realizing-state and mortal-rank results supersede earlier descriptions of those particular obligations as written-only.
 
 

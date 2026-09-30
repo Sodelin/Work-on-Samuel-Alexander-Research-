@@ -1,0 +1,92 @@
+{
+  "method": "exact integer split restriction; quartet deduplication",
+  "treeSplits": [
+    [
+      3,
+      35,
+      39
+    ],
+    [
+      7,
+      15,
+      57
+    ],
+    [
+      15,
+      49,
+      51
+    ]
+  ],
+  "anchors": [
+    0,
+    5
+  ],
+  "boundaries": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "rows": [
+    {
+      "x": 1,
+      "y": 3,
+      "quartetSets": [
+        3,
+        3,
+        10
+      ],
+      "distinct": [
+        3,
+        10
+      ],
+      "rho2": 1
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "quartetSets": [
+        20,
+        5,
+        5
+      ],
+      "distinct": [
+        20,
+        5
+      ],
+      "rho2": 1
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "quartetSets": [
+        3,
+        3,
+        3
+      ],
+      "distinct": [
+        3
+      ],
+      "rho2": 2
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "quartetSets": [
+        12,
+        5,
+        12
+      ],
+      "distinct": [
+        12,
+        5
+      ],
+      "rho2": 1
+    }
+  ],
+  "alpha": -1
+}

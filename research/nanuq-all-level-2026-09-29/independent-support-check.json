@@ -1,0 +1,82 @@
+{
+  "status": "PASS_FINITE_ZERO_CERTIFICATE_AND_BOUNDARY_ANCHOR_FORMULA",
+  "scope": "Original NANUQ anchor support in the 122 saved adjacent-copy systems on 3..6 labels; structural lifting is not checked.",
+  "method": "Exact rational entries, direct displayed-pair and four-cycle adjacency tests; no tree enumeration and no target-script imports.",
+  "input": "independent-all-level-check.json",
+  "input_sha256": "e2bd96517422aaa6841fc6b9cc879e8b0a6eaef7ca92fc9904125158195628ed",
+  "verifier_sha256": "0d21826e5c5d2dee2215c654ba236d76fa7aba4eb0fc867d09373b0074842d79",
+  "rows": [
+    {
+      "taxa": 3,
+      "systems": 1,
+      "nonadjacent_gap_cases": 0,
+      "absent_boundary_cases": 0,
+      "present_boundary_cases": 0,
+      "absent_all_anchor_zero_checks": 0,
+      "boundary_anchor_formula_checks": 0,
+      "pendant_anchor_checks": 3,
+      "boundary_anchor_values_when_absent": {},
+      "boundary_anchor_values_when_present": {}
+    },
+    {
+      "taxa": 4,
+      "systems": 3,
+      "nonadjacent_gap_cases": 6,
+      "absent_boundary_cases": 2,
+      "present_boundary_cases": 4,
+      "absent_all_anchor_zero_checks": 12,
+      "boundary_anchor_formula_checks": 6,
+      "pendant_anchor_checks": 12,
+      "boundary_anchor_values_when_absent": {
+        "0": 2
+      },
+      "boundary_anchor_values_when_present": {
+        "1": 2,
+        "2": 2
+      }
+    },
+    {
+      "taxa": 5,
+      "systems": 16,
+      "nonadjacent_gap_cases": 80,
+      "absent_boundary_cases": 30,
+      "present_boundary_cases": 50,
+      "absent_all_anchor_zero_checks": 300,
+      "boundary_anchor_formula_checks": 80,
+      "pendant_anchor_checks": 80,
+      "boundary_anchor_values_when_absent": {
+        "0": 30
+      },
+      "boundary_anchor_values_when_present": {
+        "1": 35,
+        "2": 15
+      }
+    },
+    {
+      "taxa": 6,
+      "systems": 102,
+      "nonadjacent_gap_cases": 918,
+      "absent_boundary_cases": 396,
+      "present_boundary_cases": 522,
+      "absent_all_anchor_zero_checks": 5940,
+      "boundary_anchor_formula_checks": 918,
+      "pendant_anchor_checks": 612,
+      "boundary_anchor_values_when_absent": {
+        "0": 396
+      },
+      "boundary_anchor_values_when_present": {
+        "1": 405,
+        "2": 117
+      }
+    }
+  ],
+  "failure": null,
+  "total_systems": 122,
+  "total_nonadjacent_gap_cases": 1004,
+  "total_absent_boundary_cases": 428,
+  "total_present_boundary_cases": 576,
+  "total_absent_all_anchor_zero_checks": 6252,
+  "total_boundary_anchor_formula_checks": 1004,
+  "total_pendant_anchor_checks": 707,
+  "elapsed_seconds": 0.11
+}

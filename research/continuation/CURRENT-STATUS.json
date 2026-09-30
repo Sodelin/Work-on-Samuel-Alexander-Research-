@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-09-29",
+  "repository": "https://github.com/Sodelin/Work-on-Samuel-Alexander-Research-",
+  "entrypoint": "CONTINUE-RESEARCH.md",
+  "active_packet": "research/continuation/NEXT-TASK.md",
+  "current_proof": "research/nanuq-all-level-2026-09-29/ALL-LEVEL-PROOF.md",
+  "source_inventory": "research/nanuq-all-level-2026-09-29/SOURCE-INVENTORY.json",
+  "main_result": "Original NANUQ circularity and exact displayed-split support for all finite levels and multiple blobs in the binary semi-directed LSA, galled, outer-labeled planar class",
+  "secondary_result": "Exact universal anchor-positivity domain s=o=1, 1/2<=a<=1, 0<=c<=a; sufficient for all-level bloblet circularity",
+  "sharpenings": [
+    "Five total labels are the sharp testing cutoff for the full parameterized anchor criterion; no pointwise five-label compression is claimed",
+    "Arbitrary contiguous occurrence blocks reduce to their first and last copies while preserving quartet sets and displayed-split unions",
+    "Positive original-scale split weights have a uniform margin; a concrete non-outer-labeled level-two network disproves unrestricted exact-support extension"
+  ],
+  "evidence": "Computer-assisted proof, independent implementations, separate internal structural/composition/support audits; supporting Lean results have narrower scope",
+  "full_all_level_source_theorem_lean_checked": false,
+  "external_peer_review": false,
+  "submission_status_file": "research/nanuq-all-level-2026-09-29/SUBMISSION-STATUS.json",
+  "other_lane": "research/nanuq-all-level-2026-09-29/source-development",
+  "unresolved": [
+    "Complete source-class all-level Lean formalization",
+    "Global parameter-family circularity beyond the verified original rule",
+    "All-level canonical-form uniqueness and statistical input guarantees"
+  ],
+  "continuation_rule": "Read exact main commit, solve one bounded packet, return RESULT.md and EVIDENCE.json; unrun checks remain unverified",
+  "task_lifecycle": "Keep completed or handed-off chats visible and unarchived unless the user explicitly asks to archive that specific chat"
+}

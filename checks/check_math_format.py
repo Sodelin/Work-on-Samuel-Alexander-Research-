@@ -82,7 +82,12 @@ def main():
     paths = set()
     for root in roots:
         paths.update([root] if root.is_file() else root.rglob("*.md"))
-    paths = sorted(p for p in paths if p.suffix.lower() == ".md" and not {".git", ".lake", "node_modules"}.intersection(p.parts))
+    # Preserve the signed documentary bytes of the imported NANUQ development.
+    # Its dedicated workflow checks every captured hash; current presentation
+    # documents outside this historical subtree still pass this formatting gate.
+    frozen_nanuq = Path(__file__).resolve().parents[1] / "research" / "nanuq-all-level-2026-09-29" / "source-development"
+    paths = sorted(p for p in paths if p.suffix.lower() == ".md" and not {".git", ".lake", "node_modules"}.intersection(p.parts)
+                   and not p.resolve().is_relative_to(frozen_nanuq))
     result = {"checker": "GitHub Markdown math delimiters", "files": len(paths), "inline": 0, "display": 0, "errors": []}
     for path in paths:
         counts, errors = inspect(path)

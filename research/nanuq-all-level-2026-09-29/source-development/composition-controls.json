@@ -1,0 +1,4154 @@
+{
+  "status": "PASS",
+  "cases": 20,
+  "max_leaves": 12,
+  "max_hybrids": 6,
+  "direct_up_down_restriction_checks": 324,
+  "scope": "Finite controls; actual admission, direct quartet restrictions, global/local identity and exact support checked",
+  "results": [
+    {
+      "name": "theta(1, 1, 1, 1)",
+      "circular_order": [
+        "na1l0",
+        "na2l0",
+        "nc2",
+        "nb2l0",
+        "nb1l0",
+        "nc1"
+      ],
+      "vertices": 15,
+      "edges": 16,
+      "leaves": 6,
+      "hybrids": 2,
+      "blob_hybrid_counts": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 3,
+      "switchings": 4,
+      "distinct_trees": 4,
+      "quartets": 15,
+      "displayed_splits": 14,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 15,
+      "edge_list": [
+        [
+          "na1l0",
+          "na1v0"
+        ],
+        [
+          "na1v0",
+          "nh1"
+        ],
+        [
+          "na1v0",
+          "nu"
+        ],
+        [
+          "na2l0",
+          "na2v0"
+        ],
+        [
+          "na2v0",
+          "nh2"
+        ],
+        [
+          "na2v0",
+          "nu"
+        ],
+        [
+          "nb1l0",
+          "nb1v0"
+        ],
+        [
+          "nb1v0",
+          "nh1"
+        ],
+        [
+          "nb1v0",
+          "nv"
+        ],
+        [
+          "nb2l0",
+          "nb2v0"
+        ],
+        [
+          "nb2v0",
+          "nh2"
+        ],
+        [
+          "nb2v0",
+          "nv"
+        ],
+        [
+          "nc1",
+          "nh1"
+        ],
+        [
+          "nc2",
+          "nh2"
+        ],
+        [
+          "nr",
+          "nu"
+        ],
+        [
+          "nr",
+          "nv"
+        ]
+      ],
+      "hybrid_parents": {
+        "nh1": [
+          "na1v0",
+          "nb1v0"
+        ],
+        "nh2": [
+          "na2v0",
+          "nb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(1, 1, 1, 1)+cherry",
+      "circular_order": [
+        "ccx",
+        "ccy",
+        "na1l0",
+        "na2l0",
+        "nc2",
+        "nb2l0",
+        "nb1l0"
+      ],
+      "vertices": 17,
+      "edges": 18,
+      "leaves": 7,
+      "hybrids": 2,
+      "blob_hybrid_counts": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 3,
+      "switchings": 4,
+      "distinct_trees": 4,
+      "quartets": 35,
+      "displayed_splits": 16,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 3,
+          "hybrids": 0,
+          "masses": [
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 35,
+      "edge_list": [
+        [
+          "ccs",
+          "ccx"
+        ],
+        [
+          "ccs",
+          "ccy"
+        ],
+        [
+          "ccs",
+          "nh1"
+        ],
+        [
+          "na1l0",
+          "na1v0"
+        ],
+        [
+          "na1v0",
+          "nh1"
+        ],
+        [
+          "na1v0",
+          "nu"
+        ],
+        [
+          "na2l0",
+          "na2v0"
+        ],
+        [
+          "na2v0",
+          "nh2"
+        ],
+        [
+          "na2v0",
+          "nu"
+        ],
+        [
+          "nb1l0",
+          "nb1v0"
+        ],
+        [
+          "nb1v0",
+          "nh1"
+        ],
+        [
+          "nb1v0",
+          "nv"
+        ],
+        [
+          "nb2l0",
+          "nb2v0"
+        ],
+        [
+          "nb2v0",
+          "nh2"
+        ],
+        [
+          "nb2v0",
+          "nv"
+        ],
+        [
+          "nc2",
+          "nh2"
+        ],
+        [
+          "nr",
+          "nu"
+        ],
+        [
+          "nr",
+          "nv"
+        ]
+      ],
+      "hybrid_parents": {
+        "nh1": [
+          "na1v0",
+          "nb1v0"
+        ],
+        "nh2": [
+          "na2v0",
+          "nb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)",
+      "circular_order": [
+        "c0Falsea2l0",
+        "c0Falsec2",
+        "c0Falsec1",
+        "p0Falsea1l1",
+        "p0Falsea1l0",
+        "p0Falsea2l0",
+        "p0Falsec2",
+        "p0Falseb2l0"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 18,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 70,
+      "edge_list": [
+        [
+          "c0Falsea1v0",
+          "c0Falseh1"
+        ],
+        [
+          "c0Falsea1v0",
+          "c0Falseu"
+        ],
+        [
+          "c0Falsea1v0",
+          "p0Falseh1"
+        ],
+        [
+          "c0Falsea2l0",
+          "c0Falsea2v0"
+        ],
+        [
+          "c0Falsea2v0",
+          "c0Falseh2"
+        ],
+        [
+          "c0Falsea2v0",
+          "c0Falseu"
+        ],
+        [
+          "c0Falsec1",
+          "c0Falseh1"
+        ],
+        [
+          "c0Falsec2",
+          "c0Falseh2"
+        ],
+        [
+          "c0Falseh1",
+          "c0Falsev"
+        ],
+        [
+          "c0Falseh2",
+          "c0Falsev"
+        ],
+        [
+          "c0Falseu",
+          "c0Falsev"
+        ],
+        [
+          "p0Falsea1l0",
+          "p0Falsea1v0"
+        ],
+        [
+          "p0Falsea1l1",
+          "p0Falsea1v1"
+        ],
+        [
+          "p0Falsea1v0",
+          "p0Falsea1v1"
+        ],
+        [
+          "p0Falsea1v0",
+          "p0Falseu"
+        ],
+        [
+          "p0Falsea1v1",
+          "p0Falseh1"
+        ],
+        [
+          "p0Falsea2l0",
+          "p0Falsea2v0"
+        ],
+        [
+          "p0Falsea2v0",
+          "p0Falseh2"
+        ],
+        [
+          "p0Falsea2v0",
+          "p0Falseu"
+        ],
+        [
+          "p0Falseb2l0",
+          "p0Falseb2v0"
+        ],
+        [
+          "p0Falseb2v0",
+          "p0Falseh2"
+        ],
+        [
+          "p0Falseb2v0",
+          "p0Falsev"
+        ],
+        [
+          "p0Falsec2",
+          "p0Falseh2"
+        ],
+        [
+          "p0Falseh1",
+          "p0Falsev"
+        ],
+        [
+          "p0Falser",
+          "p0Falseu"
+        ],
+        [
+          "p0Falser",
+          "p0Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p0Falseh1": [
+          "p0Falsea1v1",
+          "p0Falsev"
+        ],
+        "p0Falseh2": [
+          "p0Falsea2v0",
+          "p0Falseb2v0"
+        ],
+        "c0Falseh1": [
+          "c0Falsea1v0",
+          "c0Falsev"
+        ],
+        "c0Falseh2": [
+          "c0Falsea2v0",
+          "c0Falsev"
+        ]
+      }
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)+graft+theta(1, 0, 0, 1)",
+      "circular_order": [
+        "c0Falsea2l0",
+        "c0Falsec2",
+        "c0Falsec1",
+        "p0Falsea1l1",
+        "p0Falsea1l0",
+        "p0Falsea2l0",
+        "t0Falsec2",
+        "t0Falseb2l0",
+        "t0Falsec1",
+        "p0Falseb2l0"
+      ],
+      "vertices": 31,
+      "edges": 36,
+      "leaves": 10,
+      "hybrids": 6,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 7,
+      "switchings": 64,
+      "distinct_trees": 16,
+      "quartets": 210,
+      "displayed_splits": 23,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c0Falsea1v0",
+          "c0Falseh1"
+        ],
+        [
+          "c0Falsea1v0",
+          "c0Falseu"
+        ],
+        [
+          "c0Falsea1v0",
+          "p0Falseh1"
+        ],
+        [
+          "c0Falsea2l0",
+          "c0Falsea2v0"
+        ],
+        [
+          "c0Falsea2v0",
+          "c0Falseh2"
+        ],
+        [
+          "c0Falsea2v0",
+          "c0Falseu"
+        ],
+        [
+          "c0Falsec1",
+          "c0Falseh1"
+        ],
+        [
+          "c0Falsec2",
+          "c0Falseh2"
+        ],
+        [
+          "c0Falseh1",
+          "c0Falsev"
+        ],
+        [
+          "c0Falseh2",
+          "c0Falsev"
+        ],
+        [
+          "c0Falseu",
+          "c0Falsev"
+        ],
+        [
+          "p0Falsea1l0",
+          "p0Falsea1v0"
+        ],
+        [
+          "p0Falsea1l1",
+          "p0Falsea1v1"
+        ],
+        [
+          "p0Falsea1v0",
+          "p0Falsea1v1"
+        ],
+        [
+          "p0Falsea1v0",
+          "p0Falseu"
+        ],
+        [
+          "p0Falsea1v1",
+          "p0Falseh1"
+        ],
+        [
+          "p0Falsea2l0",
+          "p0Falsea2v0"
+        ],
+        [
+          "p0Falsea2v0",
+          "p0Falseh2"
+        ],
+        [
+          "p0Falsea2v0",
+          "p0Falseu"
+        ],
+        [
+          "p0Falseb2l0",
+          "p0Falseb2v0"
+        ],
+        [
+          "p0Falseb2v0",
+          "p0Falseh2"
+        ],
+        [
+          "p0Falseb2v0",
+          "p0Falsev"
+        ],
+        [
+          "p0Falseh1",
+          "p0Falsev"
+        ],
+        [
+          "p0Falseh2",
+          "t0Falsea1v0"
+        ],
+        [
+          "p0Falser",
+          "p0Falseu"
+        ],
+        [
+          "p0Falser",
+          "p0Falsev"
+        ],
+        [
+          "t0Falsea1v0",
+          "t0Falseh1"
+        ],
+        [
+          "t0Falsea1v0",
+          "t0Falseu"
+        ],
+        [
+          "t0Falseb2l0",
+          "t0Falseb2v0"
+        ],
+        [
+          "t0Falseb2v0",
+          "t0Falseh2"
+        ],
+        [
+          "t0Falseb2v0",
+          "t0Falsev"
+        ],
+        [
+          "t0Falsec1",
+          "t0Falseh1"
+        ],
+        [
+          "t0Falsec2",
+          "t0Falseh2"
+        ],
+        [
+          "t0Falseh1",
+          "t0Falsev"
+        ],
+        [
+          "t0Falseh2",
+          "t0Falseu"
+        ],
+        [
+          "t0Falseu",
+          "t0Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p0Falseh1": [
+          "p0Falsea1v1",
+          "p0Falsev"
+        ],
+        "p0Falseh2": [
+          "p0Falsea2v0",
+          "p0Falseb2v0"
+        ],
+        "c0Falseh1": [
+          "c0Falsea1v0",
+          "c0Falsev"
+        ],
+        "c0Falseh2": [
+          "c0Falsea2v0",
+          "c0Falsev"
+        ],
+        "t0Falseh1": [
+          "t0Falsea1v0",
+          "t0Falsev"
+        ],
+        "t0Falseh2": [
+          "t0Falseu",
+          "t0Falseb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)",
+      "circular_order": [
+        "c0Truea2l0",
+        "c0Truec2",
+        "c0Truec1",
+        "p0Truea2l0",
+        "p0Truec2",
+        "p0Trueb2l0",
+        "p0Truec1",
+        "p0Truea1l1"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 18,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c0Truea1v0",
+          "c0Trueh1"
+        ],
+        [
+          "c0Truea1v0",
+          "c0Trueu"
+        ],
+        [
+          "c0Truea1v0",
+          "p0Truea1v0"
+        ],
+        [
+          "c0Truea2l0",
+          "c0Truea2v0"
+        ],
+        [
+          "c0Truea2v0",
+          "c0Trueh2"
+        ],
+        [
+          "c0Truea2v0",
+          "c0Trueu"
+        ],
+        [
+          "c0Truec1",
+          "c0Trueh1"
+        ],
+        [
+          "c0Truec2",
+          "c0Trueh2"
+        ],
+        [
+          "c0Trueh1",
+          "c0Truev"
+        ],
+        [
+          "c0Trueh2",
+          "c0Truev"
+        ],
+        [
+          "c0Trueu",
+          "c0Truev"
+        ],
+        [
+          "p0Truea1l1",
+          "p0Truea1v1"
+        ],
+        [
+          "p0Truea1v0",
+          "p0Truea1v1"
+        ],
+        [
+          "p0Truea1v0",
+          "p0Trueu"
+        ],
+        [
+          "p0Truea1v1",
+          "p0Trueh1"
+        ],
+        [
+          "p0Truea2l0",
+          "p0Truea2v0"
+        ],
+        [
+          "p0Truea2v0",
+          "p0Trueh2"
+        ],
+        [
+          "p0Truea2v0",
+          "p0Trueu"
+        ],
+        [
+          "p0Trueb2l0",
+          "p0Trueb2v0"
+        ],
+        [
+          "p0Trueb2v0",
+          "p0Trueh2"
+        ],
+        [
+          "p0Trueb2v0",
+          "p0Truev"
+        ],
+        [
+          "p0Truec1",
+          "p0Trueh1"
+        ],
+        [
+          "p0Truec2",
+          "p0Trueh2"
+        ],
+        [
+          "p0Trueh1",
+          "p0Truev"
+        ],
+        [
+          "p0Truer",
+          "p0Trueu"
+        ],
+        [
+          "p0Truer",
+          "p0Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p0Trueh1": [
+          "p0Truea1v1",
+          "p0Truev"
+        ],
+        "p0Trueh2": [
+          "p0Truea2v0",
+          "p0Trueb2v0"
+        ],
+        "c0Trueh1": [
+          "c0Truea1v0",
+          "c0Truev"
+        ],
+        "c0Trueh2": [
+          "c0Truea2v0",
+          "c0Truev"
+        ]
+      }
+    },
+    {
+      "name": "theta(2, 0, 1, 1)+graft+theta(1, 0, 1, 0)+graft+theta(1, 0, 0, 1)",
+      "circular_order": [
+        "c0Truea2l0",
+        "c0Truec2",
+        "c0Truec1",
+        "p0Truea2l0",
+        "t0Truec2",
+        "t0Trueb2l0",
+        "t0Truec1",
+        "p0Trueb2l0",
+        "p0Truec1",
+        "p0Truea1l1"
+      ],
+      "vertices": 31,
+      "edges": 36,
+      "leaves": 10,
+      "hybrids": 6,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 7,
+      "switchings": 64,
+      "distinct_trees": 16,
+      "quartets": 210,
+      "displayed_splits": 23,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c0Truea1v0",
+          "c0Trueh1"
+        ],
+        [
+          "c0Truea1v0",
+          "c0Trueu"
+        ],
+        [
+          "c0Truea1v0",
+          "p0Truea1v0"
+        ],
+        [
+          "c0Truea2l0",
+          "c0Truea2v0"
+        ],
+        [
+          "c0Truea2v0",
+          "c0Trueh2"
+        ],
+        [
+          "c0Truea2v0",
+          "c0Trueu"
+        ],
+        [
+          "c0Truec1",
+          "c0Trueh1"
+        ],
+        [
+          "c0Truec2",
+          "c0Trueh2"
+        ],
+        [
+          "c0Trueh1",
+          "c0Truev"
+        ],
+        [
+          "c0Trueh2",
+          "c0Truev"
+        ],
+        [
+          "c0Trueu",
+          "c0Truev"
+        ],
+        [
+          "p0Truea1l1",
+          "p0Truea1v1"
+        ],
+        [
+          "p0Truea1v0",
+          "p0Truea1v1"
+        ],
+        [
+          "p0Truea1v0",
+          "p0Trueu"
+        ],
+        [
+          "p0Truea1v1",
+          "p0Trueh1"
+        ],
+        [
+          "p0Truea2l0",
+          "p0Truea2v0"
+        ],
+        [
+          "p0Truea2v0",
+          "p0Trueh2"
+        ],
+        [
+          "p0Truea2v0",
+          "p0Trueu"
+        ],
+        [
+          "p0Trueb2l0",
+          "p0Trueb2v0"
+        ],
+        [
+          "p0Trueb2v0",
+          "p0Trueh2"
+        ],
+        [
+          "p0Trueb2v0",
+          "p0Truev"
+        ],
+        [
+          "p0Truec1",
+          "p0Trueh1"
+        ],
+        [
+          "p0Trueh1",
+          "p0Truev"
+        ],
+        [
+          "p0Trueh2",
+          "t0Truea1v0"
+        ],
+        [
+          "p0Truer",
+          "p0Trueu"
+        ],
+        [
+          "p0Truer",
+          "p0Truev"
+        ],
+        [
+          "t0Truea1v0",
+          "t0Trueh1"
+        ],
+        [
+          "t0Truea1v0",
+          "t0Trueu"
+        ],
+        [
+          "t0Trueb2l0",
+          "t0Trueb2v0"
+        ],
+        [
+          "t0Trueb2v0",
+          "t0Trueh2"
+        ],
+        [
+          "t0Trueb2v0",
+          "t0Truev"
+        ],
+        [
+          "t0Truec1",
+          "t0Trueh1"
+        ],
+        [
+          "t0Truec2",
+          "t0Trueh2"
+        ],
+        [
+          "t0Trueh1",
+          "t0Truev"
+        ],
+        [
+          "t0Trueh2",
+          "t0Trueu"
+        ],
+        [
+          "t0Trueu",
+          "t0Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p0Trueh1": [
+          "p0Truea1v1",
+          "p0Truev"
+        ],
+        "p0Trueh2": [
+          "p0Truea2v0",
+          "p0Trueb2v0"
+        ],
+        "c0Trueh1": [
+          "c0Truea1v0",
+          "c0Truev"
+        ],
+        "c0Trueh2": [
+          "c0Truea2v0",
+          "c0Truev"
+        ],
+        "t0Trueh1": [
+          "t0Truea1v0",
+          "t0Truev"
+        ],
+        "t0Trueh2": [
+          "t0Trueu",
+          "t0Trueb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)",
+      "circular_order": [
+        "c1Falsec2",
+        "c1Falseb2l0",
+        "c1Falsec1",
+        "p1Falsec2",
+        "p1Falseb2l1",
+        "p1Falseb2l0",
+        "p1Falseb1l0",
+        "p1Falseb1l1"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 17,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c1Falsea2v0",
+          "c1Falseh2"
+        ],
+        [
+          "c1Falsea2v0",
+          "c1Falseu"
+        ],
+        [
+          "c1Falsea2v0",
+          "p1Falseh1"
+        ],
+        [
+          "c1Falseb2l0",
+          "c1Falseb2v0"
+        ],
+        [
+          "c1Falseb2v0",
+          "c1Falseh2"
+        ],
+        [
+          "c1Falseb2v0",
+          "c1Falsev"
+        ],
+        [
+          "c1Falsec1",
+          "c1Falseh1"
+        ],
+        [
+          "c1Falsec2",
+          "c1Falseh2"
+        ],
+        [
+          "c1Falseh1",
+          "c1Falseu"
+        ],
+        [
+          "c1Falseh1",
+          "c1Falsev"
+        ],
+        [
+          "c1Falseu",
+          "c1Falsev"
+        ],
+        [
+          "p1Falseb1l0",
+          "p1Falseb1v0"
+        ],
+        [
+          "p1Falseb1l1",
+          "p1Falseb1v1"
+        ],
+        [
+          "p1Falseb1v0",
+          "p1Falseb1v1"
+        ],
+        [
+          "p1Falseb1v0",
+          "p1Falsev"
+        ],
+        [
+          "p1Falseb1v1",
+          "p1Falseh1"
+        ],
+        [
+          "p1Falseb2l0",
+          "p1Falseb2v0"
+        ],
+        [
+          "p1Falseb2l1",
+          "p1Falseb2v1"
+        ],
+        [
+          "p1Falseb2v0",
+          "p1Falseb2v1"
+        ],
+        [
+          "p1Falseb2v0",
+          "p1Falsev"
+        ],
+        [
+          "p1Falseb2v1",
+          "p1Falseh2"
+        ],
+        [
+          "p1Falsec2",
+          "p1Falseh2"
+        ],
+        [
+          "p1Falseh1",
+          "p1Falseu"
+        ],
+        [
+          "p1Falseh2",
+          "p1Falseu"
+        ],
+        [
+          "p1Falser",
+          "p1Falseu"
+        ],
+        [
+          "p1Falser",
+          "p1Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p1Falseh1": [
+          "p1Falseu",
+          "p1Falseb1v1"
+        ],
+        "p1Falseh2": [
+          "p1Falseu",
+          "p1Falseb2v1"
+        ],
+        "c1Falseh1": [
+          "c1Falseu",
+          "c1Falsev"
+        ],
+        "c1Falseh2": [
+          "c1Falsea2v0",
+          "c1Falseb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "circular_order": [
+        "c1Falsec2",
+        "c1Falseb2l0",
+        "c1Falsec1",
+        "t1Falsec2",
+        "t1Falseb2l0",
+        "t1Falsec1",
+        "p1Falseb2l1",
+        "p1Falseb2l0",
+        "p1Falseb1l0",
+        "p1Falseb1l1"
+      ],
+      "vertices": 31,
+      "edges": 36,
+      "leaves": 10,
+      "hybrids": 6,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 7,
+      "switchings": 64,
+      "distinct_trees": 16,
+      "quartets": 210,
+      "displayed_splits": 22,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c1Falsea2v0",
+          "c1Falseh2"
+        ],
+        [
+          "c1Falsea2v0",
+          "c1Falseu"
+        ],
+        [
+          "c1Falsea2v0",
+          "p1Falseh1"
+        ],
+        [
+          "c1Falseb2l0",
+          "c1Falseb2v0"
+        ],
+        [
+          "c1Falseb2v0",
+          "c1Falseh2"
+        ],
+        [
+          "c1Falseb2v0",
+          "c1Falsev"
+        ],
+        [
+          "c1Falsec1",
+          "c1Falseh1"
+        ],
+        [
+          "c1Falsec2",
+          "c1Falseh2"
+        ],
+        [
+          "c1Falseh1",
+          "c1Falseu"
+        ],
+        [
+          "c1Falseh1",
+          "c1Falsev"
+        ],
+        [
+          "c1Falseu",
+          "c1Falsev"
+        ],
+        [
+          "p1Falseb1l0",
+          "p1Falseb1v0"
+        ],
+        [
+          "p1Falseb1l1",
+          "p1Falseb1v1"
+        ],
+        [
+          "p1Falseb1v0",
+          "p1Falseb1v1"
+        ],
+        [
+          "p1Falseb1v0",
+          "p1Falsev"
+        ],
+        [
+          "p1Falseb1v1",
+          "p1Falseh1"
+        ],
+        [
+          "p1Falseb2l0",
+          "p1Falseb2v0"
+        ],
+        [
+          "p1Falseb2l1",
+          "p1Falseb2v1"
+        ],
+        [
+          "p1Falseb2v0",
+          "p1Falseb2v1"
+        ],
+        [
+          "p1Falseb2v0",
+          "p1Falsev"
+        ],
+        [
+          "p1Falseb2v1",
+          "p1Falseh2"
+        ],
+        [
+          "p1Falseh1",
+          "p1Falseu"
+        ],
+        [
+          "p1Falseh2",
+          "p1Falseu"
+        ],
+        [
+          "p1Falseh2",
+          "t1Falsea1v0"
+        ],
+        [
+          "p1Falser",
+          "p1Falseu"
+        ],
+        [
+          "p1Falser",
+          "p1Falsev"
+        ],
+        [
+          "t1Falsea1v0",
+          "t1Falseh1"
+        ],
+        [
+          "t1Falsea1v0",
+          "t1Falseu"
+        ],
+        [
+          "t1Falseb2l0",
+          "t1Falseb2v0"
+        ],
+        [
+          "t1Falseb2v0",
+          "t1Falseh2"
+        ],
+        [
+          "t1Falseb2v0",
+          "t1Falsev"
+        ],
+        [
+          "t1Falsec1",
+          "t1Falseh1"
+        ],
+        [
+          "t1Falsec2",
+          "t1Falseh2"
+        ],
+        [
+          "t1Falseh1",
+          "t1Falsev"
+        ],
+        [
+          "t1Falseh2",
+          "t1Falseu"
+        ],
+        [
+          "t1Falseu",
+          "t1Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p1Falseh1": [
+          "p1Falseu",
+          "p1Falseb1v1"
+        ],
+        "p1Falseh2": [
+          "p1Falseu",
+          "p1Falseb2v1"
+        ],
+        "c1Falseh1": [
+          "c1Falseu",
+          "c1Falsev"
+        ],
+        "c1Falseh2": [
+          "c1Falsea2v0",
+          "c1Falseb2v0"
+        ],
+        "t1Falseh1": [
+          "t1Falsea1v0",
+          "t1Falsev"
+        ],
+        "t1Falseh2": [
+          "t1Falseu",
+          "t1Falseb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)",
+      "circular_order": [
+        "c1Truec2",
+        "c1Trueb2l0",
+        "c1Truec1",
+        "p1Trueb1l1",
+        "p1Truec1",
+        "p1Truec2",
+        "p1Trueb2l1",
+        "p1Trueb2l0"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 17,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c1Truea2v0",
+          "c1Trueh2"
+        ],
+        [
+          "c1Truea2v0",
+          "c1Trueu"
+        ],
+        [
+          "c1Truea2v0",
+          "p1Trueb1v0"
+        ],
+        [
+          "c1Trueb2l0",
+          "c1Trueb2v0"
+        ],
+        [
+          "c1Trueb2v0",
+          "c1Trueh2"
+        ],
+        [
+          "c1Trueb2v0",
+          "c1Truev"
+        ],
+        [
+          "c1Truec1",
+          "c1Trueh1"
+        ],
+        [
+          "c1Truec2",
+          "c1Trueh2"
+        ],
+        [
+          "c1Trueh1",
+          "c1Trueu"
+        ],
+        [
+          "c1Trueh1",
+          "c1Truev"
+        ],
+        [
+          "c1Trueu",
+          "c1Truev"
+        ],
+        [
+          "p1Trueb1l1",
+          "p1Trueb1v1"
+        ],
+        [
+          "p1Trueb1v0",
+          "p1Trueb1v1"
+        ],
+        [
+          "p1Trueb1v0",
+          "p1Truev"
+        ],
+        [
+          "p1Trueb1v1",
+          "p1Trueh1"
+        ],
+        [
+          "p1Trueb2l0",
+          "p1Trueb2v0"
+        ],
+        [
+          "p1Trueb2l1",
+          "p1Trueb2v1"
+        ],
+        [
+          "p1Trueb2v0",
+          "p1Trueb2v1"
+        ],
+        [
+          "p1Trueb2v0",
+          "p1Truev"
+        ],
+        [
+          "p1Trueb2v1",
+          "p1Trueh2"
+        ],
+        [
+          "p1Truec1",
+          "p1Trueh1"
+        ],
+        [
+          "p1Truec2",
+          "p1Trueh2"
+        ],
+        [
+          "p1Trueh1",
+          "p1Trueu"
+        ],
+        [
+          "p1Trueh2",
+          "p1Trueu"
+        ],
+        [
+          "p1Truer",
+          "p1Trueu"
+        ],
+        [
+          "p1Truer",
+          "p1Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p1Trueh1": [
+          "p1Trueu",
+          "p1Trueb1v1"
+        ],
+        "p1Trueh2": [
+          "p1Trueu",
+          "p1Trueb2v1"
+        ],
+        "c1Trueh1": [
+          "c1Trueu",
+          "c1Truev"
+        ],
+        "c1Trueh2": [
+          "c1Truea2v0",
+          "c1Trueb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(0, 2, 0, 2)+graft+theta(0, 0, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "circular_order": [
+        "c1Truec2",
+        "c1Trueb2l0",
+        "c1Truec1",
+        "p1Trueb1l1",
+        "p1Truec1",
+        "t1Truec2",
+        "t1Trueb2l0",
+        "t1Truec1",
+        "p1Trueb2l1",
+        "p1Trueb2l0"
+      ],
+      "vertices": 31,
+      "edges": 36,
+      "leaves": 10,
+      "hybrids": 6,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 7,
+      "switchings": 64,
+      "distinct_trees": 16,
+      "quartets": 210,
+      "displayed_splits": 22,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            7
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c1Truea2v0",
+          "c1Trueh2"
+        ],
+        [
+          "c1Truea2v0",
+          "c1Trueu"
+        ],
+        [
+          "c1Truea2v0",
+          "p1Trueb1v0"
+        ],
+        [
+          "c1Trueb2l0",
+          "c1Trueb2v0"
+        ],
+        [
+          "c1Trueb2v0",
+          "c1Trueh2"
+        ],
+        [
+          "c1Trueb2v0",
+          "c1Truev"
+        ],
+        [
+          "c1Truec1",
+          "c1Trueh1"
+        ],
+        [
+          "c1Truec2",
+          "c1Trueh2"
+        ],
+        [
+          "c1Trueh1",
+          "c1Trueu"
+        ],
+        [
+          "c1Trueh1",
+          "c1Truev"
+        ],
+        [
+          "c1Trueu",
+          "c1Truev"
+        ],
+        [
+          "p1Trueb1l1",
+          "p1Trueb1v1"
+        ],
+        [
+          "p1Trueb1v0",
+          "p1Trueb1v1"
+        ],
+        [
+          "p1Trueb1v0",
+          "p1Truev"
+        ],
+        [
+          "p1Trueb1v1",
+          "p1Trueh1"
+        ],
+        [
+          "p1Trueb2l0",
+          "p1Trueb2v0"
+        ],
+        [
+          "p1Trueb2l1",
+          "p1Trueb2v1"
+        ],
+        [
+          "p1Trueb2v0",
+          "p1Trueb2v1"
+        ],
+        [
+          "p1Trueb2v0",
+          "p1Truev"
+        ],
+        [
+          "p1Trueb2v1",
+          "p1Trueh2"
+        ],
+        [
+          "p1Truec1",
+          "p1Trueh1"
+        ],
+        [
+          "p1Trueh1",
+          "p1Trueu"
+        ],
+        [
+          "p1Trueh2",
+          "p1Trueu"
+        ],
+        [
+          "p1Trueh2",
+          "t1Truea1v0"
+        ],
+        [
+          "p1Truer",
+          "p1Trueu"
+        ],
+        [
+          "p1Truer",
+          "p1Truev"
+        ],
+        [
+          "t1Truea1v0",
+          "t1Trueh1"
+        ],
+        [
+          "t1Truea1v0",
+          "t1Trueu"
+        ],
+        [
+          "t1Trueb2l0",
+          "t1Trueb2v0"
+        ],
+        [
+          "t1Trueb2v0",
+          "t1Trueh2"
+        ],
+        [
+          "t1Trueb2v0",
+          "t1Truev"
+        ],
+        [
+          "t1Truec1",
+          "t1Trueh1"
+        ],
+        [
+          "t1Truec2",
+          "t1Trueh2"
+        ],
+        [
+          "t1Trueh1",
+          "t1Truev"
+        ],
+        [
+          "t1Trueh2",
+          "t1Trueu"
+        ],
+        [
+          "t1Trueu",
+          "t1Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p1Trueh1": [
+          "p1Trueu",
+          "p1Trueb1v1"
+        ],
+        "p1Trueh2": [
+          "p1Trueu",
+          "p1Trueb2v1"
+        ],
+        "c1Trueh1": [
+          "c1Trueu",
+          "c1Truev"
+        ],
+        "c1Trueh2": [
+          "c1Truea2v0",
+          "c1Trueb2v0"
+        ],
+        "t1Trueh1": [
+          "t1Truea1v0",
+          "t1Truev"
+        ],
+        "t1Trueh2": [
+          "t1Trueu",
+          "t1Trueb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)",
+      "circular_order": [
+        "c2Falsea2l0",
+        "c2Falsec2",
+        "c2Falseb2l0",
+        "c2Falseb1l0",
+        "c2Falsec1",
+        "p2Falsea1l2",
+        "p2Falsea1l1",
+        "p2Falsea1l0",
+        "p2Falsec2",
+        "p2Falseb1l0"
+      ],
+      "vertices": 27,
+      "edges": 30,
+      "leaves": 10,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 210,
+      "displayed_splits": 25,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c2Falsea1v0",
+          "c2Falseh1"
+        ],
+        [
+          "c2Falsea1v0",
+          "c2Falseu"
+        ],
+        [
+          "c2Falsea1v0",
+          "p2Falseh1"
+        ],
+        [
+          "c2Falsea2l0",
+          "c2Falsea2v0"
+        ],
+        [
+          "c2Falsea2v0",
+          "c2Falseh2"
+        ],
+        [
+          "c2Falsea2v0",
+          "c2Falseu"
+        ],
+        [
+          "c2Falseb1l0",
+          "c2Falseb1v0"
+        ],
+        [
+          "c2Falseb1v0",
+          "c2Falseh1"
+        ],
+        [
+          "c2Falseb1v0",
+          "c2Falsev"
+        ],
+        [
+          "c2Falseb2l0",
+          "c2Falseb2v0"
+        ],
+        [
+          "c2Falseb2v0",
+          "c2Falseh2"
+        ],
+        [
+          "c2Falseb2v0",
+          "c2Falsev"
+        ],
+        [
+          "c2Falsec1",
+          "c2Falseh1"
+        ],
+        [
+          "c2Falsec2",
+          "c2Falseh2"
+        ],
+        [
+          "c2Falseu",
+          "c2Falsev"
+        ],
+        [
+          "p2Falsea1l0",
+          "p2Falsea1v0"
+        ],
+        [
+          "p2Falsea1l1",
+          "p2Falsea1v1"
+        ],
+        [
+          "p2Falsea1l2",
+          "p2Falsea1v2"
+        ],
+        [
+          "p2Falsea1v0",
+          "p2Falsea1v1"
+        ],
+        [
+          "p2Falsea1v0",
+          "p2Falseu"
+        ],
+        [
+          "p2Falsea1v1",
+          "p2Falsea1v2"
+        ],
+        [
+          "p2Falsea1v2",
+          "p2Falseh1"
+        ],
+        [
+          "p2Falseb1l0",
+          "p2Falseb1v0"
+        ],
+        [
+          "p2Falseb1v0",
+          "p2Falseh1"
+        ],
+        [
+          "p2Falseb1v0",
+          "p2Falsev"
+        ],
+        [
+          "p2Falsec2",
+          "p2Falseh2"
+        ],
+        [
+          "p2Falseh2",
+          "p2Falseu"
+        ],
+        [
+          "p2Falseh2",
+          "p2Falsev"
+        ],
+        [
+          "p2Falser",
+          "p2Falseu"
+        ],
+        [
+          "p2Falser",
+          "p2Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p2Falseh1": [
+          "p2Falsea1v2",
+          "p2Falseb1v0"
+        ],
+        "p2Falseh2": [
+          "p2Falseu",
+          "p2Falsev"
+        ],
+        "c2Falseh1": [
+          "c2Falsea1v0",
+          "c2Falseb1v0"
+        ],
+        "c2Falseh2": [
+          "c2Falsea2v0",
+          "c2Falseb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "circular_order": [
+        "c2Falsea2l0",
+        "c2Falsec2",
+        "c2Falseb2l0",
+        "c2Falseb1l0",
+        "c2Falsec1",
+        "p2Falsea1l2",
+        "p2Falsea1l1",
+        "p2Falsea1l0",
+        "t2Falsec2",
+        "t2Falseb2l0",
+        "t2Falsec1",
+        "p2Falseb1l0"
+      ],
+      "vertices": 35,
+      "edges": 40,
+      "leaves": 12,
+      "hybrids": 6,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 7,
+      "switchings": 64,
+      "distinct_trees": 16,
+      "quartets": 495,
+      "displayed_splits": 30,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            7
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            9
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c2Falsea1v0",
+          "c2Falseh1"
+        ],
+        [
+          "c2Falsea1v0",
+          "c2Falseu"
+        ],
+        [
+          "c2Falsea1v0",
+          "p2Falseh1"
+        ],
+        [
+          "c2Falsea2l0",
+          "c2Falsea2v0"
+        ],
+        [
+          "c2Falsea2v0",
+          "c2Falseh2"
+        ],
+        [
+          "c2Falsea2v0",
+          "c2Falseu"
+        ],
+        [
+          "c2Falseb1l0",
+          "c2Falseb1v0"
+        ],
+        [
+          "c2Falseb1v0",
+          "c2Falseh1"
+        ],
+        [
+          "c2Falseb1v0",
+          "c2Falsev"
+        ],
+        [
+          "c2Falseb2l0",
+          "c2Falseb2v0"
+        ],
+        [
+          "c2Falseb2v0",
+          "c2Falseh2"
+        ],
+        [
+          "c2Falseb2v0",
+          "c2Falsev"
+        ],
+        [
+          "c2Falsec1",
+          "c2Falseh1"
+        ],
+        [
+          "c2Falsec2",
+          "c2Falseh2"
+        ],
+        [
+          "c2Falseu",
+          "c2Falsev"
+        ],
+        [
+          "p2Falsea1l0",
+          "p2Falsea1v0"
+        ],
+        [
+          "p2Falsea1l1",
+          "p2Falsea1v1"
+        ],
+        [
+          "p2Falsea1l2",
+          "p2Falsea1v2"
+        ],
+        [
+          "p2Falsea1v0",
+          "p2Falsea1v1"
+        ],
+        [
+          "p2Falsea1v0",
+          "p2Falseu"
+        ],
+        [
+          "p2Falsea1v1",
+          "p2Falsea1v2"
+        ],
+        [
+          "p2Falsea1v2",
+          "p2Falseh1"
+        ],
+        [
+          "p2Falseb1l0",
+          "p2Falseb1v0"
+        ],
+        [
+          "p2Falseb1v0",
+          "p2Falseh1"
+        ],
+        [
+          "p2Falseb1v0",
+          "p2Falsev"
+        ],
+        [
+          "p2Falseh2",
+          "p2Falseu"
+        ],
+        [
+          "p2Falseh2",
+          "p2Falsev"
+        ],
+        [
+          "p2Falseh2",
+          "t2Falsea1v0"
+        ],
+        [
+          "p2Falser",
+          "p2Falseu"
+        ],
+        [
+          "p2Falser",
+          "p2Falsev"
+        ],
+        [
+          "t2Falsea1v0",
+          "t2Falseh1"
+        ],
+        [
+          "t2Falsea1v0",
+          "t2Falseu"
+        ],
+        [
+          "t2Falseb2l0",
+          "t2Falseb2v0"
+        ],
+        [
+          "t2Falseb2v0",
+          "t2Falseh2"
+        ],
+        [
+          "t2Falseb2v0",
+          "t2Falsev"
+        ],
+        [
+          "t2Falsec1",
+          "t2Falseh1"
+        ],
+        [
+          "t2Falsec2",
+          "t2Falseh2"
+        ],
+        [
+          "t2Falseh1",
+          "t2Falsev"
+        ],
+        [
+          "t2Falseh2",
+          "t2Falseu"
+        ],
+        [
+          "t2Falseu",
+          "t2Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p2Falseh1": [
+          "p2Falsea1v2",
+          "p2Falseb1v0"
+        ],
+        "p2Falseh2": [
+          "p2Falseu",
+          "p2Falsev"
+        ],
+        "c2Falseh1": [
+          "c2Falsea1v0",
+          "c2Falseb1v0"
+        ],
+        "c2Falseh2": [
+          "c2Falsea2v0",
+          "c2Falseb2v0"
+        ],
+        "t2Falseh1": [
+          "t2Falsea1v0",
+          "t2Falsev"
+        ],
+        "t2Falseh2": [
+          "t2Falseu",
+          "t2Falseb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)",
+      "circular_order": [
+        "c2Truea2l0",
+        "c2Truec2",
+        "c2Trueb2l0",
+        "c2Trueb1l0",
+        "c2Truec1",
+        "p2Truec2",
+        "p2Trueb1l0",
+        "p2Truec1",
+        "p2Truea1l2",
+        "p2Truea1l1"
+      ],
+      "vertices": 27,
+      "edges": 30,
+      "leaves": 10,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 210,
+      "displayed_splits": 25,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c2Truea1v0",
+          "c2Trueh1"
+        ],
+        [
+          "c2Truea1v0",
+          "c2Trueu"
+        ],
+        [
+          "c2Truea1v0",
+          "p2Truea1v0"
+        ],
+        [
+          "c2Truea2l0",
+          "c2Truea2v0"
+        ],
+        [
+          "c2Truea2v0",
+          "c2Trueh2"
+        ],
+        [
+          "c2Truea2v0",
+          "c2Trueu"
+        ],
+        [
+          "c2Trueb1l0",
+          "c2Trueb1v0"
+        ],
+        [
+          "c2Trueb1v0",
+          "c2Trueh1"
+        ],
+        [
+          "c2Trueb1v0",
+          "c2Truev"
+        ],
+        [
+          "c2Trueb2l0",
+          "c2Trueb2v0"
+        ],
+        [
+          "c2Trueb2v0",
+          "c2Trueh2"
+        ],
+        [
+          "c2Trueb2v0",
+          "c2Truev"
+        ],
+        [
+          "c2Truec1",
+          "c2Trueh1"
+        ],
+        [
+          "c2Truec2",
+          "c2Trueh2"
+        ],
+        [
+          "c2Trueu",
+          "c2Truev"
+        ],
+        [
+          "p2Truea1l1",
+          "p2Truea1v1"
+        ],
+        [
+          "p2Truea1l2",
+          "p2Truea1v2"
+        ],
+        [
+          "p2Truea1v0",
+          "p2Truea1v1"
+        ],
+        [
+          "p2Truea1v0",
+          "p2Trueu"
+        ],
+        [
+          "p2Truea1v1",
+          "p2Truea1v2"
+        ],
+        [
+          "p2Truea1v2",
+          "p2Trueh1"
+        ],
+        [
+          "p2Trueb1l0",
+          "p2Trueb1v0"
+        ],
+        [
+          "p2Trueb1v0",
+          "p2Trueh1"
+        ],
+        [
+          "p2Trueb1v0",
+          "p2Truev"
+        ],
+        [
+          "p2Truec1",
+          "p2Trueh1"
+        ],
+        [
+          "p2Truec2",
+          "p2Trueh2"
+        ],
+        [
+          "p2Trueh2",
+          "p2Trueu"
+        ],
+        [
+          "p2Trueh2",
+          "p2Truev"
+        ],
+        [
+          "p2Truer",
+          "p2Trueu"
+        ],
+        [
+          "p2Truer",
+          "p2Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p2Trueh1": [
+          "p2Truea1v2",
+          "p2Trueb1v0"
+        ],
+        "p2Trueh2": [
+          "p2Trueu",
+          "p2Truev"
+        ],
+        "c2Trueh1": [
+          "c2Truea1v0",
+          "c2Trueb1v0"
+        ],
+        "c2Trueh2": [
+          "c2Truea2v0",
+          "c2Trueb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(3, 1, 0, 0)+graft+theta(1, 1, 1, 1)+graft+theta(1, 0, 0, 1)",
+      "circular_order": [
+        "c2Truea2l0",
+        "c2Truec2",
+        "c2Trueb2l0",
+        "c2Trueb1l0",
+        "c2Truec1",
+        "t2Truec2",
+        "t2Trueb2l0",
+        "t2Truec1",
+        "p2Trueb1l0",
+        "p2Truec1",
+        "p2Truea1l2",
+        "p2Truea1l1"
+      ],
+      "vertices": 35,
+      "edges": 40,
+      "leaves": 12,
+      "hybrids": 6,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 7,
+      "switchings": 64,
+      "distinct_trees": 16,
+      "quartets": 495,
+      "displayed_splits": 30,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            7
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            9
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c2Truea1v0",
+          "c2Trueh1"
+        ],
+        [
+          "c2Truea1v0",
+          "c2Trueu"
+        ],
+        [
+          "c2Truea1v0",
+          "p2Truea1v0"
+        ],
+        [
+          "c2Truea2l0",
+          "c2Truea2v0"
+        ],
+        [
+          "c2Truea2v0",
+          "c2Trueh2"
+        ],
+        [
+          "c2Truea2v0",
+          "c2Trueu"
+        ],
+        [
+          "c2Trueb1l0",
+          "c2Trueb1v0"
+        ],
+        [
+          "c2Trueb1v0",
+          "c2Trueh1"
+        ],
+        [
+          "c2Trueb1v0",
+          "c2Truev"
+        ],
+        [
+          "c2Trueb2l0",
+          "c2Trueb2v0"
+        ],
+        [
+          "c2Trueb2v0",
+          "c2Trueh2"
+        ],
+        [
+          "c2Trueb2v0",
+          "c2Truev"
+        ],
+        [
+          "c2Truec1",
+          "c2Trueh1"
+        ],
+        [
+          "c2Truec2",
+          "c2Trueh2"
+        ],
+        [
+          "c2Trueu",
+          "c2Truev"
+        ],
+        [
+          "p2Truea1l1",
+          "p2Truea1v1"
+        ],
+        [
+          "p2Truea1l2",
+          "p2Truea1v2"
+        ],
+        [
+          "p2Truea1v0",
+          "p2Truea1v1"
+        ],
+        [
+          "p2Truea1v0",
+          "p2Trueu"
+        ],
+        [
+          "p2Truea1v1",
+          "p2Truea1v2"
+        ],
+        [
+          "p2Truea1v2",
+          "p2Trueh1"
+        ],
+        [
+          "p2Trueb1l0",
+          "p2Trueb1v0"
+        ],
+        [
+          "p2Trueb1v0",
+          "p2Trueh1"
+        ],
+        [
+          "p2Trueb1v0",
+          "p2Truev"
+        ],
+        [
+          "p2Truec1",
+          "p2Trueh1"
+        ],
+        [
+          "p2Trueh2",
+          "p2Trueu"
+        ],
+        [
+          "p2Trueh2",
+          "p2Truev"
+        ],
+        [
+          "p2Trueh2",
+          "t2Truea1v0"
+        ],
+        [
+          "p2Truer",
+          "p2Trueu"
+        ],
+        [
+          "p2Truer",
+          "p2Truev"
+        ],
+        [
+          "t2Truea1v0",
+          "t2Trueh1"
+        ],
+        [
+          "t2Truea1v0",
+          "t2Trueu"
+        ],
+        [
+          "t2Trueb2l0",
+          "t2Trueb2v0"
+        ],
+        [
+          "t2Trueb2v0",
+          "t2Trueh2"
+        ],
+        [
+          "t2Trueb2v0",
+          "t2Truev"
+        ],
+        [
+          "t2Truec1",
+          "t2Trueh1"
+        ],
+        [
+          "t2Truec2",
+          "t2Trueh2"
+        ],
+        [
+          "t2Trueh1",
+          "t2Truev"
+        ],
+        [
+          "t2Trueh2",
+          "t2Trueu"
+        ],
+        [
+          "t2Trueu",
+          "t2Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p2Trueh1": [
+          "p2Truea1v2",
+          "p2Trueb1v0"
+        ],
+        "p2Trueh2": [
+          "p2Trueu",
+          "p2Truev"
+        ],
+        "c2Trueh1": [
+          "c2Truea1v0",
+          "c2Trueb1v0"
+        ],
+        "c2Trueh2": [
+          "c2Truea2v0",
+          "c2Trueb2v0"
+        ],
+        "t2Trueh1": [
+          "t2Truea1v0",
+          "t2Truev"
+        ],
+        "t2Trueh2": [
+          "t2Trueu",
+          "t2Trueb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(1, 1, 1, 1)+graft+theta(3, 1, 0, 0)",
+      "circular_order": [
+        "c3Falsea1l1",
+        "p3Falsea1l0",
+        "p3Falsea2l0",
+        "p3Falsec2",
+        "p3Falseb2l0",
+        "p3Falseb1l0",
+        "c3Falsec2",
+        "c3Falseb1l0",
+        "c3Falsec1",
+        "c3Falsea1l2"
+      ],
+      "vertices": 27,
+      "edges": 30,
+      "leaves": 10,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 210,
+      "displayed_splits": 25,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c3Falsea1l1",
+          "c3Falsea1v1"
+        ],
+        [
+          "c3Falsea1l2",
+          "c3Falsea1v2"
+        ],
+        [
+          "c3Falsea1v0",
+          "c3Falsea1v1"
+        ],
+        [
+          "c3Falsea1v0",
+          "c3Falseu"
+        ],
+        [
+          "c3Falsea1v0",
+          "p3Falseh1"
+        ],
+        [
+          "c3Falsea1v1",
+          "c3Falsea1v2"
+        ],
+        [
+          "c3Falsea1v2",
+          "c3Falseh1"
+        ],
+        [
+          "c3Falseb1l0",
+          "c3Falseb1v0"
+        ],
+        [
+          "c3Falseb1v0",
+          "c3Falseh1"
+        ],
+        [
+          "c3Falseb1v0",
+          "c3Falsev"
+        ],
+        [
+          "c3Falsec1",
+          "c3Falseh1"
+        ],
+        [
+          "c3Falsec2",
+          "c3Falseh2"
+        ],
+        [
+          "c3Falseh2",
+          "c3Falseu"
+        ],
+        [
+          "c3Falseh2",
+          "c3Falsev"
+        ],
+        [
+          "c3Falseu",
+          "c3Falsev"
+        ],
+        [
+          "p3Falsea1l0",
+          "p3Falsea1v0"
+        ],
+        [
+          "p3Falsea1v0",
+          "p3Falseh1"
+        ],
+        [
+          "p3Falsea1v0",
+          "p3Falseu"
+        ],
+        [
+          "p3Falsea2l0",
+          "p3Falsea2v0"
+        ],
+        [
+          "p3Falsea2v0",
+          "p3Falseh2"
+        ],
+        [
+          "p3Falsea2v0",
+          "p3Falseu"
+        ],
+        [
+          "p3Falseb1l0",
+          "p3Falseb1v0"
+        ],
+        [
+          "p3Falseb1v0",
+          "p3Falseh1"
+        ],
+        [
+          "p3Falseb1v0",
+          "p3Falsev"
+        ],
+        [
+          "p3Falseb2l0",
+          "p3Falseb2v0"
+        ],
+        [
+          "p3Falseb2v0",
+          "p3Falseh2"
+        ],
+        [
+          "p3Falseb2v0",
+          "p3Falsev"
+        ],
+        [
+          "p3Falsec2",
+          "p3Falseh2"
+        ],
+        [
+          "p3Falser",
+          "p3Falseu"
+        ],
+        [
+          "p3Falser",
+          "p3Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p3Falseh1": [
+          "p3Falsea1v0",
+          "p3Falseb1v0"
+        ],
+        "p3Falseh2": [
+          "p3Falsea2v0",
+          "p3Falseb2v0"
+        ],
+        "c3Falseh1": [
+          "c3Falsea1v2",
+          "c3Falseb1v0"
+        ],
+        "c3Falseh2": [
+          "c3Falseu",
+          "c3Falsev"
+        ]
+      }
+    },
+    {
+      "name": "theta(1, 1, 1, 1)+graft+theta(3, 1, 0, 0)",
+      "circular_order": [
+        "c3Truea1l1",
+        "p3Truea2l0",
+        "p3Truec2",
+        "p3Trueb2l0",
+        "p3Trueb1l0",
+        "p3Truec1",
+        "c3Truec2",
+        "c3Trueb1l0",
+        "c3Truec1",
+        "c3Truea1l2"
+      ],
+      "vertices": 27,
+      "edges": 30,
+      "leaves": 10,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 210,
+      "displayed_splits": 25,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c3Truea1l1",
+          "c3Truea1v1"
+        ],
+        [
+          "c3Truea1l2",
+          "c3Truea1v2"
+        ],
+        [
+          "c3Truea1v0",
+          "c3Truea1v1"
+        ],
+        [
+          "c3Truea1v0",
+          "c3Trueu"
+        ],
+        [
+          "c3Truea1v0",
+          "p3Truea1v0"
+        ],
+        [
+          "c3Truea1v1",
+          "c3Truea1v2"
+        ],
+        [
+          "c3Truea1v2",
+          "c3Trueh1"
+        ],
+        [
+          "c3Trueb1l0",
+          "c3Trueb1v0"
+        ],
+        [
+          "c3Trueb1v0",
+          "c3Trueh1"
+        ],
+        [
+          "c3Trueb1v0",
+          "c3Truev"
+        ],
+        [
+          "c3Truec1",
+          "c3Trueh1"
+        ],
+        [
+          "c3Truec2",
+          "c3Trueh2"
+        ],
+        [
+          "c3Trueh2",
+          "c3Trueu"
+        ],
+        [
+          "c3Trueh2",
+          "c3Truev"
+        ],
+        [
+          "c3Trueu",
+          "c3Truev"
+        ],
+        [
+          "p3Truea1v0",
+          "p3Trueh1"
+        ],
+        [
+          "p3Truea1v0",
+          "p3Trueu"
+        ],
+        [
+          "p3Truea2l0",
+          "p3Truea2v0"
+        ],
+        [
+          "p3Truea2v0",
+          "p3Trueh2"
+        ],
+        [
+          "p3Truea2v0",
+          "p3Trueu"
+        ],
+        [
+          "p3Trueb1l0",
+          "p3Trueb1v0"
+        ],
+        [
+          "p3Trueb1v0",
+          "p3Trueh1"
+        ],
+        [
+          "p3Trueb1v0",
+          "p3Truev"
+        ],
+        [
+          "p3Trueb2l0",
+          "p3Trueb2v0"
+        ],
+        [
+          "p3Trueb2v0",
+          "p3Trueh2"
+        ],
+        [
+          "p3Trueb2v0",
+          "p3Truev"
+        ],
+        [
+          "p3Truec1",
+          "p3Trueh1"
+        ],
+        [
+          "p3Truec2",
+          "p3Trueh2"
+        ],
+        [
+          "p3Truer",
+          "p3Trueu"
+        ],
+        [
+          "p3Truer",
+          "p3Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p3Trueh1": [
+          "p3Truea1v0",
+          "p3Trueb1v0"
+        ],
+        "p3Trueh2": [
+          "p3Truea2v0",
+          "p3Trueb2v0"
+        ],
+        "c3Trueh1": [
+          "c3Truea1v2",
+          "c3Trueb1v0"
+        ],
+        "c3Trueh2": [
+          "c3Trueu",
+          "c3Truev"
+        ]
+      }
+    },
+    {
+      "name": "theta(0, 0, 1, 1)+graft+theta(0, 2, 0, 2)",
+      "circular_order": [
+        "c4Falseb1l1",
+        "c4Falsec1",
+        "c4Falsec2",
+        "c4Falseb2l1",
+        "c4Falseb2l0",
+        "p4Falsea2l0",
+        "p4Falsec2",
+        "p4Falseb2l0"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 17,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c4Falseb1l1",
+          "c4Falseb1v1"
+        ],
+        [
+          "c4Falseb1v0",
+          "c4Falseb1v1"
+        ],
+        [
+          "c4Falseb1v0",
+          "c4Falsev"
+        ],
+        [
+          "c4Falseb1v0",
+          "p4Falseh1"
+        ],
+        [
+          "c4Falseb1v1",
+          "c4Falseh1"
+        ],
+        [
+          "c4Falseb2l0",
+          "c4Falseb2v0"
+        ],
+        [
+          "c4Falseb2l1",
+          "c4Falseb2v1"
+        ],
+        [
+          "c4Falseb2v0",
+          "c4Falseb2v1"
+        ],
+        [
+          "c4Falseb2v0",
+          "c4Falsev"
+        ],
+        [
+          "c4Falseb2v1",
+          "c4Falseh2"
+        ],
+        [
+          "c4Falsec1",
+          "c4Falseh1"
+        ],
+        [
+          "c4Falsec2",
+          "c4Falseh2"
+        ],
+        [
+          "c4Falseh1",
+          "c4Falseu"
+        ],
+        [
+          "c4Falseh2",
+          "c4Falseu"
+        ],
+        [
+          "c4Falseu",
+          "c4Falsev"
+        ],
+        [
+          "p4Falsea2l0",
+          "p4Falsea2v0"
+        ],
+        [
+          "p4Falsea2v0",
+          "p4Falseh2"
+        ],
+        [
+          "p4Falsea2v0",
+          "p4Falseu"
+        ],
+        [
+          "p4Falseb2l0",
+          "p4Falseb2v0"
+        ],
+        [
+          "p4Falseb2v0",
+          "p4Falseh2"
+        ],
+        [
+          "p4Falseb2v0",
+          "p4Falsev"
+        ],
+        [
+          "p4Falsec2",
+          "p4Falseh2"
+        ],
+        [
+          "p4Falseh1",
+          "p4Falseu"
+        ],
+        [
+          "p4Falseh1",
+          "p4Falsev"
+        ],
+        [
+          "p4Falser",
+          "p4Falseu"
+        ],
+        [
+          "p4Falser",
+          "p4Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p4Falseh1": [
+          "p4Falseu",
+          "p4Falsev"
+        ],
+        "p4Falseh2": [
+          "p4Falsea2v0",
+          "p4Falseb2v0"
+        ],
+        "c4Falseh1": [
+          "c4Falseu",
+          "c4Falseb1v1"
+        ],
+        "c4Falseh2": [
+          "c4Falseu",
+          "c4Falseb2v1"
+        ]
+      }
+    },
+    {
+      "name": "theta(0, 0, 1, 1)+graft+theta(0, 2, 0, 2)",
+      "circular_order": [
+        "c4Trueb1l1",
+        "c4Truec1",
+        "c4Truec2",
+        "c4Trueb2l1",
+        "c4Trueb2l0",
+        "p4Truec2",
+        "p4Trueb2l0",
+        "p4Truec1"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 17,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c4Trueb1l1",
+          "c4Trueb1v1"
+        ],
+        [
+          "c4Trueb1v0",
+          "c4Trueb1v1"
+        ],
+        [
+          "c4Trueb1v0",
+          "c4Truev"
+        ],
+        [
+          "c4Trueb1v0",
+          "p4Truea2v0"
+        ],
+        [
+          "c4Trueb1v1",
+          "c4Trueh1"
+        ],
+        [
+          "c4Trueb2l0",
+          "c4Trueb2v0"
+        ],
+        [
+          "c4Trueb2l1",
+          "c4Trueb2v1"
+        ],
+        [
+          "c4Trueb2v0",
+          "c4Trueb2v1"
+        ],
+        [
+          "c4Trueb2v0",
+          "c4Truev"
+        ],
+        [
+          "c4Trueb2v1",
+          "c4Trueh2"
+        ],
+        [
+          "c4Truec1",
+          "c4Trueh1"
+        ],
+        [
+          "c4Truec2",
+          "c4Trueh2"
+        ],
+        [
+          "c4Trueh1",
+          "c4Trueu"
+        ],
+        [
+          "c4Trueh2",
+          "c4Trueu"
+        ],
+        [
+          "c4Trueu",
+          "c4Truev"
+        ],
+        [
+          "p4Truea2v0",
+          "p4Trueh2"
+        ],
+        [
+          "p4Truea2v0",
+          "p4Trueu"
+        ],
+        [
+          "p4Trueb2l0",
+          "p4Trueb2v0"
+        ],
+        [
+          "p4Trueb2v0",
+          "p4Trueh2"
+        ],
+        [
+          "p4Trueb2v0",
+          "p4Truev"
+        ],
+        [
+          "p4Truec1",
+          "p4Trueh1"
+        ],
+        [
+          "p4Truec2",
+          "p4Trueh2"
+        ],
+        [
+          "p4Trueh1",
+          "p4Trueu"
+        ],
+        [
+          "p4Trueh1",
+          "p4Truev"
+        ],
+        [
+          "p4Truer",
+          "p4Trueu"
+        ],
+        [
+          "p4Truer",
+          "p4Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p4Trueh1": [
+          "p4Trueu",
+          "p4Truev"
+        ],
+        "p4Trueh2": [
+          "p4Truea2v0",
+          "p4Trueb2v0"
+        ],
+        "c4Trueh1": [
+          "c4Trueu",
+          "c4Trueb1v1"
+        ],
+        "c4Trueh2": [
+          "c4Trueu",
+          "c4Trueb2v1"
+        ]
+      }
+    },
+    {
+      "name": "theta(1, 0, 1, 0)+graft+theta(2, 0, 1, 1)",
+      "circular_order": [
+        "c5Falsea1l1",
+        "p5Falsea1l0",
+        "p5Falsea2l0",
+        "p5Falsec2",
+        "c5Falsea2l0",
+        "c5Falsec2",
+        "c5Falseb2l0",
+        "c5Falsec1"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 18,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c5Falsea1l1",
+          "c5Falsea1v1"
+        ],
+        [
+          "c5Falsea1v0",
+          "c5Falsea1v1"
+        ],
+        [
+          "c5Falsea1v0",
+          "c5Falseu"
+        ],
+        [
+          "c5Falsea1v0",
+          "p5Falseh1"
+        ],
+        [
+          "c5Falsea1v1",
+          "c5Falseh1"
+        ],
+        [
+          "c5Falsea2l0",
+          "c5Falsea2v0"
+        ],
+        [
+          "c5Falsea2v0",
+          "c5Falseh2"
+        ],
+        [
+          "c5Falsea2v0",
+          "c5Falseu"
+        ],
+        [
+          "c5Falseb2l0",
+          "c5Falseb2v0"
+        ],
+        [
+          "c5Falseb2v0",
+          "c5Falseh2"
+        ],
+        [
+          "c5Falseb2v0",
+          "c5Falsev"
+        ],
+        [
+          "c5Falsec1",
+          "c5Falseh1"
+        ],
+        [
+          "c5Falsec2",
+          "c5Falseh2"
+        ],
+        [
+          "c5Falseh1",
+          "c5Falsev"
+        ],
+        [
+          "c5Falseu",
+          "c5Falsev"
+        ],
+        [
+          "p5Falsea1l0",
+          "p5Falsea1v0"
+        ],
+        [
+          "p5Falsea1v0",
+          "p5Falseh1"
+        ],
+        [
+          "p5Falsea1v0",
+          "p5Falseu"
+        ],
+        [
+          "p5Falsea2l0",
+          "p5Falsea2v0"
+        ],
+        [
+          "p5Falsea2v0",
+          "p5Falseh2"
+        ],
+        [
+          "p5Falsea2v0",
+          "p5Falseu"
+        ],
+        [
+          "p5Falsec2",
+          "p5Falseh2"
+        ],
+        [
+          "p5Falseh1",
+          "p5Falsev"
+        ],
+        [
+          "p5Falseh2",
+          "p5Falsev"
+        ],
+        [
+          "p5Falser",
+          "p5Falseu"
+        ],
+        [
+          "p5Falser",
+          "p5Falsev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p5Falseh1": [
+          "p5Falsea1v0",
+          "p5Falsev"
+        ],
+        "p5Falseh2": [
+          "p5Falsea2v0",
+          "p5Falsev"
+        ],
+        "c5Falseh1": [
+          "c5Falsea1v1",
+          "c5Falsev"
+        ],
+        "c5Falseh2": [
+          "c5Falsea2v0",
+          "c5Falseb2v0"
+        ]
+      }
+    },
+    {
+      "name": "theta(1, 0, 1, 0)+graft+theta(2, 0, 1, 1)",
+      "circular_order": [
+        "c5Truea1l1",
+        "p5Truea2l0",
+        "p5Truec2",
+        "p5Truec1",
+        "c5Truea2l0",
+        "c5Truec2",
+        "c5Trueb2l0",
+        "c5Truec1"
+      ],
+      "vertices": 23,
+      "edges": 26,
+      "leaves": 8,
+      "hybrids": 4,
+      "blob_hybrid_counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "faces": 5,
+      "switchings": 16,
+      "distinct_trees": 8,
+      "quartets": 70,
+      "displayed_splits": 18,
+      "minimum_coefficient": "0",
+      "anchor_coefficient_checks": 0,
+      "weighted_blob_decomposition": [
+        {
+          "ports": 6,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "ports": 4,
+          "hybrids": 2,
+          "masses": [
+            1,
+            1,
+            1,
+            5
+          ]
+        }
+      ],
+      "anchor_negative_count": 0,
+      "anchor_negative_examples": [],
+      "direct_up_down_restrictions": 12,
+      "edge_list": [
+        [
+          "c5Truea1l1",
+          "c5Truea1v1"
+        ],
+        [
+          "c5Truea1v0",
+          "c5Truea1v1"
+        ],
+        [
+          "c5Truea1v0",
+          "c5Trueu"
+        ],
+        [
+          "c5Truea1v0",
+          "p5Truea1v0"
+        ],
+        [
+          "c5Truea1v1",
+          "c5Trueh1"
+        ],
+        [
+          "c5Truea2l0",
+          "c5Truea2v0"
+        ],
+        [
+          "c5Truea2v0",
+          "c5Trueh2"
+        ],
+        [
+          "c5Truea2v0",
+          "c5Trueu"
+        ],
+        [
+          "c5Trueb2l0",
+          "c5Trueb2v0"
+        ],
+        [
+          "c5Trueb2v0",
+          "c5Trueh2"
+        ],
+        [
+          "c5Trueb2v0",
+          "c5Truev"
+        ],
+        [
+          "c5Truec1",
+          "c5Trueh1"
+        ],
+        [
+          "c5Truec2",
+          "c5Trueh2"
+        ],
+        [
+          "c5Trueh1",
+          "c5Truev"
+        ],
+        [
+          "c5Trueu",
+          "c5Truev"
+        ],
+        [
+          "p5Truea1v0",
+          "p5Trueh1"
+        ],
+        [
+          "p5Truea1v0",
+          "p5Trueu"
+        ],
+        [
+          "p5Truea2l0",
+          "p5Truea2v0"
+        ],
+        [
+          "p5Truea2v0",
+          "p5Trueh2"
+        ],
+        [
+          "p5Truea2v0",
+          "p5Trueu"
+        ],
+        [
+          "p5Truec1",
+          "p5Trueh1"
+        ],
+        [
+          "p5Truec2",
+          "p5Trueh2"
+        ],
+        [
+          "p5Trueh1",
+          "p5Truev"
+        ],
+        [
+          "p5Trueh2",
+          "p5Truev"
+        ],
+        [
+          "p5Truer",
+          "p5Trueu"
+        ],
+        [
+          "p5Truer",
+          "p5Truev"
+        ]
+      ],
+      "hybrid_parents": {
+        "p5Trueh1": [
+          "p5Truea1v0",
+          "p5Truev"
+        ],
+        "p5Trueh2": [
+          "p5Truea2v0",
+          "p5Truev"
+        ],
+        "c5Trueh1": [
+          "c5Truea1v1",
+          "c5Truev"
+        ],
+        "c5Trueh2": [
+          "c5Truea2v0",
+          "c5Trueb2v0"
+        ]
+      }
+    }
+  ]
+}

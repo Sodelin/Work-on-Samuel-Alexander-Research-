@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "compiler": "Lean 4.33.1",
+  "compile_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "endpoints": [
+    "switchingChoicesEquiv",
+    "restrictSwitchingChoices_surjective",
+    "extended_switching_keep_on",
+    "extended_switching_keep_off",
+    "switchingSplitChoicesEquiv"
+  ],
+  "source_sha256": "CADF882D6997F5B1294B521D852CAF126F5AA3C281A14BB63D2124DFE2615024",
+  "olean_sha256": "BA0C8207C291C06632BE72336A4BC0A2059CE9D4B60F3CE259CBB73DBEA12CB0",
+  "log_sha256": "0D77C9463B35BD62D7EDD7BDF8DC5F1D1CB584D39256304F990380E5AF075223",
+  "proof_failure_in_latest_log": false,
+  "scope": "Actual raw switching equivalence with hybrid incoming-edge choices; arbitrary subset extension; exact subset/complement product equivalence. No metric or graph decomposition premise."
+}

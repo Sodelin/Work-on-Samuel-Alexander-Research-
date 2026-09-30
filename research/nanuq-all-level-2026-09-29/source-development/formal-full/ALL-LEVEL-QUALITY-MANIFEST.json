@@ -1,0 +1,38 @@
+{
+  "status": "PASS_FOCUSED_QUALITY_CHECK",
+  "structural_witness_bound": 6,
+  "four_total_taxa_insufficient_for_full_parameter_criterion": true,
+  "six_is_proved_minimal": false,
+  "real_parameter_domain_lean_checked": true,
+  "full_all_level_network_theorem_lean_checked": false,
+  "files": [
+    {
+      "name": "ALL-LEVEL-QUALITY.md",
+      "sha256": "41810b019ce053c30111344405e5b865af3616bce177804370d31d1a063b97df"
+    },
+    {
+      "name": "AllLevelParameterDomain.lean",
+      "sha256": "7dd4548f367db4ee5e3aa38e2bbf16d6e84a1fc629b67ec4a24622826b1a1541"
+    },
+    {
+      "name": "AllLevelParameterDomain.log",
+      "sha256": "433a594eb0f97bbcb0e648d608c538230cc3c48bebda198b6bdf5efbd229e1e4"
+    },
+    {
+      "name": "FOUR-TAXON-OBSTRUCTION.md",
+      "sha256": "ba595f7d0eeb0881ec55008178fc0be84531c486a0a9f9b71a670444899cb6df"
+    },
+    {
+      "name": "FOUR-TAXON-OBSTRUCTION.json",
+      "sha256": "5f2248cc85538d8df7fab6dfebf8d6f1882fdc3ee3d386e59011edb1bc952a51"
+    },
+    {
+      "name": "check_four_taxon_obstruction.py",
+      "sha256": "55ff5602f62fedd2b6706cc90dacef22b5b7ae5914514f92a70766d753c9a426"
+    },
+    {
+      "name": "SourceAllLevelAssessment.md",
+      "sha256": "a11ffbb3c512b9d71c1b4cf8ffc066907f749f58a45e059c65333eaf2f9905b4"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "representation_screen_only",
+  "rows": [
+    {
+      "taxa": 3,
+      "duplication_masks": 8,
+      "plane_trees_represented": 36,
+      "distinct_quartet_systems": 1,
+      "anchor_coefficients": 9,
+      "modified_anchor_coefficients": 9
+    },
+    {
+      "taxa": 4,
+      "duplication_masks": 16,
+      "plane_trees_represented": 406,
+      "distinct_quartet_systems": 3,
+      "anchor_coefficients": 108,
+      "modified_anchor_coefficients": 108
+    },
+    {
+      "taxa": 5,
+      "duplication_masks": 32,
+      "plane_trees_represented": 5390,
+      "distinct_quartet_systems": 16,
+      "anchor_coefficients": 1600,
+      "modified_anchor_coefficients": 1600
+    },
+    {
+      "taxa": 6,
+      "duplication_masks": 64,
+      "plane_trees_represented": 78244,
+      "distinct_quartet_systems": 102,
+      "anchor_coefficients": 22950,
+      "modified_anchor_coefficients": 22950
+    }
+  ],
+  "failure": null,
+  "modified_failure": null,
+  "warning": "Completeness of adjacent-pair representation for source bloblets and six-taxon compression requires mathematical review."
+}

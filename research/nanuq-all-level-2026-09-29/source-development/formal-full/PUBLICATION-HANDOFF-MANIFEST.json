@@ -1,0 +1,2314 @@
+{
+  "observed_utc": "2026-09-30T00:01:02.779070+00:00",
+  "source_root": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\field-priorities\\nanuq\\formal-full",
+  "source_editing_status": "Stable; no proof edits planned during handoff. Background rebuild writes only into the checkpoint build directory.",
+  "frozen_checkpoint": "C:\\Users\\Owner\\Documents\\Alexander-Open-Questions-2026-09-29\\field-priorities\\nanuq\\formal-full\\checkpoints\\canonical-theta-20260929T233456Z",
+  "frozen_manifest_sha256": "87f81617b570cf62301ca17c74c1e0eb9688bf44dca75e17d41105cb242b372a",
+  "frozen_source_matches_working_source": true,
+  "frozen_module_count": 94,
+  "all_source_module_count": 117,
+  "previously_compiled_module_count": 114,
+  "previously_compiled_build_order": [
+    "AllLevelParameterDomain",
+    "ThetaFinite",
+    "ThetaFiniteSoundness",
+    "WeightedAnchor",
+    "WeightedCoefficients",
+    "AnchorThetaBridge",
+    "AnchorCompression",
+    "AnchorCompressionOrder",
+    "AnchorAdjacency",
+    "AnchorCanonicalOrder",
+    "QuartetSemantics",
+    "QuartetComposition",
+    "QuartetCompositionDependent",
+    "WeightedOrderedPairs",
+    "WeightedSource",
+    "SourceCompositionBridge",
+    "AnchorComposition",
+    "AnchorIndexTransport",
+    "ThetaArmMetric",
+    "ThetaQuartetValidity",
+    "ThetaPathLengths",
+    "ThetaSupport",
+    "ThetaPathMembership",
+    "AnchorLeafPosition",
+    "AnchorMetricOrder",
+    "AnchorNondegenerate",
+    "AnchorPortPatterns",
+    "AnchorPortCounts",
+    "AnchorPortFibers",
+    "AnchorPortValues",
+    "ThetaCertificate1",
+    "ThetaCertificate2",
+    "ThetaCertificate3",
+    "ThetaCertificate4",
+    "ThetaCertificate5",
+    "ThetaCertificate6",
+    "ThetaCertificate",
+    "ZeroTheta",
+    "AnchorReduction",
+    "ThetaBumpedMetric",
+    "ThetaArmOrder",
+    "ThetaQuartetOrder",
+    "ThetaCompression",
+    "ThetaSupportCertificate1",
+    "ThetaSupportCertificate2",
+    "ThetaSupportCertificate3",
+    "ThetaSupportCertificate4",
+    "ThetaSupportCertificate5",
+    "ThetaSupportCertificate6",
+    "ThetaSupportCertificate",
+    "ThetaSemanticsBridge",
+    "ThetaSourceExact",
+    "WeightedProperties",
+    "ThetaQuartetSymmetry",
+    "SplitReconstruction",
+    "CircularDecomposition",
+    "BoundedThetaTheorem",
+    "AnchorUnboundedTheorem",
+    "CircularThetaCuts",
+    "CircularBasis",
+    "CircularBoundary",
+    "IntervalBoundary",
+    "ThetaSwitchingEdges",
+    "ThetaDisplayedSemantics",
+    "ThetaQuartetEdge",
+    "ThetaEdgeQuartet",
+    "CircularThetaSupport",
+    "CircularSupportCompression",
+    "ThetaCompressedSurjective",
+    "AnchorUnboundedSupport",
+    "ThetaSourceUnbounded",
+    "ThetaWitnessSymmetry",
+    "CircularRestriction",
+    "WeightedRestriction",
+    "ThetaTaxonRestriction",
+    "CanonicalTheta",
+    "CircularMixture",
+    "CircularComposition",
+    "SourceNetwork",
+    "GraphLeaves",
+    "GraphCuts",
+    "GraphBlobs",
+    "GraphBridgeSplits",
+    "GraphSwitching",
+    "GraphBlobOrientation",
+    "GraphBlobLeaves",
+    "GraphSwitchingDegree",
+    "GraphQuartetExistence",
+    "GraphTreePorts",
+    "GraphPorts",
+    "GraphBlobPorts",
+    "GraphPortConsequences",
+    "GraphBlobMedian",
+    "GraphGalls",
+    "GraphPortTransport",
+    "GraphMedianUnique",
+    "GraphPortFibers",
+    "SourceQuartetRelation",
+    "GraphSwitchingExistence",
+    "GraphSwitchingFinite",
+    "GraphSwitchingCuts",
+    "SourceResolve",
+    "GraphQuartetBridge",
+    "GraphSwitchingChoices",
+    "SourceQuartetSymmetry",
+    "RawNanuq",
+    "SourceFacts",
+    "SourceBlobFacts",
+    "ThetaDeletedHybrid",
+    "ThetaFiniteEndpoint",
+    "TreePathCounting",
+    "TwoSwitchings",
+    "VerifiedCheckpoint",
+    "WeightedSmallPorts"
+  ],
+  "additional_modules_outside_frozen_closure": [
+    "AllLevelParameterDomain",
+    "AnchorAdjacency",
+    "AnchorPortPatterns",
+    "AnchorPortCounts",
+    "AnchorPortFibers",
+    "AnchorPortValues",
+    "CircularComposition",
+    "GraphPortConsequences",
+    "GraphBlobMedian",
+    "GraphPortTransport",
+    "GraphMedianUnique",
+    "GraphPortFibers",
+    "GraphQuartetBridge",
+    "GraphSwitchingChoices",
+    "SourceBlobFacts",
+    "ThetaDeletedHybrid",
+    "ThetaFiniteEndpoint",
+    "TreePathCounting",
+    "TwoSwitchings",
+    "WeightedSmallPorts"
+  ],
+  "excluded_modules": [
+    "GraphQuartetPortCounts",
+    "SourceProbe",
+    "ThetaProbe"
+  ],
+  "compiler_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compiler_sha256_on_original_host": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "fresh_checkpoint_rebuild_observation": {
+    "status": "IN_PROGRESS",
+    "completed_modules_observed": 22,
+    "expected_modules": 94,
+    "next_module": "ThetaCertificate6",
+    "note": "File observations plus live runner status; full PASS requires the final receipt."
+  },
+  "complete_raw_all_level_network_theorem_lean_checked": false,
+  "new_all_level_support_audits_independently_reviewed_by_this_lane": false,
+  "historical_compile_evidence_is_not_fresh_rebuild": true,
+  "modules": [
+    {
+      "module": "AllLevelParameterDomain",
+      "path": "AllLevelParameterDomain.lean",
+      "sha256": "7dd4548f367db4ee5e3aa38e2bbf16d6e84a1fc629b67ec4a24622826b1a1541",
+      "local_dependencies": [],
+      "external_imports": [
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AllLevelParameterDomain.log",
+      "log_sha256": "433a594eb0f97bbcb0e648d608c538230cc3c48bebda198b6bdf5efbd229e1e4"
+    },
+    {
+      "module": "AnchorAdjacency",
+      "path": "AnchorAdjacency.lean",
+      "sha256": "a9185abc4c2ca4d55f62e1623c2579f468e98cc10bdd7cf544f1a31643723a4d",
+      "local_dependencies": [
+        "AnchorCompressionOrder"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorAdjacency.log",
+      "log_sha256": "c76eb8ba75f6f2c0bb994a793a105d396e203c65a93b0d81ac1657b094162659"
+    },
+    {
+      "module": "AnchorCanonicalOrder",
+      "path": "AnchorCanonicalOrder.lean",
+      "sha256": "8236c2ec26bc533562a4396ae822c661a413610d85cfc996752033c4adfdd47d",
+      "local_dependencies": [
+        "AnchorCompressionOrder"
+      ],
+      "external_imports": [
+        "Mathlib.Data.List.Sort"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorCanonicalOrder.log",
+      "log_sha256": "a29045a2e95dbb76d5f8efb359631281689ae59261a54fef6e6f573bfdf4104c"
+    },
+    {
+      "module": "AnchorComposition",
+      "path": "AnchorComposition.lean",
+      "sha256": "a591462b5d3dc6353d66d9e904bd94a56ce7eb8e6475808001fcdc2692a08434",
+      "local_dependencies": [
+        "SourceCompositionBridge"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorComposition.log",
+      "log_sha256": "0fb368887f0d954eb522354237119499de822b9aff7a8c4a259f307e5f732ca3"
+    },
+    {
+      "module": "AnchorCompression",
+      "path": "AnchorCompression.lean",
+      "sha256": "d7fd721f78e747ed83a8c94eddd45247b8f749f1ca8e958b920f3e670dfd612a",
+      "local_dependencies": [
+        "AnchorThetaBridge"
+      ],
+      "external_imports": [
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Tactic.FinCases"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorCompression.log",
+      "log_sha256": "9b6df12e425d7f8a51a7cfde4f207645ea4794e9cb0ac129e4a1abeb12d753b6"
+    },
+    {
+      "module": "AnchorCompressionOrder",
+      "path": "AnchorCompressionOrder.lean",
+      "sha256": "590f4e2e9e0d3d0ed401edc121aace742689f91239d599495dc8708a95af7ffb",
+      "local_dependencies": [
+        "AnchorCompression"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorCompressionOrder.log",
+      "log_sha256": "95f8dfae8e95acad6410c26b57cef3d0e64279947aa86f1daf2aee3e55328c71"
+    },
+    {
+      "module": "AnchorIndexTransport",
+      "path": "AnchorIndexTransport.lean",
+      "sha256": "33fa5a52a442bd69c61c2bb12cb7e0abf7f42572cec071c048ee391e6592519d",
+      "local_dependencies": [
+        "AnchorCanonicalOrder"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorIndexTransport.log",
+      "log_sha256": "cb442cfcb27dafd74d198e4c67f42ec2980c8db045b7995b03080ef87eb0f74e"
+    },
+    {
+      "module": "AnchorLeafPosition",
+      "path": "AnchorLeafPosition.lean",
+      "sha256": "1e92d8fff790f36f6b2904999a2a3411f10339e4aac55d8b587c40b6425fe299",
+      "local_dependencies": [
+        "AnchorCompressionOrder",
+        "ThetaPathMembership"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorLeafPosition.log",
+      "log_sha256": "ab4dcbb268058ef71a88fec9be879b4ee7c035441fcbcb035841a44f39d73a8e"
+    },
+    {
+      "module": "AnchorMetricOrder",
+      "path": "AnchorMetricOrder.lean",
+      "sha256": "541a2c3e2ea897f675b39bccff15d9ed3e71b11555a8b1291c359b28285ff0d4",
+      "local_dependencies": [
+        "ThetaPathLengths"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorMetricOrder.log",
+      "log_sha256": "e66ebae3c448d555158e5d6f715d5113f0b6376093e6b9066f0a4a11e39f97b7"
+    },
+    {
+      "module": "AnchorNondegenerate",
+      "path": "AnchorNondegenerate.lean",
+      "sha256": "4b7f6b6e8c969b878c76845870c7ce2f084681b28be7389648a3b64dc190e57a",
+      "local_dependencies": [
+        "AnchorIndexTransport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorNondegenerate.log",
+      "log_sha256": "90ab87d79134bf6f3bc7c45bcadd64b41901a12c9e48d44e92f44890a71e6b83"
+    },
+    {
+      "module": "AnchorPortCounts",
+      "path": "AnchorPortCounts.lean",
+      "sha256": "dd543b01d416497e567a01868108b49be386cb38af29824bed179dacee6cf4be",
+      "local_dependencies": [
+        "AnchorPortPatterns"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorPortCounts.log",
+      "log_sha256": "d49cf1d5a616c5e4ef666a414570332b3ff42d5f2288e748dbf4e4697b3bcd92"
+    },
+    {
+      "module": "AnchorPortFibers",
+      "path": "AnchorPortFibers.lean",
+      "sha256": "e813bf7735df25875e2915cdebb63eb5aacfd2417a5cec7723a12bf11c619396",
+      "local_dependencies": [
+        "AnchorPortPatterns"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorPortFibers.log",
+      "log_sha256": "485805ecd427d2df682b85f2693a3b27260974019c5db6d9190e6a95c57e5c45"
+    },
+    {
+      "module": "AnchorPortPatterns",
+      "path": "AnchorPortPatterns.lean",
+      "sha256": "ed6ab49c2aeb031fe6e867f4ad3eb851674caa865e180513f21dac34aca2a290",
+      "local_dependencies": [
+        "AnchorComposition"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fin.Embedding",
+        "Mathlib.Data.Fintype.Fin",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorPortPatterns.log",
+      "log_sha256": "afc04689213319cdfe32561d3ff3ed205ff1dcd2909f9c17598b4ef3faf7d04b"
+    },
+    {
+      "module": "AnchorPortValues",
+      "path": "AnchorPortValues.lean",
+      "sha256": "d09e14813afd59a7b2cb216a7ddab52c44ed755d0432e9d3f2e5a5b155b4c71a",
+      "local_dependencies": [
+        "AnchorPortPatterns"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorPortValues.log",
+      "log_sha256": "cca250d1559568eba8e38ec00a69e09c3500f0563c51ee45c3e87ef220f21975"
+    },
+    {
+      "module": "AnchorReduction",
+      "path": "AnchorReduction.lean",
+      "sha256": "bde6ac2a62f7dfbc23d92a1c05779152437b7e368ca17e619f4dae6f7bdf7604",
+      "local_dependencies": [
+        "AnchorIndexTransport",
+        "ZeroTheta"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorReduction.log",
+      "log_sha256": "22f65c6d847bebc2392c09b0d5e8b8b35df9f387d8bc44a9e2260fea83a14840"
+    },
+    {
+      "module": "AnchorThetaBridge",
+      "path": "AnchorThetaBridge.lean",
+      "sha256": "9c8510c75962cc79fc7615c07211f84415e07dd9cbeee6b391a47de7ffdf4922",
+      "local_dependencies": [
+        "ThetaFiniteSoundness",
+        "WeightedCoefficients"
+      ],
+      "external_imports": [
+        "Mathlib.Data.List.Nodup",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorThetaBridge.log",
+      "log_sha256": "cf4d565bc3e96a4f9e9a996f8fc3d223584005b6ba498121160714816300e04c"
+    },
+    {
+      "module": "AnchorUnboundedSupport",
+      "path": "AnchorUnboundedSupport.lean",
+      "sha256": "6f7558f3629bc3bfa880f4800fbf1f094cea3242324f4da030138c9744466fb2",
+      "local_dependencies": [
+        "AnchorUnboundedTheorem",
+        "CircularSupportCompression",
+        "ThetaCompressedSurjective"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorUnboundedSupport.log",
+      "log_sha256": "dcf151c39ee4c5391733cb75b95d14c0bfd41726bffd3a29c9ed5ca5cf8eefef"
+    },
+    {
+      "module": "AnchorUnboundedTheorem",
+      "path": "AnchorUnboundedTheorem.lean",
+      "sha256": "5b4b6e4aa3bd7a2da7dbed708ff3db88eb0d28764cb54182080404d3974401c5",
+      "local_dependencies": [
+        "ThetaCompression",
+        "AnchorReduction",
+        "BoundedThetaTheorem"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "AnchorUnboundedTheorem.log",
+      "log_sha256": "cbc30c6db8e522d985f3b904f985a1a527a14e259eea009e89845936f56914bf"
+    },
+    {
+      "module": "BoundedThetaTheorem",
+      "path": "BoundedThetaTheorem.lean",
+      "sha256": "36cb297d390341e0c7207719bd6ce6aaeb442204d9d53657db37c3c9c13e3e7b",
+      "local_dependencies": [
+        "ThetaCertificate",
+        "ThetaSupportCertificate",
+        "ThetaQuartetSymmetry",
+        "ThetaSourceExact",
+        "AnchorThetaBridge",
+        "CircularDecomposition",
+        "WeightedProperties"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.Positivity"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "BoundedThetaTheorem.log",
+      "log_sha256": "29e9fd8d1e55311c958b82cdfd606397fa43cf56bbfaee6d6ed556df76720ab5"
+    },
+    {
+      "module": "CanonicalTheta",
+      "path": "CanonicalTheta.lean",
+      "sha256": "4034d9c7c6e54b4c5cfd2dec85f59b66206157e15051528db63a4a7f57d73826",
+      "local_dependencies": [
+        "AnchorUnboundedSupport",
+        "ThetaSourceUnbounded",
+        "ThetaTaxonRestriction"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CanonicalTheta.log",
+      "log_sha256": "e7d3ae25c72279adec13b65a2a1afc0ddbcbb0ce541a6e9daa1852fb7371e985"
+    },
+    {
+      "module": "CircularBasis",
+      "path": "CircularBasis.lean",
+      "sha256": "3912f9f74330b4b9dc297a747d0f1ad7f0bea7861dfbb08e06effafcabbbc9a3",
+      "local_dependencies": [
+        "CircularDecomposition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularBasis.log",
+      "log_sha256": "5d7f6ba528e15e3d9e2ae0b6df8586283ae9f6ee0b8ba014d479a1f8bfdadc4d"
+    },
+    {
+      "module": "CircularBoundary",
+      "path": "CircularBoundary.lean",
+      "sha256": "b44dc680bce0b3c45685147bbcdc7ce30a0b69765b1f93387678de579ca03fde",
+      "local_dependencies": [
+        "CircularBasis"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.Linarith"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularBoundary.log",
+      "log_sha256": "56b93c22b2fc15efa1b7a261362cecd283e56e41b959b3fe3975708b0509a269"
+    },
+    {
+      "module": "CircularComposition",
+      "path": "CircularComposition.lean",
+      "sha256": "dc17a25ac630a14b27d4b4702d29379f761e8980372cfd02c8063fe0ca419d59",
+      "local_dependencies": [
+        "CircularMixture",
+        "CircularDecomposition",
+        "AnchorComposition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularComposition.log",
+      "log_sha256": "64dbb0e7e1cc4f3c4cf5b69e5363f10b29e4c2bcd32a7966dd9cdf075f86ce11"
+    },
+    {
+      "module": "CircularDecomposition",
+      "path": "CircularDecomposition.lean",
+      "sha256": "d2c8754b0dcec746ee5b22c0aee4f5ee841d193fd13a137e671a16a6d0d00e6c",
+      "local_dependencies": [
+        "SplitReconstruction",
+        "WeightedOrderedPairs"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularDecomposition.log",
+      "log_sha256": "d67d46509e7f98349ea5816ed26d83f240809301daf90aba43bdde8ab3aa188e"
+    },
+    {
+      "module": "CircularMixture",
+      "path": "CircularMixture.lean",
+      "sha256": "faab0bda82a14617662a17fe273833e7f74355c01118e820f50f7e9a7474f950",
+      "local_dependencies": [
+        "CircularBasis"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularMixture.log",
+      "log_sha256": "220893abc6a6d40a68118083065e6596027fed5a4cdb2b5e6946c1a1582aa276"
+    },
+    {
+      "module": "CircularRestriction",
+      "path": "CircularRestriction.lean",
+      "sha256": "9e6aab99cb17bfc5760d8153ebd25b10e5311c38f6eb613d4f9a395055e9fc64",
+      "local_dependencies": [
+        "CircularDecomposition"
+      ],
+      "external_imports": [
+        "Lean.Elab.Tactic.Omega"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularRestriction.log",
+      "log_sha256": "89b7d008e987bd85f2cccdec854bca6a1d8230fe21c38352fa4a26a105f7a899"
+    },
+    {
+      "module": "CircularSupportCompression",
+      "path": "CircularSupportCompression.lean",
+      "sha256": "cc1346dc7a700ae30b4a1416a2dfdbb11667d2087db4840efa8dcc193cbfc884",
+      "local_dependencies": [
+        "CircularThetaSupport",
+        "AnchorNondegenerate",
+        "ThetaCompression"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularSupportCompression.log",
+      "log_sha256": "e3e907a2613893850592fca2eb02b5a950d47b6c0ea6b3911059a79a488d5fd8"
+    },
+    {
+      "module": "CircularThetaCuts",
+      "path": "CircularThetaCuts.lean",
+      "sha256": "0f50f95d93815ce6563e72172cd09aee287147c345d17613001b1047a599d3d7",
+      "local_dependencies": [
+        "AnchorLeafPosition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularThetaCuts.log",
+      "log_sha256": "479bb34647017aa7f4b4a64286ce0cf4b6d41b97e372614bfc86d59a4a3ec301"
+    },
+    {
+      "module": "CircularThetaSupport",
+      "path": "CircularThetaSupport.lean",
+      "sha256": "91678ec43060084f249de989a39947f0a755f4223811a64ac3b75add5b9dc600",
+      "local_dependencies": [
+        "CircularThetaCuts",
+        "IntervalBoundary",
+        "ThetaDisplayedSemantics",
+        "ThetaEdgeQuartet"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "CircularThetaSupport.log",
+      "log_sha256": "3d3e9cab7dbf0a551281447ee43dcf2ca9348c16ea56578a801abc5f6818595c"
+    },
+    {
+      "module": "GraphBlobLeaves",
+      "path": "GraphBlobLeaves.lean",
+      "sha256": "c463aa804e4421b527774cb029b59001934b7c4d90a9af8c8341c1645109be8c",
+      "local_dependencies": [
+        "GraphBlobOrientation"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphBlobLeaves.log",
+      "log_sha256": "ef7ccec9fdac8d3e69305396ab6a812685b030b373f60d98e1e9ce0b5591f4a2"
+    },
+    {
+      "module": "GraphBlobMedian",
+      "path": "GraphBlobMedian.lean",
+      "sha256": "c79649f53ea303cf3c88164036e81cd42ea342dc879b2ec0c4677420849415e2",
+      "local_dependencies": [
+        "GraphBlobPorts",
+        "GraphPortConsequences"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphBlobMedian.log",
+      "log_sha256": "359a422166d04706d5e8e432cabb0b8604847763d3b560f1756fb6b4c6c772f5"
+    },
+    {
+      "module": "GraphBlobOrientation",
+      "path": "GraphBlobOrientation.lean",
+      "sha256": "e0a32840d7d988675ad8c7639ebf26034e049236a396cbc584620994ef44d7bc",
+      "local_dependencies": [
+        "GraphBlobs",
+        "GraphBridgeSplits",
+        "GraphSwitching"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphBlobOrientation.log",
+      "log_sha256": "ac144b3c0ccbc10cdf399e68ff6a8c6b5b4b244b323d9e7cf52a681164c0b5cb"
+    },
+    {
+      "module": "GraphBlobPorts",
+      "path": "GraphBlobPorts.lean",
+      "sha256": "92b89310ab8ee5d1cfec3ca79ec70a5a0fce2142f2a4dcd13dfc7e494d09cae1",
+      "local_dependencies": [
+        "GraphBlobLeaves",
+        "GraphTreePorts",
+        "GraphPorts"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphBlobPorts.log",
+      "log_sha256": "aff6fc8e8273b0d959de1e0dff1b4b89254ff1eb4657b6e8fb2cc6543030b3c0"
+    },
+    {
+      "module": "GraphBlobs",
+      "path": "GraphBlobs.lean",
+      "sha256": "aba6c7b87e9e4a0cd46c3637efc19cab4f2e564e7acd4c3eac265989239d4acb",
+      "local_dependencies": [
+        "GraphCuts"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphBlobs.log",
+      "log_sha256": "34aed337343125b083eb808f31778e64ba881310ea0729ce80ffc6ee3974bcc6"
+    },
+    {
+      "module": "GraphBridgeSplits",
+      "path": "GraphBridgeSplits.lean",
+      "sha256": "4ccf9c017dcbcccfcd967e5870e942318f9ef82758f6a9bbdeeb1a9e42e5d95d",
+      "local_dependencies": [
+        "GraphCuts"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphBridgeSplits.log",
+      "log_sha256": "7f0662c1d8263df82b6267013645b08189a6dca779bd706cc9b47049bd35e8f5"
+    },
+    {
+      "module": "GraphCuts",
+      "path": "GraphCuts.lean",
+      "sha256": "a877489ce00643ef1bf96b14d484453797891c718445ce157aa7a54beefce2e5",
+      "local_dependencies": [
+        "GraphLeaves"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphCuts.log",
+      "log_sha256": "5e43748c0821751afcff55b11e3f457eac734a9a907f145f1c9c30478a4daaf1"
+    },
+    {
+      "module": "GraphGalls",
+      "path": "GraphGalls.lean",
+      "sha256": "c86a2efdb01f4fdc7a0634bfc68d56498066e0d1dce8ff323f12130067818f14",
+      "local_dependencies": [
+        "SourceNetwork"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphGalls.log",
+      "log_sha256": "ee141c362b87e8b0d3782f3757d0b3fe75712459375f2f836cb33e1a0daea158"
+    },
+    {
+      "module": "GraphLeaves",
+      "path": "GraphLeaves.lean",
+      "sha256": "9d7e0f1756768fe32d4b38514c36bd961a306fb21dcf6b7fb27f5e6285a5f49b",
+      "local_dependencies": [
+        "SourceNetwork"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fintype.EquivFin"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphLeaves.log",
+      "log_sha256": "b3191ba476b341c634ffdf69d93cb25e80755721b838dc1369bc24e67a33d4cc"
+    },
+    {
+      "module": "GraphMedianUnique",
+      "path": "GraphMedianUnique.lean",
+      "sha256": "b8b73307974fab464d92fbc9282455a308a96fc4ec44b1d63c4b42a35c707833",
+      "local_dependencies": [
+        "GraphBlobMedian",
+        "GraphPortTransport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphMedianUnique.log",
+      "log_sha256": "83d7ba69961b8bfda54c68d262f60936851a66e3890cac0e9d094a81dfdd024c"
+    },
+    {
+      "module": "GraphPortConsequences",
+      "path": "GraphPortConsequences.lean",
+      "sha256": "9533c42170e0e3d65b460b1dfe0b233e6b684f4e5f36ff469112f236a6ac0e8d",
+      "local_dependencies": [
+        "GraphTreePorts"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false
+    },
+    {
+      "module": "GraphPortFibers",
+      "path": "GraphPortFibers.lean",
+      "sha256": "62e02501334af0bafd361f51f6eaceca0fdc739bd2a0cd37866b915ebe02a29a",
+      "local_dependencies": [
+        "GraphBlobPorts",
+        "GraphPortTransport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphPortFibers.log",
+      "log_sha256": "48b7e1afef6cc4db89674eae65b15aa55b2356de30ce13217d2677f32bd6574c"
+    },
+    {
+      "module": "GraphPorts",
+      "path": "GraphPorts.lean",
+      "sha256": "3b32fa3c21ce78703e2367b3fe8d593219c4640fed17b16826729262f5047ce1",
+      "local_dependencies": [
+        "GraphCuts"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphPorts.log",
+      "log_sha256": "d0438736fa4d489079880cabb630ec31c96aaba5a3a79e64d3538d4ad12682ba"
+    },
+    {
+      "module": "GraphPortTransport",
+      "path": "GraphPortTransport.lean",
+      "sha256": "baa475f11f10daaff0473bf7b4afeab4c6f1d04de1c2cdeea87711b2df9f3df0",
+      "local_dependencies": [
+        "GraphTreePorts",
+        "GraphBridgeSplits"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphPortTransport.log",
+      "log_sha256": "48601e2a651f976e1122aa6a76e581e6ca5baf236a35de67faf916d37f4731fb"
+    },
+    {
+      "module": "GraphQuartetBridge",
+      "path": "GraphQuartetBridge.lean",
+      "sha256": "36b000eb4b184564e9c7f366988d7b9bd4962316f301315bb459e2a0520a80f7",
+      "local_dependencies": [
+        "GraphPortFibers",
+        "AnchorPortFibers",
+        "SourceResolve"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphQuartetBridge.log",
+      "log_sha256": "a7c3d18b593d3c351e8d583bc461e455380634115611635d6c394e16fc4cb3d2"
+    },
+    {
+      "module": "GraphQuartetExistence",
+      "path": "GraphQuartetExistence.lean",
+      "sha256": "5a93a3465db35235c11c65dfd72c38042fd91056ee68bef165028fed5a110f91",
+      "local_dependencies": [
+        "GraphSwitchingDegree"
+      ],
+      "external_imports": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphQuartetExistence.log",
+      "log_sha256": "8aeac451c82d547a1e55445a640fb48b62299d03ef721b85b615ddd5bf6d4d65"
+    },
+    {
+      "module": "GraphQuartetPortCounts",
+      "path": "GraphQuartetPortCounts.lean",
+      "sha256": "56eb26a6abf08a69eb0e41187b02a8131096459f6707ab83898b1d7800a68fe0",
+      "local_dependencies": [
+        "GraphMedianUnique",
+        "AnchorPortCounts"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "excluded_failed_draft",
+      "cached_object_exists": false,
+      "cached_object_at_least_as_new_as_source": false,
+      "latest_log_contains_error_or_sorry": true,
+      "log_path": "GraphQuartetPortCounts.log",
+      "log_sha256": "158c209820a49ae886eb718965134208b298ada46ccd340ebf5258c10b97ac7d"
+    },
+    {
+      "module": "GraphSwitching",
+      "path": "GraphSwitching.lean",
+      "sha256": "4e0cb71eb30fe5bdbfa531d8a26293ff468ab920abc5c270b536cf117107f502",
+      "local_dependencies": [
+        "GraphBlobs"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphSwitching.log",
+      "log_sha256": "c70d352bf3d9a39ded11ed093cc0f4b4e652e55a94ad5dda05e050d678965cb5"
+    },
+    {
+      "module": "GraphSwitchingChoices",
+      "path": "GraphSwitchingChoices.lean",
+      "sha256": "cadf882d6997f5b1294b521d852caf126f5aa3c281a14bb63d2124dfe2615024",
+      "local_dependencies": [
+        "GraphSwitchingFinite"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphSwitchingChoices.log",
+      "log_sha256": "0d77c9463b35bd62d7edd7bdf8dc5f1d1cb584d39256304f990380e5af075223"
+    },
+    {
+      "module": "GraphSwitchingCuts",
+      "path": "GraphSwitchingCuts.lean",
+      "sha256": "e04d2394fd833218202353eef91e04e65a69f00ce240de25a945326c0fb5ffe9",
+      "local_dependencies": [
+        "GraphSwitchingDegree",
+        "GraphGalls"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphSwitchingCuts.log",
+      "log_sha256": "8f1f179635b61688abd39c9eeebdacc10d3e69769a3ad80c5bb049beda4f1e9a"
+    },
+    {
+      "module": "GraphSwitchingDegree",
+      "path": "GraphSwitchingDegree.lean",
+      "sha256": "4c116a28c16063779b219d66a98cbdb8b78ce3644ae06f91f6460e420f0238ae",
+      "local_dependencies": [
+        "GraphSwitching"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphSwitchingDegree.log",
+      "log_sha256": "fc57cc1478c84d2915a90b683733a7124ef3c7fa5160ca9bf112975daa91e39b"
+    },
+    {
+      "module": "GraphSwitchingExistence",
+      "path": "GraphSwitchingExistence.lean",
+      "sha256": "85ecb01408dcc276ce20b8f137c87be65a1501d57f3bd8a564a09aed29fef715",
+      "local_dependencies": [
+        "GraphSwitching"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphSwitchingExistence.log",
+      "log_sha256": "32378ffef09e39ca70a5c3de70f9717e4f8ce9a0fb3df666c53c87756f2b40ad"
+    },
+    {
+      "module": "GraphSwitchingFinite",
+      "path": "GraphSwitchingFinite.lean",
+      "sha256": "5c2dfc89591d0458cd603960a7bb3ef43265d9bf71143f1793dae92ddf04efe6",
+      "local_dependencies": [
+        "GraphSwitchingExistence"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fintype.Pi"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphSwitchingFinite.log",
+      "log_sha256": "de0b00758f7203e0c0f433cffcfc625f0dc3cc40ef6c46102dc6e1e3f4cccfe8"
+    },
+    {
+      "module": "GraphTreePorts",
+      "path": "GraphTreePorts.lean",
+      "sha256": "4e421484975b1af5129204f58d4fa9bd497ebc7018588fcb3da44aa0f325812c",
+      "local_dependencies": [
+        "GraphQuartetExistence"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "GraphTreePorts.log",
+      "log_sha256": "4785ea3b1a254b649279e9255241637915b0a3381b80bc396d67abe2dc40fd6c"
+    },
+    {
+      "module": "IntervalBoundary",
+      "path": "IntervalBoundary.lean",
+      "sha256": "fafb096133ada19c0c28a8807a42b41c27e8e87124b39d618f28b39b753daa24",
+      "local_dependencies": [
+        "CircularBoundary"
+      ],
+      "external_imports": [
+        "Lean.Elab.Tactic.Omega"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "IntervalBoundary.log",
+      "log_sha256": "e34b8c24ecd9b121c79b438ed4a6cc355dc9e60edfcfb4f900a0a54fe0cff4da"
+    },
+    {
+      "module": "QuartetComposition",
+      "path": "QuartetComposition.lean",
+      "sha256": "def8ed02bb839da2ea1badfc29f28da239a7d9b9cb82262d0f87676b6e470657",
+      "local_dependencies": [
+        "QuartetSemantics"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.Ring"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "QuartetComposition.log",
+      "log_sha256": "0263cb9a46412adbb4e87e3aecbdbb88ecb96cdeb65c3022f273ace74a0af4d6"
+    },
+    {
+      "module": "QuartetCompositionDependent",
+      "path": "QuartetCompositionDependent.lean",
+      "sha256": "df4d485f62ea51d9b848f0dca074011d6d1d6f34dfee0a16073166c125900109",
+      "local_dependencies": [
+        "QuartetComposition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "QuartetCompositionDependent.log",
+      "log_sha256": "0593d8b316d12bf39043f3beca0ecc778cba8a010486e21ce2695aa936ca782c"
+    },
+    {
+      "module": "QuartetSemantics",
+      "path": "QuartetSemantics.lean",
+      "sha256": "dd403a92e23ccf13fcb3c68bd109b28bd64b64774bd5ed0db26c3c7ce9c2adc8",
+      "local_dependencies": [],
+      "external_imports": [
+        "Mathlib.Data.Rat.BigOperators",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.FieldSimp"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "QuartetSemantics.log",
+      "log_sha256": "58944d39509dac9050ebfa749d2b2722acd603e107a8f6521a1d3cbf7feb42a2"
+    },
+    {
+      "module": "RawNanuq",
+      "path": "RawNanuq.lean",
+      "sha256": "b6561aa41b7cf6596db7ef006dcfc344b95e8a50a38021607f86642cf7aa144f",
+      "local_dependencies": [
+        "SourceQuartetSymmetry",
+        "SourceCompositionBridge",
+        "WeightedProperties"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.FinCases"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "RawNanuq.log",
+      "log_sha256": "2f7e88aa8dec329c48e5542e39e1db4f902718509c06ce8e87352de1460e901c"
+    },
+    {
+      "module": "SourceBlobFacts",
+      "path": "SourceBlobFacts.lean",
+      "sha256": "75e163666a8d245bc72cd7b8f927b9dc76ca059afa350b372f846ef9343c2674",
+      "local_dependencies": [
+        "SourceFacts",
+        "GraphMedianUnique",
+        "GraphPortFibers"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceBlobFacts.log",
+      "log_sha256": "eb3977a846bac372ddf26cefd7f40afeb4552e5fd7742dde56110957cf03dced"
+    },
+    {
+      "module": "SourceCompositionBridge",
+      "path": "SourceCompositionBridge.lean",
+      "sha256": "ebdd0ba9061ce820e2506a346e2e8e59b03e9b24c1b38620a60bc4b1c2af57a7",
+      "local_dependencies": [
+        "QuartetCompositionDependent",
+        "WeightedOrderedPairs",
+        "WeightedSource"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceCompositionBridge.log",
+      "log_sha256": "2f4569fd065de3a83f91bd879d839813b69779bbf24e82c9bf76d1d0c59a33f0"
+    },
+    {
+      "module": "SourceFacts",
+      "path": "SourceFacts.lean",
+      "sha256": "d7a6cd918ae69d912e45be593ae605e88c0517ecea0451406dab62efd04c20b0",
+      "local_dependencies": [
+        "GraphGalls",
+        "GraphPorts",
+        "GraphBlobs",
+        "GraphSwitchingCuts",
+        "GraphSwitchingFinite",
+        "GraphBridgeSplits",
+        "SourceResolve"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceFacts.log",
+      "log_sha256": "c6aa301795f56e0d3377f5108c4aa2a8dd19da8fa168d9ea3ae5874e1ff6c41a"
+    },
+    {
+      "module": "SourceNetwork",
+      "path": "SourceNetwork.lean",
+      "sha256": "0e0a2a3ed6bdbbd7242980a6428ebf8ec0ec85d077d2ccf9cd8dfef4e1bd2eb7",
+      "local_dependencies": [],
+      "external_imports": [
+        "Mathlib.Data.Fintype.Card",
+        "Mathlib.Logic.Relation"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceNetwork.log",
+      "log_sha256": "1f182acad7519ec8b67e3193275a386de2119c476e8744fdc3d2469563152b7a"
+    },
+    {
+      "module": "SourceProbe",
+      "path": "SourceProbe.lean",
+      "sha256": "891f5a1bb8f479af2a10f822d003178ac7b4017cf230a1eba905c238ab8f7338",
+      "local_dependencies": [
+        "SourceNetwork"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fintype.EquivFin"
+      ],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "excluded_probe",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceProbe.log",
+      "log_sha256": "c4e623789febb4be60b879bacf6648221895122bd025178b2c814ce986199ce2"
+    },
+    {
+      "module": "SourceQuartetRelation",
+      "path": "SourceQuartetRelation.lean",
+      "sha256": "defffabb0a8147a0c857889d3c6be386f79399b6c0e4b45b6aa22dff7794a91e",
+      "local_dependencies": [
+        "GraphBridgeSplits",
+        "QuartetSemantics"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceQuartetRelation.log",
+      "log_sha256": "192dbcebadfb346dee8f942c3c1ca9af159cd4016770a5a1f744f24e948dee01"
+    },
+    {
+      "module": "SourceQuartetSymmetry",
+      "path": "SourceQuartetSymmetry.lean",
+      "sha256": "f2cc8ad0f73d2968a2560ab5b6bfd8fbce3895fe38b85d41a5ae3ac798365f27",
+      "local_dependencies": [
+        "SourceResolve"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceQuartetSymmetry.log",
+      "log_sha256": "0b9c171fcef46cec256da7401316a259df1add54aa4c2073c5b0d2a2310bce8a"
+    },
+    {
+      "module": "SourceResolve",
+      "path": "SourceResolve.lean",
+      "sha256": "943d2919ce475439e9e6a6574c1ae7fcc1174b039eed93374d45acf5d1116e81",
+      "local_dependencies": [
+        "SourceQuartetRelation",
+        "GraphQuartetExistence",
+        "GraphSwitchingFinite",
+        "GraphSwitchingCuts"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fintype.Powerset"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SourceResolve.log",
+      "log_sha256": "7151c59fa615b505056923fdce3ff734b18cd6df0df00983cb99062c8a9e4f0c"
+    },
+    {
+      "module": "SplitReconstruction",
+      "path": "SplitReconstruction.lean",
+      "sha256": "b6bf038c3d49c5a56a1ada6c8f737e30b77a0593cd15505b12282da561d8ea0c",
+      "local_dependencies": [
+        "WeightedCoefficients"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.Ring",
+        "Lean.Elab.Tactic.Omega"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "SplitReconstruction.log",
+      "log_sha256": "3776d0dbd66b4777710403c3c8f1e278d36013cc0cb0c86cf69ee939fc02f148"
+    },
+    {
+      "module": "ThetaArmMetric",
+      "path": "ThetaArmMetric.lean",
+      "sha256": "7c9ef862f95dc589d5b5a417c45f48c3d92a92dbbbf7ed7c8f0179906021a108",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Data.Fintype.Fin",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaArmMetric.log",
+      "log_sha256": "7766e68cc7ee4b64dd922a2a58f9321c014f3b95cb7188961ee6728b3c208a84"
+    },
+    {
+      "module": "ThetaArmOrder",
+      "path": "ThetaArmOrder.lean",
+      "sha256": "e7262c7ad92f427c278fe923cad928515d716a5bb747b5169cf9476324f63715",
+      "local_dependencies": [
+        "ThetaArmMetric"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaArmOrder.log",
+      "log_sha256": "dabbe2692422add1daef058604a1fe2110e47dde2c0a5debd2f63a4eb7535c0a"
+    },
+    {
+      "module": "ThetaBumpedMetric",
+      "path": "ThetaBumpedMetric.lean",
+      "sha256": "7fc0c20e700f7dfffd6cca5f117f70f6be43315fcb944e97ff4f3f8fd4a71457",
+      "local_dependencies": [
+        "ThetaPathLengths"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaBumpedMetric.log",
+      "log_sha256": "66a7c1d2bdf0eb56a3909081274e62b34e93eed668e62a10ef48346c0b0b1831"
+    },
+    {
+      "module": "ThetaCertificate",
+      "path": "ThetaCertificate.lean",
+      "sha256": "fc225443c4714bfcbf7d57aedb68e23d5d2d700e17a3cfb43923288e4243554c",
+      "local_dependencies": [
+        "ThetaCertificate1",
+        "ThetaCertificate2",
+        "ThetaCertificate3",
+        "ThetaCertificate4",
+        "ThetaCertificate5",
+        "ThetaCertificate6"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate.log",
+      "log_sha256": "08e85413602d27bc90a7070281cd0d269b345117a84093ef149fba753a8dc990"
+    },
+    {
+      "module": "ThetaCertificate1",
+      "path": "ThetaCertificate1.lean",
+      "sha256": "ad95e06ac5646c4f6cca1ecb33aa29dba6d1bbb682737b43a54d0947b66f2d4d",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate1.log",
+      "log_sha256": "a17d3fc4022f29c2609872815cfca1fa5c9df8f8c8f20a16a207f8086d33c201"
+    },
+    {
+      "module": "ThetaCertificate2",
+      "path": "ThetaCertificate2.lean",
+      "sha256": "c28935f2c1e57e813212cd3059efdf3855ab4ac029f066bb0d2e28b80d4a5aec",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate2.log",
+      "log_sha256": "8c867d20b6305d0295a48b24d2ca2dec9f6c0ff4fc22f1ef200265d989355c68"
+    },
+    {
+      "module": "ThetaCertificate3",
+      "path": "ThetaCertificate3.lean",
+      "sha256": "04bd754258baf568833bbc86b8617fa6c87b9e168b76e982199ca1dde2b0c862",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate3.log",
+      "log_sha256": "4945e0d8804e607b74586f127aab12be7ca88514d8dd3c0ce81184724bf25f4d"
+    },
+    {
+      "module": "ThetaCertificate4",
+      "path": "ThetaCertificate4.lean",
+      "sha256": "1fbbe003af250bde7ca67d5838195da099ec3499655d76d3fda32b70c940cdc4",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate4.log",
+      "log_sha256": "efc3d3d6257cbccc33282e8f0b55fc92e30a2044127df84e8c407525e4964b59"
+    },
+    {
+      "module": "ThetaCertificate5",
+      "path": "ThetaCertificate5.lean",
+      "sha256": "e541af41b215cf473e63d4e968fdc42b31fe74f6384387f66de61f1ebbd7fbab",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate5.log",
+      "log_sha256": "06ce839a0de5191b6384b8c5820316d7ac09d3b27828a225d4a9c4555d7bc1c5"
+    },
+    {
+      "module": "ThetaCertificate6",
+      "path": "ThetaCertificate6.lean",
+      "sha256": "dfad0f35a242cfd5f8626dd46a95024be0e6ca91aad3ee60d0e38cb49081c786",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCertificate6.log",
+      "log_sha256": "fa3de125f388eac2693dcc956c938378b1a8e0e0793ac6534c4f804db200afa5"
+    },
+    {
+      "module": "ThetaCompressedSurjective",
+      "path": "ThetaCompressedSurjective.lean",
+      "sha256": "56b7fdc499a0fb4abd6e9072e13b6763bbc77b2e430a2390895782005903972f",
+      "local_dependencies": [
+        "AnchorIndexTransport",
+        "AnchorLeafPosition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCompressedSurjective.log",
+      "log_sha256": "ecc40790d67a9b316ed06368cfe1da1cc0f99895484824f022c3f86d1870b212"
+    },
+    {
+      "module": "ThetaCompression",
+      "path": "ThetaCompression.lean",
+      "sha256": "71d55cdd4069f6c13ba4b490860f13b02231d70cf96fe5c5d2ebb6e4b13032b8",
+      "local_dependencies": [
+        "ThetaQuartetOrder",
+        "AnchorMetricOrder"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaCompression.log",
+      "log_sha256": "8c2ac9e055e1b83a506ddaff3019f66ef54e723f8cfddb3c118023cf67a16316"
+    },
+    {
+      "module": "ThetaDeletedHybrid",
+      "path": "ThetaDeletedHybrid.lean",
+      "sha256": "0fa4129a59965af3f40bfa84ef5e5db485c75e9b28d09787256e9e71fea7936c",
+      "local_dependencies": [
+        "ThetaSourceUnbounded"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaDeletedHybrid.log",
+      "log_sha256": "1a29a55db9e1a254e3e87b2cdd4e489c4f4f95a4821c4fd70572d4b7e7c1aa52"
+    },
+    {
+      "module": "ThetaDisplayedSemantics",
+      "path": "ThetaDisplayedSemantics.lean",
+      "sha256": "2cbf127dbfaa27db70998f8b7cdefab1dab67b98bff6755c1659786bca705006",
+      "local_dependencies": [
+        "ThetaSwitchingEdges",
+        "CircularBasis"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaDisplayedSemantics.log",
+      "log_sha256": "619fd2f612c344bc4164a6f70885a7c22a03297b833adf2dd5442df6027ab874"
+    },
+    {
+      "module": "ThetaEdgeQuartet",
+      "path": "ThetaEdgeQuartet.lean",
+      "sha256": "c8d40cd4317adc6e889e6049e252bf52d9e7411a14dbaf3cad7c7ee3eb0b10e2",
+      "local_dependencies": [
+        "ThetaQuartetEdge"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaEdgeQuartet.log",
+      "log_sha256": "bdc0f00fabb8880303cabfa21bff7331b885f7735d2cacd9de6634a52ea2fe9e"
+    },
+    {
+      "module": "ThetaFinite",
+      "path": "ThetaFinite.lean",
+      "sha256": "db376ff9cc79172e846396d74ef5592554e8992e307452033318d8696eb5c5a3",
+      "local_dependencies": [],
+      "external_imports": [
+        "Mathlib.Data.Rat.Lemmas",
+        "Mathlib.Data.List.Range"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false
+    },
+    {
+      "module": "ThetaFiniteEndpoint",
+      "path": "ThetaFiniteEndpoint.lean",
+      "sha256": "7ec892b1b6a2447b2d4e5b1dab43ae9d6e7a8e22da0dba120b5ac5d0ef3519f7",
+      "local_dependencies": [
+        "ThetaSupportCertificate",
+        "AnchorThetaBridge",
+        "ThetaSourceExact"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaFiniteEndpoint.log",
+      "log_sha256": "615d8accab52b3d69fa337753cf24174517f0021018cb189a64ba7e4219cc044"
+    },
+    {
+      "module": "ThetaFiniteSoundness",
+      "path": "ThetaFiniteSoundness.lean",
+      "sha256": "f2f7630faa5d2b9c9bf047a9f82f2209f391d1d85a4c0d074a67e79441b4fc92",
+      "local_dependencies": [
+        "ThetaFinite"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaFiniteSoundness.log",
+      "log_sha256": "11f788e71cd065c97b1e401f88d7651cba8e9c94982ec8d15f3338f5c1bcdf3b"
+    },
+    {
+      "module": "ThetaPathLengths",
+      "path": "ThetaPathLengths.lean",
+      "sha256": "e891610537f2e4d578b65deb164e047cc218d270a196085e402c1ff710b58a6a",
+      "local_dependencies": [
+        "ThetaArmMetric",
+        "ThetaQuartetValidity",
+        "AnchorCompressionOrder"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaPathLengths.log",
+      "log_sha256": "fe610645702429e3bef0755ed3f9801ed635972f4228975da32293077790fe9d"
+    },
+    {
+      "module": "ThetaPathMembership",
+      "path": "ThetaPathMembership.lean",
+      "sha256": "0006488cb7a9196258ad04d683dd5460dff6bf20be9e23844adc05a5e2dcd5d9",
+      "local_dependencies": [
+        "ThetaPathLengths",
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaPathMembership.log",
+      "log_sha256": "f14d46a41e20223e35e03c6f20860275c86116157b805281be7adfe8d1905184"
+    },
+    {
+      "module": "ThetaProbe",
+      "path": "ThetaProbe.lean",
+      "sha256": "8cc1aeb24d1b11485ecd39186cae6d4dd87f566ca4be3cf0d7953accdc3a353e",
+      "local_dependencies": [
+        "ThetaFinite"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "excluded_probe",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaProbe.log",
+      "log_sha256": "98f69c32daa2113325fa3230af226bad7cdab1c554e1f0e61d8830647f9d6bf2"
+    },
+    {
+      "module": "ThetaQuartetEdge",
+      "path": "ThetaQuartetEdge.lean",
+      "sha256": "2b877fe339ff2ee1eb5fb774966e552d827a1e7479036f6f0c896806c7dd103f",
+      "local_dependencies": [
+        "ThetaSwitchingEdges",
+        "ThetaQuartetOrder"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaQuartetEdge.log",
+      "log_sha256": "91bb4c2f3316202c7b2ee74059e0a901105214feb0cd38c7e61ee06b1d1290cf"
+    },
+    {
+      "module": "ThetaQuartetOrder",
+      "path": "ThetaQuartetOrder.lean",
+      "sha256": "07ca91915286248eccd839cc8a9e3f71e547db5aa9f12d963ac006c7167334d8",
+      "local_dependencies": [
+        "ThetaBumpedMetric",
+        "ThetaArmOrder"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaQuartetOrder.log",
+      "log_sha256": "9864b09d81f23b6fdf6747ce9ab416f1e8f907e474245cb5b227df530e3157e3"
+    },
+    {
+      "module": "ThetaQuartetSymmetry",
+      "path": "ThetaQuartetSymmetry.lean",
+      "sha256": "7babb04c4af8993ee4488293f73b01bdde7624079e2de8ff4d8c4f87227ba8a5",
+      "local_dependencies": [
+        "ThetaSourceExact",
+        "WeightedProperties"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fintype.Option"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaQuartetSymmetry.log",
+      "log_sha256": "3e3e4c82122ff108d7d3c576a063a83707ed0229d68d16dd13d06926fd7ba938"
+    },
+    {
+      "module": "ThetaQuartetValidity",
+      "path": "ThetaQuartetValidity.lean",
+      "sha256": "16cc7333fc829e3dc35824a10392342bada5b89ce91b6d69ab86d7341608c419",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaQuartetValidity.log",
+      "log_sha256": "19bd963cb32e01db31e39eb6e393527a2a4f6baab35244593235441f703203bd"
+    },
+    {
+      "module": "ThetaSemanticsBridge",
+      "path": "ThetaSemanticsBridge.lean",
+      "sha256": "66586550c7eb036fcfa4a3acd5bedb77f932a742a7efdc0686c2997300d827d7",
+      "local_dependencies": [
+        "ThetaFiniteSoundness",
+        "QuartetSemantics"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSemanticsBridge.log",
+      "log_sha256": "8cd94c7bbf935ab76a7c119870205eb0b0e873619d168b9f22e1005f50af5db9"
+    },
+    {
+      "module": "ThetaSourceExact",
+      "path": "ThetaSourceExact.lean",
+      "sha256": "098352bf2e44220881e40e80dff4024cb1b31e738d88bd890f72fa2118610b1a",
+      "local_dependencies": [
+        "ThetaQuartetValidity",
+        "ThetaSemanticsBridge"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.Ring"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSourceExact.log",
+      "log_sha256": "0c7db91695c1e76a7bf15ff13832b6ddb8fd1c3ccc197a309c9dc3f44d60d522"
+    },
+    {
+      "module": "ThetaSourceUnbounded",
+      "path": "ThetaSourceUnbounded.lean",
+      "sha256": "b9b34c841f950fdee3dd3c3c26fb734b81f22a36f01fe9fb3d23aa2be9563379",
+      "local_dependencies": [
+        "ThetaCompression",
+        "AnchorIndexTransport",
+        "ZeroTheta",
+        "ThetaSourceExact"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSourceUnbounded.log",
+      "log_sha256": "9445a5b0dc9703d2ba66dae5b953a02e10ad4e37db50f8c78a5d9172c964eb7e"
+    },
+    {
+      "module": "ThetaSupport",
+      "path": "ThetaSupport.lean",
+      "sha256": "f4f3bc90940b3cce3dd14e28e8cccd9ac070f29ee5144e08c45995ffb7f57a0a",
+      "local_dependencies": [
+        "ThetaFiniteSoundness"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupport.log",
+      "log_sha256": "0c088a4f1f86160ca734a03f80a012faf437e8bf0c0c1ee8313a97f85d29d2e5"
+    },
+    {
+      "module": "ThetaSupportCertificate",
+      "path": "ThetaSupportCertificate.lean",
+      "sha256": "bf099a3feb4ebe2d0782a85d77fed47d108d70515f34770fbe63d2753c6602de",
+      "local_dependencies": [
+        "ThetaCertificate",
+        "ThetaSupportCertificate1",
+        "ThetaSupportCertificate2",
+        "ThetaSupportCertificate3",
+        "ThetaSupportCertificate4",
+        "ThetaSupportCertificate5",
+        "ThetaSupportCertificate6"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate.log",
+      "log_sha256": "5b0245640a9c92a2d10e0f65842f0379d47019869eaec9f236efa816a5fe66a9"
+    },
+    {
+      "module": "ThetaSupportCertificate1",
+      "path": "ThetaSupportCertificate1.lean",
+      "sha256": "2bf98276eca5c3cb9b74e38b5e6874dfe252a0e94aab28252cbc6625cf9f7c8e",
+      "local_dependencies": [
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate1.log",
+      "log_sha256": "7c4985c22ee897f99c94a2bcaf0b0f01c2fc41f6d8ad8a57f17b9d8897607e2c"
+    },
+    {
+      "module": "ThetaSupportCertificate2",
+      "path": "ThetaSupportCertificate2.lean",
+      "sha256": "a74a3f1b50115cb8d65384526f74a5eb191ffa4c220e1a85452c0a8ef0a1a09c",
+      "local_dependencies": [
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate2.log",
+      "log_sha256": "aac691bdf66c4cecc0d89e7664311a2db7ca2aa1d0b079f75684e4323fb7ee07"
+    },
+    {
+      "module": "ThetaSupportCertificate3",
+      "path": "ThetaSupportCertificate3.lean",
+      "sha256": "910616057def958596888f8cf293ef9d61ba85bbca90627bb9fb13fec1a82c8c",
+      "local_dependencies": [
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate3.log",
+      "log_sha256": "3fb84c89ac7e2c35bb50fff0c8a4769019a6d623de2f604f7ea1730e12d71787"
+    },
+    {
+      "module": "ThetaSupportCertificate4",
+      "path": "ThetaSupportCertificate4.lean",
+      "sha256": "3f003d6d5b1a8abfc67c4c2a180f819553df8b78b76c8afa404fe5d7cfeab792",
+      "local_dependencies": [
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate4.log",
+      "log_sha256": "db379b7cf1e1ce991a741b40ec16e059ee277b0632b3e729c5edb0f98729341b"
+    },
+    {
+      "module": "ThetaSupportCertificate5",
+      "path": "ThetaSupportCertificate5.lean",
+      "sha256": "272df678b8e23f96db4e6d599a50df6cebad0794e51cca1c7a0e1bfe4d44ba83",
+      "local_dependencies": [
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate5.log",
+      "log_sha256": "fec8ec723095ac3e0d8062324b39c2e216ab146efb343df0268393f96447414e"
+    },
+    {
+      "module": "ThetaSupportCertificate6",
+      "path": "ThetaSupportCertificate6.lean",
+      "sha256": "b9ef3fbb549a9b2e09d4c76a85d1a00698509b60ff4e26a1d4f10b6d54b0dc1e",
+      "local_dependencies": [
+        "ThetaSupport"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSupportCertificate6.log",
+      "log_sha256": "3c88a292f90ea986bb0e4f3e27a8970ba9f8bdb29363001cb9e837454ebad7ff"
+    },
+    {
+      "module": "ThetaSwitchingEdges",
+      "path": "ThetaSwitchingEdges.lean",
+      "sha256": "0b6cef00c1212b6e9249f692bb5222d7fcf27543408a82d4295ef85be7e6dac0",
+      "local_dependencies": [
+        "ThetaPathMembership"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaSwitchingEdges.log",
+      "log_sha256": "64f12d48fe34c9b28b5dd43384958f6f8d6fa72921aafbc676425f505c222207"
+    },
+    {
+      "module": "ThetaTaxonRestriction",
+      "path": "ThetaTaxonRestriction.lean",
+      "sha256": "184daac6967048a789304a46acef1d3172b6cc005fe1968e521eb4d36667ee24",
+      "local_dependencies": [
+        "AnchorUnboundedTheorem",
+        "ThetaSourceUnbounded",
+        "ThetaWitnessSymmetry",
+        "WeightedRestriction"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaTaxonRestriction.log",
+      "log_sha256": "421693a19efdeaae835fb0953cdcae9ca85df8e83a80d3f9ecd9a907bb29426e"
+    },
+    {
+      "module": "ThetaWitnessSymmetry",
+      "path": "ThetaWitnessSymmetry.lean",
+      "sha256": "49372490d3a08c572472512438deafcc722a4a2d3e9e2b3867b706f5ad8fccea",
+      "local_dependencies": [
+        "ThetaQuartetSymmetry",
+        "AnchorComposition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ThetaWitnessSymmetry.log",
+      "log_sha256": "a4acbdede425a9c91be3d55de7f3db3c41805f199076117301765cd7c20bc9be"
+    },
+    {
+      "module": "TreePathCounting",
+      "path": "TreePathCounting.lean",
+      "sha256": "db0e3a52c0628a8a46031735dacaaae8d2965fd4a18c8f184f0cfeabc8773a95",
+      "local_dependencies": [
+        "SourceCompositionBridge"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "TreePathCounting.log",
+      "log_sha256": "5e30098b138578d14de494eac1f8426008567684eb62c969ea8ec566b9019073"
+    },
+    {
+      "module": "TwoSwitchings",
+      "path": "TwoSwitchings.lean",
+      "sha256": "f203c7385097954f5b2d0e8cabaa339f00cf03d0efcf05ec8e1ea50e51a0136a",
+      "local_dependencies": [
+        "QuartetSemantics"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "TwoSwitchings.log",
+      "log_sha256": "42516196f4f127af8098dd77694ff07b4bcaf04860b805cc352f5f51561e6ae7"
+    },
+    {
+      "module": "VerifiedCheckpoint",
+      "path": "VerifiedCheckpoint.lean",
+      "sha256": "13ce62cca656d7d64394ef0d7de677a1cceab4282ce5435d4845657cb856b1cc",
+      "local_dependencies": [
+        "CanonicalTheta",
+        "RawNanuq",
+        "SourceFacts",
+        "GraphBlobPorts",
+        "CircularMixture",
+        "AnchorComposition"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "VerifiedCheckpoint.log",
+      "log_sha256": "37a5650af1237069c8c7bf8f47bfb7b3d8d38a64349090371ee1f44d16eb5d0b"
+    },
+    {
+      "module": "WeightedAnchor",
+      "path": "WeightedAnchor.lean",
+      "sha256": "9a2befb3bb6e72f714a562e3a1d7f220221b038550d5616ed7a7f9cfa754b5fc",
+      "local_dependencies": [],
+      "external_imports": [
+        "Mathlib.Data.Rat.Lemmas",
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.ByContra"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedAnchor.log",
+      "log_sha256": "c81c5f6b725112044d6a899e80f19340b03742d5e3d624aaed6243c3ab88c935"
+    },
+    {
+      "module": "WeightedCoefficients",
+      "path": "WeightedCoefficients.lean",
+      "sha256": "02e55dc1461eb9c0e871d4b6b0d44a06a2e3bff9c8f66ce4b8c2307fa5213367",
+      "local_dependencies": [
+        "WeightedAnchor"
+      ],
+      "external_imports": [
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Algebra.Order.Field.Rat"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedCoefficients.log",
+      "log_sha256": "779b8fba2992a0eb9a17078ad0ab6c829857b7c93532cd6ddabd365c304ee50c"
+    },
+    {
+      "module": "WeightedOrderedPairs",
+      "path": "WeightedOrderedPairs.lean",
+      "sha256": "f2165484c9298363856b78c54ca266b6700d39ccd017b75f1747c968ef94dd96",
+      "local_dependencies": [
+        "WeightedCoefficients"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedOrderedPairs.log",
+      "log_sha256": "11f41c082aacefb3992b6c0c335e4da3ae45e84d673d0d299922727597ff514b"
+    },
+    {
+      "module": "WeightedProperties",
+      "path": "WeightedProperties.lean",
+      "sha256": "81f3349d47d6293ac9e8fc3ffb9d4995bfd6cca3bb3cc5fb07766ef81ef8d8c4",
+      "local_dependencies": [
+        "WeightedSource"
+      ],
+      "external_imports": [
+        "Mathlib.Tactic.Linarith"
+      ],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedProperties.log",
+      "log_sha256": "5e1d0425bc7a81e297130626a5ec43e6aa4dc40c5c113ba01921c2355015783d"
+    },
+    {
+      "module": "WeightedRestriction",
+      "path": "WeightedRestriction.lean",
+      "sha256": "8d6f03a74fa2957b84dd9aee9db603b1379528de61670fd4ae7b86a5e4175e9e",
+      "local_dependencies": [
+        "AnchorComposition",
+        "CircularRestriction"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedRestriction.log",
+      "log_sha256": "df66375ed76d864438a2ec2e0673531ab24a0ae56b2a8d91fbc8cccee0a753a9"
+    },
+    {
+      "module": "WeightedSmallPorts",
+      "path": "WeightedSmallPorts.lean",
+      "sha256": "d88f3f34b37ed767042ddd4173c7611d9ef6f1888e6956c8657939ef7949bb03",
+      "local_dependencies": [
+        "WeightedCoefficients"
+      ],
+      "external_imports": [
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "in_frozen_94_module_closure": false,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedSmallPorts.log",
+      "log_sha256": "504a4149e1497fd18bc78018ee305932291f9b19676bbb04c16c7ce9f8c3ccf4"
+    },
+    {
+      "module": "WeightedSource",
+      "path": "WeightedSource.lean",
+      "sha256": "612a008463cbdefd8717d93a224998c5996c55f57fe91315609089fd2a152308",
+      "local_dependencies": [
+        "WeightedCoefficients"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "WeightedSource.log",
+      "log_sha256": "553a7c21125a99655ee9f47ce529c2767066871ef7bd5666c1d909d77726eddf"
+    },
+    {
+      "module": "ZeroTheta",
+      "path": "ZeroTheta.lean",
+      "sha256": "56ce587ddd5a2ab6db4d1005df9b3ffe0d52ad766989a65a7fe5ec825dfb6aff",
+      "local_dependencies": [
+        "ThetaCertificate"
+      ],
+      "external_imports": [],
+      "in_frozen_94_module_closure": true,
+      "publication_class": "previously_compiled_source",
+      "cached_object_exists": true,
+      "cached_object_at_least_as_new_as_source": true,
+      "latest_log_contains_error_or_sorry": false,
+      "log_path": "ZeroTheta.log",
+      "log_sha256": "d9cc3744fca770a87b56b89463e1f074e4b6991265e01fd2bc36efaf562cf7a0"
+    }
+  ],
+  "documentary_files": [
+    {
+      "path": "ALL-LEVEL-QUALITY-MANIFEST.json",
+      "sha256": "2cb18a12cf40ffbfb9ee642513750381fbffcd7be5cc60a9e9dfc828e02d218f"
+    },
+    {
+      "path": "ALL-LEVEL-QUALITY.md",
+      "sha256": "41810b019ce053c30111344405e5b865af3616bce177804370d31d1a063b97df"
+    },
+    {
+      "path": "anchor-composition-control.json",
+      "sha256": "8ba3df4a50046108355b2d271bc45f89b69254c967df491999acf4a4b875048c"
+    },
+    {
+      "path": "AnchorFourVsSix-receipt.json",
+      "sha256": "305baa54bf0c62bb022e4e8cae54dd714a602b93b7071dc3f59048a9636d8a0e"
+    },
+    {
+      "path": "AnchorFourVsSix.md",
+      "sha256": "207b1d3b2d87748349720d7f83eb53bed02c35363dd0277cf7cb7820d1657fed"
+    },
+    {
+      "path": "AnchorLane-MANIFEST.json",
+      "sha256": "3b316bf1215039a92cbee47507ab9948ff552f92bec397a432bb47b14edaaf67"
+    },
+    {
+      "path": "AnchorLane-STATUS.md",
+      "sha256": "43d680d52453490dd5df0532d88cd04a5b5a3f0149a93f2df992fe675921981a"
+    },
+    {
+      "path": "check_anchor_composition.py",
+      "sha256": "66704b83708d83fca4de9f3f0e974689fbf295247ca5c606a7d8fe55a5684902"
+    },
+    {
+      "path": "check_four_taxon_obstruction.py",
+      "sha256": "55ff5602f62fedd2b6706cc90dacef22b5b7ae5914514f92a70766d753c9a426"
+    },
+    {
+      "path": "CheckModule.ps1",
+      "sha256": "5ea831c47fbc7e9d9057580f151a09a8fd954af441716929e11daac6de1bbc5c"
+    },
+    {
+      "path": "checkpoint.py",
+      "sha256": "83447df66faa16fa00a0696ab82ff6b0066f89385c00b52bb8ff1c6fc6bf4917"
+    },
+    {
+      "path": "CheckTheta.ps1",
+      "sha256": "d5bc86b6253cddc2bdaeed2160622230da3a64607dfc9d0943eab476426fd581"
+    },
+    {
+      "path": "FOUR-TAXON-OBSTRUCTION.json",
+      "sha256": "5f2248cc85538d8df7fab6dfebf8d6f1882fdc3ee3d386e59011edb1bc952a51"
+    },
+    {
+      "path": "FOUR-TAXON-OBSTRUCTION.md",
+      "sha256": "ba595f7d0eeb0881ec55008178fc0be84531c486a0a9f9b71a670444899cb6df"
+    },
+    {
+      "path": "generate_theta_certificate.py",
+      "sha256": "5eb02636d4bbd06a07d25a3a656ca0dfbbf3633afc5425bddefdad76278987c9"
+    },
+    {
+      "path": "generate_theta_support.py",
+      "sha256": "3ccd3bee0f7cfbe881cff9e192ec89035a6279c2aaec8d70da6a4b1d8805a699"
+    },
+    {
+      "path": "GraphSwitchingChoices-status.json",
+      "sha256": "7d6181bf1a70e756f9fd3d701b7772494ee9d6766ed009fb3362a03f18fe374b"
+    },
+    {
+      "path": "LOCAL-THEOREM-AUDIT.md",
+      "sha256": "1f61e37f9f66ea74ac612ef2c10671fb77f5875171ab6847b5dddc08f15f80ce"
+    },
+    {
+      "path": "OBLIGATIONS.md",
+      "sha256": "4e269d33781c3c428a59829fe850087f00752e9ecce76bfd0b24a73f52fd1431"
+    },
+    {
+      "path": "PORT-HELPERS-FROZEN.md",
+      "sha256": "5b2e59da23a475e509ac96dd581e2e31a739c2e319ec3bdcd01676bb6a930482"
+    },
+    {
+      "path": "prepare_publication_handoff.py",
+      "sha256": "0efcb0903e40ebd833df088db360fade2cedebb34635f2120927b94fa9bcbd13"
+    },
+    {
+      "path": "rebuild_publication.py",
+      "sha256": "ca9ef0f07f91bb298a11d33de76defd9736fcb85f368d264392f5938e7374585"
+    },
+    {
+      "path": "SourceAllLevelAssessment.md",
+      "sha256": "a11ffbb3c512b9d71c1b4cf8ffc066907f749f58a45e059c65333eaf2f9905b4"
+    },
+    {
+      "path": "SourceAnchorCompositionAudit.md",
+      "sha256": "6e8a7c8a3caeb2deaa696ef7259d47b743a9176e51c2b8e15ee581a0de6b6040"
+    },
+    {
+      "path": "SourceScope.md",
+      "sha256": "669bdbad9e317c03d65ca5e567783834174a110b893c2d0dd52e13ea5ba57dc5"
+    },
+    {
+      "path": "theta-assembly-review-hashes.json",
+      "sha256": "fb26cbb6c073031c1fbeee3b943e8cc6def41afcc26a035788c6b2f40aa872bf"
+    },
+    {
+      "path": "THETA-ASSEMBLY-REVIEW.md",
+      "sha256": "ecbc4a404d5cb73214848aa5debce74b6a145a834cc7aec4545a13bec7c588d5"
+    },
+    {
+      "path": "THETA-CHECKED-STATUS.md",
+      "sha256": "918da1f184abc89bc8c65935eb3635fb60cf8b5f0a48002d652295b0bd43663d"
+    },
+    {
+      "path": "theta-lane-manifest.json",
+      "sha256": "be51705e6b12126e0319c292ec8b2bbe7334ed3ee13b508f9b3299c6a4883a0f"
+    }
+  ]
+}

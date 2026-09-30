@@ -1,0 +1,26 @@
+{
+  "status": "PASS_LOCAL_PUBLICATION_CHECKS",
+  "checked_on": "2026-09-29",
+  "source_files_captured": 534,
+  "capture_hash_check": "PASS",
+  "portable_temporary_copy_recomputation": "PASS",
+  "recomputed_programs": [
+    "all_level_screen.py",
+    "independent_all_level_check.py",
+    "parameter_domain.py",
+    "independent_support_check.py",
+    "nonplanar_support_counterexample.py",
+    "sidechat_support_check.cjs"
+  ],
+  "independent_tree_instances": 84076,
+  "independent_physical_copy_quartets": 11848859,
+  "independent_global_occurrence_selections": 2525210,
+  "anchor_coefficients": 24667,
+  "symbolic_inequality_types": 16,
+  "source_code_changed_by_presentation_normalization": false,
+  "markdown_gate": "PASS; immutable imported development excluded from style rewriting and covered by exact source hashes",
+  "fresh_full_all_level_lean_check_performed": false,
+  "separate_canonical_checkpoint_rebuild": "Pending at formal lane handoff; 22 of 94 modules observed complete. A final PASS receipt is required before upgrading this status.",
+  "external_peer_review": false,
+  "catalog_acceptance_confirmed": false
+}

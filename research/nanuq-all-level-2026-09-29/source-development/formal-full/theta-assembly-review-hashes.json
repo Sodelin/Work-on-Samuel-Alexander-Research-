@@ -1,0 +1,30 @@
+{
+  "reviewedUtc": "2026-09-29T23:27:56.0646416Z",
+  "review": "THETA-ASSEMBLY-REVIEW.md",
+  "files": [
+    {
+      "name": "AnchorUnboundedTheorem.lean",
+      "sha256": "5b4b6e4aa3bd7a2da7dbed708ff3db88eb0d28764cb54182080404d3974401c5"
+    },
+    {
+      "name": "ThetaSourceUnbounded.lean",
+      "sha256": "b9b34c841f950fdee3dd3c3c26fb734b81f22a36f01fe9fb3d23aa2be9563379"
+    },
+    {
+      "name": "AnchorComposition.lean",
+      "sha256": "a591462b5d3dc6353d66d9e904bd94a56ce7eb8e6475808001fcdc2692a08434"
+    },
+    {
+      "name": "CircularRestriction.lean",
+      "sha256": "9e6aab99cb17bfc5760d8153ebd25b10e5311c38f6eb613d4f9a395055e9fc64"
+    },
+    {
+      "name": "WeightedRestriction.lean",
+      "sha256": "8d6f03a74fa2957b84dd9aee9db603b1379528de61670fd4ae7b86a5e4175e9e"
+    },
+    {
+      "name": "ThetaWitnessSymmetry.lean",
+      "sha256": "49372490d3a08c572472512438deafcc722a4a2d3e9e2b3867b706f5ad8fccea"
+    }
+  ]
+}

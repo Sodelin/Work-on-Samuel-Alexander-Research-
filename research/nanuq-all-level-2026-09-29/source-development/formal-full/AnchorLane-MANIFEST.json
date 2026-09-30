@@ -1,0 +1,268 @@
+{
+  "created_utc": "2026-09-29T23:31:16.6364841Z",
+  "compiler": "Lean 4.33.1, pinned direct compiler in CheckModule.ps1",
+  "endpoint": "Nanuq.Theta.unbounded_source_full_theorem",
+  "endpoint_compilation_exit_code": 0,
+  "exact_support_endpoint": "Nanuq.Theta.unbounded_weighted_exact_support",
+  "source_scope": "Canonical theta evaluator with arbitrary natural arm lengths; at least one ordinary arm leaf for exact support; positive rational terminal masses for weighted support.",
+  "remaining_scope": "Raw source-network classification and graph composition are separate parent-lane obligations.",
+  "modules": [
+    {
+      "module": "WeightedAnchor",
+      "source_sha256": "9A2BEFB3BB6E72F714A562E3A1D7F220221B038550D5616ED7A7F9CFA754B5FC",
+      "olean_sha256": "CF4068190E16015500F2EEC443EF5A5F34C1AD6D9093AEA4B84A14847630D4B6",
+      "log_sha256": "C81C5F6B725112044D6A899E80F19340B03742D5E3D624AAED6243C3AB88C935",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Weighted.weightedNanuq_eq_anchor_sum' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WeightedCoefficients",
+      "source_sha256": "02E55DC1461EB9C0E871D4B6B0D44A06A2E3BFF9C8F66CE4B8C2307FA5213367",
+      "olean_sha256": "C4995B3F488BB68D9346DEF100847F1BAADF95C829023F018F6229A8F01E961C",
+      "log_sha256": "779B8FBA2992A0EB9A17078AD0AB6C829857B7C93532CD6DDABD365C304EE50C",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Weighted.circularAlpha_weightedNanuq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.circularAlpha_weightedNanuq_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.positive_masses_preserve_circular_support' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.positive_masses_preserve_circular_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WeightedSource",
+      "source_sha256": "612A008463CBDEFD8717D93A224998C5996C55F57FE91315609089FD2A152308",
+      "olean_sha256": "7C330929E92C366B58754F358EF1AD0E3206004C0B28565C72906ED83DADDC08",
+      "log_sha256": "553A7C21125A99655EE9F47CE529C2767066871EF7BD5666C1D909D77726EDDF",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Weighted.weightedNanuq_unit_eq_source' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.positive_masses_source_support' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.positive_masses_source_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WeightedOrderedPairs",
+      "source_sha256": "F2165484C9298363856B78C54CA266B6700D39CCD017B75F1747C968EF94DD96",
+      "olean_sha256": "A79CD9CD37E9B60C09D465E3FF2760D5C853293966F02E29DB8861AC75AF8AFC",
+      "log_sha256": "11F41C082AACEFB3992B6C0C335E4DA3AE45E84D673D0D299922727597FF514B",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Weighted.ordered_pair_sum_eq_twice_upperSum' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WeightedSmallPorts",
+      "source_sha256": "D88F3F34B37ED767042DDD4173C7611D9EF6F1888E6956C8657939EF7949BB03",
+      "olean_sha256": "D93E6D76F8070AE005E190E97B81F56DBEA49BDCC8F5A2A208EF13CD79C0A2FC",
+      "log_sha256": "504A4149E1497FD18BC78018EE305932291F9B19676BBB04C16C7CE9F8C3CCF4",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Weighted.weightedNanuq_two_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.weightedNanuq_three_star' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.threePortLength_pos' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WeightedProperties",
+      "source_sha256": "81F3349D47D6293AC9E8FC3FFB9D4995BFD6CCA3BB3CC5FB07766EF81EF8D8C4",
+      "olean_sha256": "3C4FC8BA8B1786646FF538A52803F8C595FDDE624FE04016EC2A38E7D6BF490C",
+      "log_sha256": "5E1D0425BC7A81E297130626A5EC43E6AA4DC40C5C113BA01921C2355015783D",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Weighted.weightedNanuq_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Weighted.sourceNanuq_pos_of_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorThetaBridge",
+      "source_sha256": "9C8510C75962CC79FC7615C07211F84415E07DD9CBEEE6B391A47DE7FFDF4922",
+      "olean_sha256": "9BCCD5016B20B77C4D5678E3307514664E37539CFE437351A847A0D4228CCACE",
+      "log_sha256": "CF4D565BC3E96A4F9E9A996F8FC3D223584005B6BA498121160714816300E04C",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.circular_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.leafIndex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.weighted_anchor_eq_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.weighted_alpha_eq_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.weighted_anchor_nonneg_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorCompression",
+      "source_sha256": "D7FD721F78E747ED83A8C94EDDD45247B8F749F1CA8E958B920F3E670DFD612A",
+      "olean_sha256": "34D021AA082C000B355A90828B1471B78FF72FBCC45104D7C1404A386432E1A7",
+      "log_sha256": "9B6DF12E425D7F8A51A7CFDE4F207645EA4794E9CB0AC129E4A1ABEB12D753B6",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.armRank_lt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.armRank_lt_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressed_sixWitnesses_total_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.CyclicAdjacent.filter' depends on axioms: [propext]"
+      ]
+    },
+    {
+      "module": "AnchorCompressionOrder",
+      "source_sha256": "590F4E2E9E0D3D0ED401EDC121AACE742689F91239D599495DC8708A95AF7FFB",
+      "olean_sha256": "A132CEFA9131BE3BB8E15677C9A2948503A7F0DFBB173E0E7C2179B93902E158",
+      "log_sha256": "95F8DFAE8E95ACAD6410C26B57CEF3D0E64279947AA86F1DAF2AEE3E55328C71",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.armRank_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressLeaf_mem_circular' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressLeaf_injective_on' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.retainedWitnesses_subset_circular' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorAdjacency",
+      "source_sha256": "A9185ABC4C2CA4D55F62E1623C2579F468E98CC10BDD7CF544F1A31643723A4D",
+      "olean_sha256": "6E175B7C09CE737A504EACCC7F92C69B4EF0B8958D982EB231CA884A5E5C1CB6",
+      "log_sha256": "C76EB8BA75F6F2C0BB994A793A105D396E203C65A93B0D81AC1657B094162659",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.cyclicAdjacent_getD_mod' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.retained_i_boundary_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.retained_j_boundary_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorCanonicalOrder",
+      "source_sha256": "8236C2EC26BC533562A4396AE822C661A413610D85CFC996752033C4ADFDD47D",
+      "olean_sha256": "754C4DBC2F8D45ABFE23C2CDB8B3C2B206F1E434AB8A89C72CBF0B6B98832E6C",
+      "log_sha256": "A29045A2E95DBB76D5F8EFB359631281689AE59261A54FEF6E6F573BFDF4104C",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.armRanks_eq_range' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.selectedArm_rank_eq_range' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressed_circular_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressed_retained_circular_eq' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorIndexTransport",
+      "source_sha256": "33FA5A52A442BD69C61C2BB12CB7E0ABF7F42572CEC071C048EE391E6592519D",
+      "olean_sha256": "12C4DED955BFFAC50D235292D41CBB4CD3D6104232353BDF205BAFAFBD7C95D1",
+      "log_sha256": "CB442CFCB27DAFD74D198E4C67F42EC2980C8DB045B7995B03080EF87EB0F74E",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.leafIndex_compressedIndex' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressedIndex_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.compressedIndex_cyclicNext' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.alpha_preserved_under_compression' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorMetricOrder",
+      "source_sha256": "541A2C3E2EA897F675B39BCCFF15D9ED3E71B11555A8B1291C359B28285FF0D4",
+      "olean_sha256": "B9684FA654E3246C458094815782B7214FD6E11C760F50488FFAD03DAEBBFA49",
+      "log_sha256": "E66EBAE3C448D555158E5D6F715D5113F0B6376093E6B9066F0A4A11E39F97B7",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.metricPosition_lt_iff_compressed' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorReduction",
+      "source_sha256": "BDE6AC2A62F7DFBC23D92A1C05779152437B7E368CA17E619F4DAE6F7BDF7604",
+      "olean_sha256": "40F7DF545A7F6FD8BA6EF28B6F3E167A05BFAB90197BCA4C7107DF0D73C2D353",
+      "log_sha256": "22F65C6D847BEBC2392C09B0D5E8B8B35DF9F387D8BC44A9E2260FEA83A14840",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.alpha_nonnegative_of_anchor_compression' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.weighted_anchor_nonnegative_of_compression' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorNondegenerate",
+      "source_sha256": "4B7F6B6E8C969B878C76845870C7CE2F084681B28BE7389648A3B64DC190E57A",
+      "olean_sha256": "A7800DBB2442375ABB299207B1E0D684F4B84366F4581E89F6BDC7C603FA2A80",
+      "log_sha256": "90AB87D79134BF6F3BC7C45BCADD64B41901A12C9E48D44E92F44890A71E6B83",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.compressed_retained_total_pos' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorUnboundedTheorem",
+      "source_sha256": "5B4B6E4AA3BD7A2DA7DBED708FF3DB88EB0D28764CB54182080404D3974401C5",
+      "olean_sha256": "421865D7237615249EBFA7F1CD6EA0BBB29948AA4CE02FB0F26EC82BE1C6C8BE",
+      "log_sha256": "CBC30C6DB8E522D985F3B904F985A1A527A14E259EEA009E89845936F56914BF",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.unbounded_anchor_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.unbounded_weighted_circular' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.unbounded_source_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.unbounded_weighted_support_matches_source' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "CircularBoundary",
+      "source_sha256": "B44DC680BCE0B3C45685147BBCDC7CE30A0B69765B1F93387678DE579CA03FDE",
+      "olean_sha256": "718E54FEAD89CDB7EACDD731B76A26CC2200B226D1977D9A330ECC124114BA47",
+      "log_sha256": "56B93C22B2FC15EFA1B7A261362CECD283E56E41B959B3FE3975708B0509A269",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Reconstruction.crossed_gap_is_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Reconstruction.gapSplit_identified_by_boundaries' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorLeafPosition",
+      "source_sha256": "1E92D8FFF790F36F6B2904999A2A3411F10339E4AAC55D8B587C40B6425FE299",
+      "olean_sha256": "F0209A0750DE32397E02FBC919E1270684009D0D178CAEBFB94877F0F2F6D74C",
+      "log_sha256": "AB4DCBB268058EF71A88FEC9BE879B4EE7C035441FCBCB035841A44F39D73A8E",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.leafAt_leafPosition' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.leafPosition_leafIndex' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "CircularThetaCuts",
+      "source_sha256": "0F50F95D93815CE6563E72172CD09AEE287147C345D17613001B1047A599D3D7",
+      "olean_sha256": "4A907875AE87658C6D0EECFA042CC9AF641B4D98D63A77E2909C579B43C55882",
+      "log_sha256": "479BB34647017AA7F4B4A64286CE0CF4B6D41B97E372614BFC86D59A4A3EC301",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.arm_cut_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.terminalPath_cut_interval' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "CircularThetaSupport",
+      "source_sha256": "91678EC43060084F249DE989A39947F0A755F4223811A64AC3B75ADD5B9DC600",
+      "olean_sha256": "A45110B64F8AE6B085A81E921F7304E2D18289E693A040D1A598E49434F00E87",
+      "log_sha256": "3D3E9CAB7DBF0A551281447EE43DCF2CA9348C16EA56578A801ABC5F6818595C",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.pathRealizesGap_iff_boundary_partition' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.displayedSplit_of_successor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.displayedSplit_iff_boundary_quartet' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "CircularSupportCompression",
+      "source_sha256": "CC1346DC7A700AE30B4A1416A2DFDBB11667D2087DB4840EFA8DCC193CBFC884",
+      "olean_sha256": "99A2D14694C933CD6D21D5527F7E3AC577F814DB337D81BE1F3EB84C39F9CECD",
+      "log_sha256": "E3E907A2613893850592FCA2EB02B5A950D47B6C0EA6B3911059A79A488D5FD8",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.displayedSplit_compression' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "AnchorUnboundedSupport",
+      "source_sha256": "6F7558F3629BC3BFA880F4800FBF1F094CEA3242324F4DA030138C9744466FB2",
+      "olean_sha256": "109E5D8E61F7E1AE5513C6F8F69B03E58382E0EBF17AB5F2BD43BBC618FFF11B",
+      "log_sha256": "DCF151C39EE4C5391733CB75B95D14C0BFD41726BFFD3A29C9ED5CA5CF8EEFEF",
+      "proof_failure_in_latest_log": false,
+      "axiom_receipts": [
+        "'Nanuq.Theta.unbounded_support_exact' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.unbounded_weighted_exact_support' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Nanuq.Theta.unbounded_source_full_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-29",
+  "budget": {"search_queries_max": 4, "search_queries_used": 4, "targets_max": 3, "targets_recorded": 2, "mode": "one bounded pass"},
+  "queries": [
+    "\"multi-labeled trees\" quartets \"open\"",
+    "\"multiply labelled trees\" \"circular\" splits",
+    "\"multi-labeled tree\" \"quartet\" \"information\"",
+    "\"ancestral recombination graph\" \"multi-labelled\" tree"
+  ],
+  "sources": [
+    {
+      "id": "mul-conflict-free-2013",
+      "doi": "10.1186/1748-7188-8-18",
+      "url": "https://link.springer.com/article/10.1186/1748-7188-8-18",
+      "primary_xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3716922/fullTextXML",
+      "access": "Full primary text read through public XML and publisher HTML",
+      "locators": ["MUL-Trees and information content", "Theorem 1", "Theorem 3 and Corollaries 1-2", "The reduction algorithm", "Conclusions"],
+      "relevance": "Recognized unrooted MUL-tree input; different conflict-free observable; established canonical reduction",
+      "target": "B1"
+    },
+    {
+      "id": "mul-pruning-2026",
+      "doi": "10.1007/s00453-026-01400-9",
+      "url": "https://link.springer.com/article/10.1007/s00453-026-01400-9",
+      "publication_date": "2026-07-08",
+      "access": "Published primary abstract and metadata only; subscription full text not inspected",
+      "locator": "Abstract",
+      "relevance": "Current hardness result closes the previously open constant-input-count consistency problem; joint-choice semantics differs from our union summary",
+      "target": "B2"
+    },
+    {
+      "id": "garg-2024",
+      "doi": "10.1093/genetics/iyae100",
+      "url": "https://doi.org/10.1093/genetics/iyae100",
+      "access": "Read archived primary XML at known local path; no new search query",
+      "local_path": "C:/Users/Owner/Documents/Codex/2026-09-29/research-publication/research/wong/continuation-2026-09-27/source-audit/PMC11373519-fullText.xml",
+      "locator": "Section id iyae100-s1; formal edge definition and Figure 1 discussion",
+      "relevance": "Boundary check: genomic interval annotations are not contiguous leaf-label blocks",
+      "target": null
+    }
+  ],
+  "targets": [
+    {"id": "B1", "rank": 1, "classification": "recognized structure; direct restricted match; meaningful partial bridge", "external_open_problem_matched": false, "pending": ["Extremal-tip preservation for arbitrary contiguous multiplicity", "Exact split-support statement over the full representation domain if claimed", "Historical novelty review beyond this bounded pass"]},
+    {"id": "B2", "rank": 2, "classification": "recognized problem; known general hardness; no direct transfer", "external_open_problem_matched": false, "pending": ["Precise rooted or unrooted restricted problem", "Representation of joint occurrence choices", "Algorithm or hardness proof under block-order hypothesis"]}
+  ],
+  "access_notes": [
+    "PMC direct read initially returned a browser check; public primary XML succeeded",
+    "arXiv 1205.6359 abstract verified; PDF browser route failed",
+    "PADRE primary article open failed; not used for substantive conclusions",
+    "Primary articles 10.1007/s00285-005-0365-z and 10.1186/1471-2148-9-216 were identified from references but direct opens failed; no full-text claim based on them",
+    "The 2026 pruning article was followed directly from the publisher's related-article link, without an additional search query",
+    "ARG XML initial rg output was excessively long; bounded XML-paragraph read then verified the model passage"
+  ],
+  "checks_run": [],
+  "evidence_status": "Literature matching only; no fresh enumeration, proof-assistant execution, or extremal-tip proof audit",
+  "external_mutations": [],
+  "verdict": "Best structural extension is contiguous-label MUL-trees; no additional externally stated open problem shown solved"
+}
